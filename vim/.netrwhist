@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/media/Data/elpy7391/streaming/tools'
+let g:netrw_dirhist_2='/media/Data/elpy7391/workspace/spydump/tools'
+let g:netrw_dirhist_3='/usr/share/vim/vim72/keymap'
+let g:netrw_dirhist_4='/media/Data/elpy7391/streaming/rapport/BGP_figs/YT_dipcp'

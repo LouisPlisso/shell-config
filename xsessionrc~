@@ -1,0 +1,1 @@
+xmodmap -e "keycode 92 = Alt_L"

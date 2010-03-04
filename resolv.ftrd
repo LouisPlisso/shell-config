@@ -1,0 +1,4 @@
+nameserver 10.193.225.12
+nameserver 10.193.117.254
+domain rd.francetelecom.fr
+search rd.francetelecom.fr
