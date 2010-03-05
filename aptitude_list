@@ -1,0 +1,54 @@
+console-data
+iceweasel-vimperator
+awesome
+vim
+icedove
+iceowl-extension
+sun-java6-bin
+libswt-gtk-3.5-java
+# xmonad
+console-data
+# dwm-tools
+# dzen2
+# xmobar
+rxvt-unicode
+ktouch
+# libghc6-xmonad-contrib-prof
+# libghc6-xmonad-prof
+gv
+# epdfview
+python-matplotlib
+python-scitools
+vim-addon-manager
+vim-gtk
+vim-latexsuite
+vim-scripts
+texlive
+texlive-latex-extra
+# gnome-panel
+# unrar-free
+unrar
+# evince
+samba
+git-svn
+ipython
+gawk
+rdesktop
+usbmount
+# djmount
+# mountpy
+smbfs
+vifm
+djvulibre-bin
+# libghc6-zlib-dev
+geoip-bin
+python-geoip
+python-h5py
+hdf5-tools
+# linux-image-686-bigmem
+acpitool
+g++
+pkg-config
+# linux-headers-2.6-686-bigmem
+subversion
+
