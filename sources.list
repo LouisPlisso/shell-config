@@ -1,0 +1,56 @@
+#############################################################
+################### OFFICIAL DEBIAN REPOS ###################
+#############################################################
+
+###### Debian Main Repos
+deb http://ftp.fr.debian.org/debian/ squeeze main contrib non-free 
+deb-src http://ftp.fr.debian.org/debian/ squeeze main contrib non-free 
+
+###### Debian Update Repos
+deb http://security.debian.org/ squeeze/updates main contrib non-free 
+deb http://ftp.fr.debian.org/debian/ squeeze-proposed-updates main contrib non-free 
+deb-src http://security.debian.org/ squeeze/updates main contrib non-free 
+deb-src http://ftp.fr.debian.org/debian/ squeeze-proposed-updates main contrib non-free 
+
+##############################################################
+##################### UNOFFICIAL  REPOS ######################
+##############################################################
+
+###### 3rd Party Binary Repos
+
+#### Debian Multimedia - http://www.debian-multimedia.org/
+## Run this command: apt-get update && apt-get install debian-multimedia-keyring && apt-get update
+deb http://www.debian-multimedia.org/ squeeze main
+
+#### Debian Unofficial - http://debian-unofficial.org/
+## Run this command:  apt-get install debian-unofficial-archive-keyring 
+# TO UPDATE AFTER SQUEEZE PROMOTIOU TO STABLE
+# deb http://ftp.debian-unofficial.org/debian squeeze main contrib non-free restricted
+
+#### Google Linux Software Repositories - http://www.google.com
+## Run this command: wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && apt-get update  
+deb http://dl.google.com/linux/deb/ stable all
+
+#### Google Linux Software Repositories (testing) - http://www.google.com
+## Run this command: wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && apt-get update  
+deb http://dl.google.com/linux/deb/ testing non-free
+
+#### Skype - www.skype.com
+## Run this command: gpg --keyserver pgp.mit.edu --recv-keys 0xd66b746e && gpg --export --armor 0xd66b746e  | apt-key add -
+deb http://download.skype.com/linux/repos/debian/ stable non-free
+
+#### VirtualBox - http://www.virtualbox.org
+## Run this command: wget -q http://download.virtualbox.org/virtualbox/debian/sun_vbox.asc -O- | apt-key add -
+deb http://download.virtualbox.org/virtualbox/debian lenny non-free
+
+#### Wine - http://www.winehq.org/
+## Run this command: wget -O - http://www.lamaresh.net/apt/key.gpg | apt-key add -
+deb http://www.lamaresh.net/apt squeeze main
+
+
+####### 3rd Party Source Repos
+
+#### Wine (Source) - http://www.winehq.org/
+## Run this command: wget -O - http://www.lamaresh.net/apt/key.gpg | apt-key add -
+deb-src http://www.lamaresh.net/apt squeeze main
+
