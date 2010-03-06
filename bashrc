@@ -92,8 +92,8 @@ alias pysh='ipython -p pysh'
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/s-alois/ftrd_aliases ]; then
-    . ~/s-alois/ftrd_aliases
+if [ -f __INSTALL_DIR__/ftrd_aliases ]; then
+    . __INSTALL_DIR__/ftrd_aliases
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -114,3 +114,18 @@ export PYTHONPATH=~/workspace/spydump/tools
 sudo loadkeys /usr/share/keymaps/i386/dvorak/dvorak-fr.kmap.gz
 
 setxkbmap fr -variant dvorak_prog
+
+sapti() {
+        echo $@ >> __INSTALL_DIR__/aptitude_list_local
+        sudo aptitude install $@
+ }
+
+saptr() {
+        for package in $*
+        do
+                sed -i "/^[^#]/s/\(\<$package\>\)[[:space:]]*/# &\n/g" $__INSTALL_DIR__/aptitude_list_local
+        done
+        sed -i '/^$/d' __INSTALL_DIR__/aptitude_list_local
+        sudo aptitude remove $@
+ }
+    

@@ -1,1 +1,2 @@
 alias citrix='rdesktop s-wtse2.rd.francetelecom.fr'
+#alias print ‘lpr \!* -Pps5′

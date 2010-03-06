@@ -1,6 +1,7 @@
-console-data
+# subversion
 iceweasel-vimperator
 awesome
+awesome-extra
 vim
 icedove
 iceowl-extension
@@ -45,10 +46,13 @@ geoip-bin
 python-geoip
 python-h5py
 hdf5-tools
-# linux-image-686-bigmem
 acpitool
 g++
 pkg-config
-# linux-headers-2.6-686-bigmem
-subversion
-
+libpcap-dev
+wireshark
+wireshark-dev
+pcaputils
+python-libpcap
+python-pcapy
+python-pypcap

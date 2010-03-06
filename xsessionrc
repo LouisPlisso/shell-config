@@ -1,3 +1,3 @@
 setxkbmap fr -variant dvorak_prog
 
-xmodmap ~/s-alois/xmodmaprc
+xmodmap __INSTALL_DIR__/xmodmaprc

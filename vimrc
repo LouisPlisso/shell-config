@@ -5,10 +5,10 @@ autocmd!
 fun! MySys()
    return "$1"
 endfun
-set runtimepath=~/s-alois/vim_runtime,~/s-alois/vim_runtime/after,~/s-alois/vim,\$VIMRUNTIME
-source ~/s-alois/vim_runtime/vimrc
-helptags ~/s-alois/vim_runtime/doc
+set runtimepath=__INSTALL_DIR__/vim_runtime,__INSTALL_DIR__/vim_runtime/after,__INSTALL_DIR__/vim,\$VIMRUNTIME
+source __INSTALL_DIR__/vim_runtime/vimrc
+helptags __INSTALL_DIR__/vim_runtime/doc
 
-source ~/s-alois/vim/vimrc
+source __INSTALL_DIR__/vim/vimrc
 
 imap uu <Esc>
