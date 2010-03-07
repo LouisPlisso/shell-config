@@ -25,6 +25,7 @@ vim-gtk
 vim-latexsuite
 vim-scripts
 texlive
+exuberant-ctags
 texlive-latex-extra
 # gnome-panel
 # unrar-free

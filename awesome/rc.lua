@@ -14,7 +14,7 @@ require("debian.menu")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("__INSTALL_DIR__/awesome/theme.lua")
+beautiful.init("${MY_CONFIG_DIR}/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "x-terminal-emulator"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# retrieve full path of install dir
+# retrieve full path of install dir: can be sourced or whatever but needs bash
 # from http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-in
 INSTALL_DIR="${BASH_SOURCE[0]}";
 if([ -h "${INSTALL_DIR}" ]) then
@@ -9,65 +9,65 @@ fi
 # to store dir where script was launched
 #pushd . > /dev/null
 cd `dirname ${INSTALL_DIR}` > /dev/null
-INSTALL_DIR=`pwd`;
+INSTALL_DIR=`/bin/pwd`;
 
-echo "First sets dvorak-fr keyboard layout or programmers dvorak-fr if available"
-grep dvorak_prog /usr/share/X11/xkb/symbols/fr >> /dev/null && variant=dvorak_prog || variant=dvorak
+/bin/grep dvorak_prog /usr/share/X11/xkb/symbols/fr >> /dev/null && variant=dvorak_prog || variant=dvorak
+printf "First sets %s keyboard layout\n" $variant
 setxkbmap fr -variant $variant
 
 echo "Install current user as sudoer"
-sed "s/__USER__/${USERNAME}/g" sudoers.template > sudoers.local
-echo "Root passwd needed"
-su -c 'cp sudoers.local /etc/sudoers; chown root:root /etc/sudoers; chmod 440 /etc/sudoers' && echo "Will not promt for sudoer passwd until end of install" || echo "Sudoer install failure: if user is not sudoer, only user's settings will be performed" 
+/bin/sed "s/\<__USER__\>/${USER}/g" sudoers.template > sudoers.local
+echo -n "Root passwd needed. "
+/bin/su -c '/bin/cp -b --suffix='.old' sudoers.local /etc/sudoers; chown root:root /etc/sudoers; /bin/chmod 440 /etc/sudoers' && echo "Will not promt for sudoer passwd until end of install" || echo "Sudoer install failure: if user is not sudoer, only user's settings will be performed" 
+/bin/rm sudoers.local
+sudo /bin/sh -c 'grep "EDITOR=vi" /root/.bashrc > /dev/null || echo "EDITOR=vi" >> /root/.bashrc'
 
 echo "Sets programmer dvorak-fr keyboard layout"
-sudo cp -b --suffix='.old' fr /usr/share/X11/xkb/symbols/fr
+sudo /bin/cp -b --suffix='.old' fr /usr/share/X11/xkb/symbols/fr
 setxkbmap fr -variant dvorak_prog
 
 echo "Update sources.list"
-sudo cp -b --suffix='.old' sources.list /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get -y --force-yes install debian-multimedia-keyring
+sudo /bin/cp -b --suffix='.old' sources.list /etc/apt/sources.list
+sudo /bin/sh bin/apt-get-ni.sh update
+sudo /bin/sh bin/apt-get-ni.sh install debian-multimedia-keyring
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo apt-get update
+sudo /bin/sh bin/apt-get-ni.sh update
 # non-interactive upgrade
-export DEBIAN-FRONTEND=non-interactive
-yes '' | sudo apt-get -y --force-yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options="--force-confold" dist-upgrade
+sudo /bin/sh bin/apt-get-ni.sh dist-upgrade
 
 echo "Installing selected packages"
-cat aptitude_list | xargs -I {} sudo aptitude --assume-yes install {}
+/bin/cat aptitude_list | xargs -I {} sudo /bin/sh bin/apt-get-ni.sh install {}
 
 echo "Configure DHCP"
-sudo cp -b --suffix='.old' dhclient.conf /etc/dhcp3/dhclient.conf
+sudo /bin/cp -b --suffix='.old' dhclient.conf /etc/dhcp3/dhclient.conf
 
 echo "Configure netapp"
-sudo /bin/rm /root/.smbcredentials
-sudo ln -s ${INSTALL_DIR}/smbcredentials /root/.smbcredentials
-grep netapp /etc/fstab > /dev/null && echo "netapp already included in fstab" || sudo cat fstab >> /etc/fstab
+if /bin/chmod 000 smbcredentials; then
+	sudo /bin/rm /root/.smbcredentials
+	sudo /bin/ln -s smbcredentials /root/.smbcredentials
+fi
+/bin/grep netapp /etc/fstab > /dev/null && echo "netapp already included in fstab" || sudo sh -c '/bin/cat fstab >> /etc/fstab'
 
 echo "Configure printers"
-sudo cp -b --suffix='.old' printers.conf /etc/cups/printers.conf
+sudo /bin/cp -b --suffix='.old' printers.conf /etc/cups/printers.conf
 
 echo "Configure ktouch"
-[ -e /usr/share/kde4/apps/ktouch/ ] && sudo cp -b --suffix='.old' dvorak-fr-1.ktouch.xml dvorak-fr-2.ktouch.xml /usr/share/kde4/apps/ktouch/
+[ -e /usr/share/kde4/apps/ktouch/ ] && sudo /bin/cp -b --suffix='.old' dvorak-fr-1.ktouch.xml dvorak-fr-2.ktouch.xml /usr/share/kde4/apps/ktouch/
 
 #TODO: xorg?
 
-sudo sed -i "/^[^#].*${USERNAME}.*ALL=NOPASSWD: ALL/s/^/#/" /etc/sudoers
+echo "Administrative part finished: no user with no passwd for all cmds"
+sudo /bin/sed -i "/^[^#].*ALL=NOPASSWD: ALL/s/^/#/" /etc/sudoers
 
-echo "Installing config files"
-sed "s/__INSTALL_DIR__/${INSTALL_DIR}/g" bashrc > bashrc.local
-mkdir -p ${LOCAL_INSTALL_DIR}/awesome ${HOME}/.config/awesome
-for file in bashrc.local profile xmodmaprc xmodmaprc xsessionrc inputrc vimrc gvimrc awesome/rc.lua awesome/theme.lua
-do
-	if grep awesome > /dev/null <<< $file
-	then
-		TARGET=$HOME/.config/$file
-	else
-		TARGET=$HOME/.$file 
-	fi
-	[ -e ${TARGET} ] && /bin/mv ${TARGET} ${TARGET}.old
-	ln -s ${LOCAL_INSTALL_DIR}/$file ${TARGET}
+echo "Install config files"
+[ ! -h ${HOME}/.bashrc ] && /bin/rm ${HOME}/.bashrc
+[ -f ${HOME}/.bashrc ] && /bin/mv ${HOME}/.bashrc ${HOME}/.bashrc.old
+/bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" bashrc.template > ${HOME}/.bashrc
+for file in profile xmodmaprc xmodmaprc xsessionrc inputrc vimrc gvimrc; do
+	TARGET=${HOME}/.$file 
+	[ -h ${TARGET} ] && /bin/rm ${TARGET}
+	[ -f ${TARGET} ] && /bin/mv ${TARGET} ${TARGET}.old || /bin/rm $TARGET 2> /dev/null
+	/bin/ln -s ${INSTALL_DIR}/$file ${TARGET}
 done
 
 # to restore directory

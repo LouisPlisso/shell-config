@@ -48,8 +48,8 @@ theme.menu_width  = "100"
 -- you wish and access them by using
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
-theme.widget_net = "__INSTALL_DIR__/awesome/icons/arr_down.png"
-theme.widget_netup = "__INSTALL_DIR__/awesome/icons/arr_up.png"
+theme.widget_net = "${MY_CONFIG_DIR}/awesome/icons/arr_down.png"
+theme.widget_netup = "${MY_CONFIG_DIR}/awesome/icons/arr_up.png"
 
 -- Define the image to load
 theme.titlebar_close_button_normal = "/usr/share/awesome/themes/default/titlebar/close_normal.png"
@@ -76,7 +76,7 @@ theme.titlebar_maximized_button_normal_active = "/usr/share/awesome/themes/defau
 theme.titlebar_maximized_button_focus_active  = "/usr/share/awesome/themes/default/titlebar/maximized_focus_active.png"
 
 -- You can use your own command to set your wallpaper
-theme.wallpaper_cmd = { "awsetbg __INSTALL_DIR__/awesome/desktop-background.png" }
+theme.wallpaper_cmd = { "awsetbg _${MY_CONFIG_DIR}/awesome/desktop-background.png" }
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = "/usr/share/awesome/themes/default/layouts/fairhw.png"

@@ -50,6 +50,7 @@
 "       Makes it easy to switch between buffers:
 "           info -> :help bufExplorer
 "
+" NO YANKRING
 "     > yankring.vim - http://www.vim.org/scripts/script.php?script_id=1234
 "       Emacs's killring, useful when using the clipboard:
 "           info -> :help yankring
