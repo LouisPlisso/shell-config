@@ -60,7 +60,7 @@ echo "Administrative part finished: no user with no passwd for all cmds"
 sudo /bin/sed -i "/^[^#].*ALL=NOPASSWD: ALL/s/^/#/" /etc/sudoers
 
 echo "Install config files"
-[ ! -h ${HOME}/.bashrc ] && /bin/rm ${HOME}/.bashrc
+[ -h ${HOME}/.bashrc ] && /bin/rm ${HOME}/.bashrc
 [ -f ${HOME}/.bashrc ] && /bin/mv ${HOME}/.bashrc ${HOME}/.bashrc.old
 /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" bashrc.template > ${HOME}/.bashrc
 for file in profile xmodmaprc xmodmaprc xsessionrc inputrc vimrc gvimrc; do
@@ -68,6 +68,15 @@ for file in profile xmodmaprc xmodmaprc xsessionrc inputrc vimrc gvimrc; do
 	[ -h ${TARGET} ] && /bin/rm ${TARGET}
 	[ -f ${TARGET} ] && /bin/mv ${TARGET} ${TARGET}.old || /bin/rm $TARGET 2> /dev/null
 	/bin/ln -s ${INSTALL_DIR}/$file ${TARGET}
+done
+
+echo "Configure awesome"
+AWESOME_DIR=${HOME}/.config/awesome 
+[ -h $AWESOME_DIR ] && /bin/rm $AWESOME_DIR
+[ -f ${AWESOME_DIR} ] && /bin/mv ${AWESOME_DIR} ${AWESOME_DIR}.old || /bin/rm $AWESOME_DIR 2> /dev/null
+ln -s ${INSTALL_DIR}/awesome $AWESOME_DIR 
+for file in awesome/rc.lua awesome/theme.lua; do
+    /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" ${file}.template > $file
 done
 
 # to restore directory

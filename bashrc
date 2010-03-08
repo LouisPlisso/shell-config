@@ -138,13 +138,16 @@ die() {
 
 [ -d $MY_CONFIG_DIR ] || die 1 "must have variable MY_CONFIG_DIR set"
 
-#export VIMRUNTIME=${MY_CONFIG_DIR}/vim
+# load FTRD config
+. ${MY_CONFIG_DIR}/ftrd_config
+
+# export VIMRUNTIME=${MY_CONFIG_DIR}/vim
 export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
 
 
 # keep trace of installed packages (even tentatives)
 sapti() {
-        if [ sudo aptitude install $@ ]
+        if sudo aptitude install $@
 	then
 		# warning: will also store uninstalled packages
         	echo $@ >> ${MY_CONFIG_DIR}/aptitude_list_local
@@ -152,7 +155,7 @@ sapti() {
  }
 
 saptr() {
-        if [ sudo aptitude remove $@ ]
+        if sudo aptitude remove $@
 	then
         	for package in $*
         	do

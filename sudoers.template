@@ -9,8 +9,7 @@ Cmnd_Alias	LOADKEYS = /usr/bin/loadkeys *
 Cmnd_Alias	MOUNT = /bin/mount *, /bin/umount *
 
 Defaults	env_reset
-Defaults	env_keep=http_proxy
-Defaults    env_keep=MY_CONFIG_DIR
+Defaults	env_keep="http_proxy MY_CONFIG_DIR"
 Defaults	passwd_timeout=1
 # prompt for passwd after N minutes
 Defaults	timestamp_timeout=5
