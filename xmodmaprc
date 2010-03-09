@@ -6,3 +6,7 @@ keysym Escape = Caps_Lock
 keysym Caps_Lock = Escape
 add Lock = Caps_Lock
 
+! Right act like the Left to avoid digital gymnastics.
+keycode 64 = Alt_L
+keycode 108 = Meta_L
+

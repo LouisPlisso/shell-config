@@ -1,24 +1,24 @@
-###############
-### urxvt ###
-###############
+!##############
+!## urxvt ###
+!##############
 URxvt*font: xft:DejaVu Sans Mono:size=7:VL Gothic:size=7:antialias=true:hinting=true
 URxvt*boldFont: xft:DejaVu Sans Mono:size=7:VL Gothic:size=7:antialias=true:bold:hinting=true
 
 URxvt*background: #555244
 URxvt*foreground: #fffff0
-#0e100f
-#646f5b
+!0e100f
+!646f5b
 URxvt*color0: #0e100f
 URxvt*color1: #646f5b
 URxvt*color2: #9dad9c
 URxvt*color3: #8b99b5
 
-#URxvt*background: #08090A
-#URxvt*foreground: #4b555e
-#URxvt*color0: #08090A
-#URxvt*color1: #4b5261
-#URxvt*color2: #DFDFDF
-#URxvt*color3: #8b99b5
+!URxvt*background: #08090A
+!URxvt*foreground: #4b555e
+!URxvt*color0: #08090A
+!URxvt*color1: #4b5261
+!URxvt*color2: #DFDFDF
+!URxvt*color3: #8b99b5
 
 URxvt*fading: 10
 URxvt*tintColor: #FCFCFC
@@ -28,12 +28,12 @@ URxvt*cursorBlink: False
 URxvt*cutchars: `'",;@&*=|?()<>[]{}
 
 URxvt*scrollstyle: plain
-URxvt*mouseWheelScrollPage: False
-URxvt*jumpScroll: False
-URxvt*skipScroll: False
-URxvt*scrollBar: False
-URxvt*scrollTtyOutput: False
-URxvt*secondaryScroll: False
+URxvt*mouseWheelScrollPage: True
+URxvt*jumpScroll: True
+URxvt*skipScroll: True
+URxvt*scrollBar: True
+URxvt*scrollTtyOutput: True
+URxvt*secondaryScroll: True
 
 URxvt.perl-ext-common: default,tabbed
 URxvt.tabbed.tabbar-fg: 1
@@ -45,15 +45,17 @@ URxvt*urlLauncher: opera
 URxvt*saveLines:: 32767
 
 URxvt.depth: 32
+*visualBell: True
 
-# from archwiki
-#URxvt.buffered:         true
-#URxvt.background:       gray
-#URxvt.foreground:       white
-#URxvt.cursorColor:      cyan
-#URxvt.underlineColor:   yellow
-##URxvt.font:             xft:Terminus:pixelsize=10:antialias=false
-##URxvt.boldFont:         xft:Terminus:bold:pixelsize=10:antialias=false
-#URxvt.perl-ext-common:  default,tabbed
-#URxvt.title:            ArchWiki Example
-#
+
+! from archwiki
+!URxvt.buffered:         true
+!URxvt.background:       gray
+!URxvt.foreground:       white
+!URxvt.cursorColor:      cyan
+!URxvt.underlineColor:   yellow
+!#URxvt.font:             xft:Terminus:pixelsize=10:antialias=false
+!#URxvt.boldFont:         xft:Terminus:bold:pixelsize=10:antialias=false
+!URxvt.perl-ext-common:  default,tabbed
+!URxvt.title:            ArchWiki Example
+!
