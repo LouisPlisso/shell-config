@@ -44,7 +44,7 @@ sudo /bin/cp -b --suffix='.old' dhclient.conf /etc/dhcp3/dhclient.conf
 echo "Configure netapp"
 if /bin/chmod 000 smbcredentials; then
 	sudo /bin/rm /root/.smbcredentials
-	sudo /bin/ln -s smbcredentials /root/.smbcredentials
+	sudo /bin//bin/ln -s smbcredentials /root/.smbcredentials
 fi
 /bin/grep netapp /etc/fstab > /dev/null && echo "netapp already included in fstab" || sudo sh -c '/bin/cat fstab >> /etc/fstab'
 
@@ -53,6 +53,14 @@ sudo /bin/cp -b --suffix='.old' printers.conf /etc/cups/printers.conf
 
 echo "Configure ktouch"
 [ -e /usr/share/kde4/apps/ktouch/ ] && sudo /bin/cp -b --suffix='.old' dvorak-fr-1.ktouch.xml dvorak-fr-2.ktouch.xml /usr/share/kde4/apps/ktouch/
+
+echo "Configure latex"
+LATEX_DIR=/usr/share/texmf/tex/latex/
+if [ -e $LATEX_DIR ]; then
+    [ -h $LATEX_DIR ] && sudo /bin/rm $LATEX_DIR
+    [ -f ${LATEX_DIR} ] && sudo /bin/mv ${LATEX_DIR} ${LATEX_DIR}.old 
+    sudo /bin/ln -s ${INSTALL_DIR}/latex ${LATEX_DIR}/my_sty
+fi
 
 #TODO: xorg?
 
@@ -67,14 +75,14 @@ for file in profile xmodmaprc xmodmaprc xsessionrc inputrc vimrc gvimrc; do
 	TARGET=${HOME}/.$file 
 	[ -h ${TARGET} ] && /bin/rm ${TARGET}
 	[ -f ${TARGET} ] && /bin/mv ${TARGET} ${TARGET}.old || /bin/rm $TARGET 2> /dev/null
-	/bin/ln -s ${INSTALL_DIR}/$file ${TARGET}
+	/bin//bin/ln -s ${INSTALL_DIR}/$file ${TARGET}
 done
 
 echo "Configure awesome"
 AWESOME_DIR=${HOME}/.config/awesome 
 [ -h $AWESOME_DIR ] && /bin/rm $AWESOME_DIR
 [ -f ${AWESOME_DIR} ] && /bin/mv ${AWESOME_DIR} ${AWESOME_DIR}.old || /bin/rm $AWESOME_DIR 2> /dev/null
-ln -s ${INSTALL_DIR}/awesome $AWESOME_DIR 
+/bin/ln -s ${INSTALL_DIR}/awesome $AWESOME_DIR 
 for file in awesome/rc.lua awesome/theme.lua; do
     /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" ${file}.template > $file
 done

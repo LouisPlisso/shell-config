@@ -50,6 +50,7 @@
 "       Makes it easy to switch between buffers:
 "           info -> :help bufExplorer
 "
+" NO YANKRING
 "     > yankring.vim - http://www.vim.org/scripts/script.php?script_id=1234
 "       Emacs's killring, useful when using the clipboard:
 "           info -> :help yankring
@@ -94,7 +95,7 @@ let g:mapleader = ","
 nmap <leader>w :w!<cr>
 
 " Fast editing of the .vimrc
-map <leader>e :e! ~/s-alois/vim_runtime/vimrc<cr>
+map <leader>e :e! ~/.vimrc<cr>
 
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/s-alois/vim_runtime/vimrc

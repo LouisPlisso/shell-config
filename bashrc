@@ -116,8 +116,9 @@ export EDITOR=vi
 set -o vi
 
 alias pysh='ipython -p pysh'
-#alias print ‘lpr \!* -Pps5′
-
+#alias print 'lpr \!* -Pps5'
+alias saptu='sudo aptitude update'
+alias saptdu='sudo aptitude dist-upgrade'
 
 export PATH=$PATH:/sbin:${MY_CONFIG_DIR}/bin
 export PYTHONPATH=~/workspace/spydump/tools
