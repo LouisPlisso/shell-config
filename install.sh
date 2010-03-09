@@ -71,7 +71,7 @@ echo "Install config files"
 [ -h ${HOME}/.bashrc ] && /bin/rm ${HOME}/.bashrc
 [ -f ${HOME}/.bashrc ] && /bin/mv ${HOME}/.bashrc ${HOME}/.bashrc.old
 /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" bashrc.template > ${HOME}/.bashrc
-for file in profile xmodmaprc xmodmaprc xsessionrc inputrc vimrc gvimrc; do
+for file in profile xmodmaprc xmodmaprc xsessionrc inputrc vimrc gvimrc Xdefaults; do
 	TARGET=${HOME}/.$file 
 	[ -h ${TARGET} ] && /bin/rm ${TARGET}
 	[ -f ${TARGET} ] && /bin/mv ${TARGET} ${TARGET}.old || /bin/rm $TARGET 2> /dev/null
