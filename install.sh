@@ -44,7 +44,7 @@ sudo /bin/cp -b --suffix='.old' dhclient.conf /etc/dhcp3/dhclient.conf
 echo "Configure netapp"
 if /bin/chmod 000 smbcredentials; then
 	sudo /bin/rm /root/.smbcredentials
-	sudo /bin//bin/ln -s smbcredentials /root/.smbcredentials
+	sudo /bin/ln -s ${INSTALL_DIR}/smbcredentials /root/.smbcredentials
 fi
 /bin/grep netapp /etc/fstab > /dev/null && echo "netapp already included in fstab" || sudo sh -c '/bin/cat fstab >> /etc/fstab'
 
@@ -71,21 +71,24 @@ echo "Install config files"
 [ -h ${HOME}/.bashrc ] && /bin/rm ${HOME}/.bashrc
 [ -f ${HOME}/.bashrc ] && /bin/mv ${HOME}/.bashrc ${HOME}/.bashrc.old
 /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" bashrc.template > ${HOME}/.bashrc
-for file in profile xmodmaprc xmodmaprc xsessionrc inputrc vimrc gvimrc Xdefaults; do
+for file in profile xsession inputrc vimrc gvimrc Xdefaults xmonad; do
 	TARGET=${HOME}/.$file 
+    # if there is already a link, remove it
 	[ -h ${TARGET} ] && /bin/rm ${TARGET}
+    # if there is a file (not link), backup it
 	[ -f ${TARGET} ] && /bin/mv ${TARGET} ${TARGET}.old || /bin/rm $TARGET 2> /dev/null
-	/bin//bin/ln -s ${INSTALL_DIR}/$file ${TARGET}
+	/bin/ln -s ${INSTALL_DIR}/$file ${TARGET}
 done
 
-echo "Configure awesome"
-AWESOME_DIR=${HOME}/.config/awesome 
-[ -h $AWESOME_DIR ] && /bin/rm $AWESOME_DIR
-[ -f ${AWESOME_DIR} ] && /bin/mv ${AWESOME_DIR} ${AWESOME_DIR}.old || /bin/rm $AWESOME_DIR 2> /dev/null
-/bin/ln -s ${INSTALL_DIR}/awesome $AWESOME_DIR 
-for file in awesome/rc.lua awesome/theme.lua; do
-    /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" ${file}.template > $file
-done
+echo "Configure xmonad"
+/bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" xmonad/xmonad.hs.template > xmonad/xmonad.hs
+#AWESOME_DIR=${HOME}/.config/awesome 
+#[ -h $AWESOME_DIR ] && /bin/rm $AWESOME_DIR
+#[ -f ${AWESOME_DIR} ] && /bin/mv ${AWESOME_DIR} ${AWESOME_DIR}.old || /bin/rm $AWESOME_DIR 2> /dev/null
+#/bin/ln -s ${INSTALL_DIR}/awesome $AWESOME_DIR 
+#for file in awesome/rc.lua awesome/theme.lua; do
+#    /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" ${file}.template > $file
+#done
 
 # to restore directory
 #popd  > /dev/null

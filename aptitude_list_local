@@ -13,3 +13,20 @@ xmonad
 dmenu dzen
 dmenu dzen2
 texlive-science texlive-formats-extra
+i3
+# wicd
+burn
+xmobar
+bzr
+git-cvs
+libpng12-dev libcurl3-dev libspeex-dev libming-dev libming-util mtasc haxe swfmill swftools csound zlib1g-dev libfreetype6-dev libfontconfig1-dev dejagnu qt4-dev-tools libjpeg-dev libgif-dev libgtk2.0-dev libpango1.0-dev libatk1.0-dev libgstreamer0.10-dev libsdl1.2-dev libagg-dev libboost-dev libboost-thread-dev
+libgstreamer-plugins-base0.10-dev
+glxgears
+mesa-utils
+glxgears
+xlock
+xscreensaver-gl
+trayer
+xpmroot
+# fvwm1
+fvwm

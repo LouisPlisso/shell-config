@@ -1,0 +1,10 @@
+module Main (main) where
+ 
+import XMonad
+import XMonad.Config.Azerty
+import XMonad.Config.Arossato (arossatoConfig)
+ 
+main :: IO ()
+main = xmonad =<< arossatoConfig
+
+-- import DvorakFr

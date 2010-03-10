@@ -1,3 +1,0 @@
-xmodmap ~/.xmodmaprc
-
-setxkbmap fr -variant dvorak_prog

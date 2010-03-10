@@ -113,22 +113,23 @@ fi
 
 export LESS="-R"
 export EDITOR=vi
-set -o vi
+# test vs inputrc
+#set -o vi
 
 alias pysh='ipython -p pysh'
 #alias print 'lpr \!* -Pps5'
 alias saptu='sudo aptitude update'
 alias saptdu='sudo aptitude dist-upgrade'
-
-export PATH=$PATH:/sbin:${MY_CONFIG_DIR}/bin
 export PYTHONPATH=~/workspace/spydump/tools
 
 # scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
 [ -d $HOME/.scripts_recipes/bin ] && export PATH=$PATH:$HOME/.scripts_recipes/bin
 
-sudo loadkeys /usr/share/keymaps/i386/dvorak/dvorak-fr.kmap.gz
+# sudo loadkeys /usr/share/keymaps/i386/dvorak/dvorak-fr.kmap.gz
 
-setxkbmap fr -variant dvorak_prog
+# warning: xkbmap resets xmodmap
+#setxkbmap fr -variant dvorak_prog
+#setxkbmap us
 
 die() {
     result=$1
@@ -138,6 +139,10 @@ die() {
 }
 
 [ -d $MY_CONFIG_DIR ] || die 1 "must have variable MY_CONFIG_DIR set"
+
+alias cdc='cd $MY_CONFIG_DIR'
+
+export PATH=$PATH:/sbin:${MY_CONFIG_DIR}/bin
 
 # load FTRD config
 . ${MY_CONFIG_DIR}/ftrd_config
