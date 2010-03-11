@@ -35,13 +35,14 @@ URxvt*cutchars: `'",;@&*=|?()<>[]{}
 !!URxvt*scrollTtyOutput: True
 !!URxvt*secondaryScroll: True
 
-URxvt.perl-ext-common: default,tabbed
+URxvt.perl-ext-common: default,tabbed,matcher
 URxvt.tabbed.tabbar-fg: 1
 URxvt.tabbed.tabbar-bg: 0
 URxvt.tabbed.tab-fg: 0
 URxvt.tabbed.tab-bg: 1
 
 URxvt*urlLauncher: iceweasel
+URxvt.colorUL: #86a2be
 rxvt*scrollBar_right:true
 rxvt*transpscrollbar:true
 rxvt*saveLines:: 32767

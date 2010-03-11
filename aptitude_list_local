@@ -36,3 +36,10 @@ pidgin
 pidgin-sipe pidgin-plugin-pack pidgin-skype
 xscreensaver-data-extra
 xscreensaver-gl-extra
+rtmpdump
+xclip
+xpdf-utils
+libpoppler-glib-dev libpoppler-dev
+gcc-doc
+docbook docbook2x docbook-utils docbook-xml docbook-xsl texinfo xsltproc
+libconfig++-dev
