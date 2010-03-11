@@ -13,14 +13,28 @@ import qualified Data.Map as M
 myManageHook = composeAll
     [ className =? "Gimp"      --> doFloat]
 
+-- workspaces
+-- myWorkspaces = ["web", "editor", "terms"] ++ (miscs 5) ++ ["fullscreen", "im"]
+--     where miscs = map (("misc" ++) . show) . (flip take) [1..]
+-- isFullscreen = (== "fullscreen")
+
+-- myKeys = M.fromList $
+--     [ ((0, k), windows $ W.greedyView i)
+--     | (i, k) <- zip myWorkspaces workspaceKeys
+--     ] 
+--     where workspaceKeys = [xK_F1 .. xK_F10]
+
+ffConfig = defaultConfig { keys = \c -> ffKeys c `M.union` keys defaultConfig c }
+
+ffKeys conf@(XConfig {modMask = modm}) = M.fromList $
+    [((m .|. modm, k), windows $ f i)
+        | (i, k) <- zip (workspaces conf) workspaceKeys,
+          (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]     
+          where workspaceKeys = [xK_F1 .. xK_F10]
+
 main = do
-    xmproc <- spawnPipe "xmobar /home/louis/tomo_lp/s-alois/xmonad/xmobarrc"
-    -- -B white -a right -F blue -t '%memory%' -c '[Run Memory [\"-t\",\"Mem: <usedratio>%\"] 10, Run Swap [] 10]"
-    -- i3status | xmobar -o -t '%StdinReader%' -c \"[Run StdinReader]\" "
-    -- xmobar /home/louis/tomo_lp/s-alois/xmonad/xmobarrc"
-    -- -B white -a right -F blue -t '%LIPB%' -c '[Run Weather \"LIPB\" [] 36000]'"
-    -- "/usr/bin/xmobar /home/louis/tomo_lp/s-alois/xmonad/xmobarrc"
-    xmonad $ defaultConfig
+    xmproc <- spawnPipe "xmobar /home/louis/tomo_lp/s-alois/xmonad/xmonad/xmobarrc"
+    xmonad $ ffConfig
         { manageHook = manageDocks <+> myManageHook 
             <+> manageHook defaultConfig
             -- make sure to include myManageHook definition from above
@@ -35,3 +49,9 @@ main = do
         ]
 
 
+-- xmobar exemples
+-- -B white -a right -F blue -t '%memory%' -c '[Run Memory [\"-t\",\"Mem: <usedratio>%\"] 10, Run Swap [] 10]"
+-- i3status | xmobar -o -t '%StdinReader%' -c \"[Run StdinReader]\" "
+-- xmobar /home/louis/tomo_lp/s-alois/xmonad/xmobarrc"
+-- -B white -a right -F blue -t '%LIPB%' -c '[Run Weather \"LIPB\" [] 36000]'"
+-- "/usr/bin/xmobar /home/louis/tomo_lp/s-alois/xmonad/xmobarrc"

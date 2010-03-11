@@ -113,7 +113,8 @@ fi
 
 export LESS="-R"
 export EDITOR=vi
-# test vs inputrc
+
+# done by inputrc
 #set -o vi
 
 alias pysh='ipython -p pysh'
@@ -125,8 +126,8 @@ export PYTHONPATH=~/workspace/spydump/tools
 # scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
 [ -d $HOME/.scripts_recipes/bin ] && export PATH=$PATH:$HOME/.scripts_recipes/bin
 
+# done in profile and xsessionrc
 # sudo loadkeys /usr/share/keymaps/i386/dvorak/dvorak-fr.kmap.gz
-
 # warning: xkbmap resets xmodmap
 #setxkbmap fr -variant dvorak_prog
 #setxkbmap us

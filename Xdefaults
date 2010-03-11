@@ -3,10 +3,10 @@
 !##############
 !## urxvt ###
 !##############
-URxvt*font: xft:DejaVu Sans Mono:size=7:VL Gothic:size=7:antialias=true:hinting=true
-URxvt*boldFont: xft:DejaVu Sans Mono:size=7:VL Gothic:size=7:antialias=true:bold:hinting=true
+URxvt*font: xft:DejaVu Sans Mono:size=9:VL Gothic:size=9:antialias=true:hinting=true
+URxvt*boldFont: xft:DejaVu Sans Mono:size=9:VL Gothic:size=9:antialias=true:bold:hinting=true
 
-URxvt*background: #555244
+URxvt*background: #555240
 URxvt*foreground: #fffff0
 URxvt*color0: #0e100f
 URxvt*color1: #646f5b

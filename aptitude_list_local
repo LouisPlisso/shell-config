@@ -30,3 +30,9 @@ trayer
 xpmroot
 # fvwm1
 fvwm
+gstreamer-tools
+wicd
+pidgin
+pidgin-sipe pidgin-plugin-pack pidgin-skype
+xscreensaver-data-extra
+xscreensaver-gl-extra
