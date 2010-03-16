@@ -110,6 +110,13 @@ fi
 ############################################################################
 
 
+shopt -s expand_aliases
+shopt -s cdspell
+shopt -s dotglob
+shopt -s nocaseglob
+shopt -s promptvars
+shopt -u globstar
+shopt -u huponexit
 
 export LESS="-R"
 export EDITOR=vi
@@ -117,6 +124,8 @@ export EDITOR=vi
 # done by inputrc
 #set -o vi
 
+
+alias 'cd..'='cd ..'
 alias pysh='ipython -p pysh'
 #alias print 'lpr \!* -Pps5'
 alias saptu='sudo aptitude update'
@@ -154,7 +163,7 @@ export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
 
 # keep trace of installed packages (even tentatives)
 sapti() {
-        if sudo aptitude install $@
+    if sudo aptitude install $@
 	then
 		# warning: will also store uninstalled packages
         	echo $@ >> ${MY_CONFIG_DIR}/aptitude_list_local
@@ -162,7 +171,7 @@ sapti() {
  }
 
 saptr() {
-        if sudo aptitude remove $@
+    if sudo aptitude remove $@
 	then
         	for package in $*
         	do

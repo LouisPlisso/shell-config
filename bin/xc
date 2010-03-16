@@ -1,0 +1,11 @@
+#!/bin/bash
+
+la
+
+echo "Paste to clipboard: $*"
+
+source ~/.bashrc
+
+la
+
+$* | tee >(xclip -i)

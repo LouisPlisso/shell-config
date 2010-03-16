@@ -41,6 +41,9 @@ echo "Installing selected packages"
 echo "Configure DHCP"
 sudo /bin/cp -b --suffix='.old' dhclient.conf /etc/dhcp3/dhclient.conf
 
+echo "Configure xorg"
+sudo /bin/cp -b --suffix='.old' xorg.conf /etc/X11/xorg.conf
+
 echo "Configure netapp"
 if /bin/chmod 000 smbcredentials; then
 	sudo /bin/rm /root/.smbcredentials
@@ -62,7 +65,9 @@ if [ -e $LATEX_DIR ]; then
     sudo /bin/ln -s ${INSTALL_DIR}/latex ${LATEX_DIR}/my_sty
 fi
 
-#TODO: xorg?
+echo "Configure python"
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.5 10
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.6 20
 
 echo "Administrative part finished: no user with no passwd for all cmds"
 sudo /bin/sed -i "/^[^#].*ALL=NOPASSWD: ALL/s/^/#/" /etc/sudoers
