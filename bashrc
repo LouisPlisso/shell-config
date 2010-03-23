@@ -124,6 +124,12 @@ export EDITOR=vi
 # done by inputrc
 #set -o vi
 
+# ^p check for partial match in history
+bind -m vi-insert "\C-p":dynamic-complete-history
+# ^n cycle through the list of partial matches
+bind -m vi-insert "\C-n":menu-complete
+# ^l clear screen
+bind -m vi-insert "\C-l":clear-screen
 
 alias 'cd..'='cd ..'
 alias pysh='ipython -p pysh'
@@ -133,7 +139,12 @@ alias saptdu='sudo aptitude dist-upgrade'
 export PYTHONPATH=~/workspace/spydump/tools
 
 # scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
-[ -d $HOME/.scripts_recipes/bin ] && export PATH=$PATH:$HOME/.scripts_recipes/bin
+SCRIPT_RECIPES=$HOME/.scripts_recipes/bin
+[ -d $SCRIPT_RECIPES ] && export PATH=$PATH:$SCRIPT_RECIPES
+
+# quicksnips: http://quicksnips.org/
+QUICKSNIPS=$HOME/quicksnips/bin
+[ -d $QUICKSNIPS ] && export PATH=$PATH:$QUICKSNIPS
 
 # done in profile and xsessionrc
 # sudo loadkeys /usr/share/keymaps/i386/dvorak/dvorak-fr.kmap.gz

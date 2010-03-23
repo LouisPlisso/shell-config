@@ -10,3 +10,6 @@ add Lock = Caps_Lock
 keycode 64 = Alt_L
 keycode 108 = Meta_L
 
+! Swap ins and delete: useful on typematrix keyboard
+keycode 118 = Delete
+keycode 119 = Insert

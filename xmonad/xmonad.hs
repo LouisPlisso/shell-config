@@ -8,6 +8,16 @@ import System.IO
 import qualified XMonad.StackSet as W
 import qualified Data.Map as M
 
+import XMonad.Util.Paste
+import qualified System.IO.UTF8
+
+
+import XMonad.Util.XSelection
+
+
+-- | Whether focus follows the mouse pointer.
+-- focusFollowsMouse :: Bool
+-- focusFollowsMouse = False
 
 -- TODO ipython floats
 myManageHook = composeAll
@@ -40,6 +50,7 @@ main = do
             <+> manageHook defaultConfig
             -- make sure to include myManageHook definition from above
         , layoutHook = avoidStruts  $  layoutHook defaultConfig
+        , XMonad.focusFollowsMouse  = False
         , logHook = dynamicLogWithPP $ xmobarPP
             { ppOutput = hPutStrLn xmproc
             , ppTitle = xmobarColor "green" "" . shorten 50
@@ -47,6 +58,13 @@ main = do
         , terminal           = "urxvt"
         } `additionalKeys`
         [ ((mod1Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock") 
+        , ((mod1Mask, xK_s), spawn "exe=`quicksnips` && eval \"exec $exe\"")
+        , ((mod1Mask, xK_Return), spawn "urxvt")
+        , ((mod1Mask, xK_f), spawn "firefox")
+        -- search how to use: http://www.haskell.org/haskellwiki/Xmonad/Config_archive/Mntnoe%27s_xmonad.hs
+        , ((mod1Mask, xK_c), spawn "hxsel")
+        , ((0, xK_F8), pasteSelection)
+        -- , ((mod1Mask .|. shiftMask, xK_b), getSelection )
         ]
 
 

@@ -5,7 +5,7 @@ autocmd!
 fun! MySys()
    return "$1"
 endfun
-set runtimepath=$MY_CONFIG_DIR/vim,$MY_CONFIG_DIR/vim_runtime,$MY_CONFIG_DIR/vim_runtime/after,$VIMRUNTIME
+set runtimepath=$MY_CONFIG_DIR/vim,$VIMRUNTIME,$MY_CONFIG_DIR/vim_runtime,$MY_CONFIG_DIR/vim_runtime/after,$VIMRUNTIME
 
 source $MY_CONFIG_DIR/vim_runtime/vimrc
 helptags $MY_CONFIG_DIR/vim_runtime/doc

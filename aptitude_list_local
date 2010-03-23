@@ -85,3 +85,22 @@ libXpm-dev libXt-dev
 # -t experimental cairo
 # -t experimental libcairo-dev
 # -t experimental libcairo2-dev
+xdotool
+haskell98-tutorial
+darcs
+# libghc6-parsec-dev
+libghc6-parsec3-dev
+# libghc6-parsec2-dev
+libghc6-stm-dev
+pcaputils
+bash-builtins bash-doc
+ia32-libs-gtk
+nspluginwrapper
+djvu-viewer
+djview
+tcpdump
+zsh zsh-doc
+xsel
+console-keymaps
+cabal-install
+ffmpeg

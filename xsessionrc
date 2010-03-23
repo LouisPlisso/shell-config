@@ -2,12 +2,12 @@
  
 # Load resources
   
-xrdb -merge .Xresources
+#xrdb -merge .Xresources
    
 # Set up an icon tray
     
 trayer --edge top --align right --SetDockType true --SetPartialStrut true \
-           --expand true --width 10 --transparent true --tint 0x191970 --height 10 &
+    --expand true --width 10 --transparent true --height 8 --tint 0x191970 & #
       
 # Set the background color
 xsetroot -solid midnightblue
@@ -26,7 +26,8 @@ davmail &
 xscreensaver -no-splash &
 
 # keymaps and key config
-setxkbmap fr -variant dvorak_prog
-
+#setxkbmap fr -variant dvorak_prog
 # warning: xkbmap resets xmodmap
-xmodmap $MY_CONFIG_DIR/xmodmaprc
+#xmodmap $MY_CONFIG_DIR/xmodmaprc
+# all is done with xkbcomp
+xkbcomp  -w 0 -R/usr/share/X11/xkb/  $MY_CONFIG_DIR/keymap  "$DISPLAY" 

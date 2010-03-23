@@ -79,7 +79,7 @@ for template in bashrc.template xsessionrc.template ; do
     [ -f ${HOME}/.file ] && /bin/mv ${HOME}/.file ${HOME}/.file.old
     /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" ${template} > ${HOME}/.${file}
 done
-for file in profile inputrc vimrc gvimrc Xdefaults xmonad xmobarrc; do
+for file in profile inputrc vimrc gvimrc Xdefaults xmonad xmobarrc cabal; do
 	TARGET=${HOME}/.$file 
     # if there is already a link, remove it
 	[ -h ${TARGET} ] && /bin/rm ${TARGET}

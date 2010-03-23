@@ -1,0 +1,25 @@
+// from: http://wiki.mandriva.com/fr/Personnaliser_le_clavier#Les_noms_symboliques_des_touches_et_les_keysyms
+// use with: xkbcomp  -w 0 -R/usr/share/X11/xkb/  $MY_CONFIG_DIR/keymap  "$DISPLAY" 
+// recompile with: xkbcomp -xkb  $DISPLAY
+
+xkb_keymap "my_dvorak_fr" {
+	xkb_keycodes  { include "evdev+aliases(azerty)"
+        // Swap caps lock and escape: works with shiftlock option
+        <ESC>  = 66;
+        <CAPS> = 9;
+    };
+	xkb_types     { include "complete"	};
+    xkb_compat      { include "complete"
+        indicator "Caps Lock" {
+            whichModState= Locked;
+            modifiers= Shift;
+        };
+    };
+
+    xkb_symbols   { include "pc+fr(dvorak_prog)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)"
+        key <DELE> { [ Delete, Insert ] };
+        // Alt-Gr as Alt
+        key <RALT> { [ Meta_L ] };
+    };
+    xkb_geometry  { include "pc(pc105)"	};
+};
