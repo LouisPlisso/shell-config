@@ -16,10 +16,99 @@ xkb_keymap "my_dvorak_fr" {
         };
     };
 
-    xkb_symbols   { include "pc+fr(dvorak_prog)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)"
-        key <DELE> { [ Delete, Insert ] };
+    xkb_symbols   { include "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+compose(menu)+compose(lwin)"
+        // touche compose as super_L for "* Xbuffer in vi
+        key <TLDE> { [ Multi_key, Multi_key   ] };
+        // insert as Shift+Delete
+        key <DELE> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ Delete, Insert ] };
         // Alt-Gr as Alt
         key <RALT> { [ Meta_L ] };
+        key <CAPS> {    [   Shift_Lock      ]   };
+        modifier_map Shift { Shift_Lock };
+        key <LTSH> {
+            type = "FOUR_LEVEL_SEMIALPHABETIC",
+                 actions [Group1] = [
+                     SetMods(modifiers=Shift),
+                 SetMods(modifiers=Shift+Lock,clearLocks)
+                     ]
+        };
+        key <RTSH> {
+            type = "ALPHABETIC",
+                 actions [Group1] = [
+                     SetMods(modifiers=Shift),
+                 SetMods(modifiers=Shift+Lock,clearLocks)
+                     ]
+        };
+        //include "fr(basic)"
+
+        name[Group1]="France - Dvorak";
+
+        // 1ère rangée de touches alphanumériques (rangée sous les touches de fonctions)
+        key <TLDE> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      underscore,        asterisk                                   ] };
+        key <AE01> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [           equal,               1,         onehalf,    onesuperior  ] };
+        key <AE02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [           slash,               2,       plusminus,    twosuperior  ] };
+        key <AE03> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [           minus,               3,   threequarters,    threesuperior] };
+        key <AE04> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [            plus,               4,      onequarter,    plusminus    ] };
+        key <AE05> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [       backslash,               5,   threequarters                  ] };
+        key <AE06> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ dead_circumflex,               6,   	    multiply,	 multiply     ] };
+        key <AE07> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [       parenleft,               7                                   ] };
+        // la touche morte "accent grave" se comporte par défaut comme le modificateur de niveau 3,
+        // c'est-à-dire comme la touche AltGr (ou Alt droit) sur un clavier Azerty,
+        // à la différence près qu'elle est retenue (ou "collante") le temps d'une autre frappe : 
+        // pour obtenir le symbole désiré, il suffit d'appuyer D'ABORD sur cette touche PUIS sur une autre
+        // et non de maintenir la touche enfoncée comme avec AltGr sur un clavier Azerty
+        key <AE08> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ISO_Level3_Latch,               8,           grave                  ] }; 
+        key <AE09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      parenright,               9                                   ] };
+        key <AE10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [        quotedbl,               0                                   ] };
+        key <AE11> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [     bracketleft,       braceleft                                   ] };
+        key <AE12> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [    bracketright,      braceright                                   ] };
+
+        // 2nde rangée de touches
+        key <AD01> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [           colon,        question,       0x1002026,  questiondown   ] };
+        key <AD02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      apostrophe,            less,      dead_acute                  ] };
+        key <AD03> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [          eacute,         greater,          Eacute                  ] };
+        key <AD04> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               g,               G,        EuroSign, yen             ] };
+        key <AD05> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [          period,          exclam,  periodcentered, exclamdown      ] };
+        key <AD06> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               h,               H                                   ] };
+        key <AD07> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               v,               V                                   ] };
+        key <AD08> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               c,               C,        ccedilla,        Ccedilla ] };
+        key <AD09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               m,               M,              mu                  ] };
+        key <AD10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               k,               K,            cent                  ] };
+        key <AD11> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               z,               Z                                   ] };
+        key <AD12> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      asciitilde,     dead_diaeresis,     dead_tilde,     dead_acute] };
+
+        // 3ème rangée de touches
+        key <AC01> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               o,               O,          ograve,          Ograve ] };
+        key <AC02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               a,               A,          agrave,          Agrave ] };
+        key <AC03> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               u,               U,          ugrave,          Ugrave ] };
+        key <AC04> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               e,               E,          egrave,          Egrave ] };
+        key <AC05> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               b,               B                                   ] };
+        key <AC06> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               f,               F                                   ] };
+        key <AC07> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               s,               S,   guillemotleft,          ssharp ] };
+        key <AC08> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               t,               T                                   ] };
+        key <AC09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               n,               N,  guillemotright                  ] };
+        key <AC10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               d,               D,          degree                  ] };
+        key <AC11> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               w,               W                                   ] };
+        // Swap dollar and numbersign as comparend to dvorak_prog
+        key <BKSL> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [          dollar,	   numbersign,          copyright,	   registered ] };
+
+        // 4ème rangée de touches
+        key <LSGT> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [         percent,       ampersand,             bar,       brokenbar ] };
+        key <AB01> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [       semicolon,       	bar,       ampersand,         percent ] };
+        key <AB02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               q,               Q,              oe,              OE ] };
+        key <AB03> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [           comma,              at,              ae,              AE ] };
+        key <AB04> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               i,               I,          igrave,          Igrave ] };
+        key <AB05> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               y,               Y                                   ] };
+        key <AB06> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               x,               X                                   ] };
+        key <AB07> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               r,               R,          degree                  ] };
+        key <AB08> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               l,               L                                   ] };
+        key <AB09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               p,               P,         section,       paragraph ] };
+        key <AB10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               j,               J                                   ] };   
+
+        key <KPDL>  { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      KP_Delete,           comma,       KP_Delete,      KP_Decimal ] };
     };
     xkb_geometry  { include "pc(pc105)"	};
 };
+
+
+

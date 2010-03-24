@@ -104,3 +104,9 @@ xsel
 console-keymaps
 cabal-install
 ffmpeg
+ffmpeg-dbg
+python-setuptools
+python2.6-setuptools
+apvlv
+firmware-iwlwifi
+wicd-curses

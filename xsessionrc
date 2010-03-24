@@ -19,6 +19,8 @@ xpmroot $MY_CONFIG_DIR/xmonad/desktop-background.png
          
 # gajim &
 
+wicd-client &
+
 pidgin &
 
 davmail &
