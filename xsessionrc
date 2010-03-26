@@ -1,5 +1,12 @@
 #!/bin/sh
- 
+
+# keymaps and key config
+#setxkbmap fr -variant dvorak_prog
+# warning: xkbmap resets xmodmap
+#xmodmap $MY_CONFIG_DIR/xmodmaprc
+# all is done with xkbcomp
+xkbcomp  -w 0 -R/usr/share/X11/xkb/  $MY_CONFIG_DIR/keymap "$DISPLAY" 
+
 # Load resources
   
 #xrdb -merge .Xresources
@@ -27,9 +34,3 @@ davmail &
           
 xscreensaver -no-splash &
 
-# keymaps and key config
-#setxkbmap fr -variant dvorak_prog
-# warning: xkbmap resets xmodmap
-#xmodmap $MY_CONFIG_DIR/xmodmaprc
-# all is done with xkbcomp
-xkbcomp  -w 0 -R/usr/share/X11/xkb/  $MY_CONFIG_DIR/keymap  "$DISPLAY" 

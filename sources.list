@@ -12,6 +12,13 @@ deb http://ftp.fr.debian.org/debian/ squeeze-proposed-updates main contrib non-f
 deb-src http://security.debian.org/ squeeze/updates main contrib non-free 
 deb-src http://ftp.fr.debian.org/debian/ squeeze-proposed-updates main contrib non-free 
 
+#### Experimental repos
+#deb http://ftp.fr.debian.org/debian/ experimental main contrib non-free 
+
+#### Lenny repos
+deb http://ftp.fr.debian.org/debian/ lenny main #contrib non-free 
+deb http://ftp.fr.debian.org/debian/ lenny main/updates #contrib non-free 
+
 ##############################################################
 ##################### UNOFFICIAL  REPOS ######################
 ##############################################################
@@ -29,9 +36,5 @@ deb http://www.debian-multimedia.org/ squeeze main
 
 #### Google Linux Software Repositories - http://www.google.com
 ## Run this command: wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && apt-get update  
-deb http://dl.google.com/linux/deb/ stable main non-free
-
-#### Google Linux Software Repositories (testing) - http://www.google.com
-## Run this command: wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && apt-get update  
-# deb http://dl.google.com/linux/deb/ testing non-free
+deb http://dl.google.com/linux/deb/ stable main #non-free
 

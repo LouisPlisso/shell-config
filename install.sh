@@ -15,10 +15,6 @@ INSTALL_DIR=`/bin/pwd`;
 printf "First sets %s keyboard layout\n" $variant
 setxkbmap fr -variant $variant
 
-# sets my keyboard config
-xkbcomp  -w 0 -R/usr/share/X11/xkb/  $MY_CONFIG_DIR/keymap  "$DISPLAY" 
-# set it as default
-xkbcomp -xkb  $DISPLAY
 
 echo "Install current user as sudoer"
 /bin/sed "s/\<__USER__\>/${USER}/g" sudoers.template > sudoers.local
@@ -28,9 +24,13 @@ echo -n "Root passwd needed. "
 sudo /bin/sh -c 'grep "EDITOR=vi" /root/.bashrc > /dev/null || echo "EDITOR=vi" >> /root/.bashrc'
 
 # alternative method
-#echo "Sets programmer dvorak-fr keyboard layout"
-#sudo /bin/cp -b --suffix='.old' fr /usr/share/X11/xkb/symbols/fr
-#setxkbmap fr -variant dvorak_prog
+echo "Sets programmer dvorak-fr keyboard layout"
+sudo /bin/cp -b --suffix='.old' fr /usr/share/X11/xkb/symbols/fr
+setxkbmap fr -variant dvorak_prog
+# sets my keyboard config
+xkbcomp  -w 0 -R/usr/share/X11/xkb/  ${INSTALL_DIR}/keymap  "$DISPLAY" 
+# set it as default
+xkbcomp -xkb $DISPLAY
 
 echo "Update sources.list"
 sudo /bin/cp -b --suffix='.old' sources.list /etc/apt/sources.list
@@ -85,7 +85,7 @@ for template in bashrc.template xsessionrc.template ; do
     [ -f ${HOME}/.file ] && /bin/mv ${HOME}/.file ${HOME}/.file.old
     /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" ${template} > ${HOME}/.${file}
 done
-for file in profile inputrc vimrc gvimrc Xdefaults xmonad xmobarrc cabal Xcompose; do
+for file in profile inputrc vimrc gvimrc Xdefaults xmonad xmobarrc cabal XCompose; do
 	TARGET=${HOME}/.$file 
     # if there is already a link, remove it
 	[ -h ${TARGET} ] && /bin/rm ${TARGET}

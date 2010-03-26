@@ -1068,7 +1068,7 @@ xkb_compatibility "complete" {
     };
 };
 
-xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+compose(menu)+compose(lwin)" {
+xkb_symbols "pc+fr(basic)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+compose(menu)+compose(lwin)" {
 
     name[group1]="France - Dvorak";
 
@@ -1091,7 +1091,7 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AE05> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [       backslash,               5,   threequarters,        NoSymbol ]
+        symbols[Group1]= [       backslash,               5,   threequarters,    threeeighths ]
     };
     key <AE06> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1099,27 +1099,27 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AE07> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [       parenleft,               7,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [       parenleft,               7,           grave,    seveneighths ]
     };
     key <AE08> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [ ISO_Level3_Latch,               8,           grave,        NoSymbol ]
+        symbols[Group1]= [ ISO_Level3_Latch,               8,           grave,       trademark ]
     };
     key <AE09> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [      parenright,               9,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [      parenright,               9,     asciicircum,       plusminus ]
     };
     key <AE10> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [        quotedbl,               0,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [        quotedbl,               0,              at,          degree ]
     };
     key <AE11> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [     bracketleft,       braceleft,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [     bracketleft,       braceleft,    bracketright,    questiondown ]
     };
     key <AE12> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [    bracketright,      braceright,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [    bracketright,      braceright,      braceright,     dead_ogonek ]
     };
     key <BKSP> {         [       BackSpace ] };
     key  <TAB> {         [             Tab,    ISO_Left_Tab ] };
@@ -1129,11 +1129,11 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AD02> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [      apostrophe,            less,      dead_acute,        NoSymbol ]
+        symbols[Group1]= [      apostrophe,            less,      dead_acute,            less ]
     };
     key <AD03> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [          eacute,         greater,          Eacute,        NoSymbol ]
+        symbols[Group1]= [          eacute,         greater,          Eacute,            cent ]
     };
     key <AD04> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1145,11 +1145,11 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AD06> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               h,               H,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               h,               H,       leftarrow,             yen ]
     };
     key <AD07> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               v,               V,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               v,               V,       downarrow,         uparrow ]
     };
     key <AD08> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1157,15 +1157,15 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AD09> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               m,               M,              mu,        NoSymbol ]
+        symbols[Group1]= [               m,               M,              mu,          Oslash ]
     };
     key <AD10> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               k,               K,            cent,        NoSymbol ]
+        symbols[Group1]= [               k,               K,            cent,           THORN ]
     };
     key <AD11> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               z,               Z,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               z,               Z,  dead_diaeresis,  dead_abovering ]
     };
     key <AD12> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1191,11 +1191,11 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AC05> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               b,               B,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               b,               B,             eng,             ENG ]
     };
     key <AC06> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               f,               F,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               f,               F,         hstroke,         Hstroke ]
     };
     key <AC07> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1203,23 +1203,23 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AC08> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               t,               T,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               t,               T,             kra,       ampersand ]
     };
     key <AC09> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               n,               N,  guillemotright,        NoSymbol ]
+        symbols[Group1]= [               n,               N,  guillemotright,         Lstroke ]
     };
     key <AC10> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               d,               D,          degree,        NoSymbol ]
+        symbols[Group1]= [               d,               D,          degree,       masculine ]
     };
     key <AC11> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               w,               W,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               w,               W, dead_circumflex,      dead_caron ]
     };
     key <TLDE> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [      underscore,        asterisk,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [      underscore,        asterisk,         notsign,         notsign ]
     };
     key <LFSH> {
         type= "ALPHABETIC",
@@ -1248,7 +1248,7 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AB05> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               y,               Y,        sterling,        NoSymbol ]
+        symbols[Group1]= [               y,               Y, rightdoublequotemark, rightsinglequotemark ]
     };
     key <AB06> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1256,11 +1256,11 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AB07> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               r,               R,          degree,        NoSymbol ]
+        symbols[Group1]= [               r,               R,          degree, dead_doubleacute ]
     };
     key <AB08> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               l,               L,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               l,               L,  horizconnector,        multiply ]
     };
     key <AB09> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1268,22 +1268,19 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AB10> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               j,               J,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               j,               J,   dead_belowdot,   dead_abovedot ]
     };
     key <RTSH> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [         Shift_R,        NoSymbol ],
-        actions[Group1]= [ SetMods(modifiers=Shift), SetMods(modifiers=Shift+Lock,clearLocks) ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [         Shift_R,        NoSymbol,        NoSymbol,        NoSymbol ],
+        actions[Group1]= [ SetMods(modifiers=Shift), SetMods(modifiers=Shift+Lock,clearLocks), NoAction(), NoAction() ]
     };
     key <KPMU> {
         type= "CTRL+ALT",
         symbols[Group1]= [     KP_Multiply,  XF86_ClearGrab ]
     };
     key <LALT> {         [           Alt_L,          Meta_L ] };
-    key <SPCE> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [           space,           space,    nobreakspace,    nobreakspace ]
-    };
+    key <SPCE> {         [           space ] };
     key  <ESC> {         [          Escape ] };
     key <FK01> {
         type= "CTRL+ALT",
@@ -1378,8 +1375,8 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
         symbols[Group1]= [           Print,         Sys_Req ]
     };
     key <RALT> {
-        type= "TWO_LEVEL",
-        symbols[Group1]= [          Meta_L,          Meta_R ]
+        type= "ONE_LEVEL",
+        symbols[Group1]= [          Meta_L ]
     };
     key <LNFD> {         [        Linefeed ] };
     key <HOME> {         [            Home ] };
@@ -1510,7 +1507,6 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     modifier_map Mod5 { <LVL3> };
     modifier_map Control { <RCTL> };
     modifier_map Mod1 { <RALT> };
-    modifier_map Mod4 { <LWIN> };
     modifier_map Mod4 { <RWIN> };
     modifier_map Mod5 { <MDSW> };
     modifier_map Mod1 { <META> };

@@ -1,7 +1,7 @@
 Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
     , bgColor = "black"
-    , fgColor = "grey"
-    , position = TopW L 90
+    , fgColor = "white"
+    , position = Static { xpos = 0 , ypos = 0, width = 1152 , height = 16 } -- 1280 * 90%
     , lowerOnStart = True
     , commands = [ Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
         , Run Memory ["-t","Mem: <usedratio>%"] 10
@@ -12,7 +12,7 @@ Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
     ]
     , sepChar = "%"
     , alignSep = "}{"
-    , template = "%StdinReader% }{  %cpu% | <fc=#00bfff>%memory% * %swap%</fc> | <fc=#ee9a00>%date%</fc>| %acpi%"
+    , template = "%StdinReader% }{ %cpu% | <fc=#00bfff>%memory% * %swap%</fc> | <fc=#ee9a00>%date%</fc>| %acpi%"
 }
         --, Run Com "acpi" [] "" 600
         --, Run Battery ["-t","Batt: <left>"] 600
