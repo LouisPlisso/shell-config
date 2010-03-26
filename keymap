@@ -66,7 +66,7 @@ xkb_keymap "my_dvorak_prog" {
         key <AD02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      apostrophe,            less,      dead_acute                  ] };
         key <AD03> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [          eacute,         greater,          Eacute                  ] };
         key <AD04> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               g,               G,        EuroSign, yen             ] };
-        key <AD05> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [          period,          exclam,  periodcentered, exclamdown      ] };
+        key <AD05> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [          period,          period,          exclam,  periodcentered] }; // for ip addresses with caps locks
         key <AD06> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               h,               H                                   ] };
         key <AD07> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               v,               V                                   ] };
         key <AD08> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [               c,               C,        ccedilla,        Ccedilla ] };

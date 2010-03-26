@@ -1,0 +1,5 @@
+# only source my config file
+export MY_CONFIG_DIR=__INSTALL_DIR__
+if [ -f ${MY_CONFIG_DIR}/zshrc ]; then
+    . ${MY_CONFIG_DIR}/zshrc
+fi

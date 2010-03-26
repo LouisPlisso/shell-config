@@ -1068,7 +1068,7 @@ xkb_compatibility "complete" {
     };
 };
 
-xkb_symbols "pc+fr(basic)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+compose(menu)+compose(lwin)" {
+xkb_symbols "pc+fr(basic)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+compose(menu)+compose(lwin)+compose(rwin)" {
 
     name[group1]="France - Dvorak";
 
@@ -1141,7 +1141,7 @@ xkb_symbols "pc+fr(basic)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+com
     };
     key <AD05> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [          period,          exclam,  periodcentered,      exclamdown ]
+        symbols[Group1]= [          period,          period,          exclam,  periodcentered ]
     };
     key <AD06> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1409,7 +1409,10 @@ xkb_symbols "pc+fr(basic)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+com
         type= "TWO_LEVEL",
         symbols[Group1]= [       Multi_key,       Multi_key ]
     };
-    key <RWIN> {         [         Super_R ] };
+    key <RWIN> {
+        type= "TWO_LEVEL",
+        symbols[Group1]= [       Multi_key,       Multi_key ]
+    };
     key <COMP> {
         type= "TWO_LEVEL",
         symbols[Group1]= [       Multi_key,       Multi_key ]
@@ -1507,7 +1510,6 @@ xkb_symbols "pc+fr(basic)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+com
     modifier_map Mod5 { <LVL3> };
     modifier_map Control { <RCTL> };
     modifier_map Mod1 { <RALT> };
-    modifier_map Mod4 { <RWIN> };
     modifier_map Mod5 { <MDSW> };
     modifier_map Mod1 { <META> };
     modifier_map Mod4 { <SUPR> };
