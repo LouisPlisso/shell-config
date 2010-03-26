@@ -1,0 +1,9 @@
+# voir:  http://wiki.mandriva.com/fr/La_touche_compose
+
+include "/usr/share/X11/locale/en_US.UTF-8/Compose"
+
+<Multi_key>    <x>  <y> :   "\"*y"   # vi x buffer yank
+<Multi_key>    <x>  <d> :   "\"*d"   # vi x buffer delete
+<Multi_key>    <x>  <p> :   "\"*p"   # vi x buffer paste
+<Multi_key>    <x>  <c> :   "\"*c"   # vi x buffer change
+
