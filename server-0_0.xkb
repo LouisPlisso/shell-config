@@ -1095,7 +1095,7 @@ xkb_symbols "pc+fr(basic)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+com
     };
     key <AE06> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [ dead_circumflex,               6,        multiply,        multiply ]
+        symbols[Group1]= [     asciicircum,               6, dead_circumflex,        multiply ]
     };
     key <AE07> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1222,9 +1222,9 @@ xkb_symbols "pc+fr(basic)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+com
         symbols[Group1]= [      underscore,        asterisk,         notsign,         notsign ]
     };
     key <LFSH> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [         Shift_L,        NoSymbol ],
-        actions[Group1]= [ SetMods(modifiers=Shift), SetMods(modifiers=Shift+Lock,clearLocks) ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [         Shift_L,        NoSymbol,        NoSymbol,        NoSymbol ],
+        actions[Group1]= [ SetMods(modifiers=Shift), SetMods(modifiers=Shift+Lock,clearLocks), NoAction(), NoAction() ]
     };
     key <BKSL> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",

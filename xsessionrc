@@ -34,3 +34,4 @@ davmail &
           
 xscreensaver -no-splash &
 
+urxvtd -q -f -o

@@ -7,13 +7,15 @@ Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
         , Run Memory ["-t","Mem: <usedratio>%"] 10
         , Run Swap [] 10
         , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+        , Run CpuFreq ["-t","Freq:<cpu0>|<cpu1>GHz","-L","0","-H","2","-l","lightblue","-n","white","-h","red"] 50
         , Run Com "acpi" [] "" 600
         , Run StdinReader
     ]
     , sepChar = "%"
     , alignSep = "}{"
-    , template = "%StdinReader% }{ %cpu% | <fc=#00bfff>%memory% * %swap%</fc> | <fc=#ee9a00>%date%</fc>| %acpi%"
+    , template = "%StdinReader% }{ %cpu%:%cpufreq%|<fc=#00bfff>%memory%*%swap%</fc>|<fc=#ee9a00>%date%</fc>|%acpi%"
 }
         --, Run Com "acpi" [] "" 600
         --, Run Battery ["-t","Batt: <left>"] 600
         -- template: %battery%
+        --, Run CoreTemp ["-t","Temp:<core0>|<core1>C","-L","40","-H","60","-l","lightblue","-n","gray90","-h","red"] 50

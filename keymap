@@ -23,7 +23,7 @@ xkb_keymap "my_dvorak_prog" {
         key <RALT> { [ Meta_L ] };
         key <CAPS> {    [   Shift_Lock      ]   };
         modifier_map Shift { Shift_Lock };
-        key <LTSH> {
+        key <LFSH> {
             type = "FOUR_LEVEL_SEMIALPHABETIC",
                  actions [Group1] = [
                      SetMods(modifiers=Shift),
@@ -48,7 +48,7 @@ xkb_keymap "my_dvorak_prog" {
         key <AE03> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [           minus,               3,   threequarters,    threesuperior] };
         key <AE04> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [            plus,               4,      onequarter,    plusminus    ] };
         key <AE05> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [       backslash,               5,   threequarters                  ] };
-        key <AE06> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ dead_circumflex,               6,   	    multiply,	 multiply     ] };
+        key <AE06> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [      asciicircum,               6,    dead_circumflex,	 multiply     ] };
         key <AE07> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [       parenleft,               7                                   ] };
         // la touche morte "accent grave" se comporte par défaut comme le modificateur de niveau 3,
         // c'est-à-dire comme la touche AltGr (ou Alt droit) sur un clavier Azerty,

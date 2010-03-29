@@ -21,6 +21,11 @@ URxvt*color3: #8b99b5
 !URxvt*color2: #DFDFDF
 !URxvt*color3: #8b99b5
 
+## Transparency (works with Compiz)
+urxvt*depth: 32
+urxvt*foreground: rgba:dddd/dddd/dddd/dddd
+urxvt*background: rgba:0000/0000/0000/dddd
+
 URxvt*fading: 10
 URxvt*tintColor: #FCFCFC
 URxvt*shading: 90
@@ -62,3 +67,13 @@ URxvt.depth: 32
 !!URxvt.perl-ext-common:  default,tabbed
 !!URxvt.title:            ArchWiki Example
 !!
+
+
+urxvt.background                        : black
+urxvt.foreground                        : green
+urxvt.inheritPixmap                     : True
+#urxvt.mfont             : -wenquanyi-*-medium-*-*-*-12-*-*-*-*-*-iso10646-*
+urxvt.transparent:              True
+#urxvt.tintColor:                blue
+urxvt.shading:          60
+urxvt.fading: 20
