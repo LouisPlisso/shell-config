@@ -1,5 +1,5 @@
 google-chrome
-google-chrome-beta
+# google-chrome-beta
 xpdf
 xpdf-utils
 evince
@@ -116,3 +116,8 @@ python2.6-setuptools
 xpdf-reader
 xpdf
 # vpnc
+xbattbar
+# wmbattery
+xapm
+libacpi0 kacpimon
+imake

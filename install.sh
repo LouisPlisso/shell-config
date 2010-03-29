@@ -44,6 +44,9 @@ sudo /bin/sh bin/apt-get-ni.sh dist-upgrade
 echo "Installing selected packages"
 /bin/cat aptitude_list | xargs -I {} sudo /bin/sh bin/apt-get-ni.sh install {}
 
+echo "Configure ACPI warning"
+sudo ln -s $INSTALL_DIR/bin/low_battery_warning.sh /etc/acpi/low_battery_warning.sh
+
 echo "Configure DHCP"
 sudo /bin/cp -b --suffix='.old' dhclient.conf /etc/dhcp3/dhclient.conf
 

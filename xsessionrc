@@ -34,4 +34,6 @@ davmail &
           
 xscreensaver -no-splash &
 
-urxvtd -q -f -o
+urxvtd -q -f -o &
+
+xbattbar -c -t 2 -p 30 top &
