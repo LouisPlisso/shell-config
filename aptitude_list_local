@@ -121,3 +121,8 @@ xbattbar
 xapm
 libacpi0 kacpimon
 imake
+mc
+feh
+libncurses-dev
+ncurses-dev
+libncursesw5-dev

@@ -31,7 +31,7 @@ fi
 #fi
 
 # missing dvorak_prog in console
-sudo loadkeys /usr/share/keymaps/i386/dvorak/dvorak-fr.kmap.gz
+#sudo loadkeys /usr/share/keymaps/i386/dvorak/dvorak-fr.kmap.gz
 
 # done only if X so in xsessionrc
 #setxkbmap fr -variant dvorak_prog || setxkbmap fr -variant dvorak

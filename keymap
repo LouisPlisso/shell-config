@@ -16,7 +16,7 @@ xkb_keymap "my_dvorak_prog" {
         };
     };
 
-    xkb_symbols   { include "pc+fr(basic)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+compose(menu)+compose(lwin)+compose(rwin)"
+    xkb_symbols   { include "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+compose(menu)+compose(lwin)+compose(rwin)"
         // insert as Shift+Delete
         key <DELE> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ Delete, Insert ] };
         // Alt-Gr as Alt

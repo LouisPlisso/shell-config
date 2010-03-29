@@ -45,6 +45,7 @@ echo "Installing selected packages"
 /bin/cat aptitude_list | xargs -I {} sudo /bin/sh bin/apt-get-ni.sh install {}
 
 echo "Configure ACPI warning"
+sudo ln -s $INSTALL_DIR/low_battery_warning /etc/acpi/events/low_battery_warning
 sudo ln -s $INSTALL_DIR/bin/low_battery_warning.sh /etc/acpi/low_battery_warning.sh
 
 echo "Configure DHCP"
@@ -82,7 +83,7 @@ echo "Administrative part finished: no user with no passwd for all cmds"
 sudo /bin/sed -i "/^[^#].*ALL=NOPASSWD: ALL/s/^/#/" /etc/sudoers
 
 echo "Install config files"
-for template in bashrc.template xsessionrc.template ; do
+for template in bashrc.template xsessionrc.template zshrc.template; do
     file=`basename ${template} .template`
     [ -h ${HOME}/.file ] && /bin/rm ${HOME}/.file
     [ -f ${HOME}/.file ] && /bin/mv ${HOME}/.file ${HOME}/.file.old
@@ -99,6 +100,10 @@ done
 
 # echo "Configure xmonad"
 # /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" xmonad/xmonad.hs.template > xmonad/xmonad.hs
+
+echo "Configure public and private keys"
+mkdir -p ${HOME}/.ssh
+ln -s ${INSTALL_DIR}/id_rsa ${INSTALL_DIR}/id_rsa.pub ${HOME}/.ssh
 
 # to restore directory
 #popd  > /dev/null

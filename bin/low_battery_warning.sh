@@ -9,5 +9,5 @@ status=$(( 100 * $now / $full ))
 
 if [ $status -lt 10 ]
 then
-    zenity --warning --title "Battery" --text "Low battery. (status = $status)"
+    zenity --warning --title "Battery" --text "Received $1.\nLow battery: status = $status"
 fi

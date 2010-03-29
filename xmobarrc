@@ -13,7 +13,7 @@ Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
     ]
     , sepChar = "%"
     , alignSep = "}{"
-    , template = "%StdinReader% }{ %cpu%:%cpufreq%|<fc=#00bfff>%memory%*%swap%</fc>|<fc=#ee9a00>%date%</fc>|%acpi%"
+    , template = "%StdinReader% }{ %cpu%:%cpufreq%|<fc=#00bfff>%memory%-%swap%</fc>|<fc=#ee9a00>%date%</fc>|%acpi%"
 }
         --, Run Com "acpi" [] "" 600
         --, Run Battery ["-t","Batt: <left>"] 600
