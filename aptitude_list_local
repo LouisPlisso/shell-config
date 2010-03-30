@@ -127,3 +127,4 @@ libncurses-dev
 ncurses-dev
 libncursesw5-dev
 splint hlint
+git-svn
