@@ -11,13 +11,15 @@ fi
 cd `dirname ${INSTALL_DIR}` > /dev/null
 INSTALL_DIR=`/bin/pwd`;
 
+LOCAL_USER=$USER
+
 /bin/grep dvorak_prog /usr/share/X11/xkb/symbols/fr >> /dev/null && variant=dvorak_prog || variant=dvorak
 printf "First sets %s keyboard layout\n" $variant
 setxkbmap fr -variant $variant
 
 
 echo "Install current user as sudoer"
-/bin/sed "s/\<__USER__\>/${USER}/g" sudoers.template > sudoers.local
+/bin/sed "s/\<__USER__\>/${LOCAL_USER}/g" sudoers.template > sudoers.local
 echo -n "Root passwd needed. "
 /bin/su -c '/bin/cp -b --suffix='.old' sudoers.local /etc/sudoers; chown root:root /etc/sudoers; /bin/chmod 440 /etc/sudoers' && echo "Will not promt for sudoer passwd until end of install" || echo "Sudoer install failure: if user is not sudoer, only user's settings will be performed" 
 /bin/rm sudoers.local
@@ -43,10 +45,6 @@ sudo /bin/sh bin/apt-get-ni.sh dist-upgrade
 
 echo "Installing selected packages"
 /bin/cat aptitude_list | xargs -I {} sudo /bin/sh bin/apt-get-ni.sh install {}
-
-echo "Configure ACPI warning"
-sudo ln -s $INSTALL_DIR/low_battery_warning /etc/acpi/events/low_battery_warning
-sudo ln -s $INSTALL_DIR/bin/low_battery_warning.sh /etc/acpi/low_battery_warning.sh
 
 echo "Configure DHCP"
 sudo /bin/cp -b --suffix='.old' dhclient.conf /etc/dhcp3/dhclient.conf
@@ -81,6 +79,13 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.6 20
 
 echo "Administrative part finished: no user with no passwd for all cmds"
 sudo /bin/sed -i "/^[^#].*ALL=NOPASSWD: ALL/s/^/#/" /etc/sudoers
+
+echo "Configure ACPI warning as crontab"
+/bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" crontab.template > crontab.local
+/usr/bin/crontab crontab.local
+#sudo cp $INSTALL_DIR/crontab.local /var/spool/cron/crontabs/${LOCAL_USER}
+#sudo ln -s $INSTALL_DIR/low_battery_warning /etc/acpi/events/low_battery_warning
+#sudo ln -s $INSTALL_DIR/bin/low_battery_warning.sh /etc/acpi/low_battery_warning.sh
 
 echo "Install config files"
 for template in bashrc.template xsessionrc.template zshrc.template; do
