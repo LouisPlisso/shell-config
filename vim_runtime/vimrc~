@@ -158,12 +158,14 @@ if has("gui_running")
   set background=dark
   set t_Co=256
   set background=dark
+  "colorscheme transparent
   colorscheme moria
 
   set nonu
 else
   set background=dark
-  colorscheme moria
+  colorscheme transparent
+  "colorscheme moria
   
   set nonu
 endif
@@ -307,7 +309,7 @@ endfunc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Map space to / (search) and c-space to ? (backgwards search)
 map <space> /
-map <c-space> ?
+map <C-space> ?
 map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move btw. windows
@@ -368,7 +370,7 @@ endfunction
 " => Statusline
 """"""""""""""""""""""""""""""
 " Always hide the statusline
-"set laststatus=2
+set laststatus=2
 
 " Format the statusline
 set statusline=%<CWD:\ %r%{CurDir()}%h\ \ %F%m%r%h\ %w\ Line:\ %l/%L:\ %p%%\ %(Column:\ %c%)

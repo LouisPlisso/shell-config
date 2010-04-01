@@ -22,7 +22,8 @@ import XMonad.Util.XSelection
 -- TODO ipython floats
 myManageHook = composeAll
     [ className =? "Gimp"      --> doFloat
-    , className =? "Pidgin"      --> doFloat]
+    , className =? "Pidgin"      --> doFloat
+    , className =? "Reminder"      --> doFloat]
 
 -- workspaces
 -- myWorkspaces = ["web", "editor", "terms"] ++ (miscs 5) ++ ["fullscreen", "im"]

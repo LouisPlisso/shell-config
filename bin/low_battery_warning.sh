@@ -2,9 +2,14 @@
 
 path="/sys/class/power_supply/BAT0"
 
+charging=`cat $path/status`
+if [ $charging = "Charging" ]
+then
+    exit 0
+fi
+
 full=`cat $path/charge_full`
 now=`cat $path/charge_now`
-
 status=$(( 100 * $now / $full ))
 
 if [ $status -lt 10 ]

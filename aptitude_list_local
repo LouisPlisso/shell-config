@@ -128,3 +128,6 @@ ncurses-dev
 libncursesw5-dev
 splint hlint
 git-svn
+chm2pdf
+python2.5-chm
+screen

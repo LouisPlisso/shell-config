@@ -89,6 +89,11 @@ BOOKMARKS=U=/usr=../
 BOOKMARKS=L=/usr/local=../
 BOOKMARKS=S=/usr/local/share=../
 
+BOOKMARKS=h=/home/louis=../
+BOOKMARKS=H=/netapp/elpy7391=../
+BOOKMARKS=c=/home/louis/tomo_lp/s-alois=../
+BOOKMARKS=d=/home/louis/Downloads=../
+
 # COMMAND=command_name=action
 # The following macros can be used in a command
 # %a is replaced with the user arguments.
@@ -117,4 +122,5 @@ FILETYPE=Web=html,htm=links,mozilla
 FILETYPE=Object=o=nm %f | less
 FILETYPE=Image=jpg,jpeg,png,gif=feh,eog,xv,gimp
 FILETYPE=Archive=tar.gz,tgz=tar -tzf %f | less,tar -zxvf %f
-FILETYPE=Docs=pdf,ps=evince
+FILETYPE=Docs=pdf,ps=apvlv,evince
+FILETYPE=Oo=doc,ppt,xls,odt=ooffice
