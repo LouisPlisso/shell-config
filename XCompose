@@ -6,6 +6,7 @@
 <Multi_key>    <x>  <d> :   "\"*d"   # vi x buffer delete
 <Multi_key>    <x>  <p> :   "\"*p"   # vi x buffer paste
 <Multi_key>    <x>  <c> :   "\"*c"   # vi x buffer change
+<Multi_key>    <x>  <Y> :   "\"*y$"   # vi x buffer yank
 <Multi_key>    <x>  <D> :   "\"*D"   # vi x buffer delete
 <Multi_key>    <x>  <P> :   "\"*P"   # vi x buffer paste
 <Multi_key>    <x>  <C> :   "\"*C"   # vi x buffer change

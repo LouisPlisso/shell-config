@@ -23,6 +23,7 @@ import XMonad.Util.XSelection
 myManageHook = composeAll
     [ className =? "Gimp"      --> doFloat
     , className =? "Pidgin"      --> doFloat
+    , className =? "Battery"      --> doFloat
     , className =? "Reminder"      --> doFloat]
 
 -- workspaces
@@ -60,7 +61,7 @@ main = do
         } `additionalKeys`
         [ ((mod1Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock") 
         , ((mod1Mask, xK_s), spawn "exe=`quicksnips` && eval \"exec $exe\"")
-        , ((mod1Mask, xK_Return), spawn "urxvt")
+        -- , ((mod1Mask, xK_Return), spawn "urxvt")
         , ((mod1Mask, xK_f), spawn "firefox")
         -- search how to use: http://www.haskell.org/haskellwiki/Xmonad/Config_archive/Mntnoe%27s_xmonad.hs
         , ((mod1Mask, xK_c), spawn "hxsel")

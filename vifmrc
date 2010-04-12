@@ -1,5 +1,4 @@
-# You can edit this file by hand.  If you have vifm running
-# it will overwrite any changes you make when it quits.
+# You can edit this file by hand.
 # The # character at the beginning of a line comments out the line.
 # Blank lines are ignored.
 # The basic format for each item is shown with an example.
@@ -11,7 +10,7 @@
 # you will need to change this setting.
 
 VI_COMMAND=vim
-# VI_COMMAND=vi
+# VI_COMMAND=vim
 # VI_COMMAND=elvis -G termcap
 # VI_COMMAND=vile
 
@@ -21,19 +20,26 @@ VI_COMMAND=vim
 # just use rm.  If you change this you will not be able to move
 # files by deleting them and then using p to put the file in the new location.
 # I recommend not changing this until you are familiar with vifm.
+# This probably shouldn't be an option.
 
 USE_TRASH=1
+
+# Show only one Window
+# If you would like to start vifm with only one window set this to 1
+
+USE_ONE_WINDOW=0
 
 # Screen configuration.  If you would like to use vifm with
 # the screen program set this to 1.
 
 USE_SCREEN=0
 
+# 1 means use color if the terminal supports it.
+# 0 means don't use color even if supported.
 
 # This is how many files to show in the directory history menu.
 
 HISTORY_LENGTH=15
-
 
 # The sort type is how the files will be sorted in the file listing.
 # Sort by File Extension = 0
@@ -43,13 +49,14 @@ HISTORY_LENGTH=15
 # Sort by Mode = 4
 # Sort by Owner ID = 5
 # Sort by Owner Name = 6
-# Sort by Size = 7
-# Sort by Time Accessed =8
-# Sort by Time Changed =9
-# Sort by Time Modified =10
+# Sort by Size (Ascending) = 7
+# Sort by Size (Descending) = 8
+# Sort by Time Accessed =9
+# Sort by Time Changed =10
+# Sort by Time Modified =11
 # This can be set with the :sort command in vifm.
 
-LEFT_WINDOW_SORT_TYPE=1
+LEFT_WINDOW_SORT_TYPE=11
 
 RIGHT_WINDOW_SORT_TYPE=1
 
@@ -64,13 +71,6 @@ LWIN_INVERT=1
 RWIN_FILTER=\.o$
 RWIN_INVERT=1
 
-# Show the full file information in a  window
-# Ctrl G will toggle this value in vifm.
-# 1 will show the file information in a window
-# 0 will show the file information on the status bar.
-
-SHOW_FULL=0
-
 # If you installed the vim.txt help file change this to 1.
 # If would rather use a plain text help file set this to 0.
 
@@ -81,18 +81,15 @@ USE_VIM_HELP=0
 
 RUN_EXECUTABLE=0
 
-
 # BOOKMARKS=mark=/full/directory/path=filename
 
-BOOKMARKS=R=/=
-BOOKMARKS=U=/usr=../
 BOOKMARKS=L=/usr/local=../
+BOOKMARKS=R=/=
 BOOKMARKS=S=/usr/local/share=../
-
-BOOKMARKS=h=/home/louis=../
-BOOKMARKS=H=/netapp/elpy7391=../
+BOOKMARKS=U=/usr=../
 BOOKMARKS=c=/home/louis/tomo_lp/s-alois=../
 BOOKMARKS=d=/home/louis/Downloads=../
+BOOKMARKS=h=/home/louis=../
 
 # COMMAND=command_name=action
 # The following macros can be used in a command
@@ -101,13 +98,14 @@ BOOKMARKS=d=/home/louis/Downloads=../
 # %F the current selected file, or files in the other directoy.
 # %d the current directory name.
 # %D the other window directory name.
+# %m run the command in a menu window
 
-COMMAND=mv=mv %f %D &
 COMMAND=cp=cp %f %D &
 COMMAND=floppy=mount /dev/fd0
-COMMAND=run=!! ./%f
-COMMAND=make=!!make
 COMMAND=grep=vim \"+grep %a\"
+COMMAND=make=!!make
+COMMAND=mv=mv %f %D &
+COMMAND=run=!! ./%f
 
 # The file type is for the default programs to be used with
 # a file extension. 
@@ -122,5 +120,17 @@ FILETYPE=Web=html,htm=links,mozilla
 FILETYPE=Object=o=nm %f | less
 FILETYPE=Image=jpg,jpeg,png,gif=feh,eog,xv,gimp
 FILETYPE=Archive=tar.gz,tgz=tar -tzf %f | less,tar -zxvf %f
-FILETYPE=Docs=pdf,ps=apvlv,evince
+FILETYPE=Docs=pdf,ps=evince,apvlv
 FILETYPE=Oo=doc,ppt,xls,odt=ooffice
+
+# For automated FUSE mounts, you must register an extension with FILETYPE=..
+# in the following format:
+# FILETYPE=description=extensions=FUSE_MOUNT|some_mount_command using %SOURCE_FILE and %DESTINATION_DIR variables
+# %SOURCE_FILE and %DESTINATION_DIR are filled in by vifm at runtime.
+# A sample line might look like this:
+# FILETYPE=FuseZipMount=zip,jar,war,ear=FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR
+
+# The FUSE_HOME directory will be used as a root dir for all FUSE mounts.
+# Unless it exists with write/exec permissions set, vifm will attempt to create it.
+
+FUSE_HOME=/tmp/vifm_FUSE

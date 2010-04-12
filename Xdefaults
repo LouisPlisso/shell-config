@@ -22,9 +22,12 @@ URxvt*color3: #8b99b5
 !URxvt*color3: #8b99b5
 
 ## Transparency (works with Compiz)
-urxvt*depth: 32
-urxvt*foreground: rgba:dddd/dddd/dddd/dddd
-urxvt*background: rgba:0000/0000/0000/dddd
+URxvt.depth: 32
+URxvt*background: rgba:0000/0000/0000/cccc
+
+#urxvt*depth: 32
+#urxvt*foreground: rgba:dddd/dddd/dddd/dddd
+#urxvt*background: rgba:0000/0000/0000/dddd
 
 URxvt*fading: 10
 URxvt*tintColor: #FCFCFC
