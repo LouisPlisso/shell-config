@@ -7,6 +7,7 @@ Cmnd_Alias      INSTALL =       /usr/bin/aptitude update, \
                                 /usr/bin/aptitude install *
 Cmnd_Alias	LOADKEYS = /usr/bin/loadkeys *
 Cmnd_Alias	MOUNT = /bin/mount *, /bin/umount *
+Cmnd_Alias	HIBERNATE = /usr/sbin/pm-hibernate, /usr/sbin/pm-suspend, /usr/sbin/pm-suspend-hybrid
 
 Defaults	env_reset
 Defaults	env_keep="http_proxy MY_CONFIG_DIR"

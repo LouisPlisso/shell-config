@@ -2,7 +2,7 @@ xkb_keymap {
 xkb_keycodes "evdev+aliases(azerty)" {
     minimum = 8;
     maximum = 255;
-    <CAPS> = 9;
+     <ESC> = 9;
     <AE01> = 10;
     <AE02> = 11;
     <AE03> = 12;
@@ -59,7 +59,7 @@ xkb_keycodes "evdev+aliases(azerty)" {
     <KPMU> = 63;
     <LALT> = 64;
     <SPCE> = 65;
-     <ESC> = 66;
+    <CAPS> = 66;
     <FK01> = 67;
     <FK02> = 68;
     <FK03> = 69;
@@ -293,7 +293,7 @@ xkb_keycodes "evdev+aliases(azerty)" {
     alias <LatN> = <AB06>;
 };
 
-xkb_types "complete" {
+xkb_types "complete+caps(shift)" {
 
     virtual_modifiers NumLock,Alt,LevelThree,LAlt,RAlt,RControl,LControl,ScrollLock,LevelFive,AltGr,Meta,Super,Hyper;
 
@@ -1042,7 +1042,7 @@ xkb_compatibility "complete" {
     indicator "Caps Lock" {
         !allowExplicit;
         whichModState= locked;
-        modifiers= Shift;
+        modifiers= Lock;
     };
     indicator "Num Lock" {
         !allowExplicit;
@@ -1068,134 +1068,134 @@ xkb_compatibility "complete" {
     };
 };
 
-xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+compose(menu)+compose(lwin)+compose(rwin)" {
+xkb_symbols "pc+fr(dvorak_prog)+inet(evdev)" {
 
     name[group1]="France - Dvorak";
 
-    key <CAPS> {         [      Shift_Lock ] };
+    key  <ESC> {         [          Escape ] };
     key <AE01> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL",
         symbols[Group1]= [           equal,               1,         onehalf,     onesuperior ]
     };
     key <AE02> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL",
         symbols[Group1]= [           slash,               2,       plusminus,     twosuperior ]
     };
     key <AE03> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL",
         symbols[Group1]= [           minus,               3,   threequarters,   threesuperior ]
     };
     key <AE04> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL",
         symbols[Group1]= [            plus,               4,      onequarter,       plusminus ]
     };
     key <AE05> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [       backslash,               5,   threequarters,        NoSymbol ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [       backslash,               5,   threequarters,    threeeighths ]
     };
     key <AE06> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [     asciicircum,               6, dead_circumflex,        multiply ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [ dead_circumflex,               6,        multiply,        multiply ]
     };
     key <AE07> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [       parenleft,               7,        NoSymbol,        NoSymbol ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [       parenleft,               7,           grave,    seveneighths ]
     };
     key <AE08> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [ ISO_Level3_Latch,               8,           grave,        NoSymbol ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [ ISO_Level3_Latch,               8,           grave,       trademark ]
     };
     key <AE09> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [      parenright,               9,        NoSymbol,        NoSymbol ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [      parenright,               9,     asciicircum,       plusminus ]
     };
     key <AE10> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [        quotedbl,               0,        NoSymbol,        NoSymbol ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [        quotedbl,               0,              at,          degree ]
     };
     key <AE11> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [     bracketleft,       braceleft,        NoSymbol,        NoSymbol ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [     bracketleft,       braceleft,    bracketright,    questiondown ]
     };
     key <AE12> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [    bracketright,      braceright,        NoSymbol,        NoSymbol ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [    bracketright,      braceright,      braceright,     dead_ogonek ]
     };
     key <BKSP> {         [       BackSpace ] };
     key  <TAB> {         [             Tab,    ISO_Left_Tab ] };
     key <AD01> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL",
         symbols[Group1]= [           colon,        question,           U2026,    questiondown ]
     };
     key <AD02> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [      apostrophe,            less,      dead_acute,        NoSymbol ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [      apostrophe,            less,      dead_acute,            less ]
     };
     key <AD03> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [          eacute,         greater,          Eacute,        NoSymbol ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [          eacute,         greater,          Eacute,            cent ]
     };
     key <AD04> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
         symbols[Group1]= [               g,               G,        EuroSign,             yen ]
     };
     key <AD05> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [          period,          period,          exclam,  periodcentered ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [          period,          exclam,  periodcentered,      exclamdown ]
     };
     key <AD06> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               h,               H,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               h,               H,       leftarrow,             yen ]
     };
     key <AD07> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               v,               V,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               v,               V,       downarrow,         uparrow ]
     };
     key <AD08> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL_ALPHABETIC",
         symbols[Group1]= [               c,               C,        ccedilla,        Ccedilla ]
     };
     key <AD09> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               m,               M,              mu,        NoSymbol ]
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [               m,               M,              mu,          Oslash ]
     };
     key <AD10> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               k,               K,            cent,        NoSymbol ]
+        symbols[Group1]= [               k,               K,            cent,           THORN ]
     };
     key <AD11> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               z,               Z,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               z,               Z,  dead_diaeresis,  dead_abovering ]
     };
     key <AD12> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [      asciitilde,  dead_diaeresis,      dead_tilde,      dead_acute ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [  dead_diaeresis,      dead_tilde,      dead_acute,     dead_macron ]
     };
     key <RTRN> {         [          Return ] };
     key <LCTL> {         [       Control_L ] };
     key <AC01> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL_ALPHABETIC",
         symbols[Group1]= [               o,               O,          ograve,          Ograve ]
     };
     key <AC02> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL_ALPHABETIC",
         symbols[Group1]= [               a,               A,          agrave,          Agrave ]
     };
     key <AC03> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL_ALPHABETIC",
         symbols[Group1]= [               u,               U,          ugrave,          Ugrave ]
     };
     key <AC04> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL_ALPHABETIC",
         symbols[Group1]= [               e,               E,          egrave,          Egrave ]
     };
     key <AC05> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               b,               B,        NoSymbol,        NoSymbol ]
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [               b,               B,             eng,             ENG ]
     };
     key <AC06> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               f,               F,        NoSymbol,        NoSymbol ]
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [               f,               F,         hstroke,         Hstroke ]
     };
     key <AC07> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1203,64 +1203,60 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AC08> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               t,               T,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               t,               T,             kra,       ampersand ]
     };
     key <AC09> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               n,               N,  guillemotright,        NoSymbol ]
+        symbols[Group1]= [               n,               N,  guillemotright,         Lstroke ]
     };
     key <AC10> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               d,               D,          degree,        NoSymbol ]
+        symbols[Group1]= [               d,               D,          degree,       masculine ]
     };
     key <AC11> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               w,               W,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               w,               W, dead_circumflex,      dead_caron ]
     };
     key <TLDE> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [      underscore,        asterisk,        NoSymbol,        NoSymbol ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [      underscore,        asterisk,         notsign,         notsign ]
     };
-    key <LFSH> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [         Shift_L,        NoSymbol,        NoSymbol,        NoSymbol ],
-        actions[Group1]= [ SetMods(modifiers=Shift), SetMods(modifiers=Shift+Lock,clearLocks), NoAction(), NoAction() ]
-    };
+    key <LFSH> {         [         Shift_L ] };
     key <BKSL> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [          dollar,      numbersign,       copyright,      registered ]
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [      numbersign,          dollar,       copyright,      registered ]
     };
     key <AB01> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL",
         symbols[Group1]= [       semicolon,             bar,       ampersand,         percent ]
     };
     key <AB02> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL_ALPHABETIC",
         symbols[Group1]= [               q,               Q,              oe,              OE ]
     };
     key <AB03> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL",
         symbols[Group1]= [           comma,              at,              ae,              AE ]
     };
     key <AB04> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL_ALPHABETIC",
         symbols[Group1]= [               i,               I,          igrave,          Igrave ]
     };
     key <AB05> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               y,               Y,        sterling,        NoSymbol ]
+        symbols[Group1]= [               y,               Y, rightdoublequotemark, rightsinglequotemark ]
     };
     key <AB06> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               x,               X,        NoSymbol,        NoSymbol ]
+        type= "ALPHABETIC",
+        symbols[Group1]= [               x,               X ]
     };
     key <AB07> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               r,               R,          degree,        NoSymbol ]
+        symbols[Group1]= [               r,               R,          degree, dead_doubleacute ]
     };
     key <AB08> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               l,               L,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               l,               L,  horizconnector,        multiply ]
     };
     key <AB09> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1268,23 +1264,16 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     };
     key <AB10> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               j,               J,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               j,               J,   dead_belowdot,   dead_abovedot ]
     };
-    key <RTSH> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [         Shift_R,        NoSymbol,        NoSymbol,        NoSymbol ],
-        actions[Group1]= [ SetMods(modifiers=Shift), SetMods(modifiers=Shift+Lock,clearLocks), NoAction(), NoAction() ]
-    };
+    key <RTSH> {         [         Shift_R ] };
     key <KPMU> {
         type= "CTRL+ALT",
         symbols[Group1]= [     KP_Multiply,  XF86_ClearGrab ]
     };
     key <LALT> {         [           Alt_L,          Meta_L ] };
-    key <SPCE> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [           space,           space,    nobreakspace,    nobreakspace ]
-    };
-    key  <ESC> {         [          Escape ] };
+    key <SPCE> {         [           space ] };
+    key <CAPS> {         [       Caps_Lock ] };
     key <FK01> {
         type= "CTRL+ALT",
         symbols[Group1]= [              F1, XF86_Switch_VT_1 ]
@@ -1346,12 +1335,12 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     key  <KP3> {         [         KP_Next,            KP_3 ] };
     key  <KP0> {         [       KP_Insert,            KP_0 ] };
     key <KPDL> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL_KEYPAD",
         symbols[Group1]= [       KP_Delete,           comma,       KP_Delete,      KP_Decimal ]
     };
     key <LVL3> {         [ ISO_Level3_Shift ] };
     key <LSGT> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        type= "FOUR_LEVEL",
         symbols[Group1]= [         percent,       ampersand,             bar,       brokenbar ]
     };
     key <FK11> {
@@ -1378,8 +1367,8 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
         symbols[Group1]= [           Print,         Sys_Req ]
     };
     key <RALT> {
-        type= "TWO_LEVEL",
-        symbols[Group1]= [          Meta_L,          Meta_R ]
+        type= "ONE_LEVEL",
+        symbols[Group1]= [ ISO_Level3_Shift ]
     };
     key <LNFD> {         [        Linefeed ] };
     key <HOME> {         [            Home ] };
@@ -1391,10 +1380,7 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     key <DOWN> {         [            Down ] };
     key <PGDN> {         [            Next ] };
     key  <INS> {         [          Insert ] };
-    key <DELE> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [          Delete,          Insert,        NoSymbol,        NoSymbol ]
-    };
+    key <DELE> {         [          Delete ] };
     key <MUTE> {         [   XF86AudioMute ] };
     key <VOL-> {         [ XF86AudioLowerVolume ] };
     key <VOL+> {         [ XF86AudioRaiseVolume ] };
@@ -1408,18 +1394,9 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     key <I129> {         [      KP_Decimal ] };
     key <HNGL> {         [          Hangul ] };
     key <HJCV> {         [    Hangul_Hanja ] };
-    key <LWIN> {
-        type= "TWO_LEVEL",
-        symbols[Group1]= [       Multi_key,       Multi_key ]
-    };
-    key <RWIN> {
-        type= "TWO_LEVEL",
-        symbols[Group1]= [       Multi_key,       Multi_key ]
-    };
-    key <COMP> {
-        type= "TWO_LEVEL",
-        symbols[Group1]= [       Multi_key,       Multi_key ]
-    };
+    key <LWIN> {         [         Super_L ] };
+    key <RWIN> {         [         Super_R ] };
+    key <COMP> {         [            Menu ] };
     key <STOP> {         [          Cancel ] };
     key <AGAI> {         [            Redo ] };
     key <PROP> {         [        SunProps ] };
@@ -1504,363 +1481,20 @@ xkb_symbols "pc+fr(dvorak)+inet(evdev)+capslock(shiftlock)+shift(breaks_caps)+co
     key <I244> {         [     XF86Battery ] };
     key <I245> {         [   XF86Bluetooth ] };
     key <I246> {         [        XF86WLAN ] };
-    modifier_map Shift { <CAPS> };
     modifier_map Control { <LCTL> };
     modifier_map Shift { <LFSH> };
     modifier_map Shift { <RTSH> };
     modifier_map Mod1 { <LALT> };
+    modifier_map Lock { <CAPS> };
     modifier_map Mod2 { <NMLK> };
     modifier_map Mod5 { <LVL3> };
     modifier_map Control { <RCTL> };
-    modifier_map Mod1 { <RALT> };
+    modifier_map Mod4 { <LWIN> };
+    modifier_map Mod4 { <RWIN> };
     modifier_map Mod5 { <MDSW> };
     modifier_map Mod1 { <META> };
     modifier_map Mod4 { <SUPR> };
     modifier_map Mod4 { <HYPR> };
-};
-
-xkb_geometry "pc(pc105)" {
-
-    width=       470;
-    height=      180;
-
-    alias <AC00> = <CAPS>;
-    alias <AA00> = <LCTL>;
-
-    baseColor=   "white";
-    labelColor=  "black";
-    xfont=       "-*-helvetica-medium-r-normal--*-120-*-*-*-*-iso8859-1";
-    description= "Generic 105";
-
-    shape "NORM" {
-        corner= 1,
-        { [  18,  18 ] },
-        { [   2,   1 ], [  16,  16 ] }
-    };
-    shape "BKSP" {
-        corner= 1,
-        { [  38,  18 ] },
-        { [   2,   1 ], [  36,  16 ] }
-    };
-    shape "TABK" {
-        corner= 1,
-        { [  28,  18 ] },
-        { [   2,   1 ], [  26,  16 ] }
-    };
-    shape "BKSL" {
-        corner= 1,
-        { [  28,  18 ] },
-        { [   2,   1 ], [  26,  16 ] }
-    };
-    shape "RTRN" {
-        corner= 1,
-        { [  42,  18 ] },
-        { [   2,   1 ], [  40,  16 ] }
-    };
-    shape "CAPS" {
-        corner= 1,
-        { [  33,  18 ] },
-        { [   2,   1 ], [  31,  16 ] }
-    };
-    shape "LFSH" {
-        corner= 1,
-        { [  25,  18 ] },
-        { [   2,   1 ], [  23,  16 ] }
-    };
-    shape "RTSH" {
-        corner= 1,
-        { [  50,  18 ] },
-        { [   2,   1 ], [  50,  16 ] }
-    };
-    shape "MODK" {
-        corner= 1,
-        { [  27,  18 ] },
-        { [   2,   1 ], [  25,  16 ] }
-    };
-    shape "SMOD" {
-        corner= 1,
-        { [  23,  18 ] },
-        { [   2,   1 ], [  21,  16 ] }
-    };
-    shape "SPCE" {
-        corner= 1,
-        { [ 113,  18 ] },
-        { [   2,   1 ], [ 111,  16 ] }
-    };
-    shape "KP0" {
-        corner= 1,
-        { [  37,  18 ] },
-        { [   2,   1 ], [  35,  16 ] }
-    };
-    shape "KPAD" {
-        corner= 1,
-        { [  18,  37 ] },
-        { [   2,   1 ], [  16,  35 ] }
-    };
-    shape "LEDS" { { [  75,  20 ] } };
-    shape "LED" { { [   5,   1 ] } };
-    section "Function" {
-        key.color= "grey20";
-        priority=  7;
-        top=       22;
-        left=      19;
-        width=     351;
-        height=    19;
-        row {
-            top=  1;
-            left= 1;
-            keys {
-                {  <ESC>, "NORM",   1 },
-                { <FK01>, "NORM",  20, color="white" },
-                { <FK02>, "NORM",   1, color="white" },
-                { <FK03>, "NORM",   1, color="white" },
-                { <FK04>, "NORM",   1, color="white" },
-                { <FK05>, "NORM",  11, color="white" },
-                { <FK06>, "NORM",   1, color="white" },
-                { <FK07>, "NORM",   1, color="white" },
-                { <FK08>, "NORM",   1, color="white" },
-                { <FK09>, "NORM",  11, color="white" },
-                { <FK10>, "NORM",   1, color="white" },
-                { <FK11>, "NORM",   1, color="white" },
-                { <FK12>, "NORM",   1, color="white" },
-                { <PRSC>, "NORM",   8, color="white" },
-                { <SCLK>, "NORM",   1, color="white" },
-                { <PAUS>, "NORM",   1, color="white" }
-            };
-        };
-    }; // End of "Function" section
-
-    section "Alpha" {
-        key.color= "white";
-        priority=  8;
-        top=       61;
-        left=      19;
-        width=     287;
-        height=    95;
-        row {
-            top=  1;
-            left= 1;
-            keys {
-                { <TLDE>, "NORM",   1 }, { <AE01>, "NORM",   1 },
-                { <AE02>, "NORM",   1 }, { <AE03>, "NORM",   1 },
-                { <AE04>, "NORM",   1 }, { <AE05>, "NORM",   1 },
-                { <AE06>, "NORM",   1 }, { <AE07>, "NORM",   1 },
-                { <AE08>, "NORM",   1 }, { <AE09>, "NORM",   1 },
-                { <AE10>, "NORM",   1 }, { <AE11>, "NORM",   1 },
-                { <AE12>, "NORM",   1 },
-                { <BKSP>, "BKSP",   1, color="grey20" }
-            };
-        };
-        row {
-            top=  20;
-            left= 1;
-            keys {
-                {  <TAB>, "TABK",   1, color="grey20" },
-                { <AD01>, "NORM",   1 }, { <AD02>, "NORM",   1 },
-                { <AD03>, "NORM",   1 }, { <AD04>, "NORM",   1 },
-                { <AD05>, "NORM",   1 }, { <AD06>, "NORM",   1 },
-                { <AD07>, "NORM",   1 }, { <AD08>, "NORM",   1 },
-                { <AD09>, "NORM",   1 }, { <AD10>, "NORM",   1 },
-                { <AD11>, "NORM",   1 }, { <AD12>, "NORM",   1 },
-                { <BKSL>, "BKSL",   1 }
-            };
-        };
-        row {
-            top=  39;
-            left= 1;
-            keys {
-                { <CAPS>, "CAPS",   1, color="grey20" },
-                { <AC01>, "NORM",   1 }, { <AC02>, "NORM",   1 },
-                { <AC03>, "NORM",   1 }, { <AC04>, "NORM",   1 },
-                { <AC05>, "NORM",   1 }, { <AC06>, "NORM",   1 },
-                { <AC07>, "NORM",   1 }, { <AC08>, "NORM",   1 },
-                { <AC09>, "NORM",   1 }, { <AC10>, "NORM",   1 },
-                { <AC11>, "NORM",   1 },
-                { <RTRN>, "RTRN",   1, color="grey20" }
-            };
-        };
-        row {
-            top=  58;
-            left= 1;
-            keys {
-                { <LFSH>, "LFSH",   1, color="grey20" },
-                { <LSGT>, "NORM",   1 }, { <AB01>, "NORM",   1 },
-                { <AB02>, "NORM",   1 }, { <AB03>, "NORM",   1 },
-                { <AB04>, "NORM",   1 }, { <AB05>, "NORM",   1 },
-                { <AB06>, "NORM",   1 }, { <AB07>, "NORM",   1 },
-                { <AB08>, "NORM",   1 }, { <AB09>, "NORM",   1 },
-                { <AB10>, "NORM",   1 },
-                { <RTSH>, "RTSH",   1, color="grey20" }
-            };
-        };
-        row {
-            top=  77;
-            left= 1;
-            keys {
-                { <LCTL>, "MODK",   1, color="grey20" },
-                { <LWIN>, "SMOD",   1, color="grey20" },
-                { <LALT>, "SMOD",   1, color="grey20" },
-                { <SPCE>, "SPCE",   1 },
-                { <RALT>, "SMOD",   1, color="grey20" },
-                { <RWIN>, "SMOD",   1, color="grey20" },
-                { <MENU>, "SMOD",   1, color="grey20" },
-                { <RCTL>, "SMOD",   1, color="grey20" }
-            };
-        };
-    }; // End of "Alpha" section
-
-    section "Editing" {
-        key.color= "grey20";
-        priority=  9;
-        top=       61;
-        left=      312;
-        width=     58;
-        height=    95;
-        row {
-            top=  1;
-            left= 1;
-            keys {
-                {  <INS>, "NORM",   1 }, { <HOME>, "NORM",   1 },
-                { <PGUP>, "NORM",   1 }
-            };
-        };
-        row {
-            top=  20;
-            left= 1;
-            keys {
-                { <DELE>, "NORM",   1 }, {  <END>, "NORM",   1 },
-                { <PGDN>, "NORM",   1 }
-            };
-        };
-        row {
-            top=  58;
-            left= 20;
-            keys {
-                {   <UP>, "NORM",   1 }
-            };
-        };
-        row {
-            top=  77;
-            left= 1;
-            keys {
-                { <LEFT>, "NORM",   1 }, { <DOWN>, "NORM",   1 },
-                { <RGHT>, "NORM",   1 }
-            };
-        };
-    }; // End of "Editing" section
-
-    section "Keypad" {
-        key.color= "grey20";
-        priority=  10;
-        top=       61;
-        left=      376;
-        width=     77;
-        height=    95;
-        row {
-            top=  1;
-            left= 1;
-            keys {
-                { <NMLK>, "NORM",   1 }, { <KPDV>, "NORM",   1 },
-                { <KPMU>, "NORM",   1 }, { <KPSU>, "NORM",   1 }
-            };
-        };
-        row {
-            top=  20;
-            left= 1;
-            keys {
-                {  <KP7>, "NORM",   1, color="white" },
-                {  <KP8>, "NORM",   1, color="white" },
-                {  <KP9>, "NORM",   1, color="white" },
-                { <KPAD>, "KPAD",   1 }
-            };
-        };
-        row {
-            top=  39;
-            left= 1;
-            keys {
-                {  <KP4>, "NORM",   1, color="white" },
-                {  <KP5>, "NORM",   1, color="white" },
-                {  <KP6>, "NORM",   1, color="white" }
-            };
-        };
-        row {
-            top=  58;
-            left= 1;
-            keys {
-                {  <KP1>, "NORM",   1, color="white" },
-                {  <KP2>, "NORM",   1, color="white" },
-                {  <KP3>, "NORM",   1, color="white" },
-                { <KPEN>, "KPAD",   1 }
-            };
-        };
-        row {
-            top=  77;
-            left= 1;
-            keys {
-                {  <KP0>, "KP0",   1, color="white" },
-                { <KPDL>, "NORM",   1, color="white" }
-            };
-        };
-    }; // End of "Keypad" section
-
-    solid "LedPanel" {
-        top=      22;
-        left=     377;
-        priority= 0;
-        color= "grey10";
-        shape= "LEDS";
-    };
-    indicator "Num Lock" {
-        top=      37;
-        left=     382;
-        priority= 1;
-        onColor= "green";
-        offColor= "green30";
-        shape= "LED";
-    };
-    indicator "Caps Lock" {
-        top=      37;
-        left=     407;
-        priority= 2;
-        onColor= "green";
-        offColor= "green30";
-        shape= "LED";
-    };
-    indicator "Scroll Lock" {
-        top=      37;
-        left=     433;
-        priority= 3;
-        onColor= "green";
-        offColor= "green30";
-        shape= "LED";
-    };
-    text "NumLockLabel" {
-        top=      25;
-        left=     378;
-        priority= 4;
-        width=  19.8;
-        height=  10;
-        XFont= "-*-helvetica-medium-r-normal--*-120-*-*-*-*-iso8859-1";
-        text=  "Num\nLock";
-    };
-    text "CapsLockLabel" {
-        top=      25;
-        left=     403;
-        priority= 5;
-        width=  26.4;
-        height=  10;
-        XFont= "-*-helvetica-medium-r-normal--*-120-*-*-*-*-iso8859-1";
-        text=  "Caps\nLock";
-    };
-    text "ScrollLockLabel" {
-        top=      25;
-        left=     428;
-        priority= 6;
-        width=  39.6;
-        height=  10;
-        XFont= "-*-helvetica-medium-r-normal--*-120-*-*-*-*-iso8859-1";
-        text=  "Scroll\nLock";
-    };
 };
 
 };
