@@ -6,7 +6,7 @@ set hinttags="//*[@onclick or @onmouseover or @onmousedown or @onmouseup or @onc
 
 loadplugins
 
-set showtabline=0
+set showtabline=1
 "style * .buftab_selected { font-weight: bold; }
-hi BufTabSelected {CSS}
+"hi BufTabSelected {CSS}
 

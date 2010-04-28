@@ -1,0 +1,36 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Usage}{3}
+\contentsline {subsection}{\numberline {2.1}Loading Package}{3}
+\contentsline {subsection}{\numberline {2.2}Basic Usage}{4}
+\contentsline {subsection}{\numberline {2.3}Style Parameters}{4}
+\contentsline {subsection}{\numberline {2.4}Fine Tuning}{4}
+\contentsline {subsection}{\numberline {2.5}Finer Tuning}{5}
+\contentsline {subsection}{\numberline {2.6}Performance Tuning}{6}
+\contentsline {subsection}{\numberline {2.7}Compatibility with Other Packages}{7}
+\contentsline {section}{\numberline {3}Known Problems}{8}
+\contentsline {section}{\numberline {4}Implementation}{10}
+\contentsline {subsection}{\numberline {4.1}Problems and Solutions}{10}
+\contentsline {subsection}{\numberline {4.2}Another Problem and Imperfect Solutions}{13}
+\contentsline {subsection}{\numberline {4.3}Register Declaration}{14}
+\contentsline {subsection}{\numberline {4.4}Initialization}{17}
+\contentsline {subsection}{\numberline {4.5}Making Preamble}{21}
+\contentsline {subsection}{\numberline {4.6}Building Columns}{27}
+\contentsline {subsection}{\numberline {4.7}Multi-columns}{29}
+\contentsline {subsection}{\numberline {4.8}End of Rows}{31}
+\contentsline {subsection}{\numberline {4.9}Horizontal Lines}{33}
+\contentsline {subsection}{\numberline {4.10}End of Environment}{36}
+\contentsline {subsection}{\numberline {4.11}Drawing Vertical Lines}{38}
+\contentsline {subsection}{\numberline {4.12}Drawing Dash-lines}{43}
+\contentsline {subsection}{\numberline {4.13}Shorthand Activation}{45}
+\contentsline {subsection}{\numberline {4.14}Compatibility with \textsf {colortab}}{47}
+\contentsline {subsection}{\numberline {4.15}Compatibility with \textsf {longtable}}{48}
+\contentsline {subsubsection}{\numberline {4.15.1}Initialization}{48}
+\contentsline {subsubsection}{\numberline {4.15.2}Ending Chunks}{50}
+\contentsline {subsubsection}{\numberline {4.15.3}Horizontal Lines and \texttt {p}-Boxes}{52}
+\contentsline {subsubsection}{\numberline {4.15.4}First Chunk}{54}
+\contentsline {subsubsection}{\numberline {4.15.5}Output Routine}{55}
+\contentsline {subsection}{\numberline {4.16}Compatibility with \textsf {colortbl}}{59}
+\contentsline {subsubsection}{\numberline {4.16.1}Initialization, Cell Coloring and Finalization}{60}
+\contentsline {subsubsection}{\numberline {4.16.2}Horizontal Line Coloring}{62}
+\contentsline {subsubsection}{\numberline {4.16.3}Vertical Line Coloring}{63}
+\contentsline {subsubsection}{\numberline {4.16.4}Compatibility with \textsf {longtable}}{66}

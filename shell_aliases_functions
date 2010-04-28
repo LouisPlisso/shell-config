@@ -1,3 +1,7 @@
+alias light-m='sudo $MY_CONFIG_DIR/bin/adjust_light.sh'
+alias light-min='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 0'
+alias light-max='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 100'
+
 alias gvi='gvim'
 
 #bad but needed to let default config of aptitude and still use python 2.6
@@ -13,6 +17,16 @@ alias saptdu='sudo aptitude dist-upgrade'
 alias hibernate='sudo pm-hibernate'
 alias suspend='sudo pm-suspend'
 alias suspend-hybrid='sudo pm-suspend-hybrid'
+
+alias presentation='impressive -t PageTurn'
+
+EXTERNAL_OUTPUT="VGA1"
+INTERNAL_OUTPUT="LVDS1"
+alias ext-screen-off='xrandr --output $EXTERNAL_OUTPUT --off'
+alias ext-screen='xrandr --auto --output $EXTERNAL_OUTPUT --auto --same-as $INTERNAL_OUTPUT'
+
+alias netapp='sudo mount /netapp; cd /netapp/elpy7391'
+alias netapp-='sudo mount /netapp'
 
 alias cdc='cd $MY_CONFIG_DIR'
 
@@ -36,5 +50,19 @@ saptr() {
 	fi
  }
 
+
+
+alias lst='tar tzf'
+alias untar='tar xzvf'
+alias j='jobs -l'
+alias h='history|more'
+ 
+alias less='less --quiet'
+alias df='df --human-readable'
+alias du='du --human-readable'
+alias less='less -e -i -m -R'
+
+# Pile de Répertoires
+alias p='popd'
 
 

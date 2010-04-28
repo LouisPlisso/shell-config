@@ -10,6 +10,7 @@
 <Multi_key>    <x>  <D> :   "\"*D"   # vi x buffer delete
 <Multi_key>    <x>  <P> :   "\"*P"   # vi x buffer paste
 <Multi_key>    <x>  <C> :   "\"*C"   # vi x buffer change
+<Multi_key>    <x>  <x> :   "^\"*y$"   # vi x buffer yank line
 
 
 <Multi_key>    <^>  <a> :   "â"     # terminal a circum

@@ -17,6 +17,7 @@
 \setbeamercolor{example text}{fg=grisft}
 \setbeamercolor{structure}{fg=orft,bg=white}
 \setbeamercolor{background canvas}{parent=normal text}
+\setbeamercolor{block body}{bg=comp4}
 
 % Headline and footline
 %\defbeamertemplate*{headline}{orange}
@@ -24,46 +25,62 @@
 %  \includegraphics[width=.09\paperwidth]{logo_FT} \hfill\includegraphics[width=.09\paperwidth]{logo_orange}\ 
 %}
 
-\defbeamertemplate*{footline}{orange}
+\defbeamertemplate*{footline}{orangebody}
 {
   \leavevmode%
-  \hskip.01\paperwidth
-  \includegraphics[width=.09\paperwidth]{logo_FT}
-  \hbox{\begin{beamercolorbox}[wd=.2\paperwidth,ht=2.5ex,dp=1.125ex]{authororange in head/foot}%
-    \usebeamerfont{authororange in head/foot}\hspace{1em}\insertshortauthor
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.5ex,dp=1.125ex]{titleorange in head/foot}%
-    \hfill\usebeamerfont{titleorange in head/foot}\insertshorttitle\hfill\
+  \hskip.03\paperwidth
+  %\includegraphics[width=.09\paperwidth]{logo_FT}
+  \begin{beamercolorbox}[wd=.07\paperwidth,ht=2.5ex,dp=1.125ex]{dateorange in head/foot}%
+   \textbf{\usebeamerfont{dateorange in head/foot}\insertframenumber{} / \inserttotalframenumber{}}\hspace*{2ex}\ 
   \end{beamercolorbox}
-  \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.5ex,dp=1.125ex]{dateorange in head/foot}%
-    \hfill\usebeamerfont{dateorange in head/foot}\insertframenumber{} / \inserttotalframenumber{}\hspace*{2ex}\ 
-  \end{beamercolorbox}}%
-  \includegraphics[width=.09\paperwidth]{logo_orange} 
-  \hskip.01\paperwidth
+  \hbox{\begin{beamercolorbox}[wd=.65\paperwidth,ht=2.5ex,dp=1.125ex]{authororange in head/foot}%
+   \usebeamerfont{authororange in head/foot}\textbf{Orange Labs Recherche \& D\'eveloppement -- \insertshortauthor: \insertshorttitle -- \insertdate}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.5ex,dp=1.125ex]{titleorange in head/foot}%
+   \hfill\usebeamerfont{titleorange in head/foot}\textbf{Interne Groupe France T\'el\'ecom}\hfill\
+  \end{beamercolorbox}
+}%
+  %\includegraphics[width=.09\paperwidth]{logo_orange} 
+  %\hskip.01\paperwidth
   \vskip0pt%
 %  \ \parbox{.33\paperwidth}{\insertshortauthor}\parbox{.33\paperwidth}{\hfill\insertshorttitle\hfill\ }\parbox{.33\paperwidth}{\hfill\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}}
  % \hfill\pgfuseimage{orange-logo-bottom}\hfill\ 
  % \insertshortdate{}
 }
 
-
-
-
-% Navigation symbols      => I don't want to see them
-
 \defbeamertemplate*{navigation symbols}{orange}
 {%
-   \vbox{%
+   {%
      \hbox{\insertslidenavigationsymbol}
-     %\hbox{\insertframenavigationsymbol}
-     %\hbox{\insertsubsectionnavigationsymbol}
-     %\hbox{\insertsectionnavigationsymbol}
+     \hbox{\insertframenavigationsymbol}
+     \hbox{\insertsubsectionnavigationsymbol}
+     \hbox{\insertsectionnavigationsymbol}
      \hbox{\insertdocnavigationsymbol}
      \hbox{\insertbackfindforwardnavigationsymbol}%
    }%
 }
 
 
+
+
+\defbeamertemplate{footline}{orangetitle}
+{
+  \leavevmode%
+  \hskip.01\paperwidth
+  \includegraphics[width=.09\paperwidth]{logo_FT}
+  \hskip.3\paperwidth
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{no authororange in foot on title page} \textbf{Interne Groupe France T\'el\'ecom} %
+  \end{beamercolorbox}}%
+  \includegraphics[width=.09\paperwidth]{logo_orange} 
+  \hskip.01\paperwidth
+  \vskip0pt%
+}
+
+
+
+\setbeamertemplate{footline}[orangetitle]
+% Navigation symbols      => I don't want to see them on title page
+\setbeamertemplate{navigation symbols}{}
 
 \mode
 <all>

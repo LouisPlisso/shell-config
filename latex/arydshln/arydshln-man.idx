@@ -1,0 +1,71 @@
+\indexentry{usepackage=\verb!*+\usepackage+|usage}{2}
+\indexentry{documentstyle=\verb!*+\documentstyle+|usage}{2}
+\indexentry{array={\ttfamily array} (package)}{2}
+\indexentry{packages:>{\ttfamily array}}{2}
+\indexentry{colortab={\ttfamily colortab} (package)}{2}
+\indexentry{packages:>{\ttfamily colortab}}{2}
+\indexentry{longtable={\ttfamily longtable} (package)}{2}
+\indexentry{packages:>{\ttfamily longtable}}{2}
+\indexentry{colortbl={\ttfamily colortbl} (package)}{2}
+\indexentry{packages:>{\ttfamily colortbl}}{2}
+\indexentry{array={\ttfamily array} (environment)|usage}{3}
+\indexentry{environments:>array={\ttfamily array}|usage}{3}
+\indexentry{tabular={\ttfamily tabular} (environment)|usage}{3}
+\indexentry{environments:>tabular={\ttfamily tabular}|usage}{3}
+\indexentry{hline=\verb!*+\hline+}{3}
+\indexentry{cline=\verb!*+\cline+}{3}
+\indexentry{multicolumn=\verb!*+\multicolumn+}{3}
+\indexentry{:={\protect\ttfamily:}|usage}{3}
+\indexentry{hdashline=\verb!*+\hdashline+|usage}{3}
+\indexentry{cdashline=\verb!*+\cdashline+|usage}{3}
+\indexentry{firsthdashline=\verb!*+\firsthdashline+|usage}{3}
+\indexentry{lasthdashline=\verb!*+\lasthdashline+|usage}{3}
+\indexentry{dashlinedash=\verb!*+\dashlinedash+|usage}{3}
+\indexentry{dashlinegap=\verb!*+\dashlinegap+|usage}{3}
+\indexentry{;={\protect\ttfamily;}|usage}{3}
+\indexentry{hdashline=\verb!*+\hdashline+|usage}{4}
+\indexentry{cdashline=\verb!*+\cdashline+|usage}{4}
+\indexentry{ADLnullwide=\verb!*+\ADLnullwide+|usage}{4}
+\indexentry{ADLsomewide=\verb!*+\ADLsomewide+|usage}{4}
+\indexentry{arrayrulewidth=\verb!*+\arrayrulewidth+}{4}
+\indexentry{ADLdrawingmode=\verb!*+\ADLdrawingmode+|usage}{5}
+\indexentry{ADLinactivate=\verb!*+\ADLinactivate+|usage}{5}
+\indexentry{ADLactivate=\verb!*+\ADLactivate+|usage}{5}
+\indexentry{Array={\ttfamily Array} (environment)|usage}{5}
+\indexentry{environments:>Array={\ttfamily Array}|usage}{5}
+\indexentry{Tabular={\ttfamily Tabular} (environment)|usage}{5}
+\indexentry{environments:>Tabular={\ttfamily Tabular}|usage}{5}
+\indexentry{ADLnoshorthanded=\verb!*+\ADLnoshorthanded+|usage}{6}
+\indexentry{array={\ttfamily array} (package)}{6}
+\indexentry{packages:>{\ttfamily array}}{6}
+\indexentry{extrarowheight=\verb!*+\extrarowheight+}{6}
+\indexentry{firsthline=\verb!*+\firsthline+}{6}
+\indexentry{lasthline=\verb!*+\lasthline+}{6}
+\indexentry{newcolumntype=\verb!*+\newcolumntype+}{6}
+\indexentry{colortab={\ttfamily colortab} (package)}{6}
+\indexentry{packages:>{\ttfamily colortab}}{6}
+\indexentry{LCC=\verb!*+\LCC+}{6}
+\indexentry{NAC=\verb!*+\NAC+}{6}
+\indexentry{ENAC=\verb!*+\ENAC+}{6}
+\indexentry{AC=\verb!*+\AC+}{6}
+\indexentry{EAC=\verb!*+\EAC+}{6}
+\indexentry{colortbl={\ttfamily colortbl} (package)}{6}
+\indexentry{packages:>{\ttfamily colortbl}}{6}
+\indexentry{rowcolor=\verb!*+\rowcolor+}{6}
+\indexentry{columncolor=\verb!*+\columncolor+}{6}
+\indexentry{cellcolor=\verb!*+\cellcolor+}{6}
+\indexentry{arrayrulecolor=\verb!*+\arrayrulecolor+}{6}
+\indexentry{doublerulesepcolor=\verb!*+\doublerulesepcolor+}{6}
+\indexentry{ADLnullwidehline=\verb!*+\ADLnullwidehline+|usage}{6}
+\indexentry{ADLsomewidehline=\verb!*+\ADLsomewidehline+|usage}{6}
+\indexentry{dashgapcolor=\verb!*+\dashgapcolor+|usage}{6}
+\indexentry{nodashgapcolor=\verb!*+\nodashgapcolor+|usage}{6}
+\indexentry{color=\verb!*+\color+}{6}
+\indexentry{longtable={\ttfamily longtable} (environment)|usage}{7}
+\indexentry{environments:>longtable={\ttfamily longtable}|usage}{7}
+\indexentry{Longtable={\ttfamily Longtable} (environment)|usage}{7}
+\indexentry{environments:>Longtable={\ttfamily Longtable}|usage}{7}
+\indexentry{longtable={\ttfamily longtable} (package)}{7}
+\indexentry{packages:>{\ttfamily longtable}}{7}
+\indexentry{LTchunksize={\ttfamily LTchunksize} (counter)}{7}
+\indexentry{counters:>{\ttfamily LTchunksize}}{7}

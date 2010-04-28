@@ -141,3 +141,80 @@ vim-vimoutliner
 texpower
 vim-full
 vim-gtk
+nicotine python-uniconvertor
+libdvdread3
+w64codecs
+xine
+# gxine
+libdvdcss
+parcellite
+keynav
+slice
+ncurses-hexedit
+texlive-lang-french
+ipe
+# python-twisted
+inkscape
+# clamav 
+# clamav
+-milter
+# clamassassin
+# clamav
+-data
+impressive
+icedove-locale-fr
+# iceowl
+iceowl-extension1.0~b1+dfsg-4
+iceowl-extension/sid
+# clamav
+/sid
+# clamav
+/sid
+# clamav
+/sid # clamassassin
+/sid # # # clamav
+-base/sid
+# clamav
+/sid
+# clamav
+-data/sid # # clamav
+-milter/sid
+# clamav
+/sid # libclamav6
+/sid
+clamav/sid libclamav6/sid clamav-freshclam/sid clamav-base/sid
+clamav-milter/sid
+clamav-milter/sid clamav-daemon/sid
+hotplug-utils
+xpdf/lenny
+latex2html
+python-simplejson
+beagle
+google-desktop-linux
+vobcopy dvdbackup dvd+rw-tools
+lxdvdrip
+lxdvdrip
+lsdvd
+happy # libmpd
+# libmpdclient2
+# libmpdclient-dev 
+# libmpd-dev
+# mpd
+# libhugs-quickcheck
+# mpd
+mpd
+mpd-client
+ghc/sid
+ghc/sid
+ghc6/sid
+libghc6-xmonad-contrib-prof
+ghc6/squeeze
+libghc6-xmonad-contrib-prof
+ktouch
+libhdf5-dev
+libhdf5
+libhdf5-1.8.4
+python-tables python-tables-doc
+gddccontrol
+ddccontrol
+i2c-tools

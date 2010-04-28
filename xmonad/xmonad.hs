@@ -14,6 +14,19 @@ import qualified System.IO.UTF8
 
 import XMonad.Util.XSelection
 
+--import Volume
+import XMonad.Util.Dzen
+import Data.Map    (fromList)
+import Data.Monoid (mappend)
+
+--alert = dzenConfig centered . show . round
+--centered =
+        --onCurr (center 150 66)
+    -- >=> font "-*-helvetica-*-r-*-*-64-*-*-*-*-*-*-*"
+    -- >=> addArgs ["-fg", "#80c0ff"]
+    -- >=> addArgs ["-bg", "#000040"]
+
+
 
 -- | Whether focus follows the mouse pointer.
 -- focusFollowsMouse :: Bool
@@ -52,7 +65,7 @@ main = do
             <+> manageHook defaultConfig
             -- make sure to include myManageHook definition from above
         , layoutHook = avoidStruts  $  layoutHook defaultConfig
-        , XMonad.focusFollowsMouse  = False
+--        , XMonad.focusFollowsMouse  = False
         , logHook = dynamicLogWithPP $ xmobarPP
             { ppOutput = hPutStrLn xmproc
             , ppTitle = xmobarColor "green" "" . shorten 50
@@ -62,11 +75,14 @@ main = do
         [ ((mod1Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock") 
         , ((mod1Mask, xK_s), spawn "exe=`quicksnips` && eval \"exec $exe\"")
         -- , ((mod1Mask, xK_Return), spawn "urxvt")
-        , ((mod1Mask, xK_f), spawn "firefox")
+        , ((mod1Mask, xK_f), spawn "iceweasel")
+        , ((mod1Mask, xK_d), spawn "icedove")
         -- search how to use: http://www.haskell.org/haskellwiki/Xmonad/Config_archive/Mntnoe%27s_xmonad.hs
         , ((mod1Mask, xK_c), spawn "hxsel")
         , ((0, xK_F8), pasteSelection)
         -- , ((mod1Mask .|. shiftMask, xK_b), getSelection )
+        --, ((0, xK_F6), lowerVolume 4 >>= alert)
+        --, ((0, xK_F7), raiseVolume 4 >>= alert)
         ]
 
 

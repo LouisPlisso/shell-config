@@ -1,0 +1,123 @@
+
+ \begin{theindex} 
+ \makeatletter\scan@allowedfalse
+{\bfseries\hfil Symbols\hfil}\nopagebreak
+
+  \item {\protect\ttfamily:}\pfill \usage{3}
+  \item {\protect\ttfamily;}\pfill \usage{3}
+
+  \indexspace
+{\bfseries\hfil A\hfil}\nopagebreak
+
+  \item \verb*+\AC+\pfill 6
+  \item \verb*+\ADLactivate+\pfill \usage{5}
+  \item \verb*+\ADLdrawingmode+\pfill \usage{5}
+  \item \verb*+\ADLinactivate+\pfill \usage{5}
+  \item \verb*+\ADLnoshorthanded+\pfill \usage{6}
+  \item \verb*+\ADLnullwide+\pfill \usage{4}
+  \item \verb*+\ADLnullwidehline+\pfill \usage{6}
+  \item \verb*+\ADLsomewide+\pfill \usage{4}
+  \item \verb*+\ADLsomewidehline+\pfill \usage{6}
+  \item {\ttfamily Array} (environment)\pfill \usage{5}
+  \item {\ttfamily array} (environment)\pfill \usage{3}
+  \item {\ttfamily array} (package)\pfill 2, 6
+  \item \verb*+\arrayrulecolor+\pfill 6
+  \item \verb*+\arrayrulewidth+\pfill 4
+
+  \indexspace
+{\bfseries\hfil C\hfil}\nopagebreak
+
+  \item \verb*+\cdashline+\pfill \usage{3, 4}
+  \item \verb*+\cellcolor+\pfill 6
+  \item \verb*+\cline+\pfill 3
+  \item \verb*+\color+\pfill 6
+  \item {\ttfamily colortab} (package)\pfill 2, 6
+  \item {\ttfamily colortbl} (package)\pfill 2, 6
+  \item \verb*+\columncolor+\pfill 6
+  \item counters:\efill 
+ \subitem {\ttfamily LTchunksize}\pfill 7
+
+  \indexspace
+{\bfseries\hfil D\hfil}\nopagebreak
+
+  \item \verb*+\dashgapcolor+\pfill \usage{6}
+  \item \verb*+\dashlinedash+\pfill \usage{3}
+  \item \verb*+\dashlinegap+\pfill \usage{3}
+  \item \verb*+\documentstyle+\pfill \usage{2}
+  \item \verb*+\doublerulesepcolor+\pfill 6
+
+  \indexspace
+{\bfseries\hfil E\hfil}\nopagebreak
+
+  \item \verb*+\EAC+\pfill 6
+  \item \verb*+\ENAC+\pfill 6
+  \item environments:\efill 
+ \subitem {\ttfamily Array}\pfill \usage{5}
+    \subitem {\ttfamily array}\pfill \usage{3}
+    \subitem {\ttfamily Longtable}\pfill \usage{7}
+    \subitem {\ttfamily longtable}\pfill \usage{7}
+    \subitem {\ttfamily Tabular}\pfill \usage{5}
+    \subitem {\ttfamily tabular}\pfill \usage{3}
+  \item \verb*+\extrarowheight+\pfill 6
+
+  \indexspace
+{\bfseries\hfil F\hfil}\nopagebreak
+
+  \item \verb*+\firsthdashline+\pfill \usage{3}
+  \item \verb*+\firsthline+\pfill 6
+
+  \indexspace
+{\bfseries\hfil H\hfil}\nopagebreak
+
+  \item \verb*+\hdashline+\pfill \usage{3, 4}
+  \item \verb*+\hline+\pfill 3
+
+  \indexspace
+{\bfseries\hfil L\hfil}\nopagebreak
+
+  \item \verb*+\lasthdashline+\pfill \usage{3}
+  \item \verb*+\lasthline+\pfill 6
+  \item \verb*+\LCC+\pfill 6
+  \item {\ttfamily Longtable} (environment)\pfill \usage{7}
+  \item {\ttfamily longtable} (environment)\pfill \usage{7}
+  \item {\ttfamily longtable} (package)\pfill 2, 7
+  \item {\ttfamily LTchunksize} (counter)\pfill 7
+
+  \indexspace
+{\bfseries\hfil M\hfil}\nopagebreak
+
+  \item \verb*+\multicolumn+\pfill 3
+
+  \indexspace
+{\bfseries\hfil N\hfil}\nopagebreak
+
+  \item \verb*+\NAC+\pfill 6
+  \item \verb*+\newcolumntype+\pfill 6
+  \item \verb*+\nodashgapcolor+\pfill \usage{6}
+
+  \indexspace
+{\bfseries\hfil P\hfil}\nopagebreak
+
+  \item packages:\efill 
+ \subitem {\ttfamily array}\pfill 2, 6
+    \subitem {\ttfamily colortab}\pfill 2, 6
+    \subitem {\ttfamily colortbl}\pfill 2, 6
+    \subitem {\ttfamily longtable}\pfill 2, 7
+
+  \indexspace
+{\bfseries\hfil R\hfil}\nopagebreak
+
+  \item \verb*+\rowcolor+\pfill 6
+
+  \indexspace
+{\bfseries\hfil T\hfil}\nopagebreak
+
+  \item {\ttfamily Tabular} (environment)\pfill \usage{5}
+  \item {\ttfamily tabular} (environment)\pfill \usage{3}
+
+  \indexspace
+{\bfseries\hfil U\hfil}\nopagebreak
+
+  \item \verb*+\usepackage+\pfill \usage{2}
+
+ \end{theindex}

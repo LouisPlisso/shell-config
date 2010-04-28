@@ -12,6 +12,9 @@ deb http://ftp.fr.debian.org/debian/ squeeze-proposed-updates main contrib non-f
 deb-src http://security.debian.org/ squeeze/updates main contrib non-free 
 deb-src http://ftp.fr.debian.org/debian/ squeeze-proposed-updates main contrib non-free 
 
+#### Unstable repos
+deb http://ftp.fr.debian.org/debian/ experimental main contrib non-free 
+
 #### Experimental repos
 #deb http://ftp.fr.debian.org/debian/ experimental main contrib non-free 
 
@@ -38,3 +41,5 @@ deb http://www.debian-multimedia.org/ squeeze main
 ## Run this command: wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && apt-get update  
 deb http://dl.google.com/linux/deb/ stable main #non-free
 
+#### Clamav
+deb http://volatile.debian.org/debian-volatile squeeze/volatile main contrib non-free

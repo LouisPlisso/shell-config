@@ -71,6 +71,7 @@ if [ -e $LATEX_DIR ]; then
     [ -h $LATEX_DIR ] && sudo /bin/rm $LATEX_DIR
     [ -f ${LATEX_DIR} ] && sudo /bin/mv ${LATEX_DIR} ${LATEX_DIR}.old 
     sudo /bin/ln -s ${INSTALL_DIR}/latex ${LATEX_DIR}/my_sty
+    sudo texconfig rehash 
 fi
 
 echo "Configure python"
@@ -94,8 +95,8 @@ for template in bashrc.template xsessionrc.template zshrc.template; do
     [ -f ${HOME}/.file ] && /bin/mv ${HOME}/.file ${HOME}/.file.old
     /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" ${template} > ${HOME}/.${file}
 done
-for file in profile inputrc vimrc gvimrc Xdefaults xmonad xmobarrc cabal XCompose dircolors; do
-	TARGET=${HOME}/.$file 
+for file in profile inputrc vimrc gvimrc Xdefaults xmonad xmobarrc cabal XCompose keynavrc dircolors lxdvdrip vimperator/vimperatorrc vimperator/muttatorrc; do
+	TARGET=${HOME}/.$`basename file `
     # if there is already a link, remove it
 	[ -h ${TARGET} ] && /bin/rm ${TARGET}
     # if there is a file (not link), backup it

@@ -3,34 +3,12 @@
 # Load resources
   
 #xrdb -merge .Xresources
-   
-# Set up an icon tray
-    
-trayer --edge top --align right --SetDockType true --SetPartialStrut true \
-    --expand true --width 10 --transparent true --height 8 --tint 0x191970 & #
-      
+     
 # Set the background color
 xsetroot -solid midnightblue
         
 # wallpaper
 xpmroot $MY_CONFIG_DIR/xmonad/desktop-background.png
-
-# Fire up apps
-         
-# gajim &
-
-wicd-client &
-
-pidgin &
-
-davmail &
-          
-xscreensaver -no-splash &
-
-urxvtd -q -f -o &
-
-xbattbar -c -t 2 -p 30 top &
-
 # keymaps and key config
 #setxkbmap fr -variant dvorak_prog
 # warning: xkbmap resets xmodmap
@@ -41,3 +19,27 @@ eval $cmd_key
 
 # need to do it twice... I don't know why
 eval $cmd_key
+   
+# Set up an icon tray
+trayer --edge top --align right --SetDockType true --SetPartialStrut true \
+    --expand true --width 10 --transparent true --height 8 --tint 0x191970 & #
+ 
+xbattbar -c -t 2 -p 30 top &
+
+# Fire up apps
+         
+wicd-client &
+
+xscreensaver -no-splash &
+
+urxvtd -q -f -o &
+
+keynav &
+
+parcellite &
+
+pidgin &
+# gajim &
+
+davmail &
+          
