@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ssh capture@s-ctcp.rd.francetelecom.fr

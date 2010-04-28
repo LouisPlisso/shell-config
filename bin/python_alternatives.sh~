@@ -1,0 +1,5 @@
+#!/bin/sh
+# creates python alternatives with default as 2.6
+# launch as sudoer
+
+[ -h /etc/alternatives/python ] || ( sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.5 10; sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.6 20 )
