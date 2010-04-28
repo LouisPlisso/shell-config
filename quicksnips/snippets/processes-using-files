@@ -1,0 +1,8 @@
+# Continuously shows processes using files.
+
+function processes_using_files () {
+    while [ 1 ]; do
+        fuser -v $*
+    done
+}
+processes_using_files

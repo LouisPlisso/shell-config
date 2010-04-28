@@ -1,0 +1,11 @@
+# Converts one or more ogg files to mp3 format.
+
+function convert_ogg_mp3 () {
+    for file in $*; do
+	basename="$(basename $file .ogg)"
+	oggdec -o "${basename}.wav" "$basename" &&
+	lame "${basename}.wav" "${basename}.mp3" &&
+	rm "${basename}.wav"
+    done
+}
+convert_ogg_mp3

@@ -1,0 +1,14 @@
+# Add a user to Webmin.
+# Usage: webmin_add_user USER
+
+function webmin_add_user () {
+    if [[ $(grep -c $1 /etc/passwd) -eq 0 ]]; then
+        echo "$1 is not a system user."
+    else
+        (
+            echo $1:x:0 >> /etc/webmin/miniserv.users
+            tail -n1 /etc/webmin/webmin.acl|sed "s/.*:/$1:/" >> /etc/webmin/webmin.acl
+        ) && echo "Added $1 to /etc/webmin/miniserv.users and /etc/webmin/webmin.acl."
+    fi
+}
+webmin_add_user

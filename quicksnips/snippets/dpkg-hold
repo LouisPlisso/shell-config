@@ -1,0 +1,6 @@
+# Puts a package on hold in Debian.
+
+function holdpkg () {
+    echo "$1 hold"|dpkg --set-selections
+}
+holdpkg 

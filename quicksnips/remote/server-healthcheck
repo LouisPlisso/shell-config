@@ -1,0 +1,376 @@
+#!/bin/bash
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+PUBLICIP="$(curl -s www.whatismyip.com/automation/n09230945.asp)"
+
+usage="Usage: server-healthcheck [-h] [-m] [-s] [-u] [-v]
+
+Optional arguments.
+  -h  Print this help message.
+  -m  Do a 3-way mail check.
+  -s  Examine sar logs from the past week.
+  -u  See if any package updates are available.
+  -v  Print verbose messages about each thing checked.
+      Default is \"no news is good news\"."
+
+while getopts "msuvh" options; do
+    case $options in
+        m ) mailcheck=1;;
+        s ) sar=1;;
+        v ) verbose=1;;
+        u ) updates=1;;
+	h ) echo "$usage"
+	    exit 1;;
+	* ) echo "$usage"
+	    exit 1;;
+    esac
+done
+
+function warningmsg () { tput setaf 1; echo -e "WARN: $1"; tput sgr0; }
+function infomsg () { tput setaf 2; echo -e "INFO: $1"; tput sgr0; }
+function pmsg () { tput setaf 3; echo -e "$1"; tput sgr0; }
+function vmsg () {
+    if [[ $verbose ]]; then
+        tput setaf 4; echo -e "OKAY: $1"; tput sgr0
+    fi
+}
+
+function printcmdout () {
+    # Usage: printcmdout COMMAND WARNINGMSG [TESTCOMMAND]
+    if [[ -n $3 ]]; then
+        cmdtest=$(eval "$3")
+        cmdout=$(eval "$1")
+    else
+        cmdtest=$(eval "$1")
+        cmdout="$cmdtest"
+    fi
+    if [[ -n $cmdtest ]]; then
+        warningmsg "$2..."
+        echo "$cmdout" | head -n10
+        nlines=$( echo "$cmdout"|sed -n '$=' )
+        if [[ $nlines -gt 10 ]]; then
+            pmsg "[...]
+Only showing first 10 of $nlines lines.
+To see the full output, run \"$1\"."
+        elif [[ $nlines -eq 0 ]]; then
+            vmsg "$1 had no output."
+        fi
+    fi
+}
+
+function printiptables () {
+    printcmdout "$1" "$2" "$1|sed -e '/^target/d' -e '/Chain/d' -e '/^$/d'"
+}
+
+function 3waymailcheck () {
+    unset helo ptr adata
+    helo="$(echo "helo itsme.com"|nc -w1 localhost 25|awk '$1 ~ /220/ {print $2}')"
+
+    ptr="$(dig -x $PUBLICIP +short|sed s/\.$//)"
+    if [[ -n "$ptr" ]]; then
+        adata="$(dig $ptr +short|tail -n1)"
+    fi
+    
+    if ! [[ $PUBLICIP ]]; then
+        warningmsg "No Public IP Obtained"
+    fi
+
+    if ! [[ $ptr ]]; then
+        warningmsg "No PTR Obtained"
+    fi
+
+    if ! [[ $adata ]]; then
+        warningmsg "PTR does not forward resolve or no PTR to lookup"
+    fi
+
+    if ! [[ $helo ]]; then
+        warningmsg "No HELO data obtained"
+    fi
+
+    if ! [[ "$ptr" == "$helo" && "$adata" == "$PUBLICIP" ]]; then
+        warningmsg "3-way mail check failed.
+      IP is $PUBLICIP
+      PTR is $ptr
+      Hostname resolves to $adata
+      SMTP HELO is $helo"
+    else
+        vmsg "3-way mail check succeeded.
+      IP is $PUBLICIP
+      PTR is $ptr
+      Hostname resolves to $adata
+      SMTP HELO is $helo"
+    fi
+    
+}
+
+# Make sure script is being run as root.
+if [[ $( whoami ) != "root" ]]; then
+    pmsg "server-healthcheck should be run as root."
+    exit 1
+fi
+
+# Make sure system is GNU/Linux
+if [[ -z "$( uname -o|grep "GNU/Linux" )" ]]; then
+    pmsg "You don't appear to be running GNU/Linux.  This script is for GNU/Linux."
+    exit 1
+fi
+
+# Check OS version
+if [[ ! -e /etc/issue ]]; then
+    warningmsg "Server doesn't have an /etc/issue file.  That's weird."
+else
+    if [[ -n $(egrep "Red Hat Enterprise Linux [EA]S release 3" /etc/issue) ]]; then
+        infomsg "Server is running RHEL3."
+        distro="redhat"
+        rhversion="3"
+    elif [[ -n $(egrep "Red Hat Enterprise Linux [EA]S release 4" /etc/issue) ]]; then
+        infomsg "Server is running RHEL4."
+        distro="redhat"
+        rhversion="4"
+    elif [[ -n $(egrep "Red Hat Enterprise Linux Server release 5" /etc/issue) ]]; then
+        infomsg "Server is running RHEL5."
+        distro="redhat"
+        rhversion="5"
+    elif [[ -n $(grep "Debian GNU/Linux" /etc/issue) ]]; then
+        infomsg "Server is running Debian."
+        distro="debian"
+    else
+        infomsg "Server isn't running RHEL{3,4,5} or Debian.  From /etc/issue..."
+        head -n1 /etc/issue
+    fi
+fi
+
+infomsg "Public IP: $PUBLICIP"
+
+if [[ -z $( which rpm ) ]]; then
+    pmsg "This script requires the rpm command to report on installed packages.  Please install rpm."
+else
+    # Check for Plesk
+    if [[ "$( rpm -q psa )" != "package psa is not installed" ]]; then
+        infomsg "This server is running Plesk $(awk '{print $1}' /usr/local/psa/version).
+      Plesk URL: https://$PUBLICIP:8443/
+      Plesk admin password: $(cat /etc/psa/.psa.shadow)"
+    fi
+
+    # Check for Webmin
+    if [[ "$( rpm -q webmin )" != "package webmin is not installed" ]]; then
+        webminproc="$(ps ax|grep miniserv.pl|grep -v grep|awk '{print $1}')"
+        if [[ -n "$webminproc" ]]; then
+            webminport=$(netstat -ltnp|grep "$webminproc"|awk '{print $4}'|sed 's/.*:\(.*\)$/\1/')
+            if [[ -n "$webminport" ]]; then
+                infomsg "Webmin is installed and running.
+      Webmin URL: https://$PUBLICIP:$webminport/
+      Primary Webmin user: $(head -n1 /etc/webmin/miniserv.users | cut -d: -f1)"
+            fi
+        else
+            infomsg "Webmin is installed, but not running."
+        fi
+    fi
+
+    # Check for rs-sysmon
+    if [[ "$( rpm -q rs-sysmon )" != "package rs-sysmon is not installed" ]]; then
+        infomsg "rs-sysmon is installed."
+    fi
+fi
+
+# See if HWADDR is in the eth0 and eth1 ifcfg scripts
+hwaddrs=0
+for hw in $(grep -cih HWADDR /etc/sysconfig/network-scripts/ifcfg-eth[0-9]); do
+    let hwaddrs=$hwaddrs+$hw
+done
+if [[ $hwaddrs -n $(grep -i HWADDR /etc/sysconfig/network-scripts/ifcfg-eth{0,1}) ]]; then
+    vmsg "HWADDR is configured in the ifcfg scripts:"
+    grep -i HWADDR /etc/sysconfig/network-scripts/ifcfg-eth{0,1}
+else
+    warningmsg "HWADDR is not configured in the ifcfg scripts.  Run add-eth-hwaddr-ifcfg"
+fi
+
+# Check system time
+timeoffset=$(ntpdate -q pool.ntp.org|head -n1|awk '{print $6}'|sed 's/-\?\(.*\)\..*/\1/')
+if [[ $timeoffset -gt 300 ]]; then
+    warningmsg "Server time is over 5 minutes off."
+else
+    vmsg "System time is within 5 minutes of NTP server."
+fi
+
+# Check for interesting syslog messages
+msgssize=$(stat -c%s "/var/log/messages")
+if [[ $msgssize -lt 1073741824 ]]; then
+    printcmdout 'grep "$(date "+%b %d")" /var/log/messages|egrep "error|Error|Out of Memory|segfault|DriveReady SeekComplete|BUG"|uniq -f6' "The following was logged today in /var/log/messages"
+else
+    warningmsg "Skipping /var/log/messages check, file larger than 1 GB."
+fi
+
+# Check for a running iptables firewall
+printiptables "iptables -nL" "There is an iptables firewall running"
+printiptables "iptables -nL -t nat" "There are rules in the iptables nat table"
+printiptables "iptables -nL -t mangle" "There are rules in the iptables mangle table"
+
+# Check the load average in the past hour
+for i in $( sar -q|tail -n6|sed '$d'|awk '{print $5}' ); do
+    if [[ ${i/\.*} -gt 5 ]]; then
+        warningmsg "The load average has been above 5 in the past hour."
+        sar -q | head -n3 | tail -n1 && sar -q | tail
+        highload=1
+        break
+    fi
+done
+if [[ -z $highload ]]; then
+    vmsg "The load average has not been above 5 in the past hour."
+fi
+
+whonotme="$(who|grep -v "fw1-aus1:S.[0-9]")"
+if [[ "$whonotme" ]]; then
+    warningmsg "Other users are logged in."
+    echo "$whonotme"
+else
+    vmsg "There are no other users logged in."
+fi
+
+# Check if server has been swapping
+if [[ -z $( which bc ) ]]; then
+    pmsg "This script requires the bc command to analyze swap usage.  Please install bc."
+else
+    swappts=3
+    swapdat=$(mktemp)
+    sar -r|sed -e 's/^Average.*//' -e 's/.*RESTART.*//' -e 's/.*kbmemfree.*//' -e '/^$/d'|tail -n$swappts|awk '{ print $10 }' > $swapdat
+    if [[ $(cat $swapdat|sed -n '$=') -ge 3 ]]; then
+        sdsh=$(mktemp)
+        curl -s http://quicksnips.org/sd.sh > $sdsh
+        swapsd=$(sh $sdsh $swapdat)
+        rm -f $swapdat $sdsh
+        if [[ ${swapsd/\.*} -gt 5 ]]; then
+            warningmsg "Server has been actively swapping in the past half hour."
+            sar -r | head -n3 | tail -n1 && sar -r | tail
+        fi
+    else
+        vmsg "Server has not been actively swapping in the past half hour."
+    fi
+fi
+
+# Check available memory
+memavail=$( free -m|sed -n 3p|awk '{ print $4 }' )
+if [[ $memavail -lt 50 ]]; then
+    warningmsg "There are only $memavail MB of free memory"
+else
+    vmsg "There are $memavail MB of free memory."
+fi
+
+# Checking available disk space
+dfroot=$( df -Pm|sed 1d|awk '$6 ~ /^\/$/ { print $4 }' )
+if [[ $dfroot -lt 1024 ]]; then
+    warningmsg "The root partition only has $dfroot MB available."
+else
+    vmsg "The root partition has $dfroot MB available."
+fi
+
+# Check MySQL
+if [[ ! $( mysql -e exit 2>/dev/null || echo denied ) == "denied" ]]; then
+    mcused=$( mysql -Bse 'show full processlist'|sed -n '$=' )
+    mctotal=$( mysql -Bse "show variables like '%max_connections%'" | awk '{ print $2 }' )
+    let mcleft=$mctotal-$mcused
+    if [[ $mcleft -lt 10 ]]; then
+        warningmsg "MySQL connections used/total: $mcused/$mctotal"
+    else
+        vmsg "MySQL connections used/total: $mcused/$mctotal"
+    fi
+else
+    warningmsg "root can't login to MySQL or MySQL not running."
+fi
+
+# Check Apache's memory usage
+abin=$(netstat -ltnp|awk '$4 ~ /:80$/ { print $7 }'|cut -d / -f 2)
+if [[ -z "$($abin -V 2>&1|egrep "^Server version.*Apache\/[0-9].*")" ]]; then
+    warningmsg "Apache is not listening on port 80."
+else
+    aroot=$($abin -V|grep "HTTPD_ROOT"|sed 's/.*=\"\(.*\)\"/\1/')
+    aconf=$($abin -V|grep "SERVER_CONFIG_FILE"|sed 's/.*=\"\(.*\)\"/\1/')
+    amode=$($abin -l|egrep "worker.c|prefork.c"|sed 's/ *\(.*\)\.c/\1/')
+    if [[ -n $aroot ]]; then
+        aconfpath=$aroot/$aconf
+    else
+        aconfpath=$aconf
+    fi
+    actotal=$(sed -n "/<IfModule.*$amode/,/<\/IfModule/p" $aconfpath|grep -i "MaxClients"|sed '/^#.*/d'|awk '{print $2}')
+    acused=$( pgrep $abin|sed -n '$=' )
+    let acleft=$actotal-$acused
+    if [[ $acleft -lt 10 ]]; then
+        warningmsg "Apache MaxClients used/total: $acused/$actotal"
+    fi
+    aclargestkb=$(for pid in $(pgrep $abin); do printf "%d\n" "$(pmap -d $pid|awk '$3 ~ /private/ { print $4 }'|sed 's/K//')"; done | sort -nr | head -n1)
+    memkbavail=$(free|sed -n 2p|awk '{ print $2 }')
+    let amaxmemkb=$aclargestkb*$actotal
+    let acrecommend=$memkbavail/$aclargestkb
+    if [[ $amaxmemkb -gt $memkbavail ]]; then
+        warningmsg "Apache is configured to use $amaxmemkb kB of memory.
+      Only $memkbavail kB of memory are installed.
+      MaxClients should be lowered from $actotal to $acrecommend."
+    else
+        vmsg "Apache is configured to use $amaxmemkb kB of memory.
+      $memkbavail kB of memory are installed."
+    fi
+fi
+
+# Look for Apache reaching MaxClients
+if [[ -e /var/log/httpd/error_log ]]; then
+    maxclientserr="$(tail -n1000 /var/log/httpd/error_log|grep MaxClients)"
+    if [[ -n $maxclientserr ]]; then
+        printcmdout "tail -n1000 /var/log/httpd/error_log|grep MaxClients" "Apache has recently reached MaxClients"
+    else
+        vmsg "Apache has not recently reached MaxClients."
+    fi
+fi
+
+# See if server passes 3-way mail check.
+if [[ $mailcheck ]]; then
+    if [[ -n $(netstat -lpnt|awk '{print $4}'|grep ":25$") ]]; then
+        3waymailcheck
+    else
+        warningmsg "3-way mail check failed.  There is nothing listening on port 25."
+    fi
+fi
+
+# Check for high relative load.
+if [[ $sar ]]; then
+    if [[ $distro == "redhat" ]]; then
+        sardir="/var/log/sa"
+    elif [[ $distro == "debian" ]]; then
+        sardir="/var/log/sysstat"
+    fi
+    procs=$(grep processor /proc/cpuinfo|wc -l)
+    highestload=$(for file in $(ls -tr $sardir/sa[0-9][0-9]); do sar -q -f $file; done|sed '/^$/d'|egrep -v "Linux|ldavg-1|Average"|sort -nk5|tail -n1|awk '{print $5}'|cut -d. -f1)
+    relativeload=$(echo $highestload/$procs|bc)
+    if [[ $relativeload -gt 3 ]]; then
+        warningmsg "Load has been up to $highestload in the past week.  There are $procs CPU(s)."
+        if [[ $verbose ]]; then
+            pmsg "Max daily load average over in the past week:\n"
+            for file in $(ls -tr $sardir/sa[0-9][0-9]); do
+                echo Day $(echo ${file}|cut -c15-)
+                sar -q -f ${file} | sort -nk5 | egrep -v '^(.*CPU.*)$' |
+                egrep '^[0-9]{2}\:[0-9]{2}\:[0-9]{2}.*' | tail -n3 | sort -rnk5
+            done
+        fi
+    else
+        vmsg "Max load over the past week was ${highestload}.  There are $procs CPU(s)."
+    fi
+fi
+
+# Check for packages needing update.
+if [[ $updates ]]; then
+    if [[ $distro == "redhat" ]]; then
+        if [[ $rhversion == "3" || $rhversion == "4" ]]; then
+            #up2date --dry-run -f | sed -n '/^Name/,/^$/{p;/^$/q;}'
+            pmsg "Check for package updates is currently only implemented for RHEL5."
+        elif
+            [[ $rhversion == "5" ]]; then
+            rhel5updates=$(yum list --disableexcludes=all updates|sed -n '/Updated Packages/,$p')
+            if [[ -n $rhel5updates ]]; then
+                warningmsg "The following package updates are available:"
+                echo "$rhel5updates"
+            else
+                vmsg "There are no new package updates available."
+            fi
+        fi
+    fi
+fi
+
+exit 0

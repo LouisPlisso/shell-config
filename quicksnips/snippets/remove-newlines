@@ -1,0 +1,6 @@
+# Remove newlines from standard input
+
+function remove_newlines () {
+    sed -e :a -e '$!N;s/\n/ /;ta'
+}
+remove_newlines

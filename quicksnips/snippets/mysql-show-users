@@ -1,0 +1,6 @@
+# Shows all MySQL users and grants.
+
+function mysql_show_users () {
+    mysql -B -N -e "SELECT DISTINCT CONCAT('SHOW GRANTS FOR ''',user,'''@''',host,''';') AS query FROM user" mysql | mysql 
+}
+mysql_show_users

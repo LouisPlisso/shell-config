@@ -1,0 +1,21 @@
+# Adds multiple users.
+# Usage: add_users USER1 [USER2] [USER3] [...]
+
+function add_users () {
+    if [[ -z "$1" ]]; then
+        echo "Usage: add_users USER1 [USER2] [USER3] [...]"
+    else
+        if [[ ! -e /usr/bin/mkpasswd ]]; then
+            yum -y install expect || up2date -i expect
+        fi &&
+        for user in $*; do
+            pas=`mkpasswd`
+            useradd -s /bin/false $user &&
+            (
+            echo "User: $user"
+            echo $pas|passwd --stdin $user >/dev/null && echo "Password: $pas"
+            )
+        done 
+    fi
+}
+add_users 

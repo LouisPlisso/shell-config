@@ -1,0 +1,11 @@
+# Shows smartctl errors for a device
+# Usage: smart_drive_errors DEVICE
+
+function smart_drive_errors () {
+    if [[ -z $1 ]]; then
+        echo "Usage: smart_drive_errors DEVICE"
+    else
+        smartctl -a $1|grep -i error
+    fi
+}
+smart_drive_errors

@@ -1,0 +1,21 @@
+# Adds a user account to a server.
+# Usage: new_system_user user [homedir] [shell]
+
+function new_system_user () {
+    if [ ! -e /usr/bin/mkpasswd ]; then
+        yum -y install expect || up2date -i expect
+    fi &&
+    if [[ -n "$2" && -n "$3" ]]; then
+        useradd -d $2 -s $3 $1
+    elif [[ -n "$2" ]]; then
+        useradd -d $2 -s /bin/false $1
+    else
+        useradd -s /bin/false $1
+    fi &&
+    echo "User: $1"
+    pass="$(mkpasswd "$1")"
+    echo "Pass: $pass"
+    echo
+    echo "Test with: ncftp -u$1 -p\"$pass\" $(curl -s www.whatismyip.com/automation/n09230945.asp)"
+}
+new_system_user 

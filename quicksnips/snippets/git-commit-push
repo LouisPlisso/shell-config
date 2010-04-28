@@ -1,0 +1,7 @@
+# Commits all changes and then pushes to origin.
+# Usage: git_commit_push COMMITMSG
+
+function git_commit_push () {
+    git commit -am "$1" && git push origin master
+}
+git_commit_push

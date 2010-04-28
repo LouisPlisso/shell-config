@@ -1,0 +1,17 @@
+# Dumps all packets captured from an IP on specified interface
+# Usage: dump_traffic_from_ip IFACE IPADDRESS
+# Example: dump_traffic_from_ip eth0 74.125.67.100
+
+function infomsg () {
+    tput setaf 2; echo "$1"; tput sgr0
+}
+function dump_traffic_from_ip () {
+    if [[ -z $2 ]]; then
+        echo "Usage: dump_traffic_from_ip IFACE IPADDRESS"
+    else
+        infomsg "Type Control-C to stop capturing traffic."
+        tcpdump -i $1 host $2 -w /tmp/dump_traffic_from_ip -s 1600 -vv
+        infomsg "Output in /tmp/dump_traffic_from_ip."
+    fi
+}
+dump_traffic_from_ip eth0 

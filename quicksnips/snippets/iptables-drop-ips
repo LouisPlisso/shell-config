@@ -1,0 +1,5 @@
+# Block incoming IPs.
+function iptables_drop_ips () {
+    for ip in $*; do iptables -I INPUT -s $ip -j DROP; done && iptables -nL
+}
+iptables_drop_ips 

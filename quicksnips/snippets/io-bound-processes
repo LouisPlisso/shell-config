@@ -1,0 +1,6 @@
+# Finds processes causing high iowait
+
+function io_bound_processes () {
+    while [ 1 ]; do ps ax | awk ' ~ /^D/ { print  }'; sleep 0.1; echo; date; done
+}
+io_bound_processes

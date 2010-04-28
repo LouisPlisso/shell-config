@@ -1,0 +1,7 @@
+# Opens a luks partition.
+# Usage: luks_open DEVICE
+
+function luks_open () {
+    cryptsetup luksOpen /dev/$1 $1
+}
+luks_open

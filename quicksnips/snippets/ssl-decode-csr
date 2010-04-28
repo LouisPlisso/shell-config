@@ -1,0 +1,6 @@
+# Decodes a CSR file
+
+function ssl_decode_csr () {
+    openssl req -text -in $1
+}
+ssl_decode_csr

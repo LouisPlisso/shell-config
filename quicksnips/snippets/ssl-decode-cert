@@ -1,0 +1,6 @@
+# Decodes an SSL certificate file.
+
+function ssl_decode_cert () {
+    openssl x509 -text -in $1
+}
+ssl_decode_cert

@@ -1,0 +1,31 @@
+# Takes the Used Memory via sar and subtracts Buffers and Cache to show Actual Memory usage
+# Usage: sar_actual_memory_usage
+
+function sar_actual_memory_usage () {
+    if [[ -n $1 ]]; then
+        day=$1
+        sar -f /var/log/sa/sa$day | head -n1 | awk '{print $NF}'
+    else
+        day=$(date "+%d")
+        date '+%m/%d/%Y'
+    fi
+    mbprogavail=$(free -m | grep "Mem:" | awk '{print $2}')
+    echo "MB memory available: $mbprogavail"
+    echo
+    (
+        echo "time mbused mbbuffers mbcached mbprogused mbprogfree"
+        for i in $(sar -r -f /var/log/sa/sa$day | egrep -v "Average|RESTART|swpused|Linux|^$" | awk '{print $4"-"$6"-"$7"-"$1}'); do
+            date=$(echo $i | awk -F- '{print $4}')
+            used=$(echo $i | awk -F- '{print $1}')
+            buffer=$(echo $i | awk -F- '{print $2}')
+            cache=$(echo $i | awk -F- '{print $3}')
+            mbused=$(echo $i | awk -F- '{printf "%.f", $1/1024}')
+            mbbuffers=$(echo $i | awk -F- '{printf "%.f", $2/1024}')
+            mbcached=$(echo $i | awk -F- '{printf "%.f", $3/1024}')
+            mbprogused=$(echo "$used - $buffer - $cache" | bc | awk '{printf "%.f", $1/1024}')
+            mbprogfree=$(echo $mbprogavail - $mbprogused|bc)
+            echo "$date $mbused $mbbuffers $mbcached $mbprogused $mbprogfree"
+        done
+    ) | column -t
+}
+sar_actual_memory_usage

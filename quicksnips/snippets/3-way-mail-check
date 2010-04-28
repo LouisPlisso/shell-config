@@ -1,0 +1,54 @@
+# Performs a 3-way mail check on a mail server
+# Usage: 3_way_mail_check [IPADDRESS]
+
+function 3_way_mail_check () {
+    unset ip helo ptr adata
+    if [[ -n $1 ]]; then
+        if [[ $1 != [0-9]* ]]; then
+            echo "Argument should be an IP."
+            return
+        fi
+        ip="$1"
+        helo="$(echo "helo itsme.com"|nc -w1 $ip 25|awk '$1 ~ /220/ {print $2}')"
+    else
+        ip="$(curl -s www.whatismyip.com/automation/n09230945.asp)"
+        helo="$(echo "helo itsme.com"|nc -w1 localhost 25|awk '$1 ~ /220/ {print $2}')"
+    fi
+
+    ptr="$(dig -x $ip +short |sed s/\.$//)"
+    if [[ -n "$ptr" ]]; then
+        adata="$(dig $ptr +short|tail -n1)"
+    fi
+    
+    if ! [[ $ip ]]; then
+        echo "No Public IP Obtained"
+    else
+        echo "IP is $ip"
+    fi
+
+    if ! [[ $ptr ]]; then
+        echo "No PTR Obtained"
+    else
+        echo "PTR is $ptr"
+    fi
+
+    if ! [[ $adata ]]; then
+        echo "PTR does not forward resolve or no PTR to lookup"
+    else
+        echo "Hostname resolves to $adata"
+    fi
+
+    if ! [[ $helo ]]; then
+        echo "No HELO data obtained"
+    else
+        echo "SMTP HELO is $helo"
+    fi
+
+    if [[ "$ptr" == "$helo" && "$adata" == "$ip" ]]; then
+        echo "*** 3-way mail check passed ***";
+    else
+        echo "*** 3-way mail check failed ***";
+    fi
+    
+}
+3_way_mail_check

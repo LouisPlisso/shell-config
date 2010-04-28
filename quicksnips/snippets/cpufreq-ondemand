@@ -1,0 +1,6 @@
+# Sets the CPU to ondemand power-saving mode.
+
+function cpufreq_ondemand () {
+    echo ondemand | sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+}
+cpufreq_ondemand

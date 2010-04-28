@@ -1,0 +1,17 @@
+# Collects statistics on processes in "uninterruptable sleep" state, which is usually caused by high I/O
+# Usage: io_bound_process_stats SEC
+
+function io_bound_process_stats () {
+    echo "Collecting stats on I/O bound processes for ~$1 seconds..."
+    n=0
+    iofile=$(mktemp)
+    m=$(($1*10))
+    while [[ $n -lt $m ]]; do
+        ps ax | awk '$3 ~ /^D/ { print $5 }'
+        sleep 0.1
+        n=$((n+=1))
+    done > $iofile
+    echo "Top I/O bound processes in the last ~$1 seconds."
+    sort $iofile | uniq -c | sort -nr | head -n30
+}
+io_bound_process_stats 10

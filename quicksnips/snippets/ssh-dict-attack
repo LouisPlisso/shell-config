@@ -1,0 +1,33 @@
+# Displays the IP addresses that have had the most failed SSH logins.
+# Usage: ssh_dict_attack FILE1 [FILE2] [...]
+#
+# Example output:
+#
+#    196 81.91.216.6
+#    206 210.40.128.31
+#    208 77.92.148.162
+#    411 211.157.98.25
+#    415 211.97.118.24
+#    571 89.208.43.96
+#    625 161.200.92.65
+#   2610 65.60.24.250
+#   3255 203.190.0.29
+#   4328 61.155.9.5
+
+function ssh_dict_attack () {
+    attackfile="/tmp/ssh_dict_attack-$(date "+%Y-%m-%d")"
+    if [[ -z $1 ]]; then
+        echo "Usage: ssh_dict_attack FILE1 [FILE2] [...]"
+        return
+    fi
+    if [[ -e $attackfile ]]; then
+        echo "$attackfile exists..."
+        cat $attackfile
+    else
+        zgrep -E "Failed password|Illegal user|Invalid user" $* |
+        egrep -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' |
+        sort -n|uniq -c|sort -n > $attackfile
+        cat $attackfile
+    fi
+}
+ssh_dict_attack /var/log/secure*

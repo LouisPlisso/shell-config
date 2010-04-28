@@ -1,0 +1,27 @@
+# Shows bandwidth usage stats from sar data.
+# Example output:
+#
+# ---- Traffic at 11:55:01 ------
+# Total: 4.21
+# Sent: 0.73
+# Recieved: 3.48
+# -------------------------------
+# 
+# ---- Traffic at 12:05:01 ------
+# Total: 4.40
+# Sent: 0.70
+# Recieved: 3.70
+# -------------------------------
+# ...
+
+function bandwidth_from_sar () {
+    for i in $(sar -n DEV | grep ' eth0 ' | grep -v Average | awk '{print  $1 "-" $6 "-" $7}'); do
+        echo $i | awk -F- '{print "---- Traffic at " bandwidth_from_sar " ------"}'
+        echo $i | awk -F- '{print  "+" }' | bc | awk '{print "Total: " bandwidth_from_sar}'
+        echo $i | awk -F- '{print "Sent: " }'
+        echo $i | awk -F- '{print "Recieved: " }'
+        echo "-------------------------------"
+        echo ''
+    done
+}
+bandwidth_from_sar

@@ -1,0 +1,7 @@
+# Closes an open luks partition.
+# Usage: luks_close DEVICE
+
+function luks_close () {
+    cryptsetup luksClose /dev/$1 $1
+}
+luks_close 

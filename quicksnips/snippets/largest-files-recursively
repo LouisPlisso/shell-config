@@ -1,0 +1,7 @@
+# Recursively shows the largest files, starting from the directory specified
+# Usage: largest_files_recursively DIR
+
+function largest_files_recursively () {
+    find "$1" -exec ls -al '{}' \;|sort -k5 -n|awk '{printf "%.2fM %s\n", $5/1024/1024, $9}'
+}
+largest_files_recursively

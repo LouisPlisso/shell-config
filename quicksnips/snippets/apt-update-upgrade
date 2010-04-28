@@ -1,0 +1,6 @@
+# Updates APT package index and upgrades system packages (Debian only).
+
+function apt_update_upgrade () {
+    apt-get update && apt-get dist-upgrade
+}
+apt_update_upgrade

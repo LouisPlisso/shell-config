@@ -1,0 +1,6 @@
+# Like the /proc/cpuinfo file in Linux.
+
+function bsd_cpuinfo () {
+    sysctl -a | egrep -i 'hw.machine|hw.model|hw.ncpu'
+}
+bsd_cpuinfo

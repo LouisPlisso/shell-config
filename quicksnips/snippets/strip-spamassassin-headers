@@ -1,0 +1,7 @@
+# Prints the spamassassin headers from an mbox-format file.
+# Usage: strip_spamassassin_headers MBOXFILE
+
+function strip_spamassassin_headers () {
+    spamc < $1 | formail -s formail -X X-Spam
+}
+strip_spamassassin_headers 
