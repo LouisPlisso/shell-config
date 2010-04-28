@@ -1,0 +1,25 @@
+-- from: http://bbs.archlinux.org/viewtopic.php?id=49596
+
+import XMonad.Layout.WindowNavigation
+...
+    -- Window navigation for Wmii-Like layout
+    [ ((modMask, xK_Right), sendMessage $ Go R)
+    , ((modMask, xK_Left ), sendMessage $ Go L)
+    , ((modMask, xK_Up   ), sendMessage $ Go U)
+    , ((modMask, xK_Down ), sendMessage $ Go D)
+    , ((modMask .|. shiftMask, xK_Right), sendMessage $ Move R)
+    , ((modMask .|. shiftMask, xK_Left ), sendMessage $ Move L)
+, ((modMask .|. shiftMask, xK_Up   ), sendMessage $ Move U)
+    , ((modMask .|. shiftMask, xK_Down ), sendMessage $ Move D)]
+    ++
+    ...
+    myLayout = tiled ||| Full ||| wmii
+    where
+    tiled   = named "Default" (ResizableTall 1 (1/100) (1/2) [])
+    wmii = windowNavigation (named "Wmii" (combineTwo (dragPane Vertical 0.01 0.5) (Accordion) (Accordion)))
+    ...
+    defaults logPipe =  defaultConfig {
+        ...
+            -- hooks, layouts
+            layoutHook         = myLayout,
+                               ... }
