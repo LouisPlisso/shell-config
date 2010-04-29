@@ -14,17 +14,17 @@ import qualified System.IO.UTF8
 
 import XMonad.Util.XSelection
 
---import Volume
+import XMonad.Actions.Volume
 import XMonad.Util.Dzen
 import Data.Map    (fromList)
 import Data.Monoid (mappend)
 
---alert = dzenConfig centered . show . round
---centered =
-        --onCurr (center 150 66)
-    -- >=> font "-*-helvetica-*-r-*-*-64-*-*-*-*-*-*-*"
-    -- >=> addArgs ["-fg", "#80c0ff"]
-    -- >=> addArgs ["-bg", "#000040"]
+alert = dzenConfig centered . show . round
+centered =
+         onCurr (center 150 66)
+     >=> font "-*-helvetica-*-r-*-*-64-*-*-*-*-*-*-*"
+     >=> addArgs ["-fg", "#80c0ff"]
+     >=> addArgs ["-bg", "#000040"]
 
 
 
@@ -81,8 +81,8 @@ main = do
         , ((mod1Mask, xK_c), spawn "hxsel")
         , ((0, xK_F8), pasteSelection)
         -- , ((mod1Mask .|. shiftMask, xK_b), getSelection )
-        --, ((0, xK_F6), lowerVolume 4 >>= alert)
-        --, ((0, xK_F7), raiseVolume 4 >>= alert)
+        , ((0, xK_F6), lowerVolume 4 >>= alert)
+        , ((0, xK_F7), raiseVolume 4 >>= alert)
         ]
 
 

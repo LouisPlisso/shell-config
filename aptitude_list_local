@@ -218,3 +218,4 @@ python-tables python-tables-doc
 gddccontrol
 ddccontrol
 i2c-tools
+ext3grep

@@ -1,0 +1,85 @@
+[initial import
+Daniel Wagner <daniel@wagner-home.com>**20090622114143
+ Ignore-this: 12e9238cc7dc482e58818029b45a657b
+] 
+[of course we need a Setup.lhs
+Daniel Wagner <daniel@wagner-home.com>**20090622115644] 
+[Add XMonad.Actions.Eval
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090622142852
+ Ignore-this: 381c83a97be72e4e1d5a6e864bc31e7a
+] 
+[Add XMonad.Prompt.MPD
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090622152701
+ Ignore-this: 32e6387beeba1f563a38ad1e2b3c2bbd
+] 
+[Fix flag name.
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090622155020
+ Ignore-this: a083b733887a19fcdc466ea3a069f771
+] 
+[Add XMonad.Prompt.Eval
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090622160647
+ Ignore-this: ca4ce29bced54bb2f5d46bc19cb67d00
+] 
+[Add osdCat helper function to display Volume via osd_cat binary
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090622203957
+ Ignore-this: d20bd3ec516e8567dcab4d2b824b657e
+] 
+[Add tests when recording and fix some warnings
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090622210030
+ Ignore-this: 582d63f1137f29f894c1b729fab0ea01
+] 
+[X.A.Eval: safeSpawn takes a list of arguments.
+Nicolas Pouillard <nicolas.pouillard@gmail.com>**20090623111950
+ Ignore-this: 118572151d6ebd25614eb9a736284891
+] 
+[Updated my email-address in X.A.Eval
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090623121157
+ Ignore-this: fb4663e91e77f6e60c57ff806945c971
+] 
+[Add X.H.EvalServer
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090803191448
+ Ignore-this: 1df5da91fdf72688870cb7fccfcaf9b3
+ 
+ This patch adds EvalServer which allows the user to control xmonad using Haskell expressions
+ sent over a socket.
+] 
+[Added X.H.EvalServer to xmonad-extras.cabal
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090803200256
+ Ignore-this: 5770e90c9429dfc20c7c7cce1f29a9c4
+] 
+[clip mixer commands to [0,100] range
+Daniel Wagner <daniel@wagner-home.com>**20090804213632
+ Ignore-this: 7ccd1cf742528ed25314d950bccd8251
+] 
+[Handle server shutdown correctly and in the module and added a warning about concurrency issues.
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090805202344
+ Ignore-this: f639681f5ebc4c847db0fda19e715d35
+] 
+[Minor documentation fix
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090805202955
+ Ignore-this: 612d2da10050956811ab6dc14421482a
+] 
+[Added documentation for EvalServerData
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090805205902
+ Ignore-this: dbbe710216a06c3e893ac86774549bc2
+] 
+[Fixed typos and grammatical errors
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090805210914
+ Ignore-this: a7cfdbdbbf4702b98d203bba0f086569
+] 
+[Add xmonadcmd utility
+Daniel Schoepe <daniel.schoepe@gmail.com>**20090913234043
+ Ignore-this: f95722bbf1068a4eb0ac33f1a7854be9
+ 
+ This patch adds the xmonadcmd executable to work around the problem
+ that getEvent blocks all forkIO-ed threads when using xmonad without
+ -threaded, which is the default.
+] 
+[Change version constraints
+Daniel Schoepe <daniel.schoepe@gmail.com>**20091027153419
+ Ignore-this: cf0bd18857ae165e6084827db5e64176
+] 
+[drop EvalServer from the cabal file, just for a release
+Daniel Wagner <daniel@wagner-home.com>**20091112001628
+ Ignore-this: b474c41087a469bc64b81fcf5412ba3d
+] 

@@ -1,0 +1,13 @@
+Starting with tag:
+[TAG 0.0 release
+Daniel Wagner <daniel@wagner-home.com>**20091112001746
+ Ignore-this: 315d182cff764a2721536f01f2a9a1b0
+] 
+[*bump*
+Daniel Wagner <daniel@wagner-home.com>**20091112003352
+ Ignore-this: e0db3332fe67f8aa2459490163a7caa9
+] 
+[-O0 to --disable-optimizations
+Daniel Wagner <daniel@wagner-home.com>**20091112003704
+ Ignore-this: ffa5a63085269f15c35a559c2bb6a21a
+] 
