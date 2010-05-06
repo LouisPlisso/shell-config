@@ -32,8 +32,6 @@ wicd-client &
 
 xscreensaver -no-splash &
 
-urxvtd -q -f -o &
-
 keynav &
 
 parcellite &
@@ -43,3 +41,5 @@ pidgin &
 
 davmail &
           
+urxvtd -q -f -o &
+

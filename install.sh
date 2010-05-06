@@ -95,7 +95,7 @@ for template in bashrc.template xsessionrc.template zshrc.template; do
     [ -f ${HOME}/.file ] && /bin/mv ${HOME}/.file ${HOME}/.file.old
     /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" ${template} > ${HOME}/.${file}
 done
-for file in profile inputrc vimrc gvimrc Xdefaults xmonad xmobarrc cabal XCompose keynavrc dircolors lxdvdrip vimperator/vimperatorrc vimperator/muttatorrc; do
+for file in profile inputrc vimrc gvimrc Xdefaults xmonad xmobarrc cabal XCompose keynavrc dircolors lxdvdrip abcde.conf vimperator/vimperatorrc vimperator/muttatorrc; do
 	TARGET=${HOME}/.$`basename file `
     # if there is already a link, remove it
 	[ -h ${TARGET} ] && /bin/rm ${TARGET}

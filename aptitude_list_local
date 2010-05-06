@@ -13,7 +13,7 @@ xmonad
 dmenu dzen
 dmenu dzen2
 texlive-science texlive-formats-extra
-i3
+# i3
 # wicd
 burn
 xmobar
@@ -219,3 +219,12 @@ gddccontrol
 ddccontrol
 i2c-tools
 ext3grep
+bittorent
+bittorrent
+bittorrent-gui
+# lame
+# lame
+abcde
+id3v2
+lame
+c++-compiler

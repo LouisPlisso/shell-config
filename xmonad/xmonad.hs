@@ -19,12 +19,12 @@ import XMonad.Util.Dzen
 import Data.Map    (fromList)
 import Data.Monoid (mappend)
 
-alert = dzenConfig centered . show . round
-centered =
-         onCurr (center 150 66)
-     >=> font "-*-helvetica-*-r-*-*-64-*-*-*-*-*-*-*"
-     >=> addArgs ["-fg", "#80c0ff"]
-     >=> addArgs ["-bg", "#000040"]
+--alert = dzenConfig centered . show . round
+--centered =
+         --onCurr (center 150 66)
+     -- >=> font "-*-helvetica-*-r-*-*-64-*-*-*-*-*-*-*"
+     -- >=> addArgs ["-fg", "#80c0ff"]
+     -- >=> addArgs ["-bg", "#000040"]
 
 
 
@@ -74,15 +74,17 @@ main = do
         } `additionalKeys`
         [ ((mod1Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock") 
         , ((mod1Mask, xK_s), spawn "exe=`quicksnips` && eval \"exec $exe\"")
-        -- , ((mod1Mask, xK_Return), spawn "urxvt")
+        , ((mod1Mask, xK_Return), spawn "urxvt")
+        , ((mod1Mask .|. shiftMask, xK_Return), windows W.swapMaster) -- %! Swap the focused window and the master window
         , ((mod1Mask, xK_f), spawn "iceweasel")
         , ((mod1Mask, xK_d), spawn "icedove")
         -- search how to use: http://www.haskell.org/haskellwiki/Xmonad/Config_archive/Mntnoe%27s_xmonad.hs
         , ((mod1Mask, xK_c), spawn "hxsel")
         , ((0, xK_F8), pasteSelection)
         -- , ((mod1Mask .|. shiftMask, xK_b), getSelection )
-        , ((0, xK_F6), lowerVolume 4 >>= alert)
-        , ((0, xK_F7), raiseVolume 4 >>= alert)
+        , ((0, xK_F6), lowerVolume 4 >> return ())
+        , ((0, xK_F7), raiseVolume 4 >> return ())
+        , ((0, xK_F8), toggleMute >> return ())
         ]
 
 

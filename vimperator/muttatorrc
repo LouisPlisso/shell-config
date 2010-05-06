@@ -1,1 +1,3 @@
 set visualbell
+noremap t :tabclose
+
