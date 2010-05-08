@@ -29,7 +29,7 @@ xscreensaver-gl
 trayer
 xpmroot
 # fvwm1
-fvwm
+# fvwm
 gstreamer-tools
 wicd
 pidgin
@@ -228,3 +228,4 @@ abcde
 id3v2
 lame
 c++-compiler
+fvwm

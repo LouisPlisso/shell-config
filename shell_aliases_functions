@@ -6,7 +6,7 @@ alias gvi='gvim'
 
 #bad but needed to let default config of aptitude and still use python 2.6
 alias python='/usr/bin/python2.6'
-#alias ipython='/usr/bin/python2.6 /usr/bin/ipython'
+alias ipython='/usr/bin/python2.6 /usr/bin/ipython'
 
 alias 'cd..'='cd ..'
 alias pysh='ipython -p pysh'
