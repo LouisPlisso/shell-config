@@ -1,3 +1,4 @@
+"set guioptions=b
 map s <stop>
 
 set visualbell

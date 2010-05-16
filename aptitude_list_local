@@ -229,3 +229,17 @@ id3v2
 lame
 c++-compiler
 fvwm
+openct
+# openvpn
+liblzo2-dev
+gxmessage
+libopensc2
+fping
+rrdtool
+apache2
+libdate-manip-perl
+libimage-size-perl
+librrds-perl
+# cython
+google-chrome-beta
+libghc6-gtk-dev

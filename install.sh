@@ -74,9 +74,13 @@ if [ -e $LATEX_DIR ]; then
     sudo texconfig rehash 
 fi
 
-echo "Configure python"
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.5 10
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.6 20
+# python is aliased because package installs sometimes work only with python2.5
+#echo "Configure python"
+#sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.5 10
+#sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.6 20
+
+# for being able to env_keep path
+/usr/sbin/adduser $USER sudo
 
 echo "Administrative part finished: no user with no passwd for all cmds"
 sudo /bin/sed -i "/^[^#].*ALL=NOPASSWD: ALL/s/^/#/" /etc/sudoers

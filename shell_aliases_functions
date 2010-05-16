@@ -1,3 +1,65 @@
+#!/bin/sh
+
+die() {
+    result=$1
+    shift
+    echo ": $*" >&2
+    exit $result
+}
+
+[ -d $MY_CONFIG_DIR ] || die 1 "must have variable MY_CONFIG_DIR set"
+
+export PATH=/sbin:/usr/sbin:${MY_CONFIG_DIR}/bin:${MY_CONFIG_DIR}/cabal/bin:$PATH
+export PYTHONPATH=~/workspace/spydump/tools
+export PATH=$PATH:$PYTHONPATH
+
+# scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
+SCRIPT_RECIPES=$HOME/.scripts_recipes/bin
+[ -d $SCRIPT_RECIPES ] && export PATH=$PATH:$SCRIPT_RECIPES
+
+# quicksnips: http://quicksnips.org/
+QUICKSNIPS=$MY_CONFIG_DIR/quicksnips/bin
+[ -d $QUICKSNIPS ] && export PATH=$PATH:$QUICKSNIPS
+
+
+# load FTRD config
+if [ -f ${MY_CONFIG_DIR}/ftrd_config ]; then
+    . ${MY_CONFIG_DIR}/ftrd_config
+fi
+
+# export VIMRUNTIME=${MY_CONFIG_DIR}/vim
+export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
+
+
+export LS_OPTIONS='--color=auto'
+eval `dircolors $MY_CONFIG_DIR/dircolors`
+alias ls='ls --group-directories-first $LS_OPTIONS'
+alias l1='ls -1'
+alias lb='ls -shapC'
+alias ll='ls -l'
+alias la='ls -Alh'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# some more ls aliases
+alias l='ls -CF'
+alias lh='ll -h'
+
+export LESS="-R"
+export EDITOR=vi
+
+#compose key activated in gtk apps
+GTK_IM_MODULE=xim
+export GTK_IM_MODULE
+
+
+
+# Créer un répertoire et l'ouvrir :
+function mcd() { mkdir "$@"; cd "$@" }
+#alias mcd='mkdir \!*; cd \!*'
+
 alias light-m='sudo $MY_CONFIG_DIR/bin/adjust_light.sh'
 alias light-min='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 0'
 alias light-max='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 100'
@@ -14,6 +76,7 @@ alias pyl='pylint --disable-msg=C0103 --disable-msg=W0141'
 #alias print 'lpr \!* -Pps5'
 alias saptu='sudo aptitude update'
 alias saptdu='sudo aptitude dist-upgrade'
+alias saptsu='sudo aptitude safe-upgrade'
 alias hibernate='sudo pm-hibernate'
 alias suspend='sudo pm-suspend'
 alias suspend-hybrid='sudo pm-suspend-hybrid'
