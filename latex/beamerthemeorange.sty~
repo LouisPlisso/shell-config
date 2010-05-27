@@ -17,7 +17,7 @@
 \setbeamercolor{example text}{fg=grisft}
 \setbeamercolor{structure}{fg=orft,bg=white}
 \setbeamercolor{background canvas}{parent=normal text}
-\setbeamercolor{block body}{bg=comp2}
+\setbeamercolor{block body}{bg=comp4}
 
 % Headline and footline
 %\defbeamertemplate*{headline}{orange}
@@ -33,11 +33,11 @@
   \begin{beamercolorbox}[wd=.07\paperwidth,ht=2.5ex,dp=1.125ex]{dateorange in head/foot}%
    \textbf{\usebeamerfont{dateorange in head/foot}\insertframenumber{} / \inserttotalframenumber{}}\hspace*{2ex}\ 
   \end{beamercolorbox}
-  \hbox{\begin{beamercolorbox}[wd=.65\paperwidth,ht=2.5ex,dp=1.125ex]{authororange in head/foot}%
-   \usebeamerfont{authororange in head/foot}\textbf{Orange Labs Recherche \& D\'eveloppement -- \insertshortauthor: \insertshorttitle -- \insertdate}
+  \hbox{\begin{beamercolorbox}[wd=.6\paperwidth,ht=2.5ex,dp=1.125ex]{authororange in head/foot}%
+   \usebeamerfont{authororange in head/foot}\textbf{Orange Labs Recherche \& D\'eveloppement -- \insertshortauthor: \insertshorttitle\ -- \insertdate}
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.5ex,dp=1.125ex]{titleorange in head/foot}%
-   \hfill\usebeamerfont{titleorange in head/foot}\textbf{Interne Groupe France T\'el\'ecom}\hfill\
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.5ex,dp=1.125ex]{titleorange in head/foot}%
+   \hfill\usebeamerfont{titleorange in head/foot}\textbf{France T\'el\'ecom Group Confidential}\hfill\
   \end{beamercolorbox}
 }%
   %\includegraphics[width=.09\paperwidth]{logo_orange} 
@@ -69,7 +69,7 @@
   \hskip.01\paperwidth
   \includegraphics[width=.09\paperwidth]{logo_FT}
   \hskip.3\paperwidth
-  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{no authororange in foot on title page} \textbf{Interne Groupe France T\'el\'ecom} %
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{no authororange in foot on title page} \textbf{France T\'el\'ecom Group Confidential} %
   \end{beamercolorbox}}%
   \includegraphics[width=.09\paperwidth]{logo_orange} 
   \hskip.01\paperwidth

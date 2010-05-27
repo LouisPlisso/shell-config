@@ -236,10 +236,21 @@ gxmessage
 libopensc2
 fping
 rrdtool
-apache2
+# apache2
 libdate-manip-perl
 libimage-size-perl
 librrds-perl
 # cython
-google-chrome-beta
+# google-chrome-beta
 libghc6-gtk-dev
+haskell-http-doc
+# haskell-doc
+haddock
+# libghc6-hunit-dev
+libghc6-hunit-dev
+libghc6-hunit-doc
+haskell-platform
+haskell-utils
+sun-java6-plugin
+# nscd
+librrd-dev

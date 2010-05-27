@@ -46,6 +46,12 @@ sudo /bin/sh bin/apt-get-ni.sh dist-upgrade
 echo "Installing selected packages"
 /bin/cat aptitude_list | xargs -I {} sudo /bin/sh bin/apt-get-ni.sh install {}
 
+echo "Configure NSSwitch"
+sudo /bin/cp -b --suffix='.old' nsswitch.conf /etc/nsswitch.conf
+
+echo "Configure Java to use ipv4"
+sudo /bin/cp -b --suffix='.old' bindv6only.conf /etc/sysctl.d/bindv6only.conf
+
 echo "Configure DHCP"
 sudo /bin/cp -b --suffix='.old' dhclient.conf /etc/dhcp3/dhclient.conf
 
