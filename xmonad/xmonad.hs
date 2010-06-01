@@ -1,6 +1,7 @@
 import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.ManageHelpers (isFullscreen,doFullFloat)
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
@@ -40,10 +41,12 @@ import Data.Monoid (mappend)
 
 -- TODO ipython floats
 myManageHook = composeAll
-    [ className =? "Gimp"      --> doFloat
+    [ isFullscreen --> doFullFloat
+    , className =? "Gimp"      --> doFloat
     , className =? "Pidgin"      --> doFloat
     , className =? "Battery"      --> doFloat
-    , className =? "Reminder"      --> doFloat]
+    , className =? "Reminder"      --> doFloat
+    ]
 
 -- workspaces
 -- myWorkspaces = ["web", "editor", "terms"] ++ (miscs 5) ++ ["fullscreen", "im"]

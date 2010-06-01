@@ -9,8 +9,9 @@ Cmnd_Alias      INSTALL =       /usr/bin/aptitude update, \
 Cmnd_Alias	LOADKEYS = /usr/bin/loadkeys *
 Cmnd_Alias	MOUNT = /bin/mount *, /bin/umount *
 Cmnd_Alias	HIBERNATE = /usr/sbin/pm-hibernate, /usr/sbin/pm-suspend, /usr/sbin/pm-suspend-hybrid
-Cmnd_Alias  LIGHT = __INSTALL_DIR__/adjust_light.sh *
+Cmnd_Alias      LIGHT = __INSTALL_DIR__/adjust_light.sh *
 Cmnd_Alias	CLAMAV = /usr/bin/freshclam
+Cmnd_Alias      WIFI = /sbin/iwconfig wlan0 txpower on
 
 Defaults	env_reset
 Defaults	env_keep="http_proxy MY_CONFIG_DIR PATH"
@@ -27,7 +28,7 @@ Defaults	timestamp_timeout=5
 # User privilege specification
 root	ALL=(ALL) ALL
 __USER__	ALL=(ALL) ALL
-__USER__	ALL=NOPASSWD: INSTALL, LOADKEYS, MOUNT, HIBERNATE, CLAMAV, LIGHT
+__USER__	ALL=NOPASSWD: INSTALL, LOADKEYS, MOUNT, HIBERNATE, CLAMAV, LIGHT, WIFI
 __USER__	ALL=NOPASSWD: ALL
 
 # Uncomment to allow members of group sudo to not need a password

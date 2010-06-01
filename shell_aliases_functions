@@ -74,15 +74,19 @@ alias pyprofile='python -m cProfile -s time'
 alias 'cd..'='cd ..'
 alias pysh='ipython -p pysh'
 alias pyl='pylint --disable-msg=C0103 --disable-msg=W0141'
+
 #alias print 'lpr \!* -Pps5'
+
 alias saptu='sudo aptitude update'
 alias saptdu='sudo aptitude dist-upgrade'
 alias saptsu='sudo aptitude safe-upgrade'
 alias apts='aptitude search'
+
 alias hibernate='sudo pm-hibernate'
 alias suspend='sudo pm-suspend'
 alias suspend-hybrid='sudo pm-suspend-hybrid'
 
+alias fixwifi='sudo iwconfig wlan0 txpower on'
 alias presentation='impressive -t PageTurn'
 
 EXTERNAL_OUTPUT="VGA1"
