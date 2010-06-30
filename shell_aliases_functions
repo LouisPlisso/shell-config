@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# load FTRD config
+if [ -f ${MY_CONFIG_DIR}/ftrd_config ]; then
+    . ${MY_CONFIG_DIR}/ftrd_config
+fi
+
 die() {
     result=$1
     shift
@@ -22,11 +27,6 @@ QUICKSNIPS=$MY_CONFIG_DIR/quicksnips/bin
 [ -d $QUICKSNIPS ] && export PATH=$PATH:$QUICKSNIPS
 
 
-# load FTRD config
-if [ -f ${MY_CONFIG_DIR}/ftrd_config ]; then
-    . ${MY_CONFIG_DIR}/ftrd_config
-fi
-
 # export VIMRUNTIME=${MY_CONFIG_DIR}/vim
 export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
 
@@ -38,6 +38,7 @@ alias l1='ls -1'
 alias lb='ls -shapC'
 alias ll='ls -l'
 alias la='ls -Alh'
+alias lsd='ls -d */'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -66,6 +67,8 @@ alias light-max='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 100'
 
 alias gvi='gvim'
 
+alias chrome='all_proxy=$chrome_proxy /usr/bin/google-chrome'
+
 #bad but needed to let default config of aptitude and still use python 2.6
 alias python='/usr/bin/python2.6'
 alias ipython='/usr/bin/python2.6 /usr/bin/ipython'
@@ -73,7 +76,7 @@ alias pyprofile='python -m cProfile -s time'
 
 alias 'cd..'='cd ..'
 alias pysh='ipython -p pysh'
-alias pyl='pylint --disable-msg=C0103 --disable-msg=W0141'
+alias pyl='pylint --disable=C0103 --disable=W0141'
 
 #alias print 'lpr \!* -Pps5'
 
@@ -88,6 +91,9 @@ alias suspend-hybrid='sudo pm-suspend-hybrid'
 
 alias fixwifi='sudo iwconfig wlan0 txpower on'
 alias presentation='impressive -t PageTurn'
+
+alias images='feh -F -Z'
+alias photos='pho -p'
 
 EXTERNAL_OUTPUT="VGA1"
 INTERNAL_OUTPUT="LVDS1"

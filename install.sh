@@ -55,6 +55,11 @@ sudo /bin/cp -b --suffix='.old' bindv6only.conf /etc/sysctl.d/bindv6only.conf
 echo "Configure DHCP"
 sudo /bin/cp -b --suffix='.old' dhclient.conf /etc/dhcp3/dhclient.conf
 
+echo "For usb2"
+sudo /bin/sed -i 's/\<sync\>/nosync/g' /usr/share/hal/fdi/policy/10osvendor/20-storage-methods.fdi
+sudo /bin/sed -i 's/\<dirsync\>/nodirsync/g' /usr/share/hal/fdi/policy/10osvendor/20-storage-methods.fdi
+sudo /bin/cp -b --suffix='.old' grub /etc/default/grub
+
 echo "Configure xorg"
 sudo /bin/cp -b --suffix='.old' xorg.conf /etc/X11/xorg.conf
 

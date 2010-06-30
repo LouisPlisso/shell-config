@@ -9,6 +9,15 @@ xsetroot -solid midnightblue
         
 # wallpaper
 xpmroot $MY_CONFIG_DIR/xmonad/desktop-background.png
+
+
+EXTERNAL_OUTPUT=VGA1
+INTERNAL_OUTPUT=LVDS1
+
+# same as ext-screen alias
+xrandr --auto --output $EXTERNAL_OUTPUT --auto --same-as $INTERNAL_OUTPUT
+
+
 # keymaps and key config
 #setxkbmap fr -variant dvorak_prog
 # warning: xkbmap resets xmodmap

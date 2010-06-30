@@ -1,7 +1,7 @@
 import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
-import XMonad.Hooks.ManageHelpers (isFullscreen,doFullFloat)
+import XMonad.Hooks.ManageHelpers (isFullscreen,doFullFloat,isDialog)
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
@@ -24,14 +24,22 @@ import XMonad.Util.XSelection
 import XMonad.Actions.Volume
 import XMonad.Util.Dzen
 import Data.Map    (fromList)
-import Data.Monoid (mappend)
+-- import Data.Monoid (mappend)
 
---alert = dzenConfig centered . show . round
---centered =
-         --onCurr (center 150 66)
-     -- >=> font "-*-helvetica-*-r-*-*-64-*-*-*-*-*-*-*"
-     -- >=> addArgs ["-fg", "#80c0ff"]
-     -- >=> addArgs ["-bg", "#000040"]
+import XMonad.Actions.GridSelect
+import Control.Monad
+-- import System.Dzen
+
+import XMonad.Actions.CopyWindow
+
+-- alert :: (Show (m Double), Monad m) => m Double -> X ()
+-- alert = XMonad.Util.Dzen.dzen . show . return
+-- dzenConfig centered . show . round
+-- centered =
+         -- onCurr (center 150 66)
+      -- >=> font "-*-helvetica-*-r-*-*-64-*-*-*-*-*-*-*"
+      -- >=> addArgs ["-fg", "#80c0ff"]
+      -- >=> addArgs ["-bg", "#000040"]
 
 
 
@@ -42,10 +50,11 @@ import Data.Monoid (mappend)
 -- TODO ipython floats
 myManageHook = composeAll
     [ isFullscreen --> doFullFloat
+    , isDialog --> doFloat
+    , className =? "Gxmessage"      --> doFloat
     , className =? "Gimp"      --> doFloat
     , className =? "Pidgin"      --> doFloat
-    , className =? "Battery"      --> doFloat
-    , className =? "Reminder"      --> doFloat
+    , className =? "Vlc"      --> doFloat
     ]
 
 -- workspaces
@@ -94,7 +103,7 @@ main = do
             { ppOutput = hPutStrLn xmproc
             , ppTitle = xmobarColor "green" "" . shorten 50
             }
-        , workspaces         = ["1:Web", "2:Term", "3:Editor", "4", "5", "6", "7", "8", "9:Mail"]
+        , workspaces         = ["1:Web", "2:Term", "3:Editor", "4", "5", "6", "7", "8:Todo", "9:Mail"]
         , terminal           = "urxvtc"
         } `additionalKeys`
         [ ((mod1Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock") 
@@ -107,9 +116,12 @@ main = do
         , ((mod1Mask, xK_c), spawn "hxsel")
         , ((0, xK_F8), pasteSelection)
         -- , ((mod1Mask .|. shiftMask, xK_b), getSelection )
-        , ((shiftMask, xK_F6), lowerVolume 4 >> return ())
+        , ((shiftMask, xK_F6), lowerVolume 4 >> return ()) -- >>= alert ) 
         , ((shiftMask, xK_F7), raiseVolume 4 >> return ())
         , ((shiftMask, xK_F8), toggleMute >> return ())
+        -- , ((mod1Mask, xK_g), goToSelected defaultGSConfig)
+        , ((mod1Mask, xK_v), windows copyToAll)
+        , ((mod1Mask.|. shiftMask, xK_v), killAllOtherCopies)
         ]
 
 

@@ -33,7 +33,7 @@ xpmroot
 gstreamer-tools
 wicd
 pidgin
-pidgin-sipe pidgin-plugin-pack pidgin-skype
+pidgin-sipe pidgin-plugin-pack # pidgin-skype
 xscreensaver-data-extra
 xscreensaver-gl-extra
 # rtmpdump
@@ -44,7 +44,7 @@ xpdf-utils
 gcc-doc
 docbook docbook2x docbook-utils docbook-xml docbook-xsl texinfo xsltproc
 libconfig++-dev
-ircii
+# ircii
 # libsoup-2.4
 # libsoup2.4-dev
 # liboil-dev
@@ -86,7 +86,7 @@ libXpm-dev libXt-dev
 # -t experimental libcairo-dev
 # -t experimental libcairo2-dev
 xdotool
-haskell98-tutorial
+# haskell98-tutorial
 darcs
 # libghc6-parsec-dev
 libghc6-parsec3-dev
@@ -126,7 +126,7 @@ feh
 libncurses-dev
 ncurses-dev
 libncursesw5-dev
-splint hlint
+splint # hlint
 git-svn
 chm2pdf
 python2.5-chm
@@ -142,7 +142,7 @@ texpower
 vim-full
 vim-gtk
 nicotine python-uniconvertor
-libdvdread3
+# libdvdread3
 w64codecs
 xine
 # gxine
@@ -256,3 +256,47 @@ sun-java6-plugin
 librrd-dev
 m2vrequantiser
 xdvdshrink
+python-scapy
+google-chrome
+evince-gtk
+irssi
+tshark
+usbip
+linux-image-2.6.32-trunk-amd64
+# linux-image-amd64
+htop
+atop
+gvfs-backends gvfs-fuse
+youtube-dl
+kino
+php5
+php5-common
+mediawiki
+php5
+mediawiki
+# pitivi
+# mp4tools
+mencoder
+# flashplugin-nonfree
+libdirectfb-1.2-9
+libgsl0-dev
+liblapack-dev
+pngtools
+apt-show-versions
+pidgin-skype
+libflite1
+libslv2-9
+libpulse-dev libpulse-browse0
+libsdl1.2-dev libsdl1.2debian libsdl1.2debian-alsa libxine1 libxine1-bin libxine1-console libxine1-ffmpeg
+libxine1 libxine1-bin libxine1-console libxine1-ffmpeg libxine1-x
+libxine1-ffmpeg
+mplayer
+libxine1-x
+devede
+# gtk2hs-buildtools
+libghc6-gtk-dev
+mkrboot
+unetbootin
+gtk2hs-buildtools
+pidgin-hotkeys
+lxdvdrip
