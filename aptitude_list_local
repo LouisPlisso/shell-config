@@ -61,7 +61,8 @@ chmview
 chmsee
 # flashplugin-nonfree
 # gstreamer0.10-x264
-gstreamer-tools libpoppler-glib-dev libpoppler-dev libsoup-2.4 libsoup2.4-dev liboil-dev gstreamer0.10-x264
+gstreamer-tools # libpoppler-glib-dev 
+libpoppler-dev libsoup-2.4 libsoup2.4-dev liboil-dev gstreamer0.10-x264
 libgtk2.0-dev
 flvstreamer flvtool2
 flvstreamer flvtool2
@@ -235,7 +236,7 @@ liblzo2-dev
 gxmessage
 libopensc2
 fping
-rrdtool
+# rrdtool
 # apache2
 libdate-manip-perl
 libimage-size-perl
@@ -253,7 +254,7 @@ haskell-platform
 haskell-utils
 sun-java6-plugin
 # nscd
-librrd-dev
+# librrd-dev
 m2vrequantiser
 xdvdshrink
 python-scapy
@@ -300,3 +301,38 @@ unetbootin
 gtk2hs-buildtools
 pidgin-hotkeys
 lxdvdrip
+libzbar0{a}
+libzbar0
+mplayer
+gstreamer0.10-plugins-good
+libxine1
+mplayer
+mplayer
+mplayer
+libsdl1.2-dev
+lxdvdrip
+lxdvdrip
+lxdvdrip_1.76
+mplayer
+vamps
+lxdvdrip
+buffer dvdwizard
+lxdvdrip
+libggiwmh0
+libvdpau1
+lxdvdrip
+libdirectfb-dev
+lxdvdrip
+libdirectfb-1.2-9
+libdirectfb-1.2-9/sid
+sid/libdirectfb-1.2-9
+libdirectfb-1.2-9/sid
+libdirectfb-extra/sid libdirectfb-dev/sid
+lxdvdrip
+libghc6-gtk-dev
+libcairo2
+libcairo2-dev
+libcairo2
+libghc6-gtk-dev
+gtk2hs
+gtk2hs-buildtools

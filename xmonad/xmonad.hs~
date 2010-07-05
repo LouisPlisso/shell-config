@@ -1,5 +1,7 @@
+{-# LANGUAGE  NoMonomorphismRestriction #-}
 import XMonad
 import XMonad.Hooks.DynamicLog
+import XMonad.Layout.Tabbed
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers (isFullscreen,doFullFloat,isDialog)
 import XMonad.Util.Run(spawnPipe)
@@ -18,6 +20,7 @@ import XMonad.Layout.Magnifier
 import Data.Ratio
 import XMonad.Layout.LayoutHints
 import XMonad.Layout.ResizableTile
+-- import XMonad.Layout.NoBorders
 
 import XMonad.Util.XSelection
 
@@ -31,6 +34,44 @@ import Control.Monad
 -- import System.Dzen
 
 import XMonad.Actions.CopyWindow
+
+-- Prompts
+import XMonad.Prompt
+import XMonad.Prompt.DirExec
+import XMonad.Prompt.Shell
+import XMonad.Prompt.Workspace
+import XMonad.Prompt.Window
+import XMonad.Prompt.Man
+
+
+import XMonad.Util.Themes
+
+import XMonad.Actions.CycleWS
+import XMonad.Util.WorkspaceCompare (getSortByIndex)
+import System.Exit
+
+-- Main pallete
+colLight = "#8a999e"
+colDark = "#343d55"
+colVeryDark = "#000000"
+colTextLight = "#ffffff"
+colTextDark = "#bbbbbb"
+colBorderLight = colLight --"#77cc77"
+colBorderDark = colDark
+
+-- Same font as for a console
+-- myFont = "-misc-fixed-medium-r-*-*-15-120-100-100-c-90-iso8859-2"
+myFont = "-misc-fixed-medium-r-normal-*-15-140-75-75-c-90-iso8859-2"
+
+myXPConfig :: XPConfig
+myXPConfig = defaultXPConfig {
+                               font        = myFont
+                             , bgColor     = colVeryDark
+                             , fgColor     = colLight
+                             , borderColor = colDark
+}
+
+
 
 -- alert :: (Show (m Double), Monad m) => m Double -> X ()
 -- alert = XMonad.Util.Dzen.dzen . show . return
@@ -75,8 +116,27 @@ ffKeys conf@(XConfig {modMask = modm}) = M.fromList $
         | (i, k) <- zip (workspaces conf) workspaceKeys,
           (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]     
           where workspaceKeys = [xK_F1 .. xK_F10]
+
+
+-- Define a tab theme
+myTabTheme = (theme smallClean) { activeColor = colLight
+                                , inactiveColor = colDark
+
+                                , activeBorderColor = colVeryDark
+                                , inactiveBorderColor = colVeryDark
+
+                                , activeTextColor = colTextLight
+                                , inactiveTextColor = colTextDark
+                                , decoHeight = 16
+}
+
+-- Define a tab layout
+myTabbed = tabbed shrinkText myTabTheme
+-- mySpiral = spiral (4/3)
+
+
 -- Circle ||| ||| magnify Grid 
-myLayoutHook = avoidStruts (layoutHints (tiled ||| Mirror tiled ||| Grid ||| Full))
+myLayoutHook = avoidStruts (layoutHints (tiled ||| Mirror tiled ||| Grid ||| Full ||| myTabbed))
             where 
                  -- default tiling algorithm partitions the screen into two panes
                  tiled   = ResizableTall nmaster delta ratio []
@@ -121,8 +181,24 @@ main = do
         , ((shiftMask, xK_F8), toggleMute >> return ())
         -- , ((mod1Mask, xK_g), goToSelected defaultGSConfig)
         , ((mod1Mask, xK_v), windows copyToAll)
-        , ((mod1Mask.|. shiftMask, xK_v), windows killAllOtherCopies)
+        , ((mod1Mask .|. shiftMask, xK_v), killAllOtherCopies)
+        , ((mod1Mask .|. shiftMask, xK_p), shellPrompt myXPConfig) -- instead of dmenu
+        -- View next empty workspace
+        , ((mod1Mask, xK_e), moveTo Next EmptyWS)            
+        -- Move current window to next empty workspace
+        , ((mod1Mask .|. shiftMask, xK_e), shiftTo' Next EmptyWS)          
+        -- Restart xmonad
+        , ((mod1Mask .|. shiftMask, xK_q), restart "xmonad" True)
+        -- Quit xmonad
+        , ((mod1Mask .|. controlMask, xK_Delete), io (exitWith ExitSuccess))
+        -- Switch to next/previous workspace
+        , ((mod1Mask, xK_x), nextWS)
+        , ((mod1Mask, xK_Right), nextWS)
+        , ((mod1Mask, xK_y), prevWS)
+        , ((mod1Mask, xK_Left), prevWS)
+        , ((mod1Mask .|. controlMask, xK_f), spawn "xdotool key alt+f")
         ]
+        where shiftTo' dir t = findWorkspace getSortByIndex dir t 1 >>= windows . liftM2 (.) W.view W.shift
 
 
 -- xmobar exemples

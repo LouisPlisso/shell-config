@@ -69,9 +69,10 @@ alias gvi='gvim'
 
 alias chrome='all_proxy=$chrome_proxy /usr/bin/google-chrome'
 
+#no more needed
 #bad but needed to let default config of aptitude and still use python 2.6
-alias python='/usr/bin/python2.6'
-alias ipython='/usr/bin/python2.6 /usr/bin/ipython'
+#alias python='/usr/bin/python2.6'
+#alias ipython='/usr/bin/python2.6 /usr/bin/ipython'
 alias pyprofile='python -m cProfile -s time'
 
 alias 'cd..'='cd ..'
@@ -84,6 +85,7 @@ alias saptu='sudo aptitude update'
 alias saptdu='sudo aptitude dist-upgrade'
 alias saptsu='sudo aptitude safe-upgrade'
 alias apts='aptitude search'
+alias why='aptitude why'
 
 alias hibernate='sudo pm-hibernate'
 alias suspend='sudo pm-suspend'

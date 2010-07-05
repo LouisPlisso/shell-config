@@ -391,3 +391,141 @@ dependencies: array-0.3.0.0 base-4.2.0.0 containers-0.3.0.0
 install-outcome: InstallOk
 docs-outcome: NotTried
 tests-outcome: NotTried
+
+package: Chart-0.13.1
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.0
+flags: splitbase
+dependencies: array-0.3.0.0 base-4.2.0.0 cairo-0.11.0 colour-2.3.1
+              data-accessor-0.2.1.4 data-accessor-template-0.2.1.5 gtk-0.11.0
+              mtl-1.1.0.2 old-locale-1.0.0.2 time-1.1.4
+install-outcome: DependencyFailed cairo-0.11.0
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cairo-0.11.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.0
+flags: cairo_svg cairo_ps cairo_pdf
+dependencies: array-0.3.0.0 base-4.2.0.0 bytestring-0.9.1.5
+              haskell98-1.0.1.1 mtl-1.1.0.2
+install-outcome: ConfigureFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: gio-0.11.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.0
+flags:
+dependencies: array-0.3.0.0 base-4.2.0.0 bytestring-0.9.1.5
+              containers-0.3.0.0 glib-0.11.0 haskell98-1.0.1.1 mtl-1.1.0.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: glib-0.11.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.0
+flags: closure_signals
+dependencies: base-4.2.0.0 containers-0.3.0.0 haskell98-1.0.1.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: gtk-0.11.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.0
+flags: have-gio deprecated
+dependencies: array-0.3.0.0 base-4.2.0.0 cairo-0.11.0
+              containers-0.3.0.0 gio-0.11.0 glib-0.11.0 haskell98-1.0.1.1
+              mtl-1.1.0.2 pango-0.11.0
+install-outcome: DependencyFailed cairo-0.11.0
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: pango-0.11.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.0
+flags: new-exception
+dependencies: array-0.3.0.0 base-4.2.0.0 cairo-0.11.0
+              containers-0.3.0.0 directory-1.0.1.0 glib-0.11.0 haskell98-1.0.1.1
+              pretty-1.0.1.1 process-1.0.1.2
+install-outcome: DependencyFailed cairo-0.11.0
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cairo-0.11.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.0
+flags: cairo_svg cairo_ps cairo_pdf
+dependencies: array-0.3.0.0 base-4.2.0.0 bytestring-0.9.1.5
+              haskell98-1.0.1.1 mtl-1.1.0.2
+install-outcome: ConfigureFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: Chart-0.13.1
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.0
+flags: splitbase
+dependencies: array-0.3.0.0 base-4.2.0.0 cairo-0.11.0 colour-2.3.1
+              data-accessor-0.2.1.4 data-accessor-template-0.2.1.5 gtk-0.11.0
+              mtl-1.1.0.2 old-locale-1.0.0.2 time-1.1.4
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: Chart-0.13.1
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.0
+flags: splitbase
+dependencies: array-0.3.0.0 base-4.2.0.0 cairo-0.11.0 colour-2.3.1
+              data-accessor-0.2.1.4 data-accessor-template-0.2.1.5 gtk-0.11.0
+              mtl-1.1.0.2 old-locale-1.0.0.2 time-1.1.4
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: gtk2hs-buildtools-0.9
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.0
+flags: closuresignals
+dependencies: array-0.3.0.0 base-4.2.0.0 containers-0.3.0.0
+              directory-1.0.1.0 filepath-1.1.0.3 haskell98-1.0.1.1 pretty-1.0.1.1
+              process-1.0.1.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: Chart-0.13.1
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.0
+flags: splitbase
+dependencies: array-0.3.0.0 base-4.2.0.0 cairo-0.11.0 colour-2.3.1
+              data-accessor-0.2.1.4 data-accessor-template-0.2.1.5 gtk-0.11.0
+              mtl-1.1.0.2 old-locale-1.0.0.2 time-1.1.4
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
