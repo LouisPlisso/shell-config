@@ -1,0 +1,100 @@
+},v
+check how much traffic is ELASTIC,v
+ and do it in 15,v
+plotWindow [0,0.1..2.9] sin,v
+Graphics.Rendering.Chart.Simple,v
+  \end{tabularx},V
+   \end{rubrique},V
+\tabularx{\linewidth}{p{\largeurcolonne}X}},V
+Work Experience,v
+%,v
+{\vspace*{.2cm}\noindent,V
+        \vspace*{2pt}\hrule\vspace*{.0cm}},V
+{\large\textsl{#1}\par},v
+ ,v
+{,v
+ \hrule,V
+{\vspace*{.2cm}\noindent        %% {\large\textsl{#1}\par}\vspace*{2pt}\hrule\vspace*{.0cm}},v
+:,v
+    \begin{sousrubrique}    \end{sousrubrique},V
+     \Descr{\small{,V
+Financed by Orange Labs}},v
+\,v
+smallskip,v
+  \smallskip,V
+,V
+  \\,V
+description,v
+item [\emph,v
+],v
+itemize,v
+;,v
+.,v
+\item[-],v
+\item[-] ,v
+item[-],v
+\begin{itemize} ,V
+item [\emph{,v
+  \end{itemize},V
+\Descr{,v
+item,v
+  \begin{itemize},V
+\item[,v
+emph{,v
+description},v
+\end{sousrubrique}\begin{sousrubrique},V
+\item[\emph,v
+\item[\emph{,V
+Duree,v
+renewcommand,v
+FonteTitre,v
+\renewcommand{\FonteTitre}{},V
+related:,v
+ \clearpage,V
+ing,v
+ Protocols,v
+   ,v
+  ,v
+W,v
+ %\item [,v
+O,v
+Computer Science,v
+:],v
+\begin{sousrubrique},V
+%  \item[-] \end{sousrubrique},V
+\Apport{,v
+%  \item[-] ,V
+ \\,v
+Apport,v
+Descr,v
+ Programming Languages},V
+\end{sousrubrique},V
+\Apport{test},V
+\Descr{uoae},V
+Competence,v
+\end{sousrubrique}\begin{sousrubrique}\Competence{W,v
+begin,v
+Titre,v
+\Titre,v
+Date,v
+R\&D Engineer,v
+\begin{rubrique}{R\&D Engineer},V
+ults,v
+Lieu,v
+Descr{\small,v
+ponsabilites,v
+%% \rubrique{1992--1993}{Spécialisation dans le domaine~\ldots.},V
+%% Major de promo.},V
+%% propose un programme~\ldots.,V
+%% \rubrique{1990--1992}{Étudiant à l'école Machin. Cette école,V
+%\categorie{Category:},V
+ \\,V
+%% ,v
+huge,v
+big,v
+\renewcommand{\FonteApport}{},V
+   ,V
+ \begin{sousrubrique}  \Competence{Specialities}  \Apport{TCP Protocol expert from implementation to modelisation, simulation and performance evaluation of Internet Traffic}  \Apport{Datamining of huge Datasets and Design of Internet Indicators}     \Apport{Quality Evaluation of Internet Traffic}%Measurement, Analysis and      \Apport{Integration of Monitoring Services and IP Probes into Enterprise Access Routers}     \end{sousrubrique},v
+\categorie{Networking and Computer Science Skills}% and project experiences:}%Mathematics and Engineering %\begin{description}\item [Networking Protocols] \begin{itemize}\item[]\item[-] \emph{Application Protocols:} extended knowledge of Web Streaming, P2P (eDonkey, Kad and BitTorrent), HTTP, FTP;\item[-] \emph{VOIP Protocols:} extended knowledge of RTP/RTCP and H.323/H.245/Q.931, basic knowledge of Skype, SIP and CRM applyed to VOIP;\item[-] \emph{Wired Networks:} expert knowledge of IP v4 and TCP/UDP,  basic knowledge of IPv6, OSPF, MPLS, BGP, Ethernet;\item[-] \emph{Wireless Networks:} extended knowledge of GSM (including GPRS and EDGE) and UMTS (including HSxPA), basic knowledge of 802.11, Wifi, Mobile IP and LTE.\end{itemize}\item[Programming Languages] \begin{itemize}  \item[]  \item[-] Highly proficient in Python and other scripting languages (shell, awk, perl);  \item[-] Working knowledge of C, C++ and functionnal programming languages (Haskell, CaML Light);  \item[-] Basic knowledge of Java and assembly language (x86). \end{itemize}\item [Versionning:]SVN (professional usage), Git and Darcs.   \item [Databases:]Programming knowledge of SQLite, MySQL and PostGreSQL. \item [Operating Systems and Environments:]GNU/Linux (administration of operational IP probes and servers, tuning of Orange streaming servers), and embedded environments on Linux and VxWorks (low level API design). IDE:  Vim (advanced usage and scripting).\item [Web Publishing:] HTML, Javascript, CGI and PHP scripts, XML. %JSP\item [Scientific and Other Software:]Statistical calculus (Design of statistical and networking tools with SciPy, basic usage of R and Matlab), UML and communication modeling (SDL), Network Simulation (NS2 and 3) and Emulation (NetEm, Dummynet), \LaTeX. % (SDL, Objecteering UML). %, automatic and electronic simulation (Sirena, MAX+2).\end{description},v
+Linux, MySQL,v
+\emph{,v

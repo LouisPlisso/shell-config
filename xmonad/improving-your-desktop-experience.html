@@ -1,0 +1,338 @@
+
+  bla repository </>
+
+
+      Improving your desktop experience
+      </article/improving-your-desktop-experience>
+
+September 19th, 2008
+
+I finally decided to give tilling, keyboard-controlled window managers a
+try. First I've tried few (most notably WMII, Ion and xmonad), then
+chosen one and been configuring it few hours (a one day)... That's how I
+stepped on the path with no return, because, seriously --- when you've
+created good keybindings, learned them and can use them fluently is
+there any reason to stick with classical window managers? Especially on
+laptops, when there's not always enough time to plug a mouse...
+
+The chosen WM is the xmonad, mostly because of its support for Xinerama
+- I found a configuration of WMII and Ion for multi-headed, non-xinerama
+display a bit hard and unpractical. Then I've learned that it was a good
+choice also because of other reasons; it's a VERY configurable,
+featureful, fast and extensible WM. Although the title might sound a bit
+like a text from some big corporation marketing action, xmonad does it.
+Really.
+
+It's written in haskell, with code base of about 1.5k lines (not
+counting commentaries) and a lot of contributed extensions (package
+xmonad-contrib). Its config file is also a pure haskell module which is
+automatically compiled on each xmonad start (or restart). That makes it
+fast and pretty stable but has drawbacks. Config file in the beginning
+is pretty illegible and haskell compiler (GHC) is required for its work.
+I don't know haskell (yet!), but I managed to configure it, so it can't
+be that hard.
+
+To use it I had to extend its functionality to satisfactory level
+(default config makes it rather bare). This are the things which I added
+(requires only the xmonad-contrib package, one shell script for status
+bar + some user scripts):
+- Conditional config suitable for a xinerama display and a single display.
+- Status bar on both monitors using dzen2 with memory usage bar,
+workspaces, current layout and date
+- Tabbed layout
+- Named workspaces, switching between current and previous workspace
+- Autocompleted prompts of windows and workspaces
+- DirExec - autocompleted executing of scripts from a configured
+directory (e.g. locking display...)
+- ShellExec - autocompleted executing programs from our $PATH (better
+than standard dmenu)
+- Making web searches (google, wiki)
+- Creation of window copies
+- other like for e.g. removal of borders around full-screen mplayer,
+avoiding clutter of main window with floats etc.
+
+*Approach to workspaces*
+I'm used to having a lot of "virtual desktops", so here I've also
+created them a lot. WMII has a nice feature - it can tag any number of
+windows with any number of tags and then display certain set of tagged
+windows on a screen - practically creating any number of workspaces
+containing any chosen windows. I emulate this partially, but sufficiently.
+There are 9+13=22 workspaces, nine for temporary windows numbered 1 to 9
+and accessible via M-(1..9) keybinding (see below)
+and 13 named workspaces accessible from autocompleted menu: web web2
+web3 im irc mail dev dev2 dev3 adm adm2 adm3 music. Newly created
+firefox windows land on the "web", pidgin on "im", amarokapp on "music"
+and claws-mail on "mail".
+
+*Files!*
+Although a screenshot </uploads/bla_xmonad.jpg> clearly can't make you
+feel this power, but here it is. Featuring XMonad on two monitors,
+vimperator and some random windows (BTW: Vimperator is a Firefox plugin
+making it behave like a vim, allows mouse-less browsing and is a great
+complement to the tilling WM).
+
+I guess there is no such a thing as a "standard xmonad configuration".
+When configuring it you have a feeling you are programming a totally new
+window manager, which will behave exactly as you imagined. Even better
+if you know haskell.
+
+I use the same configuration on notebook and on a desktop therefore
+there's a variable setting xinerama config on/off. Last config update on
+26.11.2008 (version 0.2).
+
+    * Browse ~/.xmonad: .xmonad </uploads/bla_xmonad>
+    * Configuration file: xmonad.hs </uploads/bla_xmonad/xmonad.hs>
+    * Sample script generating bar data: membar </uploads/bla_xmonad/membar>
+    * Whole ~/.xmonad packed (unpacks to xmonad): bla_xmonad-0.2.tar.gz
+      </uploads/bla_xmonad-0.2.tar.gz>
+    * And a bonus, a patch for xmatrix
+      </uploads/xscreensaver_xmatrix.patch> from xscreensaver. Makes it
+      less pathetic and more laughable. ;p
+
+*Default keybinding list*
+I decided to design the extending keybindings without much differing
+from the default idea. "M" is a Mod key, which I set to the win button,
+not used for anything else (S stands for shift). By default M is set to
+the left alt. I left the basic keybinding as they were (most of them
+listed, but rarely used omitted):
+M-j M-k - swaps focus between windows on one workspace
+M-tab M-S-tab - like above
+M-h M-l - resizes the master window space (most layouts have such a space)
+M-, M-. - change the number of windows in master window area
+M-S-j M-S-k - swaps windows on the workspace
+M-enter - sets focused window as a master one
+M-S-enter - opens terminal
+M-e M-w - swaps focus between monitors
+M-p - opens at the top an autocompleted list with programs from $PATH
+and runs one. (Changed to ShellExec)
+M-space - changes layout to the next in a list (Tall, Mirrored Tall,
+Tabbed, Full)
+M-S-c - kills a window
+
+M-q - restart (reread the config file)
+M-S-q - quit
+M-1...M-9 - selects workspace
+
+*Extended keybinding list*
+Following were added by me, and aren't standard (but are crucial!):
+These open auto completed prompts at the bottom of the screen and
+perform an action on a selection:
+M-z - move focus to the selected named workspace (can select also
+numbers from 1 to 9)
+M-S-z - move focused window to the selected workspace
+M-backspace - switch workspace between current and previous one.
+
+M-x - prompt for any opened window by a title; move focus to the
+selected window
+M-S-x - move selected window to the current workspace
+
+M-a - run a script from ~/.xmonad/scripts (used for locking the screen
+and turning off a cron-tabbed alarm)
+M-v - copy focused window to the selected workspace.
+
+Various other:
+M-s - after this press 'g, w, p' which stands for search on google,
+wiki, and polish wiki.
+M-m - prompt for manual page
+M-S-v - window can be displayed on various workspaces; this closes all
+but focused copy of a window
+
+Back to main page </>
+
+Comment by Paolo Fagni
+
+submitted on September 22nd, 2008 at 14:21
+
+Hello there!
+I'm a new xmonad user too, and your config file helped me quite a lot in
+configuring mine. Thank you, you did a very good work!
+
+Comment by andrew
+
+submitted on September 25th, 2008 at 11:22
+
+Hi,
+I'm using a similar configuration. It works well without xinerama, but
+irritates me with xinerama enabled: if i open 2 terms and put one on the
+left and one on the right, so there one workspace 1,2 and if i switch
+between them they seem to swap over and hop to other workspaces or
+something odd. I heard that's because of the feature that switching
+workspaces never changes which screen currently has focus. People
+advised me to use greedyview, but I can't find my way around it yet. Do
+you know how to achieve that?
+
+Comment by bla <http://thera.be>
+
+submitted on September 25th, 2008 at 13:41
+
+If I switch with just M-w to the left screen and with M-e to the right
+screen they won't do nothing funny, just move the focus to the second
+screen.
+
+Funny things may happen if you try to open the same workspace on both
+monitors; X/Xinerama doesn't support (or make it hard) showing the same
+window more then once (also CopyWindow with Xinerama won't work nice).
+Therefore if you choose on the left screen the same workspace as on
+right - xmonad will swap the workspaces so the right monitor has
+something to show.
+
+I guess I've seen sometimes that it didn't swap workspaces but moved
+focus, but now I'm unsure. Using M-w and M-e for "switching between
+them" you should be pretty safe. Edit: Yeah - M-z (workspace prompt
+contrib module) will move focus to the second display in mine
+configuration while M-1..9 will swap workspaces. Guess it can be forced
+to behave the same way, but it didn't bother me. ;)
+
+Comment by Kirby54925
+
+submitted on November 3rd, 2008 at 03:52
+
+Will the keybindings for xmonad conflict with keybindings for other
+applications such as emacs?
+
+Comment by bla <http://thera.be>
+
+submitted on November 3rd, 2008 at 09:41
+
+They won't as a "mod button" in this configuration is left windows
+button. They did conflict with my Amarok, but I moved amarok to use left
+win + alt
+
+Comment by Sohbet <http://www.sohbetozel.org>
+
+submitted on December 17th, 2008 at 00:22
+
+Hello thanks;)
+
+Çağlar ve dexter harika pozlar kaçırma:D
+
+Comment by sw2wolf
+
+submitted on May 18th, 2009 at 14:36
+
+on FreeBSD
+%cd /usr/ports/x11-wm/xmonad
+%sudo make install clean
+===> xmonad-0.8.1_1 depends on executable: ghc - found
+===> xmonad-0.8.1_1 depends on package: hs-x11-ghc>=1.4.1 - found
+===> xmonad-0.8.1_1 depends on executable: haddock - found
+===> xmonad-0.8.1_1 depends on file: /usr/local/libdata/pkgconfig/x11.pc
+- found
+===> xmonad-0.8.1_1 depends on shared library: gmp.8 - found
+===> Configuring for xmonad-0.8.1_1
+cd /usr/ports/x11-wm/xmonad/work/xmonad-0.8.1 && /usr/local/bin/runghc
+Setup.lhs configure --ghc --prefix=/usr/local
+Configuring xmonad-0.8.1...
+Setup.lhs: At least the following dependencies are missing:
+X11 >=1.4.3
+*** Error code 1
+
+Stop in /usr/ports/x11-wm/xmonad.
+
+then i want to upgrade libX11
+
+%sudo portupgrade -R libX11
+%pkg_info | grep libX11
+libX11-1.2.1,1 X11 library
+xcb-util-0.3.4 A module with libxcb/libX11 extension/replacement libraries
+
+However it stll doesnot meet the need of xmonad :(
+
+Comment by bla <http://thera.be>
+
+submitted on May 18th, 2009 at 15:34
+
+What's funny is that I've tried about 3 days ago compiling xmonad with
+ports on fbsd and ghc compilation failed in the middle. I can't help
+much with fbsd but you can try #xmonad on irc.freenode.net. Pretty big
+user base there (140 users now), and really helpful.
+
+Comment by thanos2014
+
+submitted on May 28th, 2009 at 18:30
+
+hey, can u post your xorg.conf also please? just for reference. u have 1
+video card, and 2 monitors? or 2 video card and 2 monitors?
+
+Comment by bla <http://thera.be>
+
+submitted on May 28th, 2009 at 19:12
+
+Currently 1 video card + 2 monitors. I used to have 2 video cards.
+It's written by hand config which was then mangled by nvidia-settings --
+but as I understand if you had 2 monitor nvidia card you wouldn't have
+problem. Nevertheless here it is http://temp.thera.be/xorg.conf
+
+Comment by thanos2014
+
+submitted on May 28th, 2009 at 20:50
+
+sorry, i wasn't specific :p. i am interested in 1 video card + 2
+monitors. i have problem :( if u could post the 1 card +2 monitors setup
+, it would be great :D thanx for answer anyway ;)
+
+Comment by bla <http://thera.be>
+
+submitted on May 28th, 2009 at 20:58
+
+Well then it is that config you've asked for. ;-) one card, two
+monitors. If you have nvidia then it should work after removing BusID lines.
+
+Add a comment [+] <#> Hide the comment form [-] <#>
+
+Author:
+
+Email (won't be shown on webpage):
+
+URL (optional):
+
+Your comment:
+
+I'm a bot, please ignore this comment.
+
+Static pages
+
+    * Main page </>
+    * Contact </article/contact>
+    * O homeopatii (PL) </article/homeopatia>
+    * Wprowadzenie do języka OCaml (PL)
+      </article/wprowadzenie-do-jezyka-ocaml>
+    * Vorago RPG (PL) </article/vorago-rpg>
+
+Tags
+
+    * Uncategorized </tag/uncategorized> (0)
+    * Links </tag/links> (0)
+    * GNU </tag/gnu> (1)
+    * Project </tag/project> (10)
+    * General </tag/general> (19)
+    * Microcontrollers </tag/micro> (4)
+    * Studies </tag/studies> (4)
+    * RPG </tag/rpg> (0)
+
+Newest articles
+
+    * Random Productions ... </article/random-productions>
+    * Infra-Red Guitar ... </article/infra-red-guitar-tuner>
+    * Modbus </article/modbus>
+    * One-Time Passwords </article/one-time-passwords>
+    * ppp-pam (ssh ... </article/otpasswd>
+
+Recently updated
+
+    * Random Productions ... </article/random-productions>
+    * C++ Raytracer </article/cpp-raytracer>
+    * ppp-pam (ssh ... </article/otpasswd>
+    * NVM 2.0 ... </article/nvm-released>
+    * Why? </article/rationale>
+
+External links
+
+    * Marcin Bielewicz <http://marcin.af.gliwice.pl>
+    * Krzysztof Goj <http://krzysiek-goj.blogspot.com/>
+    * aardvark <http://aardvark.af.gliwice.pl>
+    * My other files <http://thera.be/>
+    * My github account <http://github.com/blaa>
+
+RSS </feed>
+

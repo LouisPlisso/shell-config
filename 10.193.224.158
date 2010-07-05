@@ -1,0 +1,11 @@
+#pour avoir une adresse IP sur reseau FT 20/2/07
+request subnet-mask, broadcast-address, time-offset, routers, host-name,
+        domain-name-servers, domain-name, host-name, nis-domain, nis-servers;
+#script  "/etc/dhclient-script";
+####################################################################################
+timeout 30;
+#initial-interval 2;
+#S29cnet_install test la presence d une partition windows sous lilo et envoie
+#dans ce cas le dhcp_identifier AC 8/8/05
+#####################################################################################
+send host-name "s-alois";

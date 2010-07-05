@@ -1,0 +1,98 @@
+google-chrome
+google-chrome-beta
+xpdf
+xpdf-utils
+evince
+#./davmail_3.6.4-954-1_all.deb
+#./davmail_3.6.4-954-1_all.deb
+libgeoip-dev
+#google-chrome
+#google-chrome-beta
+xmonad
+xmonad
+dmenu dzen
+dmenu dzen2
+texlive-science texlive-formats-extra
+i3
+# wicd
+burn
+xmobar
+bzr
+git-cvs
+libpng12-dev libcurl3-dev libspeex-dev libming-dev libming-util mtasc haxe swfmill swftools csound zlib1g-dev libfreetype6-dev libfontconfig1-dev dejagnu qt4-dev-tools libjpeg-dev libgif-dev libgtk2.0-dev libpango1.0-dev libatk1.0-dev libgstreamer0.10-dev libsdl1.2-dev libagg-dev libboost-dev libboost-thread-dev
+libgstreamer-plugins-base0.10-dev
+glxgears
+mesa-utils
+glxgears
+xlock
+xscreensaver-gl
+trayer
+xpmroot
+# fvwm1
+fvwm
+gstreamer-tools
+wicd
+pidgin
+pidgin-sipe pidgin-plugin-pack pidgin-skype
+xscreensaver-data-extra
+xscreensaver-gl-extra
+# rtmpdump
+xclip
+xpdf-utils
+# libpoppler-glib-dev 
+# libpoppler-dev
+gcc-doc
+docbook docbook2x docbook-utils docbook-xml docbook-xsl texinfo xsltproc
+libconfig++-dev
+ircii
+# libsoup-2.4
+# libsoup2.4-dev
+# liboil-dev
+# libcairo
+# libcairo-dev
+# libcairo2-dev
+# -t experimental libcairo2
+gtk-doc
+gtk-doc-tools
+flex yacc
+byacc
+# bison
+chmview
+chmsee
+# flashplugin-nonfree
+# gstreamer0.10-x264
+gstreamer-tools libpoppler-glib-dev libpoppler-dev libsoup-2.4 libsoup2.4-dev liboil-dev gstreamer0.10-x264
+libgtk2.0-dev
+flvstreamer flvtool2
+flvstreamer flvtool2
+vlc vlc-plugin-ggi vlc-plugin-jack vlc-plugin-pulse vlc-plugin-sdl vlc-plugin-svg vlc-plugin-svgalib mozilla-plugin-vlc
+mtp-tools
+libudev-dev libmtp-dev
+libzip-dev libdbus-1-dev
+libogg-dbg libcddb-dev
+libmad0-dev
+libavcodec-dev libavutil-dev
+libavformat
+libavformat-dev
+libswscale-dev
+libpostproc-dev
+libfribidi-dev
+# mozilla-devscripts
+mozilla-dev
+xulrunner-dev
+libXpm-dev libXt-dev
+# mozilla-plugin-gnash
+# -t experimental cairo
+# -t experimental libcairo-dev
+# -t experimental libcairo2-dev
+xdotool
+haskell98-tutorial
+darcs
+# libghc6-parsec-dev
+libghc6-parsec3-dev
+# libghc6-parsec2-dev
+libghc6-stm-dev
+pcaputils
+bash-builtins bash-doc
+acroread-debian-files
+ia32-libs{a} ia32-libs-gtk{a} lib32asound2{a} lib32gcc1{a} lib32ncurses5{a} lib32stdc++6{a} lib32z1{a}
