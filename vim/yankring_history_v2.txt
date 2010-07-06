@@ -1,27 +1,94 @@
-varene olivier,v
+Thomas Dübendorfer,,v
+\newblock In: {ITC SS 19}. (2008),V
+g-wtse01.rd.francetelecom.fr,v
+e,v
+alias citrix_g='rdesktop -u elpy7391 g-wtse01.rd.francetelecom.fr',V
+2,v
+alias citrix_s='rdesktop -u elpy7391 s-wtse2.rd.francetelecom.fr',V
+LEDBAT: the new BitTorrent congestion control protocol,v
+haskell-98-tutorial-html.tar,v
+\bibitem{lp_youtube}Plissonneau, L., En-Najjary, T., Urvoy-Keller, G.:\newblock {Revisiting Web Traffic from a DSL Provider Perspective: the Case of  YouTube}.,V
+internet,v
+many of ,v
+,V
+have multiple ,v
+ide,v
+at,v
+throught DNS response to Name Servers in France Télécom address space, the connection of a subset of Name Servers in OTI address space allowed us to make our clients be served by Google AS instead of \YT\ one: this action has been taken by ,V
+Serge Benoit inside the streaming crisis group.,v
+<++>,v
+.,v
+and not to OTI ,v
+France Télécom ,v
+c,v
+ ,v
+YouTube,v
+are getting videos from ,v
+not all,v
+Another congestion on the megaupload link (mainly megaupload and canal+ were congestionned) has been resolved by upgrading the link.,V
+,v
+As the Cogent links are saturated, flows encounters losses, thus throughtput reduction resulting in interruptions in videos.These congestions occurs from 9am to 2am!,V
+in this situation: some get \YT  videos annonced on ,v
+N,v
+Google AS (15169) which is well provisionned.,v
+1:white.tex,v
+5:stream_stats.tex,v
+\,v
+},v
+\footnote{,v
+a,v
+/media/new_disk/TCP_sessions,v
+res,v
+tabularx,v
+end,v
+Engineer,V
+%,v
+u,v
+l,v
+r,v
 s,v
+i,v
+o,v
+n,v
+autocmd BufRead *.py ,v
+4:vimrc,v
+http://icccn.org/icccn10/techprogram.html ,v
+>,v
++,v
+<,v
+{,v
+\begin{sousrubrique}\Competence{Wired Networks} \Descr{expert knowledge of IPv4 and TCP/UDP,  basic knowledge of IPv6, OSPF, MPLS, BGP, Ethernet\smallskip}%\item[-] \emph{\end{sousrubrique}\begin{sousrubrique}\Competence{Wireless Networks} \Descr{extended knowledge of GSM (including GPRS and EDGE) and UMTS (including HSxPA), basic knowledge of 802.11, Wifi, Mobile IP and LTE\smallskip}\end{sousrubrique},v
+business,v
+architechture,v
+thing,v
+depends of how it's implemented, roaming SGSN is "guarantee" to preserve all servicesI don't know exactly at GGSN,V
+I don't understand the question,V
+this is not done in orange network,V
+service,v
+, and ,v
+,,v
+to anyone,v
+what is needed,,v
+I don't know ,V
+per,v
+rtt_local_remote_data_ack_evolution_umts,v
+SBININBB164,v
+varene olivier,v
 \categorie{Mathematics Skills}\medskip%\smallskip\begin{tabularx}{\linewidth}{p{\largeurcolonne}X}%\begin{rubrique}{} \begin{sousrubrique}\Date{Performance Evaluation}\Descr{Palm Probabilities,  Algebraic Topology and Homotopy of Groups (theorem for transposition into Distributed System world), Integration and Measure Theory (Master's Thesis)}\end{sousrubrique}\begin{sousrubrique}\Date{Other} \Descr{Topology and Functional Analysis, Real Analysis, Numerical Analysis}\end{sousrubrique}\end{tabularx},v
 \\,V
 \categorie{Mathematics Skills}\medskip%\smallskip\begin{tabularx}{\linewidth}{p{\largeurcolonne}X}%\begin{rubrique}{} \begin{sousrubrique}\Date{Performance Evaluation}\Descr{Palm Probabilities,  Algebraic Topology and Homotopy of Groups (theorem for transposition into Distributed System world), Integration and Measure Theory (Master's Thesis)}\end{sousrubrique}\begin{sousrubrique}\Date{Other} \Descr{Topology and Functional Analysis, Real Analysis, Numerical Analysis}\end{sousrubrique}\end{tabularx},v
-,V
-%,v
-\,v
     \medskip,V
 \categorie{Mathematics Skills}\medskip%\smallskip\begin{tabularx}{\linewidth}{p{\largeurcolonne}X}%\begin{rubrique}{} \begin{sousrubrique}\Date{Performance Evaluation}\Descr{Palm Probabilities,  Algebraic Topology and Homotopy of Groups (theorem for transposition into Distributed System world), Integration and Measure Theory (Master's Thesis)}\end{sousrubrique}\begin{sousrubrique}\Date{Other} \Descr{Topology and Functional Analysis, Real Analysis, Numerical Analysis}\end{sousrubrique}\end{tabularx}\\,v
-},v
 \Apport{,v
 Apport,v
 \begin{tabularx}{\linewidth}{p{\largeurcolonne}X},V
 and,v
 Automatic ,v
-.,v
 Traffic,,v
 integration ,v
 a project to ,v
-e,v
 integrate ,v
 commercial ,v
-tabularx,v
 \end{tabularx},V
 \end{tabularx}\begin{tabularx}{\linewidth}{p{\largeurcolonne}X},V
 {\linewidth}{p{\largeurcolonne}X},v
@@ -31,70 +98,3 @@ Prof. Ernst Biersack (Eurecom) (Financed by Orange Labs)},v
     \\,V
 smallskip,v
  \begin{sousrubrique}  \Date{Bangla}  \Descr{basic knowledge} \end{sousrubrique},V
- \smallskip,V
-6,v
- \\,V
-    \begin{sousrubrique}     \Competence{Research domains}     \Descr{Web Streaming, Mobile Traffic, Data Mining, QoS Internet and VoIP, Monitoring Services, Network Management, Traffic Classification, Video Social Networks, VoIP Traffic, P2P Traffic, Internet Probes, Automatic Detection and Reaction to Network Quality Performance Degradation.}    \end{sousrubrique}    \\,v
-    \begin{sousrubrique}     \Competence{Main results}     \Apport{TCP streaming server patent (to be submitted) and integration to Orange streaming servers}     \Apport{Network Planning recommandation for 2G to 3G evolution in emerging European countries}     \Apport{Design and Implementation of embedded probes to monitor data and voice traffic generated by SMEs}     \Apport{Design of patent for client side throughput spare (under review)}     \Apport{Large scale deployment of Internet Probes on ADSL public network and in enterprises}    \end{sousrubrique},v
- Light,v
-a,v
- ,V
-ltablex,v
-, Publications ,v
-rubrique,v
-\medskip\smallskip\begin{tabularx}{\linewidth}{p{\largeurcolonne}X},v
-\begin{rubrique}{Peer Reviewed Publications},V
-\begin{sousrubrique}  %\end{itemize}  \Date{Publications}%\begin{itemize}%description} %\item[] \Apport{``Mobile Data Traffic Analysis: How do you prefer watching videos?'' by Louis Plissonneau and Guillaume Vu-Brugier in \emph{Proceedings of the ITC $22^{nd}$  International Teletraffic Congress} (ITC 22), Amsterdam, September 2010}\Apport{``Revisiting Web Traffic from a DSL Provider Perspective: the Case of YouTube''  by Louis Plissonneau, Taoufik En-Najjary (Eurécom), Guillaume Urvoy-Keller (Eurécom) in \emph{Proceedings of the 19\,${}^{th}$ ITC Specialist Seminar onNetwork Usage and Traffic} (ITC SS 19), Berlin, October 2008}\Apport{``Detailed Analysis of eDonkey Transfers on ADSL''  by Louis Plissonneau, Jean-Laurent Costeux and Patrick Brown in \emph{Proceedings of the 2\,${}^{nd}$ Conference on Next Generation Internet Design and Engineering} (NGI06), Valencia, April 2006}\Apport{``Detection and Localization of Performance Limitations of TCP Connections on ADSL'' by Denis Collange, Jean-Laurent Costeux and Louis Plissonneau in \emph{EuroNGI Workshop on QoS and Traffic Control}, Paris, December 2005}\Apport{``Analysis of Peer-to-Peer Traffic on ADSL'' by Louis Plissonneau, Jean-Laurent Costeux and Patrick Brown in \emph{Proceedings of Passive and Active Measurement Workshop} (PAM 2005), Boston, March 2005}%\Apport{%Research work of 6 months entitled %``A Treatise on Cauchy-Regular Functions'', %under the guidance of Dr. Kundu %Mathematics Department, \textsc{IIT, Delhi}, \emph{Diploma project} 2002--2003.%\item``Algebraic Topology and Distributed Systems'', Distributed Programming Lab, \url{http://lpdwww.epfl.ch}, \emph{EPFL project} 2002.\end{sousrubrique}%description},v
-mother tongue,v
-French,v
-:,v
- \begin{sousrubrique}  \Date{French}  \Descr{mother tongue} \end{sousrubrique},V
-description,v
-10.193.118.129,v
-\medskip\smallskip\begin{tabularx}{\linewidth}{p{\largeurcolonne}X},V
-   \end{tabularx},V
-    \end{sousrubrique},V
-     \Descr{Prof. Ernst Biersack (Eurecom) (Financed by Orange Labs)},V
-     \Competence{Supevisor},V
-    \begin{sousrubrique},V
-     \Titre{PhD candidate},V
-     \Lieu{Télécom ParisTech (École Nationale Superieure des Télécommunications)},V
-     \Date{since Oct. 2007},V
-\medskip\smallskip\begin{tabularx}{\linewidth}{p{\largeurcolonne}X}    \begin{sousrubrique}     \Date{since Oct. 2007}     \Lieu{Télécom ParisTech (École Nationale Superieure des Télécommunications)}     \Titre{PhD candidate}    \end{sousrubrique}    \begin{sousrubrique}     \Competence{Supevisor}     \Descr{Prof. Ernst Biersack (Eurecom) (Financed by Orange Labs)}    \end{sousrubrique} ,v
-1:cv_rd.tex,v
-19:test.log,v
-17:test.tex,v
-%% ,v
-test,V
-%\begin{rubrique}{Titre de la rubrique.}%   \begin{sousrubrique}%      \Date{deb-fin}%      \Duree{longue}%      \Lieu{Ca c'est passe ici}%      \Titre{Ce que j'ai fait}%      \Descr{Quelques details}%      \Apport{Ce que cela m'a apporte}%      \Apport{et ca aussi}%   \end{sousrubrique}%   \begin{sousrubrique}%      \Competence{Parlote}%      \Descr{Bonne maitrise}%   \end{sousrubrique}%\end{rubrique}%% \categorie{Expérience~:}%% \rubrique{1987-1988}{Stage ouvrier dans l'usine de carton de%% La Ville aux Cartons.}%% * Voici d'autres macros de JM Lasgouttes :%% \leftheader[8pt]{text} : defines what should appear in the upper%% \begin{topic}%% \item[test] balbla%% \item[toto] titi%% \end{topic},v
-\documentclass[a4paper,10pt,final]{article}%\usepackage[T1]{fontenc}\usepackage[a4paper,margin=1.5cm,noheadfoot]{geometry}\usepackage[latin1]{inputenc}%\usepackage{a4wide}\usepackage{multicol}%\setlength{\columnseprule}{0.5pt}\usepackage{url}\urlstyle{sf}\usepackage[english]{babel}\usepackage{graphics}% remove page numbers%\pagestyle{empty}%less top space%\usepackage{geometry}%\geometry{noheadfoot}% remove the indentation%\setlength{\parindent}{0pt}%\setlength{\itemsep}{0pt}%\setlength{\topsep}{0pt}%\setlength{\parskip}{0pt}%\setlength{\parsep}{0pt}%\setlength{\partopsep}{.4pt}%\usepackage{nosep}%\noitemsep%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\usepackage{ESIEEcv}%%%% debut macro %%%%% Definition des catégories de rubriques.\newcommand{\categorie}[1]{\vspace*{.1cm}\noindent%	{\large\textsl{#1}\par}\vspace*{2pt}\hrule\vspace*{.1cm}}% On definit une colonne pour les dates\newlength{\duree}\settowidth{\duree}{\textbf{1985-1987}}% La seconde colonnes doit occuper le reste de la page\setlength{\duree}{-\duree}\addtolength{\duree}{\textwidth}\renewcommand{\TailleApport}{}\renewcommand{\FonteApport}{}\renewcommand{\FonteTitre}{}\setlength{\Space}{0pt}\settowidth{\largeurcolonne}{Main responsabilites}%\setlength{\largeurcolonne}{3.4cm}% Definition des rubriques.%% \newcommand{\rubrique}[2]{\noindent{\textbf{#1\ \ }}%   %% \parbox[t]{\duree}{#2}}%%%% fin macro %%%%%%%% debut macro %%%%%%%% cv document class%%%% Author: Jean-Marc Lasgouttes (Jean-Marc.Lasgouttes at inria.fr)%%%% Last modification: 29/11/1996%%%% WARNING: this documentclass is really a hack. Don't expect too much.%%% Basic usage:%% \leftheader[width]{text} : defines what should appear in the upper%%   left of the first page. The optionnal argument `width' specifies%%   the width of the header (default: 0.48\textwidth). `Text' may%%   contain \\ to break lines.%% \rightheader[width]{text} like \leftheader, but for the right%%   header.%% \makeheader: actually typesets the header.%%%% \section*{title}: gives a title for a new topic of the CV. The text%%   is typeset in font \topicfont (by default Sans Serif%%   semi-condensed bold).%% `topic' environment: begins an itemize-like environment where the%%   argument of \item[] is typeset in font \itemfont (by default Sans%%   serif). You can also use \\ just after \item[xxx] if the label is%%   too large.%%%% The cv document class also has some primitive support for%% bibliography. You can use the `thebibliography' environment as%% usual (or directly BibTeX). It will provide text similar to the%% `topic' environment.%% Basic definition to have a real LaTeX document class%% \NeedsTeXFormat{LaTeX2e}%% \ProvidesClass{cv}[1996/11/29 Curriculum vitae]%% \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}%% \ProcessOptions%% \LoadClass{article}%% The fonts used for headings\newcommand\topicfont{\normalfont\sffamily\fontseries{sbc}\selectfont}\newcommand\itemfont{\sffamily}%% stuff needed for the header%% \newcommand\cv@lh{}\newcommand\cv@rh{}%% \newcommand\cv@lh@l{\z@} \newcommand\cv@rh@l{\z@}%% \newcommand\leftheader[2][0.48\textwidth]{	%% \def\cv@lh@l{#1}	%% \def\cv@lh{#2}}%% \newcommand\rightheader[2][0.48\textwidth]{	%% \def\cv@rh@l{#1}	%% \def\cv@rh{#2}}%% \newcommand\makeheader{\par\noindent  %% \parbox[t]{\cv@lh@l}{\raggedright\cv@lh}  %% \hfill  %% \parbox[t]{\cv@rh@l}{\raggedright\cv@rh}\par\vspace*{2cm}}%% Redefine \section to use \topicfont\renewcommand\section{  \@startsection{section}{1}{\z@}       {-3.5ex \@plus -1ex \@minus -.2ex}       {2.3ex \@plus .2ex}{\topicfont}}%% Define the topic environment%% \newcommand\@topic@setup{	%% \setlength{\leftmargin}{2cm}	%% \setlength{\rightmargin}{0cm}	%% \setlength{\labelwidth}{1.5cm}	%% \renewcommand{\makelabel}[1]{\itemfont ##1\hfill}}\newenvironment{topic} {\list{}{	\@topic@setup	\let\CV@cr=\\	\renewcommand\\{\hspace{0cm}\CV@cr}}} {\endlist}%% Redefine the thebibliography environment to look like the topic%% environment. The argument of thebibliography is ignored\renewenvironment{thebibliography}[1] {\section*{Publications}  \list{\@biblabel{\theenumiv}}{	\@topic@setup	\@openbib@code	\usecounter{enumiv}	\let\p@enumiv\@empty	\renewcommand\theenumiv{\@arabic\c@enumiv}}  \sloppy \clubpenalty 4000 \widowpenalty 4000 \sfcode`\.=\@m} {\endlist}%%%% fin macro %%%%%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX% set new margins%\usepackage{vmargin}%\setmarg{60pt}{-10pt}{476pt}{770pt}%% \usepackage{fullpage}%% \pagestyle{empty}%% \newcommand{\categorie}[1]{\vspace*{.2cm}\noindent        %% {\large\textsl{#1}\par}\vspace*{2pt}\hrule\vspace*{.0cm}}%\newlength{\duree}%\settowidth{\duree}{\textbf{\emph{1995-1997}}}%\setlength{\duree}{-\duree}%\addtolength{\duree}{\textwidth}%\newcommand{\rubrique}[2]{\noindent{\textbf{\emph{#1\ \ }}}%       \parbox[t]{\duree}{#2}}%% Define two widths for the left and right boxes,% using the longest item. %\newlength{\persinfol} % personal info left\settowidth{\persinfol}{\textbf{\emph{Nationality>}}}\newlength{\persinfor} % personal info right\setlength{\persinfor}{-\persinfol}\addtolength{\persinfor}{\textwidth}% Set the command to be used for displaying personal information.\newcommand{\persinfo}[2]{  \parbox[t]{\persinfol}{\textbf{\emph{#1\ \ }}}  \parbox[t]{\persinfor}{#2}}%% Repeat for the other items%%\newlength{\cviteml}%\settowidth{\cviteml}{\textbf{\emph{summer 2001>}}}%\newlength{\cvitemr}%\setlength{\cvitemr}{-\cviteml}%\addtolength{\cvitemr}{\textwidth}% Set the command to be used for displaying the other items%\newcommand{\cvitem}[2]{%    \parbox[t]{\cviteml}{\textbf{\emph{#1\ \ }}}%    \cvitemr{#2}%}\begin{document}\,v
-teaching of ,v
-Computer Networks,v
-Networking and Computer Science,v
-may,v
-increasing,v
-sizes,v
-\subsection{Flows sizes},V
-\subsection{,v
- in Tab.,v
-\begin{thebibliography}{1}\bibitem{vu_itc_09}Vu-Brugier, G.:\newblock {Analysis of the Impact of early Fiber Access Deployment on  Residential Internet Traffic}.\newblock In: {ITC21}. (2009)\bibitem{lp_youtube}Plissonneau, L., En-Najjary, T., Urvoy-Keller, G.:\newblock {Revisiting Web Traffic from a DSL Provider Perspective: the Case of  YouTube}.\newblock In: {ITC SS 19}. (2008)\end{thebibliography},V
- ,v
-Since September 2009 (approximate), our clients seem to encounter problems watching \YT\    videos (as reported on Internet forums).The videos are annonced on AS \YT\   -Europe (43515) located in US and routed throught low-cost AS Cogent\footnote{Note that not all ISP are in this situation: some get \YT\    videos annonced on Google AS (15169) which is well provisionned}.As the Cogent links are saturated, flows encounters losses, thus throughtput reduction resulting in interruptions in videos.These congestions occurs from 9am to 2am!Another congestion on the megaupload link (mainly megaupload and canal+ were congestionned) has been resolved by upgrading the link.As peering links problems can be seen only on neighbours AS, we propose to detect its effects at flow level (namely TCP layer).The most convienient way is to take captures at BAS or OLT level.Our reference data comes from \cite{vu_itc_09}: it consists of 2 packets captures on ADSL and FTTH in Montsouris (Paris).At this time the \YT\    videos were routed throught \YT\    AS (36651) or even Google AS (15169).No specific congestion with \YT\   \  has been detected for these reference traces.New captures have been taken on the FTTH and ADSL: see Tab.~\ref{tab:global} for details.ADSL captures are from Montsouris (marked ADSL M in Tab.) or Rennes (ADSL R in Tab.).FTTH captures are from Montsouris.\begin{table}[h!] \centering \begin{tabular}{|l|c|c|c|c|c|c|}  \hline& ADSL M& FTTH M & ADSL R & FTTH M&ADSL R & FTTH M\\ \hline date & 2009/11/26 & 2009/11/26 & 2009/12/14 & 2009/12/14 & 2010/02/07 & 2010/02/07 \\ time & 20h & 20h & 20h & 14h & 20h & 20h\\ duration & 1h20 & 0h38 & 1h & 0h58 & 1h & 0h28 \\  \hline \end{tabular} \caption{Traces Description} \label{tab:global}\end{table}\subsection{Traffic Recognition}DPI (Deep Packet Inspection) \emph{Otarie} tool is used for classification.We shall only use the Web, HTTP-streaming, and other Streaming classes.The traffic classification for streaming uses this regexp: \begin{verbatim}regex=Content-Type: application/x-shockwave\|Content-Type: video\|CWS\|FWS\|Server: GFE/2.0\end{verbatim}\section{Traces Description}\label{trace_desc}In Tab.~\ref{tab:global}, we sum up raw statistics for the traces.We have these general properties for the traces:\begin{itemize} \item Traces are taken early evening which is a peak hour for streaming traffic; \item For being able to capture without loss, we filtered on Web and Streaming traffic (as recognized by Otarie) for non-reference traces; \item We checked pcap reports for no loss during capture; \item Due to technical reasons, trace FTTH in december 2009 has been taken in the afternoon (light load on local platform); \item Trace ADSL R in december 2009 were taken on highly loaded (on local platform) evening.\end{itemize},v
-have?},v
-\section{What have?},V
-,v
-,V
-%\subtitle{,v
-\documentclass[10pt]{article}\usepackage{times}\usepackage{fancyheadings}\def\goodgap{\hspace{\subfigtopskip}\hspace{\subfigbottomskip}}\usepackage{color}\usepackage{multicol}\makeatletter\newenvironment{tablehere}  {\def\@captype{table}}  {}\newenvironment{figurehere}  {\def\@captype{figure}}  {}\makeatother\usepackage[pdftex]{graphicx}\usepackage{hyperref,tabularx}\usepackage{subfigure,rotating,caption}\usepackage[rflt]{floatflt}\usepackage[strict]{changepage}\usepackage[utf8]{inputenc}%\usepackage[T1]{fontenc}%\usepackage{geometry}\usepackage{a4wide}%\geometry{a4paper}%\renewcommand{\floatpagefraction}{.9}\newcommand{\YT} {YouTube}%\newcommand{\DM} {DailyMotion}%set dimensions of columns, gap between columns, and paragraph indent \setlength{\textheight}{8.3in}%\setlength{\textheight}{9.3in}\setlength{\voffset}{0.0in}\setlength{\topmargin}{-0.55in}%\setlength{\topmargin}{0in}\setlength{\headheight}{0.0in}%\setlength{\headsep}{0.0in}\setlength{\textwidth}{7.43in}%\setlength{\textwidth}{7.10in}%\setlength{\textwidth}{6in}\setlength{\hoffset}{-0.4in}\setlength{\columnsep}{0.25in}\setlength{\oddsidemargin}{0.0in}\setlength{\evensidemargin}{0.0in}% doublespace\def\baselinestretch{0.93}%\def\baselinestretch{1.4}% more than .95 of text and figures\def\topfraction{.95}\def\floatpagefraction{.95}\def\textfraction{.05}%\newcommand{\co}[1]{\fbox{#1}}%\newcommand{\co}[1]{}\newcounter{todo}\newcommand{\todo}{%\textbf{TODO: \arabic{todo} } \stepcounter{todo}%\fboxrule1mm%\fcolorbox{white}{yellow}{TODO: \arabic{todo}}\colorbox{yellow}{TODO: \arabic{todo}}}\newcommand{\NOTE}[1]{  {\footnotesize\it    \begin{center}      \begin{tabular}{|c|}        \hline        \parbox{0.85\columnwidth}{          \medskip          #1          \medskip} \\        \hline      \end{tabular}    \end{center}    }}\newcommand{\mydefaultheadersandfooters}{% \lhead{Submitted to } \chead{\today} \rhead{\thepage} \lfoot{} \cfoot{} \rfoot{}}\newcommand{\answer}[1]{\vspace*{0.5cm}{\noindent \textbf{ Answer:}\tt #1}\vspace*{0.5cm}},V
-1:white.tex,v
-7:report.log,v
-5:stream_stats.tex,v
-2:report.tex,v
-\documentclass[10pt]{article}\usepackage{times}\usepackage{fancyheadings}\def\goodgap{\hspace{\subfigtopskip}\hspace{\subfigbottomskip}}\usepackage{color}\usepackage{multicol}\makeatletter\newenvironment{tablehere}  {\def\@captype{table}}  {}\newenvironment{figurehere}  {\def\@captype{figure}}  {}\makeatother\usepackage[pdftex]{graphicx}\usepackage{hyperref,tabularx}\usepackage{subfigure,rotating,caption}\usepackage[rflt]{floatflt}\usepackage[strict]{changepage}\usepackage[utf8]{inputenc}%\usepackage[T1]{fontenc}%\usepackage{geometry}\usepackage{a4wide}%\geometry{a4paper}%\renewcommand{\floatpagefraction}{.9}\newcommand{\YT} {YouTube}%\newcommand{\DM} {DailyMotion}%set dimensions of columns, gap between columns, and paragraph indent \setlength{\textheight}{8.3in}%\setlength{\textheight}{9.3in}\setlength{\voffset}{0.0in}\setlength{\topmargin}{-0.55in}%\setlength{\topmargin}{0in}\setlength{\headheight}{0.0in}%\setlength{\headsep}{0.0in}\setlength{\textwidth}{7.43in}%\setlength{\textwidth}{7.10in}%\setlength{\textwidth}{6in}\setlength{\hoffset}{-0.4in}\setlength{\columnsep}{0.25in}\setlength{\oddsidemargin}{0.0in}\setlength{\evensidemargin}{0.0in}% doublespace\def\baselinestretch{0.93}%\def\baselinestretch{1.4}% more than .95 of text and figures\def\topfraction{.95}\def\floatpagefraction{.95}\def\textfraction{.05}%\newcommand{\co}[1]{\fbox{#1}}%\newcommand{\co}[1]{}\newcounter{todo}\newcommand{\todo}{%\textbf{TODO: \arabic{todo} } \stepcounter{todo}%\fboxrule1mm%\fcolorbox{white}{yellow}{TODO: \arabic{todo}}\colorbox{yellow}{TODO: \arabic{todo}}}\newcommand{\NOTE}[1]{  {\footnotesize\it    \begin{center}      \begin{tabular}{|c|}        \hline        \parbox{0.85\columnwidth}{          \medskip          #1          \medskip} \\        \hline      \end{tabular}    \end{center}    }}\newcommand{\mydefaultheadersandfooters}{% \lhead{Submitted to } \chead{\today} \rhead{\thepage} \lfoot{} \cfoot{} \rfoot{}}\newcommand{\answer}[1]{\vspace*{0.5cm}{\noindent \textbf{ Answer:}\tt #1}\vspace*{0.5cm}},v
-5,v
-check how much traffic is ELASTIC,v
- and do it in 15,v
-plotWindow [0,0.1..2.9] sin,v
-Graphics.Rendering.Chart.Simple,v
-  \end{tabularx},V
-   \end{rubrique},V
