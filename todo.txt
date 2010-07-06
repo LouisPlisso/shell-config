@@ -1,0 +1,63 @@
+ecrire table matières white paper :phd :FT @done
+regrouper toutes les analyses en vue d'un white paper @analyse :phd :FT
+look at bittorent share over UDP in otarie @easy :phd
+do the state machine for platform eval :phd @analyse
+faire publis en bibtex dans cv :perso et modifs
+calculer vol globaux par AS par user @computation :phd
+calculer correctement l'agrégation des sessions :phd @analyse @computation voir agenda 5 juin filtrer l'input flows quality sur (bit-rate>1) et filtrer les sessions obtenues sur max 2*3600 (p-e min à 1s) @done
+refaire indic du nb de videos par user utiliser le pickle sessions et compter les nb de thp :phd @computation @done
+comparer avec la méthode directe sur les nouveaux streaming quality :phd @computation @done
+voir extraction flux bizarre @analyse :phd @done
+calculer les volumes streaming par rapport tout par tranches de x min @computation :phd
+finir cv :perso @admin @done
+analyser captures pour valider le remaining time @computation :phd @done
+appeler thierry les fichiers d'indicateurs sur une semaine @easy @computation :FT @done
+processer nouvelles captures @computation :phd :eurecom
+unmismatch new flows @computation :phd @easy @chiant @done
+regarder bqn @analyse :FT @done
+appeler alain simonian @easy @social @admin :FT
+recuperer trace rennes @easy :phd /netapp/inter-drd/Temporaires/VIPEER @done
+traces remaining time @computation :phd @short-term @done
+fix ip2as @programming :eurecom @done
+matching adresses IP AS pour cui @computation :eurecom @done
+refaire captures avec full payload @capture :phd @done
+appeler ernst pour discuter des IP2AS match et des analyses remaining time @social @analyse :phd @done
+faire commentaires sur remaining time @analyse :phd @done
+ @removed
+appeler stéphanie pour nouvelles captures @social @captures :FT :phd @done
+review brevet @analyse :FT @done
+prendre en compte les flux deezer et dailymotion nouveau @programming :phd @done
+configurer xorg @config :perso @done
+faire démarches pour nounou @admin :perso
+recupérer fichier d'indics TCP otarie @easy :FT a suivre par analyse
+fixer keynav @done
+finir analyse pertes avec cui @analyse :eurecom :phd
+expliquer le pic deezer à 400ko = player? @analyse :phd
+faire stats séparées pour audio et video @computation :phd
+calculer les rtt par tstat sur les captures @computation :phd voir aussi RST flag
+utiliser captures remaining time pour valider interruptions @computation :phd
+voir comment calculer les stats streaming à la volée @programming :phd
+vérifier les serveurs web de aymen @computation :eurecom voir sur quel AS sont ces serveurs
+appeler hervé terry pour rtt time series
+faire un lab test pour les interruptions des video streaming @config :phd
+mesurer le nb d'interruptions streaming sur le lab test @computation :phd
+consolider l'éval d'interruption streaming @programming :phd
+ajouter pattern matching au lieu de numero pour hsgtd @programming :perso
+ajouter tostart only to not done tasks @programming :perso
+appeler marc cappelle @easy @social @admin :FT
+reparer ghc-pkg @config @chiant :perso @done
+reparer cabal install qui ne voit que certains packages installés en user et pas les packages systeme @config :perso @done
+essayer de contacter dailymotion @social :phd
+voir etat serveurs streaming orange wired et wireless :phd :FT @social
+mettre references dans cv kundu jpp axs? :perso @done
+1 @analyse :phd @removed @done
+fix cabal (cairo) et chart :perso @config @done
+compter le nb de get HTTP vs get HTTPS @social @jpp
+postuler chez accenture :perso @social @done
+passer cv à Tim pour poste HP :perso @social
+print twoDznQ.pdf twoDznA.pdf yaht.pdf :perso :haskell @programming @done
+install lucid sur PC Toshiba :perso @chiant @easy @admin
+:phd @long-term high variability property of flows to check in captures @computation
+:phd @long-term workload model for individual end users (type of applications and share (volume) for each) (how many parallel flows (ADSL vs FTTH)) @computation
+:phd @long-term How much of the traffic is INTRA ISP vs Inter-ISP? @computation
+:phd @long-term check how much traffic is ELASTIC @computation
