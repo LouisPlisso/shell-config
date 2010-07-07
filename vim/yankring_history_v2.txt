@@ -1,9 +1,51 @@
-Thomas Dübendorfer,,v
+client,v
+\subsubsection{by client},V
+what,v
+sec:what,v
+know,v
+_all_flows,v
+all_flows_,v
+\begin{figure}[!h]\begin{center}\subfigure[\YT \label{fig:size_yt}]{\includegraphics[width=.48\linewidth,height=6.5cm]{http_stats/yt_goo_n_size_all_flows_youtube_cdf.pdf}}\subfigure[DailyMotion\label{fig:size_dm}]{\includegraphics[width=.48\linewidth,height=6.5cm]{http_stats/yt_goo_n_size_all_flows_dailymotion_cdf.pdf}}\caption{Flows Sizes}\end{center}\end{figure},V
+plots,v
+    elif logx:        setgraph_logx(_loc=_loc, _fs_legend=_fs_legend),V
+(_loc=_loc, _fs_legend=_fs_legend),v
+setgraph_loglog,v
+drd,v
+_peak_rate,v
+_peak_rate}]{\includegraphics[width=.48\linewidth,height=6.5cm]{plots/yt_goo_n_size_all_flows_dailymotion_cdf.pdf}},v
+\goodgap,V
+Throughputs,v
+BGP_figs/YT_YT_EU_NT/YT_YT_EU_N_flows_peak_rate_sup1MB.pdf,v
+BGP_figs/YT_YT_EU_NT/YT_YT_EU_N_flows_mean_rate_sup1MB.pdf,v
+_mean,v
+\begin{figure}[!h]\begin{center}\subfigure[\label{fig_mean_rate}]{\includegraphics[width=.44\linewidth,height=6.5cm]{BGP_figs/YT_YT_EU_NT/YT_YT_EU_N_flows_mean_rate_sup1MB.pdf}}\goodgap\subfigure[\label{fig_peak_rate}]{\includegraphics[width=.44\linewidth,height=6.5cm]{BGP_figs/YT_YT_EU_NT/YT_YT_EU_N_flows_peak_rate_sup1MB.pdf}}\caption{Throughputs}\end{center}\end{figure},v
+\subsubsection{by flow}\subsubsection{by client},V
+yt_goo_n_size_all_flows_youtube_cdf.pdf,v
+flow,v
+\subsubsection{by flow},V
+Flows ,v
+P-EUROPA/BIZZ,v
+inter,v
+inter-drd,v
+ingouin,v
+//pingouin/inter-drd    /netapp/inter-drd    cifs    credentials=/root/.smbcredentials,uid=1000,gid=1000,file_mode=0750,dir_mode=0750,V
+//netapp/home	/netapp/home		cifs	credentials=/root/.smbcredentials,uid=1000,gid=1000,file_mode=0750,dir_mode=0750,V
+remaining times,v
+\subsection{remaining times},V
+sizes,v
+\subsection{Flows sizes},V
+/media/new_disk/TCP_sessions/TCP_Stat24.txt,v
+> P2P resultsApplicationTotal Byte,V
+> P2P resultsApplication	Total Byte> eDonkey	 77 291 983 272> Bittorrent	 188 783 940 117> Gnutella	 51 726 237 010> KaZaA	 -> DirectConnect	 -> Ares	 2 499 568 091> Pando	 90 992 614> OpenNap	 9 316 976> SoulSeek	 681 459 051> Filetopia	 8 134 291> TribalWeb	 57 674 578> BitTorrentEncrypted	 49 428 505 588> eMuleEncrypted	 85 691 413 479> uTorrentUDP	 72 334 343 141> OtherP2P	 2 133 022 785,v
+n,v
+1,v
+2,v
+ ,v
 \newblock In: {ITC SS 19}. (2008),V
+Thomas Dübendorfer,,v
 g-wtse01.rd.francetelecom.fr,v
 e,v
 alias citrix_g='rdesktop -u elpy7391 g-wtse01.rd.francetelecom.fr',V
-2,v
 alias citrix_s='rdesktop -u elpy7391 s-wtse2.rd.francetelecom.fr',V
 LEDBAT: the new BitTorrent congestion control protocol,v
 haskell-98-tutorial-html.tar,v
@@ -21,7 +63,6 @@ Serge Benoit inside the streaming crisis group.,v
 and not to OTI ,v
 France Télécom ,v
 c,v
- ,v
 YouTube,v
 are getting videos from ,v
 not all,v
@@ -49,7 +90,6 @@ r,v
 s,v
 i,v
 o,v
-n,v
 autocmd BufRead *.py ,v
 4:vimrc,v
 http://icccn.org/icccn10/techprogram.html ,v
@@ -58,43 +98,3 @@ http://icccn.org/icccn10/techprogram.html ,v
 <,v
 {,v
 \begin{sousrubrique}\Competence{Wired Networks} \Descr{expert knowledge of IPv4 and TCP/UDP,  basic knowledge of IPv6, OSPF, MPLS, BGP, Ethernet\smallskip}%\item[-] \emph{\end{sousrubrique}\begin{sousrubrique}\Competence{Wireless Networks} \Descr{extended knowledge of GSM (including GPRS and EDGE) and UMTS (including HSxPA), basic knowledge of 802.11, Wifi, Mobile IP and LTE\smallskip}\end{sousrubrique},v
-business,v
-architechture,v
-thing,v
-depends of how it's implemented, roaming SGSN is "guarantee" to preserve all servicesI don't know exactly at GGSN,V
-I don't understand the question,V
-this is not done in orange network,V
-service,v
-, and ,v
-,,v
-to anyone,v
-what is needed,,v
-I don't know ,V
-per,v
-rtt_local_remote_data_ack_evolution_umts,v
-SBININBB164,v
-varene olivier,v
-\categorie{Mathematics Skills}\medskip%\smallskip\begin{tabularx}{\linewidth}{p{\largeurcolonne}X}%\begin{rubrique}{} \begin{sousrubrique}\Date{Performance Evaluation}\Descr{Palm Probabilities,  Algebraic Topology and Homotopy of Groups (theorem for transposition into Distributed System world), Integration and Measure Theory (Master's Thesis)}\end{sousrubrique}\begin{sousrubrique}\Date{Other} \Descr{Topology and Functional Analysis, Real Analysis, Numerical Analysis}\end{sousrubrique}\end{tabularx},v
-\\,V
-\categorie{Mathematics Skills}\medskip%\smallskip\begin{tabularx}{\linewidth}{p{\largeurcolonne}X}%\begin{rubrique}{} \begin{sousrubrique}\Date{Performance Evaluation}\Descr{Palm Probabilities,  Algebraic Topology and Homotopy of Groups (theorem for transposition into Distributed System world), Integration and Measure Theory (Master's Thesis)}\end{sousrubrique}\begin{sousrubrique}\Date{Other} \Descr{Topology and Functional Analysis, Real Analysis, Numerical Analysis}\end{sousrubrique}\end{tabularx},v
-    \medskip,V
-\categorie{Mathematics Skills}\medskip%\smallskip\begin{tabularx}{\linewidth}{p{\largeurcolonne}X}%\begin{rubrique}{} \begin{sousrubrique}\Date{Performance Evaluation}\Descr{Palm Probabilities,  Algebraic Topology and Homotopy of Groups (theorem for transposition into Distributed System world), Integration and Measure Theory (Master's Thesis)}\end{sousrubrique}\begin{sousrubrique}\Date{Other} \Descr{Topology and Functional Analysis, Real Analysis, Numerical Analysis}\end{sousrubrique}\end{tabularx}\\,v
-\Apport{,v
-Apport,v
-\begin{tabularx}{\linewidth}{p{\largeurcolonne}X},V
-and,v
-Automatic ,v
-Traffic,,v
-integration ,v
-a project to ,v
-integrate ,v
-commercial ,v
-\end{tabularx},V
-\end{tabularx}\begin{tabularx}{\linewidth}{p{\largeurcolonne}X},V
-{\linewidth}{p{\largeurcolonne}X},v
-Dr. ,v
-Prof. ,v
-Prof. Ernst Biersack (Eurecom) (Financed by Orange Labs)},v
-    \\,V
-smallskip,v
- \begin{sousrubrique}  \Date{Bangla}  \Descr{basic knowledge} \end{sousrubrique},V

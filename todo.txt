@@ -2,6 +2,7 @@ ecrire table matières white paper :phd :FT @done
 regrouper toutes les analyses en vue d'un white paper @analyse :phd :FT
 look at bittorent share over UDP in otarie @easy :phd
 do the state machine for platform eval :phd @analyse
+voir Pierre Dekint pour mobile et actions des RNC (peut-on court-circuiter?) @easy @social :perso
 faire publis en bibtex dans cv :perso et modifs
 calculer vol globaux par AS par user @computation :phd
 calculer correctement l'agrégation des sessions :phd @analyse @computation voir agenda 5 juin filtrer l'input flows quality sur (bit-rate>1) et filtrer les sessions obtenues sur max 2*3600 (p-e min à 1s) @done
@@ -38,7 +39,7 @@ calculer les rtt par tstat sur les captures @computation :phd voir aussi RST fla
 utiliser captures remaining time pour valider interruptions @computation :phd
 voir comment calculer les stats streaming à la volée @programming :phd
 vérifier les serveurs web de aymen @computation :eurecom voir sur quel AS sont ces serveurs
-appeler hervé terry pour rtt time series
+appeler hervé terry pour rtt time series @done
 faire un lab test pour les interruptions des video streaming @config :phd
 mesurer le nb d'interruptions streaming sur le lab test @computation :phd
 consolider l'éval d'interruption streaming @programming :phd
