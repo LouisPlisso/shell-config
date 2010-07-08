@@ -1,8 +1,11 @@
+,V
+svn propedit svn:ignore ,v
+ll,v
+{fig:vol_str_client},v
 of,v
 users,v
 benefit,v
 ;,v
-{fig:vol_str_client},v
 {fig:vol_client},v
 },v
 {,v
@@ -15,7 +18,6 @@ for ,v
 \begin{figure}[h!]\begin{center}\subfigure[CDF of Downstream Volume]{\includegraphics[width=.44\linewidth,height=6.5cm]{client_ok/CDF_volume_per_client.pdf}},v
 Matthieu.Latapy@lip6.fr,v
 open http://twitter.com/AccentureSocial,v
-,V
 alias netapp-='sudo mount /netapp',V
 alias netapp='sudo mount /netapp; cd /netapp/home/elpy7391',V
 /,v
@@ -96,5 +98,3 @@ Google AS (15169) which is well provisionned.,v
 5:stream_stats.tex,v
 \,v
 \footnote{,v
-a,v
-/media/new_disk/TCP_sessions,v
