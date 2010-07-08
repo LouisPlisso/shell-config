@@ -1,4 +1,26 @@
+of,v
+users,v
+benefit,v
+;,v
+{fig:vol_str_client},v
+{fig:vol_client},v
+},v
+{,v
+Streaming Flows only,v
+\label{fig_client_st},v
+ ,v
+for ,v
+\subfigure[CDF of Downstream Volume],V
+{\includegraphics[width=.44\linewidth,height=6.5cm]{client_ok/only_streaming_repart_volume_per_client.pdf}}\caption{Client Statistics for Streaming Flows only}\label{fig_client_st}\end{center}\end{figure},v
+\begin{figure}[h!]\begin{center}\subfigure[CDF of Downstream Volume]{\includegraphics[width=.44\linewidth,height=6.5cm]{client_ok/CDF_volume_per_client.pdf}},v
+Matthieu.Latapy@lip6.fr,v
+open http://twitter.com/AccentureSocial,v
+,V
+alias netapp-='sudo mount /netapp',V
+alias netapp='sudo mount /netapp; cd /netapp/home/elpy7391',V
+/,v
 client,v
+e valide jusqu'au 29/10/2010,v
 \subsubsection{by client},V
 what,v
 sec:what,v
@@ -40,7 +62,6 @@ sizes,v
 n,v
 1,v
 2,v
- ,v
 \newblock In: {ITC SS 19}. (2008),V
 Thomas Dübendorfer,,v
 g-wtse01.rd.francetelecom.fr,v
@@ -52,7 +73,6 @@ haskell-98-tutorial-html.tar,v
 \bibitem{lp_youtube}Plissonneau, L., En-Najjary, T., Urvoy-Keller, G.:\newblock {Revisiting Web Traffic from a DSL Provider Perspective: the Case of  YouTube}.,V
 internet,v
 many of ,v
-,V
 have multiple ,v
 ide,v
 at,v
@@ -75,26 +95,6 @@ Google AS (15169) which is well provisionned.,v
 1:white.tex,v
 5:stream_stats.tex,v
 \,v
-},v
 \footnote{,v
 a,v
 /media/new_disk/TCP_sessions,v
-res,v
-tabularx,v
-end,v
-Engineer,V
-%,v
-u,v
-l,v
-r,v
-s,v
-i,v
-o,v
-autocmd BufRead *.py ,v
-4:vimrc,v
-http://icccn.org/icccn10/techprogram.html ,v
->,v
-+,v
-<,v
-{,v
-\begin{sousrubrique}\Competence{Wired Networks} \Descr{expert knowledge of IPv4 and TCP/UDP,  basic knowledge of IPv6, OSPF, MPLS, BGP, Ethernet\smallskip}%\item[-] \emph{\end{sousrubrique}\begin{sousrubrique}\Competence{Wireless Networks} \Descr{extended knowledge of GSM (including GPRS and EDGE) and UMTS (including HSxPA), basic knowledge of 802.11, Wifi, Mobile IP and LTE\smallskip}\end{sousrubrique},v

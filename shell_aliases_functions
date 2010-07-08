@@ -102,9 +102,6 @@ INTERNAL_OUTPUT="LVDS1"
 alias ext-screen-off='xrandr --output $EXTERNAL_OUTPUT --off'
 alias ext-screen='xrandr --auto --output $EXTERNAL_OUTPUT --auto --same-as $INTERNAL_OUTPUT'
 
-alias netapp='sudo mount /netapp; cd /netapp/home/elpy7391'
-alias netapp-='sudo mount /netapp'
-
 alias cdc='cd $MY_CONFIG_DIR'
 
 # keep trace of installed packages (even tentatives)
