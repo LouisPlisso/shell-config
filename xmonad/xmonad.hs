@@ -94,6 +94,7 @@ myManageHook = composeAll
     , isDialog --> doFloat
     , className =? "Gxmessage"      --> doFloat
     , className =? "Gimp"      --> doFloat
+    , className =? "Dia"      --> doFloat
     , className =? "Pidgin"      --> doFloat
     , className =? "Vlc"      --> doFloat
     ]

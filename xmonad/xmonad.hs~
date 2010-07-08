@@ -94,6 +94,7 @@ myManageHook = composeAll
     , isDialog --> doFloat
     , className =? "Gxmessage"      --> doFloat
     , className =? "Gimp"      --> doFloat
+    , className =? "Dia"      --> doFloat
     , className =? "Pidgin"      --> doFloat
     , className =? "Vlc"      --> doFloat
     ]
@@ -196,7 +197,7 @@ main = do
         , ((mod1Mask, xK_Right), nextWS)
         , ((mod1Mask, xK_y), prevWS)
         , ((mod1Mask, xK_Left), prevWS)
-        , ((mod1Mask .|. controlMask, xK_f), spawn "xdotool key alt+f")
+        -- , ((mod1Mask .|. controlMask, xK_f), spawn "xdotool key alt+f")
         ]
         where shiftTo' dir t = findWorkspace getSortByIndex dir t 1 >>= windows . liftM2 (.) W.view W.shift
 

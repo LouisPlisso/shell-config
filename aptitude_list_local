@@ -336,3 +336,5 @@ libcairo2
 libghc6-gtk-dev
 gtk2hs
 gtk2hs-buildtools
+yagtd
+dia

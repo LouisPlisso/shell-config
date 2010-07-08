@@ -1,100 +1,100 @@
-,V
-yt_goo_n_duration_flows_larger_than_1mb_dailymotion_cdf_new.pdf,v
-'2009_12_14_FTTH_AS_YOUTUBE_EU'],v
-Signed the participation list as the FT represent  ,v
-ll,v
-svn propedit svn:ignore ,v
-{fig:vol_str_client},v
-of,v
-users,v
-benefit,v
-;,v
-{fig:vol_client},v
-},v
-{,v
-Streaming Flows only,v
-\label{fig_client_st},v
- ,v
-for ,v
-\subfigure[CDF of Downstream Volume],V
-{\includegraphics[width=.44\linewidth,height=6.5cm]{client_ok/only_streaming_repart_volume_per_client.pdf}}\caption{Client Statistics for Streaming Flows only}\label{fig_client_st}\end{center}\end{figure},v
-\begin{figure}[h!]\begin{center}\subfigure[CDF of Downstream Volume]{\includegraphics[width=.44\linewidth,height=6.5cm]{client_ok/CDF_volume_per_client.pdf}},v
-Matthieu.Latapy@lip6.fr,v
-open http://twitter.com/AccentureSocial,v
-alias netapp-='sudo mount /netapp',V
-alias netapp='sudo mount /netapp; cd /netapp/home/elpy7391',V
-/,v
-client,v
-e valide jusqu'au 29/10/2010,v
-\subsubsection{by client},V
-what,v
-sec:what,v
-know,v
-_all_flows,v
-all_flows_,v
-\begin{figure}[!h]\begin{center}\subfigure[\YT \label{fig:size_yt}]{\includegraphics[width=.48\linewidth,height=6.5cm]{http_stats/yt_goo_n_size_all_flows_youtube_cdf.pdf}}\subfigure[DailyMotion\label{fig:size_dm}]{\includegraphics[width=.48\linewidth,height=6.5cm]{http_stats/yt_goo_n_size_all_flows_dailymotion_cdf.pdf}}\caption{Flows Sizes}\end{center}\end{figure},V
+PS: btw, great work for ,v
+down,v
+rtt,v
+_than_1mb_youtube_cdf.pdf}},v
+all_flows_youtube_cdf_logx_new.pdf}},v
+_down_flows_larger_than_1mb_youtube_cdf.pdf}},v
+Local,v
+\subfigure[\YT\ Distant RTT\label{fig:rtt_yt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_youtube_cdf_logx_new.pdf}},V
+\subfigure[Local loss \YT\label{fig:rtt_down}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_loss_rate_down_flows_larger_than_1mb_youtube_cdf.pdf},V
+Local RTT for all flows,v
 plots,v
-    elif logx:        setgraph_logx(_loc=_loc, _fs_legend=_fs_legend),V
-(_loc=_loc, _fs_legend=_fs_legend),v
-setgraph_loglog,v
-drd,v
-_peak_rate,v
-_peak_rate}]{\includegraphics[width=.48\linewidth,height=6.5cm]{plots/yt_goo_n_size_all_flows_dailymotion_cdf.pdf}},v
-\goodgap,V
-Throughputs,v
-BGP_figs/YT_YT_EU_NT/YT_YT_EU_N_flows_peak_rate_sup1MB.pdf,v
-BGP_figs/YT_YT_EU_NT/YT_YT_EU_N_flows_mean_rate_sup1MB.pdf,v
-_mean,v
-\begin{figure}[!h]\begin{center}\subfigure[\label{fig_mean_rate}]{\includegraphics[width=.44\linewidth,height=6.5cm]{BGP_figs/YT_YT_EU_NT/YT_YT_EU_N_flows_mean_rate_sup1MB.pdf}}\goodgap\subfigure[\label{fig_peak_rate}]{\includegraphics[width=.44\linewidth,height=6.5cm]{BGP_figs/YT_YT_EU_NT/YT_YT_EU_N_flows_peak_rate_sup1MB.pdf}}\caption{Throughputs}\end{center}\end{figure},v
-\subsubsection{by flow}\subsubsection{by client},V
-yt_goo_n_size_all_flows_youtube_cdf.pdf,v
-flow,v
-\subsubsection{by flow},V
-Flows ,v
-P-EUROPA/BIZZ,v
-inter,v
-inter-drd,v
-ingouin,v
-//pingouin/inter-drd    /netapp/inter-drd    cifs    credentials=/root/.smbcredentials,uid=1000,gid=1000,file_mode=0750,dir_mode=0750,V
-//netapp/home	/netapp/home		cifs	credentials=/root/.smbcredentials,uid=1000,gid=1000,file_mode=0750,dir_mode=0750,V
-remaining times,v
-\subsection{remaining times},V
-sizes,v
-\subsection{Flows sizes},V
-/media/new_disk/TCP_sessions/TCP_Stat24.txt,v
-> P2P resultsApplicationTotal Byte,V
-> P2P resultsApplication	Total Byte> eDonkey	 77 291 983 272> Bittorrent	 188 783 940 117> Gnutella	 51 726 237 010> KaZaA	 -> DirectConnect	 -> Ares	 2 499 568 091> Pando	 90 992 614> OpenNap	 9 316 976> SoulSeek	 681 459 051> Filetopia	 8 134 291> TribalWeb	 57 674 578> BitTorrentEncrypted	 49 428 505 588> eMuleEncrypted	 85 691 413 479> uTorrentUDP	 72 334 343 141> OtherP2P	 2 133 022 785,v
-n,v
-1,v
-2,v
-\newblock In: {ITC SS 19}. (2008),V
-Thomas Dübendorfer,,v
-g-wtse01.rd.francetelecom.fr,v
-e,v
-alias citrix_g='rdesktop -u elpy7391 g-wtse01.rd.francetelecom.fr',V
-alias citrix_s='rdesktop -u elpy7391 s-wtse2.rd.francetelecom.fr',V
-LEDBAT: the new BitTorrent congestion control protocol,v
-haskell-98-tutorial-html.tar,v
-\bibitem{lp_youtube}Plissonneau, L., En-Najjary, T., Urvoy-Keller, G.:\newblock {Revisiting Web Traffic from a DSL Provider Perspective: the Case of  YouTube}.,V
-internet,v
-many of ,v
-have multiple ,v
-ide,v
-at,v
-throught DNS response to Name Servers in France Télécom address space, the connection of a subset of Name Servers in OTI address space allowed us to make our clients be served by Google AS instead of \YT\ one: this action has been taken by ,V
-Serge Benoit inside the streaming crisis group.,v
-<++>,v
-.,v
-and not to OTI ,v
-France Télécom ,v
-c,v
-YouTube,v
-are getting videos from ,v
-not all,v
-Another congestion on the megaupload link (mainly megaupload and canal+ were congestionned) has been resolved by upgrading the link.,V
+ \includegraphics[width=.87\linewidth]{,v
+http_stats/all_min_rtt_syn-ack_down_all_flows_dipcp_cdf_logx_new.pdf}},v
+\includegraphics[width=.87\linewidth]{plots/yt_goo_n_loss_rate_down_flows_larger_than_1mb_youtube_cdf.pdf},V
+\begin{figure}[!h]\begin{center}\subfigure[Local RTT for all flows\label{fig:rtt_down}]{\includegraphics[width=.48\linewidth]{http_stats/all_min_rtt_syn-ack_down_all_flows_dipcp_cdf_logx_new.pdf}}\subfigure[\YT\ Distant RTT\label{fig:rtt_yt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_youtube_cdf_logx_new.pdf}}\caption{RTT}\end{center}\end{figure},v
+ ,v
+indicators_gvb=[], indicators_dipcp=[            (lambda data: [(x['DIP-DSQ-NbMes-sec-TCP-' + "Up"] + 1e-99)                /x['DIP-Volume-Number-Packets-' + "Up"] for x in data                if x['DIP-Volume-Number-Packets-' + "Up"] != 0],                    "Loss Rate " + "Up", "Percent"),            (lambda data: [(x['DIP-DSQ-NbMes-sec-TCP-' + "Down"] + 1e-99)                /x['DIP-Volume-Number-Packets-' + "Down"] for x in data                if x['DIP-Volume-Number-Packets-' + "Down"] != 0],                    "Loss Rate " + "Down", "Percent")]),v
+flows_1mb_dipcp_loss_streams,v
+\,v
+Gimp,v
+    , className =? "Gimp"      --> doFloat,V
+dia,v
+y,v
+_,v
+t,v
+d,v
+m,v
+\begin{figure}[!h]\begin{center}\subfigure[\YT\label{fig:yt_rtt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_youtube_cdf_logx_new.pdf}}\subfigure[DailyMotion\label{fig:dm_rtt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_dailymotion_cdf_logx_new.pdf}}\caption{Distant RTT}\end{center}\end{figure},V
+Local ,v
+YT,v
+DailyMotion,v
+dailymotion,v
+youtube,v
+yt_goo_n,v
+'2010_02_07_ADSL_R_DIPCP',v
+all_min_rtt_syn-ack_up_all_flows_dipcp_cdf_logx_new.pdf,v
+l3Bytes,v
+GVB,v
+        if trace.find('_GVB') > 0:            data_large[trace] = data.compress(data['l3Bytes']>10**6),V
+trace_type,v
+(t for t in datas ) >=0),v
+p,v
+if t.find(trace_type,v
+(t for t in datas if t.find(trace_type) >=0),v
+trace_type='GVB', ,v
+all_min_rtt_syn-ack_up_all_flows___cdf_logx_new.pdf,v
+streaming_tools.py (/home/louis/workspace/spydump/tools),V
+Peak Rate,v
+\begin{figure}[!h]\begin{center}\subfigure[\YT\label{fig:yt_rtt}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_down_all_flows_youtube_cdf_logx_new.pdf}}\subfigure[DailyMotion\label{fig:dm_rtt}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_down_all_flows_dailymotion_cdf_logx_new.pdf}}\caption{Peak Rate}\end{center}\end{figure},V
+]\begin{center}\subfigure[\YT\label{fig:yt_rtt}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_down_all_flows_youtube_cdf_logx_new.pdf}}\subfigure[DailyMotion\label{fig:dm_rtt}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_down_all_flows_dailymotion_cdf_logx_new.pdf}}\caption{Peak Rate}\end{center}\end{figure},v
+down_all_flows_youtube_cdf_logx_new.pdf,v
+youtube_cdf_logx_new.pdf,v
+rtt_min_flows_larger_than_1mb_dailymotion_cdf_logx_new.pdf,v
+min_flows_larger_than_1mb_youtube_cdf_logx_new.pdf,v
+peak_rate,v
+peak_rate_flows_larger_than_1mb_youtube_cdf_logx_new.pdf},v
+\begin{figure}[!h]\begin{center}\subfigure[\YT\label{fig:yt_peak_rate}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_peak_rate_flows_larger_than_1mb_youtube_cdf_logx_new.pdf}}\subfigure[DailyMotion\label{fig:dm_peak_rate}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_peak_rate_flows_larger_than_1mb_dailymotion_cdf_logx_new.pdf}}\caption{Peak Rate}\end{center}\end{figure},v
+$,v
+for ,v
+CDF of Downstream Volume ,v
+CDF of Downstream Volume,v
+streaming_large_,v
+only_streaming_repart_volume_per_client.pdf,v
+2009_12_14_ADSL_R_GVB,v
+                list_exclude),V
+[trace], field, values,,v
+filter_array,v
+    data_streaming = {}    if not getattr(values, '__iter__', None):        values = (values,)    for trace in (t for t in data if t.find(trace_type) >=0):        data_streaming[trace] = filter_array(data[trace], field, values,                list_exclude)    return data_streaming,v
+    """Returns a dict of arrays (one for each item of dict data) filtered on,V
+trace_type='GVB', list_exclude=None):,v
+,V
+tools.plot_per_client.vol_per_client(data),v
+.pdf,v
+new.pdf,v
+ \goodgap,V
+SKMBT_C25210070813120.pdf,v
+tools.streaming_tools.process_flows_yt_goo(flows_gvb_streams,        flows_1mb_gvb_streams, flows_dipcp_streams, flows_1mb_dipcp_streams),v
+len(data,v
+),v
+http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_youtube_cdf_logx_new.pdf,v
+(,v
+True,v
+o,v
+g,v
+pylab.clf(),v
+            pylab.clf()            cdfplot.cdfplotdataN(args, _title=':\n'.join((title + flow_size,                indic_title)), _xlabel='%s in %s' % (indic_title, unit),                _loc=0, _fs_legend='xx-small', logy=True)#            pylab.xlim(xmin=1e-5)            if indic_title == "Mean Rate ":                pylab.plot([380, 380], [0, 1], linewidth=2, color='red')            pylab.savefig(output_path + sep + '_'.join((prefix,                indic_title.strip(), flow_size, trace_type, 'cdf', 'loglog',                'new')).lower().replace(' ', '_') + '.pdf')            pylab.clf(),v
+yt_goo_n_min_rtt_(syn-ack)_down_all_flows_dailymotion_cdf_new.pdf,v
+flows_1mb_dipcp_streams,v
+RTT,v
+Min ,v
+Up ,v
+Down ,v
+Mean ,v
+tools.streaming_tools.process_flows_yt_goo(flows_gvb_streams,        flows_1mb_gvb_streams,,v
+tools.streaming_tools.process_flows_yt_goo(flows_gvb_streams,        flows_1mb_gvb_streams, ,v
+flows_gvb_streams,v
 ,v
-As the Cogent links are saturated, flows encounters losses, thus throughtput reduction resulting in interruptions in videos.These congestions occurs from 9am to 2am!,V
-in this situation: some get \YT  videos annonced on ,v
-N,v
-Google AS (15169) which is well provisionned.,v
-1:white.tex,v
+'DIP-Volume-Sum-Bytes-Up',v
+/usr/share/doc/yagtd/rest/yagtd.html.,v
+open http://java.ociweb.com/mark/gtd.html,v
