@@ -1,6 +1,9 @@
 ,V
-svn propedit svn:ignore ,v
+yt_goo_n_duration_flows_larger_than_1mb_dailymotion_cdf_new.pdf,v
+'2009_12_14_FTTH_AS_YOUTUBE_EU'],v
+Signed the participation list as the FT represent  ,v
 ll,v
+svn propedit svn:ignore ,v
 {fig:vol_str_client},v
 of,v
 users,v
@@ -95,6 +98,3 @@ in this situation: some get \YT  videos annonced on ,v
 N,v
 Google AS (15169) which is well provisionned.,v
 1:white.tex,v
-5:stream_stats.tex,v
-\,v
-\footnote{,v

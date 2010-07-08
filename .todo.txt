@@ -30,7 +30,7 @@ review brevet @analyse :FT @done
 prendre en compte les flux deezer et dailymotion nouveau @programming :phd @done
 configurer xorg @config :perso @done
 faire démarches pour nounou @admin :perso
-recupérer fichier d'indics TCP otarie @easy :FT a suivre par analyse
+recupérer fichier d'indics TCP otarie @easy :FT a suivre par analyse @done
 fixer keynav @done
 finir analyse pertes avec cui @analyse :eurecom :phd
 expliquer le pic deezer à 400ko = player? @analyse :phd
