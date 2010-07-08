@@ -1,6 +1,6 @@
 ecrire table matières white paper :phd :FT @done
 regrouper toutes les analyses en vue d'un white paper @analyse :phd :FT
-look at bittorent share over UDP in otarie @easy :phd
+look at bittorent share over UDP in otarie @easy :phd @done
 do the state machine for platform eval :phd @analyse
 voir Pierre Dekint pour mobile et actions des RNC (peut-on court-circuiter?) @easy @social :perso
 faire publis en bibtex dans cv :perso et modifs
