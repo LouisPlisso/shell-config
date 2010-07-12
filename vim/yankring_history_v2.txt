@@ -1,3 +1,77 @@
+Johan Tibell,v
+<++>,v
+these sites are surely connected from Paris.,v
+ (namely for DailyMotion and Deezer flows),v
+some flows encounter  for,v
+a degradation,v
+{,v
+rapport/http_stats/yt_goo_n_min_rtt_syn-ack_down_all_flows_,v
+     ,v
+yt_goo_n_mean_rtt_down_all_flows_youtube_cdf.pdf,v
+ shows that \YT flows are much more affected by losses than DailyMotion ones,v
+{fig:loss_yt_down},v
+maybe,v
+.,v
+expected,v
+separate up down,V
+youtube_,v
+yt,v
+\YT,v
+ \subfigure[Distant loss \YT\label{fig:loss_yt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_loss_rate_up_flows_larger_than_1mb_youtube_cdf_logx_new.pdf}},V
+ \subfigure[Local loss \YT\label{fig:loss_yt_down}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_loss_rate_down_flows_larger_than_1mb_youtube_cdf_logx_new.pdf}},V
+%,v
+s,v
+e,v
+RTT,v
+yt_goo_n_loss_rate_down_flows_larger_than_1mb_dailymotion_cdf_loglog_new.pdf,v
+file:///home/louis/doc/python-2.6.5-docs-html/library/index.html,v
+tools.streaming_tools.process_flows_yt_goo(flows_gvb, flows_1mb_gvb,        flows_dipcp, flows_1mb_dipcp, indicators_gvb=[], indicators_dipcp=[            (lambda data: [(x['DIP-DSQ-NbMes-sec-TCP-' + "Up"] + 1e-99)                /x['DIP-Volume-Number-Packets-' + "Up"] for x in data                if x['DIP-Volume-Number-Packets-' + "Up"] != 0],                    "Loss Rate " + "Up", "Percent"),            (lambda data: [(x['DIP-DSQ-NbMes-sec-TCP-' + "Down"] + 1e-99)                /x['DIP-Volume-Number-Packets-' + "Down"] for x in data                if x['DIP-Volume-Number-Packets-' + "Down"] != 0],                    "Loss Rate " + "Down", "Percent")]),v
+http://www.paulgraham.com/icad.html,v
+annuaire,v
+g ,v
+,V
+google,v
+marjo,v
+6 33 77 78 85,v
+http://www.4pow.com/,v
+    \\,V
+\,v
+     \Apport{encore},V
+Taille,v
+\renewcommand{\TailleApport}{},V
+Orange ,v
+small,v
+1-2,v
+: have to see how to parse mp3 (which seems more difficult).,v
+it ,v
+For ,v
+, a more difficult problem remains as ,v
+azerty123 ,v
+,,v
+traverse,v
+\end{thebibliography},V
+\begin{thebibliography}{1}\bibitem{vu_itc_09}Vu-Brugier, G.:\newblock {Analysis of the Impact of early Fiber Access Deployment on  Residential Internet Traffic}.\newblock In: {ITC21}. (2009)\bibitem{lp_youtube}Plissonneau, L., En-Najjary, T., Urvoy-Keller, G.:\newblock {Revisiting Web Traffic from a DSL Provider Perspective: the Case of  YouTube}.\newblock In: {ITC SS 19}. (2008)\end{thebibliography},V
+very ,v
+moderate,v
+and ,v
+BGP, ,v
+, ,v
+MPLS, BGP, OSPF, ,v
+ ,v
+OSPF, ,v
+languages ,v
+and,v
+OSPF,v
+basic,v
+basic ,v
+Orange streaming servers,v
+ and Environments,v
+ IDE:  ,v
+IDE:  ,v
+\end{sousrubrique}\begin{sousrubrique} \Competence{,v
+Application,v
+\smallskip,v
+abs-guide.html.tar,v
 PS: btw, great work for ,v
 down,v
 rtt,v
@@ -13,10 +87,8 @@ plots,v
 http_stats/all_min_rtt_syn-ack_down_all_flows_dipcp_cdf_logx_new.pdf}},v
 \includegraphics[width=.87\linewidth]{plots/yt_goo_n_loss_rate_down_flows_larger_than_1mb_youtube_cdf.pdf},V
 \begin{figure}[!h]\begin{center}\subfigure[Local RTT for all flows\label{fig:rtt_down}]{\includegraphics[width=.48\linewidth]{http_stats/all_min_rtt_syn-ack_down_all_flows_dipcp_cdf_logx_new.pdf}}\subfigure[\YT\ Distant RTT\label{fig:rtt_yt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_youtube_cdf_logx_new.pdf}}\caption{RTT}\end{center}\end{figure},v
- ,v
 indicators_gvb=[], indicators_dipcp=[            (lambda data: [(x['DIP-DSQ-NbMes-sec-TCP-' + "Up"] + 1e-99)                /x['DIP-Volume-Number-Packets-' + "Up"] for x in data                if x['DIP-Volume-Number-Packets-' + "Up"] != 0],                    "Loss Rate " + "Up", "Percent"),            (lambda data: [(x['DIP-DSQ-NbMes-sec-TCP-' + "Down"] + 1e-99)                /x['DIP-Volume-Number-Packets-' + "Down"] for x in data                if x['DIP-Volume-Number-Packets-' + "Down"] != 0],                    "Loss Rate " + "Down", "Percent")]),v
 flows_1mb_dipcp_loss_streams,v
-\,v
 Gimp,v
     , className =? "Gimp"      --> doFloat,V
 dia,v
@@ -26,75 +98,3 @@ t,v
 d,v
 m,v
 \begin{figure}[!h]\begin{center}\subfigure[\YT\label{fig:yt_rtt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_youtube_cdf_logx_new.pdf}}\subfigure[DailyMotion\label{fig:dm_rtt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_dailymotion_cdf_logx_new.pdf}}\caption{Distant RTT}\end{center}\end{figure},V
-Local ,v
-YT,v
-DailyMotion,v
-dailymotion,v
-youtube,v
-yt_goo_n,v
-'2010_02_07_ADSL_R_DIPCP',v
-all_min_rtt_syn-ack_up_all_flows_dipcp_cdf_logx_new.pdf,v
-l3Bytes,v
-GVB,v
-        if trace.find('_GVB') > 0:            data_large[trace] = data.compress(data['l3Bytes']>10**6),V
-trace_type,v
-(t for t in datas ) >=0),v
-p,v
-if t.find(trace_type,v
-(t for t in datas if t.find(trace_type) >=0),v
-trace_type='GVB', ,v
-all_min_rtt_syn-ack_up_all_flows___cdf_logx_new.pdf,v
-streaming_tools.py (/home/louis/workspace/spydump/tools),V
-Peak Rate,v
-\begin{figure}[!h]\begin{center}\subfigure[\YT\label{fig:yt_rtt}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_down_all_flows_youtube_cdf_logx_new.pdf}}\subfigure[DailyMotion\label{fig:dm_rtt}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_down_all_flows_dailymotion_cdf_logx_new.pdf}}\caption{Peak Rate}\end{center}\end{figure},V
-]\begin{center}\subfigure[\YT\label{fig:yt_rtt}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_down_all_flows_youtube_cdf_logx_new.pdf}}\subfigure[DailyMotion\label{fig:dm_rtt}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_down_all_flows_dailymotion_cdf_logx_new.pdf}}\caption{Peak Rate}\end{center}\end{figure},v
-down_all_flows_youtube_cdf_logx_new.pdf,v
-youtube_cdf_logx_new.pdf,v
-rtt_min_flows_larger_than_1mb_dailymotion_cdf_logx_new.pdf,v
-min_flows_larger_than_1mb_youtube_cdf_logx_new.pdf,v
-peak_rate,v
-peak_rate_flows_larger_than_1mb_youtube_cdf_logx_new.pdf},v
-\begin{figure}[!h]\begin{center}\subfigure[\YT\label{fig:yt_peak_rate}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_peak_rate_flows_larger_than_1mb_youtube_cdf_logx_new.pdf}}\subfigure[DailyMotion\label{fig:dm_peak_rate}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_peak_rate_flows_larger_than_1mb_dailymotion_cdf_logx_new.pdf}}\caption{Peak Rate}\end{center}\end{figure},v
-$,v
-for ,v
-CDF of Downstream Volume ,v
-CDF of Downstream Volume,v
-streaming_large_,v
-only_streaming_repart_volume_per_client.pdf,v
-2009_12_14_ADSL_R_GVB,v
-                list_exclude),V
-[trace], field, values,,v
-filter_array,v
-    data_streaming = {}    if not getattr(values, '__iter__', None):        values = (values,)    for trace in (t for t in data if t.find(trace_type) >=0):        data_streaming[trace] = filter_array(data[trace], field, values,                list_exclude)    return data_streaming,v
-    """Returns a dict of arrays (one for each item of dict data) filtered on,V
-trace_type='GVB', list_exclude=None):,v
-,V
-tools.plot_per_client.vol_per_client(data),v
-.pdf,v
-new.pdf,v
- \goodgap,V
-SKMBT_C25210070813120.pdf,v
-tools.streaming_tools.process_flows_yt_goo(flows_gvb_streams,        flows_1mb_gvb_streams, flows_dipcp_streams, flows_1mb_dipcp_streams),v
-len(data,v
-),v
-http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_youtube_cdf_logx_new.pdf,v
-(,v
-True,v
-o,v
-g,v
-pylab.clf(),v
-            pylab.clf()            cdfplot.cdfplotdataN(args, _title=':\n'.join((title + flow_size,                indic_title)), _xlabel='%s in %s' % (indic_title, unit),                _loc=0, _fs_legend='xx-small', logy=True)#            pylab.xlim(xmin=1e-5)            if indic_title == "Mean Rate ":                pylab.plot([380, 380], [0, 1], linewidth=2, color='red')            pylab.savefig(output_path + sep + '_'.join((prefix,                indic_title.strip(), flow_size, trace_type, 'cdf', 'loglog',                'new')).lower().replace(' ', '_') + '.pdf')            pylab.clf(),v
-yt_goo_n_min_rtt_(syn-ack)_down_all_flows_dailymotion_cdf_new.pdf,v
-flows_1mb_dipcp_streams,v
-RTT,v
-Min ,v
-Up ,v
-Down ,v
-Mean ,v
-tools.streaming_tools.process_flows_yt_goo(flows_gvb_streams,        flows_1mb_gvb_streams,,v
-tools.streaming_tools.process_flows_yt_goo(flows_gvb_streams,        flows_1mb_gvb_streams, ,v
-flows_gvb_streams,v
-,v
-'DIP-Volume-Sum-Bytes-Up',v
-/usr/share/doc/yagtd/rest/yagtd.html.,v
-open http://java.ociweb.com/mark/gtd.html,v

@@ -1,64 +1,65 @@
-ecrire table matières white paper :phd :FT @done U:3 I:3 T:1H S:2010-07-08
-regrouper toutes les analyses en vue d'un white paper :phd :FT @analyse U:3 I:3 T:1H S:2010-07-08
-look at bittorent share over UDP in otarie :phd @easy @done U:3 I:3 T:1H S:2010-07-08
-do the state machine for platform eval :phd @analyse U:3 I:3 T:1H S:2010-07-08
-voir Pierre Dekint pour mobile et actions des RNC (peut-on court-circuiter?) :perso @easy @social U:3 I:3 T:1H S:2010-07-08
-faire publis en bibtex dans cv :perso et modifs U:3 I:3 T:1H S:2010-07-08
-calculer vol globaux par AS par user :phd @computation U:3 I:3 T:1H S:2010-07-08
-calculer correctement l'agrégation des sessions :phd voir agenda 5 juin filtrer l'input flows quality sur (bit-rate>1) et filtrer les sessions obtenues sur max 2*3600 (p-e min à 1s) @analyse @computation @done U:3 I:3 T:1H S:2010-07-08
-refaire indic du nb de videos par user utiliser le pickle sessions et compter les nb de thp :phd @computation @done U:3 I:3 T:1H S:2010-07-08
-comparer avec la méthode directe sur les nouveaux streaming quality :phd @computation @done U:3 I:3 T:1H S:2010-07-08
-voir extraction flux bizarre :phd @analyse @done U:3 I:3 T:1H S:2010-07-08
-calculer les volumes streaming par rapport tout par tranches de x min :phd @computation U:3 I:3 T:1H S:2010-07-08
-finir cv :perso @admin @done U:3 I:3 T:1H S:2010-07-08
-analyser captures pour valider le remaining time :phd @computation @done U:3 I:3 T:1H S:2010-07-08
-appeler thierry les fichiers d'indicateurs sur une semaine :FT @easy @computation @done U:3 I:3 T:1H S:2010-07-08
-processer nouvelles captures :phd :eurecom @computation U:3 I:3 T:1H S:2010-07-08
-unmismatch new flows :phd @computation @easy @chiant @done U:3 I:3 T:1H S:2010-07-08
-regarder bqn :FT @analyse @done U:3 I:3 T:1H S:2010-07-08
-appeler alain simonian :FT @easy @social @admin U:3 I:3 T:1H S:2010-07-08
-recuperer trace rennes :phd /netapp/inter-drd/Temporaires/VIPEER @easy @done U:3 I:3 T:1H S:2010-07-08
-traces remaining time :phd @computation @short-term @done U:3 I:3 T:1H S:2010-07-08
-fix ip2as :eurecom @programming @done U:3 I:3 T:1H S:2010-07-08
-matching adresses IP AS pour cui :eurecom @computation @done U:3 I:3 T:1H S:2010-07-08
-refaire captures avec full payload :phd @capture @done U:3 I:3 T:1H S:2010-07-08
-appeler ernst pour discuter des IP2AS match et des analyses remaining time :phd @social @analyse @done U:3 I:3 T:1H S:2010-07-08
-faire commentaires sur remaining time :phd @analyse @done U:3 I:3 T:1H S:2010-07-08
- @removed U:3 I:3 T:1H S:2010-07-08
-appeler stéphanie pour nouvelles captures :FT :phd @social @captures @done U:3 I:3 T:1H S:2010-07-08
-review brevet :FT @analyse @done U:3 I:3 T:1H S:2010-07-08
-prendre en compte les flux deezer et dailymotion nouveau :phd @programming @done U:3 I:3 T:1H S:2010-07-08
-configurer xorg :perso @config @done U:3 I:3 T:1H S:2010-07-08
-faire démarches pour nounou :perso @admin U:3 I:3 T:1H S:2010-07-08
-recupérer fichier d'indics TCP otarie :FT a suivre par analyse @easy @done U:3 I:3 T:1H S:2010-07-08
-fixer keynav @done U:3 I:3 T:1H S:2010-07-08
-finir analyse pertes avec cui :eurecom :phd @analyse U:3 I:3 T:1H S:2010-07-08
-expliquer le pic deezer à 400ko = player? :phd @analyse U:3 I:3 T:1H S:2010-07-08
-faire stats séparées pour audio et video :phd @computation U:3 I:3 T:1H S:2010-07-08
-calculer les rtt par tstat sur les captures :phd voir aussi RST flag @computation U:3 I:3 T:1H S:2010-07-08
-utiliser captures remaining time pour valider interruptions :phd @computation U:3 I:3 T:1H S:2010-07-08
-voir comment calculer les stats streaming à la volée :phd @programming U:3 I:3 T:1H S:2010-07-08
-vérifier les serveurs web de aymen :eurecom voir sur quel AS sont ces serveurs @computation U:3 I:3 T:1H S:2010-07-08
-appeler hervé terry pour rtt time series @done U:3 I:3 T:1H S:2010-07-08
-faire un lab test pour les interruptions des video streaming :phd @config U:3 I:3 T:1H S:2010-07-08
-mesurer le nb d'interruptions streaming sur le lab test :phd @computation U:3 I:3 T:1H S:2010-07-08
-consolider l'éval d'interruption streaming :phd @programming U:3 I:3 T:1H S:2010-07-08
-ajouter pattern matching au lieu de numero pour hsgtd :perso @programming U:3 I:3 T:1H S:2010-07-08
-ajouter tostart only to not done tasks :perso @programming U:3 I:3 T:1H S:2010-07-08
-appeler marc cappelle :FT @easy @social @admin U:3 I:3 T:1H S:2010-07-08
-reparer ghc-pkg :perso @config @chiant @done U:3 I:3 T:1H S:2010-07-08
-reparer cabal install qui ne voit que certains packages installés en user et pas les packages systeme :perso @config @done U:3 I:3 T:1H S:2010-07-08
-essayer de contacter dailymotion :phd @social U:3 I:3 T:1H S:2010-07-08
-voir etat serveurs streaming orange wired et wireless :phd :FT @social U:3 I:3 T:1H S:2010-07-08
-mettre references dans cv kundu jpp axs? :perso @done U:3 I:3 T:1H S:2010-07-08
-1 :phd @analyse @removed @done U:3 I:3 T:1H S:2010-07-08
-fix cabal (cairo) et chart :perso @config @done U:3 I:3 T:1H S:2010-07-08
-compter le nb de get HTTP vs get HTTPS @social @jpp U:3 I:3 T:1H S:2010-07-08
-postuler chez accenture :perso @social @done U:3 I:3 T:1H S:2010-07-08
-passer cv à Tim pour poste HP :perso @social U:3 I:3 T:1H S:2010-07-08
-print twoDznQ.pdf twoDznA.pdf yaht.pdf :perso :haskell @programming @done U:3 I:3 T:1H S:2010-07-08
-install lucid sur PC Toshiba :perso @chiant @easy @admin U:3 I:3 T:1H S:2010-07-08
-:phd high variability property of flows to check in captures @long-term @computation U:3 I:3 T:1H S:2010-07-08
-:phd workload model for individual end users (type of applications and share (volume) for each) (how many parallel flows (ADSL vs FTTH)) @long-term @computation U:3 I:3 T:1H S:2010-07-08
-:phd How much of the traffic is INTRA ISP vs Inter-ISP? @long-term @computation U:3 I:3 T:1H S:2010-07-08
-:phd check how much traffic is ELASTIC @long-term @computation U:3 I:3 T:1H S:2010-07-08
+ecrire table matières white paper :phd :FT @done
+regrouper toutes les analyses en vue d'un white paper :phd :FT @analyse
+look at bittorent share over UDP in otarie :phd @easy @done
+do the state machine for platform eval :phd @analyse
+voir Pierre Dekint pour mobile et actions des RNC (peut-on court-circuiter?) :perso @easy @social
+faire publis en bibtex dans cv :perso et modifs
+calculer vol globaux par AS par user :phd @computation
+calculer correctement l'agrégation des sessions :phd voir agenda 5 juin filtrer l'input flows quality sur (bit-rate>1) et filtrer les sessions obtenues sur max 2*3600 (p-e min à 1s) @analyse @computation @done
+refaire indic du nb de videos par user utiliser le pickle sessions et compter les nb de thp :phd @computation @done
+comparer avec la méthode directe sur les nouveaux streaming quality :phd @computation @done
+voir extraction flux bizarre :phd @analyse @done
+calculer les volumes streaming par rapport tout par tranches de x min :phd @computation
+finir cv :perso @admin @done
+analyser captures pour valider le remaining time :phd @computation @done
+appeler thierry les fichiers d'indicateurs sur une semaine :FT @easy @computation @done
+processer nouvelles captures :phd :eurecom @computation
+unmismatch new flows :phd @computation @easy @chiant @done
+regarder bqn :FT @analyse @done
+appeler alain simonian :FT @easy @social @admin
+recuperer trace rennes :phd /netapp/inter-drd/Temporaires/VIPEER @easy @done
+traces remaining time :phd @computation @short-term @done
+fix ip2as :eurecom @programming @done
+matching adresses IP AS pour cui :eurecom @computation @done
+refaire captures avec full payload :phd @captures @done
+appeler ernst pour discuter des IP2AS match et des analyses remaining time :phd @social @analyse @done
+faire commentaires sur remaining time :phd @analyse @done
+ @removed
+appeler stéphanie pour nouvelles captures :FT :phd @social @captures @done
+review brevet :FT @analyse @done
+prendre en compte les flux deezer et dailymotion nouveau :phd @programming @done
+configurer xorg :perso @config @done
+faire démarches pour nounou :perso @admin @done
+recupérer fichier d'indics TCP otarie :FT a suivre par analyse @easy @done
+fixer keynav @done
+finir analyse pertes avec cui :eurecom :phd @analyse
+expliquer le pic deezer à 400ko = player? :phd @analyse @done
+faire stats séparées pour audio et video :phd @computation @done
+calculer les rtt par tstat sur les captures :phd voir aussi RST flag @computation
+utiliser captures remaining time pour valider interruptions :phd @computation
+voir comment calculer les stats streaming à la volée :phd @programming
+vérifier les serveurs web de aymen :eurecom voir sur quel AS sont ces serveurs @computation
+appeler hervé terry pour rtt time series @done
+faire un lab test pour les interruptions des video streaming :phd @config
+mesurer le nb d'interruptions streaming sur le lab test :phd @computation
+consolider l'éval d'interruption streaming :phd @programming
+ajouter pattern matching au lieu de numero pour hsgtd :perso @programming
+ajouter tostart only to not done tasks :perso @programming
+appeler marc cappelle :FT @easy @social @admin
+reparer ghc-pkg :perso @config @chiant @done
+reparer cabal install qui ne voit que certains packages installés en user et pas les packages systeme :perso @config @done
+essayer de contacter dailymotion :phd @social
+voir etat serveurs streaming orange wired et wireless :phd :FT @social
+mettre references dans cv kundu jpp axs? :perso @done
+1 :phd @analyse @removed @done
+fix cabal (cairo) et chart :perso @config @done
+compter le nb de get HTTP vs get HTTPS @social @jpp
+postuler chez accenture :perso @social @done
+passer cv à Tim pour poste HP :perso @social
+print twoDznQ.pdf twoDznA.pdf yaht.pdf :perso :haskell @programming @done
+install lucid sur PC Toshiba :perso @chiant @easy @admin
+:phd high variability property of flows to check in captures @long-term @computation
+:phd workload model for individual end users (type of applications and share (volume) for each) (how many parallel flows (ADSL vs FTTH)) @long-term @computation
+:phd How much of the traffic is INTRA ISP vs Inter-ISP? @long-term @computation
+:phd check how much traffic is ELASTIC @long-term @computation
+faire nouvelles captures mobile pour vérifier les RTTs + pour these :FT :phd @captures
