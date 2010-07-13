@@ -1,10 +1,10 @@
 ecrire table matières white paper :phd :FT @done
-regrouper toutes les analyses en vue d'un white paper :phd :FT @analyse
+regrouper toutes les analyses en vue d'un white paper :phd :FT @analyse @done
 look at bittorent share over UDP in otarie :phd @easy @done
-do the state machine for platform eval :phd @analyse
-voir Pierre Dekint pour mobile et actions des RNC (peut-on court-circuiter?) :perso @easy @social
+do the state machine for platform eval :phd @analyse @done
+voir Pierre Dekint pour mobile et actions des RNC (peut-on court-circuiter?) :perso @easy @social @done
 faire publis en bibtex dans cv :perso et modifs
-calculer vol globaux par AS par user :phd @computation
+calculer vol globaux par AS par user :phd @computation @done
 calculer correctement l'agrégation des sessions :phd voir agenda 5 juin filtrer l'input flows quality sur (bit-rate>1) et filtrer les sessions obtenues sur max 2*3600 (p-e min à 1s) @analyse @computation @done
 refaire indic du nb de videos par user utiliser le pickle sessions et compter les nb de thp :phd @computation @done
 comparer avec la méthode directe sur les nouveaux streaming quality :phd @computation @done

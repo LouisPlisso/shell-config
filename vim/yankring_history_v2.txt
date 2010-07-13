@@ -1,100 +1,100 @@
-Johan Tibell,v
-<++>,v
-these sites are surely connected from Paris.,v
- (namely for DailyMotion and Deezer flows),v
-some flows encounter  for,v
-a degradation,v
-{,v
-rapport/http_stats/yt_goo_n_min_rtt_syn-ack_down_all_flows_,v
-     ,v
-yt_goo_n_mean_rtt_down_all_flows_youtube_cdf.pdf,v
- shows that \YT flows are much more affected by losses than DailyMotion ones,v
-{fig:loss_yt_down},v
-maybe,v
-.,v
-expected,v
-separate up down,V
-youtube_,v
-yt,v
-\YT,v
- \subfigure[Distant loss \YT\label{fig:loss_yt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_loss_rate_up_flows_larger_than_1mb_youtube_cdf_logx_new.pdf}},V
- \subfigure[Local loss \YT\label{fig:loss_yt_down}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_loss_rate_down_flows_larger_than_1mb_youtube_cdf_logx_new.pdf}},V
+\clearpage,v
 %,v
-s,v
-e,v
-RTT,v
-yt_goo_n_loss_rate_down_flows_larger_than_1mb_dailymotion_cdf_loglog_new.pdf,v
-file:///home/louis/doc/python-2.6.5-docs-html/library/index.html,v
-tools.streaming_tools.process_flows_yt_goo(flows_gvb, flows_1mb_gvb,        flows_dipcp, flows_1mb_dipcp, indicators_gvb=[], indicators_dipcp=[            (lambda data: [(x['DIP-DSQ-NbMes-sec-TCP-' + "Up"] + 1e-99)                /x['DIP-Volume-Number-Packets-' + "Up"] for x in data                if x['DIP-Volume-Number-Packets-' + "Up"] != 0],                    "Loss Rate " + "Up", "Percent"),            (lambda data: [(x['DIP-DSQ-NbMes-sec-TCP-' + "Down"] + 1e-99)                /x['DIP-Volume-Number-Packets-' + "Down"] for x in data                if x['DIP-Volume-Number-Packets-' + "Down"] != 0],                    "Loss Rate " + "Down", "Percent")]),v
-http://www.paulgraham.com/icad.html,v
-annuaire,v
-g ,v
+\section{What we can make out of it?}\subsection{Decision Tree to figure out state of Platform}\begin{figure}[!h]\begin{center} \includegraphics[width=.9\linewidth]{state_machine.pdf}\caption{State machine for analysis of residential platform\label{fig:state}}\end{center}\end{figure},v
+\subsection{Global Volumes}\begin{figure}[!h]\begin{center} \subfigure[Total Volume per AS for HTTP Streaming flows\label{fig:vol_tot}]{\includegraphics[width=.48\linewidth]{http_stats/HTTP_Streaming_Flows_Volume.pdf}} \subfigure[Total Volume per User per AS for HTTP Streaming flows\label{fig:vol_user}]{\includegraphics[width=.48\linewidth]{http_stats/HTTP_Streaming_Flows_Volume_per_User_no_GOO.pdf}}\caption{Global Volumes}\end{center}\end{figure}The total volume on an AS is belived to reflect its ``wealth'', the Figs. \ref{fig:vol_tot} and \ref{fig:vol_user} show this is not the case here.Beware that the filtering process (at capture for Web/Streaming and at processing Streaming) could have alter this???\section{What we can make out of it?}\subsection{Decision Tree to figure out state of Platform}\begin{figure}[!h]\begin{center} \includegraphics[width=.9\linewidth]{state_machine.pdf}\caption{State machine for analysis of residential platform\label{fig:state}}\end{center}\end{figure},v
 ,V
-google,v
-marjo,v
-6 33 77 78 85,v
-http://www.4pow.com/,v
-    \\,V
-\,v
-     \Apport{encore},V
-Taille,v
-\renewcommand{\TailleApport}{},V
-Orange ,v
-small,v
-1-2,v
-: have to see how to parse mp3 (which seems more difficult).,v
-it ,v
-For ,v
-, a more difficult problem remains as ,v
-azerty123 ,v
-,,v
-traverse,v
-\end{thebibliography},V
-\begin{thebibliography}{1}\bibitem{vu_itc_09}Vu-Brugier, G.:\newblock {Analysis of the Impact of early Fiber Access Deployment on  Residential Internet Traffic}.\newblock In: {ITC21}. (2009)\bibitem{lp_youtube}Plissonneau, L., En-Najjary, T., Urvoy-Keller, G.:\newblock {Revisiting Web Traffic from a DSL Provider Perspective: the Case of  YouTube}.\newblock In: {ITC SS 19}. (2008)\end{thebibliography},V
-very ,v
-moderate,v
-and ,v
-BGP, ,v
-, ,v
-MPLS, BGP, OSPF, ,v
+global sizes,v
+Loss Rate,v
+HTTP_Streaming_Flows_Volume_per_User_no_GOO.pdf,v
+:vol_fig,v
+yt_goo_n_loss_rate_down_flows_larger_than_1mb_dailymotion_cdf_logx_new.pdf,v
+\label{fig:loss_dm_down},v
+Local loss DailyMotion,v
+Local loss DailyMotion\label{fig:loss_dm_down,v
+yt_goo_n_loss_rate_down_flows_larger_than_1mb_youtube_cdf_logx_new.pdf,v
+loss_yt_down,v
+Local loss \YT,v
+\begin{figure}[!h]\begin{center} \subfigure[Local loss \YT\label{fig:loss_yt_down}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_loss_rate_down_flows_larger_than_1mb_youtube_cdf_logx_new.pdf}} \subfigure[Local loss DailyMotion\label{fig:loss_dm_down}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_loss_rate_down_flows_larger_than_1mb_dailymotion_cdf_logx_new.pdf}}\caption{Loss Rate}\end{center}\end{figure},v
+-,v
+467,v
+tools.aggregate.aggregate_sum(flows_str[t], ,v
+83.202.49.71,v
+HTTP_Streaming_Flows_Volume.pdf,v
+ 'asBGP', 'Session-Bytes'),v
+'Session-Bytes',v
+u,v
+computers-typesetting-volume-a-the-texbook.9780201134476.24302,v
+.\raisebox{1ex-\height}{,v
+1,v
+e,v
+x,v
  ,v
-OSPF, ,v
-languages ,v
-and,v
-OSPF,v
-basic,v
-basic ,v
-Orange streaming servers,v
- and Environments,v
- IDE:  ,v
-IDE:  ,v
-\end{sousrubrique}\begin{sousrubrique} \Competence{,v
-Application,v
-\smallskip,v
-abs-guide.html.tar,v
-PS: btw, great work for ,v
-down,v
-rtt,v
-_than_1mb_youtube_cdf.pdf}},v
-all_flows_youtube_cdf_logx_new.pdf}},v
-_down_flows_larger_than_1mb_youtube_cdf.pdf}},v
-Local,v
-\subfigure[\YT\ Distant RTT\label{fig:rtt_yt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_youtube_cdf_logx_new.pdf}},V
-\subfigure[Local loss \YT\label{fig:rtt_down}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_loss_rate_down_flows_larger_than_1mb_youtube_cdf.pdf},V
-Local RTT for all flows,v
-plots,v
- \includegraphics[width=.87\linewidth]{,v
-http_stats/all_min_rtt_syn-ack_down_all_flows_dipcp_cdf_logx_new.pdf}},v
-\includegraphics[width=.87\linewidth]{plots/yt_goo_n_loss_rate_down_flows_larger_than_1mb_youtube_cdf.pdf},V
-\begin{figure}[!h]\begin{center}\subfigure[Local RTT for all flows\label{fig:rtt_down}]{\includegraphics[width=.48\linewidth]{http_stats/all_min_rtt_syn-ack_down_all_flows_dipcp_cdf_logx_new.pdf}}\subfigure[\YT\ Distant RTT\label{fig:rtt_yt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_youtube_cdf_logx_new.pdf}}\caption{RTT}\end{center}\end{figure},v
-indicators_gvb=[], indicators_dipcp=[            (lambda data: [(x['DIP-DSQ-NbMes-sec-TCP-' + "Up"] + 1e-99)                /x['DIP-Volume-Number-Packets-' + "Up"] for x in data                if x['DIP-Volume-Number-Packets-' + "Up"] != 0],                    "Loss Rate " + "Up", "Percent"),            (lambda data: [(x['DIP-DSQ-NbMes-sec-TCP-' + "Down"] + 1e-99)                /x['DIP-Volume-Number-Packets-' + "Down"] for x in data                if x['DIP-Volume-Number-Packets-' + "Down"] != 0],                    "Loss Rate " + "Down", "Percent")]),v
-flows_1mb_dipcp_loss_streams,v
-Gimp,v
-    , className =? "Gimp"      --> doFloat,V
-dia,v
-y,v
-_,v
-t,v
-d,v
-m,v
-\begin{figure}[!h]\begin{center}\subfigure[\YT\label{fig:yt_rtt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_youtube_cdf_logx_new.pdf}}\subfigure[DailyMotion\label{fig:dm_rtt_up}]{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_min_rtt_syn-ack_up_all_flows_dailymotion_cdf_logx_new.pdf}}\caption{Distant RTT}\end{center}\end{figure},V
+.,v
+  },V
+   },V
+    },V
+    \hbox{%,V
+   \vskip0pt,V
+  \vtop{%,V
+    }%,V
+\begin{figure}[!h]\begin{center} \subfigure[Sessions Schema]{  \vtop{%   \vskip0pt    \hbox{%     \includegraphics[width=.48\linewidth]{stream_stats_figs/sessions_schema.pdf}    }%   }  } \subfigure[Sessions Durations]{  \vtop{%   \vskip0pt    \hbox{%     \includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_session_duration_(gap_30s)_all_flows_youtube_cdf_logx_new.pdf}    }   }  }\caption{HTTP Streaming Sessions\label{fig:sessions}}\end{center}\end{figure},v
+ctop,v
+%},V
+{,v
+\includegraphics,v
+loat,v
+\subsection{Duration of sessions}\begin{figure}[!h]\begin{center} \subfloat[Sessions Schema]{\vtop{%  \vskip0pt  \hbox{%\includegraphics[width=.48\linewidth]{stream_stats_figs/sessions_schema.pdf}  }%} \subfloat[Sessions Durations]{\vtop{%  \vskip0pt  \hbox{%    \includegraphics{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_session_duration_(gap_30s)_all_flows_youtube_cdf_logx_new.pdf}  }%}\caption{HTTP Streaming Sessions\label{fig:sessions}}\end{center}\end{figure}Separating by AS or not leads to same unconclusive result\ldots,V
+ ,V
+}figure}%,v
+{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_session_duration_(gap_30s)_all_flows_youtube_cdf_logx_new.pdf}}figure}%,v
+\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_session_duration_(gap_30s)_all_flows_youtube_cdf_logx_new.pdf}},v
+\vtop,v
+ \subfloat[Sessions Durations]{\vtop\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_session_duration_(gap_30s)_all_flows_youtube_cdf_logx_new.pdf}},V
+    \includegraphics{figure}%,V
+},v
+\includegraphics[width=.48\linewidth]{stream_stats_figs/sessions_schema.pdf}},v
+ \vtop,v
+ \vtop\includegraphics[width=.48\linewidth]{stream_stats_figs/sessions_schema.pdf}},v
+space{0pt},v
+\vtop{%  \vskip0pt  \hbox{%    \includegraphics{figure}%  }%},v
+Separating by AS or not leads to same unconclusive result\ldots,V
+by client: ,v
+b,v
+s,v
+\subsubsection{by client: sessions}\begin{figure}[!h]\begin{center} \subfloat[Sessions Schema]{\vspace{0pt}\includegraphics[width=.48\linewidth]{stream_stats_figs/sessions_schema.pdf}} \subfloat[Sessions Durations]{\vspace{0pt}\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_session_duration_(gap_30s)_all_flows_youtube_cdf_logx_new.pdf}}\caption{HTTP Streaming Sessions\label{fig:sessions}}\end{center}\end{figure},V
+\vspace{0pt},v
+client: ,v
+\subsubsection{by client: sessions}\newsavebox{\tempbox}\begin{figure}[!h] \sbox{\tempbox}{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_session_duration_(gap_30s)_all_flows_youtube_cdf_logx_new.pdf}}  \subfloat[Sessions Durations]{\usebox{\tempbox}}%  \subfloat[Sessions Schema]{%    \vbox to \ht\tempbox{%      \vfil\includegraphics[width=.48\linewidth]{stream_stats_figs/sessions_schema.pdf}      \vfil}}%   \caption{HTTP Streaming Sessions\label{fig:sessions}} \end{figure} %\subfloat{\includegraphics[width=.48\linewidth]{stream_stats_figs/sessions_schema.pdf}} %\subfloat{\includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_session_duration_(gap_30s)_all_flows_youtube_cdf_logx_new.pdf}}Separating by AS or not leads to same unconclusive result\ldots,v
+ \centering,V
+\begin{figure}%  \centering  \sbox{\tempbox}{. . . figure code. . . }%  \subfloat[Big figure]{\usebox{\tempbox}}%  \qquad  \subfloat[Small figure]{%    \vbox to \ht\tempbox{%      \vfil      . . . figure code. . .      \vfil}}%  \caption{Two more sub-floats.},v
+  \qquad,V
+[Big figure],v
+[Sessions Durations],v
+[Sessions Schema],v
+  \subfloat[Big figure]{\usebox{\tempbox}}%,V
+  \end{center},V
+ \begin{center},V
+\end{center}\end{figure},v
+\begin{figure}[!h],V
+  \caption{Two more sub-floats.},V
+\caption{HTTP Streaming Sessions\label{fig:sessions}}\end{center}\end{figure},V
+\begin{center},v
+      \includegraphics[width=.48\linewidth]{http_stats/yt_goo_n_session_duration_(gap_30s)_all_flows_youtube_cdf_logx_new.pdf},V
+\includegraphics[width=.48\linewidth]{stream_stats_figs/sessions_schema.pdf}}%,v
+  \centering,V
+      . . . figure code. . .,V
+. . . figure code. . . ,v
+    .    .    .,V
+\,v
+\newsavebox{\tempbox}    .    .    .,v
+l,v
+v,v
+f,v
+i,v
+ure,v
+stream_stats_figs/sessions_schema.pdf,v
+{\includegraphics[width=.48\linewidth]{,v
+interupt,v
+HTTP Streaming Flows interrupted at least once,v
+HTTP_Streaming_Flows_interruptions.pdf},v
+yt_goo_n_session_duration_(gap_30s)_all_flows_youtube_cdf_logx_new.pdf,V
