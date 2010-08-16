@@ -694,3 +694,37 @@ dependencies: base-4.2.0.0 old-locale-1.0.0.2
 install-outcome: InstallOk
 docs-outcome: NotTried
 tests-outcome: NotTried
+
+package: primes-0.1.1
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: base-3.0.3.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: CheatSheet-2.6
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: base-4.2.0.0 containers-0.3.0.0 directory-1.0.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: fgl-5.4.2.3
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: array-0.3.0.0 base-4.2.0.0 containers-0.3.0.0
+              mtl-1.1.0.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried

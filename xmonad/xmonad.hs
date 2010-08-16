@@ -97,6 +97,7 @@ myManageHook = composeAll
     , className =? "Dia"      --> doFloat
     , className =? "Pidgin"      --> doFloat
     , className =? "Vlc"      --> doFloat
+    --, className =? "Kino"      --> doFloat
     ]
 
 -- workspaces

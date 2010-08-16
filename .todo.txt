@@ -1,3 +1,6 @@
+demander à Marcin comment lancer tstat sur de grosses captures @computation @social :phd
+imprimer expert python :perso
+enlever kipi-plugins :perso @easy @done
 ecrire table matières white paper :phd :FT @done
 regrouper toutes les analyses en vue d'un white paper :phd :FT @analyse @done
 look at bittorent share over UDP in otarie :phd @easy @done

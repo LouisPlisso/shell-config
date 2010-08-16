@@ -97,6 +97,7 @@ myManageHook = composeAll
     , className =? "Dia"      --> doFloat
     , className =? "Pidgin"      --> doFloat
     , className =? "Vlc"      --> doFloat
+    , className =? "Kino"      --> doFloat
     ]
 
 -- workspaces
@@ -159,7 +160,7 @@ main = do
             -- make sure to include myManageHook definition from above
         , layoutHook = myLayoutHook
         -- avoidStruts  $  layoutHook defaultConfig
-        , XMonad.focusFollowsMouse  = False
+--        , XMonad.focusFollowsMouse  = False
         , logHook = dynamicLogWithPP $ xmobarPP
             { ppOutput = hPutStrLn xmproc
             , ppTitle = xmobarColor "green" "" . shorten 50
