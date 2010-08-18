@@ -1,0 +1,142 @@
+#!/bin/sh
+
+# load FTRD config
+if [ -f ${MY_CONFIG_DIR}/ftrd_config ]; then
+    . ${MY_CONFIG_DIR}/ftrd_config
+fi
+
+die() {
+    result=$1
+    shift
+    echo ": $*" >&2
+    exit $result
+}
+
+[ -d $MY_CONFIG_DIR ] || die 1 "must have variable MY_CONFIG_DIR set"
+
+export PATH=/sbin:/usr/sbin:${MY_CONFIG_DIR}/bin:${MY_CONFIG_DIR}/cabal/bin:$PATH
+export PYTHONPATH=~/workspace/spydump/tools
+export PATH=$PATH:$PYTHONPATH
+
+# scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
+SCRIPT_RECIPES=$HOME/.scripts_recipes/bin
+[ -d $SCRIPT_RECIPES ] && export PATH=$PATH:$SCRIPT_RECIPES
+
+# quicksnips: http://quicksnips.org/
+QUICKSNIPS=$MY_CONFIG_DIR/quicksnips/bin
+[ -d $QUICKSNIPS ] && export PATH=$PATH:$QUICKSNIPS
+
+
+# export VIMRUNTIME=${MY_CONFIG_DIR}/vim
+export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
+
+
+export LS_OPTIONS='--color=auto'
+eval `dircolors $MY_CONFIG_DIR/dircolors`
+alias ls='ls --group-directories-first $LS_OPTIONS'
+alias l1='ls -1'
+alias lb='ls -shapC'
+alias ll='ls -l'
+alias la='ls -Alh'
+alias lsd='ls -d */'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# some more ls aliases
+alias l='ls -CF'
+alias lh='ll -h'
+
+export LESS="-R"
+export EDITOR=vi
+
+#compose key activated in gtk apps
+GTK_IM_MODULE=xim
+export GTK_IM_MODULE
+
+
+
+# Créer un répertoire et l'ouvrir :
+function mcd() { mkdir "$@"; cd "$@" }
+#alias mcd='mkdir \!*; cd \!*'
+
+alias light-m='sudo $MY_CONFIG_DIR/bin/adjust_light.sh'
+alias light-min='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 0'
+alias light-max='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 100'
+
+alias gvi='gvim'
+
+alias chrome='all_proxy=$chrome_proxy /usr/bin/google-chrome'
+
+#no more needed
+#bad but needed to let default config of aptitude and still use python 2.6
+#alias python='/usr/bin/python2.6'
+#alias ipython='/usr/bin/python2.6 /usr/bin/ipython'
+alias pyprofile='python -m cProfile -s time'
+
+alias 'cd..'='cd ..'
+alias pysh='ipython -p pysh'
+alias pyl='pylint --disable=C0103 --disable=W0141'
+
+#alias print 'lpr \!* -Pps5'
+
+alias saptu='sudo aptitude update'
+alias saptdu='sudo aptitude dist-upgrade'
+alias saptsu='sudo aptitude safe-upgrade'
+alias apts='aptitude search'
+alias why='aptitude why'
+
+alias hibernate='sudo pm-hibernate'
+alias suspend='sudo pm-suspend'
+alias suspend-hybrid='sudo pm-suspend-hybrid'
+
+alias fixwifi='sudo iwconfig wlan0 txpower on'
+alias presentation='impressive -t PageTurn'
+
+alias images='feh -F -Z'
+alias photos='pho -p'
+
+EXTERNAL_OUTPUT="VGA1"
+INTERNAL_OUTPUT="LVDS1"
+alias ext-screen-off='xrandr --output $EXTERNAL_OUTPUT --off'
+alias ext-screen='xrandr --auto --output $EXTERNAL_OUTPUT --auto --same-as $INTERNAL_OUTPUT'
+
+alias cdc='cd $MY_CONFIG_DIR'
+
+# keep trace of installed packages (even tentatives)
+sapti() {
+    if sudo aptitude install $@
+	then
+		# warning: will also store uninstalled packages
+        	echo $@ >> ${MY_CONFIG_DIR}/aptitude_list_local
+	fi
+ }
+
+saptr() {
+    if sudo aptitude remove $@
+	then
+        	for package in $*
+        	do
+                	sed -i "/^[^#]/s/\(\<$package\>\)[[:space:]]*/# &\n/g" ${MY_CONFIG_DIR}/aptitude_list_local
+        	done
+        	sed -i '/^$/d' ${MY_CONFIG_DIR}/aptitude_list_local
+	fi
+ }
+
+
+
+alias lst='tar tzf'
+alias untar='tar xzvf'
+alias j='jobs -l'
+alias h='history|more'
+ 
+alias less='less --quiet'
+alias df='df --human-readable'
+alias du='du --human-readable'
+alias less='less -e -i -m -R'
+
+# Pile de Répertoires
+alias p='popd'
+
+

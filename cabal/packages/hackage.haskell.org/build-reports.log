@@ -728,3 +728,14 @@ dependencies: array-0.3.0.0 base-4.2.0.0 containers-0.3.0.0
 install-outcome: InstallOk
 docs-outcome: NotTried
 tests-outcome: NotTried
+
+package: CheatSheet-2.8
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: base-4.2.0.0 containers-0.3.0.0 directory-1.0.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried

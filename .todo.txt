@@ -1,12 +1,12 @@
-demander à Marcin comment lancer tstat sur de grosses captures @computation @social :phd
-imprimer expert python :perso
+calculer les rtt par tstat sur les captures :phd voir aussi RST flag @computation
+demander à Marcin comment lancer tstat sur de grosses captures @computation @social :phd @done
+imprimer expert python :perso @done
 enlever kipi-plugins :perso @easy @done
 ecrire table matières white paper :phd :FT @done
 regrouper toutes les analyses en vue d'un white paper :phd :FT @analyse @done
 look at bittorent share over UDP in otarie :phd @easy @done
 do the state machine for platform eval :phd @analyse @done
 voir Pierre Dekint pour mobile et actions des RNC (peut-on court-circuiter?) :perso @easy @social @done
-faire publis en bibtex dans cv :perso et modifs
 calculer vol globaux par AS par user :phd @computation @done
 calculer correctement l'agrégation des sessions :phd voir agenda 5 juin filtrer l'input flows quality sur (bit-rate>1) et filtrer les sessions obtenues sur max 2*3600 (p-e min à 1s) @analyse @computation @done
 refaire indic du nb de videos par user utiliser le pickle sessions et compter les nb de thp :phd @computation @done
@@ -38,10 +38,10 @@ fixer keynav @done
 finir analyse pertes avec cui :eurecom :phd @analyse
 expliquer le pic deezer à 400ko = player? :phd @analyse @done
 faire stats séparées pour audio et video :phd @computation @done
-calculer les rtt par tstat sur les captures :phd voir aussi RST flag @computation
 utiliser captures remaining time pour valider interruptions :phd @computation
 voir comment calculer les stats streaming à la volée :phd @programming
 vérifier les serveurs web de aymen :eurecom voir sur quel AS sont ces serveurs @computation
+faire publis en bibtex dans cv :perso et modifs
 appeler hervé terry pour rtt time series @done
 faire un lab test pour les interruptions des video streaming :phd @config
 mesurer le nb d'interruptions streaming sur le lab test :phd @computation
@@ -66,3 +66,4 @@ install lucid sur PC Toshiba :perso @chiant @easy @admin
 :phd How much of the traffic is INTRA ISP vs Inter-ISP? @long-term @computation
 :phd check how much traffic is ELASTIC @long-term @computation
 faire nouvelles captures mobile pour vérifier les RTTs + pour these :FT :phd @captures
+lire bird algebra of programming :perso

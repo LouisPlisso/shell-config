@@ -348,3 +348,5 @@ mjpegtools
 mjpegtools
 ffmpeg
 lib32nss-mdns
+libhdf5-dev
+libhdf5-serial-dev

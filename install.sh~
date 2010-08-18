@@ -1,0 +1,130 @@
+#!/bin/bash
+
+# retrieve full path of install dir: can be sourced or whatever but needs bash
+# from http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-in
+INSTALL_DIR="${BASH_SOURCE[0]}";
+if([ -h "${INSTALL_DIR}" ]) then
+  while([ -h "${INSTALL_DIR}" ]) do INSTALL_DIR=`readlink "${INSTALL_DIR}"`; done
+fi
+# to store dir where script was launched
+#pushd . > /dev/null
+cd `dirname ${INSTALL_DIR}` > /dev/null
+INSTALL_DIR=`/bin/pwd`;
+
+LOCAL_USER=$USER
+
+/bin/grep dvorak_prog /usr/share/X11/xkb/symbols/fr >> /dev/null && variant=dvorak_prog || variant=dvorak
+printf "First sets %s keyboard layout\n" $variant
+setxkbmap fr -variant $variant
+
+
+echo "Install current user as sudoer"
+/bin/sed "s/\<__USER__\>/${LOCAL_USER}/g" sudoers.template > sudoers.local
+echo -n "Root passwd needed. "
+/bin/su -c '/bin/cp -b --suffix='.old' sudoers.local /etc/sudoers; chown root:root /etc/sudoers; /bin/chmod 440 /etc/sudoers' && echo "Will not promt for sudoer passwd until end of install" || echo "Sudoer install failure: if user is not sudoer, only user's settings will be performed" 
+/bin/rm sudoers.local
+sudo /bin/sh -c 'grep "EDITOR=vi" /root/.bashrc > /dev/null || echo "EDITOR=vi" >> /root/.bashrc'
+
+# alternative method
+echo "Sets programmer dvorak-fr keyboard layout"
+sudo /bin/cp -b --suffix='.old' fr /usr/share/X11/xkb/symbols/fr
+setxkbmap fr -variant dvorak_prog
+# sets my keyboard config
+xkbcomp  -w 0 -R/usr/share/X11/xkb/  ${INSTALL_DIR}/keymap  "$DISPLAY" 
+# set it as default
+xkbcomp -xkb $DISPLAY
+
+echo "Update sources.list"
+sudo /bin/cp -b --suffix='.old' sources.list /etc/apt/sources.list
+sudo /bin/sh bin/apt-get-ni.sh update
+sudo /bin/sh bin/apt-get-ni.sh install debian-multimedia-keyring
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo /bin/sh bin/apt-get-ni.sh update
+# non-interactive upgrade
+sudo /bin/sh bin/apt-get-ni.sh dist-upgrade
+
+echo "Installing selected packages"
+/bin/cat aptitude_list | xargs -I {} sudo /bin/sh bin/apt-get-ni.sh install {}
+
+echo "Configure NSSwitch"
+sudo /bin/cp -b --suffix='.old' nsswitch.conf /etc/nsswitch.conf
+
+echo "Configure Java to use ipv4"
+sudo /bin/cp -b --suffix='.old' bindv6only.conf /etc/sysctl.d/bindv6only.conf
+
+echo "Configure DHCP"
+sudo /bin/cp -b --suffix='.old' dhclient.conf /etc/dhcp3/dhclient.conf
+
+echo "For usb2"
+sudo /bin/sed -i 's/\<sync\>/nosync/g' /usr/share/hal/fdi/policy/10osvendor/20-storage-methods.fdi
+sudo /bin/sed -i 's/\<dirsync\>/nodirsync/g' /usr/share/hal/fdi/policy/10osvendor/20-storage-methods.fdi
+sudo /bin/cp -b --suffix='.old' grub /etc/default/grub
+
+echo "Configure xorg"
+sudo /bin/cp -b --suffix='.old' xorg.conf /etc/X11/xorg.conf
+
+echo "Configure netapp"
+if /bin/chmod 000 smbcredentials; then
+	sudo /bin/rm /root/.smbcredentials
+	sudo /bin/ln -s ${INSTALL_DIR}/smbcredentials /root/.smbcredentials
+fi
+/bin/grep netapp /etc/fstab > /dev/null && echo "netapp already included in fstab" || sudo sh -c '/bin/cat fstab >> /etc/fstab'
+
+echo "Configure printers"
+sudo /bin/cp -b --suffix='.old' printers.conf /etc/cups/printers.conf
+
+echo "Configure ktouch"
+[ -e /usr/share/kde4/apps/ktouch/ ] && sudo /bin/cp -b --suffix='.old' dvorak-fr-1.ktouch.xml dvorak-fr-2.ktouch.xml /usr/share/kde4/apps/ktouch/
+
+echo "Configure latex"
+LATEX_DIR=/usr/share/texmf/tex/latex/
+if [ -e $LATEX_DIR ]; then
+    [ -h $LATEX_DIR ] && sudo /bin/rm $LATEX_DIR
+    [ -f ${LATEX_DIR} ] && sudo /bin/mv ${LATEX_DIR} ${LATEX_DIR}.old 
+    sudo /bin/ln -s ${INSTALL_DIR}/latex ${LATEX_DIR}/my_sty
+    sudo texconfig rehash 
+fi
+
+# python is aliased because package installs sometimes work only with python2.5
+#echo "Configure python"
+#sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.5 10
+#sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.6 20
+
+# for being able to env_keep path
+/usr/sbin/adduser $USER sudo
+
+echo "Administrative part finished: no user with no passwd for all cmds"
+sudo /bin/sed -i "/^[^#].*ALL=NOPASSWD: ALL/s/^/#/" /etc/sudoers
+
+echo "Configure ACPI warning as crontab"
+/bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" crontab.template > crontab.local
+/usr/bin/crontab crontab.local
+#sudo cp $INSTALL_DIR/crontab.local /var/spool/cron/crontabs/${LOCAL_USER}
+#sudo ln -s $INSTALL_DIR/low_battery_warning /etc/acpi/events/low_battery_warning
+#sudo ln -s $INSTALL_DIR/bin/low_battery_warning.sh /etc/acpi/low_battery_warning.sh
+
+echo "Install config files"
+for template in bashrc.template xsessionrc.template zshrc.template; do
+    file=`basename ${template} .template`
+    [ -h ${HOME}/.file ] && /bin/rm ${HOME}/.file
+    [ -f ${HOME}/.file ] && /bin/mv ${HOME}/.file ${HOME}/.file.old
+    /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" ${template} > ${HOME}/.${file}
+done
+for file in profile inputrc vimrc gvimrc Xdefaults xmonad xmobarrc cabal XCompose keynavrc dircolors lxdvdrip.conf abcde.conf vimperator vim vimperator/vimperatorrc vimperator/muttatorrc; do
+	TARGET=${HOME}/.`basename $file `
+    # if there is already a link, remove it
+	[ -h ${TARGET} ] && /bin/rm ${TARGET}
+    # if there is a file (not link), backup it
+	[ -f ${TARGET} ] && /bin/mv ${TARGET} ${TARGET}.old || /bin/rm $TARGET 2> /dev/null
+	/bin/ln -s ${INSTALL_DIR}/$file ${TARGET}
+done
+
+# echo "Configure xmonad"
+# /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" xmonad/xmonad.hs.template > xmonad/xmonad.hs
+
+echo "Configure public and private keys"
+mkdir -p ${HOME}/.ssh
+ln -s ${INSTALL_DIR}/id_rsa ${INSTALL_DIR}/id_rsa.pub ${HOME}/.ssh
+
+# to restore directory
+#popd  > /dev/null

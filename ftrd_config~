@@ -1,11 +1,14 @@
 # set proxy only if at FT
 #ftrd_proxy="http://s-proxy.rd.francetelecom.fr:3128"
 ftrd_proxy="http://p-goodway.rd.francetelecom.fr:3128"
-export http_proxy=$(/sbin/ifconfig eth0|grep -E -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'|gawk -F\.  -v proxy=$ftrd_proxy '(NR==1){if($1==10&&$2==193){print proxy}}')
-if [ $http_proxy = "" ];
-    then
-    unset $http_proxy
-fi
+#my_http_proxy=$(/sbin/ifconfig eth0|grep -E -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'|gawk -F\.  -v proxy=$ftrd_proxy '(NR==1){if($1==10&&$2==193){print proxy}}')
+#if [ "$my_http_proxy" != "" ];
+#then
+#    echo "set proxy"
+#    export $http_proxy=$my_http_proxy
+#fi
+
+/sbin/ifconfig eth0|grep "adr:10.193.224." > /dev/null && export $http_proxy=$ftrd_proxy
 
 
 export chrome_proxy=$(/sbin/ifconfig eth0|grep -E -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'|gawk -F\.  '(NR==1){if($1==10&&$2==193){print "http://10.42.12.19:3128"}}')
