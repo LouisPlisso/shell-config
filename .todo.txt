@@ -1,3 +1,15 @@
+voir loss rates ref data sur le web + http_stream si on est + cohérent avec les autres traces :phd @computation @analyse @done
+inclure les nouveaux graphes RTT data depuis rapport/http_stats :phd @analyse calculer les RTT data sans filtre voir si il y a des trucs + intéressants sur les RTTs
+demander à Gvb pour les loss rates up en FTTH :phd @social
+comparer avec nouveaux loss rates dipcp2 :phd @analyse
+explain bad loss rate for february with 1e4 volume accumulation with big losses :phd @computation @analyse
+vérifier volume down YT-EU sur trace ADSL 2008: pkoi volume si important? :phd @computation
+processer fichiers Thierry Houdoin :phd @computation filtrer sur les horaires de full capture et chercher qq match avec connexions étudiées (surtout pour comparer les loss rates)
+launch streaming_tools.add_as_dipcp sur les new RTTs :phd @computation @done
+commenter white :phd @analyse @done
+tracer cdf mean rate / encoding rate :phd @computation ou faire un pourcentage de >1 vs <1
+cdf flow sizes a) for flows with encoding rate > network rate b) for flows with encoding rate < network rate :phd @computation
+plot 20s line for duration cdfs :phd @computation
 calculer les rtt par tstat sur les captures :phd voir aussi RST flag @computation
 demander à Marcin comment lancer tstat sur de grosses captures @computation @social :phd @done
 imprimer expert python :perso @done
@@ -12,10 +24,15 @@ calculer correctement l'agrégation des sessions :phd voir agenda 5 juin filtrer
 refaire indic du nb de videos par user utiliser le pickle sessions et compter les nb de thp :phd @computation @done
 comparer avec la méthode directe sur les nouveaux streaming quality :phd @computation @done
 voir extraction flux bizarre :phd @analyse @done
+faire 2 branche (DPI ou non-DPI) sur le state machine diagram :phd @analyse
+revoir scripts d'extract session duration pour montrer qqch de cette analyse :phd @computation @analyse
 calculer les volumes streaming par rapport tout par tranches de x min :phd @computation
+utiliser captures remaining time pour valider interruptions :phd @computation
+consolider l'éval d'interruption streaming :phd @programming faire un test avec de gros débits voir si ça perturbe l'outil
 finir cv :perso @admin @done
 analyser captures pour valider le remaining time :phd @computation @done
 appeler thierry les fichiers d'indicateurs sur une semaine :FT @easy @computation @done
+finir analyse pertes avec cui :eurecom :phd @analyse
 processer nouvelles captures :phd :eurecom @computation
 unmismatch new flows :phd @computation @easy @chiant @done
 regarder bqn :FT @analyse @done
@@ -35,17 +52,14 @@ configurer xorg :perso @config @done
 faire démarches pour nounou :perso @admin @done
 recupérer fichier d'indics TCP otarie :FT a suivre par analyse @easy @done
 fixer keynav @done
-finir analyse pertes avec cui :eurecom :phd @analyse
 expliquer le pic deezer à 400ko = player? :phd @analyse @done
 faire stats séparées pour audio et video :phd @computation @done
-utiliser captures remaining time pour valider interruptions :phd @computation
 voir comment calculer les stats streaming à la volée :phd @programming
 vérifier les serveurs web de aymen :eurecom voir sur quel AS sont ces serveurs @computation
 faire publis en bibtex dans cv :perso et modifs
 appeler hervé terry pour rtt time series @done
 faire un lab test pour les interruptions des video streaming :phd @config
 mesurer le nb d'interruptions streaming sur le lab test :phd @computation
-consolider l'éval d'interruption streaming :phd @programming
 ajouter pattern matching au lieu de numero pour hsgtd :perso @programming
 ajouter tostart only to not done tasks :perso @programming
 appeler marc cappelle :FT @easy @social @admin
@@ -67,3 +81,4 @@ install lucid sur PC Toshiba :perso @chiant @easy @admin
 :phd check how much traffic is ELASTIC @long-term @computation
 faire nouvelles captures mobile pour vérifier les RTTs + pour these :FT :phd @captures
 lire bird algebra of programming :perso
+print learning python :perso

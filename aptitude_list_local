@@ -136,7 +136,8 @@ icedove-l10n-fr
 mplayer
 sapti vim-syntax-gtk
 python-profiler
-python-setuptools python-profiler python-h5py bzr python-pkg-resources
+python-setuptools python-profiler # # python-h5py 
+bzr python-pkg-resources
 ./picasa_3.0-current_amd64.deb
 vim-vimoutliner
 texpower
@@ -350,3 +351,10 @@ ffmpeg
 lib32nss-mdns
 libhdf5-dev
 libhdf5-serial-dev
+libtextcat-data-utf8
+# python-h5py
+libhdf5-serial-dev
+# python-h5py
+reinstall # python-h5py
+python-h5py
+libglew1.5

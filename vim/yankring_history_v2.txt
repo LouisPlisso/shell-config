@@ -1,100 +1,100 @@
-libtextcat-data-utf8,v
-$,v
- ,v
-3,v
-],v
-[,v
-/sbin/ifconfig eth0|grep -,v
-<F3>,v
-",v
-unset,v
-== ,v
-export ,v
-\begin{center},V
-/home/capture/novlan/cde_dipcp.sh,v
- ps aux | awk '{ print $8 " " $2 }' | grep -w Z,v
-\end{center},V
-\,v
-ular,v
-end,v
-1:white.tex,v
-,V
-TODO: add summary table,V
-tiny,v
-%,v
-float,v
-begin,v
-ht,v
-\documentclass{article}\begin{document},V
-4:auto_latex_flows.py,v
-down,v
-down_per_client,v
-up,v
-        resume['avg_vol_down_per_client%s' % app] = (resume['vol_down%s' % app]                / resume['nb_client_down%s' % app]) \                if (resume['nb_client_down%s' % app] != 0) else 0        resume['avg_vol_down_per_flow%s' % app] = (resume['vol_down%s' % app]                / resume['nb_flows_down%s' % app]) \                if (resume['nb_flows_down%s' % app] != 0) else 0,V
-n,v
-w,v
-o,v
-d,v
-'2008_07_01_FTTH_AS_YOUTUBE',v
-(dscp_http_stream, dscp_other_stream, dscp_web),v
+CnxStream24_MONT159_20100207.npy,v
+][('Name1', np.str),	('Name2', np.str),	('Name', np.str),	('LocAS', np.str),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', np.str),	('RemName', np.str),	('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', np.uint32), #(np.str_, 8)),	('EndTime', np.uint32), #(np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str),,v
+[('Name1', (np.str_, 40)),	('Name2', (np.str_, 40)),	('Name', (np.str_, 80)),	('LocAS', (np.str_, 7)),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', (np.str_, 5)),	('RemName', (np.str_, 32)),        ('Host_Referer', (np.str_, 180)),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', np.uint32), #(np.str_, 8)),	('EndTime', np.uint32), #(np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', (np.str_, 25)),	('Service', (np.str_, 25))],v
 ),v
-\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_0.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_1.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_2.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_3.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_4.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_5.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_6.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_7.tex}\end{center}\end{table},V
-},v
-\documentclass{article}\begin{document}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_0.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_1.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_2.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_3.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_4.tex}\end{center}\end{table}\begin{table}\begin{center}\input{/home/louis/streaming/rapport/resume_new/new_tables_5.tex}\end{center}\end{table},V
+5,v
+Advertisement,v
+/dl/1ba6e186d4cd13163a910b3c19b0a2ce/4b0edca2/videos/000/275/803/275803.flv?r=53&start=7,v
+_, 5)),v
+FLV_420_314_453k,v
+DSMNA160!11!FTT!13/1/21/1/1:835,v
+CnxStream24_MON151_20080701.txt,v
+',v
+%,v
+s,v
+ ,v
+,,v
+flows,v
+save,v
+np,v
+#    np.save('%s' % '_'.join(in_file.split('.')[:-1]), flows),V
+dtype_cnx_stream,v
+r,v
+*,v
 0,v
-.keys(,v
-M,v
-git clone http://git.sv.gnu.org/r/ranger.git pithy,v
-A,v
-E,v
-small,v
-name,v
-trace,v
-short_,v
-        short_name = name.replace('AS_YOUTUBE', 'YT'                                  ).replace('AS_DAILYMOTION', 'DM'                                  ).replace('AS_DEEZER', 'DZ'),V
+6,v
+foldr(lambda t, acc: 60*acc + t, 0, ,v
+acc,v
+t,v
+(,v
+import,v
+ools,v
+re,v
+"22:40:41",v
+TIME_MATCHER = re.compile("\d{2}:\d{2}:\d{2}"),v
+#    ('StartTime', (np.str_, 8)),#    ('EndTime', (np.str_, 8)),,V
+    STARTTIME: lambda s: time2nbsec(s)    ENDTIME: lambda s: time2nbsec(s),V
+', (np.str_, 8)),,v
+('EndTime', (np.str_, 8)),,v
+(np.str_, 8)),,v
+[('Name1', np.str),	('Name2', np.str),	('Name', np.str),	('LocAS', np.str),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', np.str),	('RemName', np.str),	('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', (np.str_, 8)),	('EndTime', (np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str),        ('LostUp', np.uint32),	('DesyncUp', np.uint32),	('LostDn', np.uint32),	('DesyncDn', np.uint32),	('WiFi', np.uint8)],v
+6:load_GVB_file.py,v
+11:load_dipcp_file.py,v
+13:.vimrc,v
+14:__Scratch__,v
+uint8,v
+'00:23:48:9f:3e:7c',v
+_ok,v
+CnxStream24_MONT159_20091126.txt,v
 #,v
-client,v
-2:__init__.py,v
-1:resume_http.py,v
-client_down,v
-resume['nb_client_down%s' % app],v
-        resume['vol_up%s' % app] = vol_dir[0][1]        resume['vol_down%s' % app] = vol_dir[1][1],V
-        try:            resume['vol_up%s' % app] = vol_dir[0][1]        except IndexError:            resume['vol_up%s' % app] = float(0)            ,V
-vol_dir[0][1],v
-            resume['vol_up%s' % app] = vol_dir[0][1],V
-tools.auto_latex_flows.generate_new_table(flows_stream),v
-        flows_str = tools.streaming_tools.separate_flows_stream(                stream_flows, ('AS_YOUTUBE', 'AS_YOUTUBE_EU', 'AS_GOOGLE',                'AS_DAILYMOTION', 'AS_DEEZER')),V
-cPickle.load(open('flows_gvb_streams.pickle')),v
-'2010_02_07_FTTH_AS_YOUTUBE_EU',v
-tools.auto_latex_flows.generate_new_table(flows),v
- + '_GVB',v
-datas,v
-set(key.strip('_DIPCP').strip('_GVB') for key in datas),v
-....: ,v
-   ....: ,v
-= tools.streaming_tools.separate_flows_stream(   ....: stream_flows, ('AS_YOUTUBE', 'AS_YOUTUBE_EU', 'AS_GOOGLE', 'AS_DAILYMOTION', 'AS_DEEZER'   ....: )),v
-('', ,v
-flows_str,v
-'_WEB', ,v
-'_OTHER_STREAM',v
-#        flows['%d_%s' % (order, name)] = data_flow,V
-#    for (order, (name, data_flow)) in enumerate(flows_name_list):,V
-#    flows = {},V
-#    tools.auto_latex_flows.generate_general_table(names),V
-#    data = tools.load_hdf5_data.load_h5_file('hdf5/lzf_data.h5'),V
-#        ('FTTH_mar_2010', data['FTTH_mar_2010_GVB'])),V
-#        ('FTTH_fev_2010', data['FTTH_Montsouris_2010_02_07_GVB']),,V
-general_,v
-def generate_general_table(datas, nb_cols = 4,        file_name = 'general_tables', output_path = 'rapport/resume'):    """Generate latex table of flows resume, the nb of cols is without    description column.    Launch as:#    data = tools.load_hdf5_data.load_h5_file('hdf5/lzf_data.h5')#    names = (('ADSL_juil_2008', data['ADSL_2008_GVB']),#        ('FTTH_juil_2008', data['FTTH_2008_GVB']),#        ('ADSL_nov_2009', data['ADSL_nov_2009_GVB']),#        ('FTTH_nov_2009', data['FTTH_nov_2009_GVB']),#        ('ADSL_dec_2009', data['ADSL_dec_2009_GVB']),#        ('FTTH_dec_2009', data['FTTH_dec_2009_GVB']),#        ('FTTH_fev_2010', data['FTTH_Montsouris_2010_02_07_GVB']),#        ('FTTH_mar_2010', data['FTTH_mar_2010_GVB']))#    tools.auto_latex_flows.generate_general_table(names)    With new data (correctly labeled):    datas = tools.load_hdf5_data.load_h5_file('flows/hdf5/traces_lzf.h5')    tools.auto_latex_flows.generate_general_table(datas)"""#    flows = {}#    for (order, (name, data_flow)) in enumerate(flows_name_list):#        flows['%d_%s' % (order, name)] = data_flow    template = [('App: %s', '', 's'),            ('total_vol%s', 'Bytes', '.3g'),            ('vol_up%s', 'Bytes', '.3g'),            ('vol_down%s', 'Bytes', '.3g'),            ('nb_client_down%s', 'Nb', 'd'),            ('nb_client_down_1MB%s', 'Nb', 'd'),            ('avg_vol_down_per_client%s', 'Bytes', '.3g'),            ('nb_flows_down%s', 'Nb', '.4g'),            ('nb_flows_down_1MB%s', 'Nb', '.4g'),            ('avg_vol_down_per_flow%s', 'Bytes', '.3g')]    formatting = [(name % replace, unit, form)            for replace in ('', '_WEB', '_HTTP_STREAM', '_OTHER_STREAM')            for (name, unit, form) in template]    tables = {}    traces = set(key.strip('_DIPCP').strip('_GVB') for key in datas)    for trace in sorted(traces):        tables[trace] = format_resume_table(trace,                fetch_data_general(datas[trace + '_GVB']), formatting)        #print >> open('%s/temp_file_%s.tex' % (output_path, name), 'w'), \        #        tables[name]    print_tables(tables, nb_cols, output_path, file_name),v
-'2009_11_26_FTTH_AS_DAILYMOTION',v
-ht some people watching AS interconnections links (Flamant project) this problem has emerged only thank to internet forums spies.,v
-http://localhost:1080/users/louis.plissonneau@orange-ftgroup.com/calendar,v
-responses,v
-  the clients according to a load-balancing policy ,v
-choosen,v
-for URL ,v
-as,v
- in France Télécom address space;,V
- in France Télécom address space;,v
-As the Google policy to distribute \YT\ videos through \YT-EU AS is done as follows:,V
-video,v
+                               comments='Z'*100,,V
+ZZZZZZZZZZZZZ,v
+'ZZZZZZZZZZZZZZ',,v
+[('118', '170', '118_170', 'AS3215', '82.123.19.131', '554', 'RTSP', 'Unknown', ',v
+OK,V
+uint16,v
+float_,v
+uint64,v
+uint32,v
+dtype_cnx_stream_ok = [('Name1', np.uint8),	('Name2', np.uint8),	('Name', np.str),	('LocAS', np.str),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', np.str),	('RemName', np.str),        ('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', (np.str_, 8)),	('EndTime', (np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str)],V
+np.loadtxt(test, dtype=tools.INDEX_VALUES.dtype_cnx_stream, converter=tools.INDEX_VALUES.converter,v
+h,v
+"dtype_cnx_stream%s" % h,v
+WIFI: lambda s: np.uint8(s or 0),v
+m_lo,v
+converter_cnx_stream_loss = {    NAME1: lambda s: np.uint8(s or 0),    NAME2: lambda s: np.uint8(s or 0),#    ('Name', np.str),#    ('LocAS', np.str),#    ('LocAddr', (np.str_, 16)),    LOCPORT: lambda s: np.uint16(s or 0),#    ('Protocol', (np.str_, 5)),#    ('Application', np.str),#    ('RemName', np.str),#    ('Host_Referer', np.str),#    ('RemCountry', (np.str_, 7)),#    ('RemAS', (np.str_, 7)),#    ('RemAddr', (np.str_, 16)),    REMPORT: lambda s: np.uint16(s or 0),#    ('Date', (np.str_, 10)),#    ('StartTime', (np.str_, 8)),#    ('EndTime', (np.str_, 8)),    DURATION: lambda s: np.float_(s or 0),    NBYTE: lambda s: np.uint64(s or 0),#    ('StartDn', (np.str_, 8)),    DURATIONDN: lambda s: np.float_(s or 0),    BYTEDN: lambda s: np.uint64(s or 0),    PACKETDN: lambda s: np.uint32(s or 0),#    ('Type', np.str),#    ('Service', np.str),    LOSTUP: lambda s: np.uint32(s or 0),    DESYNCUP: lambda s: np.uint32(s or 0),    LOSTDN: lambda s: np.uint32(s or 0),    DESYNCDN: lambda s: np.uint32(s or 0),    WIFI: lambda s: np.uint8(s or 0)},v
+                               converters=INDEX_VALUES.converter_cnx_stream,,V
+1,v
+/<\(\w*\)/<\U\1/g,v
+', np.uint8)],v
+	(',v
+', np.uint32),,v
+        (',v
+', np.str),,v
+', np.uint64),,v
+', np.float_),,v
+', (np.str_, 10)),,v
+', np.uint16),,v
+', (np.str_, 16)),,v
+', (np.str_, 7)),,v
+	('Application', np.str),	('RemName', np.str),	('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', (np.str_, 8)),	('EndTime', (np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str),        ('LostUp', np.uint32),	('DesyncUp', np.uint32),	('LostDn', np.uint32),	('DesyncDn', np.uint32),	('WiFi', np.uint8)]c,v
+', (np.str_, 5)),,v
+', np.uint8),,v
+	,v
+,v
+dtype_cnx_stream_loss = [(',v
+dtype_cnx_stream_loss = [('Name1', np.uint8),	('Name2', np.uint8),	('Name', np.str),	('LocAS', np.str),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', np.str),	('RemName', np.str),	('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', (np.str_, 8)),	('EndTime', (np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str),        ('LostUp', np.uint32),	('DesyncUp', np.uint32),	('LostDn', np.uint32),	('DesyncDn', np.uint32),	('WiFi', np.uint8)],v
+[,v
+=,v
+_,v
+('Name1', np.uint8),	('Name2', np.uint8),	('Name', np.str),	('LocAS', np.str),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', np.str),	('RemName', np.str),	('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', (np.str_, 8)),	('EndTime', (np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str),        ('LostUp', np.uint32),	('DesyncUp', np.uint32),	('LostDn', np.uint32),	('DesyncDn', np.uint32),	('WiFi', np.uint8),v
+dtype_cnx_stream_loss = [,v
+, in_file,v
+Name1	Name2	Name	LocAS	LocAddr	LocPort	Protocol	Application	RemNameHost/Referer	RemCountry	RemAS	RemAddr	RemPort	Date	StartTime	EndTimeDuration	nByte	StartDn	DurationDn	ByteDn	PacketDn	Type	Service	LostUp	DesyncUp	LostDn	DesyncDn	WiFi,v
+CnxStream24_REN257_20100207.txt:,v
+ for file %s,v
+                print line,V
+S,v
+A,v
+open(in_file),v
+                opened_file.close(),V

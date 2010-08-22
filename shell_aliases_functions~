@@ -14,6 +14,9 @@ die() {
 
 [ -d $MY_CONFIG_DIR ] || die 1 "must have variable MY_CONFIG_DIR set"
 
+# for hsgtd
+export TODO=$MY_CONFIG_DIR
+
 export PATH=/sbin:/usr/sbin:${MY_CONFIG_DIR}/bin:${MY_CONFIG_DIR}/cabal/bin:$PATH
 export PYTHONPATH=~/workspace/spydump/tools
 export PATH=$PATH:$PYTHONPATH

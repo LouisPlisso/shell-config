@@ -17,6 +17,9 @@ die() {
 # for hsgtd
 export TODO=$MY_CONFIG_DIR
 
+
+export CMD_KEY="xkbcomp -w 0 -R/usr/share/X11/xkb/ ${MY_CONFIG_DIR}/keymap \"$DISPLAY\" "
+
 export PATH=/sbin:/usr/sbin:${MY_CONFIG_DIR}/bin:${MY_CONFIG_DIR}/cabal/bin:$PATH
 export PYTHONPATH=~/workspace/spydump/tools
 export PATH=$PATH:$PYTHONPATH
