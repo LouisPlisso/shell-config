@@ -17,6 +17,9 @@ die() {
 # for hsgtd
 export TODO=$MY_CONFIG_DIR
 
+
+export CMD_KEY="xkbcomp -w 0 -R/usr/share/X11/xkb/ ${MY_CONFIG_DIR}/keymap \"$DISPLAY\" "
+
 export PATH=/sbin:/usr/sbin:${MY_CONFIG_DIR}/bin:${MY_CONFIG_DIR}/cabal/bin:$PATH
 export PYTHONPATH=~/workspace/spydump/tools
 export PATH=$PATH:$PYTHONPATH
@@ -54,11 +57,17 @@ alias lh='ll -h'
 export LESS="-R"
 export EDITOR=vi
 
+alias xpdf='xpdf -z page'
+
 #compose key activated in gtk apps
 GTK_IM_MODULE=xim
 export GTK_IM_MODULE
 
+# burn cd: first ripit
+alias burnit='flac -d *.flac && cdrdao write cd.toc && rm *.wav'
 
+# super man
+function superman() {/usr/bin/man "$@" || w3m -dump http://google.com/search\?q="$@"\&btnI | less}
 
 # Créer un répertoire et l'ouvrir :
 function mcd() { mkdir "$@"; cd "$@" }
@@ -72,6 +81,13 @@ alias gvi='gvim'
 
 alias chrome='all_proxy=$chrome_proxy /usr/bin/google-chrome'
 
+#restart_adb_server() {
+#    ~/perso/android/android-sdk-linux_86/tools/adb kill-server
+#    ~/perso/android/android-sdk-linux_86/tools/adb start-server
+#}
+#export -f restart_adb_server
+#alias fix_adb='sudo bash -c restart_adb_server'
+
 #no more needed
 #bad but needed to let default config of aptitude and still use python 2.6
 #alias python='/usr/bin/python2.6'
@@ -80,7 +96,7 @@ alias pyprofile='python -m cProfile -s time'
 
 alias 'cd..'='cd ..'
 alias pysh='ipython -p pysh'
-alias pyl='pylint --disable=C0103 --disable=W0141'
+alias pyl='pylint --reports=n --disable=C0103 --disable=W0141 --disable=E1101'
 
 #alias print 'lpr \!* -Pps5'
 
@@ -143,3 +159,4 @@ alias less='less -e -i -m -R'
 alias p='popd'
 
 
+alias vlcn='vlc -I ncurses'

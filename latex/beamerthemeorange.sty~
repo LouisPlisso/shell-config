@@ -34,10 +34,10 @@
    \textbf{\usebeamerfont{dateorange in head/foot}\insertframenumber{} / \inserttotalframenumber{}}\hspace*{2ex}\ 
   \end{beamercolorbox}
   \hbox{\begin{beamercolorbox}[wd=.6\paperwidth,ht=2.5ex,dp=1.125ex]{authororange in head/foot}%
-   \usebeamerfont{authororange in head/foot}\textbf{Orange Labs Recherche \& D\'eveloppement -- \insertshortauthor: \insertshorttitle\ -- \insertdate}
+   \usebeamerfont{authororange in head/foot}\textbf{Orange Labs -- \insertshortauthor: \insertshorttitle\ -- \insertdate}
   \end{beamercolorbox}%
   \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.5ex,dp=1.125ex]{titleorange in head/foot}%
-   \hfill\usebeamerfont{titleorange in head/foot}\textbf{France T\'el\'ecom Group Confidential}\hfill\
+   \hfill\usebeamerfont{titleorange in head/foot}\textbf{France T\'el\'ecom Group Unrestricted}\hfill\
   \end{beamercolorbox}
 }%
   %\includegraphics[width=.09\paperwidth]{logo_orange} 
@@ -69,7 +69,7 @@
   \hskip.01\paperwidth
   \includegraphics[width=.09\paperwidth]{logo_FT}
   \hskip.3\paperwidth
-  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{no authororange in foot on title page} \textbf{France T\'el\'ecom Group Confidential} %
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{no authororange in foot on title page} \textbf{France T\'el\'ecom Group Unrestricted} %
   \end{beamercolorbox}}%
   \includegraphics[width=.09\paperwidth]{logo_orange} 
   \hskip.01\paperwidth

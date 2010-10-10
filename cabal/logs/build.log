@@ -739,3 +739,148 @@ dependencies: base-4.2.0.0 containers-0.3.0.0 directory-1.0.1.0
 install-outcome: InstallOk
 docs-outcome: NotTried
 tests-outcome: NotTried
+
+package: array-0.3.0.1
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: base-4.2.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: bytestring-0.9.1.7
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: base-4.2.0.0 ghc-prim-0.2.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: containers-0.3.0.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: array-0.3.0.1 base-4.2.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: deepseq-1.1.0.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: array-0.3.0.1 base-4.2.0.0 containers-0.3.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: text-0.8.0.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags: -developer
+dependencies: base-4.2.0.0 bytestring-0.9.1.7 deepseq-1.1.0.0
+              ghc-prim-0.2.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: QuickCheck-1.2.0.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags: split-base
+dependencies: base-3.0.3.2 random-1.0.0.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: random-1.0.0.2
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: base-4.2.0.0 time-1.2.0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: containers-0.3.0.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: array-0.3.0.1 base-4.2.0.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: random-1.0.0.2
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: base-4.2.0.0 time-1.2.0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: random-1.0.0.2
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: base-4.2.0.0 time-1.2.0.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: bindings-yices-0.2
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags: yices-dynamic
+dependencies: base-4.2.0.0
+install-outcome: ConfigureFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: containers-0.3.0.0
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: array-0.3.0.1 base-4.2.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: yices-easy-0.1
+os: linux
+arch: x86_64
+compiler: ghc-6.12.1
+client: cabal-install-0.8.2
+flags:
+dependencies: base-4.2.0.0 bindings-yices-0.2 containers-0.3.0.0
+              transformers-0.2.1.0
+install-outcome: DependencyFailed bindings-yices-0.2
+docs-outcome: NotTried
+tests-outcome: NotTried

@@ -1,100 +1,100 @@
-CnxStream24_MONT159_20100207.npy,v
-][('Name1', np.str),	('Name2', np.str),	('Name', np.str),	('LocAS', np.str),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', np.str),	('RemName', np.str),	('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', np.uint32), #(np.str_, 8)),	('EndTime', np.uint32), #(np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str),,v
-[('Name1', (np.str_, 40)),	('Name2', (np.str_, 40)),	('Name', (np.str_, 80)),	('LocAS', (np.str_, 7)),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', (np.str_, 5)),	('RemName', (np.str_, 32)),        ('Host_Referer', (np.str_, 180)),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', np.uint32), #(np.str_, 8)),	('EndTime', np.uint32), #(np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', (np.str_, 25)),	('Service', (np.str_, 25))],v
-),v
-5,v
-Advertisement,v
-/dl/1ba6e186d4cd13163a910b3c19b0a2ce/4b0edca2/videos/000/275/803/275803.flv?r=53&start=7,v
-_, 5)),v
-FLV_420_314_453k,v
-DSMNA160!11!FTT!13/1/21/1/1:835,v
-CnxStream24_MON151_20080701.txt,v
-',v
-%,v
-s,v
+||| myCode ,v
+                 myCode' = FixedColumn 1 20 110 10,V
  ,v
-,,v
-flows,v
-save,v
-np,v
-#    np.save('%s' % '_'.join(in_file.split('.')[:-1]), flows),V
-dtype_cnx_stream,v
-r,v
-*,v
-0,v
-6,v
-foldr(lambda t, acc: 60*acc + t, 0, ,v
-acc,v
-t,v
+myCode' |||,v
+                 -- mySpiral = spiral (4/3),V
+,V
+-- Define a tab thememyTabTheme = (theme smallClean) { activeColor = colLight                                , inactiveColor = colDark                                , activeBorderColor = colVeryDark                                , inactiveBorderColor = colVeryDark                                , activeTextColor = colTextLight                                , inactiveTextColor = colTextDark                                , decoHeight = 16},V
+,V
+),v
 (,v
-import,v
-ools,v
-re,v
-"22:40:41",v
-TIME_MATCHER = re.compile("\d{2}:\d{2}:\d{2}"),v
-#    ('StartTime', (np.str_, 8)),#    ('EndTime', (np.str_, 8)),,V
-    STARTTIME: lambda s: time2nbsec(s)    ENDTIME: lambda s: time2nbsec(s),V
-', (np.str_, 8)),,v
-('EndTime', (np.str_, 8)),,v
-(np.str_, 8)),,v
-[('Name1', np.str),	('Name2', np.str),	('Name', np.str),	('LocAS', np.str),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', np.str),	('RemName', np.str),	('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', (np.str_, 8)),	('EndTime', (np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str),        ('LostUp', np.uint32),	('DesyncUp', np.uint32),	('LostDn', np.uint32),	('DesyncDn', np.uint32),	('WiFi', np.uint8)],v
-6:load_GVB_file.py,v
-11:load_dipcp_file.py,v
-13:.vimrc,v
-14:__Scratch__,v
-uint8,v
-'00:23:48:9f:3e:7c',v
-_ok,v
-CnxStream24_MONT159_20091126.txt,v
+layoutHints ,v
+-- Define a tab layoutmyTabbed = tabbed shrinkText myTabTheme-- mySpiral = spiral (4/3),V
+8,v
+                 myCode = FixedColumn 1 20 80 10,V
+||| myTabbed ,v
+||| myCode,v
+limitWindows 3 $  ,v
+magnifiercz' 1.4 $,v
+FixedColumn,v
+import XMonad.Layout.FixedColumn,V
+import XMonad.Layout.FixedColumn,v
+Often,v
 #,v
-                               comments='Z'*100,,V
-ZZZZZZZZZZZZZ,v
-'ZZZZZZZZZZZZZZ',,v
-[('118', '170', '118_170', 'AS3215', '82.123.19.131', '554', 'RTSP', 'Unknown', ',v
-OK,V
-uint16,v
-float_,v
-uint64,v
-uint32,v
-dtype_cnx_stream_ok = [('Name1', np.uint8),	('Name2', np.uint8),	('Name', np.str),	('LocAS', np.str),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', np.str),	('RemName', np.str),        ('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', (np.str_, 8)),	('EndTime', (np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str)],V
-np.loadtxt(test, dtype=tools.INDEX_VALUES.dtype_cnx_stream, converter=tools.INDEX_VALUES.converter,v
-h,v
-"dtype_cnx_stream%s" % h,v
-WIFI: lambda s: np.uint8(s or 0),v
-m_lo,v
-converter_cnx_stream_loss = {    NAME1: lambda s: np.uint8(s or 0),    NAME2: lambda s: np.uint8(s or 0),#    ('Name', np.str),#    ('LocAS', np.str),#    ('LocAddr', (np.str_, 16)),    LOCPORT: lambda s: np.uint16(s or 0),#    ('Protocol', (np.str_, 5)),#    ('Application', np.str),#    ('RemName', np.str),#    ('Host_Referer', np.str),#    ('RemCountry', (np.str_, 7)),#    ('RemAS', (np.str_, 7)),#    ('RemAddr', (np.str_, 16)),    REMPORT: lambda s: np.uint16(s or 0),#    ('Date', (np.str_, 10)),#    ('StartTime', (np.str_, 8)),#    ('EndTime', (np.str_, 8)),    DURATION: lambda s: np.float_(s or 0),    NBYTE: lambda s: np.uint64(s or 0),#    ('StartDn', (np.str_, 8)),    DURATIONDN: lambda s: np.float_(s or 0),    BYTEDN: lambda s: np.uint64(s or 0),    PACKETDN: lambda s: np.uint32(s or 0),#    ('Type', np.str),#    ('Service', np.str),    LOSTUP: lambda s: np.uint32(s or 0),    DESYNCUP: lambda s: np.uint32(s or 0),    LOSTDN: lambda s: np.uint32(s or 0),    DESYNCDN: lambda s: np.uint32(s or 0),    WIFI: lambda s: np.uint8(s or 0)},v
-                               converters=INDEX_VALUES.converter_cnx_stream,,V
+myCode = limitWindows 3 $ magnifiercz' 1.4 $ FixedColumn 1 20 80 10,v
+('Rennes_out_I',): ,v
+*,v
+x,v
+[3],v
+t,v
+s,v
+i,v
+l,v
+(1, 1, 1, (1-color_alpha)),v
+_bar,v
+alpha,v
+list(color_converter.to_rgba(,v
+ColorConverter,v
+            alpha_color = list(ColorConverter.to_rgba(cur_color))            alpha_color[3] = cur_alpha            alpha_bars.append((color_nb, alpha_color)),V
+cur_alpha,v
+    color_converter = matplotlib.colors.ColorConverter(),V
+.,v
+            alpha_bars.append((color_nb, cur_alpha)),V
+e,v
+n,v
+r,v
+o,v
+c,v
 1,v
-/<\(\w*\)/<\U\1/g,v
-', np.uint8)],v
-	(',v
-', np.uint32),,v
-        (',v
-', np.str),,v
-', np.uint64),,v
-', np.float_),,v
-', (np.str_, 10)),,v
-', np.uint16),,v
-', (np.str_, 16)),,v
-', (np.str_, 7)),,v
-	('Application', np.str),	('RemName', np.str),	('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', (np.str_, 8)),	('EndTime', (np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str),        ('LostUp', np.uint32),	('DesyncUp', np.uint32),	('LostDn', np.uint32),	('DesyncDn', np.uint32),	('WiFi', np.uint8)]c,v
-', (np.str_, 5)),,v
-', np.uint8),,v
-	,v
-,v
-dtype_cnx_stream_loss = [(',v
-dtype_cnx_stream_loss = [('Name1', np.uint8),	('Name2', np.uint8),	('Name', np.str),	('LocAS', np.str),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', np.str),	('RemName', np.str),	('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', (np.str_, 8)),	('EndTime', (np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str),        ('LostUp', np.uint32),	('DesyncUp', np.uint32),	('LostDn', np.uint32),	('DesyncDn', np.uint32),	('WiFi', np.uint8)],v
-[,v
++,v
+        bottom = 0        colors=cycle(('k', 'g'))        for (color_nb, color_alpha) in alpha_bars:            # 10 is hardcoded in dendrogram            height = 10 * color_nb            linewidth = 8            lines = [[(0, bottom), (0, bottom + height)]]            print(lines)            # use of rgba color because LineCollection do not cope well with            # alpha otherwise            hide_line = matplotlib.collections.LineCollection(lines, linewidth,                                                          color=colors.next())#(1, 1, 1, .2))            ax1.add_collection(hide_line)            bottom += height,v
+',v
+k,v
+,,v
+0,v
+                    color='k', alpha=.5),V
+            linewidth = 8,V
+matplotlib.collections.,v
+ax1.bar,v
+ax = f.add_subplot(111)lc = LineCollection(lines,10,color='g', alpha=.2)ax.add_collection(colors_to_collections['g'])ax.add_collection(lc)f.show(),v
+(1 - color_alpha),v
+color,v
+color_nb,v
+Hierarchi,v
+10 * color_nb,v
+bar,v
+bottom,v
+max,v
+bottom, ,v
+colors,v
+my_dendro(stats[0], tot_vol=tot_vol, second=False,                  out_file='cluster_%s_50hh' % in_file),V
+2:user_prof.py,v
+my_dendro(stats[0], tot_vol=tot_vol, second=False,                  out_file='cluster_%s_50hh' % in_file),v
+stats, tot_vol = load_files('.'.join((in_file, '100hh')), in_file,                                    separate=50),v
+        alpha_bars.append((0, bottom + .125 * step, 100 * client_volume / tot_vol,                           'w', 1 - cur_alpha, cur_hatch)),V
+10, ,v
+[0],v
+hatch=,v
+alpha=,v
+color=,v
+p,v
+7,v
 =,v
-_,v
-('Name1', np.uint8),	('Name2', np.uint8),	('Name', np.str),	('LocAS', np.str),	('LocAddr', (np.str_, 16)),	('LocPort', np.uint16),	('Protocol', (np.str_, 5)),	('Application', np.str),	('RemName', np.str),	('Host_Referer', np.str),	('RemCountry', (np.str_, 7)),	('RemAS', (np.str_, 7)),	('RemAddr', (np.str_, 16)),	('RemPort', np.uint16),	('Date', (np.str_, 10)),	('StartTime', (np.str_, 8)),	('EndTime', (np.str_, 8)),	('Duration', np.float_),	('nByte', np.uint64),	('StartDn', (np.str_, 8)),	('DurationDn', np.float_),	('ByteDn', np.uint64),	('PacketDn', np.uint32),	('Type', np.str),	('Service', np.str),        ('LostUp', np.uint32),	('DesyncUp', np.uint32),	('LostDn', np.uint32),	('DesyncDn', np.uint32),	('WiFi', np.uint8),v
-dtype_cnx_stream_loss = [,v
-, in_file,v
-Name1	Name2	Name	LocAS	LocAddr	LocPort	Protocol	Application	RemNameHost/Referer	RemCountry	RemAS	RemAddr	RemPort	Date	StartTime	EndTimeDuration	nByte	StartDn	DurationDn	ByteDn	PacketDn	Type	Service	LostUp	DesyncUp	LostDn	DesyncDn	WiFi,v
-CnxStream24_REN257_20100207.txt:,v
- for file %s,v
-                print line,V
-S,v
-A,v
-open(in_file),v
-                opened_file.close(),V
+h,v
+g,v
+bar_colors[i],v
+bottom + .125 * step, 100 * client_volume / tot_vol,                 height=.7 * step, color=bar_colors[i],                 alpha=cur_alpha, hatch=cur_hatch),v
+    # for correct alpha: take colors in correct order and draw single line    # instead of many small lines...,V
+].get_color(),v
+s_to_collections[,v
+\,v
+ if color != 'k' else '.5',v
+            , alpha=alpha_gen.next()),V
+        tmp_color = colors_to_collections[color].get_color()        tmp_color[0][3] = alpha_gen.next(),V
+#        tmp_color = colors_to_collections[color].get_color()#        tmp_color[0][3] = alpha_gen.next(),V
+colors_to_collections, tmp_colors = plot_and_get_colors(Z['color_list'],                                                    Z['icoord'], Z['dcoord']),v
+my_dendro(stats[1], tot_vol=tot_vol, second=True,                  out_file='cluster_%s_2nd_50hh' % in_file),v
+stats, tot_vol = load_files('.'.join((in_file, '100hh')), in_file,                                    separate=50),v
+#    new_xlines = {},V
+>> out_file, ,v
+out_file, ,v

@@ -1,4 +1,4 @@
-google-chrome
+# google-chrome
 # google-chrome-beta
 xpdf
 xpdf-utils
@@ -114,7 +114,7 @@ wicd-curses
 python-dev
 python2.6-dev
 python2.6-setuptools
-xpdf-reader
+# xpdf-reader
 xpdf
 # vpnc
 xbattbar
@@ -192,7 +192,7 @@ xpdf/lenny
 latex2html
 python-simplejson
 beagle
-google-desktop-linux
+# google-desktop-linux
 vobcopy dvdbackup dvd+rw-tools
 lxdvdrip
 lxdvdrip
@@ -204,8 +204,9 @@ happy # libmpd
 # mpd
 # libhugs-quickcheck
 # mpd
-mpd
-mpd-client
+# mpd
+# mpd
+-client
 ghc/sid
 ghc/sid
 ghc6/sid
@@ -259,7 +260,7 @@ sun-java6-plugin
 m2vrequantiser
 xdvdshrink
 python-scapy
-google-chrome
+# google-chrome
 evince-gtk
 irssi
 tshark
@@ -358,3 +359,32 @@ libhdf5-serial-dev
 reinstall # python-h5py
 python-h5py
 libglew1.5
+# libgeos-3.2.0
+libgeos-dev
+libgeos-dev
+# gnuhtml2latex
+xbindkeys
+xmacro
+xbindkeys-config
+moreutils
+pidgin-facebookchat
+pidgin
+python-mlpy python-mlpy-doc
+libapt-pkg-libc6.9-6-4.8
+aptitude-doc-en
+python-docutils
+ripit
+deborphan
+chromium-browser
+localepurge
+dreampie
+# ncmpc
+weka
+dvipng
+gawk-doc
+python-guppy
+python-mdp
+python-rope
+python-rope
+python-cluster
+vcdimager

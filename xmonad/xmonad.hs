@@ -21,6 +21,8 @@ import Data.Ratio
 import XMonad.Layout.LayoutHints
 import XMonad.Layout.ResizableTile
 -- import XMonad.Layout.NoBorders
+import XMonad.Layout.FixedColumn
+import XMonad.Layout.LimitWindows
 
 import XMonad.Util.XSelection
 
@@ -88,7 +90,7 @@ myXPConfig = defaultXPConfig {
 -- focusFollowsMouse :: Bool
 -- focusFollowsMouse = False
 
--- TODO ipython floats
+-- TODO pylab floats
 myManageHook = composeAll
     [ isFullscreen --> doFullFloat
     , isDialog --> doFloat
@@ -97,6 +99,9 @@ myManageHook = composeAll
     , className =? "Dia"      --> doFloat
     , className =? "Pidgin"      --> doFloat
     , className =? "Vlc"      --> doFloat
+    , className =? "Tk"      --> doFloat
+    , className =? "Ipython"      --> doFloat
+    , className =? "Wicd-client.py"     --> doFloat
     --, className =? "Kino"      --> doFloat
     ]
 
@@ -120,25 +125,8 @@ ffKeys conf@(XConfig {modMask = modm}) = M.fromList $
           where workspaceKeys = [xK_F1 .. xK_F10]
 
 
--- Define a tab theme
-myTabTheme = (theme smallClean) { activeColor = colLight
-                                , inactiveColor = colDark
-
-                                , activeBorderColor = colVeryDark
-                                , inactiveBorderColor = colVeryDark
-
-                                , activeTextColor = colTextLight
-                                , inactiveTextColor = colTextDark
-                                , decoHeight = 16
-}
-
--- Define a tab layout
-myTabbed = tabbed shrinkText myTabTheme
--- mySpiral = spiral (4/3)
-
-
 -- Circle ||| ||| magnify Grid 
-myLayoutHook = avoidStruts (layoutHints (tiled ||| Mirror tiled ||| Grid ||| Full ||| myTabbed))
+myLayoutHook = avoidStruts (myCode ||| tiled ||| Mirror tiled ||| Grid ||| Full)
             where 
                  -- default tiling algorithm partitions the screen into two panes
                  tiled   = ResizableTall nmaster delta ratio []
@@ -150,6 +138,20 @@ myLayoutHook = avoidStruts (layoutHints (tiled ||| Mirror tiled ||| Grid ||| Ful
                  delta   = 3%100
                  --
                  magnify = magnifiercz (12%10)
+                 -- coding scheme
+                 myCode = FixedColumn 1 30 80 10
+                 -- Define a tab layout
+                 -- myTabbed = tabbed shrinkText myTabTheme
+                 -- Define a tab theme
+                 -- myTabTheme = (theme smallClean) { activeColor = colLight
+                 -- , inactiveColor = colDark
+                 -- , activeBorderColor = colVeryDark
+                 -- , inactiveBorderColor = colVeryDark
+                 -- , activeTextColor = colTextLight
+                 -- , inactiveTextColor = colTextDark
+                 -- , decoHeight = 16
+                 -- }
+                 -- mySpiral = spiral (4/3)
 
 
 main = do
@@ -165,7 +167,7 @@ main = do
             { ppOutput = hPutStrLn xmproc
             , ppTitle = xmobarColor "green" "" . shorten 50
             }
-        , workspaces         = ["1:Web", "2:Term", "3:Editor", "4", "5", "6", "7", "8:Todo", "9:Mail"]
+        , workspaces         = ["1:Web", "2:Term", "3:Editor", "4", "5", "6", "7", "8", "9:Todo", "10:Mail"]
         , terminal           = "urxvtc"
         } `additionalKeys`
         [ ((mod1Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock") 
@@ -176,7 +178,7 @@ main = do
         , ((mod1Mask, xK_d), spawn "icedove")
         -- search how to use: http://www.haskell.org/haskellwiki/Xmonad/Config_archive/Mntnoe%27s_xmonad.hs
         , ((mod1Mask, xK_c), spawn "hxsel")
-        , ((0, xK_F8), pasteSelection)
+        -- , ((0, xK_F8), pasteSelection)
         -- , ((mod1Mask .|. shiftMask, xK_b), getSelection )
         , ((shiftMask, xK_F6), lowerVolume 4 >> return ()) -- >>= alert ) 
         , ((shiftMask, xK_F7), raiseVolume 4 >> return ())

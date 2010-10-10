@@ -62,7 +62,7 @@ CDDBPROTO=6
 # Currently this affects the default location of the binary, the variable
 # to pick encoder command-line options from, and where the options are
 # given.
-#MP3ENCODERSYNTAX=default
+MP3ENCODERSYNTAX=lame
 #OGGENCODERSYNTAX=default
 #FLACENCODERSYNTAX=default
 #SPEEXENCODERSYNTAX=default
@@ -100,7 +100,7 @@ CDDBPROTO=6
 # Define if you want abcde to be non-interactive.
 # Keep in mind that there is no way to deactivate it right now in the command
 # line, so setting this option makes abcde to be always non-interactive.
-#INTERACTIVE=n
+INTERACTIVE=n
 
 # Specify 'nice'ness of the encoder, the CD reader and the distmp3 proc.
 # This is a relative 'nice'ness (that is, if the parent process is at a
@@ -268,10 +268,10 @@ MAXPROCS=2
 
 # If set to y, enables batch mode normalization, which preserves relative
 # volume differences between tracks of an album. 
-#BATCHNORM=n
+BATCHNORM=n
 
 # Enables nogap encoding when using the 'lame' encoder.
-#NOGAP=y
+NOGAP=y
 
 # Set the playlist file location format. Uses the same variables and format
 # as OUTPUTFORMAT. If the playlist is specified to be in a subdirectory, it

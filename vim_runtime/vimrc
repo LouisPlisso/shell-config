@@ -441,8 +441,8 @@ autocmd BufWrite *.py :call DeleteTrailingWS()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Do :help cope if you are unsure what cope is. It's super useful!
 map <leader>cc :botright cope<cr>
-map <leader>n :cn<cr>
-map <leader>p :cp<cr>
+"map <leader>n :cn<cr>
+"map <leader>p :cp<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -480,13 +480,13 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 " => Spell checking
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
+"map <leader>ss :setlocal spell!<cr>
 
 "Shortcuts using <leader>
-map <leader>sn ]s
-map <leader>sp [s
-map <leader>sa zg
-map <leader>s? z=
+"map <leader>sn ]s
+"map <leader>sp [s
+"map <leader>s+ zg
+"map <leader>sa z=
 
 
 """"""""""""""""""""""""""""""

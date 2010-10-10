@@ -1,16 +1,20 @@
+revoir scripts d'extract session duration pour montrer qqch de cette analyse :phd @computation @analyse @done
 voir loss rates ref data sur le web + http_stream si on est + cohérent avec les autres traces :phd @computation @analyse @done
-inclure les nouveaux graphes RTT data depuis rapport/http_stats :phd @analyse calculer les RTT data sans filtre voir si il y a des trucs + intéressants sur les RTTs
-demander à Gvb pour les loss rates up en FTTH :phd @social
-comparer avec nouveaux loss rates dipcp2 :phd @analyse
-explain bad loss rate for february with 1e4 volume accumulation with big losses :phd @computation @analyse
-vérifier volume down YT-EU sur trace ADSL 2008: pkoi volume si important? :phd @computation
-processer fichiers Thierry Houdoin :phd @computation filtrer sur les horaires de full capture et chercher qq match avec connexions étudiées (surtout pour comparer les loss rates)
+inclure les nouveaux graphes RTT data depuis rapport/http_stats :phd @analyse calculer les RTT data sans filtre voir si il y a des trucs + intéressants sur les RTTs @done
+demander à Gvb pour les loss rates up en FTTH :phd @social @done
+comparer avec nouveaux loss rates dipcp2 :phd @analyse @done
+explain bad loss rate for february with 1e4 volume accumulation with big losses :phd @computation @analyse @done
+vérifier volume down YT-EU sur trace ADSL 2008: pkoi volume si important? :phd @computation @done
+processer fichiers Thierry Houdoin :phd @computation filtrer sur les horaires de full capture et chercher qq match avec connexions étudiées (surtout pour comparer les loss rates) @done
+compute sessions with cnx_stream indics :phd @computation @analyse ok mettre dans rapport @done
+mettre nouvelle visualisation sessions + faire sur tous les flux :phd @computation @analyse commenter @done
+voir les camembert sur les top AS avec résol name mickey :phd @computation @analyse @done
 launch streaming_tools.add_as_dipcp sur les new RTTs :phd @computation @done
 commenter white :phd @analyse @done
-tracer cdf mean rate / encoding rate :phd @computation ou faire un pourcentage de >1 vs <1
-cdf flow sizes a) for flows with encoding rate > network rate b) for flows with encoding rate < network rate :phd @computation
-plot 20s line for duration cdfs :phd @computation
-calculer les rtt par tstat sur les captures :phd voir aussi RST flag @computation
+tracer cdf mean rate / encoding rate :phd @computation ou faire un pourcentage de >1 vs <1 ok mettre dans rapport check @done
+cdf flow sizes a) for flows with encoding rate > network rate b) for flows with encoding rate < network rate :phd @computation @done
+plot 20s line for duration cdfs :phd @computation @done
+calculer les rtt par tstat sur les captures :phd voir aussi RST flag @computation voir aussi les pertes ok processer
 demander à Marcin comment lancer tstat sur de grosses captures @computation @social :phd @done
 imprimer expert python :perso @done
 enlever kipi-plugins :perso @easy @done
@@ -24,8 +28,8 @@ calculer correctement l'agrégation des sessions :phd voir agenda 5 juin filtrer
 refaire indic du nb de videos par user utiliser le pickle sessions et compter les nb de thp :phd @computation @done
 comparer avec la méthode directe sur les nouveaux streaming quality :phd @computation @done
 voir extraction flux bizarre :phd @analyse @done
+print artificial_intelligence_modern :FT :perso @computation for bqn machine learning project @done
 faire 2 branche (DPI ou non-DPI) sur le state machine diagram :phd @analyse
-revoir scripts d'extract session duration pour montrer qqch de cette analyse :phd @computation @analyse
 calculer les volumes streaming par rapport tout par tranches de x min :phd @computation
 utiliser captures remaining time pour valider interruptions :phd @computation
 consolider l'éval d'interruption streaming :phd @programming faire un test avec de gros débits voir si ça perturbe l'outil
@@ -82,3 +86,4 @@ install lucid sur PC Toshiba :perso @chiant @easy @admin
 faire nouvelles captures mobile pour vérifier les RTTs + pour these :FT :phd @captures
 lire bird algebra of programming :perso
 print learning python :perso
+print and read Introduction_to_Functional_Programming_bird_walter :perso
