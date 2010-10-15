@@ -1,0 +1,193 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.10.5)  15 OCT 2010 22:10
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**testflow.tex
+(./testflow.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, french, basque, loaded.
+
+ This is the testflow.tex (V1.1) test page generator.
+ See the testflow_doc.pdf file for full documentation.
+
+**********************************************************
+* Enter paper type in form of document class option,     *
+* e.g., `a4paper' or `letterpaper' (without the quotes). *
+**********************************************************
+
+\papertype=a4paper
+
+**************************************************************
+* Do you wish to make a second page to test duplex printing? *
+* Enter `yes' or `no' (without the quotes).                  *
+**************************************************************
+
+\makeduplexpage=yes
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 125.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+-- Option summary:
+-- Paper size: a4paper
+-- With duplex test page
+No auxiliary output files.
+
+\c@textheight=\count87
+\c@textwidth=\count88
+\help=\skip43
+\c@help=\count89
+\c@in=\count90
+\c@halfin=\count91
+\c@fifthin=\count92
+\c@tenthin=\count93
+\c@twtin=\count94
+\c@mm=\count95
+\c@tmm=\count96
+\c@frmm=\count97
+\c@fvmm=\count98
+\c@tenmm=\count99
+\c@foo=\count100
+\c@x=\count101
+\c@y=\count102
+No file testflow.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 446.
+LaTeX Font Info:    ... okay on input line 446.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 446.
+LaTeX Font Info:    ... okay on input line 446.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 446.
+LaTeX Font Info:    ... okay on input line 446.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 446.
+LaTeX Font Info:    ... okay on input line 446.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 446.
+LaTeX Font Info:    ... okay on input line 446.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 446.
+LaTeX Font Info:    ... okay on input line 446.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 446.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <24.88> on input line 451.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <20.74> on input line 451.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 451.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 451.
+
+(/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 456.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 458.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 458.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 461.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 461.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 474.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 474.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 481.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 519.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omlptm.fd
+File: omlptm.fd 
+)
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 519.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 524.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 527.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omspcr.fd
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 527.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 567.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 567.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 569.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 569.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 570.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] ) 
+Here is how much of TeX's memory you used:
+ 567 strings out of 495028
+ 6622 string characters out of 1181229
+ 94345 words of memory out of 3000000
+ 3773 multiletter control sequences out of 15000+50000
+ 38480 words of font info for 87 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 23i,10n,19p,206b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-tex
+live/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmmib10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/latxfont/lasy10.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/latxfont/lasy5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/latxfont/lasy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/lat
+xfont/lasy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/latxfont/
+lasy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lasy9.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lasyb10.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/latxfont/linew10.pfb></usr/share/tex
+mf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/t
+ype1/urw/palatino/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/ut
+mb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share
+/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on testflow.pdf (2 pages, 229227 bytes).
+PDF statistics:
+ 126 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
