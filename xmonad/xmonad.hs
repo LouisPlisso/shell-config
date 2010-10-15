@@ -33,7 +33,7 @@ import Data.Map    (fromList)
 
 import XMonad.Actions.GridSelect
 import Control.Monad
--- import System.Dzen
+import System.Dzen
 
 import XMonad.Actions.CopyWindow
 
@@ -51,6 +51,8 @@ import XMonad.Util.Themes
 import XMonad.Actions.CycleWS
 import XMonad.Util.WorkspaceCompare (getSortByIndex)
 import System.Exit
+
+import Data.String
 
 -- Main pallete
 colLight = "#8a999e"
@@ -74,6 +76,9 @@ myXPConfig = defaultXPConfig {
 }
 
 
+alert :: (Show a) => a -> X ()
+alert' = flip $ XMonad.Util.Dzen.dzen . show
+alert = alert' 500000
 
 -- alert :: (Show (m Double), Monad m) => m Double -> X ()
 -- alert = XMonad.Util.Dzen.dzen . show . return
@@ -95,6 +100,7 @@ myManageHook = composeAll
     [ isFullscreen --> doFullFloat
     , isDialog --> doFloat
     , className =? "Gxmessage"      --> doFloat
+    , className =? "Xmessage"      --> doFloat
     , className =? "Gimp"      --> doFloat
     , className =? "Dia"      --> doFloat
     , className =? "Pidgin"      --> doFloat
@@ -139,7 +145,7 @@ myLayoutHook = avoidStruts (myCode ||| tiled ||| Mirror tiled ||| Grid ||| Full)
                  --
                  magnify = magnifiercz (12%10)
                  -- coding scheme
-                 myCode = FixedColumn 1 30 80 10
+                 myCode = FixedColumn 1 31 80 10
                  -- Define a tab layout
                  -- myTabbed = tabbed shrinkText myTabTheme
                  -- Define a tab theme
@@ -180,9 +186,9 @@ main = do
         , ((mod1Mask, xK_c), spawn "hxsel")
         -- , ((0, xK_F8), pasteSelection)
         -- , ((mod1Mask .|. shiftMask, xK_b), getSelection )
-        , ((shiftMask, xK_F6), lowerVolume 4 >> return ()) -- >>= alert ) 
-        , ((shiftMask, xK_F7), raiseVolume 4 >> return ())
-        , ((shiftMask, xK_F8), toggleMute >> return ())
+        , ((shiftMask, xK_F6), lowerVolume 4 >>= alert ) 
+        , ((shiftMask, xK_F7), raiseVolume 4 >>= alert )
+        , ((shiftMask, xK_F8), toggleMute >>= alert )
         -- , ((mod1Mask, xK_g), goToSelected defaultGSConfig)
         , ((mod1Mask, xK_v), windows copyToAll)
         , ((mod1Mask .|. shiftMask, xK_v), killAllOtherCopies)

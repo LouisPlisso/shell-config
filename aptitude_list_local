@@ -130,7 +130,8 @@ libncursesw5-dev
 splint # hlint
 git-svn
 chm2pdf
-python2.5-chm
+# python2.5
+-chm
 screen
 icedove-l10n-fr
 mplayer
@@ -388,3 +389,5 @@ python-rope
 python-rope
 python-cluster
 vcdimager
+libghc6-directory-dev
+python2.6-unac

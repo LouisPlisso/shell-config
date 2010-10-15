@@ -1,100 +1,100 @@
-||| myCode ,v
-                 myCode' = FixedColumn 1 20 110 10,V
+llncsdoc.sty,v
+forloop,v
+['2010_02_07_FTTH',v
+def get_top_n(datas_agg, nb_top=7, rank='sum', exclude_list=None):    """Return a list of nb_top tuples with each AS and the value and other    values aggregated for each trace    INPUT: a dict of dict indexed by AS and values as tuple (nb, sum)    OUTPUT: a dict of list of (AS, value) including an other aggregator        (max len=nb_top-1)    """    top_n = {}    if rank == 'sum':        field = 1    elif  rank == 'nb':        field = 0    else:        assert False, "Rank function not correct"    for t in datas_agg:        data = [(k, itemgetter(field)(v))                for (k, v) in datas_agg[t].iteritems()]        values = sorted(data, key=itemgetter(1), reverse=True)        for i, v in enumerate(map(itemgetter(0), values[:nb_top])):            # usecase: removing unknown user id            if v in exclude_list:                excluded_value = values.pop(i)                print('excluded: ' + v)                values.append(excluded_value)        top_n[t] = values[:nb_top]        top_n[t].append(('Other', sum(map(itemgetter(1), values[nb_top:]))))    return top_ndef get_top_n_nok(datas, nb_top=7, rank='sum', include_goo=True):    """Return a dict of top n of AS ranked by nb or sum:    INPUT data: a dict indexed by AS and values as tuple (nb, sum)    OUTPUT data: a dict indexed by AS and values as nb (or sum)    Use as:    datas = tools.load_hdf5_data.load_h5_file('flows/hdf5/traces_lzf.h5')    cns_streaming_per_as = tools.streaming_tools.connections_per_as(datas)    top_as = tools.streaming_tools.get_top_n(cns_streaming_per_as)    """    top_as = {}    if rank == 'sum':        field = 1    elif  rank == 'nb':        field = 0    else:        print("Rank function not correct")        return -1    # top_as_global aggregates all volumes on all traces    top_as_global = defaultdict(int)    [setitem(top_as_global, key, top_as_global[key] + value[field])            for trace in datas.values() for key, value in trace.items()]    # list_as_global lists the top n AS in all traces    list_as_global = imap(itemgetter(0), sorted(top_as_global.items(),        key=itemgetter(1), reverse=True)[:nb_top])    if include_goo:        list_as_global = chain(list_as_global, INDEX_VALUES.ALL_AS_GOOGLE)    list_as_global = set(list_as_global)    for trace in datas:        data = datas[trace]#        ranked_data = sorted(data.items(), key=itemgetter(field), reverse=True)        top_as[trace] = dict((key, data.get(key, (0, 0)))                for key in list_as_global)        top_as[trace]['other'] = tuple(sum(values) for values in                izip(*[data[key] for key in data                    if key not in list_as_global]))    return top_as,V
+renn257-12-10-20-00-01.trc Renn257-02-10-18-01-02.trc Renn257-09-30-21-00-02.trc,v
+/home/capture/novlan/cde_dipcp.sh,v
+1:complements.py,v
+clients_per_vol = streaming_tools.connections_per_as(cnx_stream,                             as_field=as_field, key_ext='', agg_field=agg_field,                             already_filtered=True, dir_check=False),v
+def get_hhs(cnx_stream, as_field, agg_field,  nb_hh=100):    "Return a dict of all heavy hitters for all ASes"    clients_per_vol = streaming_tools.connections_per_as(cnx_stream,                             as_field=as_field, key_ext='', agg_field=agg_field,                             already_filtered=True, dir_check=False)    return streaming_tools.get_top_n(clients_per_vol, nb_top=nb_hh,                                      exclude_list=UNKNOWN_ID),V
+'DAILYMOTION',v
+data_hh_as = data_hh.compress(                [x['RemAS'] in map(lambda x: 'AS' + str(x),                               INDEX_VALUES.__getattribute__('AS_' + as_name))                 for x in data_hh]),v
+cnx_stream = dict([(f.split(file_name_start)[1].split('.npy')[0],                        np.load(os.sep.join((flows_dir, f))))                       for f in os.listdir(flows_dir)                       if f.startswith(file_name_start)]),v
++,v
+cnx_stream = dict([(f.split(file_name_start)[1].split('.npy')[0],                        np.load(flows_dir + f))                       for f in os.listdir(flows_dir)                       if f.startswith(file_name_start)]),v
+file_name_start='cnx_stream_',v
+flows_dir='flows/links/cnx_stream',v
+'flows/links/cnx_stream/',v
+cnx_stream = dict([(f.split(file_name_start)[1].split('.npy')[0],                        np.load('flows/links/cnx_stream/' + f))                       for f in os.listdir(flows_dir)                       if f.startswith(file_name_start)]),v
+renn257-12-10-20-00-01.trc,v
+leila,v
+'2010_02_07_ADSL_R_DAILYMOTION_full',v
+renn257-12-10-20-00-01_trc.dipinfos,v
+4:latex_directory.py,v
  ,v
-myCode' |||,v
-                 -- mySpiral = spiral (4/3),V
-,V
--- Define a tab thememyTabTheme = (theme smallClean) { activeColor = colLight                                , inactiveColor = colDark                                , activeBorderColor = colVeryDark                                , inactiveBorderColor = colVeryDark                                , activeTextColor = colTextLight                                , inactiveTextColor = colTextDark                                , decoHeight = 16},V
-,V
+",v
+08/10/2010 	PRELEVEMENT DE ORANGE FRANCE S010409621965786047 50 ) 0104096219 REF : 1149281000876096 	-12,60 	-82,6507/10/2010 	CHEQUE N°0478045	-150,00 	-983,9407/10/2010 	VIREMENT DE LA MUTUELLE GENERALEMG SANTE006 PLISSONNEAU L. 	60,50 	396,8506/10/2010 	PRELEVEMENT DE CREDIT FONCIERECH CREDIT 1535500 DATE 20101006 43199PEX153550000026000000000P03 REF : 1109279000354853 	-381,94 	-2 505,3606/10/2010 	PRELEVEMENT DE NOVALIS PREVOYA*NOV PRVDIM ECH 05.10.2010 0 REF : 1109279000314767 	-57,80 	-379,1406/10/2010 	VIREMENT DE CAF DES ALPES MARITICPT N°40031 00001 0000165710U @P#1225985QPLISSONNEAU 092010ME 1225985Q 	441,40 	2 895,39,v
+-12,v
+520,v
+le + profond ,v
+active_time_new/latex_dir_active_time_new.pdf,v
+exclude_filename = 'latex_dir',v
+pattern = re.compile(r'(?!%s)\w+\.pdf' % exclude_filename),v
+top100_per_as_volume_act_time_full_th_1e+06_600_2009_11_26_FTTH_lin.pdf,v
+Time,v
+Renn257-02-10-18-01-02_trc_gz_MARKED10-15-15-03-28_trc_MARKED10-15-15-05-26.trc,v
+top100_per_as_average_bit-rate_act_time_full_th_1e+06_60_2009_11_26_FTTH_loglog.pdf,v
+ session,v
 ),v
+(gap %d),v
+,,v
+                           + (('session threshold: %g' % large_th)                              if large_th else ''),V
+top100_per_as_average_bit-rate_act_time_full_th_1e+06_60_2009_12_14_FTTHloglog.pdf,v
+top100_per_as_average_bit-rate_act_time_full_th_1e+06_60_2009_12_14_FTTHlin.pdf,v
 (,v
-layoutHints ,v
--- Define a tab layoutmyTabbed = tabbed shrinkText myTabTheme-- mySpiral = spiral (4/3),V
-8,v
-                 myCode = FixedColumn 1 20 80 10,V
-||| myTabbed ,v
-||| myCode,v
-limitWindows 3 $  ,v
-magnifiercz' 1.4 $,v
-FixedColumn,v
-import XMonad.Layout.FixedColumn,V
-import XMonad.Layout.FixedColumn,v
-Often,v
-#,v
-myCode = limitWindows 3 $ magnifiercz' 1.4 $ FixedColumn 1 20 80 10,v
-('Rennes_out_I',): ,v
-*,v
-x,v
-[3],v
+r,v
 t,v
 s,v
-i,v
-l,v
-(1, 1, 1, (1-color_alpha)),v
-_bar,v
-alpha,v
-list(color_converter.to_rgba(,v
-ColorConverter,v
-            alpha_color = list(ColorConverter.to_rgba(cur_color))            alpha_color[3] = cur_alpha            alpha_bars.append((color_nb, alpha_color)),V
-cur_alpha,v
-    color_converter = matplotlib.colors.ColorConverter(),V
-.,v
-            alpha_bars.append((color_nb, cur_alpha)),V
-e,v
-n,v
-r,v
-o,v
-c,v
-1,v
-+,v
-        bottom = 0        colors=cycle(('k', 'g'))        for (color_nb, color_alpha) in alpha_bars:            # 10 is hardcoded in dendrogram            height = 10 * color_nb            linewidth = 8            lines = [[(0, bottom), (0, bottom + height)]]            print(lines)            # use of rgba color because LineCollection do not cope well with            # alpha otherwise            hide_line = matplotlib.collections.LineCollection(lines, linewidth,                                                          color=colors.next())#(1, 1, 1, .2))            ax1.add_collection(hide_line)            bottom += height,v
+x[1] > large_th,v
+top100_per_as_volume_act_time_full_th_1000000.0_60_2009_11_26_FTTHloglog.pdf,v
+data.compress(,v
+data.compress([x[1,v
+                save_file = '_'.join((prefix, indic.replace(' ', '_').lower(),                                      'act_time', str(gap), 'logx', trace)),V
+'lin', ,v
 ',v
-k,v
-,,v
-0,v
-                    color='k', alpha=.5),V
-            linewidth = 8,V
-matplotlib.collections.,v
-ax1.bar,v
-ax = f.add_subplot(111)lc = LineCollection(lines,10,color='g', alpha=.2)ax.add_collection(colors_to_collections['g'])ax.add_collection(lc)f.show(),v
-(1 - color_alpha),v
-color,v
-color_nb,v
-Hierarchi,v
-10 * color_nb,v
-bar,v
-bottom,v
-max,v
-bottom, ,v
-colors,v
-my_dendro(stats[0], tot_vol=tot_vol, second=False,                  out_file='cluster_%s_50hh' % in_file),V
-2:user_prof.py,v
-my_dendro(stats[0], tot_vol=tot_vol, second=False,                  out_file='cluster_%s_50hh' % in_file),v
-stats, tot_vol = load_files('.'.join((in_file, '100hh')), in_file,                                    separate=50),v
-        alpha_bars.append((0, bottom + .125 * step, 100 * client_volume / tot_vol,                           'w', 1 - cur_alpha, cur_hatch)),V
-10, ,v
-[0],v
-hatch=,v
-alpha=,v
-color=,v
-p,v
-7,v
-=,v
-h,v
-g,v
-bar_colors[i],v
-bottom + .125 * step, 100 * client_volume / tot_vol,                 height=.7 * step, color=bar_colors[i],                 alpha=cur_alpha, hatch=cur_hatch),v
-    # for correct alpha: take colors in correct order and draw single line    # instead of many small lines...,V
-].get_color(),v
-s_to_collections[,v
+1e6,v
+False,v
+ec,v
+colors.next(),v
+, color=cur_color,v
+olors.next(),v
+ % gap,v
+tools.complements.plot_full_active_time_as(top100),v
+top100 = tools.complements.compute_active_time_per_as(extra_data=True),v
+top100_per_as_volume_act_time_full_600_lin_2009_11_26_ADSL.pdf,v
+back-matter.,v
+http://springerlink.metapress.com,v
+#,v
+DownloadError:,v
+Benjamin Johnson,v
+video silverlight,v
+1:vimrc,v
+E,v
+"Buffers",v
+EasyGrep_OperationModes,v
+g:,v
+g:EasyGrepMode,v
+Easy,v
+TemporaryFile,v
+EasyGrep,v
+.name,v
+tmp_dir = os.sep.join((os.getcwd(), 'active_time')),v
+TemporaryFile(prefix='tmp_session_file', suffix='.txt',                       dir=tmp_dir) ,v
+from tempfile import TemporaryFile,v
+from tempfile import TemporaryFile,V
+sys.stderr, ,v
+>> ,v
+>> sys.stderr, "no data to plot",v
+                        extract_sessions_single_hh_as(sessions_hh_as),V
+ open('rapport/table_stats_compl_hh.tex', 'w'),v
+>>,v
+open('rapport/table_stats_compl.tex', 'w'),v
+' '.join((,v
 \,v
- if color != 'k' else '.5',v
-            , alpha=alpha_gen.next()),V
-        tmp_color = colors_to_collections[color].get_color()        tmp_color[0][3] = alpha_gen.next(),V
-#        tmp_color = colors_to_collections[color].get_color()#        tmp_color[0][3] = alpha_gen.next(),V
-colors_to_collections, tmp_colors = plot_and_get_colors(Z['color_list'],                                                    Z['icoord'], Z['dcoord']),v
-my_dendro(stats[1], tot_vol=tot_vol, second=True,                  out_file='cluster_%s_2nd_50hh' % in_file),v
-stats, tot_vol = load_files('.'.join((in_file, '100hh')), in_file,                                    separate=50),v
-#    new_xlines = {},V
->> out_file, ,v
-out_file, ,v
+,V
+str(gap), ,v
+top100_per_as_average_bit-rate_act_time_full_600_loglog_2009_11_26_FTTH.pdf,v
+indic,v
+ gap,v
+[,v
+rm /etc/resolv.conf,V
