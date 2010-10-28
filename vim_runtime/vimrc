@@ -218,7 +218,7 @@ vnoremap <silent> # :call VisualSearch('b')<CR>
 
 " When you press gv you vimgrep after the selected text
 vnoremap <silent> gv :call VisualSearch('gv')<CR>
-map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
+"map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
 
 
 function! CmdLine(str)
@@ -307,15 +307,15 @@ endfunc
 " => Moving around, tabs and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Map space to / (search) and c-space to ? (backgwards search)
-map <space> /
-map <S-space> ?
-map <silent> <leader><cr> :noh<cr>
+" map <space> /
+" map <S-space> ?
+" map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move btw. windows
-nnoremap <C-j> <C-W>j
-nnoremap <C-k> <C-W>k
-nnoremap <C-h> <C-W>h
-nnoremap <C-l> <C-W>l
+" nnoremap <C-j> <C-W>j
+" nnoremap <C-k> <C-W>k
+" nnoremap <C-h> <C-W>h
+" nnoremap <C-l> <C-W>l
 
 " Close the current buffer
 map <leader>bd :Bclose<cr>

@@ -4,6 +4,7 @@ import XMonad.Hooks.DynamicLog
 import XMonad.Layout.Tabbed
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers (isFullscreen,doFullFloat,isDialog)
+import XMonad.Hooks.UrgencyHook
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
@@ -37,6 +38,7 @@ import System.Dzen
 
 import XMonad.Actions.CopyWindow
 
+
 -- Prompts
 import XMonad.Prompt
 import XMonad.Prompt.DirExec
@@ -53,6 +55,11 @@ import XMonad.Util.WorkspaceCompare (getSortByIndex)
 import System.Exit
 
 import Data.String
+
+import XMonad.Actions.UpdatePointer
+-- mouse follows focused window
+-- logHook = updatePointer (Relative 0.5 0.5)
+-- logHook = dynamicLog >> updatePointer (Relative 1 1)
 
 -- Main pallete
 colLight = "#8a999e"
@@ -132,7 +139,7 @@ ffKeys conf@(XConfig {modMask = modm}) = M.fromList $
 
 
 -- Circle ||| ||| magnify Grid 
-myLayoutHook = avoidStruts (myCode ||| tiled ||| Mirror tiled ||| Grid ||| Full)
+myLayoutHook = avoidStruts (layoutHints (myCode) ||| tiled ||| Mirror tiled ||| Grid ||| Full)
             where 
                  -- default tiling algorithm partitions the screen into two panes
                  tiled   = ResizableTall nmaster delta ratio []
@@ -162,17 +169,21 @@ myLayoutHook = avoidStruts (myCode ||| tiled ||| Mirror tiled ||| Grid ||| Full)
 
 main = do
     xmproc <- spawnPipe "xmobar"
-    xmonad $ ffConfig
+    xmonad $ withUrgencyHook NoUrgencyHook $ ffConfig
         { manageHook = manageDocks <+> myManageHook 
             <+> manageHook defaultConfig
             -- make sure to include myManageHook definition from above
         , layoutHook = myLayoutHook
         -- avoidStruts  $  layoutHook defaultConfig
 --        , XMonad.focusFollowsMouse  = False
-        , logHook = dynamicLogWithPP $ xmobarPP
+        , logHook = (dynamicLogWithPP $ xmobarPP
             { ppOutput = hPutStrLn xmproc
-            , ppTitle = xmobarColor "green" "" . shorten 50
-            }
+            , ppTitle = xmobarColor "green" "" . shorten 80
+            , ppUrgent = xmobarColor "yellow" "red" . xmobarStrip
+            , ppLayout = xmobarColor "DarkOrange" "" . wrap "|" "|" . take 4
+            -- , ppLayout = wrap "|" "" . xmobarColor "DarkOrange" "" . wrap "" ": "
+            , ppSep = ""
+            }) >> updatePointer (Relative 0.5 0.8)
         , workspaces         = ["1:Web", "2:Term", "3:Editor", "4", "5", "6", "7", "8", "9:Todo", "10:Mail"]
         , terminal           = "urxvtc"
         } `additionalKeys`
@@ -207,6 +218,10 @@ main = do
         , ((mod1Mask, xK_y), prevWS)
         , ((mod1Mask, xK_Left), prevWS)
         -- , ((mod1Mask .|. controlMask, xK_f), spawn "xdotool key alt+f")
+        -- focus on most recently urgent window
+        , ((mod1Mask, xK_BackSpace), focusUrgent)
+        , ((mod1Mask .|. shiftMask, xK_BackSpace), clearUrgents)
+        -- , ((mod1Mask, xK_a), sendMessage NextLayout >>= alert )
         ]
         where shiftTo' dir t = findWorkspace getSortByIndex dir t 1 >>= windows . liftM2 (.) W.view W.shift
 

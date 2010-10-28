@@ -67,11 +67,21 @@ export GTK_IM_MODULE
 alias burnit='flac -d *.flac && cdrdao write cd.toc && rm *.wav'
 
 # super man
-function superman() {/usr/bin/man "$@" || w3m -dump http://google.com/search\?q="$@"\&btnI | less}
+function superman() { 
+    /usr/bin/man "$@" || w3m -dump http://google.com/search\?q="$@"\&btnI | less 
+}
 
 # Créer un répertoire et l'ouvrir :
-function mcd() { mkdir "$@"; cd "$@" }
+function mcd() { 
+    mkdir "$@"
+    cd "$@" 
+}
 #alias mcd='mkdir \!*; cd \!*'
+
+# recupere la sortie std sur le buffer x
+function x() {
+    eval "$@" | tee >(xclip)
+}
 
 alias light-m='sudo $MY_CONFIG_DIR/bin/adjust_light.sh'
 alias light-min='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 0'
@@ -158,5 +168,5 @@ alias less='less -e -i -m -R'
 # Pile de Répertoires
 alias p='popd'
 
-
 alias vlcn='vlc -I ncurses'
+

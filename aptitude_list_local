@@ -214,7 +214,7 @@ ghc6/sid
 libghc6-xmonad-contrib-prof
 ghc6/squeeze
 libghc6-xmonad-contrib-prof
-ktouch
+# ktouch
 libhdf5-dev
 libhdf5
 libhdf5-1.8.4
@@ -255,7 +255,7 @@ libghc6-hunit-dev
 libghc6-hunit-doc
 haskell-platform
 haskell-utils
-sun-java6-plugin
+# sun-java6-plugin
 # nscd
 # librrd-dev
 m2vrequantiser
@@ -391,3 +391,8 @@ python-cluster
 vcdimager
 libghc6-directory-dev
 python2.6-unac
+popularity-contest
+tsocks
+ack-grep
+gitk
+gitk

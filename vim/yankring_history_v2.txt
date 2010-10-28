@@ -1,100 +1,100 @@
-llncsdoc.sty,v
-forloop,v
-['2010_02_07_FTTH',v
-def get_top_n(datas_agg, nb_top=7, rank='sum', exclude_list=None):    """Return a list of nb_top tuples with each AS and the value and other    values aggregated for each trace    INPUT: a dict of dict indexed by AS and values as tuple (nb, sum)    OUTPUT: a dict of list of (AS, value) including an other aggregator        (max len=nb_top-1)    """    top_n = {}    if rank == 'sum':        field = 1    elif  rank == 'nb':        field = 0    else:        assert False, "Rank function not correct"    for t in datas_agg:        data = [(k, itemgetter(field)(v))                for (k, v) in datas_agg[t].iteritems()]        values = sorted(data, key=itemgetter(1), reverse=True)        for i, v in enumerate(map(itemgetter(0), values[:nb_top])):            # usecase: removing unknown user id            if v in exclude_list:                excluded_value = values.pop(i)                print('excluded: ' + v)                values.append(excluded_value)        top_n[t] = values[:nb_top]        top_n[t].append(('Other', sum(map(itemgetter(1), values[nb_top:]))))    return top_ndef get_top_n_nok(datas, nb_top=7, rank='sum', include_goo=True):    """Return a dict of top n of AS ranked by nb or sum:    INPUT data: a dict indexed by AS and values as tuple (nb, sum)    OUTPUT data: a dict indexed by AS and values as nb (or sum)    Use as:    datas = tools.load_hdf5_data.load_h5_file('flows/hdf5/traces_lzf.h5')    cns_streaming_per_as = tools.streaming_tools.connections_per_as(datas)    top_as = tools.streaming_tools.get_top_n(cns_streaming_per_as)    """    top_as = {}    if rank == 'sum':        field = 1    elif  rank == 'nb':        field = 0    else:        print("Rank function not correct")        return -1    # top_as_global aggregates all volumes on all traces    top_as_global = defaultdict(int)    [setitem(top_as_global, key, top_as_global[key] + value[field])            for trace in datas.values() for key, value in trace.items()]    # list_as_global lists the top n AS in all traces    list_as_global = imap(itemgetter(0), sorted(top_as_global.items(),        key=itemgetter(1), reverse=True)[:nb_top])    if include_goo:        list_as_global = chain(list_as_global, INDEX_VALUES.ALL_AS_GOOGLE)    list_as_global = set(list_as_global)    for trace in datas:        data = datas[trace]#        ranked_data = sorted(data.items(), key=itemgetter(field), reverse=True)        top_as[trace] = dict((key, data.get(key, (0, 0)))                for key in list_as_global)        top_as[trace]['other'] = tuple(sum(values) for values in                izip(*[data[key] for key in data                    if key not in list_as_global]))    return top_as,V
-renn257-12-10-20-00-01.trc Renn257-02-10-18-01-02.trc Renn257-09-30-21-00-02.trc,v
-/home/capture/novlan/cde_dipcp.sh,v
-1:complements.py,v
-clients_per_vol = streaming_tools.connections_per_as(cnx_stream,                             as_field=as_field, key_ext='', agg_field=agg_field,                             already_filtered=True, dir_check=False),v
-def get_hhs(cnx_stream, as_field, agg_field,  nb_hh=100):    "Return a dict of all heavy hitters for all ASes"    clients_per_vol = streaming_tools.connections_per_as(cnx_stream,                             as_field=as_field, key_ext='', agg_field=agg_field,                             already_filtered=True, dir_check=False)    return streaming_tools.get_top_n(clients_per_vol, nb_top=nb_hh,                                      exclude_list=UNKNOWN_ID),V
-'DAILYMOTION',v
-data_hh_as = data_hh.compress(                [x['RemAS'] in map(lambda x: 'AS' + str(x),                               INDEX_VALUES.__getattribute__('AS_' + as_name))                 for x in data_hh]),v
-cnx_stream = dict([(f.split(file_name_start)[1].split('.npy')[0],                        np.load(os.sep.join((flows_dir, f))))                       for f in os.listdir(flows_dir)                       if f.startswith(file_name_start)]),v
-+,v
-cnx_stream = dict([(f.split(file_name_start)[1].split('.npy')[0],                        np.load(flows_dir + f))                       for f in os.listdir(flows_dir)                       if f.startswith(file_name_start)]),v
-file_name_start='cnx_stream_',v
-flows_dir='flows/links/cnx_stream',v
-'flows/links/cnx_stream/',v
-cnx_stream = dict([(f.split(file_name_start)[1].split('.npy')[0],                        np.load('flows/links/cnx_stream/' + f))                       for f in os.listdir(flows_dir)                       if f.startswith(file_name_start)]),v
-renn257-12-10-20-00-01.trc,v
-leila,v
-'2010_02_07_ADSL_R_DAILYMOTION_full',v
-renn257-12-10-20-00-01_trc.dipinfos,v
-4:latex_directory.py,v
+load_95_FTTHpb_jobinslow_routing_table,v
  ,v
-",v
-08/10/2010 	PRELEVEMENT DE ORANGE FRANCE S010409621965786047 50 ) 0104096219 REF : 1149281000876096 	-12,60 	-82,6507/10/2010 	CHEQUE N°0478045	-150,00 	-983,9407/10/2010 	VIREMENT DE LA MUTUELLE GENERALEMG SANTE006 PLISSONNEAU L. 	60,50 	396,8506/10/2010 	PRELEVEMENT DE CREDIT FONCIERECH CREDIT 1535500 DATE 20101006 43199PEX153550000026000000000P03 REF : 1109279000354853 	-381,94 	-2 505,3606/10/2010 	PRELEVEMENT DE NOVALIS PREVOYA*NOV PRVDIM ECH 05.10.2010 0 REF : 1109279000314767 	-57,80 	-379,1406/10/2010 	VIREMENT DE CAF DES ALPES MARITICPT N°40031 00001 0000165710U @P#1225985QPLISSONNEAU 092010ME 1225985Q 	441,40 	2 895,39,v
--12,v
-520,v
-le + profond ,v
-active_time_new/latex_dir_active_time_new.pdf,v
-exclude_filename = 'latex_dir',v
-pattern = re.compile(r'(?!%s)\w+\.pdf' % exclude_filename),v
-top100_per_as_volume_act_time_full_th_1e+06_600_2009_11_26_FTTH_lin.pdf,v
-Time,v
-Renn257-02-10-18-01-02_trc_gz_MARKED10-15-15-03-28_trc_MARKED10-15-15-05-26.trc,v
-top100_per_as_average_bit-rate_act_time_full_th_1e+06_60_2009_11_26_FTTH_loglog.pdf,v
- session,v
+    #| tee > (xclip),V
+analysesBQNbrevetconfigConfscv_autresDesktopdocDownloadsexchangeHTIicedove_koImageslf5msadopenvpnpersopftstreamingtcptmpuser_profilingworkspace,v
+> xxxxx.xx,v
+analysesBQNbrevetconfigConfscv_autresDesktopdocDownloadsexchangeHTIicedove_koImageslf5msadopenvpnpersopftstreamingtcptmpuser_profilingworkspacexxxxx.xx,v
+| echo ,v
+-,v
+n,v
 ),v
-(gap %d),v
-,,v
-                           + (('session threshold: %g' % large_th)                              if large_th else ''),V
-top100_per_as_average_bit-rate_act_time_full_th_1e+06_60_2009_12_14_FTTHloglog.pdf,v
-top100_per_as_average_bit-rate_act_time_full_th_1e+06_60_2009_12_14_FTTHlin.pdf,v
 (,v
+`,v
+    echo "$@",V
+eval ,v
+helvetica,v
+cdfplot-toolsadd_ASN_geoip.pyadd_ASN_geoip.py~add_ASN_geoip.pycaggregate.pyaggregate.py~aggregate.pycaggregate.pyoauto_latex_flows.pyauto_latex_flows.py~auto_latex_flows.pycbar_plot.pybar_plot.py~bar_plot.pyccdfplot.pycdfplot.py~cdfplot.pyccdfplot.pyocomplements.pycomplements.py~complements.pyccompute_AT.pycompute_AT.pyccount_cnxs.pycreate_hdf5.pyfetch_values.pyfilter_streaming.pyfilter_streaming.py~filter_streaming.pycflow2session.pyflow2session.py~flow2session.pycflow2session.pyoINDEX_VALUES.pyINDEX_VALUES.py~INDEX_VALUES.pycINDEX_VALUES.pyo__init__.py__init__.py~__init__.pyclatex_directory.pylatex_directory.py~launch_streaming.pylaunch_streaming.py~lazy.pylazy.py~load_cnx_stream_file.pyload_cnx_stream_file.py~load_dipcp_file.pyload_dipcp_file.py~load_dipcp_file.pycload_dipcp_file.pyoload_GVB_file.pyload_GVB_file.py~load_GVB_streaming_file.pyload_GVB_streaming_file.py~load_GVB_streaming_file.pycload_hdf5_data.pyload_hdf5_data.pycload_tstat_file.pyload_tstat_file.py~merge_tables.pyold_cdfplot.pyold_create_hdf5_data_compressed.pyold_create_hdf5_data_non_interacif.pyplot_all_figs.py.oldplot_all_figs_streaming_YT_vs_other.pyplot_all_figs_YT_vs_DM.pyplot_all_figs_YT_vs_other.pyplot_all_figs_YT_vs_other.py~plot_all_figs_YT_vs_other.pycplot_all_in_1_fig.py.nokplot_all_stats.pyplot_all_stats.py~plot_all_stats.pycplot_figs.pyplot_new_figs.pyplot_per_client.pyplot_per_client.py~plot_per_client.pycplot_perfs.pyplot_perfs.pycresume_http.pyresume_http.py~sqlite_cmds.txtstreaming_tools.pystreaming_tools.py~streaming_tools.pycstreaming_tools.pyotemplate.pytemplate.py~top_AS.pyxclip,v
+ça ne devrait pas,v
+www.linkedin.com/in/sergerozenblum ,v
+(lambda x: ,v
+None,v
+(-1, 10),v
+            if rescale:                pylab.xlim(rescale(pylab.xlim())),V
+filtered_,v
+_,v
+d,v
+e,v
 r,v
 t,v
-s,v
-x[1] > large_th,v
-top100_per_as_volume_act_time_full_th_1000000.0_60_2009_11_26_FTTHloglog.pdf,v
-data.compress(,v
-data.compress([x[1,v
-                save_file = '_'.join((prefix, indic.replace(' ', '_').lower(),                                      'act_time', str(gap), 'logx', trace)),V
-'lin', ,v
-',v
-1e6,v
-False,v
-ec,v
-colors.next(),v
-, color=cur_color,v
-olors.next(),v
- % gap,v
-tools.complements.plot_full_active_time_as(top100),v
-top100 = tools.complements.compute_active_time_per_as(extra_data=True),v
-top100_per_as_volume_act_time_full_600_lin_2009_11_26_ADSL.pdf,v
-back-matter.,v
-http://springerlink.metapress.com,v
-#,v
-DownloadError:,v
-Benjamin Johnson,v
-video silverlight,v
-1:vimrc,v
-E,v
-"Buffers",v
-EasyGrep_OperationModes,v
-g:,v
-g:EasyGrepMode,v
-Easy,v
-TemporaryFile,v
-EasyGrep,v
-.name,v
-tmp_dir = os.sep.join((os.getcwd(), 'active_time')),v
-TemporaryFile(prefix='tmp_session_file', suffix='.txt',                       dir=tmp_dir) ,v
-from tempfile import TemporaryFile,v
-from tempfile import TemporaryFile,V
-sys.stderr, ,v
->> ,v
->> sys.stderr, "no data to plot",v
-                        extract_sessions_single_hh_as(sessions_hh_as),V
- open('rapport/table_stats_compl_hh.tex', 'w'),v
->>,v
-open('rapport/table_stats_compl.tex', 'w'),v
-' '.join((,v
-\,v
+l,v
+i,v
+f,v
+, concat,v
+,,v
+None),v
+ None,,v
+xmin=,v
+lambda (xmin, xmax):,v
+            if title.startswith('Average bit-rate'):                xmin, _ = pylab.xlim()                pylab.xlim            if title.startswith('Video Rate'):                xmin, _ = pylab.xlim()                pylab.xlim,V
+(xmin=max(xmin, 10)),v
+(1e2, 1e7),v
+(1e-1, 1e4),v
+(1, 1e4),v
+(1e5, 1e9),v
+            if title.startswith('Session Length'):                pylab.xlim(1e2, 1e7),V
+%,v
+8e-3,v
+8e,v
+3,v
+8,v
+kb/s,v
+Average bit-rate,v
+DurationDn,v
+            ((lambda x: 8e-3 * x['ByteDn'] / x['DurationDn']),             'Average bit-rate (from flow)', 'in kb/s'),V
+\usepackage{lmodern},V
+filtered_flows = cPickle.load(        open('/home/louis/streaming/filtered_correct_streaming.pickle')),v
+import cPickle,v
+return grades[bisect(breakpoints, total)],v
+lmodern,v
+pslatex,v
+\usepackage{pslatex},V
+sf,v
+\urlfont{ttfamily},V
+\usefont{OT1}{phv}{bc}{n},v
+\clearpage,V
 ,V
-str(gap), ,v
-top100_per_as_average_bit-rate_act_time_full_600_loglog_2009_11_26_FTTH.pdf,v
-indic,v
- gap,v
-[,v
-rm /etc/resolv.conf,V
+\begin{rubrique}{Software and Computer Science} \begin{sousrubrique}  \Competence{Programming Languages}  \Descr{highly proficient in Python and scripting languages (shell, awk, sed)  working knowledge of C (libpcap), RegExps and functional programming (Haskell)  basic knowledge of C++, Perl, Java and assembly language (x86)\smallskip} \end{sousrubrique} \begin{sousrubrique}  \Competence{Versionning}  \Descr{professional usage of Subversion and Git} \end{sousrubrique} \begin{sousrubrique}  \Competence{Databases}  \Descr{working knowledge of SQLite, MySQL and PostGreSQL\smallskip} \end{sousrubrique} \begin{sousrubrique}  \Competence{Operating Systems}  \Descr{GNU/Linux (administration of operational IP probes and servers, tuning of Linux TCP stack), embedded environments on Linux and VxWorks (low level API design)\smallskip} \end{sousrubrique} \begin{sousrubrique}  \Competence{Environments}  \Descr{Vim (advanced usage and scripting), basic knowledge of Emacs and Eclipse\smallskip} \end{sousrubrique} \begin{sousrubrique}  \Competence{Web Publishing}  \Descr{basic knowledge of CGI and PHP scripts, HTML and XML\smallskip}  \end{sousrubrique} \begin{sousrubrique}  \Competence{Scientific and Other Software}  \Descr{statistical calculus (Design of statistical and networking tools with SciPy, basic usage of R and Matlab), UML and communication modeling (SDL), Network Simulation (NS2 and 3) and Emulation (NetEm, Dummynet), \LaTeX}  \end{sousrubrique}\end{rubrique},v
+\phantom{Pj,v
+\medskip,V
+%\smallskip,V
+u,v
+tabularx,v
+\end{tabularx},V
+, CaML,v
+%description},v
+ %\clearpage,V
+  %\item``Algebraic Topology and Distributed Systems'', Distributed Programming Lab, \url{http://lpdwww.epfl.ch}, \emph{EPFL project} 2002.,V
+  %Mathematics Department, \textsc{IIT, Delhi}, \emph{Diploma project} 2002--2003.,V
+  %``A Treatise on Cauchy-Regular Functions'', %under the guidance of Dr. Kundu ,V
+  %\Apport{%Research work of 6 months entitled ,V
+  %\item[],V
+  %\begin{itemize}%description},V
+  %\end{itemize},V
+ %\end{tabularx} %\begin{tabularx}{\linewidth}{p{\largeurcolonne}X},V
+ %\begin{rubrique}{},V
+%\clearpage,V
+ %\end{multicols} %\end{minipage},V
+  %\item[{\emph{Bangla:}}]basic knowledge.,V
+  %\item[{\emph{Hindi:}}]fairly spoken and read.,V
+  %\end{tabularx}  %\end{minipage}  %\hfill  %\begin{minipage}{0.5\linewidth}  %\begin{tabularx}{\linewidth}{p{\largeurcolonne}X},V
+  %\item[{\emph{German:}}]fluent.%very good written and spoken knowledge.,V
+  %\item[{\emph{English:}}]fluent. %(Supélec and EPFL english tests).,V
+  %\begin{multicols}{2}[]  %\begin{description}  %\item[{\emph{French:}}]mother tongue.,V
+%\medskip%\smallskip%\begin{minipage}{0.5\linewidth},V
+   %\item [,V
+  %\item [,V
+ %%\item [,V
+ % \end{itemize},V
+     %  \item[-] ,V
+     %  \item[],V
+     % \begin{itemize},V
