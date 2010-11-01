@@ -1,0 +1,34 @@
+\documentclass[12pt]{lettre}
+\usepackage[utf8]{inputenc}
+% Si l'impression est de mauvaise qualité, utiliser le package linux 'lmodern'.
+% Attention, cela donne parfois une page blanche (fonts manquantes)
+%\usepackage{lmodern}
+\usepackage[frenchb]{babel}
+\begin{document}
+% Destinataire
+\begin{letter}{Nom destinataire\\Adresse destinataire}
+%\def\concname{\bf Objet :~} % On redéfinit ici la commande 'objet'
+\conc{Objet de la lettre}
+%\Nref{Références de la lettre, de votre point de vue}
+%\Vref{Références de la lettre, du point de vue de votre interlocuteur} 
+% Expéditeur
+\name{Louis Plissonneau}
+\address{Louis Plissonneau\\
+Bat. B', Les Allées du Prince\\
+260, chemin des Combes\\
+06600 Antibes}
+\lieu{Antibes}
+\telephone{+33 (0)6~33~77~78~85}
+\email{louis.plissonneau@gmail.com}
+\nofax
+\signature{Louis Plissonneau}
+%\date{hier}
+% Lettre
+\opening{Madame, Monsieur,}
+  Corps du texte
+\closing{Je vous prie d'agréer,
+Madame, Monsieur,
+mes salutations distinguées.}
+ 
+\end{letter}
+\end{document}
