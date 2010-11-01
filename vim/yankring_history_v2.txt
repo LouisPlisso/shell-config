@@ -1,100 +1,100 @@
-load_95_FTTHpb_jobinslow_routing_table,v
- ,v
-    #| tee > (xclip),V
-analysesBQNbrevetconfigConfscv_autresDesktopdocDownloadsexchangeHTIicedove_koImageslf5msadopenvpnpersopftstreamingtcptmpuser_profilingworkspace,v
-> xxxxx.xx,v
-analysesBQNbrevetconfigConfscv_autresDesktopdocDownloadsexchangeHTIicedove_koImageslf5msadopenvpnpersopftstreamingtcptmpuser_profilingworkspacexxxxx.xx,v
-| echo ,v
--,v
-n,v
-),v
-(,v
-`,v
-    echo "$@",V
-eval ,v
-helvetica,v
-cdfplot-toolsadd_ASN_geoip.pyadd_ASN_geoip.py~add_ASN_geoip.pycaggregate.pyaggregate.py~aggregate.pycaggregate.pyoauto_latex_flows.pyauto_latex_flows.py~auto_latex_flows.pycbar_plot.pybar_plot.py~bar_plot.pyccdfplot.pycdfplot.py~cdfplot.pyccdfplot.pyocomplements.pycomplements.py~complements.pyccompute_AT.pycompute_AT.pyccount_cnxs.pycreate_hdf5.pyfetch_values.pyfilter_streaming.pyfilter_streaming.py~filter_streaming.pycflow2session.pyflow2session.py~flow2session.pycflow2session.pyoINDEX_VALUES.pyINDEX_VALUES.py~INDEX_VALUES.pycINDEX_VALUES.pyo__init__.py__init__.py~__init__.pyclatex_directory.pylatex_directory.py~launch_streaming.pylaunch_streaming.py~lazy.pylazy.py~load_cnx_stream_file.pyload_cnx_stream_file.py~load_dipcp_file.pyload_dipcp_file.py~load_dipcp_file.pycload_dipcp_file.pyoload_GVB_file.pyload_GVB_file.py~load_GVB_streaming_file.pyload_GVB_streaming_file.py~load_GVB_streaming_file.pycload_hdf5_data.pyload_hdf5_data.pycload_tstat_file.pyload_tstat_file.py~merge_tables.pyold_cdfplot.pyold_create_hdf5_data_compressed.pyold_create_hdf5_data_non_interacif.pyplot_all_figs.py.oldplot_all_figs_streaming_YT_vs_other.pyplot_all_figs_YT_vs_DM.pyplot_all_figs_YT_vs_other.pyplot_all_figs_YT_vs_other.py~plot_all_figs_YT_vs_other.pycplot_all_in_1_fig.py.nokplot_all_stats.pyplot_all_stats.py~plot_all_stats.pycplot_figs.pyplot_new_figs.pyplot_per_client.pyplot_per_client.py~plot_per_client.pycplot_perfs.pyplot_perfs.pycresume_http.pyresume_http.py~sqlite_cmds.txtstreaming_tools.pystreaming_tools.py~streaming_tools.pycstreaming_tools.pyotemplate.pytemplate.py~top_AS.pyxclip,v
-ça ne devrait pas,v
-www.linkedin.com/in/sergerozenblum ,v
-(lambda x: ,v
-None,v
-(-1, 10),v
-            if rescale:                pylab.xlim(rescale(pylab.xlim())),V
-filtered_,v
-_,v
-d,v
-e,v
-r,v
-t,v
-l,v
-i,v
-f,v
-, concat,v
-,,v
-None),v
- None,,v
-xmin=,v
-lambda (xmin, xmax):,v
-            if title.startswith('Average bit-rate'):                xmin, _ = pylab.xlim()                pylab.xlim            if title.startswith('Video Rate'):                xmin, _ = pylab.xlim()                pylab.xlim,V
-(xmin=max(xmin, 10)),v
-(1e2, 1e7),v
-(1e-1, 1e4),v
-(1, 1e4),v
-(1e5, 1e9),v
-            if title.startswith('Session Length'):                pylab.xlim(1e2, 1e7),V
-%,v
-8e-3,v
-8e,v
-3,v
-8,v
-kb/s,v
-Average bit-rate,v
-DurationDn,v
-            ((lambda x: 8e-3 * x['ByteDn'] / x['DurationDn']),             'Average bit-rate (from flow)', 'in kb/s'),V
-\usepackage{lmodern},V
-filtered_flows = cPickle.load(        open('/home/louis/streaming/filtered_correct_streaming.pickle')),v
-import cPickle,v
-return grades[bisect(breakpoints, total)],v
-lmodern,v
-pslatex,v
-\usepackage{pslatex},V
-sf,v
-\urlfont{ttfamily},V
-\usefont{OT1}{phv}{bc}{n},v
-\clearpage,V
+Bat. B$^\prime$, Les Allées du Prince\\,v
+Bat. B', Les Allées du Prince\\,V
 ,V
-\begin{rubrique}{Software and Computer Science} \begin{sousrubrique}  \Competence{Programming Languages}  \Descr{highly proficient in Python and scripting languages (shell, awk, sed)  working knowledge of C (libpcap), RegExps and functional programming (Haskell)  basic knowledge of C++, Perl, Java and assembly language (x86)\smallskip} \end{sousrubrique} \begin{sousrubrique}  \Competence{Versionning}  \Descr{professional usage of Subversion and Git} \end{sousrubrique} \begin{sousrubrique}  \Competence{Databases}  \Descr{working knowledge of SQLite, MySQL and PostGreSQL\smallskip} \end{sousrubrique} \begin{sousrubrique}  \Competence{Operating Systems}  \Descr{GNU/Linux (administration of operational IP probes and servers, tuning of Linux TCP stack), embedded environments on Linux and VxWorks (low level API design)\smallskip} \end{sousrubrique} \begin{sousrubrique}  \Competence{Environments}  \Descr{Vim (advanced usage and scripting), basic knowledge of Emacs and Eclipse\smallskip} \end{sousrubrique} \begin{sousrubrique}  \Competence{Web Publishing}  \Descr{basic knowledge of CGI and PHP scripts, HTML and XML\smallskip}  \end{sousrubrique} \begin{sousrubrique}  \Competence{Scientific and Other Software}  \Descr{statistical calculus (Design of statistical and networking tools with SciPy, basic usage of R and Matlab), UML and communication modeling (SDL), Network Simulation (NS2 and 3) and Emulation (NetEm, Dummynet), \LaTeX}  \end{sousrubrique}\end{rubrique},v
-\phantom{Pj,v
-\medskip,V
-%\smallskip,V
-u,v
-tabularx,v
-\end{tabularx},V
-, CaML,v
-%description},v
- %\clearpage,V
-  %\item``Algebraic Topology and Distributed Systems'', Distributed Programming Lab, \url{http://lpdwww.epfl.ch}, \emph{EPFL project} 2002.,V
-  %Mathematics Department, \textsc{IIT, Delhi}, \emph{Diploma project} 2002--2003.,V
-  %``A Treatise on Cauchy-Regular Functions'', %under the guidance of Dr. Kundu ,V
-  %\Apport{%Research work of 6 months entitled ,V
-  %\item[],V
-  %\begin{itemize}%description},V
-  %\end{itemize},V
- %\end{tabularx} %\begin{tabularx}{\linewidth}{p{\largeurcolonne}X},V
- %\begin{rubrique}{},V
-%\clearpage,V
- %\end{multicols} %\end{minipage},V
-  %\item[{\emph{Bangla:}}]basic knowledge.,V
-  %\item[{\emph{Hindi:}}]fairly spoken and read.,V
-  %\end{tabularx}  %\end{minipage}  %\hfill  %\begin{minipage}{0.5\linewidth}  %\begin{tabularx}{\linewidth}{p{\largeurcolonne}X},V
-  %\item[{\emph{German:}}]fluent.%very good written and spoken knowledge.,V
-  %\item[{\emph{English:}}]fluent. %(Supélec and EPFL english tests).,V
-  %\begin{multicols}{2}[]  %\begin{description}  %\item[{\emph{French:}}]mother tongue.,V
-%\medskip%\smallskip%\begin{minipage}{0.5\linewidth},V
-   %\item [,V
-  %\item [,V
- %%\item [,V
- % \end{itemize},V
-     %  \item[-] ,V
-     %  \item[],V
-     % \begin{itemize},V
+Bat. B$^\prime$, Les Allées du Prince\\,V
+\,v
+rm{B},v
+text,v
+B,v
+',v
+$,v
+^,v
+6~33~77~78~85,v
+%(même si la%solution réside dans une étanchéisation du seuil de porte-fenêtre de%l'appartement supérieur).%Nous vous rappelons nos références auprès de Nexity:%\begin{itemize} %\item Contrat N° 7606001/1 280363/000  %\item N° sociétaire 560464 V%\end{itemize}    %Et voici vos références internes:%XXX,V
+\telephone{+33 (0)6~33~77~78~85},V
+\telephone{+33 (0)6~33~77~78~85st},V
+Nous so,V
+\date{le 2 novembre 2010},V
+dû,v
+à,v
+stdoastuetd,V
+de,v
+e,v
+\textbf{,v
+Bien évidement,,v
+s,v
+à cause,v
+emph,v
+M.~Flambart,v
+par ,v
+À commencer,v
+e rien,v
+n'a été fait.,V
+XXX,v
+mai,v
+/06/,v
+/05/,v
+un expert:,v
+socitaire,v
+ ,v
+},v
+/,v
+1,v
+7606001/1 ,v
+%,v
+   \nrefname%,V
+h,v
+170mm,v
+small,v
+tiny,v
+11,v
+Saretec: ,v
+Références de la lettre, du point de vue de votre interlocuteur,v
+\email{louis.plissonneau@gmail.com},V
+\textbf{Objet:} ,v
+Objet de la lettre,v
+ ouvrage \\ \\,v
+\textbf{Objet:} Relance demande de prise en charge garantie dommage,v
+\def\concname{\bf Objet :~} % On définit ici la commande 'objet'\conc{Objet de la lettre}%\nref{Références de la lettre, de votre point de vue}%\vref{Références de la lettre, du point de vue de votre interlocuteur} ,V
+% Expéditeur\name{Louis Plissonneau}\address{Louis Plissonneau\\Bat. B', Les Allées du Prince\\260, chemin des Combes\\06600 Antibes}\lieu{Antibes}\telephone{+33 (0)6~33~77~78~85}\nofax\signature{Louis Plissonneau}% Lettre,V
+\def\concname{Objet :~} % On définit ici la commande 'objet'\conc{Objet de la lettre}\nref{Références de la lettre, de votre point de vue}\vref{Références de la lettre, du point de vue de votre interlocuteur} ,v
+\usepackage{fullpage},V
+{Nom destinataire\\Adresse destinataire},v
+{SMABTP MARSEILLE\\300 boulevard Michelet\\13295 MARSEILLE CEDEX 08},v
+\\,v
+\opening{Madame, Monsieur,}  Corps du texte\closing{Je vous prie d'agréer,Madame, Monsieur,mes salutations distinguées.} ,V
+\opening{\textbf{Objet:} Relance demande de prise en charge garantie dommage ouvrage\\Madame, Monsieur,}Suite à notre lettre recommandée du XXX,vous avez mandaté un expert: M. XXX.Après une première visite le XXX ne permettant pas de conclure à cause del'absence de notre voisine.Une deuxième visite a eu lieu le XXX.Lors de cette visite, M. XXX a indiqué qu'une étude approfondie devait êtremenée.Néanmoins  aucune suite n'a été donnée.Cela fait donc plus de XXX mois (depuis le signalement du problème) que rienn'a été fait.Nous avons donc un appartement récent avec un plafond de cuisine à refaire,mais que l'on ne peut réparer car nous attendons l'avis de l'expert.Bien évidement, les fortes pluies du 31 octobre ont à nouveau déclenché desinfiltrations dans le plafond de notre cuisine.La photo ci-jointe vous montrera que ce sera bientôt notre hotte en inox quisera attaquée par les infiltrations.Vous comprendrez bien que ce problème n'a que trop duré et qu'une solutiondoit être apportée dans les plus brefs délais (même si lasolution réside dans une étanchéisation du seuil de porte-fenêtre del'appartement supérieur).Nous vous rappelons nos références auprès de Nexity:\begin{itemize} \item Contrat N° 7606001/1 280363/000  \item N° sociétaire 560464 V\end{itemize}    Et voici vos références internes:XXX\closing{Je vous prie d'agréer,Madame, Monsieur,mes salutations distinguées.} ,V
+stsdt,V
+Corps du texte,V
+\\,V
+\closing{Veuillez agréer Madame, Monsieur, l'expression de mes sentimentsdistingués.}%\vspace{.7cm}%\hfill{}Louis \textsc{Plissonneau}\hspace{.3\textwidth}\end{letter}\end{document},V
+\opening{\textbf{Objet:} Relance demande de prise en charge garantie dommageouvrage\\\\Madame, Monsieur,}Suite à notre lettre recommandée du XXX,vous avez mandaté un expert: M. XXX.Après une première visite le XXX ne permettant pas de conclure à cause del'absence de notre voisine.Une deuxième visite a eu lieu le XXX.Lors de cette visite, M. XXX a indiqué qu'une étude approfondie devait êtremenée.Néanmoins  aucune suite n'a été donnée.Cela fait donc plus de XXX mois (depuis le signalement du problème) que rienn'a été fait.Nous avons donc un appartement récent avec un plafond de cuisine à refaire,mais que l'on ne peut réparer car nous attendons l'avis de l'expert.Bien évidement, les fortes pluies du 31 octobre ont à nouveau déclenché desinfiltrations dans le plafond de notre cuisine.La photo ci-jointe vous montrera que ce sera bientôt notre hotte en inox quisera attaquée par les infiltrations.Vous comprendrez bien que ce problème n'a que trop duré et qu'une solutiondoit être apportée dans les plus brefs délais (même si lasolution réside dans une étanchéisation du seuil de porte-fenêtre del'appartement supérieur).Nous vous rappelons nos références auprès de Nexity:\begin{itemize} \item Contrat N° 7606001/1 280363/000  \item N° sociétaire 560464 V\end{itemize}    Et voici vos références internes:XXX,V
+\location\date{Antibes, le 2 novembre 2010}\begin{letter}{toto}%Madame, Monsieur,},V
+{Nom destinataire\\Adresse destinataire,v
+\documentclass[11pt]{letter} %\usepackage{frenchle}\usepackage[french]{babel}\usepackage[utf8x]{inputenc}\usepackage{fullpage}\begin{document}\name{Louis \textsc{Plissonneau}}\signature{}\address{Louis Plissonneau\\'éBat. B', Les Allées du Prince\\260, chemin des Combes\\06600 Antibes\\tel: 04~92~93~94~53\\port: 06~33~77~78~85},V
+{SMABTP MARSEILLE\\300 boulevard Michelet\\13295 MARSEILLE CEDEX 08\\\\},v
+% Changer utf8 si besoin, par exemple en latin1,V
+%\usepackage[T1]{fontenc},V
+% On utilise le package latex 'lettre', de Denis Mégévand.,V
+Cordialement,,v
+Je vous prie d'agréer,Madame, Monsieur,mes salutations distinguées.,v
+Laurent Jouhet,v
+port: 0,V
+tel: 04~92~93~94~53\\,V
+6 60 51 96 80},v
+6~33~77~78~85},v
+Lyon,v
+{Laurent Jouhet\\138 avenue Thiers\\69006 Lyon},v
+{Louis Plissonneau\\Bat. B', Les Allées du Prince\\260, chemin des Combes\\06600 Antibes\\tel: 04~92~93~94~53\\port: 06~33~77~78~85},v
+aurent Jouhet,v
+\usepackage[utf8x]{inputenc},V
+% On utilise le package latex 'lettre', de Denis Mégévand.\documentclass[12pt]{lettre}% Changer utf8 si besoin, par exemple en latin1\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}% Si l'impression est de mauvaise qualité, utiliser le package linux 'lmodern'.% Attention, cela donne parfois une page blanche (fonts manquantes)%\usepackage{lmodern}\usepackage[frenchb]{babel}\begin{document}% Destinataire\begin{letter}{Nom destinataire\\Adresse destinataire}% Expéditeur\name{Laurent Jouhet}\address{Laurent Jouhet\\138 avenue Thiers\\69006 Lyon}\lieu{Lyon}\telephone{+33 (0)6 60 51 96 80}\nofax\signature{Laurent Jouhet}% Lettre\opening{Madame, Monsieur,}  Corps du texte\closing{Cordialement,} \end{letter}\end{document},v
+french,,v
+\use,V
+étanchéité,v
+pas ,v
+      ,V
+En vous remerciant pour les services que vous nous avez rendus, nous vous prions d’agréer, Madame, nos salutations distinguées.,v
+\closing{En vous remerciant pour les services que vous nous avez rendus, nous vous prions d’agréer, Madame, nos salutations distinguées.},V
+Nous avons le regret de vous informer que vous n’aurez plus la garde de Aloïs, et ce à compter du 2 juillet 2010.  En effet, nous avons obtenu une place en crèche pour notre enfant.Conforménent au contrat de travail instaurant un préavis de un mois, la fin de votre contrat sera effective le 17 juillet 2010. Nous vous fournirons alors une attestation ASSEDIC, un certificat de travail ainsi que votre solde de tout compte.,V
+mob:,v

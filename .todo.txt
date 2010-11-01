@@ -87,3 +87,4 @@ faire nouvelles captures mobile pour vérifier les RTTs + pour these :FT :phd @c
 lire bird algebra of programming :perso
 print learning python :perso
 print and read Introduction_to_Functional_Programming_bird_walter :perso
+ecrire un scipt vi pour lancer des mail, s'inspirer du vim-email et postmail

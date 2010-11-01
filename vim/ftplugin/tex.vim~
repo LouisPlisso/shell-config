@@ -6,5 +6,5 @@ set sw=1
 " all the figure labels. Very useful!
 set iskeyword+=:
 
-TexLet g:Tex_DefaultTargetFormat='pdf'
-TexLet g:Tex_ViewRule_pdf='xpdf'
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_ViewRule_pdf='xpdf'

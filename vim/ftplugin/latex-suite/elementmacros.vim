@@ -111,8 +111,7 @@ endif
 call <SID>Tex_FontFamily("FBF","series")
 call <SID>Tex_FontFamily("FMD","series")
 
-" changed FTT to TTT because of FTTH...
-call <SID>Tex_FontFamily("TTT","family")
+call <SID>Tex_FontFamily("FTT","family")
 call <SID>Tex_FontFamily("FSF","family")
 call <SID>Tex_FontFamily("FRM","family")
 

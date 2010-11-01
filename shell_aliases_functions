@@ -33,7 +33,7 @@ QUICKSNIPS=$MY_CONFIG_DIR/quicksnips/bin
 [ -d $QUICKSNIPS ] && export PATH=$PATH:$QUICKSNIPS
 
 
-# export VIMRUNTIME=${MY_CONFIG_DIR}/vim
+#export VIMRUNTIME=${MY_CONFIG_DIR}/vim
 export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
 
 

@@ -81,3 +81,10 @@ urxvt.transparent:              True
 urxvt.shading:          60
 urxvt.fading: 20
 
+# for bart script
+URxvt.keysym.M-t: perl:mark-and-yank:activate_mark_mode
+URxvt.keysym.M-u: perl:mark-and-yank:activate_mark_url_mode
+URxvt.perl-lib: /home/louis/.urxvt/
+URxvt.perl-ext: mark-and-yank
+URxvt.urlLauncher: firefox
+

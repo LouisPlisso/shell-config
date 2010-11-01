@@ -33,7 +33,7 @@ QUICKSNIPS=$MY_CONFIG_DIR/quicksnips/bin
 [ -d $QUICKSNIPS ] && export PATH=$PATH:$QUICKSNIPS
 
 
-# export VIMRUNTIME=${MY_CONFIG_DIR}/vim
+export VIMRUNTIME=${MY_CONFIG_DIR}/vim
 export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
 
 
@@ -80,7 +80,7 @@ function mcd() {
 
 # recupere la sortie std sur le buffer x
 function x() {
-    eval "$@" | tee |(xclip)
+    eval "$@" | tee >(xclip)
 }
 
 alias light-m='sudo $MY_CONFIG_DIR/bin/adjust_light.sh'

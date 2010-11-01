@@ -5,11 +5,16 @@ autocmd!
 fun! MySys()
    return "$1"
 endfun
-set runtimepath=$MY_CONFIG_DIR/vim,$VIMRUNTIME,$MY_CONFIG_DIR/vim_runtime,$MY_CONFIG_DIR/vim_runtime/after,$VIMRUNTIME
+"set mainruntimepath=$MY_CONFIG_DIR/vim
+set runtimepath=$MY_CONFIG_DIR/vim,$VIMRUNTIME
+
+",$MY_CONFIG_DIR/vim_runtime
+",$MY_CONFIG_DIR/vim_runtime/after
+"helptags $MY_CONFIG_DIR/vim_runtime/doc
 
 source $MY_CONFIG_DIR/vim_runtime/vimrc
-helptags $MY_CONFIG_DIR/vim_runtime/doc
 
 source $MY_CONFIG_DIR/vim/vimrc
 
 imap uu <Esc>
+
