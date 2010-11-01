@@ -188,25 +188,25 @@ set wb
 set swapfile
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set expandtab
-set shiftwidth=4
-set tabstop=4
-set smarttab
-
-set lbr
-set tw=500
-
-set ai "Auto indent
-set si "Smart indet
-set wrap "Wrap lines
-
-map <leader>t2 :setlocal shiftwidth=2<cr>
-map <leader>t4 :setlocal shiftwidth=4<cr>
-map <leader>t8 :setlocal shiftwidth=4<cr>
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => Text, tab and indent related
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"set expandtab
+"set shiftwidth=4
+"set tabstop=4
+"set smarttab
+"
+"set lbr
+"set tw=500
+"
+"set ai "Auto indent
+"set si "Smart indet
+"set wrap "Wrap lines
+"
+"map <leader>t2 :setlocal shiftwidth=2<cr>
+"map <leader>t4 :setlocal shiftwidth=4<cr>
+"map <leader>t8 :setlocal shiftwidth=4<cr>
+"
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
@@ -218,7 +218,7 @@ vnoremap <silent> # :call VisualSearch('b')<CR>
 
 " When you press gv you vimgrep after the selected text
 vnoremap <silent> gv :call VisualSearch('gv')<CR>
-map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
+"map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
 
 
 function! CmdLine(str)
@@ -318,7 +318,7 @@ endfunc
 " nnoremap <C-l> <C-W>l
 
 " Close the current buffer
-map <leader>bd :Bclose<cr>
+"map <leader>bd :Bclose<cr>
 
 " Close all the buffers
 map <leader>ba :1,300 bd!<cr>
@@ -334,28 +334,29 @@ map <leader>ba :1,300 bd!<cr>
 "map <leader>tm :tabmove 
 
 " When pressing <leader>cd switch to the directory of the open buffer
-map <leader>cd :cd %:p:h<cr>
+"map <leader>cd :cd %:p:h<cr>
 
-
-command! Bclose call <SID>BufcloseCloseIt()
-function! <SID>BufcloseCloseIt()
-   let l:currentBufNum = bufnr("%")
-   let l:alternateBufNum = bufnr("#")
-
-   if buflisted(l:alternateBufNum)
-     buffer #
-   else
-     bnext
-   endif
-
-   if bufnr("%") == l:currentBufNum
-     new
-   endif
-
-   if buflisted(l:currentBufNum)
-     execute("bdelete! ".l:currentBufNum)
-   endif
-endfunction
+"
+"command! Bclose call <SID>BufcloseCloseIt()
+"function! <SID>BufcloseCloseIt()
+"   let l:currentBufNum = bufnr("%")
+"   let l:alternateBufNum = bufnr("#")
+"
+"   if buflisted(l:alternateBufNum)
+"     buffer #
+"   else
+"     bnext
+"   endif
+"
+"   if bufnr("%") == l:currentBufNum
+"     new
+"   endif
+"
+"   if buflisted(l:currentBufNum)
+"     execute("bdelete ".l:currentBufNum)
+"   endif
+"endfunction
+"
 
 " Specify the behavior when switching between buffers 
 "try
@@ -465,9 +466,9 @@ let g:bufExplorerShowRelativePath=1
 
 " let g:bufExplorerSortBy = "name"
 
-autocmd BufRead,BufNew :call UMiniBufExplorer
+"autocmd BufRead,BufNew :call UMiniBufExplorer
 
-map <leader>u :TMiniBufExplorer<cr>:TMiniBufExplorer<cr>
+"map <leader>u :TMiniBufExplorer<cr>:TMiniBufExplorer<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -532,11 +533,11 @@ endfunction
 """"""""""""""""""""""""""""""
 " => Fuzzy finder
 """"""""""""""""""""""""""""""
-try
-    call fuf#defineLaunchCommand('FufCWD', 'file', 'fnamemodify(getcwd(), ''%:p:h'')')
-    map <leader>t :FufCWD **/<CR>
-catch
-endtry
+"try
+    ""call fuf#defineLaunchCommand('FufCWD', 'file', 'fnamemodify(getcwd(), ''%:p:h'')')
+    "map <leader>t :FufCWD **/<CR>
+"catch
+"endtry
 
 
 """"""""""""""""""""""""""""""
