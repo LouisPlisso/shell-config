@@ -1,100 +1,100 @@
+#,v
+of ,v
+study,v
+:,v
+if ,v
+gives,v
+*,v
+cq,v
+ ,v
+* many possible indicators,V
+yet,v
+d,v
+directly ,v
+not,v
+shows,v
+l,v
+Conclusion,V
+,V
+   Beware killer rabbits!,V
+DANGER,v
+.. DANGER::   Beware killer rabbits!,v
++----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| Type     | ADSL           | FTTH                        | ADSL       | FTTH       | ADSL       | FTTH            | ADSL       | FTTH       |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| Place    | Montsouris     | Montsouris                  | Montsouris | Montsouris | Rennes     | Montsouris      | Rennes     | Montsouris |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| Comment  | ref. data      | missing Otarie stream. file | --         | --         | --         | afternoon trace | --         | cut trace  |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| date     | **2008**/07/01 | **2008**/07/01              | 2009/11/26 | 2009/11/26 | 2009/12/14 | 2009/12/14      | 2010/02/07 | 2010/02/07 |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| time     | 20h            | 20h                         | 20h        | 20h        | 20h        | **14h**         | 20h        | 20h        |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| duration | 1h (cut)       | 1h                          | 1h20       | 0h38       | 1h         | 0h58            | 1h         | 0h28       |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+,V
+Here is the detail of the traces:,V
+Here is the detail of the packet captures, we study:,V
+Merci beaucoupsinon, est-ce que tu aurais quelque part ,v
+error,v
+ret,v
+    except IOError,e:        print e,V
+_,v
+dict,v
+ ret,v
+interface_dns ,v
+2,v
+dict_,v
+        print "%s file does not exist" % path,V
+),v
+defaultdict(bool)),v
+resolv.conf,v
+.,v
+sys.stderr.flush(),v
+        ,V
+return,v
+        #except Exception, e:,V
+UnpicklingError,v
+                    if not ret.has_key(interface):                        ret[interface] = dict(),V
+, path="/var/lib/dhcp3/dhclient.leases",v
+path="/var/run/resolv.conf",v
+replace(";", "").,v
+, "",v
+, "").,v
+replace,v
+replace(";", ""),v
+"\"", "").,v
+replace(" ", "").replace(";", ""),v
+f,v
+'stnd s, tsdn '.translate(' ,'),v
+f =,v
+    "Update dict with the nameservers from a resolv.conf file",V
+dhclient1,v
+path = "/var/lib/dhcp3/dhclient.leases",v
+dhclient2,v
+path = "/var/run/resolv.conf,v
+   ,V
+",v
+"/var/lib/dhcp3/dhclient.leases",v
+"/var/run/resolv.conf",v
+file,v
+def get_dns_servers_from_dhclient2(ret):    path = "/var/run/resolv.conf"    if not os.path.exists(path):        return    with open(path, "r") as resolv_file:        line = resolv_file.readline()        while len(line) > 0:            line = line[:-1].replace("\t", " ").strip()            while line.find("  ") > -1:                line = line.replace("  ", " ")            token = "nameserver "            interface = "?"            if line.startswith(token):                texts = (line[len(token):].strip().                                replace(" ", "").replace(";", "").split(","))                tab = [x for x in texts                       if len(x.strip()) > 0 and x.find(".") > -1]                for e in tab:                    if not ret.has_key(interface):                        ret[interface] = dict()                    ret[interface][e] = True            line = resolv_file.readline(),V
+import time,V
+    f.close(),V
+        os.rename(pkl_file, dest_pkl),V
+git log -g --grep=,v
+#!/usr/bin/env python,V
+from time import sleepimport cPickleimport osimport sys#from pprint import pprint,V
+#!/usr/bin/env python2.5,V
+/,v
+http://pydns.sourceforge.net/,v
+python2.5-dnspython,v
+Wrapper t,v
+input_file = sys.argv[1]    servers = dict()    dns_servers = get_dns_servers_from_dhclient()    for interface, dd in dns_servers.items():        for add, tmp in dd.items():            servers[add] = True    print "DNS servers: %s"%(" ".join(servers.keys()))    sys.stdout.flush()    pkl_file = sys.argv[2]    if not os.path.exists(pkl_file):        f = open(pkl_file, "w")        f.close()    main(input_file, pkl_file, servers.keys()),V
+    import os, sys,V
+    #from pprint import pprint,V
+,,v
+tmp,v
+        pass,V
+%,v
+(,v
+from __future__ import division, print_function,v
+	input_file = sys.argv[1]	output_dir = sys.argv[2]	base_dir = os.path.abspath(os.path.split(sys.argv[0])[0])	servers = ["8.8.8.8"]#"212.27.40.240","212.27.40.241","8.8.8.8","192.168.1.1","192.168.22.1"]	dns_servers = get_dns_servers_from_dhclient()	for interface,dd in dns_servers.items():		for add, tmp in dd.items():			servers.append(add)	print "DNS servers: %s"%(" ".join(servers))	sys.stdout.flush()	tstamp = time.time()	pkl_file = os.path.join(base_dir,"resolve.%d.pkl"%(tstamp))	f = file(pkl_file,"w")	f.close()	logg_dir = os.path.join(base_dir,"logs")	pkl_name = os.path.split(pkl_file)[1]	log_file = os.path.join(logg_dir,"%s.log"%pkl_name)	if not os.path.exists(logg_dir): os.makedirs(logg_dir)	#cmd = "python %s %s %s &> %s"%(os.path.join(base_dir,"dns_lib.py"),input_file,pkl_file,log_file)	cmd = "python %s %s %s "%(os.path.join(base_dir,"dns_lib.py"),input_file,pkl_file)	print cmd	os.system(cmd)	if os.path.exists(pkl_file):		dest_pkl = os.path.join(output_dir,os.path.split(pkl_file)[1])		if not os.path.exists(output_dir): os.makedirs(output_dir)		os.rename(pkl_file,dest_pkl),V
+    sys.exit(main()),V
+	,v
+	import os,sys,V
+138,29,v
 Bat. B$^\prime$, Les Allées du Prince\\,v
 Bat. B', Les Allées du Prince\\,V
-,V
 Bat. B$^\prime$, Les Allées du Prince\\,V
 \,v
 rm{B},v
 text,v
 B,v
-',v
-$,v
-^,v
-6~33~77~78~85,v
-%(même si la%solution réside dans une étanchéisation du seuil de porte-fenêtre de%l'appartement supérieur).%Nous vous rappelons nos références auprès de Nexity:%\begin{itemize} %\item Contrat N° 7606001/1 280363/000  %\item N° sociétaire 560464 V%\end{itemize}    %Et voici vos références internes:%XXX,V
-\telephone{+33 (0)6~33~77~78~85},V
-\telephone{+33 (0)6~33~77~78~85st},V
-Nous so,V
-\date{le 2 novembre 2010},V
-dû,v
-à,v
-stdoastuetd,V
-de,v
-e,v
-\textbf{,v
-Bien évidement,,v
-s,v
-à cause,v
-emph,v
-M.~Flambart,v
-par ,v
-À commencer,v
-e rien,v
-n'a été fait.,V
-XXX,v
-mai,v
-/06/,v
-/05/,v
-un expert:,v
-socitaire,v
- ,v
-},v
-/,v
-1,v
-7606001/1 ,v
-%,v
-   \nrefname%,V
-h,v
-170mm,v
-small,v
-tiny,v
-11,v
-Saretec: ,v
-Références de la lettre, du point de vue de votre interlocuteur,v
-\email{louis.plissonneau@gmail.com},V
-\textbf{Objet:} ,v
-Objet de la lettre,v
- ouvrage \\ \\,v
-\textbf{Objet:} Relance demande de prise en charge garantie dommage,v
-\def\concname{\bf Objet :~} % On définit ici la commande 'objet'\conc{Objet de la lettre}%\nref{Références de la lettre, de votre point de vue}%\vref{Références de la lettre, du point de vue de votre interlocuteur} ,V
-% Expéditeur\name{Louis Plissonneau}\address{Louis Plissonneau\\Bat. B', Les Allées du Prince\\260, chemin des Combes\\06600 Antibes}\lieu{Antibes}\telephone{+33 (0)6~33~77~78~85}\nofax\signature{Louis Plissonneau}% Lettre,V
-\def\concname{Objet :~} % On définit ici la commande 'objet'\conc{Objet de la lettre}\nref{Références de la lettre, de votre point de vue}\vref{Références de la lettre, du point de vue de votre interlocuteur} ,v
-\usepackage{fullpage},V
-{Nom destinataire\\Adresse destinataire},v
-{SMABTP MARSEILLE\\300 boulevard Michelet\\13295 MARSEILLE CEDEX 08},v
-\\,v
-\opening{Madame, Monsieur,}  Corps du texte\closing{Je vous prie d'agréer,Madame, Monsieur,mes salutations distinguées.} ,V
-\opening{\textbf{Objet:} Relance demande de prise en charge garantie dommage ouvrage\\Madame, Monsieur,}Suite à notre lettre recommandée du XXX,vous avez mandaté un expert: M. XXX.Après une première visite le XXX ne permettant pas de conclure à cause del'absence de notre voisine.Une deuxième visite a eu lieu le XXX.Lors de cette visite, M. XXX a indiqué qu'une étude approfondie devait êtremenée.Néanmoins  aucune suite n'a été donnée.Cela fait donc plus de XXX mois (depuis le signalement du problème) que rienn'a été fait.Nous avons donc un appartement récent avec un plafond de cuisine à refaire,mais que l'on ne peut réparer car nous attendons l'avis de l'expert.Bien évidement, les fortes pluies du 31 octobre ont à nouveau déclenché desinfiltrations dans le plafond de notre cuisine.La photo ci-jointe vous montrera que ce sera bientôt notre hotte en inox quisera attaquée par les infiltrations.Vous comprendrez bien que ce problème n'a que trop duré et qu'une solutiondoit être apportée dans les plus brefs délais (même si lasolution réside dans une étanchéisation du seuil de porte-fenêtre del'appartement supérieur).Nous vous rappelons nos références auprès de Nexity:\begin{itemize} \item Contrat N° 7606001/1 280363/000  \item N° sociétaire 560464 V\end{itemize}    Et voici vos références internes:XXX\closing{Je vous prie d'agréer,Madame, Monsieur,mes salutations distinguées.} ,V
-stsdt,V
-Corps du texte,V
-\\,V
-\closing{Veuillez agréer Madame, Monsieur, l'expression de mes sentimentsdistingués.}%\vspace{.7cm}%\hfill{}Louis \textsc{Plissonneau}\hspace{.3\textwidth}\end{letter}\end{document},V
-\opening{\textbf{Objet:} Relance demande de prise en charge garantie dommageouvrage\\\\Madame, Monsieur,}Suite à notre lettre recommandée du XXX,vous avez mandaté un expert: M. XXX.Après une première visite le XXX ne permettant pas de conclure à cause del'absence de notre voisine.Une deuxième visite a eu lieu le XXX.Lors de cette visite, M. XXX a indiqué qu'une étude approfondie devait êtremenée.Néanmoins  aucune suite n'a été donnée.Cela fait donc plus de XXX mois (depuis le signalement du problème) que rienn'a été fait.Nous avons donc un appartement récent avec un plafond de cuisine à refaire,mais que l'on ne peut réparer car nous attendons l'avis de l'expert.Bien évidement, les fortes pluies du 31 octobre ont à nouveau déclenché desinfiltrations dans le plafond de notre cuisine.La photo ci-jointe vous montrera que ce sera bientôt notre hotte en inox quisera attaquée par les infiltrations.Vous comprendrez bien que ce problème n'a que trop duré et qu'une solutiondoit être apportée dans les plus brefs délais (même si lasolution réside dans une étanchéisation du seuil de porte-fenêtre del'appartement supérieur).Nous vous rappelons nos références auprès de Nexity:\begin{itemize} \item Contrat N° 7606001/1 280363/000  \item N° sociétaire 560464 V\end{itemize}    Et voici vos références internes:XXX,V
-\location\date{Antibes, le 2 novembre 2010}\begin{letter}{toto}%Madame, Monsieur,},V
-{Nom destinataire\\Adresse destinataire,v
-\documentclass[11pt]{letter} %\usepackage{frenchle}\usepackage[french]{babel}\usepackage[utf8x]{inputenc}\usepackage{fullpage}\begin{document}\name{Louis \textsc{Plissonneau}}\signature{}\address{Louis Plissonneau\\'éBat. B', Les Allées du Prince\\260, chemin des Combes\\06600 Antibes\\tel: 04~92~93~94~53\\port: 06~33~77~78~85},V
-{SMABTP MARSEILLE\\300 boulevard Michelet\\13295 MARSEILLE CEDEX 08\\\\},v
-% Changer utf8 si besoin, par exemple en latin1,V
-%\usepackage[T1]{fontenc},V
-% On utilise le package latex 'lettre', de Denis Mégévand.,V
-Cordialement,,v
-Je vous prie d'agréer,Madame, Monsieur,mes salutations distinguées.,v
-Laurent Jouhet,v
-port: 0,V
-tel: 04~92~93~94~53\\,V
-6 60 51 96 80},v
-6~33~77~78~85},v
-Lyon,v
-{Laurent Jouhet\\138 avenue Thiers\\69006 Lyon},v
-{Louis Plissonneau\\Bat. B', Les Allées du Prince\\260, chemin des Combes\\06600 Antibes\\tel: 04~92~93~94~53\\port: 06~33~77~78~85},v
-aurent Jouhet,v
-\usepackage[utf8x]{inputenc},V
-% On utilise le package latex 'lettre', de Denis Mégévand.\documentclass[12pt]{lettre}% Changer utf8 si besoin, par exemple en latin1\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}% Si l'impression est de mauvaise qualité, utiliser le package linux 'lmodern'.% Attention, cela donne parfois une page blanche (fonts manquantes)%\usepackage{lmodern}\usepackage[frenchb]{babel}\begin{document}% Destinataire\begin{letter}{Nom destinataire\\Adresse destinataire}% Expéditeur\name{Laurent Jouhet}\address{Laurent Jouhet\\138 avenue Thiers\\69006 Lyon}\lieu{Lyon}\telephone{+33 (0)6 60 51 96 80}\nofax\signature{Laurent Jouhet}% Lettre\opening{Madame, Monsieur,}  Corps du texte\closing{Cordialement,} \end{letter}\end{document},v
-french,,v
-\use,V
-étanchéité,v
-pas ,v
-      ,V
-En vous remerciant pour les services que vous nous avez rendus, nous vous prions d’agréer, Madame, nos salutations distinguées.,v
-\closing{En vous remerciant pour les services que vous nous avez rendus, nous vous prions d’agréer, Madame, nos salutations distinguées.},V
-Nous avons le regret de vous informer que vous n’aurez plus la garde de Aloïs, et ce à compter du 2 juillet 2010.  En effet, nous avons obtenu une place en crèche pour notre enfant.Conforménent au contrat de travail instaurant un préavis de un mois, la fin de votre contrat sera effective le 17 juillet 2010. Nous vous fournirons alors une attestation ASSEDIC, un certificat de travail ainsi que votre solde de tout compte.,V
-mob:,v
