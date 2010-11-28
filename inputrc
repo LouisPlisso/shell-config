@@ -7,3 +7,6 @@ set convert-meta off
 # mode in everything that uses readline
 set editing-mode vi
 set keymap vi
+
+#bindkey '\e[A' history-beginning-search-backward
+#bindkey '\e[B' history-beginning-search-forward

@@ -17,6 +17,7 @@
 \setbeamercolor{example text}{fg=grisft}
 \setbeamercolor{structure}{fg=orft,bg=white}
 \setbeamercolor{background canvas}{parent=normal text}
+\setbeamercolor{block title}{parent=bold text,bg=white}
 \setbeamercolor{block body}{bg=comp4}
 
 % Headline and footline
@@ -28,20 +29,21 @@
 \defbeamertemplate*{footline}{orangebody}
 {
   \leavevmode%
-  \hskip.03\paperwidth
+  \hskip.01\paperwidth
   %\includegraphics[width=.09\paperwidth]{logo_FT}
-  \begin{beamercolorbox}[wd=.07\paperwidth,ht=2.5ex,dp=1.125ex]{dateorange in head/foot}%
-   \textbf{\usebeamerfont{dateorange in head/foot}\insertframenumber{} / \inserttotalframenumber{}}\hspace*{2ex}\ 
+  \begin{beamercolorbox}[wd=.052\paperwidth,ht=2.5ex,dp=1.125ex]{dateorange in head/foot}%
+   \textbf{\usebeamerfont{dateorange in head/foot}\insertframenumber{} / \inserttotalframenumber{}}
   \end{beamercolorbox}
-  \hbox{\begin{beamercolorbox}[wd=.6\paperwidth,ht=2.5ex,dp=1.125ex]{authororange in head/foot}%
+  \hbox{\begin{beamercolorbox}[wd=.65\paperwidth,ht=2.5ex,dp=1.125ex]{authororange in head/foot}%
    \usebeamerfont{authororange in head/foot}\textbf{Orange Labs -- \insertshortauthor: \insertshorttitle\ -- \insertshortdate}
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.5ex,dp=1.125ex]{titleorange in head/foot}%
-   \hfill\usebeamerfont{titleorange in head/foot}\textbf{France T\'el\'ecom Group Unrestricted}\hfill\
+  \begin{beamercolorbox}[wd=.18\paperwidth,ht=2.5ex,dp=1.125ex]{titleorange in head/foot}%
+   %\hfill
+   \usebeamerfont{titleorange in head/foot}\textbf{France T\'el\'ecom Group}%\hfill\
   \end{beamercolorbox}
 }%
-  %\includegraphics[width=.09\paperwidth]{logo_orange} 
-  %\hskip.01\paperwidth
+  \includegraphics[width=.09\paperwidth]{logo_orange} 
+  \hskip.01\paperwidth
   \vskip0pt%
 %  \ \parbox{.33\paperwidth}{\insertshortauthor}\parbox{.33\paperwidth}{\hfill\insertshorttitle\hfill\ }\parbox{.33\paperwidth}{\hfill\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}}
  % \hfill\pgfuseimage{orange-logo-bottom}\hfill\ 

@@ -109,7 +109,7 @@ myManageHook = composeAll
     , className =? "Gxmessage"      --> doFloat
     , className =? "Xmessage"      --> doFloat
     , className =? "Gimp"      --> doFloat
-    , className =? "Dia"      --> doFloat
+    {-, className =? "Dia"      --> doFloat-}
     , className =? "Pidgin"      --> doFloat
     , className =? "Vlc"      --> doFloat
     , className =? "Tk"      --> doFloat
@@ -187,7 +187,7 @@ main = do
         , workspaces         = ["1:Web", "2:Term", "3:Editor", "4", "5", "6", "7", "8", "9:Todo", "10:Mail"]
         , terminal           = "urxvtc"
         } `additionalKeys`
-        [ ((mod1Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock") 
+        [ ((mod1Mask, xK_z), spawn "xscreensaver-command -lock") 
         , ((mod1Mask, xK_s), spawn "exe=`quicksnips` && eval \"exec $exe\"")
         , ((mod1Mask, xK_Return), spawn "urxvt")
         , ((mod1Mask .|. shiftMask, xK_Return), windows W.swapMaster) -- %! Swap the focused window and the master window
@@ -214,9 +214,9 @@ main = do
         , ((mod1Mask .|. controlMask, xK_Delete), io (exitWith ExitSuccess))
         -- Switch to next/previous workspace
         , ((mod1Mask, xK_x), nextWS)
-        , ((mod1Mask, xK_Right), nextWS)
+        , ((mod1Mask .|. shiftMask, xK_Right), nextWS)
         , ((mod1Mask, xK_y), prevWS)
-        , ((mod1Mask, xK_Left), prevWS)
+        , ((mod1Mask .|. shiftMask, xK_Left), prevWS)
         -- , ((mod1Mask .|. controlMask, xK_f), spawn "xdotool key alt+f")
         -- focus on most recently urgent window
         , ((mod1Mask, xK_BackSpace), focusUrgent)

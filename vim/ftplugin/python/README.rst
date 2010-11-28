@@ -8,11 +8,13 @@ accessing a local before it is bound, and also gives warnings for things like
 unused imports.
 
 pyflakes-vim uses the output from PyFlakes to highlight errors in your code.
+To locate errors quickly, use quickfix_ commands like :cc.
 
 Make sure to check vim.org_ for the latest updates.
 
 .. _pyflakes.vim: http://www.vim.org/scripts/script.php?script_id=2441
 .. _vim.org: http://www.vim.org/scripts/script.php?script_id=2441
+.. _quickfix: http://vimdoc.sourceforge.net/htmldoc/quickfix.html#quickfix
 
 Quick Installation
 ------------------
@@ -53,6 +55,15 @@ Hacking
   git clone git://github.com/kevinw/pyflakes-vim.git
   cd pyflakes-vim
   git clone git://github.com/kevinw/pyflakes.git
+
+Options
+-------
+
+Set this option to you vimrc file to disable quickfix support::
+    
+    let g:pyflakes_use_quickfix = 0
+
+The value is set to 1 by default.
 
 TODO
 ----

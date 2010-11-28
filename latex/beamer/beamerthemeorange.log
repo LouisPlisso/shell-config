@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.4.20)  22 APR 2010 18:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.10.5)  16 NOV 2010 18:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -466,13 +466,82 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+l.20 \setbeamercolor
+                    {block title}{parent=bold text,bg=white}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 15--20
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.21 \setbeamercolor
+                    {block body}{bg=comp4}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no 4 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 15--22
 []
  []
 
 ! Undefined control sequence.
-l.27 \defbeamertemplate
+l.29 \defbeamertemplate
                        *{footline}{orangebody}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -487,7 +556,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.27 \defbeamertemplate*
+l.29 \defbeamertemplate*
                         {footline}{orangebody}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -518,8 +587,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32   \hbox{\begin{beamercolorbox}
-                                   [wd=.9\paperwidth,ht=2.5ex,dp=1.125ex]{au...
+l.34   \begin{beamercolorbox}
+                             [wd=.07\paperwidth,ht=2.5ex,dp=1.125ex]{dateora...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -530,11 +599,131 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 9 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 7 in font nullfont!
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    h
-l.32 ...{\begin{beamercolorbox}[wd=.9\paperwidth,h
+l.34   \begin{beamercolorbox}[wd=.07\paperwidth,h
+                                                 t=2.5ex,dp=1.125ex]{dateora...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+<recently read> \usebeamerfont 
+                               
+l.35 ...framenumber{} / \inserttotalframenumber{}}
+                                                  \hspace*{2ex}\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...nge in head/foot}\insertframenumber 
+                                                  {} / \inserttotalframenumb...
+l.35 ...framenumber{} / \inserttotalframenumber{}}
+                                                  \hspace*{2ex}\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...number {} / \inserttotalframenumber 
+                                                  {}
+l.35 ...framenumber{} / \inserttotalframenumber{}}
+                                                  \hspace*{2ex}\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{beamercolorbox}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36   \end{beamercolorbox}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment beamercolorbox undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37   \hbox{\begin{beamercolorbox}
+                                   [wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{au...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   h
+l.37 ...{\begin{beamercolorbox}[wd=.5\paperwidth,h
                                                   t=2.5ex,dp=1.125ex]{author...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -587,8 +776,8 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.33     \usebeamerfont
-                       {authororange in head/foot}\hspace{1em}\insertshortau...
+l.38    \usebeamerfont
+                      {authororange in head/foot}\textbf{Orange Labs -- \ins...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -619,7 +808,31 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.33 ...n head/foot}\hspace{1em}\insertshortauthor
+<argument> Orange Labs -- \insertshortauthor 
+                                             : \insertshorttitle \ -- \inser...
+l.38 ...r: \insertshorttitle\ -- \insertshortdate}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...sertshortauthor : \insertshorttitle 
+                                                  \ -- \insertshortdate 
+l.38 ...r: \insertshorttitle\ -- \insertshortdate}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...ertshorttitle \ -- \insertshortdate 
+                                                  
+l.38 ...r: \insertshorttitle\ -- \insertshortdate}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -634,7 +847,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34   \end{beamercolorbox}
+l.39   \end{beamercolorbox}
                            %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -647,8 +860,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35   \begin{beamercolorbox}
-                             [wd=.4\paperwidth,ht=2.5ex,dp=1.125ex]{titleora...
+l.40   \begin{beamercolorbox}
+                             [wd=.3\paperwidth,ht=2.5ex,dp=1.125ex]{titleora...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -659,11 +872,11 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 4 in font nullfont!
+Missing character: There is no 3 in font nullfont!
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    h
-l.35   \begin{beamercolorbox}[wd=.4\paperwidth,h
+l.40   \begin{beamercolorbox}[wd=.3\paperwidth,h
                                                 t=2.5ex,dp=1.125ex]{titleora...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -715,8 +928,8 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.36     \hfill\usebeamerfont
-                             {titleorange in head/foot}\insertshorttitle\hfill\
+l.41    \hfill\usebeamerfont
+                            {titleorange in head/foot}\textbf{France T\'el\'...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -745,15 +958,6 @@ Missing character: There is no f in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no t in font nullfont!
-! Undefined control sequence.
-l.36 ...titleorange in head/foot}\insertshorttitle
-                                                  \hfill\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 ! LaTeX Error: \begin{document} ended by \end{beamercolorbox}.
 
@@ -761,37 +965,45 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37   \end{beamercolorbox}
+l.42   \end{beamercolorbox}
                            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
-! LaTeX Error: Environment beamercolorbox undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38   \begin{beamercolorbox}
-                             [wd=.2\paperwidth,ht=2.5ex,dp=1.125ex]{dateoran...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+! Undefined control sequence.
+l.44   \includegraphics
+                       [width=.09\paperwidth]{logo_orange}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 Missing character: There is no [ in font nullfont!
 Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.44   \includegraphics[width=.09\paperwidth]
+                                             {logo_orange}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
-                   h
-l.38   \begin{beamercolorbox}[wd=.2\paperwidth,h
-                                                t=2.5ex,dp=1.125ex]{dateoran...
+                   ]
+l.44   \includegraphics[width=.09\paperwidth]
+                                             {logo_orange}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -799,116 +1011,192 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-Missing character: There is no h in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no x in font nullfont!
 Missing character: There is no ] in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no f in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no t in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.44 ...ncludegraphics[width=.09\paperwidth]{logo_
+                                                  orange}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.44 ...raphics[width=.09\paperwidth]{logo_orange}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.46   \vskip
+             0pt%
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 29--46
+[]
+ []
+
+
+Overfull \hbox (15.8124pt too wide) in paragraph at lines 29--46
+\OT1/cmr/bx/n/10 da-
+ []
+
+
+Overfull \hbox (13.57632pt too wide) in paragraph at lines 29--46
+\OT1/cmr/bx/n/10 te-
+ []
+
+
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 29--46
+\OT1/cmr/bx/n/10 o-
+ []
+
+
+Overfull \hbox (8.56941pt too wide) in paragraph at lines 29--46
+\OT1/cmr/bx/n/10 r-
+ []
+
+
+Overfull \hbox (22.99986pt too wide) in paragraph at lines 29--46
+\OT1/cmr/bx/n/10 ange
+ []
+
+
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 29--46
+\OT1/cmr/bx/n/10 in
+ []
+
+
+Overfull \hbox (49.19417pt too wide) in paragraph at lines 29--46
+\OT1/cmr/bx/n/10 head/foot
+ []
+
+
+Overfull \hbox (5.74997pt too wide) in paragraph at lines 29--46
+\OT1/cmr/bx/n/10 /
+ []
+
+
+Overfull \hbox (312.19276pt too wide) in paragraph at lines 29--46
+|   []$[]\OML/cmm/m/it/10 range $ 
+ []
+
 ! Undefined control sequence.
-l.39     \hfill\usebeamerfont
-                             {dateorange in head/foot}\insertframenumber{} /...
+l.52 \defbeamertemplate
+                       *{navigation symbols}{orange}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no t in font nullfont!
-! Undefined control sequence.
-l.39 ...dateorange in head/foot}\insertframenumber
-                                                  {} / \inserttotalframenumb...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-Missing character: There is no / in font nullfont!
-! Undefined control sequence.
-l.39 ...ertframenumber{} / \inserttotalframenumber
-                                                  {}\hspace*{2ex}\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: \begin{document} ended by \end{beamercolorbox}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.40   \end{beamercolorbox}
-                           }%
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+l.52 \defbeamertemplate*
+                        {navigation symbols}{orange}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.55      \hbox{\insertslidenavigationsymbol
+                                            }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.56      \hbox{\insertframenavigationsymbol
+                                            }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.57      \hbox{\insertsubsectionnavigationsymbol
+                                                 }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.58      \hbox{\insertsectionnavigationsymbol
+                                              }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.59      \hbox{\insertdocnavigationsymbol
+                                          }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.60 ...box{\insertbackfindforwardnavigationsymbol
+                                                  }%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 27--43
+Overfull \hbox (20.0pt too wide) in paragraph at lines 52--63
 []
  []
 
 ! Undefined control sequence.
-l.51 \defbeamertemplate
+l.67 \defbeamertemplate
                        {footline}{orangetitle}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -923,7 +1211,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51 \defbeamertemplate{f
+l.67 \defbeamertemplate{f
                          ootline}{orangetitle}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -948,7 +1236,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.55   \includegraphics
+l.71   \includegraphics
                        [width=.09\paperwidth]{logo_FT}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -969,7 +1257,7 @@ Missing character: There is no 9 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.55   \includegraphics[width=.09\paperwidth]
+l.71   \includegraphics[width=.09\paperwidth]
                                              {logo_FT}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -978,7 +1266,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.55   \includegraphics[width=.09\paperwidth]
+l.71   \includegraphics[width=.09\paperwidth]
                                              {logo_FT}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -995,13 +1283,13 @@ Missing character: There is no o in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.55 ...ncludegraphics[width=.09\paperwidth]{logo_
+l.71 ...ncludegraphics[width=.09\paperwidth]{logo_
                                                   FT}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.55 ...udegraphics[width=.09\paperwidth]{logo_FT}
+l.71 ...udegraphics[width=.09\paperwidth]{logo_FT}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1016,8 +1304,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56   \hbox{\begin{beamercolorbox}
-                                   [wd=.8\paperwidth,ht=2.5ex,dp=1.125ex]{no...
+l.73   \hbox{\begin{beamercolorbox}
+                                   [wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{no...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1028,11 +1316,11 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 8 in font nullfont!
+Missing character: There is no 5 in font nullfont!
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    h
-l.56 ...{\begin{beamercolorbox}[wd=.8\paperwidth,h
+l.73 ...{\begin{beamercolorbox}[wd=.5\paperwidth,h
                                                   t=2.5ex,dp=1.125ex]{no aut...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1099,14 +1387,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57   \end{beamercolorbox}
+l.74   \end{beamercolorbox}
                            }%
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.58   \includegraphics
+l.75   \includegraphics
                        [width=.09\paperwidth]{logo_orange}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1117,7 +1405,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.58   \includegraphics[width=.09\paperwidth]
+l.75   \includegraphics[width=.09\paperwidth]
                                              {logo_orange}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1126,7 +1414,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.58   \includegraphics[width=.09\paperwidth]
+l.75   \includegraphics[width=.09\paperwidth]
                                              {logo_orange}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1138,188 +1426,29 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.60   \vskip
+l.77   \vskip
              0pt%
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 51--60
+Overfull \hbox (20.0pt too wide) in paragraph at lines 67--77
 []
  []
 
 
-Overfull \hbox (52.66484pt too wide) in paragraph at lines 51--60
-[]\OML/cmm/m/it/10 T[]\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 width \OT1/cmr/m/n/10 =
-
+Overfull \hbox (235.45001pt too wide) in paragraph at lines 67--77
+[]\OML/cmm/m/it/10 T []\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 width \OT1/cmr/m/n/10 
+=
  []
 
 
-Overfull \hbox (63.86865pt too wide) in paragraph at lines 51--60
+Overfull \hbox (63.86865pt too wide) in paragraph at lines 67--77
 \OML/cmm/m/it/10 :\OT1/cmr/m/n/10 09][] $ 
  []
 
 ! Undefined control sequence.
-l.66 \defbeamertemplate
-                       *{navigation symbols}{nonavorange}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 \defbeamertemplate*
-                        {navigation symbols}{nonavorange}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 66--71
-[]
- []
-
-! Undefined control sequence.
-l.72 \defbeamertemplate
-                       *{navigation symbols}{orange}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72 \defbeamertemplate*
-                        {navigation symbols}{orange}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-! Undefined control sequence.
-l.75      \hbox{\insertslidenavigationsymbol
-                                            }
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.76      \hbox{\insertframenavigationsymbol
-                                            }
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.77      \hbox{\insertsubsectionnavigationsymbol
-                                                 }
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.78      \hbox{\insertsectionnavigationsymbol
-                                              }
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.79      \hbox{\insertdocnavigationsymbol
-                                          }
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.80 ...box{\insertbackfindforwardnavigationsymbol
-                                                  }%
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 72--83
-[]
- []
-
-! Undefined control sequence.
-l.84 \setbeamertemplate
+l.82 \setbeamertemplate
                        {footline}[orangetitle]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1334,7 +1463,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.84 \setbeamertemplate{f
+l.82 \setbeamertemplate{f
                          ootline}[orangetitle]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1361,7 +1490,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.85 \setbeamertemplate
+l.84 \setbeamertemplate
                        {navigation symbols}{}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1387,12 +1516,12 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 84--86
+Overfull \hbox (20.0pt too wide) in paragraph at lines 82--85
 []
  []
 
 ! Undefined control sequence.
-l.87 \mode
+l.86 \mode
           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1407,7 +1536,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 <
+l.87 <
       all>
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1418,7 +1547,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no > in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 88--89
+Overfull \hbox (20.0pt too wide) in paragraph at lines 87--88
 [] 
  []
 
@@ -1430,11 +1559,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 88--89
 
  
 Here is how much of TeX's memory you used:
- 10 strings out of 495028
- 236 string characters out of 1181229
+ 20 strings out of 495028
+ 369 string characters out of 1181229
  46133 words of memory out of 3000000
- 3295 multiletter control sequences out of 15000+50000
- 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 3304 multiletter control sequences out of 15000+50000
+ 3948 words of font info for 15 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 18i,2n,12p,218b,56s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 18i,3n,12p,218b,92s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -1,5 +1,12 @@
 #!/bin/sh
 
+# performance boost
+if [ "$PS1" ] ; then  
+   mkdir -p -m 0700 /dev/cgroup/cpu/user/$$ > /dev/null 2>&1
+   echo $$ > /dev/cgroup/cpu/user/$$/tasks
+   echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
+fi
+
 # load FTRD config
 if [ -f ${MY_CONFIG_DIR}/ftrd_config ]; then
     . ${MY_CONFIG_DIR}/ftrd_config
@@ -21,8 +28,8 @@ export TODO=$MY_CONFIG_DIR
 export CMD_KEY="xkbcomp -w 0 -R/usr/share/X11/xkb/ ${MY_CONFIG_DIR}/keymap \"$DISPLAY\" "
 
 export PATH=/sbin:/usr/sbin:${MY_CONFIG_DIR}/bin:${MY_CONFIG_DIR}/cabal/bin:$PATH
-export PYTHONPATH=~/workspace/spydump/tools
-export PATH=$PATH:$PYTHONPATH
+export PYTHONPATH=~/workspace/spydump/
+export PATH=$PATH:$PYTHONPATH/tools
 
 # scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
 SCRIPT_RECIPES=$HOME/.scripts_recipes/bin
@@ -33,31 +40,31 @@ QUICKSNIPS=$MY_CONFIG_DIR/quicksnips/bin
 [ -d $QUICKSNIPS ] && export PATH=$PATH:$QUICKSNIPS
 
 
-export VIMRUNTIME=${MY_CONFIG_DIR}/vim
+#export VIMRUNTIME=${MY_CONFIG_DIR}/vim
 export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
 
 
 export LS_OPTIONS='--color=auto'
 eval `dircolors $MY_CONFIG_DIR/dircolors`
-alias ls='ls --group-directories-first $LS_OPTIONS'
-alias l1='ls -1'
-alias lb='ls -shapC'
-alias ll='ls -l'
-alias la='ls -Alh'
-alias lsd='ls -d */'
+alias ls='/bin/ls --group-directories-first $LS_OPTIONS'
+alias l1='/bin/ls $LS_OPTIONS -1'
+alias lb='/bin/ls $LS_OPTIONS -shapC'
+alias ll='/bin/ls $LS_OPTIONS -l'
+alias la='/bin/ls $LS_OPTIONS -Alh'
+alias lsd='/bin/ls $LS_OPTIONS -d */'
 
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+alias grep='/bin/grep --color=auto'
+alias fgrep='/bin/fgrep --color=auto'
+alias egrep='/bin/egrep --color=auto'
 
 # some more ls aliases
-alias l='ls -CF'
-alias lh='ll -h'
+alias l='/bin/ls -CF'
+alias lh='/bin/ls -lh'
 
 export LESS="-R"
 export EDITOR=vi
 
-alias xpdf='xpdf -z page'
+alias xpdf='/usr/bin/xpdf -z page'
 
 #compose key activated in gtk apps
 GTK_IM_MODULE=xim
@@ -97,6 +104,7 @@ alias chrome='all_proxy=$chrome_proxy /usr/bin/google-chrome'
 #}
 #export -f restart_adb_server
 #alias fix_adb='sudo bash -c restart_adb_server'
+export ANDROID_SDK=~/perso/android/android-sdk-linux_86/
 
 #no more needed
 #bad but needed to let default config of aptitude and still use python 2.6
@@ -169,4 +177,15 @@ alias less='less -e -i -m -R'
 alias p='popd'
 
 alias vlcn='vlc -I ncurses'
+
+# git log
+alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
+
+#fresh() {
+#    old_proxy=$http_proxy
+#    unset http_proxy
+#    sudo freshclam
+#    export http_proxy=$old_proxy
+#}
+alias fresh='http_proxy="" sudo freshclam'
 

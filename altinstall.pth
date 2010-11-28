@@ -1,0 +1,2 @@
+import os, site; site.addsitedir(os.path.expanduser('/home/louis/config/lib/python2.6'))
+

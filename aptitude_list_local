@@ -25,7 +25,7 @@ glxgears
 mesa-utils
 glxgears
 xlock
-xscreensaver-gl
+# xscreensaver-gl
 trayer
 xpmroot
 # fvwm1
@@ -34,8 +34,8 @@ gstreamer-tools
 wicd
 pidgin
 pidgin-sipe pidgin-plugin-pack # pidgin-skype
-xscreensaver-data-extra
-xscreensaver-gl-extra
+# xscreensaver-data-extra
+# xscreensaver-gl-extra
 # rtmpdump
 xclip
 xpdf-utils
@@ -400,3 +400,37 @@ python-sphinx
 rst2pdf
 rst2pdf
 python-sphinx
+# photoprint
+# python-dns
+python2.5-dns
+python2.5-dns
+python-dns
+chroot
+# schroot
+python-dns
+swig
+python-numpy-dev
+cython
+# texlive-fonts-extra 
+ttf-devanagari-fonts ttf-bengali-fonts
+msttcorefonts
+jodconverters
+msttcorefonts
+# jodconverter
+python-xml
+# python-scikits-learn
+# python-scikits-learn-doc
+python-nose
+cgroup-bin
+python3
+google-chrome
+belier
+# ntp
+# ntp
+-simple # ntpdate
+pychecker
+eclipse
+eclipse
+ant
+rss-glx
+rss-glx

@@ -85,6 +85,15 @@ if [ -e $LATEX_DIR ]; then
     sudo texconfig rehash 
 fi
 
+echo "Configure python for easy_install in user directiory"
+for file in distutils.cfg.template altinstall.pth.template
+do
+    /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" distutils.cfg.template > distutils.cfg
+    /bin/sed "s,\<__INSTALL_DIR__\>,${INSTALL_DIR},g" altinstall.pth.template > altinstall.pth
+done
+sudo /bin/cp -b --suffix='.old' ./altinstall.pth /usr/lib/python2.6/dist-packages
+sudo /bin/cp -b --suffix='.old' ./distutils.cfg /usr/lib/python2.6/distutils/
+
 # python is aliased because package installs sometimes work only with python2.5
 #echo "Configure python"
 #sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.5 10

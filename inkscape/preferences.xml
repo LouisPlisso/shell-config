@@ -126,8 +126,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="0"
-         height="0"
+         width="5660.8974779086448"
+         height="3223.5667224462463"
          rx="0"
          ry="0" />
       <eventcontext
@@ -164,22 +164,24 @@
          style="fill:red;"
          end="0"
          start="0"
-         usecurrent="1" />
+         usecurrent="1"
+         open="0" />
       <eventcontext
          id="star"
-         magnitude="5"
+         magnitude="12"
          style="fill:yellow;"
          usecurrent="1"
-         proportion="0.5"
+         proportion="0.66147151161514284"
          rounded="0"
-         randomized="0" />
+         randomized="0"
+         isflatsided="0" />
       <eventcontext
          id="spiral"
          style="fill:none;"
          usecurrent="0"
-         revolution="3"
-         expansion="1"
-         t0="0" />
+         revolution="2.7562277000000002"
+         expansion="13.200652"
+         t0="0.93520707000000003" />
     </group>
     <group
        id="freehand"
@@ -323,7 +325,7 @@
        usecurrent="0"
        gradientdrag="1"
        font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;font-style:normal;font-weight:normal;font-size:36"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;font-style:normal;font-weight:normal;font-size:64;text-anchor:middle;text-align:center;writing-mode:tb"
        selcue="1" />
     <eventcontext
        id="nodes"
@@ -534,11 +536,24 @@
        id="transformation"
        applyseparately="0" />
     <group
-       id="align" />
+       id="align"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       state="2"
+       x="0"
+       y="0"
+       w="361"
+       h="382" />
     <group
        id="xml" />
     <group
-       id="find" />
+       id="find"
+       x="960"
+       y="219"
+       w="251"
+       h="248" />
     <group
        id="spellcheck"
        w="200"
@@ -552,19 +567,28 @@
        panel_ratio="100"
        panel_mode="1"
        panel_wrap="0"
-       x="756"
-       y="118"
+       x="606"
+       y="0"
        w="520"
        h="515" />
     <group
        id="preferences"
-       state="1" />
+       state="1"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       page="39"
+       x="0"
+       y="0"
+       w="1274"
+       h="756" />
     <group
        id="gradienteditor" />
     <group
        id="object"
-       x="496"
-       y="418"
+       x="495"
+       y="180"
        w="287"
        h="437" />
     <group
@@ -582,17 +606,17 @@
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/louis/brevet/slides" />
+       path="/home/louis/streaming/rapport/everything" />
     <group
        id="save_copy"
        default="org.inkscape.output.pdf.cairorenderer"
        append_extension="1"
        enable_preview="1"
-       path="/home/louis/brevet/slides" />
+       path="/home/louis/streaming/rapport/everything" />
     <group
        id="open"
        enable_preview="1"
-       path="/home/louis/brevet/throughput_client_side/" />
+       path="/home/louis/streaming/rapport/everything/" />
     <group
        id="import"
        enable_preview="1"
@@ -621,7 +645,16 @@
        id="treeeditor" />
     <group
        id="layers"
-       maxDepth="20" />
+       maxDepth="20"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       state="2"
+       x="0"
+       y="0"
+       w="268"
+       h="186" />
     <group
        id="extensioneditor" />
     <group
@@ -634,7 +667,16 @@
     <group
        id="colorpickerwindow" />
     <group
-       id="undo-history" />
+       id="undo-history"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       state="2"
+       x="0"
+       y="0"
+       w="361"
+       h="101" />
     <group
        id="filtereffects" />
     <group
@@ -642,6 +684,17 @@
        on-focus="1.0"
        on-blur="0.50"
        animate-time="100" />
+    <group
+       h="473"
+       w="622"
+       y="0"
+       x="0"
+       state="2"
+       panel_wrap="0"
+       panel_mode="1"
+       panel_ratio="100"
+       panel_size="1"
+       id="documentmetadata" />
   </group>
   <group
      id="printing">
@@ -800,9 +853,9 @@
        value="2" />
     <group
        id="transform"
-       stroke="1"
-       rectcorners="1"
-       pattern="1"
+       stroke="0"
+       rectcorners="0"
+       pattern="0"
        gradient="1" />
     <group
        id="kbselection"
@@ -909,10 +962,10 @@
      org.inkscape.output.pdf.cairorenderer.resolution="90" />
   <group
      id="desktop"
-     style="font-size:36;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke:#fe00ff;stroke-opacity:1;opacity:1;fill:none;fill-opacity:1;stroke-dashoffset:0">
+     style="font-size:40;stroke-width:18.441;stroke-miterlimit:4;stroke-dasharray:none;stroke:#0000ff;stroke-opacity:1;opacity:1;fill:#35f408;fill-opacity:1;stroke-dashoffset:0;stroke-linecap:round;text-anchor:start;text-align:start;writing-mode:lr">
     <group
-       width="1278"
-       height="782"
+       width="800"
+       height="1006"
        x="0"
        y="16"
        fullscreen="0"
@@ -932,7 +985,36 @@
        id="YZright" />
   </group>
   <group
-     id="devices" />
+     id="devices">
+    <group
+       keys=""
+       axes="x;y;"
+       mode="disabled"
+       id="Virtual core XTEST pointer" />
+    <group
+       keys=""
+       axes="x;y;"
+       mode="disabled"
+       id="DualPoint Stick" />
+    <group
+       id="AlpsPS">
+      <group
+         keys=""
+         axes="x;y;"
+         mode="disabled"
+         id="2 ALPS DualPoint TouchPad" />
+    </group>
+    <group
+       keys=""
+       axes="x;y;"
+       mode="disabled"
+       id="Macintosh mouse button emulation" />
+    <group
+       keys=""
+       axes="x;y;"
+       mode="screen"
+       id="Core Pointer" />
+  </group>
   <group
      id="toolbox"
      icononly="1"

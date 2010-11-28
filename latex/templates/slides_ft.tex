@@ -1,0 +1,135 @@
+\documentclass[slidetop,11pt]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{pslatex}
+\usepackage{eurosym}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+
+\usetheme{orange}
+\usepackage{appendixnumberbeamer}
+
+\title[Abbr. Title]{My long title about something}
+\subtitle{Why? \\
+What? \\
+How?}
+
+\author[L. Plissonneau]{Louis Plissonneau}
+\institute{Orange Labs}
+\date[BCE 2011]{Best Conf Ever\\
+25\textsuperscript{th} December 2011}
+
+\AtBeginSection[]{
+  \begin{frame}%[plain]
+    \vfill
+    \huge\alert{\thesection\ - \secname}
+  \end{frame}
+}
+
+
+
+\begin{document}
+
+\frame{
+\setcounter{framenumber}{0}
+\titlepage}
+\setbeamertemplate{footline}[orangebody]
+
+\section*{Introduction}
+\subsection*{Outline}
+\frame
+{
+\frametitle{\thesection\ - \secname}
+\framesubtitle{\subsecname}
+\begin{block}{}
+ \textbf{Goal}: Why is this the best talk ever?
+\end{block}
+\medskip
+%\small
+\tableofcontents
+}
+
+\section{Stuff}
+\subsection{This stuff}
+\frame{
+\frametitle{\thesection\ - \secname}
+\framesubtitle{\subsecname}
+\huge
+It's fun
+}
+
+\subsection{That stuff}
+\frame{
+\frametitle{\thesection\ - \secname}
+\framesubtitle{\subsecname}
+\alert{It's more fun}
+}
+
+
+\section{Schema}
+\subsection{}
+\begin{frame}
+\frametitle{\thesection\ - \secname}
+\framesubtitle{\subsecname}
+\begin{center}
+\begin{tikzpicture}
+  \node[draw,rectangle] (O) {\includegraphics[height=2cm]{./Earth.png}};
+\foreach \text/\q in {$C_1$/135,$C_2$/90,$C_3$/45,$C_4$/180,$C_5$/0,$C_6$/225,$C_7$/270,$C_8$/315} {
+    \draw (\q:3cm) node[fill=orft!20!white,draw,rectangle]  {\text}
+    -- (O);
+}
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\subsection{Step by step}
+\begin{frame}
+\frametitle{\thesection\ - \secname}
+\framesubtitle{\subsecname}
+\begin{center}
+\begin{tikzpicture}
+\action<+->{\node[fill=red,ellipse] (O) {Im};}
+\foreach \text/\q in {$C_1$/135,$C_2$/90,$C_3$/45,$C_4$/180,$C_5$/0,$C_6$/225,$C_7$/270,$C_8$/315} {
+    \action<+->{\draw (\q:2cm) node[fill=orft!20!white,draw,rectangle]  {\text}
+    -- (O);}
+}
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\section*{Conclusion}
+\subsection{}
+\frame{
+ \frametitle{\thesection\ - \secname}
+ \framesubtitle{\subsecname}
+ \begin{block}{This is why:}
+   \begin{itemize}
+     \item blabla
+     \item truc
+   \end{itemize}
+ \end{block}
+}
+
+\frame{
+\frametitle{\inserttitle}
+\framesubtitle{\insertauthor}
+\huge
+Thank you!
+}
+
+\appendix
+\section*{Appendix}
+\begin{frame}
+ \frametitle{\thesection\ - \secname}
+ \framesubtitle{\subsecname}
+  \begin{block}{Some more thing}
+    Here it comes
+  \end{block}
+\end{frame}
+
+\end{document}

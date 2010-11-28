@@ -1,100 +1,100 @@
-#,v
-of ,v
-study,v
-:,v
-if ,v
-gives,v
-*,v
-cq,v
- ,v
-* many possible indicators,V
-yet,v
-d,v
-directly ,v
-not,v
-shows,v
-l,v
-Conclusion,V
+latex/lettre/template_fr.tex,v
 ,V
-   Beware killer rabbits!,V
-DANGER,v
-.. DANGER::   Beware killer rabbits!,v
-+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| Type     | ADSL           | FTTH                        | ADSL       | FTTH       | ADSL       | FTTH            | ADSL       | FTTH       |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| Place    | Montsouris     | Montsouris                  | Montsouris | Montsouris | Rennes     | Montsouris      | Rennes     | Montsouris |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| Comment  | ref. data      | missing Otarie stream. file | --         | --         | --         | afternoon trace | --         | cut trace  |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| date     | **2008**/07/01 | **2008**/07/01              | 2009/11/26 | 2009/11/26 | 2009/12/14 | 2009/12/14      | 2010/02/07 | 2010/02/07 |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| time     | 20h            | 20h                         | 20h        | 20h        | 20h        | **14h**         | 20h        | 20h        |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+| duration | 1h (cut)       | 1h                          | 1h20       | 0h38       | 1h         | 0h58            | 1h         | 0h28       |+----------+----------------+-----------------------------+------------+------------+------------+-----------------+------------+------------+,V
-Here is the detail of the traces:,V
-Here is the detail of the packet captures, we study:,V
-Merci beaucoupsinon, est-ce que tu aurais quelque part ,v
-error,v
-ret,v
-    except IOError,e:        print e,V
-_,v
-dict,v
- ret,v
-interface_dns ,v
-2,v
-dict_,v
-        print "%s file does not exist" % path,V
+ ,v
+:,v
+:set viminfo='1000,f1,<500,v
+22:vimrc,v
+First ,v
+('\\toprule\n' + ' \\\\\n\midrule\n'.join([' & '.join((            streaming_tools.format_title(v[0]).replace('\n', ': '),            '%d \%%' % (100 * v[2] / v[3]), '%d \%%' % (100 * v[1] / v[2])))            for v in find_loss_location(flows)]) + '\\\\\n\\bottomrule'),v
+print,v
 ),v
-defaultdict(bool)),v
-resolv.conf,v
-.,v
-sys.stderr.flush(),v
-        ,V
+str(int(,v
+int(100*,v
+r,v
 return,v
-        #except Exception, e:,V
-UnpicklingError,v
-                    if not ret.has_key(interface):                        ret[interface] = dict(),V
-, path="/var/lib/dhcp3/dhclient.leases",v
-path="/var/run/resolv.conf",v
-replace(";", "").,v
-, "",v
-, "").,v
-replace,v
-replace(";", ""),v
-"\"", "").,v
-replace(" ", "").replace(";", ""),v
-f,v
-'stnd s, tsdn '.translate(' ,'),v
-f =,v
-    "Update dict with the nameservers from a resolv.conf file",V
-dhclient1,v
-path = "/var/lib/dhcp3/dhclient.leases",v
-dhclient2,v
-path = "/var/run/resolv.conf,v
-   ,V
+tools.,v
 ",v
-"/var/lib/dhcp3/dhclient.leases",v
-"/var/run/resolv.conf",v
-file,v
-def get_dns_servers_from_dhclient2(ret):    path = "/var/run/resolv.conf"    if not os.path.exists(path):        return    with open(path, "r") as resolv_file:        line = resolv_file.readline()        while len(line) > 0:            line = line[:-1].replace("\t", " ").strip()            while line.find("  ") > -1:                line = line.replace("  ", " ")            token = "nameserver "            interface = "?"            if line.startswith(token):                texts = (line[len(token):].strip().                                replace(" ", "").replace(";", "").split(","))                tab = [x for x in texts                       if len(x.strip()) > 0 and x.find(".") > -1]                for e in tab:                    if not ret.has_key(interface):                        ret[interface] = dict()                    ret[interface][e] = True            line = resolv_file.readline(),V
-import time,V
-    f.close(),V
-        os.rename(pkl_file, dest_pkl),V
-git log -g --grep=,v
-#!/usr/bin/env python,V
-from time import sleepimport cPickleimport osimport sys#from pprint import pprint,V
-#!/usr/bin/env python2.5,V
-/,v
-http://pydns.sourceforge.net/,v
-python2.5-dnspython,v
-Wrapper t,v
-input_file = sys.argv[1]    servers = dict()    dns_servers = get_dns_servers_from_dhclient()    for interface, dd in dns_servers.items():        for add, tmp in dd.items():            servers[add] = True    print "DNS servers: %s"%(" ".join(servers.keys()))    sys.stdout.flush()    pkl_file = sys.argv[2]    if not os.path.exists(pkl_file):        f = open(pkl_file, "w")        f.close()    main(input_file, pkl_file, servers.keys()),V
-    import os, sys,V
-    #from pprint import pprint,V
+.replace('\n', ': '), str(,v
+' & '.join((tools.streaming_tools.format_title(,v
+' \\\\\n\midrule\n'.join(,v
+ k,v in sorted(flows.items()) for data in (v.compress([x['DIP-RTM-NbMes-sec-TCP-Down']>0 or x['DIP-DSQ-NbMes-sec-TCP-Down']>0 for x in v]),),v
+len(data.compress([x for x in data if x['DIP-DSQ-NbMes-sec-TCP-Down'] > x['DIP-RTM-NbMes-sec-TCP-Down']]),v
+[(tools.streaming_tools.format_title(k).replace('\n', ': '), int(100*len(data.compress([x for x in data if x['DIP-DSQ-NbMes-sec-TCP-Down'] > x['DIP-RTM-NbMes-sec-TCP-Down']]))/ len(data)), len(data)) for k,v in sorted(flows.items()) for data in (v.compress([x['DIP-RTM-NbMes-sec-TCP-Down']>0 or x['DIP-DSQ-NbMes-sec-TCP-Down']>0 for x in v]),)],v
+btlang-code,v
+Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages,v
+GL,v
+/usr/share/doc/rss-glx,v
+From Tab.~\ref{tab:loss,V
+fraction of flows with losses at access rate.,V
+network (see Sect.~\ref{sec:mean_rates}), ADSL traces should have a higher,V
+And as ADSL flows are more likely to have a bandwidth limitation in the access,V
+have usually lower values,v
+ rare,v
+a high speed access and have ,v
+b,v
+What is clear is FTTH having higher fraction of flows with at least one loss,and Rennes traces having more flows with at least one loss.,V
+traces having,v
+Rennes traces having more flows with at least one loss.,v
+having,v
+FTTH having higher fraction of flows with at least one loss,,v
+thus ,v
+network,v
 ,,v
-tmp,v
-        pass,V
-%,v
+texttt,v
 (,v
-from __future__ import division, print_function,v
-	input_file = sys.argv[1]	output_dir = sys.argv[2]	base_dir = os.path.abspath(os.path.split(sys.argv[0])[0])	servers = ["8.8.8.8"]#"212.27.40.240","212.27.40.241","8.8.8.8","192.168.1.1","192.168.22.1"]	dns_servers = get_dns_servers_from_dhclient()	for interface,dd in dns_servers.items():		for add, tmp in dd.items():			servers.append(add)	print "DNS servers: %s"%(" ".join(servers))	sys.stdout.flush()	tstamp = time.time()	pkl_file = os.path.join(base_dir,"resolve.%d.pkl"%(tstamp))	f = file(pkl_file,"w")	f.close()	logg_dir = os.path.join(base_dir,"logs")	pkl_name = os.path.split(pkl_file)[1]	log_file = os.path.join(logg_dir,"%s.log"%pkl_name)	if not os.path.exists(logg_dir): os.makedirs(logg_dir)	#cmd = "python %s %s %s &> %s"%(os.path.join(base_dir,"dns_lib.py"),input_file,pkl_file,log_file)	cmd = "python %s %s %s "%(os.path.join(base_dir,"dns_lib.py"),input_file,pkl_file)	print cmd	os.system(cmd)	if os.path.exists(pkl_file):		dest_pkl = os.path.join(output_dir,os.path.split(pkl_file)[1])		if not os.path.exists(output_dir): os.makedirs(output_dir)		os.rename(pkl_file,dest_pkl),V
-    sys.exit(main()),V
-	,v
-	import os,sys,V
-138,29,v
-Bat. B$^\prime$, Les Allées du Prince\\,v
-Bat. B', Les Allées du Prince\\,V
-Bat. B$^\prime$, Les Allées du Prince\\,V
-\,v
-rm{B},v
-text,v
-B,v
+<+label+>,v
+'/e5/videowall/video/gay/11/utZ6oz3nAjD_Thumb.flv',v
+<+caption text+>,v
+<+file+>,v
+<+htpb+>,v
+for all,v
+'Host_Referer',v
+'2009_11_26_FTTH',v
+Relation between size and losses\todo,V
+mean of $<++>\,Bytes$ on ADSL and XX on FTTH ,v
+and a,v
+of,v
+ldots,v
+(recallSect.~\ref{sec:mean_rates} ),v
+first,v
+\begin{table}[htb]  \centering  \caption{Repartition of deducted loss location}  \label{tab:loss}  \begin{threeparttable}    \begin{tabular}{lcc}      \toprule      Trace &  flows with some loss\tnote{\dag}  &  loss in backbone\tnote{\ddag}  \\      \midrule      2008/07: ADSL &  50\%  &  70\%  \\      \midrule      2009/11: ADSL &  62\%  &  76\%  \\      \midrule      2009/11: FTTH &  65\%  &  92\%  \\      \midrule      2009/12: ADSL R &  72\%  &  85\%  \\      \midrule      2009/12: FTTH &  84\%  &  91\%  \\      \midrule      2010/02: ADSL R &  76\%  &  85\%  \\      \midrule      2010/02: FTTH &  81\%  &  94\%  \\      \bottomrule    \end{tabular}    \begin{tablenotes}      \footnotesize    \item [\dag] flows with at least one retransmission or one desequencement      over total number of flows    \item [\ddag] flows with more retransmissions than desequencements (only on      flows with some loss)    \end{tablenotes}  \end{threeparttable}\end{table},V
+Moreover the fraction of FTTH flows with losses is higher than on ADSL, even in2009/12 afternoon trace.,V
+.,v
+the ,v
+If ,v
+first ,v
+            (itemgetter('ByteDn'), 'Flow Size', 'in Bytes', None),,V
+$<++>\,Bytes$,v
+ (as in the case of ,v
+(lambda (xmin, xmax): (max(xmin, 10), xmax)),v
+kb/s,v
+Average bit-rate (from flow),v
+(lambda x: ((8e-3 * x['ByteDn'] / x['DurationDn'])                         if x['DurationDn'] > 0 else None)),v
+            ((lambda x: ((8e-3 * x['ByteDn'] / x['DurationDn'])                         if x['DurationDn'] > 0 else None)),             'Average bit-rate (from flow)', 'in kb/s',             (lambda (xmin, xmax): (max(xmin, 10), xmax))),,V
+aus,V
+the loss should occur at the path with lower capacity.,v
+As ,v
+And as ADSL flows are more likely to have a bandwidth limitation in the accessnetwork (see Sect.~\ref{sec:mean_rates}), ADSL traces should have a higherfraction of flows with losses at access rate.,V
+d,v
+    \item [\dag] flows with more retransmissions than desequencements (only on      flows with some loss),V
+retransmissions than desequencement events.,V
+the percentage of flows with more,V
+is not a limitation for these flows ,V
+are,v
+es,v
+is,v
+shall,v
+we shall see that ,V
+sec:mean,v
+3,v
+FTTH,v
+losses. ,V
+it is normal to have,V
+\texttt{}<++>,v
+have more ,v
+retransmitted packets: this indicate that loss occur mostly before the probe.,V
+the flow had some loss,v
+(thesecond retransmission of packet with sequence number 500 is not clear),v
+access network,v
+at least ,v
+That's why desequencement are in fact \textbf{desequenced \emph{events}}.,V

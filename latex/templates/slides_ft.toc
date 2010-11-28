@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.07pt}
+\beamer@sectionintoc {2}{Stuff}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{This stuff}{4}{0}{1}
+\beamer@subsectionintoc {2}{2}{That stuff}{5}{0}{1}
+\beamer@sectionintoc {3}{Schema}{6}{0}{2}
+\beamer@subsectionintoc {3}{2}{Step by step}{8}{0}{2}
