@@ -7,27 +7,4967 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Dernier motif de recherche  :
+~MSle0~/thresh
+
+# Dernier motif de recherche Substitue  :
+~MSle0&+
+
+# Dernières chaînes de substitution :
+$
+
 # Historique ligne de commande (chronologie décroissante) :
-:set viminfo?
+:1539
+:727
+:636
+:wqa
+:wa
+:e
+:e twitter-1.4.2/twitter/
+:e twi
+:89
+:e oauth-python-twitter-1.0/oauthtwitter.py
+:e 
+:e api.py
+:e util.py
+:e twitter_globals.py
+:e twitter-1.4.2/twitter/auth.py
+:s/+/ + /
+:'<,'>s/^/#/
+:s/ /_/
+:reg
+:b1
+:e ~/streaming/tools/template.py
+:b4
+:307
+:271
+:b ~/streaming/rapport/thesis/slides/network_diagnosis.tex
+:e /home/louis/streaming/rapport/thesis/slides/network_diagnosis.tex
+:%s/,\(\w\)/, \1/c
+:%s/"%\(\w\)/" % \1/c
+:%s/"%\(\w\)/" % \1/
+:%s/\t/    /
+:s/,\(\w\)/, \1/
+:s/\(\w\),/\1 ,/
+:e urls/loop_urls.py
+:'<,'>s/\./\~/
+:s/=/\~
+:s/\=/\~
+:s/\=/~
+:s/-/=
+:%s/ADSL R /ADSL\~R /c
+:%s/ADSL M /ADSL\~M /c
+:%s/ADSL M /ADSL~M /c
+:%s//ADSL~M/c
+:qap
+:e ../complements.tex
+:verbose map gJ
+:e filter_streaming.py
+:735
+:734
+:e INDEX_VALUES.py
+:e streaming_tools.py
+:841
+:e flow2session.py
+:629
+:compiler?
+:help compiler
+:compiler
+:e complements.py
+:on
+:b filter_streaming.py
+:vsp
+:%s///c
+:'<,'>s//,/
+:'<,'>s/ /, 
+:'<,'>s/ \n/, 
+:b ~/workspace/spydump/tools/create_packets.py
+:e ~/workspace/tstat/tstat/tcp.c
+:b TCPunitary.py
+:e TCPunitary.py
+:s/ ,/,
+:%s/>>/,
+:e create_packets.py
+:'<,'>s//idx_any_pkt
+:'<,'>s/any_loss/any_pkt
+:'<,'>s/any_loss/any_packet
+:e bbk12.clo
+:cd
+:e bb
+:e barticle.cls
+:e ~/config/latex/bangtex/latex/bsize12.clo
+:890
+:640
+:e cdfplot.py
+:e cdf
+:b INDEX_VALUES.py
+:1362
+:b complements.py
+:b streaming_tools.py
+:b2
+:717
+:187
+:1401
+:1482
+:,+2s/C/S/
+:sp
+:,+3s/indics/data/
+:e load_tstat_file.py
+:setlocal spelllang=fr
+:Ack
+:%s/rescaled/(rescaled)/
+:verbose map p
+:b slides/network_diagnosis.tex
+:e slides/network_diagnosis.tex
+:,+2s/Access/AC/
+:,+2s/backbone/BB/
+:2023
+:1792
+:1734
+:737
+:650
+:e report.bib
+:verbose map cs
+:'<,'>s/-->/-?>/
+:783
+:1130
+:409
+:674
+:235
+:verbose map g-
+:'<,'>s/= \(\w*\)/= \U\1/
+:'<,'>s/= \(\w*\)/=\U\1/
+:e load_cnx_stream_file.py
+:'<,'>s/\[\(\w*\)\]/[\U\1]/
+:'<,'>s/[\(\w*\)]/[\u\1]/
+:'<,'>s/\s*\(\d\+\)\s*\(\w*\)/\2 = \1/
+:'<,'>!cat -n
+:'<,'>s/\(OUT_\w*\)/out_index[\1]/
+:'<,'>s/\(\s*\w*\).*/\1/
+:'<,'>s/\(\s*\w*\).*/\1/j
+:'<,'>s/\s*\(\w*\).*/\1/
+:b ~/workspace/spydump/tools/INDEX_VALUES.py
+:'<,'>s/^/OUT_/
+:'<,'>s/^/IN_/
+:'<,'>s/.*'\(.*\)'.*/\1/
+:'<,'>s/.*"\(.*\)".*/\1/
+:e ~/streaming/flows/CnxStream24/missing_ftth_2008/convert_cnx_h323.awk
+:'<,'>s/\w*/"&"/
+:'<,'>s/
+:verbose map t
+:verbose map x
+:'<,'>s/ \(\\%\)/\1/
+:verbose map w
+:e passive_streaming_analysis
+:e ../tests/test_dns.py
+:,?^[
+:verbose map go
+:s/:/
+:help viminfo
+:help +
+:verbose map g+
+:verbose map +
+:,+14s/&\(.*\)&\(.*\)\\\\/\& \2 \& \1 \\\\/
+:,+14s/&\(.*\)&\(.*\)\\\\/\2 \& \1 \\\\/
+:,+12s/&\(.*\)&\(.*\)\\\\/\2 \& \1 \\\\/
+:help Q
+:help X
+:verbose map gj
+:verbose map j
+:set 
+:set
+:set loadplugins
+:e input.txt
+:e fibo.py
+:q!
+:87
+:b beamerthemeorange.sty
+:e ~/cv_autres/CV/cv_rd.tex
+:e ~/config/latex/beamer/beamerthemeorange.sty
+:e ~/Confs/BTM/qos_mobile.tex
+:%s/,\(\S\)/, \1/
+:e read_working_urls_extract_videos.py
+:e read_working_urls.py
+:cc
+:e read_working_ip.py
+:e result_urls.py
+:39
+:e result_ip.py
+:e loop.dns.py
+:e ../ITC/report.tex
+:367
+:w !sudo tee %
+:w!
+:74
+:,+3s/Min/Max/
+:b passive_streaming_analysis.tex
+:Acks
+:set textwidth=0
+:e beamerthemeorange.sty
+:verbose map <space>1
+:verbose imap $
+:%s//&\\!/
+:s/\(\d\+\)h/$\1\\,h$/
+:s/\(\d\+\)h\(\d\+\)/$\1\\,h\\,\2$/
+:s/\(\d\+\)h\(\d\+\)/$\1\\,h\,\2$/
+:s/\(\d\+\)h\(\d\+\)/$\1\\,h\2$/
+:,$s/\(\.\|\d\)\+\\,\(\w\|\/\)\+/$&$/c
+:,$s/\d\+\\,\(\w\|\/\)\+/$&$/c
+:,$s/\d\+\\,\(\w\|\/\)\+/$&$/g
+:%s/\d\+\\,\[\w\|\/\]\+/$&$/c
+:%s/\d\+\\,[\w\|\/]\+/$&$/c
+:%s/\d\+\\,\w\+/$&$/c
+:b ~/config/vim/vimrc
+:make
+:echo compiler
+:cn
+:e latex_directory.py
+:set tw=0
+:e ~/streaming/rapport/everything/passive_streaming_analysis.tex
+:'<,'>s//\1/
+:qa
+:'<,'>s/\(\d\+\)\(\w\)/\1\\,\2/
+:'<,'>s/\(\d\)\\+\(\w\)/\1\\,\2/
+:'<,'>s/\(\d)\\+\(\w\)/\1\\,\2/
+:'<,'>s/\d\+/&\\,/
+:241
+:a
+:e abstract.txt
+:%s//figs\//
+:s/\d\+\\%/$&$/
+:e ../white.tex
+:s/|//
+:vimgrep // **/*.
+:also
+:e install.sh
+:%s/\(\d\+\)\\,\\%/\$\1\\%\$/
+:%s/\(\d\+\)\\%/\$\1\\%\$/
+:%s/\[width=.48\\linewidth\]/\[width=.48\\linewidth,height=185pt\]/
+:%s/[width=0.48\\linewidth]/[width=0.48\\linewidth,height=185pt]/
+:%s/[width=0.48\linewidth]/[width=0.48\linewidth,height=185pt]/
+:%s/[width=0.48\linewidth]/[width=0.48\linewidth,height=185pt/]
+:help buff
+:help mini
+:s/E3//
+:'<,'>s/nb_flows_per_client/client_2_flow/
+:e bib.bib
+:b flow2session.py
+:184
+:s/8/6/
+:%s/import/from . import/
+:b6
+:e __init__.py
+:b ~/streaming/rapport/report.tex
+:e report.tex
+:b ~/streaming/rapport/white.tex
+:e white.tex
+:help :TlistOpen
+:TlistOpen
+:verbose map <space>t
+:TlistToggle
+:verbose <space>t
+:w
+:%s/\(\d\+\) \(\d\+\) \d\+ \(\w*\)\\,\\%/\1\/\2: \3/
+:%s/\(\d\+\) \(\d\+\) \d\+ \(\w*\)/\1\/\2: \3/
+:echo '<,'>s/\(\d\+\)_\(\d\+\)_\d\+_\(\w*\)/\1\/\2: \3/
+:'<,'>s/\(\d\+\)_\(\d\+\)_\d\+_\(\w*\)/\1\/\2: \3/
+:%s/\(\d\+\) \(\d\+\) \d\+ \(\w*\)/
+:'<,'>s/\(\d\+\)_\(\d\+\)_\d\+_(\\w*\)/\1\/\2: \3/
+:e en.utf-8.add.spl
+:e ~/config/vim/spell/en.utf-8.add
+:449
+:414
+:871
+:869
+:393
+:725
+:779
+:%s//\L&/
+:help substitute
+:%s//\u&/
+:'<,'>s/tools\.filter_streaming\.//
+:,+6s/-\./:/
+:s/\(\d\) /\1, /
+:s/,/./
+:s/\t/ /
+:,$s/_args/args/
+:s/,/e3,/
+:s/,/e3/
+:s/\(\d\) \(\d\)/\1, \2/
+:q
+:s/\(\d\)\ * \(\d\)/\1, \2/
+:'<,'>s/ \+/ /
+:,$s/vv/v/
+:,$s/_s/s/
+:,$s/_d/d/
+:,$s/dd/d/
+:,$s/xx/x/
+:,$s/kk/k/
+:,$s/kk/K/
+:G
+:sp INDEX_VALUES.py
+:,+3s/,.*/,/
+:help 
+:b cdfplot.py
+:e cdfplot
+:,+3s/ = /=/
+:wq
+:redraw
+:s/Down/Up/
+:,']s/Down/Up/
+:wq!
+:s/"/'/
 
 # Historique chaîne de recherche (chronologie décroissante) :
+? \s\+$
+?/thresh
+?/thres
+? \<plot_line\>
+? }
+?/inde
+?/probes
+?/platf
+?/other
+??non-dai
+?/cdn
+??hosting
+?/top
+?/peak rate for yo
+?/excludi
+?/table
+??its impac
+?/appl
+??no flow ach
+??mean flow rate
+??how much
+?/from
+?/section
+??serving
+?/monitor
+??rescaled
+?/nonce
+? \<statusupdate\>
+?/page
+?/string
+?/getacces
+? \<TwitterCall\>
+? \<key\>
+? +
+? ^
+?  
+? \<twitterhost\>
+? \<uri\>
+? \<httplib\>
+? \<urllib\>
+?/concl
+??streaming vi
+?/\\section
+?/percent_vo
+??user rea
+?/user_http
+?/mean_rate
+??reconst
+?/loss
+?/subsub
+?/inclu
+?/( \w
+?/(\w
+??end
+? ,\(\w\)
+? >>
+? "%\(\w\)
+?/\t
+? \(\w\),
+?/diss
+?/path
+??note
+?/dw	
+?/init
+??func
+?/\.
+??signal
+?/=
+? \=
+? -
+? \<From\>
+? (\(\f\|\[\|]\|\s\)*cv_expert_application.tex
+?/referen
+?/expert
+?/graph
+?/media
+?/pause
+?/base
+?/large re
+?/immedia
+?/heig
+?/{not
+?/\{not
+? ADSL R 
+? ADSL M 
+?/ADSL M
+?/burst
+?/explana
+?/peak rate mi
+?/mean flow rate of videos
+?/table}
+?/we first
+?/model
+??deducted
+??conclu
+?/smaller
+?/overall
+?/more\s*or
+?/more or
+? (\(\f\|\[\|]\|\s\)*passive_streaming_analysis.tex
+? \<multicolumn\>
+?/why
+?/Cable
+?/.\{80\}
+?/event
+?/figures
+??section{
+?/locatio
+?/loccat
+?/espec
+?/figur
+??porn de
+??clea
+?/state_
+? \<sec:loss\>
+? \<subsection\>
+? \<subsubsection\>
+?/state_m
+?/active time per
+?/occur
+?/larger
+?/larges
+?/only
+?/as ma
+?/exce
+?/user
+?/foot
+?/serv
+?/already ob
+?/YouTube and
+?/consider
+?/cope
+?/difference
+?/mean rate
+?/for ea
+?/AS
+?/conc
+??wid
+?/diff
+?/peak rate per
+?/main lim
+?/durin
+?/secti
+?/abst
+??rss
+?/newcom
+?/start_
+?/Name
+?/get_top
+?/connection
+?/get_t
+? \<plot_all_nb_flows\>
+? \<start_indic\>
+? \<nb_flows_per_client\>
+? \<StartDn\>
+? \<nb_flows_per_client_color\>
+?/final
+?/session
+??60
+? \<y_offset\>
+??figure
+?/print
+? \<accumulated_nb\>
+? \<duration\>
+? \<plot_nb_flows_per_client_line\>
+? \<x_min\>
+? \<bin_start\>
+? (\(\f\|\[\|]\|\s\)*aparajita.tex
+?/ \[tstat\]
+?/\[tstat\]
+?/[tstat\]
+?/[tstat]
+?/out_seq
+?/find_l
+? \<ACCESS_RATES_NB_RENNES_2010_02\>
+?/\n
+?/
+?  
+?  \n
+?/trash
+? \<IP\>
+?/send
+?  ,
+? \<idx_tot_flows\>
+? any_loss
+?/xxxvi
+? \<Hbng\>
+? \<xxxpt\>
+? (\(\f\|\[\|]\|\s\)*
+?/bbk
+?/bngxxx
+?/cmd_
+?/plot_per_as
+? \<plot_indic\>
+?/rexm
+?/translat
+??RTM
+??retran
+? \<postfix\>
+??4500
+?/unique_
+??unique
+? \<dtype_all_stream_indics_final_tstat\>
+?/leg
+?/get_top_n
+? \<UNKNOWN_ID\>
+??excluded
+?/YouTube
+?/filter_se
+? \<plot_nb_flows_per_client_acc\>
+?/problem with c
+? \<thresholds\>
+?/use 
+?/dtype
+? \<dtype_cnx_stream\>
+?/paral
+?/conclus
+?/rescal
+?/1_-
+??homog
+??lower dow
+?/again
+??esti
+??tab
+?/_unique_
+? \<indic_list\>
+? \<plot_per_as_and_prefix\>
+? \<plot_indic_yt_others\>
+? C
+??add_t
+? \<TODO\>
+? :
+? \<out_dir\>
+??add_
+? \<dtype_tstat\>
+?/dtype_tst
+?/dtype_stream_
+?/return np
+? indics
+?/tstat
+?/input
+? (\(\f\|\[\|]\|\s\)*state_machine.tex
+? \<figure\>
+??up to
+? \<scatter\>
+??todo
+?/remaining
+?/rem
+?/downloaded
+?/remain
+? \<generate_remaining_cnx_stream\>
+??average
+? \<array\>
+?/extend
+?/events
+?/<F2>
+?/lo
+? \<plot_filtered\>
+?/reman
+?/remaning
+? \<service\>
+? \<initial_clf\>
+?/initial_
+? \<plot_per_as\>
+??ready
+??BB
+?/linear i
+?/better
+?/8
+?/very
+?/in te
+?/estima
+?/midru
+?/values are no
+?/verti
+?/shows a 
+?/parsing
+?/no f
+?/that to
+?/first cl
+?/paragr
+?/conclub
+?/in the l
+?/right
+??with at least 
+??at least 
+?/correct
+?/upstream loss
+?/desequ
+? Access
+? backbone
+??repartit
+?/abstrac
+?/compl
+??user expe
+?/video_reso
+?/video_len
+?/user_sess
+?/content_len
+?/scent
 
 # Historique expression (chronologie décroissante) :
 
 # Historique ligne de saisie (chronologie décroissante) :
+@\
+@=
+@\.
+@.
+@;
+@]
+@[
+@def
+@or
+@and
+@subsection
+@it
+@,
+@)
+@\<in\>
+@in
+@))
+@pdf
+@q
+@f
+@step
+@:echo i
+@:echo l:i
+@:set verbose=20
+@n
+@h
+@cont
+@q
+@echo l:stored
+@echo stored
+@s
+@f
+@echo line
+@echo buffertext
+@:set verbose=20
+@echo l:smtpconf
+@echo smtpconf
+@echo buffertxt
+@l
+@h
+@}
+@:
 
 # Historique ligne de saisie (chronologie décroissante) :
 
 # Registres :
+""0	LINE	0
+	                           ((.02, '2% threshold'),)))
+"1	LINE	0
+	                           (.02, '2% threshold')))
+"2	CHAR	0
+	}
+	  \
+"3	LINE	0
+	    
+"4	LINE	0
+	    return m
+"5	LINE	0
+	
+"6	LINE	0
+	class OauthRequest():
+	    "Class to get the access to user twitter account"
+	    def __init__(self):
+	        mOauthRequestToken = None
+"7	LINE	0
+	    credentials = 
+"8	LINE	0
+	        statusdata = str(statusmsg)
+"9	LINE	0
+	    # keys obtained while registering the application with twitter
+	    CONSUMER_KEY = 'E67YlXtc2ilopDc3SEcnbg'
+	    CONSUMER_SECRET = 'GoT3HEvoICR3tCdNFaXY2NhrEixcKgVgrHIoq4jofw'
+	    AUTHORIZATION_URL = 'http://twitter.com/oauth/authorize'
+	    REQUEST_TOKEN_URL = 'https://twitter.com/oauth/request_token'
+	    ACCESS_TOKEN_URL = 'https://twitter.com/oauth/access_token'
+"a	CHAR	0
+	+j
+"b	CHAR	0
+	\textbf{
+"c	CHAR	0
+	0i#uu
+"d	CHAR	0
+	Desequenced events over total number of packets per flow
+"e	LINE	0
+	            ' & '.join(['ratio nb flows 1MB/all']
+	                        + concat(*[['NA' if nb_flows[k + a] == 0 else
+	                                '%.3g' %
+	                                (nb_flows[k + a + '1MB'] / nb_flows[k + a])
+	                                    for a in as_list]
+	                           for k in (adsl, ftth)])) + r' \\',
+"f	LINE	0
+	\frame{
+	\frametitle{\thesection\ - \secname}
+	\framesubtitle{\subsecname}
+	}
+"h	CHAR	0
+	hhhInuu,s-$bb,qjjjjjjjjjwwww*n2yyouuPkjwwhu
+"i	CHAR	0
+	\item 
+"m	CHAR	0
+	argv=None
+"n	LINE	0
+	    \begin{tablenotes}
+	      \footnotesize
+	      \item [\S] desequenced event
+	      \item [\P] retransmitted packet
+	      \item [\dag] we do not consider spurious retransmissions or packets not
+	        lost but missed by the probe.
+	    \end{tablenotes}
+	  \end{threeparttable}
+"o	CHAR	0
+	0xxJa(uuA)---------------------------------------------------------------------------------------------uuuuuuu:set fo	+=a
+"r	CHAR	0
+	Ratio of retransmitted packets per flow
+"s	CHAR	0
+	video streaming site 
+"t	LINE	0
+	  \begin{threeparttable}
+"u	CHAR	0
+	u sj
+"w	CHAR	0
+	
+"x	CHAR	0
+	puu
+"z	LINE	0
+	File:/home/louis/streaming/pytomo/dns/dns.py
+	
+"-	CHAR	0
+	probes
 
 # Marques dans le fichier :
-'0  160  0  ~/.subversion/servers
+'0  1513  38  ~/workspace/spydump/tools/filter_streaming.py
+'1  294  12  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+'2  24  8  ~/play_soceda/twitter-sl4a/ts.py
+'3  31  0  ~/play_soceda/test_android/ts.py
+'4  2471  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+'5  80  17  ~/play_soceda/test_android/ts.py
+'6  108  39  ~/config/shell_aliases_functions
+'7  1  0  ~/shell_aliases_functions
+'8  107  55  ~/config/shell_aliases_functions
+'9  1  16  ~/streaming/rapport/thesis/slides/-MiniBufExplorer-
 
 # Liste de sauts (le plus récent en premier) :
--'  160  0  ~/.subversion/servers
--'  1  0  ~/.subversion/servers
+-'  1513  38  ~/workspace/spydump/tools/filter_streaming.py
+-'  904  43  ~/workspace/spydump/tools/filter_streaming.py
+-'  1637  38  ~/workspace/spydump/tools/filter_streaming.py
+-'  1633  38  ~/workspace/spydump/tools/filter_streaming.py
+-'  1630  38  ~/workspace/spydump/tools/filter_streaming.py
+-'  1519  38  ~/workspace/spydump/tools/filter_streaming.py
+-'  1652  0  ~/workspace/spydump/tools/filter_streaming.py
+-'  635  7  ~/workspace/spydump/tools/filter_streaming.py
+-'  624  15  ~/workspace/spydump/tools/filter_streaming.py
+-'  724  8  ~/workspace/spydump/tools/filter_streaming.py
+-'  716  57  ~/workspace/spydump/tools/filter_streaming.py
+-'  714  32  ~/workspace/spydump/tools/filter_streaming.py
+-'  713  8  ~/workspace/spydump/tools/filter_streaming.py
+-'  681  53  ~/workspace/spydump/tools/filter_streaming.py
+-'  1538  12  ~/workspace/spydump/tools/filter_streaming.py
+-'  294  12  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  996  25  ~/workspace/spydump/tools/filter_streaming.py
+-'  209  59  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  198  54  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  127  6  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  1  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  498  71  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  484  72  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  483  26  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  477  26  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  466  20  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  463  87  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  458  31  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  457  21  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  455  27  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  454  28  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  448  22  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  386  4  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  287  37  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  215  50  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  14  7  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  841  2  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  414  4  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  165  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  2427  57  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  2411  14  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  2390  6  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  2230  73  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  2229  10  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  2219  4  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  1141  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  1139  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  978  40  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  902  33  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  892  21  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  886  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  890  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  808  27  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  807  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  798  41  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  781  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  779  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  782  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  772  47  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  749  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  747  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  731  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  729  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  732  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  730  56  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  717  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  715  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  602  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  600  14  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  596  21  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  594  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  597  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  561  66  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  544  46  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  541  43  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  446  19  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  364  65  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  528  18  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  434  36  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  436  47  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  441  22  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  443  29  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  365  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  362  19  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  353  48  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  349  37  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  348  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> ~/workspace/spydump/tools/filter_streaming.py
+	"	1513	38
+	^	1513	51
+	.	1520	0
+	+	1146	24
+	+	1147	77
+	+	1148	17
+	+	1150	0
+	+	1148	0
+	+	1147	0
+	+	1145	31
+	+	1146	27
+	+	1147	0
+	+	1152	0
+	+	1158	16
+	+	1155	76
+	+	1156	73
+	+	1156	61
+	+	1158	0
+	+	1157	0
+	+	1156	74
+	+	1157	0
+	+	1155	0
+	+	1156	75
+	+	1157	0
+	+	1155	43
+	+	1155	44
+	+	1157	49
+	+	1155	40
+	+	1158	37
+	+	1159	16
+	+	1161	43
+	+	1159	16
+	+	1161	15
+	+	1159	75
+	+	1159	80
+	+	1161	15
+	+	1161	40
+	+	1161	43
+	+	1163	0
+	+	1159	0
+	+	1161	73
+	+	1162	0
+	+	1161	69
+	+	1160	0
+	+	1148	71
+	+	1148	67
+	+	1148	41
+	+	1148	44
+	+	1149	41
+	+	1150	0
+	+	1149	0
+	+	1148	0
+	+	1155	40
+	+	1158	0
+	+	1155	0
+	+	1553	0
+	+	1588	0
+	+	1588	15
+	+	1588	0
+	+	1588	0
+	+	1588	16
+	+	1588	73
+	+	1588	0
+	+	1588	0
+	+	853	25
+	+	853	23
+	+	852	0
+	+	854	0
+	+	853	34
+	+	854	0
+	+	858	0
+	+	854	77
+	+	857	65
+	+	858	0
+	+	853	37
+	+	855	77
+	+	856	39
+	+	853	26
+	+	854	0
+	+	855	0
+	+	856	0
+	+	853	25
+	+	857	66
+	+	855	0
+	+	856	0
+	+	1582	36
+	+	1616	48
+	+	788	20
+	+	931	28
+	+	1087	32
+	+	1106	40
+	+	1512	66
+	+	1513	48
+	+	1518	66
+	+	1520	0
+	+	903	32
+	+	904	52
+	+	904	53
+	+	905	0
+	+	1512	0
+	+	1513	50
+	+	1519	0
+	+	1520	0
+	z	1513	38
+
+> ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+	"	294	12
+	^	209	60
+	.	209	59
+	+	2086	0
+	+	2086	73
+	+	2174	40
+	+	2472	0
+	+	1613	4
+	+	1615	4
+	+	1683	4
+	+	1751	4
+	+	1753	4
+	+	1816	4
+	+	1818	4
+	+	1407	77
+	+	1280	31
+	+	1156	26
+	+	1158	22
+	+	1159	69
+	+	1158	15
+	+	1180	29
+	+	1093	76
+	+	841	59
+	+	663	54
+	+	701	37
+	+	614	78
+	+	561	53
+	+	560	36
+	+	561	68
+	+	560	42
+	+	561	75
+	+	560	37
+	+	561	74
+	+	464	53
+	+	465	0
+	+	680	23
+	+	680	128
+	+	681	25
+	+	681	131
+	+	682	27
+	+	683	3
+	+	680	22
+	+	683	0
+	+	686	71
+	+	686	78
+	+	169	71
+	+	171	70
+	+	348	79
+	+	349	37
+	+	353	48
+	+	362	19
+	+	363	0
+	+	364	68
+	+	364	76
+	+	434	40
+	+	443	29
+	+	436	47
+	+	434	36
+	+	364	65
+	+	446	19
+	+	541	43
+	+	544	46
+	+	561	66
+	+	594	57
+	+	595	76
+	+	596	21
+	+	600	0
+	+	601	74
+	+	715	68
+	+	715	75
+	+	730	0
+	+	730	76
+	+	744	38
+	+	747	55
+	+	748	59
+	+	772	47
+	+	779	40
+	+	780	65
+	+	798	41
+	+	806	70
+	+	808	27
+	+	886	28
+	+	888	78
+	+	892	21
+	+	902	33
+	+	978	40
+	+	1139	18
+	+	1139	77
+	+	2218	43
+	+	2219	0
+	+	2229	10
+	+	2230	53
+	+	2388	74
+	+	2389	63
+	+	2391	0
+	+	2410	78
+	+	2411	14
+	+	2427	57
+	+	164	76
+	+	841	87
+	+	841	42
+	+	198	54
+	+	209	59
+
+> ~/streaming/rapport/thesis/-MiniBufExplorer-
+	"	1	23
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/rapport/thesis/passive_streaming_analysis.log
+	"	742	0
+
+> ~/streaming/pytomo/lib/lib_cache_url/main_module.py
+	"	5	11
+	^	4	3
+	.	5	0
+	+	1	0
+	+	5	0
+	+	4	2
+	+	5	0
+	z	5	11
+
+> ~/streaming/pytomo/lib/lib_cache_url/get_url.py
+	"	22	0
+	^	20	33
+	.	12	9
+	+	28	12
+	+	29	0
+	+	28	45
+	+	10	42
+	+	9	35
+	+	17	24
+	+	22	0
+	+	23	51
+	+	24	43
+	+	23	42
+	+	19	0
+	+	23	23
+	+	2	0
+	+	10	59
+	+	14	51
+	+	13	52
+	+	12	49
+	+	11	44
+	+	17	49
+	+	15	7
+	+	16	50
+	+	17	28
+	+	12	12
+	+	17	0
+	+	18	0
+	+	19	0
+	+	21	37
+	+	20	32
+	+	12	9
+	z	12	9
+
+> ~/streaming/pytomo/lib/lib_cache_url/get_youtube_links_in_file.py
+	"	2	79
+	^	25	32
+	.	14	44
+	+	2	81
+	+	1	0
+	+	8	52
+	+	14	40
+	+	23	0
+	+	28	0
+	+	29	19
+	+	23	21
+	+	19	17
+	+	20	0
+	+	23	22
+	+	24	52
+	+	25	31
+	+	26	0
+	+	11	0
+	+	14	44
+	z	14	44
+
+> ~/workspace/spydump/tools/template.py
+	"	54	0
+	^	106	0
+	.	106	0
+	+	106	0
+
+> ~/workspace/spydump/tools/-MiniBufExplorer-
+	"	1	47
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/play_soceda/twitter-sl4a/ts.py
+	"	24	8
+	^	24	9
+	.	24	8
+	+	12	42
+	+	12	0
+	+	12	0
+	+	24	71
+	+	24	0
+	+	24	17
+	+	24	4
+	+	24	4
+	+	24	0
+	+	12	0
+	+	24	0
+	+	25	9
+	+	24	36
+	+	24	3
+	+	12	0
+	+	15	0
+	+	12	0
+	+	14	0
+	+	27	0
+	+	27	60
+	+	27	5
+	+	28	2
+	+	27	5
+	+	28	2
+	+	33	0
+	+	24	51
+	+	34	35
+	+	37	0
+	+	24	0
+	+	17	0
+	+	23	0
+	+	13	13
+	+	27	61
+	+	28	0
+	+	27	60
+	+	26	29
+	+	50	67
+	+	51	0
+	+	53	68
+	+	54	71
+	+	50	0
+	+	49	35
+	+	59	0
+	+	58	0
+	+	91	1
+	+	92	1
+	+	11	12
+	+	126	17
+	+	125	11
+	+	6	29
+	+	8	0
+	+	9	0
+	+	11	0
+	+	24	32
+	+	106	72
+	+	107	64
+	+	108	0
+	+	107	55
+	+	108	0
+	+	106	0
+	+	115	17
+	+	115	65
+	+	116	66
+	+	117	0
+	+	116	66
+	+	115	0
+	+	24	17
+	+	24	0
+	+	27	4
+	+	28	4
+	+	28	54
+	+	33	0
+	+	28	53
+	+	29	0
+	+	34	5
+	+	35	9
+	+	36	6
+	+	34	36
+	+	26	12
+	+	27	35
+	+	28	33
+	+	27	20
+	+	28	20
+	+	24	26
+	+	30	28
+	+	24	28
+	+	32	0
+	+	29	0
+	+	25	43
+	+	24	8
+	z	24	8
+
+> ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/auth.py
+	"	1	0
+
+> ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/-MiniBufExplorer-
+	"	1	1
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/twitter_globals.py
+	"	1	0
+
+> ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/util.py
+	"	1	0
+
+> ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+	"	179	0
+
+> ~/play_soceda/twitter-sl4a/oauth-python-twitter-1.0/oauthtwitter.py
+	"	1	0
+	^	188	31
+	.	187	0
+	+	186	33
+	+	187	72
+	+	188	0
+	+	187	0
+	z	188	29
+
+> ~/play_soceda/twitter-sl4a/oauth-python-twitter-1.0/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/config/hgignore
+	"	1	11
+	^	1	12
+	.	1	11
+	+	1	11
+
+> ~/config/hgrc
+	"	8	11
+	^	8	12
+	.	8	7
+	+	10	0
+	+	3	4
+	+	1	2
+	+	10	0
+	+	3	10
+	+	5	0
+	+	3	0
+	+	3	0
+	+	3	28
+	+	3	28
+	+	5	0
+	+	3	59
+	+	2	0
+	+	3	55
+	+	5	0
+	+	4	0
+	+	7	0
+	+	7	0
+	+	8	0
+	+	7	37
+	+	3	56
+	+	8	11
+	+	3	10
+	+	2	11
+	+	3	11
+	+	7	11
+	+	8	10
+	+	7	10
+	+	6	35
+	+	7	20
+	+	8	20
+	+	9	0
+	+	6	31
+	+	7	11
+	+	8	7
+
+> ~/config/[YankRing]
+	"	7	0
+	.	2	0
+	+	104	0
+	+	2	0
+
+> ~/config/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> /tmp/hg-editor-gVCs7v.txt
+	"	1	41
+	^	1	42
+	.	1	41
+	+	1	41
+
+> ~/play_soceda/test_android/ts.py
+	"	31	0
+	.	16	0
+	+	95	0
+	+	69	31
+	+	14	0
+	+	62	0
+	+	27	0
+	+	28	0
+	+	8	20
+	+	31	35
+	+	6	29
+	+	41	0
+	+	6	28
+	+	42	28
+	+	44	16
+	+	44	20
+	+	44	16
+	+	44	52
+	+	47	0
+	+	46	0
+	+	48	75
+	+	49	0
+	+	48	16
+	+	49	0
+	+	9	19
+	+	25	0
+	+	62	0
+	+	49	0
+	+	50	24
+	+	51	75
+	+	52	0
+	+	50	0
+	+	51	0
+	+	51	0
+	+	52	0
+	+	53	0
+	+	54	0
+	+	42	0
+	+	9	0
+	+	8	0
+	+	6	28
+	+	7	0
+	+	10	11
+	+	51	0
+	+	10	0
+	+	9	0
+	+	51	0
+	+	9	0
+	+	10	0
+	+	14	0
+	+	23	0
+	+	20	79
+	+	24	0
+	+	21	33
+	+	22	0
+	+	20	0
+	+	22	38
+	+	23	19
+	+	16	21
+	+	17	20
+	+	18	21
+	+	19	0
+	+	19	0
+	+	9	0
+	+	22	7
+	+	23	7
+	+	22	0
+	+	23	0
+	+	25	0
+	+	29	0
+	+	36	14
+	+	35	64
+	+	50	0
+	+	51	0
+	+	52	0
+	+	53	0
+	+	54	0
+	+	55	0
+	+	58	0
+	+	57	0
+	+	58	0
+	+	51	0
+	+	44	0
+	+	43	38
+	+	45	0
+	+	6	28
+	+	28	0
+	+	22	0
+	+	23	13
+	+	22	13
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	10	0
+	+	11	20
+	+	8	0
+	+	32	51
+	+	32	0
+	+	35	0
+	+	32	0
+	+	16	0
+	z	16	0
+
+> ~/play_soceda/test_android/[YankRing]
+	"	8	0
+	.	2	0
+	+	205	0
+	+	104	0
+	+	104	0
+	+	2	0
+
+> ~/play_soceda/test_android/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/config/shell_aliases_functions
+	"	108	39
+	^	108	40
+	.	108	39
+	+	127	8
+	+	125	9
+	+	126	25
+	+	74	71
+	+	194	49
+	+	99	0
+	+	28	14
+	+	118	43
+	+	108	35
+	+	107	55
+	+	108	39
+
+> ~/shell_aliases_functions
+	"	1	0
+
+> ~/streaming/qostrav/qostrav.tex
+	"	248	1
+	^	248	7
+	.	248	6
+	+	175	63
+	+	179	15
+	+	181	51
+	+	174	25
+	+	181	70
+	+	175	31
+	+	184	70
+	+	183	31
+	+	292	0
+	+	292	0
+	+	292	0
+	+	185	35
+	+	189	12
+	+	167	34
+	+	305	26
+	+	278	0
+	+	292	0
+	+	290	26
+	+	183	27
+	+	284	96
+	+	283	93
+	+	298	59
+	+	283	100
+	+	284	103
+	+	284	19
+	+	285	0
+	+	284	0
+	+	284	19
+	+	283	36
+	+	283	33
+	+	283	33
+	+	283	150
+	+	291	0
+	+	278	0
+	+	291	0
+	+	284	19
+	+	285	0
+	+	282	0
+	+	287	0
+	+	9	29
+	+	287	0
+	+	282	0
+	+	167	12
+	+	167	0
+	+	170	0
+	+	178	5
+	+	186	49
+	+	188	4
+	+	188	42
+	+	187	59
+	+	308	0
+	+	322	26
+	+	187	60
+	+	188	0
+	+	314	87
+	+	316	87
+	+	314	143
+	+	313	43
+	+	315	47
+	+	316	147
+	+	317	22
+	+	322	0
+	+	320	0
+	+	321	10
+	+	187	23
+	+	194	0
+	+	211	0
+	+	193	0
+	+	325	0
+	+	330	108
+	+	331	147
+	+	330	155
+	+	193	25
+	+	212	0
+	+	232	0
+	+	340	0
+	+	345	137
+	+	239	13
+	+	238	15
+	+	239	0
+	+	242	52
+	+	243	75
+	+	245	51
+	+	250	2
+	+	257	11
+	+	251	10
+	+	256	15
+	+	251	73
+	+	252	41
+	+	254	11
+	+	255	7
+	+	253	70
+	+	254	43
+	+	256	0
+	+	254	74
+	+	255	15
+	+	196	5
+	+	178	0
+	+	237	6
+	+	248	6
+
+> ~/streaming/qostrav/[YankRing]
+	"	13	0
+	.	2	0
+	+	104	0
+	+	104	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/qostrav/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/rapport/thesis/slides/network_diagnosis.tex
+	"	328	0
+	^	130	30
+	.	130	29
+	+	172	17
+	+	352	0
+	+	310	0
+	+	295	0
+	+	314	0
+	+	317	0
+	+	321	0
+	+	320	0
+	+	321	33
+	+	320	27
+	+	319	75
+	+	319	156
+	+	320	160
+	+	321	0
+	+	320	0
+	+	321	56
+	+	172	26
+	+	174	10
+	+	320	144
+	+	319	140
+	+	324	0
+	+	326	0
+	+	165	31
+	+	325	23
+	+	198	0
+	+	202	1
+	+	201	27
+	+	202	17
+	+	203	39
+	+	204	9
+	+	201	65
+	+	204	33
+	+	205	14
+	+	206	10
+	+	204	46
+	+	331	0
+	+	328	0
+	+	331	0
+	+	340	0
+	+	341	0
+	+	338	0
+	+	339	23
+	+	333	44
+	+	204	65
+	+	198	30
+	+	216	71
+	+	216	15
+	+	216	21
+	+	216	78
+	+	209	7
+	+	216	0
+	+	209	8
+	+	210	21
+	+	209	29
+	+	210	0
+	+	215	12
+	+	72	68
+	+	108	0
+	+	115	0
+	+	130	65
+	+	134	7
+	+	138	0
+	+	134	8
+	+	136	0
+	+	136	0
+	+	133	19
+	+	134	39
+	+	136	12
+	+	138	0
+	+	135	54
+	+	129	5
+	+	132	0
+	+	137	0
+	+	130	0
+	+	131	11
+	+	137	10
+	+	132	0
+	+	130	0
+	+	140	0
+	+	140	0
+	+	153	0
+	+	140	0
+	+	153	0
+	+	146	0
+	+	144	23
+	+	148	0
+	+	149	0
+	+	210	19
+	+	213	75
+	+	212	0
+	+	214	0
+	+	212	0
+	+	214	16
+	+	228	6
+	+	235	6
+	+	207	5
+	+	150	5
+	+	158	5
+	+	117	0
+	+	130	29
+
+> ~/streaming/rapport/thesis/slides/-MiniBufExplorer-
+	"	1	16
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/qostrav/qostrav.log
+	"	1300	0
+
+> ~/streaming/pytomo/loop.urls.py
+	"	1	0
+
+> ~/streaming/pytomo/urls/loop_urls.py
+	"	65	24
+	^	2	0
+	.	65	24
+	+	1	0
+	+	8	66
+	+	8	67
+	+	9	0
+	+	11	29
+	+	13	30
+	+	17	27
+	+	18	16
+	+	22	14
+	+	21	50
+	+	23	23
+	+	21	32
+	+	22	0
+	+	19	35
+	+	14	35
+	+	23	12
+	+	3	12
+	+	14	0
+	+	27	53
+	+	30	26
+	+	36	27
+	+	27	39
+	+	28	35
+	+	33	33
+	+	37	39
+	+	28	0
+	+	14	0
+	+	10	0
+	+	11	0
+	+	35	0
+	+	61	20
+	+	70	20
+	+	54	20
+	+	58	20
+	+	56	0
+	+	60	0
+	+	57	0
+	+	70	34
+	+	70	0
+	+	70	65
+	+	71	0
+	+	71	0
+	+	70	0
+	+	58	50
+	+	49	31
+	+	66	23
+	+	68	24
+	+	49	0
+	+	62	0
+	+	12	37
+	+	36	20
+	+	37	26
+	+	4	10
+	+	5	6
+	+	2	0
+	+	39	40
+	+	33	30
+	+	65	24
+	z	65	24
+
+> ~/streaming/pytomo/urls/-MiniBufExplorer-
+	"	1	16
+	.	2	0
+	+	2	0
+
+> ~/play_soceda/meeting_1/notes.txt
+	"	391	0
+	^	391	2
+	.	390	79
+	+	318	9
+	+	315	38
+	+	317	42
+	+	321	0
+	+	317	79
+	+	318	0
+	+	320	1
+	+	319	6
+	+	315	38
+	+	288	57
+	+	322	13
+	+	315	7
+	+	323	0
+	+	329	28
+	+	330	77
+	+	331	5
+	+	333	15
+	+	331	54
+	+	333	33
+	+	332	44
+	+	330	44
+	+	337	71
+	+	338	9
+	+	331	16
+	+	339	0
+	+	341	0
+	+	328	37
+	+	340	47
+	+	400	0
+	+	345	24
+	+	344	1
+	+	342	17
+	+	343	0
+	+	344	0
+	+	345	21
+	+	353	0
+	+	400	0
+	+	352	5
+	+	347	27
+	+	351	37
+	+	352	2
+	+	358	1
+	+	356	41
+	+	358	57
+	+	359	29
+	+	365	0
+	+	370	0
+	+	360	0
+	+	354	77
+	+	361	78
+	+	363	44
+	+	361	60
+	+	365	13
+	+	361	45
+	+	362	0
+	+	363	31
+	+	365	0
+	+	366	7
+	+	368	6
+	+	364	17
+	+	365	0
+	+	369	10
+	+	364	45
+	+	371	32
+	+	372	0
+	+	371	44
+	+	373	12
+	+	375	0
+	+	376	11
+	+	373	5
+	+	375	0
+	+	375	0
+	+	383	49
+	+	384	0
+	+	387	28
+	+	375	0
+	+	374	0
+	+	392	0
+	+	395	0
+	+	387	69
+	+	388	12
+	+	389	0
+	+	389	32
+	+	392	0
+	+	373	6
+	+	385	22
+	+	387	1
+	+	388	1
+	+	389	1
+	+	392	72
+	+	393	23
+	+	394	58
+	+	389	76
+	+	390	20
+	+	389	78
+	+	392	0
+	+	390	0
+	+	397	41
+	+	399	32
+	+	390	79
+
+> ~/play_soceda/meeting_1/[YankRing]
+	"	5	0
+	.	2	0
+	+	2	0
+
+> ~/play_soceda/meeting_1/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/Confs/LTE/lte_notes.txt
+	"	9	0
+	^	8	33
+	.	8	32
+	+	208	0
+	+	205	41
+	+	207	27
+	+	200	29
+	+	201	26
+	+	207	22
+	+	200	74
+	+	201	0
+	+	201	71
+	+	209	7
+	+	210	0
+	+	212	13
+	+	221	0
+	+	214	0
+	+	212	31
+	+	213	16
+	+	214	24
+	+	215	0
+	+	214	47
+	+	213	0
+	+	214	1
+	+	213	0
+	+	212	0
+	+	215	0
+	+	221	12
+	+	221	0
+	+	221	0
+	+	223	0
+	+	221	0
+	+	221	0
+	+	224	36
+	+	216	23
+	+	221	0
+	+	218	0
+	+	218	0
+	+	221	0
+	+	221	0
+	+	225	0
+	+	229	0
+	+	226	0
+	+	227	2
+	+	228	0
+	+	232	0
+	+	230	0
+	+	230	27
+	+	230	4
+	+	230	0
+	+	232	0
+	+	221	0
+	+	216	0
+	+	219	0
+	+	218	0
+	+	217	0
+	+	230	0
+	+	232	0
+	+	231	0
+	+	221	0
+	+	222	44
+	+	221	0
+	+	220	0
+	+	225	0
+	+	230	0
+	+	226	0
+	+	244	0
+	+	235	0
+	+	233	25
+	+	234	0
+	+	236	9
+	+	237	0
+	+	243	0
+	+	239	18
+	+	240	23
+	+	241	8
+	+	242	10
+	+	243	15
+	+	245	3
+	+	246	0
+	+	247	0
+	+	248	30
+	+	261	0
+	+	248	1
+	+	250	4
+	+	250	16
+	+	249	76
+	+	261	0
+	+	250	0
+	+	261	0
+	+	251	0
+	+	254	18
+	+	255	0
+	+	253	0
+	+	252	26
+	+	256	0
+	+	110	14
+	+	109	24
+	+	109	78
+	+	258	22
+	+	260	0
+	+	259	20
+	+	8	32
+
+> ~/cv_autres/CV/Specialist_Application-Form_2010.txt
+	"	2	0
+	^	63	0
+	.	62	12
+	+	1	7
+	+	79	79
+	+	80	77
+	+	81	76
+	+	82	68
+	+	83	76
+	+	84	13
+	+	69	76
+	+	70	78
+	+	71	74
+	+	74	3
+	+	76	0
+	+	73	73
+	+	75	35
+	+	10	5
+	+	10	14
+	+	8	73
+	+	65	0
+	+	8	73
+	+	10	63
+	+	12	9
+	+	13	14
+	+	13	60
+	+	11	35
+	+	13	62
+	+	15	47
+	+	17	6
+	+	18	29
+	+	13	61
+	+	15	46
+	+	28	60
+	+	19	75
+	+	20	78
+	+	21	79
+	+	22	75
+	+	23	71
+	+	23	71
+	+	23	78
+	+	25	1
+	+	26	29
+	+	24	42
+	+	25	76
+	+	27	0
+	+	3	79
+	+	6	50
+	+	8	75
+	+	10	4
+	+	11	74
+	+	13	7
+	+	12	12
+	+	13	4
+	+	12	77
+	+	14	0
+	+	17	76
+	+	17	8
+	+	18	0
+	+	8	0
+	+	28	32
+	+	65	0
+	+	28	73
+	+	29	30
+	+	59	76
+	+	34	22
+	+	35	76
+	+	36	22
+	+	34	37
+	+	41	7
+	+	43	34
+	+	36	22
+	+	37	75
+	+	38	34
+	+	43	74
+	+	56	0
+	+	9	19
+	+	44	79
+	+	45	15
+	+	45	5
+	+	56	0
+	+	50	10
+	+	61	0
+	+	51	16
+	+	50	36
+	+	51	16
+	+	52	5
+	+	48	51
+	+	52	7
+	+	47	6
+	+	53	78
+	+	54	5
+	+	53	77
+	+	54	73
+	+	55	42
+	+	60	0
+	+	64	0
+	+	60	77
+	+	62	12
+
+> ~/cv_autres/CV/cv_expert_application.tex
+	"	299	13
+	^	339	10
+	.	339	9
+	+	227	0
+	+	228	0
+	+	229	0
+	+	312	0
+	+	339	3
+	+	338	0
+	+	340	0
+	+	340	0
+	+	340	0
+	+	339	9
+
+> ~/cv_autres/CV/ESIEEcv.sty
+	"	1	0
+
+> ~/cv_autres/CV/-MiniBufExplorer-
+	"	1	45
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/cv_autres/CV/cv_expert_application.log
+	"	321	0
+
+> ~/config/burn.conf
+	"	28	0
+	^	47	17
+	.	47	15
+	+	7	11
+	+	47	15
+
+> ~/config/burn.conf~
+	"	49	0
+
+> ~/config/burn.conf.new
+	"	2	9
+	^	2	10
+	.	2	9
+	+	2	9
+
+> ~/streaming/rapport/thesis/__OUTLINE__
+	"	15	3
+	.	1	0
+	+	739	0
+	+	673	0
+	+	654	0
+	+	629	0
+	+	610	0
+	+	602	0
+	+	533	0
+	+	520	0
+	+	388	0
+	+	383	0
+	+	380	0
+	+	377	0
+	+	358	0
+	+	357	0
+	+	122	0
+	+	115	0
+	+	112	0
+	+	108	0
+	+	105	0
+	+	99	0
+	+	80	0
+	+	75	0
+	+	62	0
+	+	43	0
+	+	39	0
+	+	20	0
+	+	1	0
+
+> ~/workspace/spydump/tools/INDEX_VALUES.py
+	"	171	5
+	^	439	0
+	.	117	0
+	+	776	18
+	+	776	18
+	+	831	0
+	+	777	0
+	+	832	0
+	+	831	0
+	+	779	7
+	+	780	10
+	+	781	7
+	+	776	23
+	+	777	0
+	+	827	18
+	+	828	0
+	+	829	0
+	+	830	0
+	+	831	0
+	+	902	66
+	+	117	41
+	+	117	44
+	+	117	0
+	+	21	32
+	+	117	31
+	+	117	0
+	+	117	0
+	+	117	31
+	+	117	0
+	+	117	0
+	+	117	0
+	+	117	31
+	+	117	0
+	+	117	0
+	+	117	31
+	+	117	67
+	+	117	22
+	+	117	33
+	+	117	44
+	+	117	63
+	+	117	0
+	+	117	0
+	+	117	76
+	+	117	34
+	+	117	43
+	+	117	0
+	+	438	0
+	+	117	0
+	z	117	0
+
+> ~/workspace/spydump/tools/[YankRing]
+	"	5	0
+	.	2	0
+	+	3877	0
+	+	3775	0
+	+	3673	0
+	+	3571	0
+	+	3469	0
+	+	3367	0
+	+	3265	0
+	+	3163	0
+	+	3061	0
+	+	2959	0
+	+	2857	0
+	+	2755	0
+	+	2653	0
+	+	2551	0
+	+	2449	0
+	+	2347	0
+	+	2245	0
+	+	2143	0
+	+	2041	0
+	+	1939	0
+	+	1837	0
+	+	1735	0
+	+	1633	0
+	+	1531	0
+	+	1429	0
+	+	1327	0
+	+	1225	0
+	+	1123	0
+	+	1021	0
+	+	919	0
+	+	817	0
+	+	716	0
+	+	716	0
+	+	614	0
+	+	512	0
+	+	410	0
+	+	308	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/analyses/user_profiling/tma_final/list.txt
+	"	1	16
+
+> /tmp/mutt-ator-mail
+	"	23	21
+	^	23	22
+	.	23	21
+	+	40	0
+	+	39	0
+	+	41	72
+	+	42	67
+	+	44	78
+	+	47	34
+	+	49	77
+	+	49	77
+	+	49	0
+	+	49	81
+	+	53	43
+	+	55	27
+	+	56	0
+	+	67	0
+	+	51	12
+	+	67	0
+	+	56	0
+	+	57	79
+	+	58	19
+	+	46	53
+	+	58	76
+	+	59	74
+	+	60	75
+	+	65	61
+	+	41	27
+	+	37	0
+	+	14	105
+	+	14	5
+	+	14	4
+	+	14	4
+	+	14	4
+	+	14	4
+	+	14	49
+	+	2	44
+	+	6	34
+	+	2	9
+	+	14	0
+	+	8	15
+	+	9	4
+	+	8	55
+	+	10	0
+	+	14	0
+	+	10	58
+	+	13	44
+	+	14	0
+	+	1	0
+	+	15	0
+	+	35	0
+	+	2	1
+	+	5	0
+	+	2	0
+	+	7	1
+	+	10	0
+	+	13	0
+	+	25	21
+	+	34	2
+	+	16	2
+	+	20	4
+	+	18	18
+	+	21	69
+	+	22	67
+	+	23	18
+	+	25	0
+	+	25	36
+	+	25	0
+	+	10	0
+	+	6	0
+	+	17	0
+	+	12	0
+	+	19	0
+	+	25	0
+	+	1	48
+	+	30	11
+	+	3	15
+	+	32	3
+	+	6	0
+	+	6	0
+	+	9	23
+	+	12	0
+	+	16	23
+	+	15	21
+	+	19	13
+	+	23	21
+
+> ~/analyses/user_profiling/hh_prof.awk
+	"	151	0
+	^	134	68
+	.	134	67
+	+	108	53
+	+	116	0
+	+	117	20
+	+	125	24
+	+	128	0
+	+	127	0
+	+	128	21
+	+	131	72
+	+	131	73
+	+	133	0
+	+	131	74
+	+	132	0
+	+	109	15
+	+	142	0
+	+	141	0
+	+	142	12
+	+	144	0
+	+	143	0
+	+	144	28
+	+	146	44
+	+	134	67
+	+	135	29
+	+	136	0
+	+	135	27
+	+	134	67
+
+> ~/streaming/rapport/thesis/[YankRing]
+	"	5	0
+	.	2	0
+	+	410	0
+	+	410	0
+	+	308	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/rapport/complements.tex
+	"	344	40
+
+> ~/streaming/rapport/changepage.sty
+	"	1	0
+
+> ~/streaming/rapport/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+
+> ~/workspace/spydump/tools/complements.py
+	"	600	8
+	^	609	37
+	.	600	0
+	+	1007	0
+	+	1006	0
+	+	813	70
+	+	813	11
+	+	813	45
+	+	814	0
+	+	812	0
+	+	992	21
+	+	1021	25
+	+	1015	67
+	+	1016	0
+	+	1015	68
+	+	1002	21
+	+	1002	0
+	+	1002	0
+	+	1015	67
+	+	1011	19
+	+	1011	22
+	+	1011	0
+	+	1011	25
+	+	987	18
+	+	1006	0
+	+	1007	0
+	+	1008	0
+	+	1015	0
+	+	1015	0
+	+	999	40
+	+	1002	36
+	+	1018	0
+	+	1019	28
+	+	1015	0
+	+	1011	0
+	+	987	0
+	+	1010	44
+	+	1010	25
+	+	1019	0
+	+	1010	0
+	+	723	50
+	+	739	49
+	+	740	51
+	+	881	0
+	+	880	63
+	+	881	0
+	+	892	42
+	+	893	48
+	+	881	73
+	+	893	71
+	+	788	72
+	+	755	42
+	+	803	72
+	+	1027	1
+	+	1028	0
+	+	1027	0
+	+	1028	41
+	+	1030	0
+	+	1028	44
+	+	1032	20
+	+	1033	19
+	+	1032	0
+	+	837	0
+	+	982	0
+	+	837	73
+	+	974	77
+	+	847	0
+	+	1036	10
+	+	1026	25
+	+	844	71
+	+	845	67
+	+	983	0
+	+	772	0
+	+	774	63
+	+	775	48
+	+	777	0
+	+	776	0
+	+	787	42
+	+	802	42
+	+	774	0
+	+	738	62
+	+	891	62
+	+	420	49
+	+	437	40
+	+	467	39
+	+	484	44
+	+	660	38
+	+	664	57
+	+	669	36
+	+	591	0
+	+	591	0
+	+	591	0
+	+	591	0
+	+	454	46
+	+	462	21
+	+	463	0
+	+	437	42
+	+	437	45
+	+	609	36
+	+	610	41
+	+	622	35
+	+	599	0
+	+	600	0
+	z	600	8
+
+> ~/workspace/spydump/tools/streaming_tools.py
+	"	472	0
+	^	472	71
+	.	472	70
+	+	146	0
+	+	144	0
+	+	1514	0
+	+	1487	78
+	+	1489	40
+	+	1500	0
+	+	1490	0
+	+	1491	0
+	+	1494	0
+	+	1500	27
+	+	1513	34
+	+	1591	23
+	+	1499	40
+	+	1492	0
+	+	472	68
+	+	432	61
+	+	1432	0
+	+	472	70
+	z	472	70
+
+> ~/analyses/user_profiling/tma_final/tma3-pietrzyk.tex
+	"	477	0
+	^	477	14
+	.	477	13
+	+	427	74
+	+	427	78
+	+	430	55
+	+	428	15
+	+	430	55
+	+	428	16
+	+	429	79
+	+	430	64
+	+	433	44
+	+	438	79
+	+	433	0
+	+	438	48
+	+	439	77
+	+	457	77
+	+	459	0
+	+	462	0
+	+	459	37
+	+	460	77
+	+	461	78
+	+	462	0
+	+	461	78
+	+	462	0
+	+	457	63
+	+	459	25
+	+	457	77
+	+	458	63
+	+	460	0
+	+	459	4
+	+	460	78
+	+	463	69
+	+	464	38
+	+	468	0
+	+	464	78
+	+	465	14
+	+	466	75
+	+	467	40
+	+	469	79
+	+	470	62
+	+	472	79
+	+	458	56
+	+	471	50
+	+	517	24
+	+	517	202
+	+	517	41
+	+	520	17
+	+	475	77
+	+	477	13
+
+> ~/workspace/spydump/tools/__Tag_List__
+	"	54	4
+	.	67	0
+	+	1189	0
+	+	1192	0
+	+	1235	0
+	+	1188	0
+	+	1136	0
+	+	1089	0
+	+	1025	0
+	+	979	0
+	+	978	0
+	+	1037	0
+	+	927	0
+	+	926	0
+	+	874	0
+	+	701	0
+	+	755	0
+	+	823	0
+	+	701	0
+	+	701	0
+	+	701	0
+	+	701	0
+	+	767	0
+	+	796	0
+	+	822	0
+	+	700	0
+	+	647	0
+	+	635	0
+	+	578	0
+	+	475	0
+	+	464	0
+	+	463	0
+	+	504	0
+	+	521	0
+	+	404	0
+	+	387	0
+	+	387	0
+	+	387	0
+	+	387	0
+	+	403	0
+	+	386	0
+	+	247	0
+	+	259	0
+	+	222	0
+	+	222	0
+	+	324	0
+	+	222	0
+	+	221	0
+	+	174	0
+	+	191	0
+	+	133	0
+	+	67	0
+
+> ~/analyses/user_profiling/user_prof.py
+	"	185	46
+	^	185	46
+	.	185	0
+	+	125	68
+	+	16	0
+	+	125	23
+	+	14	12
+	+	177	51
+	+	186	36
+	+	177	58
+	+	118	10
+	+	168	79
+	+	168	68
+	+	170	0
+	+	168	79
+	+	169	70
+	+	169	46
+	+	170	0
+	+	168	0
+	+	118	49
+	+	119	49
+	+	126	23
+	+	187	0
+	+	186	44
+	+	185	0
+	z	186	44
+
+> ~/analyses/user_profiling/-MiniBufExplorer-
+	"	1	48
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/analyses/user_profiling/my_cluster.py
+	"	337	16
+
+> ~/analyses/user_profiling/TMA2011/paper_draftv2.tex
+	"	759	34
+
+> /usr/share/vim/vim72/doc/help.txt
+	"	1	0
+
+> ~/workspace/spydump/tools/flow2session.py
+	"	51	0
+	^	186	76
+	.	379	0
+	+	187	76
+	+	186	75
+	+	379	0
+	z	186	75
+
+> ~/tmp/polys3d_demo.py
+	"	38	9
+	.	39	0
+	+	9	0
+	+	10	15
+	+	40	0
+	+	41	19
+	+	32	15
+	+	26	10
+	+	18	5
+	+	19	0
+	+	18	13
+	+	13	21
+	+	4	26
+	+	17	15
+	+	24	40
+	+	27	52
+	+	34	19
+	+	40	0
+	+	41	0
+	+	15	15
+	+	18	11
+	+	34	0
+	+	37	0
+	+	39	0
+	+	38	9
+	+	39	22
+	+	39	0
+	z	38	9
+
+> /usr/share/vim/vim72/doc/quickfix.txt
+	"	769	28
+
+> ~/perso/bangla/aum.tex
+	"	9	4
+	^	9	15
+	.	9	14
+	+	9	14
+
+> ~/perso/bangla/aparajita.tex
+	"	9	0
+	^	9	6
+	.	9	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	6
+	+	2	6
+	+	1	14
+	+	2	0
+	+	2	0
+	+	14	0
+	+	2	0
+	+	8	37
+	+	10	11
+	+	11	14
+	+	8	0
+	+	10	0
+	+	8	7
+	+	7	0
+	+	8	9
+	+	7	0
+	+	11	0
+	+	7	0
+	+	6	5
+	+	5	0
+	+	11	0
+	+	13	0
+	+	5	10
+	+	4	0
+	+	12	4
+	+	8	28
+	+	1	0
+	+	8	44
+	+	5	0
+	+	8	0
+	+	2	0
+	+	8	0
+	+	1	0
+	+	2	0
+	+	8	30
+	+	8	0
+	+	8	30
+	+	2	18
+	+	8	0
+	+	2	0
+	+	8	29
+	+	9	0
+
+> ~/perso/bangla/aparajita.log
+	"	109	0
+
+> ~/perso/bangla/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/workspace/spydump/tools/create_packets.py
+	"	9	0
+	^	27	71
+	.	10	0
+	+	1	0
+	+	7	38
+	+	7	13
+	+	7	20
+	+	7	27
+	+	7	34
+	+	7	41
+	+	7	38
+	+	32	0
+	+	7	0
+	+	24	0
+	+	13	39
+	+	2	66
+	+	24	28
+	+	26	63
+	+	24	23
+	+	24	63
+	+	26	47
+	+	23	21
+	+	14	19
+	+	24	26
+	+	27	51
+	+	24	15
+	+	24	0
+	+	31	12
+	+	30	23
+	+	5	9
+	+	27	54
+	+	4	13
+	+	28	0
+	+	25	41
+	+	4	36
+	+	14	19
+	+	15	0
+	+	16	48
+	+	16	62
+	+	23	0
+	+	27	56
+	+	26	63
+	+	20	23
+	+	22	71
+	+	22	56
+	+	21	0
+	+	23	0
+	+	17	31
+	+	18	63
+	+	22	59
+	+	22	0
+	+	27	62
+	+	11	19
+	+	27	65
+	+	7	47
+	+	8	0
+	+	7	0
+	+	8	79
+	+	10	0
+	+	8	73
+	+	9	73
+	+	23	38
+	+	27	70
+	+	10	0
+	z	10	0
+
+> ~/workspace/spydump/tools/TCPunitary.py
+	"	2	0
+
+> ~/workspace/tstat/tstat/tcp.c
+	"	456	0
+
+> ~/workspace/tstat/tstat/-MiniBufExplorer-
+	"	1	1
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/perso/bangla/[YankRing]
+	"	10	0
+	.	2	0
+	+	2	0
+
+> ~/config/latex/bangtex/latex/bsize12.clo
+	"	119	16
+	^	128	19
+	.	119	0
+	+	113	0
+	+	114	0
+	+	120	0
+	+	118	41
+	+	128	0
+	+	119	0
+	+	128	0
+	+	119	0
+	+	115	0
+	+	119	19
+	+	127	0
+	+	119	17
+	+	128	0
+	+	119	0
+
+> ~/config/latex/bangtex/latex/barticle.cls
+	"	116	0
+	.	113	0
+	+	113	0
+
+> ~/config/latex/bangtex/latex/bbk12.clo
+	"	108	0
+	.	108	0
+	+	113	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	114	0
+	+	115	12
+	+	115	0
+	+	115	0
+	+	115	0
+	+	115	0
+	+	115	0
+	+	115	0
+	+	115	0
+	+	123	0
+	+	115	17
+	+	114	0
+	+	115	0
+	+	108	0
+
+> ~/config/latex/bangtex/latex/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/workspace/spydump/tools/cdfplot.py
+	"	90	0
+	.	124	0
+	+	124	0
+
+> ~/workspace/tstat/tstat/tstat.h
+	"	188	0
+
+> ~/workspace/tstat/tstat/tstat.c
+	"	27	0
+
+> ~/workspace/tstat/tstat/rexmit.c
+	"	878	47
+	.	196	0
+	+	196	0
+
+> ~/workspace/spydump/tools/load_tstat_file.py
+	"	12	18
+	.	21	0
+	+	20	0
+	+	21	0
+	z	1	0
+
+> ~/perso/vimgolf/exos/simple_deletion
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/perso/vimgolf/exos/align_it
+	"	23	7
+	.	1	0
+	+	50	0
+	+	50	0
+	+	1	0
+	+	50	0
+	+	1	0
+	+	50	0
+	+	1	0
+
+> ~/.vimrc
+	"	15	0
+	^	17	31
+	.	17	31
+	+	8	0
+	+	9	105
+	+	17	0
+	+	9	34
+	+	14	0
+	+	9	16
+	+	20	0
+	+	21	0
+	+	9	72
+	+	12	1
+	+	9	46
+	+	10	0
+	+	11	0
+	+	12	0
+	+	16	0
+	+	17	0
+	+	13	0
+	+	14	0
+	+	17	0
+	+	9	35
+	+	18	0
+	+	18	0
+	+	17	31
+
+> ~/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/config/vim/vimrc
+	"	342	16
+	^	398	10
+	.	398	12
+	+	206	0
+	+	206	0
+	+	206	0
+	+	206	0
+	+	255	0
+	+	256	0
+	+	251	25
+	+	266	4
+	+	265	0
+	+	407	11
+	+	265	0
+	+	266	0
+	+	265	0
+	+	80	0
+	+	81	0
+	+	1	0
+	+	1	0
+	+	9	0
+	+	11	0
+	+	1	0
+	+	54	18
+	+	1	0
+	+	1	9
+	+	1	0
+	+	3	17
+	+	3	0
+	+	324	0
+	+	328	0
+	+	324	0
+	+	335	0
+	+	358	0
+	+	336	0
+	+	335	0
+	+	27	19
+	+	80	0
+	+	183	2
+	+	17	22
+	+	183	0
+	+	182	56
+	+	54	0
+	+	414	17
+	+	415	0
+	+	335	15
+	+	183	35
+	+	400	0
+	+	401	0
+	+	200	0
+	+	201	0
+	+	200	0
+	+	201	0
+	+	206	0
+	+	427	0
+	+	429	0
+	+	433	16
+	+	434	16
+	+	435	16
+	+	436	16
+	+	437	16
+	+	438	16
+	+	441	16
+	+	442	16
+	+	443	16
+	+	444	16
+	+	445	16
+	+	446	0
+	+	430	0
+	+	409	0
+	+	267	5
+	+	268	0
+	+	154	15
+	+	26	0
+	+	28	0
+	+	6	29
+	+	7	0
+	+	278	5
+	+	280	0
+	+	278	7
+	+	279	0
+	+	280	0
+	+	279	5
+	+	280	0
+	+	280	0
+	+	278	5
+	+	279	5
+	+	276	8
+	+	277	5
+	+	395	4
+	+	396	0
+	+	395	0
+	+	401	0
+	+	402	0
+	+	278	0
+	+	279	5
+	+	278	5
+	+	279	5
+	+	278	0
+	+	397	9
+	+	398	9
+	+	397	12
+	+	398	12
+
+> ~/config/vim_runtime/vimrc
+	"	236	20
+	^	385	1
+	.	386	0
+	+	386	0
+
+> /usr/share/vim/vim72/doc/change.txt
+	"	667	39
+
+> /tmp/zshecl7952
+	"	1	0
+
+> ~/tmp/dernier_ralu.txt
+	"	1	0
+	^	92	26
+	.	92	23
+	+	19	49
+	+	20	0
+	+	19	31
+	+	20	0
+	+	19	47
+	+	36	57
+	+	73	37
+	+	73	28
+	+	31	44
+	+	61	35
+	+	3	73
+	+	3	11
+	+	4	91
+	+	5	0
+	+	4	67
+	+	5	75
+	+	3	67
+	+	3	22
+	+	38	12
+	+	38	39
+	+	39	0
+	+	38	0
+	+	38	46
+	+	48	77
+	+	48	67
+	+	60	26
+	+	79	0
+	+	78	0
+	+	80	41
+	+	80	0
+	+	80	25
+	+	83	3
+	+	32	49
+	+	32	77
+	+	61	48
+	+	73	0
+	+	89	3
+	+	94	0
+	+	74	30
+	+	78	6
+	+	73	0
+	+	34	41
+	+	36	54
+	+	89	68
+	+	94	0
+	+	85	0
+	+	89	76
+	+	3	0
+	+	2	11
+	+	3	1
+	+	3	1
+	+	3	23
+	+	5	0
+	+	10	32
+	+	37	76
+	+	38	9
+	+	39	0
+	+	48	34
+	+	48	78
+	+	59	16
+	+	60	0
+	+	69	40
+	+	93	0
+	+	3	44
+	+	3	74
+	+	4	21
+	+	7	2
+	+	8	0
+	+	7	5
+	+	10	12
+	+	25	77
+	+	38	15
+	+	45	0
+	+	62	0
+	+	3	76
+	+	35	0
+	+	39	0
+	+	42	0
+	+	89	0
+	+	19	0
+	+	89	0
+	+	86	79
+	+	87	54
+	+	86	75
+	+	86	80
+	+	87	83
+	+	88	14
+	+	90	51
+	+	91	81
+	+	92	13
+	+	82	28
+	+	73	29
+	+	25	63
+	+	47	74
+	+	48	55
+	+	49	0
+	+	48	67
+	+	61	19
+	+	65	0
+	+	92	23
+
+> ~/tmp/__Scratch__
+	"	104	0
+	.	103	81
+	+	1	75
+	+	103	81
+
+> ~/tmp/-MiniBufExplorer-
+	"	1	20
+	.	2	0
+	+	2	0
+	+	2	0
+
+> ~/config/xmonad/xmonad.hs
+	"	210	66
+	^	210	67
+	.	210	66
+	+	193	0
+	+	136	0
+	+	137	4
+	+	137	0
+	+	122	24
+	+	7	84
+	+	7	84
+	+	137	0
+	+	193	60
+	+	194	0
+	+	194	0
+	+	193	59
+	+	14	0
+	+	13	0
+	+	14	0
+	+	7	78
+	+	6	0
+	+	5	0
+	+	7	76
+	+	6	65
+	+	107	1
+	+	108	0
+	+	122	24
+	+	123	5
+	+	124	20
+	+	125	16
+	+	136	0
+	+	137	4
+	+	138	0
+	+	193	43
+	+	137	26
+	+	7	84
+	+	126	0
+	+	126	0
+	+	210	66
+
+> ~/tmp/mail_appu
+	"	193	0
+	^	191	14
+	.	192	80
+	+	11	0
+	+	6	0
+	+	14	77
+	+	24	0
+	+	23	3
+	+	27	44
+	+	29	82
+	+	30	15
+	+	22	9
+	+	20	0
+	+	22	2
+	+	37	11
+	+	5	19
+	+	4	79
+	+	5	22
+	+	18	80
+	+	19	50
+	+	39	77
+	+	40	79
+	+	45	0
+	+	44	9
+	+	53	28
+	+	51	0
+	+	55	76
+	+	62	0
+	+	69	0
+	+	73	76
+	+	77	70
+	+	87	0
+	+	86	38
+	+	90	73
+	+	90	0
+	+	93	0
+	+	95	76
+	+	97	81
+	+	99	25
+	+	105	74
+	+	106	0
+	+	108	79
+	+	110	77
+	+	116	0
+	+	124	23
+	+	204	0
+	+	125	16
+	+	204	0
+	+	126	9
+	+	127	30
+	+	128	79
+	+	129	29
+	+	132	0
+	+	128	0
+	+	135	84
+	+	139	0
+	+	141	9
+	+	141	4
+	+	165	0
+	+	141	77
+	+	143	39
+	+	142	60
+	+	142	76
+	+	145	78
+	+	148	0
+	+	151	80
+	+	152	83
+	+	156	0
+	+	156	21
+	+	155	64
+	+	155	77
+	+	162	78
+	+	163	81
+	+	164	40
+	+	163	18
+	+	168	0
+	+	170	70
+	+	175	66
+	+	176	77
+	+	178	58
+	+	191	70
+	+	192	68
+	+	195	80
+	+	202	31
+	+	203	5
+	+	162	66
+	+	185	0
+	+	191	13
+	+	191	80
+	+	192	80
+
+> ~/tmp/petit_prince.txt
+	"	54	0
+	^	46	33
+	.	47	0
+	+	38	23
+	+	28	7
+	+	5	19
+	+	30	18
+	+	6	75
+	+	8	11
+	+	11	67
+	+	18	2
+	+	17	2
+	+	18	76
+	+	19	39
+	+	21	39
+	+	19	66
+	+	20	0
+	+	16	77
+	+	18	0
+	+	42	67
+	+	62	12
+	+	64	0
+	+	27	0
+	+	24	14
+	+	23	75
+	+	25	0
+	+	26	4
+	+	48	0
+	+	40	0
+	+	25	27
+	+	25	79
+	+	6	80
+	+	54	77
+	+	54	36
+	+	54	37
+	+	54	50
+	+	54	36
+	+	54	66
+	+	7	80
+	+	10	0
+	+	9	10
+	+	11	61
+	+	30	44
+	+	30	81
+	+	54	17
+	+	54	75
+	+	59	81
+	+	54	21
+	+	7	77
+	+	8	79
+	+	42	0
+	+	43	40
+	+	47	0
+	+	46	23
+	+	45	24
+	+	46	29
+	+	8	0
+	+	46	32
+	+	47	0
+
+> ~/streaming/rapport/thesis/__Tag_List__
+	"	165	4
+	.	341	0
+	+	1544	0
+	+	1276	0
+	+	1275	0
+	+	1275	0
+	+	1275	0
+	+	1275	0
+	+	1274	0
+	+	951	0
+	+	950	0
+	+	950	0
+	+	950	0
+	+	891	0
+	+	950	0
+	+	950	0
+	+	950	0
+	+	950	0
+	+	949	0
+	+	616	0
+	+	341	0
+
+> ~/streaming/rapport/thesis/state_machine.tex
+	"	17	0
+
+> ~/tmp/[YankRing]
+	"	5	0
+	.	2	0
+	+	2	0
+
+> ~/tmp/reponse_ralu.txt
+	"	73	10
+	^	73	11
+	.	73	10
+	+	75	58
+	+	75	0
+	+	75	0
+	+	75	65
+	+	75	76
+	+	75	83
+	+	75	79
+	+	75	80
+	+	75	79
+	+	75	82
+	+	75	79
+	+	75	78
+	+	75	31
+	+	75	57
+	+	75	10
+	+	75	12
+	+	75	59
+	+	75	64
+	+	75	13
+	+	75	70
+	+	75	83
+	+	75	30
+	+	75	79
+	+	75	78
+	+	75	30
+	+	75	42
+	+	75	26
+	+	75	0
+	+	75	0
+	+	75	82
+	+	75	24
+	+	75	0
+	+	75	79
+	+	75	78
+	+	75	0
+	+	75	65
+	+	75	0
+	+	75	63
+	+	75	76
+	+	75	74
+	+	75	6
+	+	75	51
+	+	75	74
+	+	75	49
+	+	75	66
+	+	75	50
+	+	75	0
+	+	75	0
+	+	75	11
+	+	75	45
+	+	75	72
+	+	75	10
+	+	75	68
+	+	75	78
+	+	75	15
+	+	75	15
+	+	1	0
+	+	75	0
+	+	67	82
+	+	70	83
+	+	71	21
+	+	69	75
+	+	59	39
+	+	71	61
+	+	73	10
+
+> ~/mail
+	"	80	0
+	^	106	31
+	.	106	30
+	+	111	4
+	+	111	80
+	+	93	68
+	+	123	33
+	+	127	19
+	+	83	53
+	+	83	77
+	+	104	72
+	+	128	0
+	+	127	49
+	+	106	75
+	+	106	78
+	+	107	19
+	+	106	30
+
+> /tmp/mail
+	"	62	0
+	^	1	65
+	.	1	0
+	+	9	78
+	+	25	74
+	+	31	74
+	+	34	79
+	+	35	15
+	+	18	76
+	+	19	7
+	+	36	79
+	+	37	75
+	+	45	0
+	+	41	55
+	+	44	67
+	+	41	49
+	+	44	52
+	+	5	74
+	+	27	25
+	+	48	13
+	+	15	0
+	+	23	0
+	+	29	0
+	+	48	81
+	+	50	78
+	+	51	14
+	+	50	11
+	+	51	76
+	+	52	54
+	+	51	49
+	+	52	81
+	+	54	28
+	+	53	29
+	+	52	57
+	+	53	43
+	+	53	82
+	+	55	79
+	+	60	55
+	+	31	10
+	+	50	54
+	+	55	4
+	+	63	76
+	+	64	80
+	+	67	6
+	+	66	70
+	+	66	79
+	+	95	0
+	+	66	80
+	+	67	39
+	+	68	71
+	+	70	61
+	+	72	76
+	+	76	30
+	+	74	30
+	+	77	75
+	+	78	64
+	+	80	76
+	+	81	49
+	+	82	36
+	+	88	0
+	+	78	78
+	+	79	1
+	+	81	25
+	+	84	16
+	+	85	77
+	+	86	73
+	+	87	7
+	+	86	57
+	+	68	47
+	+	68	81
+	+	69	14
+	+	68	47
+	+	80	15
+	+	80	82
+	+	90	82
+	+	93	32
+	+	83	0
+	+	83	77
+	+	94	0
+	+	91	61
+	+	91	78
+	+	97	8
+	+	96	46
+	+	93	46
+	+	96	78
+	+	127	0
+	+	100	7
+	+	99	0
+	+	101	74
+	+	127	0
+	+	101	80
+	+	102	39
+	+	101	21
+	+	107	0
+	+	110	32
+	+	110	15
+	+	127	0
+	+	110	80
+	+	118	80
+	+	123	60
+	+	126	64
+	+	123	68
+	+	1	0
+
+> ~/streaming/rapport/thesis/passive_streaming_analysis.aux
+	"	1	0
+
+> /tmp/Partie 1.2
+	"	1	0
+
+> ~/Confs/TMA-2011/tma11-reviews.txt
+	"	75	0
+	^	55	63
+	.	55	62
+	+	80	0
+	+	79	8
+	+	78	0
+	+	83	0
+	+	86	0
+	+	107	0
+	+	91	0
+	+	103	79
+	+	93	47
+	+	94	49
+	+	95	76
+	+	100	12
+	+	100	8
+	+	101	8
+	+	98	0
+	+	104	62
+	+	106	0
+	+	104	73
+	+	101	4
+	+	102	0
+	+	100	0
+	+	87	72
+	+	190	0
+	+	191	24
+	+	215	52
+	+	191	0
+	+	194	0
+	+	197	0
+	+	202	0
+	+	217	0
+	+	218	0
+	+	134	0
+	+	136	0
+	+	134	0
+	+	142	76
+	+	143	32
+	+	147	12
+	+	169	60
+	+	169	26
+	+	169	77
+	+	169	0
+	+	156	71
+	+	157	48
+	+	144	78
+	+	145	38
+	+	159	57
+	+	161	37
+	+	169	0
+	+	134	0
+	+	130	0
+	+	132	0
+	+	131	0
+	+	132	0
+	+	148	1
+	+	151	7
+	+	148	5
+	+	151	0
+	+	147	64
+	+	150	63
+	+	169	76
+	+	169	12
+	+	169	31
+	+	169	79
+	+	169	28
+	+	154	52
+	+	159	37
+	+	163	79
+	+	165	49
+	+	169	0
+	+	167	28
+	+	171	76
+	+	172	0
+	+	132	0
+	+	38	15
+	+	43	8
+	+	44	78
+	+	44	0
+	+	50	0
+	+	49	76
+	+	50	77
+	+	52	78
+	+	53	40
+	+	29	0
+	+	45	36
+	+	52	0
+	+	55	62
+
+> ~/Confs/TMA-2011/[YankRing]
+	"	5	0
+	.	2	0
+	+	2	0
+
+> ~/Confs/TMA-2011/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+
+> /tmp/zshecl6642
+	"	1	0
+
+> ~/config/ftrd_config
+	"	21	75
+	^	21	76
+	.	21	75
+	+	19	80
+	+	20	68
+	+	19	70
+	+	21	75
+
+> ~/streaming/rapport/thesis/report.bib
+	"	3	67
+	.	3	67
+	+	3	67
+
+> ~/config/fstab
+	"	1	0
+
+> /tmp/ch1.tex
+	"	344	13
+
+> ~/config/xmonad/xmonad.h
+	"	6	19
+	^	6	20
+	.	6	0
+	+	6	0
+
+> ~/play_soceda/sla/slides/sla_orange.tex
+	"	128	0
+	^	124	75
+	.	128	0
+	+	120	32
+	+	121	18
+	+	122	0
+	+	123	34
+	+	124	74
+	+	128	0
+
+> /tmp/zshecl8393
+	"	1	0
+	^	1	37
+	.	1	0
+	+	1	0
+
+> ~/config/xmonad/[YankRing]
+	"	6	0
+	.	2	0
+	+	104	0
+	+	2	0
+
+> ~/config/xmonad/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+
+> ~/perso/music/rip/DE PALMAS - SORTIR/cd.toc
+	"	126	0
+	.	127	0
+	+	127	0
+
+> ~/perso/music/rip/Christophe Maé - On trace la route/cd.toc
+	"	156	0
+	.	157	0
+	+	157	0
+
+> ~/streaming/rapport/thesis/slides/network_diagnosis.log
+	"	1174	0
+
+> ~/streaming/rapport/thesis/slides/[YankRing]
+	"	11	0
+	.	2	0
+	+	406	0
+	+	307	0
+	+	307	0
+	+	307	0
+	+	307	0
+	+	205	0
+	+	104	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/rapport/thesis/slides/network_diagnosis.aux
+	"	1	0
+
+> /usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+	"	12	0
+
+> ~/config/latex/beamer/beamerthemeorange.sty
+	"	75	66
+	^	75	75
+	.	76	0
+	+	75	74
+	+	76	0
+
+> ~/config/latex/beamer/beamerthemeorange.
+	"	1	0
+
+> ~/streaming/ads.txt
+	"	19	9
+	^	19	10
+	.	19	9
+	+	1	0
+	+	32	0
+	+	8	8
+	+	19	9
+
+> ~/streaming/flows/CnxStream24/missing_ftth_2008/convert_cnx_h323.awk
+	"	153	78
+	^	153	79
+	.	153	78
+	+	68	0
+	+	92	0
+	+	67	0
+	+	136	0
+	+	92	0
+	+	68	0
+	+	68	0
+	+	136	0
+	+	136	0
+	+	93	0
+	+	94	20
+	+	144	37
+	+	157	26
+	+	162	4
+	+	157	13
+	+	163	8
+	+	162	18
+	+	157	29
+	+	163	14
+	+	157	29
+	+	136	0
+	+	157	0
+	+	97	0
+	+	157	34
+	+	157	8
+	+	157	0
+	+	161	0
+	+	160	0
+	+	157	24
+	+	137	8
+	+	157	0
+	+	157	0
+	+	157	0
+	+	159	0
+	+	160	0
+	+	157	0
+	+	135	0
+	+	157	19
+	+	5	0
+	+	138	11
+	+	157	17
+	+	160	17
+	+	157	0
+	+	157	0
+	+	162	0
+	+	157	28
+	+	118	33
+	+	157	17
+	+	160	17
+	+	162	0
+	+	138	0
+	+	157	23
+	+	160	23
+	+	162	0
+	+	138	8
+	+	140	60
+	+	141	11
+	+	137	0
+	+	135	0
+	+	123	4
+	+	132	0
+	+	124	0
+	+	132	20
+	+	133	4
+	+	131	7
+	+	133	0
+	+	134	8
+	+	125	17
+	+	134	15
+	+	144	0
+	+	134	12
+	+	125	11
+	+	132	19
+	+	129	22
+	+	130	8
+	+	132	16
+	+	125	11
+	+	146	0
+	+	157	22
+	+	160	21
+	+	125	17
+	+	160	0
+	+	152	0
+	+	157	0
+	+	153	0
+	+	154	0
+	+	152	30
+	+	153	0
+	+	154	0
+	+	157	0
+	+	153	31
+	+	157	0
+	+	157	0
+	+	150	0
+	+	152	0
+	+	155	60
+	+	156	19
+	+	157	0
+	+	158	12
+	+	153	78
+
+> ~/streaming/flows/CnxStream24/missing_ftth_2008/[YankRing]
+	"	6	0
+	.	2	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/flows/CnxStream24/missing_ftth_2008/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/workspace/spydump/tools/load_cnx_stream_file.py
+	"	20	4
+	^	76	64
+	.	76	63
+	+	76	63
+	z	76	63
+
+> ~/config/zshrc
+	"	545	0
+
+> ~/streaming/rapport/thesis/.gitignore
+	"	2	0
+	^	2	1
+	.	2	0
+	+	2	0
+
+> ~/workspace/spydump/tools/zsh
+	"	1	0
+
+> ~/Confs/BTM/qos_mobile.tex
+	"	25	1
+
+> ~/streaming/rapport/everything/passive_streaming_analysis.tex
+	"	1434	1
+	^	1432	26
+	.	1432	73
+	+	1350	0
+	+	1369	0
+	+	1369	0
+	+	1369	0
+	+	1411	42
+	+	1414	20
+	+	1391	71
+	+	1394	0
+	+	1393	54
+	+	1390	68
+	+	1390	75
+	+	1395	34
+	+	1786	39
+	+	1785	0
+	+	1395	56
+	+	1403	37
+	+	144	72
+	+	514	67
+	+	595	43
+	+	688	20
+	+	904	77
+	+	1197	36
+	+	1410	46
+	+	1411	33
+	+	1415	58
+	+	1409	78
+	+	1412	17
+	+	1410	60
+	+	1414	1
+	+	1415	0
+	+	1413	79
+	+	1415	75
+	+	1416	65
+	+	1416	24
+	+	1417	0
+	+	1416	12
+	+	1353	41
+	+	1352	27
+	+	1411	57
+	+	1412	23
+	+	1417	67
+	+	1350	28
+	+	1425	0
+	+	1426	77
+	+	1428	74
+	+	1429	24
+	+	1431	60
+	+	1433	1
+	+	1433	13
+	+	1434	74
+	+	1369	0
+	+	1267	31
+	+	1336	28
+	+	1448	25
+	+	1532	0
+	+	1517	40
+	+	1532	44
+	+	1519	26
+	+	1520	74
+	+	1532	0
+	+	1520	72
+	+	1532	0
+	+	1520	77
+	+	1521	44
+	+	1524	14
+	+	1524	30
+	+	1522	72
+	+	1523	77
+	+	1532	0
+	+	1526	73
+	+	1527	61
+	+	1528	73
+	+	1530	34
+	+	1530	31
+	+	1532	0
+	+	1530	69
+	+	1529	0
+	+	1530	76
+	+	1446	11
+	+	1437	12
+	+	1437	74
+	+	1438	63
+	+	1439	14
+	+	1440	4
+	+	1438	72
+	+	1440	78
+	+	1441	28
+	+	1443	44
+	+	1446	10
+	+	1444	73
+	+	1446	4
+	+	1447	0
+	+	1445	0
+	+	1445	74
+	+	1447	0
+	+	1446	7
+	+	1445	0
+	+	1445	79
+	+	1432	25
+	+	1432	73
+	a	1210	0
+	b	661	0
+
+> ~/streaming/pytomo/dns/dns_lib.py
+	"	1	0
+	.	81	0
+	+	27	0
+	+	80	0
+	+	81	0
+	z	84	0
+
+> ~/streaming/pytomo/tests/test_dns.py
+	"	1	20
+	^	1	21
+	.	1	20
+	+	2	30
+	+	6	8
+	+	7	15
+	+	1	20
+	z	1	20
+
+> ~/streaming/pytomo/tests/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/config/vim/doc/latexhelp.txt
+	"	658	11
+
+> ~/streaming/rapport/everything/[YankRing]
+	"	5	0
+	.	2	0
+	+	4784	0
+	+	4683	0
+	+	4683	0
+	+	4581	0
+	+	4479	0
+	+	4377	0
+	+	4275	0
+	+	4174	0
+	+	4174	0
+	+	4072	0
+	+	3970	0
+	+	3868	0
+	+	3768	0
+	+	3768	0
+	+	3768	0
+	+	3667	0
+	+	3667	0
+	+	3565	0
+	+	3463	0
+	+	3361	0
+	+	3259	0
+	+	3157	0
+	+	3056	0
+	+	3056	0
+	+	2954	0
+	+	2852	0
+	+	2750	0
+	+	2648	0
+	+	2546	0
+	+	2444	0
+	+	2347	0
+	+	2347	0
+	+	2347	0
+	+	2347	0
+	+	2347	0
+	+	2347	0
+	+	2245	0
+	+	2143	0
+	+	2041	0
+	+	1939	0
+	+	1837	0
+	+	1736	0
+	+	1736	0
+	+	1634	0
+	+	1532	0
+	+	1430	0
+	+	1328	0
+	+	1226	0
+	+	1124	0
+	+	1022	0
+	+	920	0
+	+	818	0
+	+	716	0
+	+	614	0
+	+	512	0
+	+	410	0
+	+	308	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/rapport/everything/-MiniBufExplorer-
+	"	1	36
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/rapport/everything/__OUTLINE__
+	"	18	3
+	.	1	0
+	+	817	0
+	+	812	0
+	+	774	0
+	+	771	0
+	+	727	0
+	+	708	0
+	+	707	0
+	+	666	0
+	+	646	0
+	+	633	0
+	+	617	0
+	+	601	0
+	+	468	0
+	+	460	0
+	+	452	0
+	+	444	0
+	+	394	0
+	+	381	0
+	+	380	0
+	+	368	0
+	+	355	0
+	+	342	0
+	+	331	0
+	+	314	0
+	+	310	0
+	+	259	0
+	+	246	0
+	+	237	0
+	+	224	0
+	+	220	0
+	+	207	0
+	+	194	0
+	+	181	0
+	+	174	0
+	+	170	0
+	+	153	0
+	+	149	0
+	+	89	0
+	+	79	0
+	+	74	0
+	+	69	0
+	+	56	0
+	+	43	0
+	+	30	0
+	+	20	0
+	+	1	0
+
+> /usr/share/vim/vim72/doc/intro.txt
+	"	664	8
+
+> ~/streaming/rapport/everything/passive_streaming_analysis.log
+	"	857	0
+
+> ~/streaming/rapport/everything/passive_streaming_analysis.aux
+	"	172	0
+
+> /usr/share/vim/vim72/doc/motion.txt
+	"	303	23
+
+> /usr/share/vim/vim72/doc/starting.txt
+	"	1325	48
 
 > ~/.subversion/servers
 	"	160	0

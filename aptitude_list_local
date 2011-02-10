@@ -19,7 +19,14 @@ burn
 xmobar
 bzr
 git-cvs
-libpng12-dev libcurl3-dev libspeex-dev libming-dev libming-util mtasc haxe swfmill swftools csound zlib1g-dev libfreetype6-dev libfontconfig1-dev dejagnu qt4-dev-tools libjpeg-dev libgif-dev libgtk2.0-dev libpango1.0-dev libatk1.0-dev libgstreamer0.10-dev libsdl1.2-dev libagg-dev libboost-dev libboost-thread-dev
+libpng12-dev libcurl3-dev # libspeex-dev 
+# # libming-dev 
+# libming-util 
+# mtasc 
+# haxe 
+# swfmill 
+swftools csound zlib1g-dev libfreetype6-dev libfontconfig1-dev # dejagnu 
+qt4-dev-tools libjpeg-dev libgif-dev libgtk2.0-dev libpango1.0-dev libatk1.0-dev libgstreamer0.10-dev libsdl1.2-dev libagg-dev libboost-dev libboost-thread-dev
 libgstreamer-plugins-base0.10-dev
 glxgears
 mesa-utils
@@ -434,3 +441,8 @@ eclipse
 ant
 rss-glx
 rss-glx
+python2.5
+transmission
+chromium-browser
+pdf2svg
+tcpdump graphviz imagemagick python-gnuplot python-crypto python-pyx

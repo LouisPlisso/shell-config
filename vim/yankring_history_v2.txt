@@ -1,100 +1,100 @@
-latex/lettre/template_fr.tex,v
-,V
- ,v
-:,v
-:set viminfo='1000,f1,<500,v
-22:vimrc,v
-First ,v
-('\\toprule\n' + ' \\\\\n\midrule\n'.join([' & '.join((            streaming_tools.format_title(v[0]).replace('\n', ': '),            '%d \%%' % (100 * v[2] / v[3]), '%d \%%' % (100 * v[1] / v[2])))            for v in find_loss_location(flows)]) + '\\\\\n\\bottomrule'),v
-print,v
-),v
-str(int(,v
-int(100*,v
-r,v
-return,v
-tools.,v
-",v
-.replace('\n', ': '), str(,v
-' & '.join((tools.streaming_tools.format_title(,v
-' \\\\\n\midrule\n'.join(,v
- k,v in sorted(flows.items()) for data in (v.compress([x['DIP-RTM-NbMes-sec-TCP-Down']>0 or x['DIP-DSQ-NbMes-sec-TCP-Down']>0 for x in v]),),v
-len(data.compress([x for x in data if x['DIP-DSQ-NbMes-sec-TCP-Down'] > x['DIP-RTM-NbMes-sec-TCP-Down']]),v
-[(tools.streaming_tools.format_title(k).replace('\n', ': '), int(100*len(data.compress([x for x in data if x['DIP-DSQ-NbMes-sec-TCP-Down'] > x['DIP-RTM-NbMes-sec-TCP-Down']]))/ len(data)), len(data)) for k,v in sorted(flows.items()) for data in (v.compress([x['DIP-RTM-NbMes-sec-TCP-Down']>0 or x['DIP-DSQ-NbMes-sec-TCP-Down']>0 for x in v]),)],v
-btlang-code,v
-Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages,v
-GL,v
-/usr/share/doc/rss-glx,v
-From Tab.~\ref{tab:loss,V
-fraction of flows with losses at access rate.,V
-network (see Sect.~\ref{sec:mean_rates}), ADSL traces should have a higher,V
-And as ADSL flows are more likely to have a bandwidth limitation in the access,V
-have usually lower values,v
- rare,v
-a high speed access and have ,v
-b,v
-What is clear is FTTH having higher fraction of flows with at least one loss,and Rennes traces having more flows with at least one loss.,V
-traces having,v
-Rennes traces having more flows with at least one loss.,v
-having,v
-FTTH having higher fraction of flows with at least one loss,,v
-thus ,v
-network,v
-,,v
-texttt,v
-(,v
-<+label+>,v
-'/e5/videowall/video/gay/11/utZ6oz3nAjD_Thumb.flv',v
-<+caption text+>,v
-<+file+>,v
-<+htpb+>,v
-for all,v
-'Host_Referer',v
-'2009_11_26_FTTH',v
-Relation between size and losses\todo,V
-mean of $<++>\,Bytes$ on ADSL and XX on FTTH ,v
-and a,v
-of,v
-ldots,v
-(recallSect.~\ref{sec:mean_rates} ),v
-first,v
-\begin{table}[htb]  \centering  \caption{Repartition of deducted loss location}  \label{tab:loss}  \begin{threeparttable}    \begin{tabular}{lcc}      \toprule      Trace &  flows with some loss\tnote{\dag}  &  loss in backbone\tnote{\ddag}  \\      \midrule      2008/07: ADSL &  50\%  &  70\%  \\      \midrule      2009/11: ADSL &  62\%  &  76\%  \\      \midrule      2009/11: FTTH &  65\%  &  92\%  \\      \midrule      2009/12: ADSL R &  72\%  &  85\%  \\      \midrule      2009/12: FTTH &  84\%  &  91\%  \\      \midrule      2010/02: ADSL R &  76\%  &  85\%  \\      \midrule      2010/02: FTTH &  81\%  &  94\%  \\      \bottomrule    \end{tabular}    \begin{tablenotes}      \footnotesize    \item [\dag] flows with at least one retransmission or one desequencement      over total number of flows    \item [\ddag] flows with more retransmissions than desequencements (only on      flows with some loss)    \end{tablenotes}  \end{threeparttable}\end{table},V
-Moreover the fraction of FTTH flows with losses is higher than on ADSL, even in2009/12 afternoon trace.,V
+                           ((.02, '2% threshold'),))),V
+probes,v
+2:passive_streaming_analysis.tex,v
+self,v
 .,v
-the ,v
-If ,v
-first ,v
-            (itemgetter('ByteDn'), 'Flow Size', 'in Bytes', None),,V
-$<++>\,Bytes$,v
- (as in the case of ,v
-(lambda (xmin, xmax): (max(xmin, 10), xmax)),v
-kb/s,v
-Average bit-rate (from flow),v
-(lambda x: ((8e-3 * x['ByteDn'] / x['DurationDn'])                         if x['DurationDn'] > 0 else None)),v
-            ((lambda x: ((8e-3 * x['ByteDn'] / x['DurationDn'])                         if x['DurationDn'] > 0 else None)),             'Average bit-rate (from flow)', 'in kb/s',             (lambda (xmin, xmax): (max(xmin, 10), xmax))),,V
-aus,V
-the loss should occur at the path with lower capacity.,v
-As ,v
-And as ADSL flows are more likely to have a bandwidth limitation in the accessnetwork (see Sect.~\ref{sec:mean_rates}), ADSL traces should have a higherfraction of flows with losses at access rate.,V
-d,v
-    \item [\dag] flows with more retransmissions than desequencements (only on      flows with some loss),V
-retransmissions than desequencement events.,V
-the percentage of flows with more,V
-is not a limitation for these flows ,V
+.keys(),v
+# Populating the list,v
+# Empty list to store the dict values,v
+# Empty list for storing the video hyperlinks,v
+ #Class constructor,v
+ ,v
+       # ,v
+Return the list of extracted links,v
+,V
+get_url.py,v
+get_youtube_links_in_file.py,v
+    url_string = url_string.strip("''"),V
+strip,v
+:,v
+],v
+    "Program wrapper."    if argv is None:        argv = sys.argv[1:],V
+if __name__ == "__main__":,V
+_files.txt",v
+",v
+_video_file_name,v
+_,v
+for,v
+graph_filtered_final/peak_rate_over_100ms_from_flow_dailymotion_logx.pdf,v
+video flows,v
+}  \,v
+CDNs ,v
+CDNs,v
+CDN,v
+CDN ,v
+CDNs:,v
+video streaming site ,v
+other CDNs ,v
+hosting,v
+s,v
+    ,V
+\label{fig:peak_yt_flow},v
+YouTube ,v
+youtube_as_logx.pdf,v
+YouTube,v
+    \subfigure[YouTube]{\includegraphics[width=.48\linewidth,height=185pt]{./peak_rate_over_100ms_from_flow_youtube_as_logx.pdf}},V
+peak_rate_over_100ms_from_flow_youtube_as_logx.pdf,v
+videos,v
+19,v
+total streaming clients ,v
+ YouTube clients over ,v
+on,v
+f,v
+all,v
+much,v
+from,v
 are,v
-es,v
-is,v
-shall,v
-we shall see that ,V
-sec:mean,v
-3,v
-FTTH,v
-losses. ,V
-it is normal to have,V
-\texttt{}<++>,v
-have more ,v
-retransmitted packets: this indicate that loss occur mostly before the probe.,V
-the flow had some loss,v
-(thesecond retransmission of packet with sequence number 500 is not clear),v
-access network,v
-at least ,v
-That's why desequencement are in fact \textbf{desequenced \emph{events}}.,V
+Round Trip Time,v
+monitor,v
+(rescaled),v
+graph_filtered_final_v4/,v
+median_video_rates[service],v
+.startswith('Average bit-rate'),v
+            if title.startswith('Average bit-rate'):                if service in median_video_rates:                    plot_line.append((median_video_rates[service],                                      'median video\nrate: %dkb/s' %                                      median_video_rates[service])),V
+None,v
+(.02, '2% threshold'),v
+over 100ms ,v
+googlecode,v
+syntax: glob*~,v
+t,v
+e,v
+g,v
+Retrieve tokens from,v
+U,v
+R,v
+O,v
+OauthRequestToken,v
+OauthApi,v
+A,v
+http://popdevelop.com/2010/07/an-example-on-how-to-use-oauth-and-python-to-connect-to-twitter/,v
+self.,v
+An example on how to use Oauth and Python to connect to twitter « Popdevelop – A developer team from Malmö, Sweden,v
+    credentials = ,V
+credentials,v
+':'.join((username, password)),v
+        statusdata = str(statusmsg),V
+ statusmsg,v
+statusdata ,v
+the_page,v
+, string,v
+#,v
+    # keys obtained while registering the application with twitter    CONSUMER_KEY = 'E67YlXtc2ilopDc3SEcnbg'    CONSUMER_SECRET = 'GoT3HEvoICR3tCdNFaXY2NhrEixcKgVgrHIoq4jofw'    AUTHORIZATION_URL = 'http://twitter.com/oauth/authorize'    REQUEST_TOKEN_URL = 'https://twitter.com/oauth/request_token'    ACCESS_TOKEN_URL = 'https://twitter.com/oauth/access_token',V
+    ACCESS_TOKEN_URL = 'https://twitter.com/oauth/access_token',V
+process the oauth keys,v
+class OauthAccess():    CONSUMER_KEY = "XXXXXXXXXXXXXXXXX"    CONSUMER_SECRET = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"    ACCESS_TOKEN_URL = 'https://twitter.com/oauth/access_token'    mPin = ""    mOauthRequestToken = ""    mOauthAccessToken = ""    mUser = twitter.User    mTwitterApi = ""    def __init__(self, pOauthRequestToken, pPin):        self.mOauthRequestToken = pOauthRequestToken        self.mPin = pPin    def getOauthAccess(self):        self.mTwitterApi = OAuthApi(self.CONSUMER_KEY, self.CONSUMER_SECRET, self.mOauthRequestToken)        self.mOauthAccessToken = self.mTwitterApi.getAccessToken(self.mPin)        self.mAuthenticatedTwitterInstance = OAuthApi(self.CONSUMER_KEY, self.CONSUMER_SECRET, self.mOauthAccessToken)        self.mUser = self.mAuthenticatedTwitterInstance.GetUserInfo(),v
+DEBUG = True,V
+    # key and secret granted by the service provider for this consumer     # application same as the MockOAuthDataStore,V
+# retrieve tokens from twitter user account,V
+TWITTER_OAUTH_,v
+# key and secret granted by the service provider for this consumer application# same as the MockOAuthDataStoreTWITTER_OAUTH_CONSUMER_KEY = 'E67YlXtc2ilopDc3SEcnbg'TWITTER_OAUTH_CONSUMER_SECRET = 'GoT3HEvoICR3tCdNFaXY2NhrEixcKgVgrHIoq4jofw',V
+find,v

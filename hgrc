@@ -1,0 +1,9 @@
+[ui]
+verbose     = True
+username    = "Louis Plissonneau <louis.plissonneau@a3.epfl.ch>"
+
+[auth]
+twitter-sl4a.prefix   = https://twitter-sl4a.googlecode.com
+twitter-sl4a.username = louis.plissonneau@gmail.com
+twitter-sl4a.password = Ab5PG7aC9MB9
+

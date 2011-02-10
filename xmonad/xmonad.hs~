@@ -2,8 +2,9 @@
 import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Layout.Tabbed
-import XMonad.Hooks.ManageDocks
-import XMonad.Hooks.ManageHelpers (isFullscreen,doFullFloat,isDialog)
+{-import XMonad.Hooks.ManageDocks-}
+import XMonad.Hooks.ManageDocks (checkDock,avoidStruts,manageDocks)
+import XMonad.Hooks.ManageHelpers (isFullscreen,doFullFloat,isDialog,composeOne,(-?>))
 import XMonad.Hooks.UrgencyHook
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
@@ -103,19 +104,37 @@ alert = alert' 500000
 -- focusFollowsMouse = False
 
 -- TODO pylab floats
-myManageHook = composeAll
-    [ isFullscreen --> doFullFloat
-    , isDialog --> doFloat
-    , className =? "Gxmessage"      --> doFloat
-    , className =? "Xmessage"      --> doFloat
-    , className =? "Gimp"      --> doFloat
-    {-, className =? "Dia"      --> doFloat-}
-    , className =? "Pidgin"      --> doFloat
-    , className =? "Vlc"      --> doFloat
-    , className =? "Tk"      --> doFloat
-    , className =? "Ipython"      --> doFloat
-    , className =? "Wicd-client.py"     --> doFloat
-    --, className =? "Kino"      --> doFloat
+--myManageHook = composeAll
+--    [ isFullscreen --> doFullFloat
+--    , isDialog --> doFloat
+--    , className =? "Gxmessage"      --> doFloat
+--    , className =? "Xmessage"      --> doFloat
+--    , className =? "Gimp"      --> doFloat
+--    , className =? "feh"      --> doFloat
+--    {-, className =? "Dia"      --> doFloat-}
+--    , className =? "Pidgin"      --> doFloat
+--    , className =? "Vlc"      --> doFloat
+--    , className =? "Tk"      --> doFloat
+--    , className =? "Ipython"      --> doFloat
+--    , className =? "Wicd-client.py"     --> doFloat
+--    --, className =? "Kino"      --> doFloat
+--    ]
+myManageHook = composeOne
+    [ checkDock              -?> doIgnore -- equivalent to manageDocks
+    , isFullscreen -?> doFullFloat
+    , isDialog -?> doFloat
+    , className =? "Gxmessage"      -?> doFloat
+    , className =? "Xmessage"      -?> doFloat
+    , className =? "Gimp"      -?> doFloat
+    , className =? "feh"      -?> doFloat
+    {-, className =? "Dia"      -?> doFloat-}
+    , className =? "Pidgin"      -?> doFloat
+    , className =? "Vlc"      -?> doFloat
+    , className =? "Tk"      -?> doFloat
+    , className =? "Ipython"      -?> doFloat
+    , className =? "Wicd-client.py"     -?> doFloat
+    --, className =? "Kino"      -?> doFloat
+    , return True -?> doF W.focusDown
     ]
 
 -- workspaces
@@ -171,7 +190,7 @@ main = do
     xmproc <- spawnPipe "xmobar"
     xmonad $ withUrgencyHook NoUrgencyHook $ ffConfig
         { manageHook = manageDocks <+> myManageHook 
-            <+> manageHook defaultConfig
+            <+> manageHook defaultConfig -- <+> doF W.focusDown
             -- make sure to include myManageHook definition from above
         , layoutHook = myLayoutHook
         -- avoidStruts  $  layoutHook defaultConfig
