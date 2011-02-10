@@ -1,0 +1,6 @@
+pcm.intmic {
+   type hw
+   card 0
+   device 0
+   subdevice 0
+}
