@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Dernier motif de recherche  :
-~MSle0~/thresh
+~MSle0~/hib
 
 # Dernier motif de recherche Substitue  :
 ~MSle0&+
@@ -17,26 +17,58 @@
 $
 
 # Historique ligne de commande (chronologie décroissante) :
+:wqa
+:b twitter-1.4.2/twitter/oauth_dance.py
+:b ts.py
+:b ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+:reg
+:b
+:read ts.py
+:copy ts.py
+:e sl4a_twitt.py
+:e api.py
+:e ../../ts.py
+:e oauth_dance.py
+:b tweepy-source/tweepy/auth.py
+:b ~/play_soceda/twitter-sl4a/ts.py
+:e __init__.py
+:e tweepy-source/tweepy/api.py
+:e 
+:vsp
+:on
+:e python-oauth/oauth/example/client.py
+:e oauth-python-twitter-1.0/
+:e oauth.py
+:sp
+:mks
+:e tweepy-source/tweepy/auth.py
+:b1
+:e oau
+:e tweepy-examples/oauth/getaccesstoken.py
+:89
+:e ~/perso/android/scripting/sl4a/scripts/android.py
+:b 2
+:e tweepy/tweepy/auth.py
+:verbose colorscheme
+:col
+:set background=dark
+:set background=light
+:verbose set background
+:e get_url.py
 :1539
 :727
 :636
-:wqa
 :wa
 :e
 :e twitter-1.4.2/twitter/
 :e twi
-:89
 :e oauth-python-twitter-1.0/oauthtwitter.py
-:e 
-:e api.py
 :e util.py
 :e twitter_globals.py
 :e twitter-1.4.2/twitter/auth.py
 :s/+/ + /
 :'<,'>s/^/#/
 :s/ /_/
-:reg
-:b1
 :e ~/streaming/tools/template.py
 :b4
 :307
@@ -74,9 +106,7 @@ $
 :help compiler
 :compiler
 :e complements.py
-:on
 :b filter_streaming.py
-:vsp
 :%s///c
 :'<,'>s//,/
 :'<,'>s/ /, 
@@ -110,7 +140,6 @@ $
 :1401
 :1482
 :,+2s/C/S/
-:sp
 :,+3s/indics/data/
 :e load_tstat_file.py
 :setlocal spelllang=fr
@@ -256,7 +285,6 @@ $
 :s/8/6/
 :%s/import/from . import/
 :b6
-:e __init__.py
 :b ~/streaming/rapport/report.tex
 :e report.tex
 :b ~/streaming/rapport/white.tex
@@ -289,37 +317,45 @@ $
 :,+6s/-\./:/
 :s/\(\d\) /\1, /
 :s/,/./
-:s/\t/ /
-:,$s/_args/args/
-:s/,/e3,/
-:s/,/e3/
-:s/\(\d\) \(\d\)/\1, \2/
-:q
-:s/\(\d\)\ * \(\d\)/\1, \2/
-:'<,'>s/ \+/ /
-:,$s/vv/v/
-:,$s/_s/s/
-:,$s/_d/d/
-:,$s/dd/d/
-:,$s/xx/x/
-:,$s/kk/k/
-:,$s/kk/K/
-:G
-:sp INDEX_VALUES.py
-:,+3s/,.*/,/
-:help 
-:b cdfplot.py
-:e cdfplot
-:,+3s/ = /=/
-:wq
-:redraw
-:s/Down/Up/
-:,']s/Down/Up/
-:wq!
-:s/"/'/
 
 # Historique chaîne de recherche (chronologie décroissante) :
+?/hib
+? \<webbrowser\>
 ? \s\+$
+?/dialog
+? \<AUTHORIZATION_URL\>
+? \<REQUEST_TOKEN_URL\>
+? \<ACCESS_TOKEN_URL\>
+? \<CALL_BACK_URL\>
+? \<SimpleHTTPRequestHandler\>
+?/set
+?/status
+?/update_st
+? \<secure\>
+? \<OAuth\>
+? \<write_token_file\>
+?/update
+?/request
+?/verifier
+? \<RESOURCE_URL\>
+?/^class
+?/class
+? \<access_resource\>
+?/CA
+?/def
+? \<verifier\>
+?/get_acces
+? \<CALL_BACK_PORT\>
+?/smac
+? \<callback\>
+? \<Thread\>
+?/twitter\.
+? \<OAuthApi\>
+? \<twitter\>
+? \<oauthtwitter\>
+? \<client\>
+? \<conn\>
+?/socket
 ?/thresh
 ?/thres
 ? \<plot_line\>
@@ -583,42 +619,6 @@ $
 ? \<initial_clf\>
 ?/initial_
 ? \<plot_per_as\>
-??ready
-??BB
-?/linear i
-?/better
-?/8
-?/very
-?/in te
-?/estima
-?/midru
-?/values are no
-?/verti
-?/shows a 
-?/parsing
-?/no f
-?/that to
-?/first cl
-?/paragr
-?/conclub
-?/in the l
-?/right
-??with at least 
-??at least 
-?/correct
-?/upstream loss
-?/desequ
-? Access
-? backbone
-??repartit
-?/abstrac
-?/compl
-??user expe
-?/video_reso
-?/video_len
-?/user_sess
-?/content_len
-?/scent
 
 # Historique expression (chronologie décroissante) :
 
@@ -669,35 +669,28 @@ $
 # Historique ligne de saisie (chronologie décroissante) :
 
 # Registres :
-""0	LINE	0
-	                           ((.02, '2% threshold'),)))
+"0	CHAR	0
+	os.path.exists(oauth_filename):
 "1	LINE	0
-	                           (.02, '2% threshold')))
-"2	CHAR	0
-	}
-	  \
+	    else:
+"2	LINE	0
+	        status = 'update from sl4a from phone'
 "3	LINE	0
-	    
+	        print 'debug mode'
 "4	LINE	0
-	    return m
+	    if DEBUG:
 "5	LINE	0
-	
+	    print os.listdir(os.path.curdir)
 "6	LINE	0
-	class OauthRequest():
-	    "Class to get the access to user twitter account"
-	    def __init__(self):
-	        mOauthRequestToken = None
+	    print os.path.abspath(os.path.curdir)
 "7	LINE	0
-	    credentials = 
+	
 "8	LINE	0
-	        statusdata = str(statusmsg)
+	AUTHORIZATION_URL = 'http://twitter.com/oauth/authorize'
+	REQUEST_TOKEN_URL = 'https://twitter.com/oauth/request_token'
+	ACCESS_TOKEN_URL = 'https://twitter.com/oauth/access_token'
 "9	LINE	0
-	    # keys obtained while registering the application with twitter
-	    CONSUMER_KEY = 'E67YlXtc2ilopDc3SEcnbg'
-	    CONSUMER_SECRET = 'GoT3HEvoICR3tCdNFaXY2NhrEixcKgVgrHIoq4jofw'
-	    AUTHORIZATION_URL = 'http://twitter.com/oauth/authorize'
-	    REQUEST_TOKEN_URL = 'https://twitter.com/oauth/request_token'
-	    ACCESS_TOKEN_URL = 'https://twitter.com/oauth/access_token'
+	TOKEN = None
 "a	CHAR	0
 	+j
 "b	CHAR	0
@@ -750,111 +743,714 @@ $
 "z	LINE	0
 	File:/home/louis/streaming/pytomo/dns/dns.py
 	
-"-	CHAR	0
-	probes
+""-	CHAR	0
+	#
 
 # Marques dans le fichier :
-'0  1513  38  ~/workspace/spydump/tools/filter_streaming.py
-'1  294  12  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
-'2  24  8  ~/play_soceda/twitter-sl4a/ts.py
-'3  31  0  ~/play_soceda/test_android/ts.py
-'4  2471  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
-'5  80  17  ~/play_soceda/test_android/ts.py
-'6  108  39  ~/config/shell_aliases_functions
-'7  1  0  ~/shell_aliases_functions
-'8  107  55  ~/config/shell_aliases_functions
-'9  1  16  ~/streaming/rapport/thesis/slides/-MiniBufExplorer-
+'0  161  0  ~/.subversion/servers
+'1  131  36  ~/config/shell_aliases_functions
+'2  210  64  ~/config/xmonad/xmonad.hs
+'3  10  46  ~/config/sudoers.template
+'4  35  12  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
+'5  104  53  ~/play_soceda/twitter-sl4a/ts.py
+'6  61  8  ~/play_soceda/twitter-sl4a/tweepy-source/tweepy/auth.py
+'7  117  4  ~/play_soceda/twitter-sl4a/ts.py
+'8  10  42  ~/streaming/pytomo/lib/lib_cache_url/get_url.py
+'9  1513  38  ~/workspace/spydump/tools/filter_streaming.py
 
 # Liste de sauts (le plus récent en premier) :
--'  1513  38  ~/workspace/spydump/tools/filter_streaming.py
--'  904  43  ~/workspace/spydump/tools/filter_streaming.py
--'  1637  38  ~/workspace/spydump/tools/filter_streaming.py
--'  1633  38  ~/workspace/spydump/tools/filter_streaming.py
--'  1630  38  ~/workspace/spydump/tools/filter_streaming.py
--'  1519  38  ~/workspace/spydump/tools/filter_streaming.py
--'  1652  0  ~/workspace/spydump/tools/filter_streaming.py
--'  635  7  ~/workspace/spydump/tools/filter_streaming.py
--'  624  15  ~/workspace/spydump/tools/filter_streaming.py
--'  724  8  ~/workspace/spydump/tools/filter_streaming.py
--'  716  57  ~/workspace/spydump/tools/filter_streaming.py
--'  714  32  ~/workspace/spydump/tools/filter_streaming.py
--'  713  8  ~/workspace/spydump/tools/filter_streaming.py
--'  681  53  ~/workspace/spydump/tools/filter_streaming.py
--'  1538  12  ~/workspace/spydump/tools/filter_streaming.py
--'  294  12  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  996  25  ~/workspace/spydump/tools/filter_streaming.py
--'  209  59  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  198  54  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  127  6  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  1  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  498  71  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  484  72  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  483  26  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  477  26  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  466  20  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  463  87  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  458  31  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  457  21  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  455  27  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  454  28  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  448  22  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  386  4  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  287  37  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  215  50  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  14  7  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  841  2  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  414  4  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  165  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  2427  57  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  2411  14  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  2390  6  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  2230  73  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  2229  10  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  2219  4  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  1141  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  1139  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  978  40  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  902  33  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  892  21  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  886  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  890  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  808  27  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  807  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  798  41  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  781  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  779  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  782  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  772  47  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  749  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  747  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  731  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  729  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  732  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  730  56  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  717  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  715  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  602  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  600  14  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  596  21  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  594  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  597  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  561  66  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  544  46  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  541  43  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  446  19  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  364  65  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  528  18  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  434  36  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  436  47  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  441  22  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  443  29  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  365  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  362  19  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  353  48  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  349  37  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
--'  348  0  ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+-'  161  0  ~/.subversion/servers
+-'  160  0  ~/.subversion/servers
+-'  131  36  ~/config/shell_aliases_functions
+-'  197  0  ~/config/shell_aliases_functions
+-'  210  64  ~/config/xmonad/xmonad.hs
+-'  10  46  ~/config/sudoers.template
+-'  1  0  ~/config/sudoers.template
+-'  35  12  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
+-'  2  16  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
+-'  47  12  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  357  64  ~/play_soceda/twitter-sl4a/ts.py
+-'  1  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  40  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  392  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  8  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
+-'  14  11  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  37  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  42  8  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  21  56  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  23  25  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  52  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  11  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  19  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  51  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  9  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  8  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  49  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  33  4  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  61  16  ~/play_soceda/twitter-sl4a/ts.py
+-'  72  34  ~/play_soceda/twitter-sl4a/ts.py
+-'  286  52  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  213  22  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  157  22  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  71  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  224  18  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  196  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  193  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  190  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  229  6  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  30  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  34  13  ~/play_soceda/twitter-sl4a/ts.py
+-'  35  12  ~/play_soceda/twitter-sl4a/ts.py
+-'  262  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  73  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  38  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  50  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  55  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  58  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  60  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  67  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  8  65  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  4  1  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  509  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  116  21  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  70  8  ~/play_soceda/twitter-sl4a/ts.py
+-'  512  8  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  517  26  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  384  4  ~/play_soceda/twitter-sl4a/ts.py
+-'  92  48  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  72  18  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  35  12  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
+-'  2  16  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
+-'  47  12  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  357  64  ~/play_soceda/twitter-sl4a/ts.py
+-'  1  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  40  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  392  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  8  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
+-'  14  11  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  37  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  42  8  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  21  56  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  23  25  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  52  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  11  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  19  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  51  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  9  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  8  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  49  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  33  4  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+-'  61  16  ~/play_soceda/twitter-sl4a/ts.py
+-'  72  34  ~/play_soceda/twitter-sl4a/ts.py
+-'  286  52  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  213  22  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  157  22  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  71  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+-'  224  18  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  196  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  193  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  190  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  229  6  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  30  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  34  13  ~/play_soceda/twitter-sl4a/ts.py
+-'  35  12  ~/play_soceda/twitter-sl4a/ts.py
+-'  262  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+-'  73  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  38  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  50  0  ~/play_soceda/twitter-sl4a/ts.py
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> ~/.subversion/servers
+	"	161	0
+	.	161	0
+	+	161	0
+	+	160	0
+	+	161	0
+
+> ~/config/shell_aliases_functions
+	"	131	36
+	^	131	37
+	.	131	36
+	+	127	8
+	+	125	9
+	+	126	25
+	+	74	71
+	+	194	49
+	+	99	0
+	+	28	14
+	+	118	43
+	+	108	35
+	+	107	55
+	+	108	39
+	+	199	29
+	+	199	0
+	+	197	46
+	+	199	0
+	+	198	27
+	+	197	38
+	+	198	31
+	+	197	44
+	+	129	31
+	+	130	29
+	+	131	36
+
+> ~/config/xmonad/xmonad.hs
+	"	210	64
+	^	210	65
+	.	210	64
+	+	193	0
+	+	136	0
+	+	137	4
+	+	137	0
+	+	122	24
+	+	7	84
+	+	7	84
+	+	137	0
+	+	193	60
+	+	194	0
+	+	194	0
+	+	193	59
+	+	14	0
+	+	13	0
+	+	14	0
+	+	7	78
+	+	6	0
+	+	5	0
+	+	7	76
+	+	6	65
+	+	107	1
+	+	108	0
+	+	122	24
+	+	123	5
+	+	124	20
+	+	125	16
+	+	136	0
+	+	137	4
+	+	138	0
+	+	193	43
+	+	137	26
+	+	7	84
+	+	126	0
+	+	126	0
+	+	210	64
+
+> ~/config/sudoers.template
+	"	10	46
+	^	10	67
+	.	10	0
+	+	10	0
+
+> ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
+	"	392	0
+
+> ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
+	"	35	12
+	.	1	0
+	+	1	0
+	z	1	0
+
+> ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/-MiniBufExplorer-
+	"	1	14
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/play_soceda/twitter-sl4a/ts.py
+	"	357	64
+	^	357	71
+	.	357	0
+	+	57	0
+	+	145	0
+	+	133	0
+	+	172	55
+	+	173	31
+	+	132	0
+	+	192	0
+	+	54	4
+	+	55	0
+	+	207	0
+	+	54	0
+	+	227	0
+	+	226	0
+	+	228	0
+	+	227	0
+	+	228	0
+	+	227	0
+	+	207	0
+	+	192	0
+	+	228	0
+	+	242	34
+	+	178	16
+	+	244	0
+	+	245	70
+	+	246	0
+	+	245	0
+	+	243	0
+	+	57	0
+	+	57	31
+	+	57	38
+	+	58	0
+	+	57	59
+	+	24	10
+	+	27	0
+	+	3	0
+	+	27	0
+	+	28	0
+	+	27	0
+	+	28	5
+	+	30	0
+	+	29	0
+	+	30	0
+	+	182	0
+	+	59	0
+	+	181	0
+	+	190	0
+	+	173	67
+	+	164	0
+	+	155	0
+	+	146	0
+	+	139	57
+	+	140	0
+	+	139	0
+	+	119	41
+	+	120	0
+	+	120	0
+	+	117	0
+	+	118	0
+	+	125	0
+	+	127	0
+	+	117	18
+	+	118	0
+	+	117	0
+	+	118	42
+	+	119	0
+	+	120	0
+	+	119	0
+	+	120	0
+	+	117	0
+	+	118	0
+	+	119	0
+	+	105	0
+	+	104	53
+	+	74	0
+	+	62	0
+	+	63	7
+	+	64	0
+	+	63	41
+	+	66	0
+	+	62	76
+	+	61	69
+	+	32	8
+	+	33	42
+	+	65	26
+	+	65	0
+	+	64	37
+	+	65	0
+	+	34	25
+	+	67	0
+	+	70	0
+	+	35	22
+	+	73	33
+	+	73	0
+	+	34	12
+	+	35	12
+	+	72	0
+	+	73	0
+	+	72	0
+	+	61	21
+	+	357	0
+	z	1	0
+
+> ~/play_soceda/twitter-sl4a/[YankRing]
+	"	4	0
+	.	2	0
+	+	410	0
+	+	308	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
+	"	37	0
+
+> ~/play_soceda/twitter-sl4a/sl4a_twitt.py
+	"	47	12
+	^	40	67
+	.	47	0
+	+	1	0
+	+	2	0
+	+	33	0
+	+	33	0
+	+	34	0
+	+	33	0
+	+	38	44
+	+	39	14
+	+	44	19
+	+	46	26
+	+	48	0
+	+	47	29
+	+	8	0
+	+	9	0
+	+	19	0
+	+	19	0
+	+	19	0
+	+	52	0
+	+	23	23
+	+	23	10
+	+	23	0
+	+	21	56
+	+	14	12
+	+	38	0
+	+	41	17
+	+	42	0
+	+	47	0
+	+	14	11
+	+	40	66
+	+	47	0
+	z	47	12
+
+> ~/play_soceda/twitter-sl4a/.hg/hgignore
+	"	1	0
+	^	1	10
+	.	1	0
+	+	1	0
+
+> ~/config/hgrc
+	"	11	45
+	^	11	46
+	.	11	45
+	+	12	0
+	+	3	4
+	+	1	2
+	+	12	0
+	+	3	10
+	+	5	0
+	+	3	0
+	+	3	0
+	+	3	28
+	+	3	28
+	+	5	0
+	+	3	59
+	+	2	0
+	+	3	55
+	+	5	0
+	+	4	0
+	+	7	0
+	+	7	0
+	+	8	0
+	+	7	37
+	+	3	56
+	+	8	11
+	+	3	10
+	+	2	11
+	+	3	11
+	+	7	11
+	+	8	10
+	+	7	10
+	+	6	35
+	+	7	20
+	+	8	20
+	+	9	0
+	+	6	31
+	+	7	11
+	+	8	7
+	+	12	0
+	+	9	0
+	+	11	45
+
+> ~/streaming/pytomo/lib/lib_cache_url/get_youtube_cache_url.py
+	"	1	0
+
+> ~/play_soceda/twitter-sl4a/tweepy-examples/oauth/getaccesstoken.py
+	"	24	0
+
+> ~/play_soceda/twitter-sl4a/tweepy-source/tweepy/auth.py
+	"	136	0
+
+> ~/play_soceda/twitter-sl4a/tweepy-source/tweepy/oauth.py
+	"	306	0
+
+> ~/play_soceda/twitter-sl4a/-MiniBufExplorer-
+	"	1	31
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/play_soceda/twitter-sl4a/python-oauth/oauth/example/client.py
+	"	33	0
+
+> ~/play_soceda/twitter-sl4a/tweepy-source/tweepy/api.py
+	"	18	18
+
+> ~/play_soceda/twitter-sl4a/tweepy-source/tweepy/[YankRing]
+	"	4	0
+	.	2	0
+	+	2	0
+
+> ~/play_soceda/twitter-sl4a/tweepy-source/tweepy/__init__.py
+	"	21	0
+
+> ~/analyses/user_profiling/user_prof.py
+	"	118	50
+	^	118	51
+	.	118	50
+	+	125	68
+	+	16	0
+	+	125	23
+	+	14	12
+	+	177	51
+	+	186	36
+	+	177	58
+	+	118	10
+	+	168	79
+	+	168	68
+	+	170	0
+	+	168	79
+	+	169	70
+	+	169	46
+	+	170	0
+	+	168	0
+	+	118	49
+	+	119	49
+	+	126	23
+	+	187	0
+	+	186	44
+	+	185	0
+	+	118	50
+	z	118	50
+
+> ~/config/hgignore
+	"	5	4
+	^	5	5
+	.	5	4
+	+	1	11
+	+	6	3
+	+	4	4
+	+	7	0
+	+	6	0
+	+	6	0
+	+	6	3
+	+	5	4
+
+> /tmp/hg-editor-M9MbVg.txt
+	"	1	13
+	^	1	14
+	.	1	13
+	+	1	13
+
+> ~/play_soceda/twitter-sl4a/tweepy/tweepy/auth.py
+	"	8	19
+
+> ~/play_soceda/twitter-sl4a/tweepy/tweepy/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/perso/android/scripting/sl4a/scripts/android.py
+	"	35	0
+
+> ~/streaming/pytomo/lib/lib_cache_url/get_youtube_links_in_file.py
+	"	3	0
+	^	25	32
+	.	3	0
+	+	2	81
+	+	1	0
+	+	8	52
+	+	14	40
+	+	23	0
+	+	28	0
+	+	29	19
+	+	23	21
+	+	19	17
+	+	20	0
+	+	23	22
+	+	24	52
+	+	25	31
+	+	26	0
+	+	11	0
+	+	14	44
+	+	23	19
+	+	2	0
+	+	3	0
+	z	3	0
+
+> ~/streaming/pytomo/lib/lib_cache_url/get_url.py
+	"	10	42
+	^	20	33
+	.	12	9
+	+	28	12
+	+	29	0
+	+	28	45
+	+	10	42
+	+	9	35
+	+	17	24
+	+	22	0
+	+	23	51
+	+	24	43
+	+	23	42
+	+	19	0
+	+	23	23
+	+	2	0
+	+	10	59
+	+	14	51
+	+	13	52
+	+	12	49
+	+	11	44
+	+	17	49
+	+	15	7
+	+	16	50
+	+	17	28
+	+	12	12
+	+	17	0
+	+	18	0
+	+	19	0
+	+	21	37
+	+	20	32
+	+	12	9
+	z	12	9
+
+> ~/streaming/pytomo/lib/lib_cache_url/-MiniBufExplorer-
+	"	1	32
+	.	2	0
+	+	2	0
 
 > ~/workspace/spydump/tools/filter_streaming.py
 	"	1513	38
@@ -1184,63 +1780,6 @@ $
 	+	5	0
 	z	5	11
 
-> ~/streaming/pytomo/lib/lib_cache_url/get_url.py
-	"	22	0
-	^	20	33
-	.	12	9
-	+	28	12
-	+	29	0
-	+	28	45
-	+	10	42
-	+	9	35
-	+	17	24
-	+	22	0
-	+	23	51
-	+	24	43
-	+	23	42
-	+	19	0
-	+	23	23
-	+	2	0
-	+	10	59
-	+	14	51
-	+	13	52
-	+	12	49
-	+	11	44
-	+	17	49
-	+	15	7
-	+	16	50
-	+	17	28
-	+	12	12
-	+	17	0
-	+	18	0
-	+	19	0
-	+	21	37
-	+	20	32
-	+	12	9
-	z	12	9
-
-> ~/streaming/pytomo/lib/lib_cache_url/get_youtube_links_in_file.py
-	"	2	79
-	^	25	32
-	.	14	44
-	+	2	81
-	+	1	0
-	+	8	52
-	+	14	40
-	+	23	0
-	+	28	0
-	+	29	19
-	+	23	21
-	+	19	17
-	+	20	0
-	+	23	22
-	+	24	52
-	+	25	31
-	+	26	0
-	+	11	0
-	+	14	44
-	z	14	44
-
 > ~/workspace/spydump/tools/template.py
 	"	54	0
 	^	106	0
@@ -1351,125 +1890,14 @@ $
 	+	2	0
 	+	2	0
 
-> ~/play_soceda/twitter-sl4a/ts.py
-	"	24	8
-	^	24	9
-	.	24	8
-	+	12	42
-	+	12	0
-	+	12	0
-	+	24	71
-	+	24	0
-	+	24	17
-	+	24	4
-	+	24	4
-	+	24	0
-	+	12	0
-	+	24	0
-	+	25	9
-	+	24	36
-	+	24	3
-	+	12	0
-	+	15	0
-	+	12	0
-	+	14	0
-	+	27	0
-	+	27	60
-	+	27	5
-	+	28	2
-	+	27	5
-	+	28	2
-	+	33	0
-	+	24	51
-	+	34	35
-	+	37	0
-	+	24	0
-	+	17	0
-	+	23	0
-	+	13	13
-	+	27	61
-	+	28	0
-	+	27	60
-	+	26	29
-	+	50	67
-	+	51	0
-	+	53	68
-	+	54	71
-	+	50	0
-	+	49	35
-	+	59	0
-	+	58	0
-	+	91	1
-	+	92	1
-	+	11	12
-	+	126	17
-	+	125	11
-	+	6	29
-	+	8	0
-	+	9	0
-	+	11	0
-	+	24	32
-	+	106	72
-	+	107	64
-	+	108	0
-	+	107	55
-	+	108	0
-	+	106	0
-	+	115	17
-	+	115	65
-	+	116	66
-	+	117	0
-	+	116	66
-	+	115	0
-	+	24	17
-	+	24	0
-	+	27	4
-	+	28	4
-	+	28	54
-	+	33	0
-	+	28	53
-	+	29	0
-	+	34	5
-	+	35	9
-	+	36	6
-	+	34	36
-	+	26	12
-	+	27	35
-	+	28	33
-	+	27	20
-	+	28	20
-	+	24	26
-	+	30	28
-	+	24	28
-	+	32	0
-	+	29	0
-	+	25	43
-	+	24	8
-	z	24	8
-
 > ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/auth.py
 	"	1	0
-
-> ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/-MiniBufExplorer-
-	"	1	1
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
 
 > ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/twitter_globals.py
 	"	1	0
 
 > ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/util.py
 	"	1	0
-
-> ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
-	"	179	0
 
 > ~/play_soceda/twitter-sl4a/oauth-python-twitter-1.0/oauthtwitter.py
 	"	1	0
@@ -1488,52 +1916,6 @@ $
 	+	2	0
 	+	2	0
 	+	2	0
-
-> ~/config/hgignore
-	"	1	11
-	^	1	12
-	.	1	11
-	+	1	11
-
-> ~/config/hgrc
-	"	8	11
-	^	8	12
-	.	8	7
-	+	10	0
-	+	3	4
-	+	1	2
-	+	10	0
-	+	3	10
-	+	5	0
-	+	3	0
-	+	3	0
-	+	3	28
-	+	3	28
-	+	5	0
-	+	3	59
-	+	2	0
-	+	3	55
-	+	5	0
-	+	4	0
-	+	7	0
-	+	7	0
-	+	8	0
-	+	7	37
-	+	3	56
-	+	8	11
-	+	3	10
-	+	2	11
-	+	3	11
-	+	7	11
-	+	8	10
-	+	7	10
-	+	6	35
-	+	7	20
-	+	8	20
-	+	9	0
-	+	6	31
-	+	7	11
-	+	8	7
 
 > ~/config/[YankRing]
 	"	7	0
@@ -1678,22 +2060,6 @@ $
 	+	2	0
 	+	2	0
 	+	2	0
-
-> ~/config/shell_aliases_functions
-	"	108	39
-	^	108	40
-	.	108	39
-	+	127	8
-	+	125	9
-	+	126	25
-	+	74	71
-	+	194	49
-	+	99	0
-	+	28	14
-	+	118	43
-	+	108	35
-	+	107	55
-	+	108	39
 
 > ~/shell_aliases_functions
 	"	1	0
@@ -3037,34 +3403,6 @@ $
 	+	133	0
 	+	67	0
 
-> ~/analyses/user_profiling/user_prof.py
-	"	185	46
-	^	185	46
-	.	185	0
-	+	125	68
-	+	16	0
-	+	125	23
-	+	14	12
-	+	177	51
-	+	186	36
-	+	177	58
-	+	118	10
-	+	168	79
-	+	168	68
-	+	170	0
-	+	168	79
-	+	169	70
-	+	169	46
-	+	170	0
-	+	168	0
-	+	118	49
-	+	119	49
-	+	126	23
-	+	187	0
-	+	186	44
-	+	185	0
-	z	186	44
-
 > ~/analyses/user_profiling/-MiniBufExplorer-
 	"	1	48
 	.	2	0
@@ -3827,46 +4165,6 @@ $
 	.	2	0
 	+	2	0
 	+	2	0
-
-> ~/config/xmonad/xmonad.hs
-	"	210	66
-	^	210	67
-	.	210	66
-	+	193	0
-	+	136	0
-	+	137	4
-	+	137	0
-	+	122	24
-	+	7	84
-	+	7	84
-	+	137	0
-	+	193	60
-	+	194	0
-	+	194	0
-	+	193	59
-	+	14	0
-	+	13	0
-	+	14	0
-	+	7	78
-	+	6	0
-	+	5	0
-	+	7	76
-	+	6	65
-	+	107	1
-	+	108	0
-	+	122	24
-	+	123	5
-	+	124	20
-	+	125	16
-	+	136	0
-	+	137	4
-	+	138	0
-	+	193	43
-	+	137	26
-	+	7	84
-	+	126	0
-	+	126	0
-	+	210	66
 
 > ~/tmp/mail_appu
 	"	193	0
@@ -4968,9 +5266,3 @@ $
 
 > /usr/share/vim/vim72/doc/starting.txt
 	"	1325	48
-
-> ~/.subversion/servers
-	"	160	0
-	.	160	0
-	+	161	0
-	+	160	0

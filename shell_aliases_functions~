@@ -105,7 +105,7 @@ alias gvi='gvim'
 #export -f restart_adb_server
 #alias fix_adb='sudo bash -c restart_adb_server'
 export ANDROID_SDK=~/perso/android/android-sdk-linux_x86
-export PATH=$PATH:$ANDROID_SDK/tools
+export PATH=$PATH:$ANDROID_SDK/platform-tools
 
 #no more needed
 #bad but needed to let default config of aptitude and still use python 2.6
@@ -192,3 +192,8 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Cr
 alias fresh='http_proxy="" sudo freshclam'
 
 alias findusb='diff <(lsusb) <(sleep 3s && lsusb)'
+
+# java
+export JAVA_HOME=/usr/lib/jvm/java-6-openjdk/
+export PATH=$PATH:$JAVA_HOME/bin
+#export PLUGIN_HOME=$JAVA_HOME

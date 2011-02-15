@@ -207,6 +207,7 @@ main = do
         , terminal           = "urxvtc"
         } `additionalKeys`
         [ ((mod1Mask, xK_z), spawn "xscreensaver-command -lock") 
+        , ((mod1Mask .|. shiftMask, xK_h), spawn "sudo pm-hibernate")
         , ((mod1Mask, xK_s), spawn "exe=`quicksnips` && eval \"exec $exe\"")
         , ((mod1Mask, xK_Return), spawn "urxvt")
         , ((mod1Mask .|. shiftMask, xK_Return), windows W.swapMaster) -- %! Swap the focused window and the master window

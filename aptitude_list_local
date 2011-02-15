@@ -446,3 +446,7 @@ transmission
 chromium-browser
 pdf2svg
 tcpdump graphviz imagemagick python-gnuplot python-crypto python-pyx
+java-virtual-machine
+java-package
+openjdk-6-jdk
+gpe-tetris

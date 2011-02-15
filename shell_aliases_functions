@@ -126,9 +126,9 @@ alias aptg='aptitude search'
 alias apts='aptitude show'
 alias aptw='aptitude why'
 
-alias hibernate='sudo pm-hibernate'
-alias suspend='sudo pm-suspend'
-alias suspend-hybrid='sudo pm-suspend-hybrid'
+alias hibernate='sudo /usr/sbin/pm-hibernate'
+alias suspend='sudo /usr/sbin/pm-suspend'
+alias suspend-hybrid='sudo /usr/sbin/pm-suspend-hybrid'
 
 alias fixwifi='sudo iwconfig wlan0 txpower on'
 alias presentation='impressive -t PageTurn'
@@ -192,3 +192,8 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Cr
 alias fresh='http_proxy="" sudo freshclam'
 
 alias findusb='diff <(lsusb) <(sleep 3s && lsusb)'
+
+# java
+export JAVA_HOME=/usr/lib/jvm/java-6-openjdk/
+export PATH=$PATH:$JAVA_HOME/bin
+#export PLUGIN_HOME=$JAVA_HOME
