@@ -126,8 +126,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="88.720458934211962"
-         height="88.720458934225604"
+         width="444.89773559570312"
+         height="383.33773803710938"
          rx="0"
          ry="0" />
       <eventcontext
@@ -325,7 +325,7 @@
        usecurrent="0"
        gradientdrag="1"
        font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;font-style:normal;font-weight:normal;font-size:20;text-anchor:middle;text-align:center;writing-mode:tb"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;font-style:normal;font-weight:normal;font-size:20;text-anchor:middle;text-align:center;writing-mode:lr"
        selcue="1" />
     <eventcontext
        id="nodes"
@@ -556,7 +556,11 @@
        w="361"
        h="382" />
     <group
-       id="xml" />
+       id="xml"
+       x="320"
+       y="320"
+       w="640"
+       h="384" />
     <group
        id="find"
        x="960"
@@ -612,7 +616,7 @@
     </group>
     <group
        id="save_as"
-       default="org.inkscape.output.pdf.cairorenderer"
+       default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
        path="/home/louis/streaming/rapport/thesis" />
@@ -972,7 +976,7 @@
      org.inkscape.print.latex.destination="/home/louis/streaming/rapport/thesis/state_machine.tex" />
   <group
      id="desktop"
-     style="font-size:28;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke:#0f06f7;stroke-opacity:1;opacity:1;fill:#fdfffd;fill-opacity:0.46792454000000000;stroke-dashoffset:0;stroke-linecap:round;text-anchor:start;text-align:start;writing-mode:lr;stroke-linejoin:bevel">
+     style="font-size:22;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:16,16;stroke:#0f06f7;stroke-opacity:1;opacity:1;fill:#fdfffd;fill-opacity:0.46792454000000000;stroke-dashoffset:0;stroke-linecap:round;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linejoin:bevel">
     <group
        width="1278"
        height="1006"

@@ -88,3 +88,8 @@ URxvt.perl-lib: /home/louis/.urxvt/
 URxvt.perl-ext: mark-and-yank
 URxvt.urlLauncher: firefox
 
+URxvt.keysym.M-u: perl:mark-yank-urls:activate_mark_mode
+URxvt.reverseVideo: true
+URxvt.perl-lib: /home/jukie/bart/.urxvt/
+URxvt.perl-ext: selection
+URxvt.perl-ext: mark-yank-urls

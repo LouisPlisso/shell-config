@@ -105,7 +105,7 @@ set history=300
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the curors - when moving vertical..
 " 4
-set so=4
+set so=3
 
 set wildmenu "Turn on WiLd menu
 

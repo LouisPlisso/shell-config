@@ -133,7 +133,7 @@ font.size           : 12.0
 #text.color          : black
 
 ### LaTeX customizations. See http://www.scipy.org/Wiki/Cookbook/Matplotlib/UsingTex
-#text.usetex         : False  # use latex for all text handling. The following fonts
+text.usetex         : True # False  # use latex for all text handling. The following fonts
                               # are supported through the usual rc parameter settings:
                               # new century schoolbook, bookman, times, palatino,
                               # zapf chancery, charter, serif, sans-serif, helvetica,
@@ -318,7 +318,7 @@ figure.subplot.bottom  : 0.11    # the bottom of the subplots of the figure
 
 # ps backend params
 #ps.papersize      : letter   # auto, letter, legal, ledger, A0-A10, B0-B10
-#ps.useafm         : False    # use of afm fonts, results in small files
+ps.useafm         : True # False    # use of afm fonts, results in small files
 #ps.usedistiller   : xpdf # False    # can be: None, ghostscript or xpdf
                                           # Experimental: may produce smaller files.
                                           # xpdf intended for production of publication quality files,
@@ -330,6 +330,7 @@ figure.subplot.bottom  : 0.11    # the bottom of the subplots of the figure
 #pdf.compression   : 6 # integer from 0 to 9
                        # 0 disables compression (good for debugging)
 #pdf.fonttype       : 3         # Output Type 3 (Type3) or Type 42 (TrueType)
+pdf.use14corefonts  : True
 
 # svg backend params
 #svg.image_inline : True       # write raster image data directly into the svg file

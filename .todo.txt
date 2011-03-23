@@ -14,7 +14,7 @@ commenter white :phd @analyse @done
 tracer cdf mean rate / encoding rate :phd @computation ou faire un pourcentage de >1 vs <1 ok mettre dans rapport check @done
 cdf flow sizes a) for flows with encoding rate > network rate b) for flows with encoding rate < network rate :phd @computation @done
 plot 20s line for duration cdfs :phd @computation @done
-calculer les rtt par tstat sur les captures :phd voir aussi RST flag @computation voir aussi les pertes ok processer
+calculer les rtt par tstat sur les captures :phd voir aussi RST flag @computation voir aussi les pertes ok processer @done
 demander à Marcin comment lancer tstat sur de grosses captures @computation @social :phd @done
 imprimer expert python :perso @done
 enlever kipi-plugins :perso @easy @done
@@ -76,7 +76,7 @@ mettre references dans cv kundu jpp axs? :perso @done
 fix cabal (cairo) et chart :perso @config @done
 compter le nb de get HTTP vs get HTTPS @social @jpp
 postuler chez accenture :perso @social @done
-passer cv à Tim pour poste HP :perso @social
+passer cv à Tim pour poste HP :perso @social @removed
 print twoDznQ.pdf twoDznA.pdf yaht.pdf :perso :haskell @programming @done
 install lucid sur PC Toshiba :perso @chiant @easy @admin
 :phd high variability property of flows to check in captures @long-term @computation

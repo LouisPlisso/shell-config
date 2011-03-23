@@ -8,21 +8,284 @@
 # hlsearch on (H) or off (h):
 ~h
 # Dernier motif de recherche  :
-~MSle0~/hib
+~Msle0~/\<sep\>
 
 # Dernier motif de recherche Substitue  :
-~MSle0&+
+~MSle0&\<lib_cache_url\>
 
 # Dernières chaînes de substitution :
 $
 
 # Historique ligne de commande (chronologie décroissante) :
+:qa
+:e lib_dns.py
+:e ../pytomo/start_pytomo.py
+:e MANIFEST.in
 :wqa
+:b MANIFEST.in
+:b ~/streaming/pytomo/Pytomo/setup.py
+:121
+:e dns/resolver.py
+:e MANIFEST
+:e ../setup.py
+:e config_pytomo.py
+:e start_pytomo.py
+:b star
+:e rdata.py
+:e dns/rdatatype.py
+:38
+:e lib_database.py
+:273
+:reg
+:753
+:602
+:e kaa_metadata/factory.py
+:e lib_youtube_download.py
+:e ../MANIFEST.in
+:b ../
+:sp
+:vsp lib_youtube_api.py
+:vsp lib_
+:e 
+:w
+:b ~/streaming/pytomo/Pytomo/bin/pytomo
+:b config_pytomo.py
+:b start_pytomo.py
+:b ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
+:b ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
+:on
+:e complete_yt_dl.py
+:190
+:b
+:%s/\<lib_cache_url\>/pytomo.&/
+:vsp
+:%s/config_pytomo/pytomo.config_pytomo/
+:e ../
+:215
+:118
+:e ../bin/pytomo
+:82
+:77
+:e __init__.py
+:b lib_database.py
+:177
+:q
+:e png.py
+:e image/IPTC.py
+:e ../core.py
+:e ../misc/directory.py
+:e ../audio/m4a.py
+:e ogm.py
+:e mp4.py
+:e riff.py
+:e ../video/vcd.py
+:e dvd.py
+:e audio.py
+:e data.py
+:e cdrom.py
+:e ../../disc/core.py
+:wa
+:e ../games/core.py
+:e ../pcm.py
+:e mp3.py
+:e audio/eyeD3/tag.py
+:e audio/eyeD3/utils.py
+:e ../factory.py
+:e IPTC.py
+:e core.py
+:e image/EXIF.py
+:e directory.py
+:e misc/xmlfile.py
+:e ../video/asf.py
+:b 8
+:b mp3.py
+:232
+:116
+:e audio/mp3.py
+:b ~/streaming/pytomo/pytomo_louis/config_pytomo.py
+:b kaa_metadata/factory.py
+:b ~/streaming/pytomo/pytomo_louis/complete_yt_dl.py
+:91
+:e lib_cache_url.py
+:e p
+:b kaa_metadata/__init__.py
+:856
+:b complete_yt_dl.py
+:b ~/streaming/pytomo/pytomo_louis/start_pytomo.py
+:e version.py
+:e ../kaa_metadata/
+:e kaa/utils.py
+:vsp lib_database.py
+:e
+:s/?/'?'/
+:s/\?/'?'/
+:b lib_ping.py
+:95
+:93
+:b pytomo_db.py
+:b 
+:137
+:e lib_ping.py
+:'<,'>s/('\(\w\| \)\+', \(\(\w\|\.\)\+\)),/\2,
+:'<,'>s/('\(\w\| \)\+', \(\(\w\|\.\)\+\)),/\2/
+:help regex
+:e pytomo_db.py
+:b ~/streaming/pytomo/pytomo_louis/py
+:'<,'>s/\.$//
+:s/'/"
+:143
+:797
+:765
+:752
+:426
+:b 426
+:406
+:798
+:486
+:b youtube_dl.py
+:e youtube_dl.py
+:112
+:b confi
+:b lib_dns.py
+:b lib_cache_url.py
+:b sta
+:6
+:483
+:b kaa/metadata/factory.py
+:b test.py
+:e test.py
+:,+5s/=/ = /
+:e kaa/metadata/factory.py
+:33
+:733
+:422
+:39
+:176
+:199
+:195
+:e kaa/metadata/video/mp4.py
+:s/time/bytes
+:e co
+:mks!
+:415
+:568
+:b 2
+:=
+:,$s///
+:e tma3-pietrzyk.tex
+:b 5
+:'<,'>s///
+:vimgrep \section tma3-pietrzyk.tex
+:help command
+:grep \section tma3-pietrzyk.tex
+:b9
+:103
+:e kaa/__init__.py
+:b lib_d
+:mks
+:,+s/'/"/
+:e /usr/lib/python2.6/dist-packages/kaa/metadata/factory.py
+:e /usr/lib/python2.6/dist-packages/kaa/metadata/audio/m4a.py
+::
+:34
+:vsp lib_ping.py
+:e lib_ping/ping_time.py
+:e lib_dns/get_ip_address.py
+:e youtube-dl_new.py
+:s/'/"/
+:e ../config_pytomo.py
+:e get_youtube_cache_url.py
+:e get_cache_only.py
+:86
+:read get_youtube_links.py
+:read main_module.py
+:read generate_links.py
+:read generate_cache_url.py
+:e lib_cache_url/dict_cache.py
+:e c
+:read ge
+:b ~/streaming/pytomo/pytomo_package/config_pytomo.py
+:b lib_cache_url/dict_cache.py
+:b ~/streaming/pytomo/pytomo_package/start_pytomo.py
+:e st
+:b ~/streaming/pytomo/pytomo_package/README.txt
+:b ~/streaming/pytomo/pytomo_package/
+:b ge
+:!pylint %
+:b main_module.py
+:b generate_links.py
+:b lib_cache_url/generate_cache_url.py
+:b lib_cache_url/generate_
+:2bp
+:e main_module.py
+:bp
+:bn
+:!!
+:!pylint start_pytomo.py
+:!!pylint start_pytomo.py
+:shell
+:vsp start_pytomo.py
+:e dns/get_ip_address.py
+:e dhcp.py
+:e mickael.py
+:set expandtab
+:e curl.py
+:e ../start_pytomo.py
+:e ping/ping_time.py
+:e dns/ping
+:716
+:661
+:14
+:e youtube_kaa.py
+:bnext
+:verbose map <Right>
+:verbose map <RArrow>
+:e freevo-1.9.2b1/src/util/mediainfo.py
+:e streaming_quality.cpp
+:e ~/workspace/tracetools/streaming_quality.h
+:e fibo.c
+:e ~/perso/fibo/fibo_acc.py
+:431
+:256
+:622
+:58
+:616
+:s
+:e /usr/bin/youtube-dl
+:565
+:read
+:194
+:806
+:595
+:852
+:894
+:84
+:T
+:e ~/streaming/tools/template.py
+:2274
+:retab
+:read youtube-dl_new.py
+:e my_youtube_dl.py
+:e ~/perso/android/scripting/sl4a/scripts/bluetooth_chat.py
+:b passive_streaming_analysis.tex
+:e schema_access_internet.svg
+:'<,'>s/\(.*\)&\( .* \)&\( .* \)&\( .* \)\\\\/\1 \& \4 \& \3 \& \2 \\\\/c
+:'<,'>s/\(.*\)&\( .* \)&\( .* \)&\( .* \)\\/\1 \& \4/c
+:'<,'>
+:'<,'>s/\(.*\)&\( .* \)&\( .* \)&\( .* \)\\//c
+:'<,'>s///c
+:%s/\(.*\)&\( .* \)&\( .* \)&\( .* \)\\/\1\&\4\&\3\&\2\\/c
+:'<,'>s/^/#/
+:%s//vs.}\\ /c
+:stnd eoauefe
+:e generate_links.py
+:20
+:e generate_cache_url.py
+:Ack
+:%s/_over_100ms_/_/c
 :b twitter-1.4.2/twitter/oauth_dance.py
 :b ts.py
 :b ~/play_soceda/twitter-sl4a/sl4a_twitt.py
-:reg
-:b
 :read ts.py
 :copy ts.py
 :e sl4a_twitt.py
@@ -31,23 +294,16 @@ $
 :e oauth_dance.py
 :b tweepy-source/tweepy/auth.py
 :b ~/play_soceda/twitter-sl4a/ts.py
-:e __init__.py
 :e tweepy-source/tweepy/api.py
-:e 
-:vsp
-:on
 :e python-oauth/oauth/example/client.py
 :e oauth-python-twitter-1.0/
 :e oauth.py
-:sp
-:mks
 :e tweepy-source/tweepy/auth.py
 :b1
 :e oau
 :e tweepy-examples/oauth/getaccesstoken.py
 :89
 :e ~/perso/android/scripting/sl4a/scripts/android.py
-:b 2
 :e tweepy/tweepy/auth.py
 :verbose colorscheme
 :col
@@ -58,567 +314,311 @@ $
 :1539
 :727
 :636
-:wa
-:e
 :e twitter-1.4.2/twitter/
 :e twi
 :e oauth-python-twitter-1.0/oauthtwitter.py
-:e util.py
-:e twitter_globals.py
-:e twitter-1.4.2/twitter/auth.py
-:s/+/ + /
-:'<,'>s/^/#/
-:s/ /_/
-:e ~/streaming/tools/template.py
-:b4
-:307
-:271
-:b ~/streaming/rapport/thesis/slides/network_diagnosis.tex
-:e /home/louis/streaming/rapport/thesis/slides/network_diagnosis.tex
-:%s/,\(\w\)/, \1/c
-:%s/"%\(\w\)/" % \1/c
-:%s/"%\(\w\)/" % \1/
-:%s/\t/    /
-:s/,\(\w\)/, \1/
-:s/\(\w\),/\1 ,/
-:e urls/loop_urls.py
-:'<,'>s/\./\~/
-:s/=/\~
-:s/\=/\~
-:s/\=/~
-:s/-/=
-:%s/ADSL R /ADSL\~R /c
-:%s/ADSL M /ADSL\~M /c
-:%s/ADSL M /ADSL~M /c
-:%s//ADSL~M/c
-:qap
-:e ../complements.tex
-:verbose map gJ
-:e filter_streaming.py
-:735
-:734
-:e INDEX_VALUES.py
-:e streaming_tools.py
-:841
-:e flow2session.py
-:629
-:compiler?
-:help compiler
-:compiler
-:e complements.py
-:b filter_streaming.py
-:%s///c
-:'<,'>s//,/
-:'<,'>s/ /, 
-:'<,'>s/ \n/, 
-:b ~/workspace/spydump/tools/create_packets.py
-:e ~/workspace/tstat/tstat/tcp.c
-:b TCPunitary.py
-:e TCPunitary.py
-:s/ ,/,
-:%s/>>/,
-:e create_packets.py
-:'<,'>s//idx_any_pkt
-:'<,'>s/any_loss/any_pkt
-:'<,'>s/any_loss/any_packet
-:e bbk12.clo
-:cd
-:e bb
-:e barticle.cls
-:e ~/config/latex/bangtex/latex/bsize12.clo
-:890
-:640
-:e cdfplot.py
-:e cdf
-:b INDEX_VALUES.py
-:1362
-:b complements.py
-:b streaming_tools.py
-:b2
-:717
-:187
-:1401
-:1482
-:,+2s/C/S/
-:,+3s/indics/data/
-:e load_tstat_file.py
-:setlocal spelllang=fr
-:Ack
-:%s/rescaled/(rescaled)/
-:verbose map p
-:b slides/network_diagnosis.tex
-:e slides/network_diagnosis.tex
-:,+2s/Access/AC/
-:,+2s/backbone/BB/
-:2023
-:1792
-:1734
-:737
-:650
-:e report.bib
-:verbose map cs
-:'<,'>s/-->/-?>/
-:783
-:1130
-:409
-:674
-:235
-:verbose map g-
-:'<,'>s/= \(\w*\)/= \U\1/
-:'<,'>s/= \(\w*\)/=\U\1/
-:e load_cnx_stream_file.py
-:'<,'>s/\[\(\w*\)\]/[\U\1]/
-:'<,'>s/[\(\w*\)]/[\u\1]/
-:'<,'>s/\s*\(\d\+\)\s*\(\w*\)/\2 = \1/
-:'<,'>!cat -n
-:'<,'>s/\(OUT_\w*\)/out_index[\1]/
-:'<,'>s/\(\s*\w*\).*/\1/
-:'<,'>s/\(\s*\w*\).*/\1/j
-:'<,'>s/\s*\(\w*\).*/\1/
-:b ~/workspace/spydump/tools/INDEX_VALUES.py
-:'<,'>s/^/OUT_/
-:'<,'>s/^/IN_/
-:'<,'>s/.*'\(.*\)'.*/\1/
-:'<,'>s/.*"\(.*\)".*/\1/
-:e ~/streaming/flows/CnxStream24/missing_ftth_2008/convert_cnx_h323.awk
-:'<,'>s/\w*/"&"/
-:'<,'>s/
-:verbose map t
-:verbose map x
-:'<,'>s/ \(\\%\)/\1/
-:verbose map w
-:e passive_streaming_analysis
-:e ../tests/test_dns.py
-:,?^[
-:verbose map go
-:s/:/
-:help viminfo
-:help +
-:verbose map g+
-:verbose map +
-:,+14s/&\(.*\)&\(.*\)\\\\/\& \2 \& \1 \\\\/
-:,+14s/&\(.*\)&\(.*\)\\\\/\2 \& \1 \\\\/
-:,+12s/&\(.*\)&\(.*\)\\\\/\2 \& \1 \\\\/
-:help Q
-:help X
-:verbose map gj
-:verbose map j
-:set 
-:set
-:set loadplugins
-:e input.txt
-:e fibo.py
-:q!
-:87
-:b beamerthemeorange.sty
-:e ~/cv_autres/CV/cv_rd.tex
-:e ~/config/latex/beamer/beamerthemeorange.sty
-:e ~/Confs/BTM/qos_mobile.tex
-:%s/,\(\S\)/, \1/
-:e read_working_urls_extract_videos.py
-:e read_working_urls.py
-:cc
-:e read_working_ip.py
-:e result_urls.py
-:39
-:e result_ip.py
-:e loop.dns.py
-:e ../ITC/report.tex
-:367
-:w !sudo tee %
-:w!
-:74
-:,+3s/Min/Max/
-:b passive_streaming_analysis.tex
-:Acks
-:set textwidth=0
-:e beamerthemeorange.sty
-:verbose map <space>1
-:verbose imap $
-:%s//&\\!/
-:s/\(\d\+\)h/$\1\\,h$/
-:s/\(\d\+\)h\(\d\+\)/$\1\\,h\\,\2$/
-:s/\(\d\+\)h\(\d\+\)/$\1\\,h\,\2$/
-:s/\(\d\+\)h\(\d\+\)/$\1\\,h\2$/
-:,$s/\(\.\|\d\)\+\\,\(\w\|\/\)\+/$&$/c
-:,$s/\d\+\\,\(\w\|\/\)\+/$&$/c
-:,$s/\d\+\\,\(\w\|\/\)\+/$&$/g
-:%s/\d\+\\,\[\w\|\/\]\+/$&$/c
-:%s/\d\+\\,[\w\|\/]\+/$&$/c
-:%s/\d\+\\,\w\+/$&$/c
-:b ~/config/vim/vimrc
-:make
-:echo compiler
-:cn
-:e latex_directory.py
-:set tw=0
-:e ~/streaming/rapport/everything/passive_streaming_analysis.tex
-:'<,'>s//\1/
-:qa
-:'<,'>s/\(\d\+\)\(\w\)/\1\\,\2/
-:'<,'>s/\(\d\)\\+\(\w\)/\1\\,\2/
-:'<,'>s/\(\d)\\+\(\w\)/\1\\,\2/
-:'<,'>s/\d\+/&\\,/
-:241
-:a
-:e abstract.txt
-:%s//figs\//
-:s/\d\+\\%/$&$/
-:e ../white.tex
-:s/|//
-:vimgrep // **/*.
-:also
-:e install.sh
-:%s/\(\d\+\)\\,\\%/\$\1\\%\$/
-:%s/\(\d\+\)\\%/\$\1\\%\$/
-:%s/\[width=.48\\linewidth\]/\[width=.48\\linewidth,height=185pt\]/
-:%s/[width=0.48\\linewidth]/[width=0.48\\linewidth,height=185pt]/
-:%s/[width=0.48\linewidth]/[width=0.48\linewidth,height=185pt]/
-:%s/[width=0.48\linewidth]/[width=0.48\linewidth,height=185pt/]
-:help buff
-:help mini
-:s/E3//
-:'<,'>s/nb_flows_per_client/client_2_flow/
-:e bib.bib
-:b flow2session.py
-:184
-:s/8/6/
-:%s/import/from . import/
-:b6
-:b ~/streaming/rapport/report.tex
-:e report.tex
-:b ~/streaming/rapport/white.tex
-:e white.tex
-:help :TlistOpen
-:TlistOpen
-:verbose map <space>t
-:TlistToggle
-:verbose <space>t
-:w
-:%s/\(\d\+\) \(\d\+\) \d\+ \(\w*\)\\,\\%/\1\/\2: \3/
-:%s/\(\d\+\) \(\d\+\) \d\+ \(\w*\)/\1\/\2: \3/
-:echo '<,'>s/\(\d\+\)_\(\d\+\)_\d\+_\(\w*\)/\1\/\2: \3/
-:'<,'>s/\(\d\+\)_\(\d\+\)_\d\+_\(\w*\)/\1\/\2: \3/
-:%s/\(\d\+\) \(\d\+\) \d\+ \(\w*\)/
-:'<,'>s/\(\d\+\)_\(\d\+\)_\d\+_(\\w*\)/\1\/\2: \3/
-:e en.utf-8.add.spl
-:e ~/config/vim/spell/en.utf-8.add
-:449
-:414
-:871
-:869
-:393
-:725
-:779
-:%s//\L&/
-:help substitute
-:%s//\u&/
-:'<,'>s/tools\.filter_streaming\.//
-:,+6s/-\./:/
-:s/\(\d\) /\1, /
-:s/,/./
 
 # Historique chaîne de recherche (chronologie décroissante) :
-?/hib
-? \<webbrowser\>
 ? \s\+$
-?/dialog
-? \<AUTHORIZATION_URL\>
-? \<REQUEST_TOKEN_URL\>
-? \<ACCESS_TOKEN_URL\>
-? \<CALL_BACK_URL\>
-? \<SimpleHTTPRequestHandler\>
-?/set
-?/status
-?/update_st
-? \<secure\>
-? \<OAuth\>
-? \<write_token_file\>
-?/update
-?/request
-?/verifier
-? \<RESOURCE_URL\>
-?/^class
-?/class
-? \<access_resource\>
-?/CA
-?/def
-? \<verifier\>
-?/get_acces
-? \<CALL_BACK_PORT\>
-?/smac
-? \<callback\>
-? \<Thread\>
-?/twitter\.
-? \<OAuthApi\>
-? \<twitter\>
-? \<oauthtwitter\>
-? \<client\>
-? \<conn\>
-?/socket
-?/thresh
-?/thres
-? \<plot_line\>
-? }
-?/inde
-?/probes
-?/platf
-?/other
-??non-dai
-?/cdn
-??hosting
-?/top
-?/peak rate for yo
-?/excludi
-?/table
-??its impac
-?/appl
-??no flow ach
-??mean flow rate
-??how much
-?/from
-?/section
-??serving
-?/monitor
-??rescaled
-?/nonce
-? \<statusupdate\>
-?/page
-?/string
-?/getacces
-? \<TwitterCall\>
-? \<key\>
-? +
-? ^
-?  
-? \<twitterhost\>
-? \<uri\>
-? \<httplib\>
-? \<urllib\>
-?/concl
-??streaming vi
-?/\\section
-?/percent_vo
-??user rea
-?/user_http
-?/mean_rate
-??reconst
-?/loss
-?/subsub
-?/inclu
-?/( \w
-?/(\w
-??end
-? ,\(\w\)
-? >>
-? "%\(\w\)
-?/\t
-? \(\w\),
-?/diss
-?/path
-??note
-?/dw	
-?/init
-??func
-?/\.
-??signal
-?/=
-? \=
-? -
-? \<From\>
-? (\(\f\|\[\|]\|\s\)*cv_expert_application.tex
-?/referen
-?/expert
-?/graph
-?/media
-?/pause
-?/base
-?/large re
-?/immedia
-?/heig
-?/{not
-?/\{not
-? ADSL R 
-? ADSL M 
-?/ADSL M
-?/burst
-?/explana
-?/peak rate mi
-?/mean flow rate of videos
-?/table}
-?/we first
-?/model
-??deducted
-??conclu
-?/smaller
-?/overall
-?/more\s*or
-?/more or
-? (\(\f\|\[\|]\|\s\)*passive_streaming_analysis.tex
-? \<multicolumn\>
-?/why
-?/Cable
-?/.\{80\}
-?/event
-?/figures
-??section{
-?/locatio
-?/loccat
-?/espec
-?/figur
-??porn de
-??clea
-?/state_
-? \<sec:loss\>
-? \<subsection\>
-? \<subsubsection\>
-?/state_m
-?/active time per
-?/occur
-?/larger
-?/larges
-?/only
-?/as ma
-?/exce
-?/user
-?/foot
-?/serv
-?/already ob
-?/YouTube and
-?/consider
-?/cope
-?/difference
-?/mean rate
-?/for ea
-?/AS
-?/conc
-??wid
-?/diff
-?/peak rate per
-?/main lim
-?/durin
-?/secti
-?/abst
-??rss
-?/newcom
-?/start_
-?/Name
-?/get_top
-?/connection
-?/get_t
-? \<plot_all_nb_flows\>
-? \<start_indic\>
-? \<nb_flows_per_client\>
-? \<StartDn\>
-? \<nb_flows_per_client_color\>
-?/final
-?/session
-??60
-? \<y_offset\>
-??figure
+? \<sep\>
+? \<os\>
+? \<PACKAGE_DIR\>
+??slot
+? \<exception\>
+? \<plot_title\>
+??save_title
+?/format
+? \<PingMdev\>
+?/f
+? \<to_stderr\>
+? \<_screen_file\>
+?/parseerror
+?/core
+? \<meta_file\>
+? \<get_data_duration\>
+? \<report_video_webpage_download\>
+? \<trouble\>
+? \<_do_download\>
+?/report_pro
+? \<_real_extract\>
+?/\V\<download(
+?/\V\<download\(\>
+?/\V\<download(\>
+?/exceptio
+? \<ParseError\>
+??get_data
+? \<LOG_FILE_TIMESTAMP\>
+? \<lib_youtube_api\>
+??input_li
+? \<LOG\>
+?/complete
+?/expand
+? \<input_links\>
+?/url_fil
+?/check
+?/use_pa
 ?/print
-? \<accumulated_nb\>
-? \<duration\>
-? \<plot_nb_flows_per_client_line\>
-? \<x_min\>
-? \<bin_start\>
-? (\(\f\|\[\|]\|\s\)*aparajita.tex
-?/ \[tstat\]
-?/\[tstat\]
-?/[tstat\]
-?/[tstat]
-?/out_seq
-?/find_l
-? \<ACCESS_RATES_NB_RENNES_2010_02\>
-?/\n
-?/
-?  
-?  \n
-?/trash
-? \<IP\>
-?/send
-?  ,
-? \<idx_tot_flows\>
-? any_loss
-?/xxxvi
-? \<Hbng\>
-? \<xxxpt\>
-? (\(\f\|\[\|]\|\s\)*
-?/bbk
-?/bngxxx
-?/cmd_
-?/plot_per_as
-? \<plot_indic\>
-?/rexm
-?/translat
-??RTM
-??retran
-? \<postfix\>
-??4500
-?/unique_
-??unique
-? \<dtype_all_stream_indics_final_tstat\>
-?/leg
-?/get_top_n
-? \<UNKNOWN_ID\>
-??excluded
-?/YouTube
-?/filter_se
-? \<plot_nb_flows_per_client_acc\>
-?/problem with c
-? \<thresholds\>
-?/use 
-?/dtype
-? \<dtype_cnx_stream\>
-?/paral
-?/conclus
-?/rescal
-?/1_-
-??homog
-??lower dow
-?/again
-??esti
-??tab
-?/_unique_
-? \<indic_list\>
-? \<plot_per_as_and_prefix\>
-? \<plot_indic_yt_others\>
-? C
-??add_t
-? \<TODO\>
-? :
-? \<out_dir\>
-??add_
-? \<dtype_tstat\>
-?/dtype_tst
-?/dtype_stream_
-?/return np
-? indics
-?/tstat
-?/input
-? (\(\f\|\[\|]\|\s\)*state_machine.tex
+? \<use_parent\>
+?/chec
+?/url_file_in
+?/url
+? \<log_file\>
+? \<config_pytomo\>
+? \<lib_dns\>
+? \<lib_cache_url\>
+? config_pytomo
+? \<check_out_files\>
+??timestamp
+??'w'
+?/with
+? \<DATABASE_TIMESTAMP\>
+? \<with\>
+? \<WARN\>
+?/cwd
+? \<timestamp\>
+?/result_dir
+?/filter
+? \<string\>
+? \<strftime\>
+? \<time\>
+? \<datetime\>
+?/timest
+? \<RESULT_FILE\>
+? \<py_modules\>
+?/runner
+? \<DATABASE_DIR\>
+?/dir
+?/sep
+?/metadata.cre
+?/kaa\.
+?/kaa
+?/import
+? \<core\>
+? \<kaa\>
+? \<strutils\>
+??str
+? \<handler\>
+?/parse
+??download(
+? \<argv\>
+? \<_finalize\>
+?/parse(
+? \<create\>
+?/screen_file
+?/singleton
+? \<utils\>
+?/>>>
+???
+? \?
+?/nb_
+? \<NB_PING_VALUES\>
+? \<url_file_in\>
+?/table
+?/throup
+?/throu
+?/exce
+??skip
+??skipp
+? \<sys\>
+?/pytomo_db
+?/pytom
+?/Data
+?/todo
+?/_T
+?/__
+? \<_TableName\>
+?/fetch
+?/ip_add
+? \<logger_db\>
+?/log_f
+?/('\(\w\| \)\+', \(\(\w\|\.\)\+\)),
+?/('\(\w\| \)\+', \(\(\w\|\.\)\+\)
+?/('\(\w\| \)\+', \(\(\w\| \)\+\)
+?/('\(\w\| \)\+
+?/\(\w\| \)\+
+? \<search-pattern\>
+?/\[\w\|:\]\+
+?/[\w\|:\]\+
+?/('\[ \w\]\+', \(\w\+\)),
+?/('[ \w]\+', \(\w\+\)),
+?/('\(\w\| \)\+', \(\w\+\)),
+?/('\w\+', \(\w\+\)),
+??down
+?/config_p
+? \<PytomoDatabase\>
+? \.$
+? '
+??FileDownloader
+?/LOG.error(
+?/error(
+?/_do_do
+? \<UnavailableVideoError\>
+??Content
+? \<start_buffered_bytes\>
+? \<after\>
+? \<compute_interruptions\>
+??interr
+? \<file_downloader\>
+? \<data_duration\>
+? \<data_block_len\>
+? \<current_time\>
+?/state
+?/playback_duration
+? \<current_buffer\>
+? \<buffered_duration\>
+? \<byte_counter\>
+??buffering_d
+??buffered
+? \<video_info\>
+??proxy
+? \<get_video_info\>
+?/socket
+?/Proxy
+? \<establish_connection\>
+? \<request\>
+? \<basic_request\>
+? \<urllib2\>
+? \<urllib\>
+? \<ip_addresses\>
+?/ip
+?/not va
+? \<_num_downloads\>
+? \<_download_retcode\>
+? \<_pps\>
+? \<_ies\>
+??class F
+? \<error\>
+? \<data_len\>
+? \<e\>
+?/LOG
+? \<get_all_links\>
+? \<logging\>
+??get_yo
+? \<url_map\>
+??get_youtu
+??get_youtuu
+?/retcode
+??DownloadError
+? \<formatter\>
+?/handler = uuuu
+? \<pprint\>
+?/\\nEn
+?/\nEn
+??ppr
+?/pp
+??ppri
+? \<total_time\>
+? =
+?/get_d
+? \<log\>
+??encodi
+?/stream
+??round
+?/debu
+? \<dump_url_list\>
+??clas
+? \<InfoExtractor\>
+??entering
+? \<data\>
+?/[]
+? \<get_download_stats\>
+? \<complete_yt_dl\>
+? \<log_stream\>
+?/quiet
+? \<urlparse\>
+? \<itertools\>
+?/pass
+?/unpack
+??encodin
+? \<before\>
+? \<download_time\>
+? \<instant_thp\>
+?/report_pr
+? \<_VALID_URL\>
+? time
+?/_do_dow
+?/STATE
+?/assert
+?/.g+-éguuauau
+? \<interruptions\>
+??cla
+? \<self\>
+? \<process_info\>
+??\<do_download\>
+?/cl
+??establ
+?/config
+? \<PLAYING_STATE\>
+??_do_
+?/sch
+?/_do_d
+?/hh
+?/pronou
+?/applic
+? }
+?/barpl
+?/figur
+?/tabl
 ? \<figure\>
-??up to
-? \<scatter\>
-??todo
-?/remaining
-?/rem
-?/downloaded
-?/remain
-? \<generate_remaining_cnx_stream\>
-??average
-? \<array\>
-?/extend
-?/events
-?/<F2>
-?/lo
-? \<plot_filtered\>
-?/reman
-?/remaning
-? \<service\>
-? \<initial_clf\>
-?/initial_
-? \<plot_per_as\>
+? \<subfigure\>
+?/figure}
+?/expected
+? \<textwidth\>
+??domi
+??lesson
+??meds
+? \<caption\>
+? \<column\>
+?/figure
+?/questions
+?/table}
+?/that
+?/mont
+?/why
+?/pliss
+? 
+?/title
+?/earth
+?/a+
+??main
+?/parser.par
+?/parser.pa
+??__m
+?/except
+??_downloader
+? \<force\>
+?/error
+? \<return\>
+?/differ
+?/random
+? \<max_rounds\>
+? \<DNS\>
+? \<YoutubeIE\>
+??37
+?/_real
+??real_ex
+?/def download
+?/extruct
+?/download
+? \<url\>
+? \<video_real_url\>
+? \<geturl\>
+?/debug
+??"pass"
+? \<max_per_url\>
+? \<Module\>
+? \<get_links\>
+? \<get_youtube_links\>
+??select
+?/choice
+??found
+??join
+?/append
+?/  
+? \<max_links\>
+? \<get_youtube_cache_url\>
+? \<DEBUG\>
+? \<generate_links\>
 
 # Historique expression (chronologie décroissante) :
 
@@ -669,32 +669,59 @@ $
 # Historique ligne de saisie (chronologie décroissante) :
 
 # Registres :
-"0	CHAR	0
-	os.path.exists(oauth_filename):
-"1	LINE	0
-	    else:
-"2	LINE	0
-	        status = 'update from sl4a from phone'
-"3	LINE	0
-	        print 'debug mode'
-"4	LINE	0
-	    if DEBUG:
-"5	LINE	0
-	    print os.listdir(os.path.curdir)
-"6	LINE	0
-	    print os.path.abspath(os.path.curdir)
-"7	LINE	0
+"0	LINE	0
+	import pytomo.config_pytomo as config_pytomo
+	import pytomo.lib_cache_url as lib_cache_url
+	import pytomo.lib_dns as lib_dns
+	import pytomo.lib_ping as lib_ping
+	import pytomo.lib_youtube_download as lib_youtube_download
+	import pytomo.lib_database as lib_database
+	import pytomo.lib_youtube_api as lib_youtube_api
 	
+""1	LINE	0
+	print PACKAGE_SOURCES
+"2	LINE	0
+	print path
+"3	LINE	0
+	#import pytomo.config_pytomo as config_pytomo
+	#import pytomo.lib_cache_url as lib_cache_url
+	#import pytomo.lib_dns as lib_dns
+	#import pytomo.lib_ping as lib_ping
+	#import pytomo.lib_youtube_download as lib_youtube_download
+	#import pytomo.lib_database as lib_database
+	#import pytomo.lib_youtube_api as lib_youtube_api
+	
+"4	LINE	0
+	    #path.append(PACKAGE_DIR)
+"5	LINE	0
+	#if PACKAGE_DIR not in path:
+"6	LINE	0
+	print PACKAGE_DIR
+"7	LINE	0
+	print 'iciiii'
 "8	LINE	0
-	AUTHORIZATION_URL = 'http://twitter.com/oauth/authorize'
-	REQUEST_TOKEN_URL = 'https://twitter.com/oauth/request_token'
-	ACCESS_TOKEN_URL = 'https://twitter.com/oauth/access_token'
+	#import pytomo.config_pytomo as config_pytomo
+	#import pytomo.lib_cache_url as lib_cache_url
+	#import pytomo.lib_dns as lib_dns
+	#import pytomo.lib_ping as lib_ping
+	#import pytomo.lib_youtube_download as lib_youtube_download
+	#import pytomo.lib_database as lib_database
+	#import pytomo.lib_youtube_api as lib_youtube_api
+	
 "9	LINE	0
-	TOKEN = None
+	print 'iciiii'
+	from os.path import abspath, dirname, sep
+	from sys import path
+	# assumes the standard distribution paths
+	PACKAGE_DIR = abspath(path[0])
+	print PACKAGE_DIR
+	#if PACKAGE_DIR not in path:
+	    #path.append(PACKAGE_DIR)
+	
 "a	CHAR	0
-	+j
+	wdf.wDj0
 "b	CHAR	0
-	\textbf{
+	apuuwhr($"ap
 "c	CHAR	0
 	0i#uu
 "d	CHAR	0
@@ -726,7 +753,7 @@ $
 	        lost but missed by the probe.
 	    \end{tablenotes}
 	  \end{threeparttable}
-"o	CHAR	0
+"o	LINE	0
 	0xxJa(uuA)---------------------------------------------------------------------------------------------uuuuuuu:set fo	+=a
 "r	CHAR	0
 	Ratio of retransmitted packets per flow
@@ -743,123 +770,3435 @@ $
 "z	LINE	0
 	File:/home/louis/streaming/pytomo/dns/dns.py
 	
-""-	CHAR	0
-	#
+"-	CHAR	0
+	DIR
 
 # Marques dans le fichier :
-'0  161  0  ~/.subversion/servers
-'1  131  36  ~/config/shell_aliases_functions
-'2  210  64  ~/config/xmonad/xmonad.hs
-'3  10  46  ~/config/sudoers.template
-'4  35  12  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
-'5  104  53  ~/play_soceda/twitter-sl4a/ts.py
-'6  61  8  ~/play_soceda/twitter-sl4a/tweepy-source/tweepy/auth.py
-'7  117  4  ~/play_soceda/twitter-sl4a/ts.py
-'8  10  42  ~/streaming/pytomo/lib/lib_cache_url/get_url.py
-'9  1513  38  ~/workspace/spydump/tools/filter_streaming.py
+'0  13  0  ~/streaming/pytomo/Pytomo/bin/pytomo
+'1  17  0  /tmp/Pytomo-0.1.0/bin/pytomo
+'2  14  0  ~/streaming/pytomo/Pytomo/setup.py
+'3  3  32  ~/streaming/pytomo/Pytomo/MANIFEST.in
+'4  334  0  ~/config/matplotlibrc
+'5  673  39  ~/workspace/spydump/tools/filter_streaming.py
+'6  46  0  ~/play_soceda/android/gps_polling/sl4a_gps.py
+'7  37  0  ~/play_soceda/android/twitter-sl4a/sl4a_twitt.py
+'8  79  0  ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
+'9  35  63  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
 
 # Liste de sauts (le plus récent en premier) :
--'  161  0  ~/.subversion/servers
--'  160  0  ~/.subversion/servers
--'  131  36  ~/config/shell_aliases_functions
--'  197  0  ~/config/shell_aliases_functions
--'  210  64  ~/config/xmonad/xmonad.hs
--'  10  46  ~/config/sudoers.template
--'  1  0  ~/config/sudoers.template
--'  35  12  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
--'  2  16  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
--'  47  12  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  357  64  ~/play_soceda/twitter-sl4a/ts.py
--'  1  0  ~/play_soceda/twitter-sl4a/ts.py
--'  40  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  392  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  8  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
--'  14  11  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  37  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  42  8  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  21  56  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  23  25  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  52  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  11  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  19  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  51  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  9  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  8  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  49  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  33  4  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  61  16  ~/play_soceda/twitter-sl4a/ts.py
--'  72  34  ~/play_soceda/twitter-sl4a/ts.py
--'  286  52  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  213  22  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  157  22  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  71  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  224  18  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  196  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  193  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  190  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  229  6  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  30  0  ~/play_soceda/twitter-sl4a/ts.py
--'  34  13  ~/play_soceda/twitter-sl4a/ts.py
--'  35  12  ~/play_soceda/twitter-sl4a/ts.py
--'  262  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  73  0  ~/play_soceda/twitter-sl4a/ts.py
--'  38  0  ~/play_soceda/twitter-sl4a/ts.py
--'  50  0  ~/play_soceda/twitter-sl4a/ts.py
--'  55  0  ~/play_soceda/twitter-sl4a/ts.py
--'  58  0  ~/play_soceda/twitter-sl4a/ts.py
--'  60  0  ~/play_soceda/twitter-sl4a/ts.py
--'  67  0  ~/play_soceda/twitter-sl4a/ts.py
--'  8  65  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  4  1  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  509  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  116  21  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  70  8  ~/play_soceda/twitter-sl4a/ts.py
--'  512  8  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  517  26  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  384  4  ~/play_soceda/twitter-sl4a/ts.py
--'  92  48  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  72  18  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  35  12  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
--'  2  16  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
--'  47  12  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  357  64  ~/play_soceda/twitter-sl4a/ts.py
--'  1  0  ~/play_soceda/twitter-sl4a/ts.py
--'  40  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  392  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  8  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/oauth_dance.py
--'  14  11  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  37  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  42  8  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  21  56  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  23  25  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  52  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  11  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  19  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  51  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  9  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  8  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  49  0  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  33  4  ~/play_soceda/twitter-sl4a/sl4a_twitt.py
--'  61  16  ~/play_soceda/twitter-sl4a/ts.py
--'  72  34  ~/play_soceda/twitter-sl4a/ts.py
--'  286  52  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  213  22  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  157  22  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  71  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
--'  224  18  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  196  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  193  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  190  14  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  229  6  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  30  0  ~/play_soceda/twitter-sl4a/ts.py
--'  34  13  ~/play_soceda/twitter-sl4a/ts.py
--'  35  12  ~/play_soceda/twitter-sl4a/ts.py
--'  262  0  ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/api.py
--'  73  0  ~/play_soceda/twitter-sl4a/ts.py
--'  38  0  ~/play_soceda/twitter-sl4a/ts.py
--'  50  0  ~/play_soceda/twitter-sl4a/ts.py
+-'  13  0  ~/streaming/pytomo/Pytomo/bin/pytomo
+-'  15  0  ~/streaming/pytomo/Pytomo/bin/pytomo
+-'  17  0  /tmp/Pytomo-0.1.0/bin/pytomo
+-'  28  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  87  18  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  15  40  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  108  18  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  102  24  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  100  27  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  95  27  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  90  16  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  88  15  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  85  19  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  11  8  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  83  19  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  19  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  18  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  20  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  14  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  15  0  /tmp/Pytomo-0.1.0/bin/pytomo
+-'  14  0  /tmp/Pytomo-0.1.0/bin/pytomo
+-'  26  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  27  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  23  13  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  5  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
+-'  6  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
+-'  8  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
+-'  1  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  1  0  /tmp/Pytomo-0.1.0/bin/pytomo
+-'  14  0  ~/streaming/pytomo/Pytomo/setup.py
+-'  1  12  ~/streaming/pytomo/Pytomo/-MiniBufExplorer-
+-'  2  0  ~/streaming/pytomo/Pytomo/-MiniBufExplorer-
+-'  3  0  ~/streaming/pytomo/Pytomo/MANIFEST.in
+-'  10  6  ~/streaming/pytomo/Pytomo/setup.py
+-'  760  51  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
+-'  566  16  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
+-'  124  18  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
+-'  122  22  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
+-'  121  30  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
+-'  46  6  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
+-'  37  12  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  12  26  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  35  18  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  6  0  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  7  0  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  25  0  ~/streaming/pytomo/Pytomo/pytomo/dns/rdatatype.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/dns/rdata.py
+-'  175  0  ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
+-'  58  0  ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
+-'  22  0  ~/streaming/pytomo/Pytomo/setup.py
+-'  26  0  ~/streaming/pytomo/Pytomo/MANIFEST
+-'  79  0  ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
+-'  13  4  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  88  0  ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
+-'  43  23  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  42  11  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  39  17  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  334  0  ~/config/matplotlibrc
+-'  1  16  ~/workspace/spydump/tools/-MiniBufExplorer-
+-'  2  0  ~/workspace/spydump/tools/-MiniBufExplorer-
+-'  673  4  ~/workspace/spydump/tools/filter_streaming.py
+-'  139  0  ~/config/matplotlibrc
+-'  136  0  ~/config/matplotlibrc
+-'  1017  12  ~/workspace/spydump/tools/filter_streaming.py
+-'  1019  25  ~/workspace/spydump/tools/filter_streaming.py
+-'  631  4  ~/workspace/spydump/tools/filter_streaming.py
+-'  640  38  ~/workspace/spydump/tools/filter_streaming.py
+-'  651  38  ~/workspace/spydump/tools/filter_streaming.py
+-'  405  6  ~/config/vim/vimrc
+-'  4  0  ~/config/vim/vimrc
+-'  17  30  ~/config/vimrc
+-'  17  1  ~/Confs/ITC/report.txt
+-'  1  0  ~/Confs/ITC/report.txt
+-'  17  0  /tmp/Pytomo-0.1.0/bin/pytomo
+-'  28  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  87  18  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  15  40  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  108  18  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  102  24  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  100  27  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  95  27  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  90  16  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  88  15  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  85  19  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  11  8  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  83  19  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  19  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  18  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  20  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  14  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  15  0  /tmp/Pytomo-0.1.0/bin/pytomo
+-'  14  0  /tmp/Pytomo-0.1.0/bin/pytomo
+-'  26  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  27  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  23  13  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  5  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
+-'  6  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
+-'  8  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
+-'  1  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
+
+> ~/streaming/pytomo/Pytomo/bin/pytomo
+	"	13	0
+	^	13	18
+	.	13	0
+	+	15	22
+	+	13	25
+	+	1	1
+	+	9	12
+	+	5	9
+	+	9	28
+	+	5	13
+	+	6	19
+	+	9	22
+	+	5	40
+	+	9	58
+	+	8	0
+	+	9	67
+	+	12	0
+	+	9	69
+	+	8	40
+	+	12	22
+	+	12	15
+	+	8	0
+	+	9	37
+	+	5	35
+	+	12	0
+	+	2	40
+	+	3	2
+	+	9	6
+	+	12	18
+	+	10	0
+	+	12	0
+	+	15	25
+	+	13	20
+	+	16	0
+	+	13	0
+
+> ~/Confs/ITC/report.txt
+	"	17	1
+
+> ~/config/vimrc
+	"	17	30
+
+> ~/config/-MiniBufExplorer-
+	"	1	23
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/config/vim/vimrc
+	"	405	6
+	^	398	10
+	.	154	0
+	+	206	0
+	+	206	0
+	+	206	0
+	+	255	0
+	+	256	0
+	+	251	25
+	+	266	4
+	+	265	0
+	+	407	11
+	+	265	0
+	+	266	0
+	+	265	0
+	+	80	0
+	+	81	0
+	+	1	0
+	+	1	0
+	+	9	0
+	+	11	0
+	+	1	0
+	+	54	18
+	+	1	0
+	+	1	9
+	+	1	0
+	+	3	17
+	+	3	0
+	+	324	0
+	+	328	0
+	+	324	0
+	+	335	0
+	+	358	0
+	+	336	0
+	+	335	0
+	+	27	19
+	+	80	0
+	+	183	2
+	+	17	22
+	+	183	0
+	+	182	56
+	+	54	0
+	+	414	17
+	+	415	0
+	+	335	15
+	+	183	35
+	+	400	0
+	+	401	0
+	+	200	0
+	+	201	0
+	+	200	0
+	+	201	0
+	+	206	0
+	+	427	0
+	+	429	0
+	+	433	16
+	+	434	16
+	+	435	16
+	+	436	16
+	+	437	16
+	+	438	16
+	+	441	16
+	+	442	16
+	+	443	16
+	+	444	16
+	+	445	16
+	+	446	0
+	+	430	0
+	+	409	0
+	+	267	5
+	+	268	0
+	+	154	15
+	+	26	0
+	+	28	0
+	+	6	29
+	+	7	0
+	+	278	5
+	+	280	0
+	+	278	7
+	+	279	0
+	+	280	0
+	+	279	5
+	+	280	0
+	+	280	0
+	+	278	5
+	+	279	5
+	+	276	8
+	+	277	5
+	+	395	4
+	+	396	0
+	+	395	0
+	+	401	0
+	+	402	0
+	+	278	0
+	+	279	5
+	+	278	5
+	+	279	5
+	+	278	0
+	+	397	9
+	+	398	9
+	+	397	12
+	+	398	12
+	+	154	0
+
+> /tmp/Pytomo-0.1.0/bin/pytomo
+	"	17	0
+	^	17	0
+	.	17	0
+	+	11	16
+	+	14	13
+	+	15	9
+	+	12	4
+	+	15	8
+	+	11	21
+	+	5	40
+	+	11	57
+	+	9	22
+	+	14	33
+	+	15	0
+	+	14	0
+	+	12	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	15	9
+	+	17	0
+	+	15	0
+	+	14	0
+	+	14	0
+	+	11	14
+	+	14	0
+	+	15	0
+	+	17	0
+
+> /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+	"	28	0
+	^	18	39
+	.	28	0
+	+	20	29
+	+	28	0
+	+	20	20
+	+	21	20
+	+	22	14
+	+	22	14
+	+	23	15
+	+	24	27
+	+	25	19
+	+	26	22
+	+	20	0
+	+	20	16
+	+	20	0
+	+	20	0
+	+	20	0
+	+	15	0
+	+	18	38
+	+	15	0
+	+	19	0
+	+	28	0
+	z	28	0
+
+> /tmp/Pytomo-0.1.0/pytomo/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
+	"	5	7
+	^	8	44
+	.	5	0
+	+	5	13
+	+	6	13
+	+	8	0
+	+	5	0
+	z	5	7
+
+> ~/streaming/pytomo/Pytomo/setup.py
+	"	14	0
+	^	14	41
+	.	14	40
+	+	4	47
+	+	19	0
+	+	8	0
+	+	9	0
+	+	4	0
+	+	4	0
+	+	3	4
+	+	3	0
+	+	3	18
+	+	3	0
+	+	20	0
+	+	23	0
+	+	19	0
+	+	23	22
+	+	23	31
+	+	23	42
+	+	23	0
+	+	23	76
+	+	19	0
+	+	19	0
+	+	23	41
+	+	23	0
+	+	23	0
+	+	19	0
+	+	3	0
+	+	23	0
+	+	19	0
+	+	5	0
+	+	11	44
+	+	21	38
+	+	22	21
+	+	14	40
+	z	14	40
+
+> ~/streaming/pytomo/Pytomo/MANIFEST.in
+	"	3	0
+	.	3	0
+	+	1	0
+	+	3	20
+	+	4	0
+	+	3	11
+	+	3	22
+	+	3	0
+
+> ~/streaming/pytomo/Pytomo/-MiniBufExplorer-
+	"	1	12
+	.	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+	"	37	12
+	^	37	25
+	.	37	24
+	+	39	0
+	+	42	0
+	+	43	0
+	+	7	0
+	+	6	0
+	+	5	34
+	+	6	36
+	+	22	18
+	+	31	18
+	+	35	18
+	+	12	26
+	+	33	24
+	+	37	24
+	z	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdatatype.py
+	"	25	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/-MiniBufExplorer-
+	"	1	94
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdata.py
+	"	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
+	"	175	0
+	^	138	29
+	.	137	0
+	+	166	48
+	+	175	4
+	+	177	4
+	+	178	31
+	+	180	7
+	+	185	39
+	+	188	12
+	+	188	39
+	+	184	39
+	+	188	54
+	+	196	4
+	+	197	4
+	+	198	8
+	+	198	38
+	+	198	50
+	+	198	9
+	+	198	36
+	+	198	34
+	+	199	34
+	+	204	8
+	+	23	43
+	+	24	31
+	+	25	33
+	+	26	45
+	+	27	41
+	+	19	25
+	+	20	0
+	+	20	13
+	+	21	0
+	+	20	0
+	+	21	0
+	+	198	0
+	+	188	0
+	+	128	0
+	+	20	0
+	+	21	0
+	+	30	0
+	+	176	0
+	+	180	0
+	+	197	0
+	+	186	0
+	+	18	6
+	+	19	9
+	+	20	22
+	+	133	0
+	+	133	0
+	+	15	40
+	+	89	18
+	+	101	30
+	+	111	15
+	+	133	70
+	+	186	25
+	+	174	0
+	+	168	24
+	+	174	0
+	+	185	59
+	+	199	54
+	+	202	77
+	+	118	75
+	+	126	50
+	+	118	70
+	+	207	33
+	+	118	69
+	+	168	23
+	+	207	0
+	+	186	0
+	+	207	44
+	+	208	0
+	+	207	17
+	+	207	13
+	+	133	0
+	+	79	75
+	+	89	0
+	+	87	29
+	+	79	54
+	+	105	0
+	+	107	61
+	+	107	58
+	+	109	0
+	+	107	77
+	+	108	32
+	+	26	57
+	+	35	35
+	+	58	44
+	+	186	37
+	+	133	0
+	+	137	34
+	+	140	89
+	+	140	0
+	+	139	0
+	+	140	85
+	+	140	0
+	+	139	0
+	+	140	80
+	+	28	47
+	+	140	0
+	+	138	0
+	+	139	0
+	+	140	0
+	+	137	0
+	z	140	33
+
+> ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
+	"	58	0
+	^	55	24
+	.	79	17
+	+	37	13
+	+	24	10
+	+	23	0
+	+	24	0
+	+	23	0
+	+	3	33
+	+	23	0
+	+	24	0
+	+	23	0
+	+	12	0
+	+	11	0
+	+	8	1
+	+	10	13
+	+	54	41
+	+	53	0
+	+	33	0
+	+	45	63
+	+	47	18
+	+	46	58
+	+	28	16
+	+	24	0
+	+	23	0
+	+	55	23
+	+	23	0
+	+	23	0
+	+	60	15
+	+	79	17
+	z	60	15
+
+> ~/streaming/pytomo/Pytomo/MANIFEST
+	"	26	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
+	"	760	51
+
+> ~/streaming/pytomo/Pytomo/dist/Pytomo-0.1.0/pytomo/config_pytomo.py
+	"	55	23
+	^	55	24
+	.	55	23
+	+	55	23
+	z	55	23
+
+> ~/config/matplotlibrc
+	"	334	0
+	^	334	0
+	.	334	0
+	+	321	26
+	+	136	28
+	+	333	24
+	+	136	0
+	+	334	0
+
+> ~/workspace/spydump/tools/filter_streaming.py
+	"	673	39
+	^	631	61
+	.	631	60
+	+	1164	16
+	+	1166	43
+	+	1164	16
+	+	1166	15
+	+	1164	75
+	+	1164	80
+	+	1166	15
+	+	1166	40
+	+	1166	43
+	+	1168	0
+	+	1164	0
+	+	1166	73
+	+	1167	0
+	+	1166	69
+	+	1165	0
+	+	1153	71
+	+	1153	67
+	+	1153	41
+	+	1153	44
+	+	1154	41
+	+	1155	0
+	+	1154	0
+	+	1153	0
+	+	1160	40
+	+	1163	0
+	+	1160	0
+	+	1558	0
+	+	1593	0
+	+	1593	15
+	+	1593	0
+	+	1593	0
+	+	1593	16
+	+	1593	73
+	+	1593	0
+	+	1593	0
+	+	853	25
+	+	853	23
+	+	852	0
+	+	854	0
+	+	853	34
+	+	854	0
+	+	858	0
+	+	854	77
+	+	857	65
+	+	858	0
+	+	853	37
+	+	855	77
+	+	856	39
+	+	853	26
+	+	854	0
+	+	855	0
+	+	856	0
+	+	853	25
+	+	857	66
+	+	855	0
+	+	856	0
+	+	1587	36
+	+	1621	48
+	+	788	20
+	+	931	28
+	+	1088	32
+	+	1107	40
+	+	1517	66
+	+	1518	48
+	+	1523	66
+	+	1525	0
+	+	903	32
+	+	904	52
+	+	904	53
+	+	905	0
+	+	1517	0
+	+	1518	50
+	+	1524	0
+	+	1525	0
+	+	1518	29
+	+	1524	29
+	+	904	34
+	+	1141	0
+	+	1142	0
+	+	1143	0
+	+	1139	0
+	+	1113	64
+	+	1124	0
+	+	1123	43
+	+	1121	0
+	+	1123	0
+	+	1124	0
+	+	1125	0
+	+	1115	8
+	+	1117	32
+	+	1143	19
+	+	1139	56
+	+	1140	0
+	+	1141	14
+	+	1142	14
+	+	1143	30
+	+	1138	58
+	+	1017	68
+	+	1016	0
+	+	631	60
+	z	673	39
+
+> ~/workspace/spydump/tools/-MiniBufExplorer-
+	"	1	16
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/play_soceda/android/gps_polling/sl4a_gps.py
+	"	46	0
+	^	8	12
+	.	46	0
+	+	8	11
+	+	46	0
+	z	46	0
+
+> ~/play_soceda/android/twitter-sl4a/sl4a_twitt.py
+	"	37	0
+	^	47	57
+	.	37	0
+	+	37	0
+	+	46	0
+	+	39	28
+	+	40	0
+	+	37	0
+	z	37	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_ping.py
+	"	71	0
+	^	27	0
+	.	64	0
+	+	32	30
+	+	63	0
+	+	64	0
+	+	61	0
+	+	31	0
+	+	26	0
+	+	28	58
+	+	63	0
+	+	64	0
+	z	64	4
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_database.py
+	"	121	0
+	^	95	23
+	.	49	0
+	+	94	0
+	+	93	0
+	+	8	0
+	+	81	53
+	+	49	0
+	z	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/-MiniBufExplorer-
+	"	1	73
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+	"	35	63
+	^	35	64
+	.	35	63
+	+	36	0
+	+	35	63
+	z	35	63
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_youtube_download.py
+	"	45	6
+	^	264	17
+	.	265	16
+	+	847	0
+	+	847	0
+	+	848	0
+	+	850	0
+	+	858	0
+	+	847	0
+	+	463	19
+	+	463	0
+	+	463	0
+	+	759	8
+	+	759	0
+	+	760	18
+	+	760	25
+	+	27	39
+	+	760	11
+	+	760	34
+	+	760	19
+	+	273	0
+	+	274	63
+	+	760	0
+	+	759	0
+	+	463	19
+	+	463	0
+	+	468	0
+	+	468	0
+	+	468	0
+	+	762	0
+	+	473	0
+	+	468	0
+	+	463	0
+	+	473	0
+	+	759	0
+	+	460	0
+	+	462	19
+	+	463	0
+	+	467	39
+	+	463	63
+	+	755	36
+	+	759	39
+	+	463	67
+	+	465	79
+	+	464	22
+	+	465	73
+	+	467	0
+	+	465	73
+	+	464	37
+	+	466	47
+	+	465	0
+	+	274	66
+	+	264	16
+	+	265	16
+	z	265	16
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/factory.py
+	"	46	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/[YankRing]
+	"	14	0
+	.	2	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/core.py
+	"	70	26
+	^	70	27
+	.	70	26
+	+	70	26
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_youtube_api.py
+	"	44	50
+	^	44	51
+	.	44	50
+	+	34	25
+	+	18	52
+	+	19	0
+	+	18	45
+	+	37	0
+	+	16	0
+	+	17	0
+	+	15	27
+	+	37	38
+	+	38	52
+	+	41	0
+	+	25	0
+	+	23	40
+	+	20	60
+	+	22	0
+	+	23	4
+	+	20	0
+	+	41	28
+	+	44	50
+	z	44	50
+
+> ~/streaming/pytomo/Pytomo/pytomo/__init__.py
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	z	1	0
+
+> ~/streaming/pytomo/NERD_tree_1
+	"	6	4
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/complete_yt_dl.py
+	"	134	51
+
+> ~/streaming/pytomo/.git/COMMIT_EDITMSG
+	"	2	38
+	^	2	39
+	.	2	38
+	+	3	34
+	+	2	38
+
+> ~/streaming/pytomo/.gitignore
+	"	25	3
+	^	26	7
+	.	25	3
+	+	4	4
+	+	6	5
+	+	8	0
+	+	9	16
+	+	7	4
+	+	11	0
+	+	19	4
+	+	20	3
+	+	22	0
+	+	21	7
+	+	23	0
+	+	23	0
+	+	25	6
+	+	26	4
+	+	25	3
+
+> ~/streaming/pytomo/setup.py
+	"	25	28
+	^	25	29
+	.	25	0
+	+	1	21
+	+	25	0
+	z	25	28
+
+> ~/streaming/pytomo/pytomo_louis/setup.py
+	"	1	0
+	^	30	52
+	.	21	59
+	+	20	57
+	+	23	0
+	+	21	56
+	+	19	45
+	+	21	47
+	+	11	41
+	+	13	55
+	+	17	0
+	+	6	0
+	+	27	32
+	+	29	63
+	+	30	21
+	+	30	68
+	+	30	32
+	+	14	11
+	+	7	9
+	+	10	20
+	+	7	10
+	+	29	42
+	+	30	43
+	+	30	62
+	+	30	73
+	+	29	33
+	+	30	51
+	+	22	23
+	+	19	21
+	+	21	59
+	z	28	16
+
+> ~/streaming/pytomo/pytomo_louis/MANIFEST.in
+	"	1	8
+	.	1	8
+	+	1	8
+
+> ~/streaming/pytomo/pytomo_louis/-MiniBufExplorer-
+	"	1	12
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/factory.py
+	"	51	0
+	^	51	1
+	.	52	0
+	+	43	0
+	+	68	15
+	+	69	0
+	+	97	0
+	+	415	10
+	+	118	0
+	+	54	19
+	+	50	0
+	+	54	0
+	+	50	19
+	+	52	0
+	+	55	0
+	+	56	2
+	+	233	0
+	+	232	21
+	+	232	0
+	+	361	30
+	+	369	34
+	+	132	46
+	+	50	0
+	+	52	0
+	z	51	0
+
+> ~/streaming/pytomo/pytomo_louis/start_pytomo.py
+	"	84	57
+	^	84	58
+	.	84	57
+	+	43	21
+	+	46	43
+	+	47	26
+	+	48	54
+	+	54	79
+	+	55	44
+	+	117	18
+	+	39	37
+	+	55	38
+	+	91	40
+	+	13	0
+	+	54	74
+	+	55	31
+	+	56	0
+	+	54	0
+	+	13	0
+	+	54	51
+	+	53	65
+	+	97	0
+	+	59	0
+	+	60	58
+	+	60	76
+	+	60	44
+	+	64	53
+	+	65	58
+	+	65	43
+	+	59	0
+	+	65	0
+	+	62	0
+	+	60	18
+	+	62	18
+	+	20	18
+	+	64	27
+	+	53	65
+	+	62	53
+	+	11	0
+	+	12	0
+	+	62	38
+	+	62	81
+	+	62	0
+	+	62	11
+	+	62	0
+	+	62	48
+	+	62	0
+	+	62	0
+	+	60	4
+	+	60	0
+	+	60	35
+	+	61	0
+	+	60	39
+	+	61	0
+	+	62	33
+	+	62	0
+	+	62	30
+	+	63	0
+	+	64	58
+	+	65	48
+	+	24	0
+	+	50	47
+	+	52	51
+	+	90	20
+	+	90	0
+	+	94	67
+	+	96	0
+	+	90	0
+	+	89	0
+	+	56	0
+	+	59	0
+	+	108	0
+	+	101	0
+	+	24	0
+	+	62	0
+	+	65	0
+	+	120	0
+	+	113	0
+	+	143	33
+	+	142	59
+	+	144	35
+	+	11	8
+	+	84	41
+	+	147	21
+	+	173	24
+	+	146	32
+	+	147	32
+	+	173	0
+	+	163	0
+	+	164	30
+	+	165	51
+	+	166	35
+	+	167	29
+	+	169	13
+	+	170	31
+	+	171	0
+	+	148	0
+	+	1	20
+	+	78	21
+	+	79	9
+	+	80	31
+	+	81	25
+	+	84	57
+	z	84	57
+
+> ~/streaming/pytomo/pytomo_louis/lib_database.py
+	"	6	0
+	^	69	31
+	.	96	40
+	+	2	0
+	+	102	0
+	+	5	0
+	+	9	0
+	+	8	0
+	+	100	0
+	+	99	32
+	+	100	78
+	+	13	17
+	+	82	49
+	+	88	58
+	+	14	0
+	+	7	24
+	+	89	25
+	+	73	43
+	+	73	79
+	+	74	53
+	+	74	49
+	+	75	0
+	+	73	0
+	+	55	43
+	+	56	77
+	+	57	40
+	+	57	37
+	+	58	0
+	+	56	0
+	+	84	0
+	+	82	75
+	+	83	0
+	+	82	0
+	+	80	0
+	+	85	56
+	+	78	46
+	+	78	60
+	+	79	0
+	+	78	42
+	+	79	0
+	+	82	0
+	+	69	0
+	+	70	0
+	+	69	0
+	+	70	70
+	+	87	0
+	+	88	0
+	+	70	0
+	+	72	0
+	+	90	0
+	+	91	0
+	+	90	42
+	+	15	0
+	+	15	0
+	+	16	0
+	+	73	0
+	+	75	0
+	+	96	0
+	+	97	0
+	+	96	40
+	z	96	40
+
+> ~/streaming/pytomo/pytomo_louis/config_pytomo.py
+	"	21	0
+	^	21	16
+	.	21	15
+	+	46	0
+	+	45	22
+	+	32	15
+	+	28	0
+	+	26	0
+	+	24	0
+	+	14	0
+	+	14	0
+	+	15	0
+	+	12	0
+	+	12	13
+	+	33	0
+	+	13	79
+	+	31	0
+	+	44	0
+	+	39	0
+	+	40	16
+	+	49	0
+	+	49	0
+	+	20	0
+	+	19	6
+	+	12	22
+	+	13	16
+	+	13	17
+	+	13	0
+	+	12	15
+	+	12	16
+	+	13	0
+	+	12	0
+	+	5	47
+	+	12	15
+	+	12	15
+	+	37	22
+	+	13	10
+	+	13	32
+	+	12	11
+	+	8	29
+	+	25	20
+	+	31	18
+	+	46	16
+	+	12	28
+	+	25	22
+	+	23	13
+	+	25	23
+	+	49	0
+	+	46	16
+	+	8	28
+	+	7	21
+	+	12	11
+	+	12	11
+	+	12	14
+	+	29	15
+	+	27	14
+	+	12	21
+	+	13	24
+	+	12	25
+	+	13	0
+	+	52	0
+	+	50	0
+	+	12	0
+	+	10	0
+	+	12	0
+	+	12	0
+	+	12	10
+	+	12	0
+	+	12	0
+	+	31	0
+	+	62	0
+	+	31	0
+	+	58	0
+	+	51	0
+	+	12	0
+	+	61	0
+	+	62	11
+	+	62	0
+	+	60	18
+	+	62	64
+	+	62	0
+	+	62	0
+	+	61	21
+	+	62	0
+	+	62	0
+	+	62	0
+	+	67	0
+	+	62	0
+	+	64	21
+	+	12	0
+	+	12	0
+	+	67	0
+	+	62	0
+	+	64	21
+	+	67	0
+	+	12	0
+	+	12	0
+	+	13	0
+	+	12	0
+	+	17	27
+	+	56	16
+	+	17	0
+	+	21	15
+	z	21	15
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/core.py
+	"	38	0
+	^	39	22
+	.	39	21
+	+	37	0
+	+	38	28
+	+	40	0
+	+	39	21
+	z	39	21
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/misc/xmlfile.py
+	"	41	10
+	.	41	10
+	+	41	10
+	z	41	10
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/misc/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/misc/directory.py
+	"	40	0
+	.	40	0
+	+	39	0
+	+	44	10
+	+	45	8
+	+	40	0
+	z	40	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/image/EXIF.py
+	"	1479	6
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/image/-MiniBufExplorer-
+	"	1	61
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/image/core.py
+	"	39	8
+	.	39	8
+	+	39	8
+	z	1	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/image/IPTC.py
+	"	40	0
+	.	40	0
+	+	39	0
+	+	40	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/image/[YankRing]
+	"	4	0
+	.	2	0
+	+	2	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/image/png.py
+	"	98	29
+	.	41	0
+	+	40	0
+	+	41	0
+	z	41	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/audio/eyeD3/utils.py
+	"	20	0
+	.	20	8
+	+	20	8
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/audio/eyeD3/tag.py
+	"	23	0
+	.	394	0
+	+	22	8
+	+	394	0
+	z	1	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/audio/eyeD3/mp3.py
+	"	109	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/audio/pcm.py
+	"	1	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/games/core.py
+	"	32	0
+	.	32	8
+	+	32	8
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/disc/core.py
+	"	38	0
+	.	37	8
+	+	36	8
+	+	37	8
+	z	37	8
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/disc/cdrom.py
+	"	208	0
+	.	208	22
+	+	208	22
+	z	1	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/disc/data.py
+	"	34	0
+	.	34	5
+	+	34	5
+	z	34	5
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/disc/audio.py
+	"	73	0
+	.	73	14
+	+	38	10
+	+	39	8
+	+	37	5
+	+	41	5
+	+	73	14
+	z	73	14
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/disc/dvd.py
+	"	148	0
+	.	148	26
+	+	41	5
+	+	42	10
+	+	43	10
+	+	45	5
+	+	148	26
+	z	148	26
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/video/vcd.py
+	"	37	0
+	.	37	12
+	+	37	12
+	z	1	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/video/riff.py
+	"	566	0
+	.	566	17
+	+	41	12
+	+	566	17
+	z	1	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/video/mp4.py
+	"	40	0
+	.	40	12
+	+	40	12
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/audio/m4a.py
+	"	1	0
+
+> ~/streaming/pytomo/pytomo_louis/complete_yt_dl.py
+	"	749	20
+	^	749	21
+	.	749	20
+	+	432	5
+	+	432	0
+	+	432	0
+	+	460	0
+	+	457	26
+	+	458	27
+	+	460	41
+	+	461	0
+	+	432	8
+	+	432	27
+	+	432	0
+	+	744	0
+	+	457	48
+	+	458	31
+	+	460	45
+	+	744	20
+	+	461	0
+	+	459	0
+	+	461	68
+	+	771	0
+	+	758	0
+	+	759	0
+	+	758	54
+	+	767	0
+	+	768	29
+	+	757	31
+	+	766	20
+	+	799	0
+	+	800	0
+	+	463	0
+	+	405	0
+	+	409	0
+	+	408	54
+	+	139	36
+	+	410	43
+	+	410	0
+	+	410	0
+	+	420	0
+	+	416	0
+	+	409	47
+	+	447	32
+	+	409	0
+	+	447	36
+	+	406	32
+	+	408	16
+	+	405	39
+	+	405	63
+	+	407	13
+	+	408	17
+	+	410	0
+	+	139	0
+	+	68	7
+	+	69	0
+	+	53	0
+	+	447	0
+	+	431	0
+	+	425	0
+	+	413	0
+	+	447	0
+	+	140	26
+	+	412	69
+	+	413	30
+	+	425	30
+	+	454	0
+	+	466	0
+	+	147	38
+	+	770	44
+	+	134	51
+	+	825	49
+	+	826	0
+	+	818	0
+	+	822	49
+	+	818	15
+	+	827	15
+	+	134	68
+	+	750	14
+	+	26	10
+	+	834	0
+	+	21	0
+	+	23	0
+	+	875	16
+	+	876	64
+	+	875	3
+	+	877	30
+	+	876	29
+	+	878	30
+	+	875	17
+	+	878	33
+	+	875	3
+	+	880	62
+	+	875	0
+	+	10	36
+	+	858	0
+	+	851	0
+	+	867	37
+	+	130	73
+	+	131	0
+	+	867	0
+	+	879	62
+	+	749	20
+	x	823	4
+	z	749	20
+
+> ~/streaming/pytomo/pytomo_louis/[YankRing]
+	"	4	0
+	.	2	0
+	+	1631	0
+	+	1529	0
+	+	1427	0
+	+	1325	0
+	+	1225	0
+	+	1225	0
+	+	1225	0
+	+	1123	0
+	+	1021	0
+	+	919	0
+	+	817	0
+	+	716	0
+	+	716	0
+	+	614	0
+	+	512	0
+	+	410	0
+	+	308	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa/utils.py
+	"	282	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/version.py
+	"	6	10
+	.	6	10
+	+	4	0
+	+	5	0
+	+	6	10
+	z	6	10
+
+> ~/streaming/pytomo/pytomo_louis/NERD_tree_1
+	"	11	0
+	.	1	0
+	+	1	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/__init__.py
+	"	33	0
+
+> ~/streaming/pytomo/pytomo_louis/lib_cache_url.py
+	"	91	28
+	^	82	26
+	.	82	25
+	+	82	15
+	+	82	75
+	+	83	0
+	+	90	0
+	+	90	15
+	+	90	17
+	+	91	56
+	+	92	0
+	+	112	0
+	+	112	15
+	+	112	59
+	+	113	56
+	+	114	0
+	+	112	0
+	+	130	0
+	+	130	15
+	+	130	79
+	+	132	0
+	+	183	17
+	+	183	35
+	+	165	0
+	+	166	0
+	+	139	31
+	+	143	0
+	+	144	0
+	+	145	0
+	+	183	0
+	+	188	28
+	+	34	13
+	+	188	0
+	+	188	0
+	+	183	60
+	+	188	0
+	+	188	27
+	+	188	0
+	+	188	32
+	+	188	0
+	+	188	0
+	+	167	0
+	+	188	42
+	+	188	43
+	+	188	55
+	+	183	0
+	+	130	26
+	+	132	40
+	+	133	0
+	+	116	0
+	+	116	68
+	+	117	0
+	+	116	67
+	+	29	0
+	+	131	0
+	+	130	0
+	+	189	55
+	+	190	0
+	+	188	18
+	+	82	18
+	+	90	18
+	+	112	18
+	+	130	18
+	+	132	18
+	+	188	47
+	+	29	0
+	+	34	0
+	+	82	0
+	+	83	0
+	+	90	0
+	+	92	0
+	+	112	0
+	+	114	0
+	+	130	0
+	+	132	0
+	+	188	55
+	+	183	26
+	+	188	0
+	+	183	58
+	+	188	39
+	+	188	0
+	+	171	0
+	+	172	0
+	+	174	31
+	+	175	29
+	+	188	0
+	+	176	0
+	+	177	0
+	+	188	0
+	+	184	0
+	+	183	17
+	+	176	17
+	+	177	0
+	+	184	7
+	+	185	0
+	+	186	28
+	+	130	25
+	+	132	26
+	+	168	32
+	+	170	31
+	+	184	58
+	+	90	25
+	+	82	25
+	z	82	25
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/audio/mp3.py
+	"	34	0
+	^	42	7
+	.	42	7
+	+	41	16
+	+	42	7
+	z	41	16
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/audio/core.py
+	"	36	9
+	.	36	8
+	+	36	8
+	z	36	8
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/video/asf.py
+	"	43	7
+	.	45	10
+	+	45	10
+	z	45	10
+
+> ~/streaming/pytomo/pytomo_louis/kaa_metadata/video/core.py
+	"	35	8
+	.	35	8
+	+	32	8
+	+	35	8
+	z	35	8
+
+> ~/config/install.sh
+	"	122	193
+	^	122	233
+	.	123	0
+	+	122	232
+	+	123	0
+
+> ~/streaming/pytomo/pytomo_louis/pytomo_db.py
+	"	66	36
+	^	65	69
+	.	65	68
+	+	88	9
+	+	89	0
+	+	88	9
+	+	87	55
+	+	88	0
+	+	89	0
+	+	88	74
+	+	87	0
+	+	88	24
+	+	70	50
+	+	77	15
+	+	71	0
+	+	77	0
+	+	70	25
+	+	73	0
+	+	74	38
+	+	76	68
+	+	86	75
+	+	87	71
+	+	88	57
+	+	98	15
+	+	43	14
+	+	45	54
+	+	39	78
+	+	40	0
+	+	41	56
+	+	43	56
+	+	45	63
+	+	45	74
+	+	46	0
+	+	38	68
+	+	17	0
+	+	37	0
+	+	47	0
+	+	17	0
+	+	48	4
+	+	50	0
+	+	59	0
+	+	58	0
+	+	61	0
+	+	48	0
+	+	9	0
+	+	109	0
+	+	12	0
+	+	6	0
+	+	12	0
+	+	14	0
+	+	3	0
+	+	3	0
+	+	2	3
+	+	51	57
+	+	65	58
+	+	67	0
+	+	124	70
+	+	125	42
+	+	124	0
+	+	55	8
+	+	108	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	111	0
+	+	55	0
+	+	54	0
+	+	55	0
+	+	97	44
+	+	91	43
+	+	92	39
+	+	94	0
+	+	88	24
+	+	86	0
+	+	86	0
+	+	87	0
+	+	90	42
+	+	93	0
+	+	94	0
+	+	6	0
+	+	70	41
+	+	69	27
+	+	68	22
+	+	65	34
+	+	69	13
+	+	87	44
+	+	98	38
+	+	49	11
+	+	69	13
+	+	87	55
+	+	98	56
+	+	37	0
+	+	34	0
+	+	36	68
+	+	37	58
+	+	32	43
+	+	33	0
+	+	33	0
+	+	51	35
+	+	57	56
+	+	62	48
+	+	51	69
+	+	65	68
+	z	51	68
+
+> /usr/share/vim/vim72/doc/pattern.txt
+	"	534	0
+
+> ~/streaming/pytomo/pytomo_louis/lib_ping.py
+	"	38	23
+	^	38	24
+	.	38	23
+	+	9	0
+	+	35	12
+	+	42	15
+	+	14	44
+	+	14	74
+	+	14	7
+	+	14	42
+	+	14	45
+	+	14	70
+	+	14	73
+	+	16	0
+	+	14	60
+	+	16	23
+	+	15	36
+	+	16	14
+	+	15	7
+	+	18	23
+	+	41	0
+	+	35	0
+	+	39	0
+	+	39	0
+	+	41	0
+	+	35	0
+	+	26	39
+	+	27	42
+	+	29	16
+	+	26	16
+	+	33	0
+	+	27	45
+	+	31	37
+	+	32	0
+	+	32	0
+	+	29	25
+	+	27	22
+	+	30	29
+	+	26	41
+	+	26	14
+	+	26	40
+	+	27	0
+	+	29	0
+	+	30	0
+	+	26	0
+	+	27	0
+	+	29	0
+	+	30	0
+	+	27	35
+	+	26	32
+	+	35	40
+	+	39	8
+	+	39	0
+	+	41	0
+	+	42	0
+	+	39	0
+	+	26	15
+	+	27	47
+	+	35	6
+	+	36	9
+	+	38	17
+	+	29	0
+	+	28	31
+	+	35	38
+	+	12	24
+	+	31	39
+	+	39	25
+	+	39	59
+	+	41	36
+	+	31	62
+	+	32	18
+	+	41	14
+	+	12	0
+	+	31	0
+	+	31	19
+	+	31	53
+	+	32	0
+	+	39	0
+	+	39	15
+	+	39	70
+	+	41	0
+	+	39	0
+	+	41	0
+	+	31	0
+	+	32	0
+	+	12	0
+	+	39	74
+	+	40	36
+	+	39	26
+	+	31	29
+	+	21	72
+	+	37	33
+	+	32	0
+	+	31	32
+	+	38	23
+	a	38	15
+	z	38	23
+
+> ~/config/vim_runtime/vimrc
+	"	106	6
+	^	384	1
+	.	106	6
+	+	385	0
+	+	107	0
+	+	106	6
+
+> ~/config/vim_runtime/-MiniBufExplorer-
+	"	1	9
+	.	2	0
+	+	2	0
+
+> /usr/share/vim/vim72/doc/repeat.txt
+	"	153	33
+
+> ~/streaming/pytomo/pytomo_louis/youtube_dl.py
+	"	2336	54
+	^	2319	39
+	.	2215	22
+	+	2213	10
+	+	2481	0
+	+	2483	9
+	+	59	0
+	+	2213	17
+	+	2215	22
+	+	2319	38
+	+	2213	12
+	+	2214	14
+	+	2215	22
+	z	2215	22
+
+> ~/streaming/pytomo/pytomo_louis/lib_dns.py
+	"	34	66
+	^	34	67
+	.	34	66
+	+	15	25
+	+	20	0
+	+	16	70
+	+	20	0
+	+	24	21
+	+	23	61
+	+	24	0
+	+	23	61
+	+	24	33
+	+	27	39
+	+	19	15
+	+	36	0
+	+	39	39
+	+	40	17
+	+	39	52
+	+	36	38
+	+	27	30
+	+	25	54
+	+	36	49
+	+	19	0
+	+	18	36
+	+	25	44
+	+	36	39
+	+	39	40
+	+	25	0
+	+	22	58
+	+	23	34
+	+	24	21
+	+	25	23
+	+	27	32
+	+	39	48
+	+	23	35
+	+	13	41
+	+	39	68
+	+	41	0
+	+	29	20
+	+	36	21
+	+	29	21
+	+	31	34
+	+	36	0
+	+	39	36
+	+	37	57
+	+	32	19
+	+	36	0
+	+	36	23
+	+	29	30
+	+	30	23
+	+	31	0
+	+	30	0
+	+	29	0
+	+	36	0
+	+	37	68
+	+	31	50
+	+	25	72
+	+	26	18
+	+	26	18
+	+	26	36
+	+	27	0
+	+	25	0
+	+	6	24
+	+	37	71
+	+	39	44
+	+	26	58
+	+	31	51
+	+	31	29
+	+	37	73
+	+	31	0
+	+	25	0
+	+	25	19
+	+	25	30
+	+	26	49
+	+	27	0
+	+	31	0
+	+	31	23
+	+	31	63
+	+	32	0
+	+	37	0
+	+	37	23
+	+	37	61
+	+	38	62
+	+	39	0
+	+	37	0
+	+	6	0
+	+	25	22
+	+	31	26
+	+	37	26
+	+	6	0
+	+	37	0
+	+	39	0
+	+	32	0
+	+	31	0
+	+	25	0
+	+	27	0
+	+	33	13
+	+	31	33
+	+	33	42
+	+	35	19
+	+	34	63
+	+	33	45
+	+	34	66
+	z	34	63
+
+> ~/config/shell_aliases_functions
+	"	4	0
+	^	4	1
+	.	5	0
+	+	132	8
+	+	130	9
+	+	131	25
+	+	74	71
+	+	200	49
+	+	101	0
+	+	28	14
+	+	123	43
+	+	112	35
+	+	108	55
+	+	112	39
+	+	205	29
+	+	205	0
+	+	203	46
+	+	205	0
+	+	204	27
+	+	203	38
+	+	204	31
+	+	203	44
+	+	134	31
+	+	135	29
+	+	136	36
+	+	108	0
+	+	113	77
+	+	113	91
+	+	114	0
+	+	113	63
+	+	113	107
+	+	114	0
+	+	203	43
+	+	206	0
+	+	207	0
+	+	76	54
+	+	109	15
+	+	109	41
+	+	109	0
+	+	109	25
+	+	109	22
+	+	111	52
+	+	110	35
+	+	111	0
+	+	112	31
+	+	30	17
+	+	190	23
+	+	5	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa/metadata/factory.py
+	"	50	18
+	^	50	19
+	.	50	18
+	+	49	50
+	+	49	1
+	+	48	0
+	+	49	0
+	+	48	0
+	+	48	42
+	+	49	34
+	+	48	0
+	+	50	18
+	z	50	18
+
+> ~/streaming/pytomo/pytomo_louis/test.py
+	"	35	0
+	^	43	33
+	.	35	0
+	+	1	0
+	+	49	0
+	+	10	13
+	+	49	50
+	+	49	7
+	+	49	0
+	+	49	50
+	+	49	0
+	+	49	0
+	+	10	0
+	+	47	25
+	+	48	0
+	+	48	0
+	+	43	0
+	+	48	9
+	+	43	0
+	+	47	0
+	+	48	0
+	+	46	0
+	+	45	24
+	+	17	0
+	+	5	0
+	+	5	0
+	+	4	9
+	+	17	0
+	+	3	0
+	+	6	0
+	+	11	0
+	+	16	0
+	+	45	27
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	1	23
+	+	45	0
+	+	22	0
+	+	42	30
+	+	43	53
+	+	44	26
+	+	45	28
+	+	43	32
+	+	22	0
+	+	35	0
+	z	35	0
+
+> ~/streaming/pytomo/pytomo_louis/kaa/metadata/video/mp4.py
+	"	199	33
+
+> ~/Confs/NOSSDAV-2011/nossdav2011-reviews8.txt
+	"	84	0
+	^	62	51
+	.	62	50
+	+	37	0
+	+	42	3
+	+	42	54
+	+	41	35
+	+	41	10
+	+	43	74
+	+	45	27
+	+	41	56
+	+	42	31
+	+	44	70
+	+	44	70
+	+	43	71
+	+	68	39
+	+	66	19
+	+	67	79
+	+	73	6
+	+	76	10
+	+	69	65
+	+	69	75
+	+	72	66
+	+	76	0
+	+	73	32
+	+	49	22
+	+	28	0
+	+	50	53
+	+	58	0
+	+	56	71
+	+	57	58
+	+	56	21
+	+	70	85
+	+	70	56
+	+	72	46
+	+	76	0
+	+	75	17
+	+	74	56
+	+	74	75
+	+	43	52
+	+	44	77
+	+	51	57
+	+	52	76
+	+	54	19
+	+	53	62
+	+	53	78
+	+	54	20
+	+	59	75
+	+	65	33
+	+	65	0
+	+	63	5
+	+	63	33
+	+	63	11
+	+	65	0
+	+	63	24
+	+	64	56
+	+	62	50
+	+	62	50
+
+> ~/Confs/TMA-2011/tma11-reviews.txt
+	"	75	0
+	^	55	63
+	.	55	62
+	+	80	0
+	+	79	8
+	+	78	0
+	+	83	0
+	+	86	0
+	+	107	0
+	+	91	0
+	+	103	79
+	+	93	47
+	+	94	49
+	+	95	76
+	+	100	12
+	+	100	8
+	+	101	8
+	+	98	0
+	+	104	62
+	+	106	0
+	+	104	73
+	+	101	4
+	+	102	0
+	+	100	0
+	+	87	72
+	+	190	0
+	+	191	24
+	+	215	52
+	+	191	0
+	+	194	0
+	+	197	0
+	+	202	0
+	+	217	0
+	+	218	0
+	+	134	0
+	+	136	0
+	+	134	0
+	+	142	76
+	+	143	32
+	+	147	12
+	+	169	60
+	+	169	26
+	+	169	77
+	+	169	0
+	+	156	71
+	+	157	48
+	+	144	78
+	+	145	38
+	+	159	57
+	+	161	37
+	+	169	0
+	+	134	0
+	+	130	0
+	+	132	0
+	+	131	0
+	+	132	0
+	+	148	1
+	+	151	7
+	+	148	5
+	+	151	0
+	+	147	64
+	+	150	63
+	+	169	76
+	+	169	12
+	+	169	31
+	+	169	79
+	+	169	28
+	+	154	52
+	+	159	37
+	+	163	79
+	+	165	49
+	+	169	0
+	+	167	28
+	+	171	76
+	+	172	0
+	+	132	0
+	+	38	15
+	+	43	8
+	+	44	78
+	+	44	0
+	+	50	0
+	+	49	76
+	+	50	77
+	+	52	78
+	+	53	40
+	+	29	0
+	+	45	36
+	+	52	0
+	+	55	62
+
+> ~/streaming/pytomo/pytomo_louis/Session.vim
+	"	1	0
+
+> ~/analyses/user_profiling/tma_final/slides_app_mix.tex
+	"	451	1
+	.	452	0
+	+	426	72
+	+	420	21
+	+	421	13
+	+	426	0
+	+	421	8
+	+	422	0
+	+	424	0
+	+	425	18
+	+	421	0
+	+	423	45
+	+	430	58
+	+	433	33
+	+	421	43
+	+	433	0
+	+	429	60
+	+	431	18
+	+	432	32
+	+	433	18
+	+	434	14
+	+	435	10
+	+	436	77
+	+	437	41
+	+	419	22
+	+	427	59
+	+	426	51
+	+	418	19
+	+	426	57
+	+	418	14
+	+	423	40
+	+	437	40
+	+	51	52
+	+	24	13
+	+	23	19
+	+	51	70
+	+	67	51
+	+	225	78
+	+	225	5
+	+	225	67
+	+	225	0
+	+	215	0
+	+	225	0
+	+	225	7
+	+	225	4
+	+	225	0
+	+	225	8
+	+	224	11
+	+	225	0
+	+	218	0
+	+	224	0
+	+	225	0
+	+	222	0
+	+	224	16
+	+	195	0
+	+	218	16
+	+	222	70
+	+	223	0
+	+	220	19
+	+	212	10
+	+	192	10
+	+	212	10
+	+	220	75
+	+	212	10
+	+	220	28
+	+	222	0
+	+	220	74
+	+	219	0
+	+	221	0
+	+	219	0
+	+	192	10
+	+	212	0
+	+	279	43
+	+	445	34
+	+	447	49
+	+	448	53
+	+	452	0
+	+	449	31
+	+	453	2
+	+	452	40
+	+	454	66
+	+	462	15
+	+	463	11
+	+	457	10
+	+	455	61
+	+	456	33
+	+	462	53
+	+	458	22
+	+	459	14
+	+	462	0
+	+	462	6
+	+	459	76
+	+	459	77
+	+	461	19
+	+	462	0
+	+	459	78
+	+	460	0
+	+	452	41
+	+	448	48
+	+	449	39
+	+	449	0
+	+	452	0
+
+> ~/config/signature.txt
+	"	5	12
+	^	5	11
+	.	5	11
+	+	5	11
+
+> ~/analyses/user_profiling/tma_final/tma3-pietrzyk.tex
+	"	432	0
+	^	477	14
+	.	173	0
+	+	427	74
+	+	427	78
+	+	430	55
+	+	428	15
+	+	430	55
+	+	428	16
+	+	429	79
+	+	430	64
+	+	433	44
+	+	438	79
+	+	433	0
+	+	438	48
+	+	439	77
+	+	457	77
+	+	459	0
+	+	462	0
+	+	459	37
+	+	460	77
+	+	461	78
+	+	462	0
+	+	461	78
+	+	462	0
+	+	457	63
+	+	459	25
+	+	457	77
+	+	458	63
+	+	460	0
+	+	459	4
+	+	460	78
+	+	463	69
+	+	464	38
+	+	468	0
+	+	464	78
+	+	465	14
+	+	466	75
+	+	467	40
+	+	469	79
+	+	470	62
+	+	472	79
+	+	458	56
+	+	471	50
+	+	517	24
+	+	517	202
+	+	517	41
+	+	520	17
+	+	475	77
+	+	477	13
+	+	173	0
+
+> ~/analyses/user_profiling/tma_final/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/analyses/user_profiling/tma_final/slides_app_mix.log
+	"	1184	0
+
+> ~/analyses/user_profiling/tma_final/[YankRing]
+	"	23	0
+	.	2	0
+	+	1634	0
+	+	1532	0
+	+	1430	0
+	+	1328	0
+	+	1226	0
+	+	1124	0
+	+	1022	0
+	+	920	0
+	+	818	0
+	+	716	0
+	+	614	0
+	+	512	0
+	+	410	0
+	+	308	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/analyses/user_profiling/tma_final/hclustering.tex
+	"	10	0
+
+> /usr/share/vim/vim72/doc/map.txt
+	"	1210	1
+
+> ~/streaming/pytomo/pytomo_louis/kaa/__init__.py
+	"	103	0
+	.	103	0
+	+	103	0
+	z	103	4
+
+> ~/streaming/pytomo/pytomo_louis/kaa/-MiniBufExplorer-
+	"	1	75
+	.	2	0
+	+	2	0
+
+> /usr/lib/python2.6/dist-packages/kaa/metadata/audio/m4a.py
+	"	110	0
+
+> /usr/lib/python2.6/dist-packages/kaa/metadata/factory.py
+	"	190	0
+
+> ~/streaming/pytomo/pytomo_package/lib_cache_url/generate_links.py
+	"	59	0
+	^	47	38
+	.	47	37
+	+	29	0
+	+	30	0
+	+	36	30
+	+	40	41
+	+	18	57
+	+	19	46
+	+	18	26
+	+	19	56
+	+	22	0
+	+	23	0
+	+	60	0
+	+	62	0
+	+	13	0
+	+	14	17
+	+	36	68
+	+	34	0
+	+	37	0
+	+	40	0
+	+	41	0
+	+	42	0
+	+	36	21
+	+	57	0
+	+	58	21
+	+	16	14
+	+	19	39
+	+	27	0
+	+	33	28
+	+	32	54
+	+	68	40
+	+	12	0
+	+	34	0
+	+	33	0
+	+	34	44
+	+	15	0
+	+	11	0
+	+	8	0
+	+	34	0
+	+	33	0
+	+	20	62
+	+	21	0
+	+	20	0
+	+	21	1
+	+	9	0
+	+	9	0
+	+	12	0
+	+	11	0
+	+	19	40
+	+	27	0
+	+	34	0
+	+	37	0
+	+	40	0
+	+	41	0
+	+	42	0
+	+	36	0
+	+	35	27
+	+	47	37
+	z	47	37
+
+> ~/streaming/pytomo/pytomo_package/lib_cache_url/main_module.py
+	"	71	22
+	^	87	30
+	.	87	29
+	+	47	0
+	+	93	0
+	+	36	29
+	+	37	38
+	+	47	0
+	+	48	27
+	+	51	0
+	+	19	0
+	+	69	73
+	+	70	54
+	+	69	29
+	+	71	0
+	+	70	52
+	+	71	0
+	+	73	48
+	+	72	0
+	+	73	34
+	+	72	0
+	+	80	0
+	+	83	0
+	+	84	0
+	+	37	24
+	+	82	0
+	+	86	0
+	+	87	16
+	+	46	0
+	+	31	0
+	+	23	0
+	+	18	0
+	+	66	47
+	+	63	0
+	+	61	0
+	+	79	0
+	+	63	23
+	+	62	0
+	+	63	0
+	+	65	0
+	+	76	0
+	+	75	36
+	+	76	38
+	+	78	20
+	+	87	24
+	+	24	15
+	+	94	29
+	+	31	33
+	+	21	0
+	+	38	0
+	+	37	0
+	+	38	19
+	+	94	19
+	+	26	0
+	+	65	22
+	+	76	38
+	+	42	55
+	+	41	0
+	+	41	4
+	+	43	18
+	+	65	22
+	+	76	38
+	+	64	33
+	+	38	0
+	+	37	0
+	+	18	0
+	+	46	0
+	+	50	0
+	+	19	0
+	+	23	0
+	+	37	39
+	+	81	0
+	+	82	0
+	+	83	0
+	+	26	0
+	+	87	29
+	z	87	29
+
+> ~/streaming/pytomo/pytomo_package/lib_cache_url/-MiniBufExplorer-
+	"	1	108
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/pytomo_package/lib_cache_url/generate_cache_url.py
+	"	20	0
+	^	9	45
+	.	29	0
+	+	1	23
+	+	23	29
+	+	24	49
+	+	25	0
+	+	27	0
+	+	30	0
+	+	26	0
+	+	31	0
+	+	32	0
+	+	33	0
+	+	34	0
+	+	35	24
+	+	40	0
+	+	42	0
+	+	43	0
+	+	47	0
+	+	46	0
+	+	9	0
+	+	11	0
+	+	13	0
+	+	14	0
+	+	31	4
+	+	32	0
+	+	33	0
+	+	34	0
+	+	29	0
+	+	26	0
+	+	28	0
+	+	29	0
+	z	29	8
+
+> ~/streaming/pytomo/pytomo_package/lib_cache_url/cache_url.py
+	"	7	4
+
+> ~/streaming/pytomo/pytomo_package/lib_cache_url/get_youtube_cache_url.py
+	"	17	4
+	^	31	13
+	.	17	0
+	+	31	0
+	+	17	0
+	z	17	0
+
+> ~/streaming/pytomo/pytomo_package/config_pytomo.py
+	"	28	2
+	.	44	0
+	+	1	23
+	+	31	13
+	+	32	29
+	+	40	12
+	+	33	18
+	+	40	34
+	+	38	41
+	+	39	0
+	+	40	30
+	+	42	0
+	+	37	53
+	+	48	15
+	+	38	27
+	+	48	0
+	+	45	0
+	+	40	10
+	+	45	4
+	+	46	0
+	+	21	14
+	+	24	16
+	+	17	5
+	+	16	0
+	+	29	0
+	+	28	0
+	+	2	0
+	+	4	0
+	+	18	0
+	+	30	0
+	+	21	14
+	+	24	15
+	+	44	0
+	z	24	15
+
+> ~/streaming/pytomo/pytomo_package/lib_cache_url/dict_cache.py
+	"	21	4
+	^	19	38
+	.	23	8
+	+	1	23
+	+	24	0
+	+	37	51
+	+	29	62
+	+	15	41
+	+	16	0
+	+	14	57
+	+	17	24
+	+	25	0
+	+	26	21
+	+	27	15
+	+	28	16
+	+	29	35
+	+	38	25
+	+	15	40
+	+	16	38
+	+	38	26
+	+	21	0
+	+	22	0
+	+	23	0
+	+	2	0
+	+	6	0
+	+	51	0
+	+	47	0
+	+	46	0
+	+	15	77
+	+	38	20
+	+	38	0
+	+	41	0
+	+	41	19
+	+	19	37
+	+	16	21
+	+	46	0
+	+	21	4
+	+	22	4
+	+	23	8
+	z	23	8
+
+> ~/streaming/pytomo/pytomo_package/lib_dns/get_ip_address.py
+	"	73	0
+
+> ~/streaming/pytomo/pytomo_package/README.txt
+	"	141	7
+	^	136	61
+	.	136	60
+	+	43	0
+	+	45	41
+	+	46	0
+	+	47	0
+	+	47	47
+	+	49	0
+	+	47	76
+	+	27	75
+	+	34	0
+	+	40	75
+	+	40	60
+	+	40	0
+	+	40	79
+	+	39	0
+	+	50	0
+	+	51	0
+	+	45	0
+	+	54	45
+	+	54	27
+	+	54	0
+	+	55	61
+	+	58	85
+	+	59	69
+	+	61	0
+	+	59	70
+	+	60	61
+	+	63	0
+	+	46	0
+	+	51	0
+	+	28	0
+	+	52	0
+	+	61	0
+	+	40	0
+	+	24	31
+	+	40	0
+	+	24	0
+	+	61	20
+	+	47	0
+	+	70	0
+	+	72	54
+	+	74	0
+	+	78	77
+	+	79	0
+	+	81	60
+	+	82	58
+	+	84	0
+	+	76	0
+	+	84	20
+	+	85	0
+	+	93	0
+	+	97	0
+	+	102	69
+	+	104	65
+	+	106	0
+	+	104	76
+	+	92	0
+	+	106	0
+	+	107	0
+	+	111	0
+	+	112	0
+	+	115	0
+	+	114	14
+	+	116	0
+	+	124	0
+	+	119	0
+	+	118	0
+	+	125	0
+	+	126	0
+	+	128	77
+	+	130	0
+	+	131	0
+	+	136	0
+	+	137	0
+	+	143	0
+	+	145	0
+	+	147	0
+	+	151	41
+	+	152	0
+	+	128	39
+	+	140	7
+	+	151	73
+	+	150	30
+	+	151	77
+	+	86	32
+	+	100	0
+	+	101	35
+	+	102	50
+	+	103	0
+	+	104	77
+	+	71	41
+	+	73	37
+	+	74	13
+	+	73	33
+	+	74	18
+	+	78	33
+	+	79	23
+	+	175	0
+	+	118	0
+	+	117	41
+	+	136	60
 
 > ~/.subversion/servers
 	"	161	0
@@ -867,33 +4206,1853 @@ $
 	+	161	0
 	+	160	0
 	+	161	0
+	+	160	0
+	+	161	0
 
-> ~/config/shell_aliases_functions
-	"	131	36
-	^	131	37
-	.	131	36
-	+	127	8
-	+	125	9
-	+	126	25
-	+	74	71
-	+	194	49
-	+	99	0
-	+	28	14
-	+	118	43
-	+	108	35
-	+	107	55
-	+	108	39
-	+	199	29
-	+	199	0
-	+	197	46
-	+	199	0
-	+	198	27
-	+	197	38
-	+	198	31
-	+	197	44
-	+	129	31
-	+	130	29
-	+	131	36
+> ~/streaming/pytomo/pytomo_louis/lib_cache_url/dict_cache.py
+	"	71	4
+	^	124	58
+	.	124	0
+	+	132	0
+	+	133	0
+	+	133	74
+	+	134	0
+	+	133	77
+	+	171	0
+	+	180	55
+	+	181	19
+	+	192	7
+	+	141	26
+	+	143	16
+	+	191	30
+	+	172	37
+	+	173	0
+	+	158	70
+	+	190	18
+	+	184	17
+	+	132	0
+	+	131	26
+	+	143	0
+	+	144	0
+	+	147	0
+	+	142	0
+	+	143	21
+	+	142	57
+	+	119	71
+	+	131	0
+	+	140	0
+	+	139	0
+	+	168	0
+	+	17	8
+	+	20	52
+	+	23	63
+	+	20	66
+	+	20	54
+	+	20	0
+	+	21	70
+	+	23	73
+	+	20	0
+	+	19	38
+	+	146	37
+	+	128	70
+	+	130	33
+	+	146	0
+	+	130	0
+	+	128	68
+	+	167	24
+	+	162	0
+	+	165	41
+	+	156	24
+	+	162	24
+	+	165	61
+	+	166	59
+	+	152	40
+	+	164	22
+	+	163	77
+	+	164	0
+	+	167	34
+	+	166	75
+	+	167	28
+	+	192	0
+	+	152	53
+	+	84	0
+	+	100	0
+	+	111	11
+	+	112	81
+	+	114	67
+	+	114	55
+	+	115	0
+	+	114	0
+	+	112	0
+	+	113	0
+	+	92	0
+	+	93	79
+	+	94	0
+	+	93	0
+	+	91	0
+	+	90	49
+	+	91	27
+	+	90	18
+	+	90	0
+	+	164	54
+	+	167	53
+	+	91	0
+	+	90	0
+	+	7	6
+	+	9	13
+	+	9	51
+	+	8	68
+	+	15	0
+	+	9	4
+	+	11	5
+	+	12	65
+	+	14	5
+	+	12	0
+	+	2	64
+	+	2	75
+	+	110	43
+	+	65	0
+	+	124	0
+	z	124	48
+
+> ~/streaming/pytomo/pytomo_louis/lib_cache_url/[YankRing]
+	"	5	0
+	.	2	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/pytomo/pytomo_louis/lib_cache_url/get_cache_only.py
+	"	17	12
+
+> ~/streaming/pytomo/pytomo_louis/lib_cache_url/get_youtube_cache_url.py
+	"	15	0
+	.	24	0
+	+	24	0
+	z	15	0
+
+> ~/streaming/pytomo/pytomo_louis/youtube-dl_new.py
+	"	991	13
+
+> ~/streaming/pytomo/pytomo_louis/lib_dns/get_ip_address.py
+	"	5	0
+	.	5	0
+	+	7	0
+	+	5	0
+	z	5	0
+
+> ~/streaming/pytomo/pytomo_louis/lib_ping/ping_time.py
+	"	38	0
+	^	22	36
+	.	39	0
+	+	4	0
+	+	3	0
+	+	12	0
+	+	9	0
+	+	39	0
+	+	12	10
+	+	7	0
+	+	14	22
+	+	15	0
+	+	17	30
+	+	26	0
+	+	30	0
+	+	32	0
+	+	26	23
+	+	17	0
+	+	26	27
+	+	29	42
+	+	28	0
+	+	12	19
+	+	26	36
+	+	14	51
+	+	21	16
+	+	10	14
+	+	19	31
+	+	25	31
+	+	24	54
+	+	26	21
+	+	20	51
+	+	22	35
+	+	26	50
+	+	35	30
+	+	39	0
+	z	38	0
+
+> ~/streaming/pytomo/pytomo_package/start_pytomo.py
+	"	27	0
+	^	12	25
+	.	12	24
+	+	14	11
+	+	19	0
+	+	21	0
+	+	23	0
+	+	25	0
+	+	27	0
+	+	34	0
+	+	1	23
+	+	2	25
+	+	9	19
+	+	11	0
+	+	11	0
+	+	19	36
+	+	21	46
+	+	23	44
+	+	2	0
+	+	25	43
+	+	27	79
+	+	28	0
+	+	29	32
+	+	27	0
+	+	11	10
+	+	12	0
+	+	12	14
+	+	13	0
+	+	31	68
+	+	32	0
+	+	33	22
+	+	31	0
+	+	15	0
+	+	4	0
+	+	11	0
+	+	7	0
+	+	11	0
+	+	8	0
+	+	17	0
+	+	18	0
+	+	2	0
+	+	30	0
+	+	30	0
+	+	30	45
+	+	7	0
+	+	30	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	21	0
+	+	22	0
+	+	21	0
+	+	29	0
+	+	9	31
+	+	10	0
+	+	11	0
+	+	10	0
+	+	11	28
+	+	12	24
+	z	12	24
+
+> ~/streaming/pytomo/pytomo_package/lib_cache_url/get_cache_only.py
+	"	22	0
+	.	22	0
+	+	22	0
+	z	22	0
+
+> ~/streaming/pytomo/pytomo_package/lib_cache_url/generate_links.py:46:
+	"	1	0
+
+> ~/workspace/spydump/tools/template.py
+	"	63	64
+	^	63	65
+	.	59	0
+	+	96	0
+	+	82	23
+	+	83	0
+	+	74	19
+	+	74	0
+	+	73	20
+	+	74	0
+	+	91	23
+	+	92	0
+	+	71	0
+	+	59	66
+	+	62	65
+	+	59	88
+	+	61	52
+	+	61	38
+	+	62	0
+	+	61	37
+	+	65	71
+	+	66	25
+	+	67	0
+	+	66	68
+	+	74	0
+	+	57	33
+	+	76	13
+	+	80	33
+	+	82	61
+	+	59	78
+	+	61	63
+	+	59	80
+	+	61	0
+	+	62	33
+	+	59	33
+	+	58	31
+	+	64	33
+	+	67	45
+	+	59	85
+	+	61	0
+	+	63	17
+	+	65	17
+	+	64	44
+	+	62	77
+	+	61	0
+	+	60	0
+	+	61	0
+	+	66	0
+	+	63	64
+	+	59	0
+	z	63	64
+
+> ~/streaming/pytomo/pytomo_louis/lib_cache_url/url_list.txt
+	"	9	0
+	.	9	0
+	+	10	0
+	+	6	0
+	+	10	0
+	+	9	0
+
+> ~/streaming/pytomo/pytomo_louis/lib_cache_url/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/streaming/pytomo/pytomo_louis/lib_cache_url/url_file.txt
+	"	5	0
+	^	5	0
+	.	5	0
+	+	6	0
+	+	5	0
+
+> ~/streaming/pytomo/pytomo_package/-MiniBufExplorer-
+	"	1	14
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/pytomo_package/lib_cache_url/get_youtube_links.py
+	"	1	0
+
+> ~/streaming/pytomo/pytomo_package/dns/get_ip_address.py
+	"	1	0
+
+> ~/streaming/pytomo/pytomo_package/dns/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/mickael/__init__.py
+	"	1	0
+	.	1	0
+	+	1	0
+	z	1	0
+
+> ~/streaming/pytomo/mickael/curl.py
+	"	44	15
+	.	21	0
+	+	10	0
+	+	8	0
+	+	22	0
+	+	10	0
+	+	8	0
+	+	15	0
+	+	21	0
+	z	15	8
+
+> ~/streaming/pytomo/mickael/-MiniBufExplorer-
+	"	1	40
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/mickael/mickael.py
+	"	136	16
+
+> ~/streaming/pytomo/mickael/dhcp.py
+	"	34	0
+
+> ~/streaming/pytomo/dnspython-1.9.2/dns/resolver.py
+	"	457	0
+
+> ~/streaming/pytomo/pytomo_package/[YankRing]
+	"	11	0
+	.	2	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/pytomo/pytomo_package/ping/ping_time.py
+	"	7	0
+
+> ~/streaming/pytomo/pytomo_package/ping/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/config/xorg.conf
+	"	54	19
+	^	54	20
+	.	54	19
+	+	53	0
+	+	54	19
+
+> ~/config/xsessionrc
+	"	28	62
+	^	28	63
+	.	28	62
+	+	11	0
+	+	12	67
+	+	13	0
+	+	12	0
+	+	11	0
+	+	18	50
+	+	19	0
+	+	18	0
+	+	3	16
+	+	18	40
+	+	37	0
+	+	3	0
+	+	36	0
+	+	3	0
+	+	21	69
+	+	22	93
+	+	29	0
+	+	23	2
+	+	24	75
+	+	24	104
+	+	29	0
+	+	26	58
+	+	28	62
+
+> ~/streaming/pytomo/lib/lib_cache_url/youtube_cache.py
+	"	450	16
+	^	461	20
+	.	450	0
+	+	2	0
+	+	599	0
+	+	609	0
+	+	611	0
+	+	617	0
+	+	626	0
+	+	603	0
+	+	619	17
+	+	621	45
+	+	636	26
+	+	606	0
+	+	607	0
+	+	428	38
+	+	427	77
+	+	428	37
+	+	430	0
+	+	428	0
+	+	462	0
+	+	459	41
+	+	460	0
+	+	450	0
+	z	450	13
+
+> ~/streaming/pytomo/lib/lib_cache_url/complete_yt_dl.py
+	"	394	0
+	^	447	55
+	.	447	54
+	+	747	0
+	+	653	0
+	+	730	0
+	+	4	0
+	+	722	0
+	+	627	0
+	+	407	71
+	+	408	43
+	+	408	24
+	+	409	0
+	+	407	0
+	+	401	47
+	+	401	61
+	+	401	47
+	+	401	71
+	+	401	47
+	+	401	71
+	+	401	24
+	+	401	0
+	+	401	0
+	+	447	69
+	+	445	79
+	+	447	0
+	+	446	60
+	+	446	0
+	+	447	0
+	+	424	64
+	+	404	0
+	+	423	0
+	+	435	0
+	+	398	0
+	+	400	47
+	+	395	49
+	+	401	0
+	+	410	9
+	+	411	0
+	+	410	0
+	+	417	48
+	+	402	75
+	+	399	7
+	+	407	76
+	+	408	72
+	+	429	0
+	+	418	0
+	+	138	8
+	+	138	30
+	+	447	32
+	+	407	73
+	+	464	53
+	+	269	67
+	+	274	73
+	+	275	0
+	+	271	84
+	+	271	82
+	+	271	61
+	+	271	37
+	+	271	72
+	+	271	60
+	+	273	50
+	+	274	0
+	+	274	0
+	+	274	22
+	+	272	71
+	+	274	0
+	+	271	0
+	+	275	0
+	+	271	0
+	+	402	70
+	+	403	43
+	+	417	0
+	+	415	0
+	+	415	74
+	+	415	0
+	+	138	24
+	+	23	12
+	+	127	0
+	+	141	17
+	+	145	16
+	+	146	17
+	+	150	0
+	+	429	41
+	+	774	60
+	+	786	71
+	+	785	0
+	+	447	42
+	+	447	31
+	+	446	0
+	+	445	64
+	+	442	29
+	+	443	0
+	+	444	0
+	+	442	36
+	+	447	0
+	+	445	41
+	+	447	76
+	+	447	80
+	+	449	0
+	+	447	26
+	+	448	0
+	+	447	54
+	z	447	54
+
+> ~/streaming/pytomo/lib/lib_cache_url/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/workspace/tracetools/streaming_quality.h
+	"	261	23
+
+> ~/workspace/tracetools/streaming_quality.cpp
+	"	485	0
+	^	344	1
+
+> ~/streaming/pytomo/lib/lib_cache_url/freevo-1.9.2b1/src/util/mediainfo.py
+	"	48	0
+
+> ~/workspace/tracetools/-MiniBufExplorer-
+	"	1	22
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/lib/lib_cache_url/[YankRing]
+	"	5	0
+	.	2	0
+	+	614	0
+	+	512	0
+	+	410	0
+	+	308	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/pytomo/lib/lib_cache_url/youtube_kaa.py
+	"	406	0
+
+> ~/streaming/pytomo/.git/rebase-merge/git-rebase-todo
+	"	1	0
+
+> ~/perso/fibo/fibo_acc.py
+	"	16	4
+	^	4	39
+	.	16	4
+	+	1	0
+	+	2	9
+	+	8	7
+	+	6	25
+	+	13	52
+	+	16	18
+	+	4	14
+	+	16	18
+	+	4	0
+	+	5	0
+	+	4	9
+	+	16	27
+	+	9	15
+	+	11	18
+	+	16	0
+	+	4	38
+	+	16	4
+	z	16	4
+
+> ~/perso/fibo/-MiniBufExplorer-
+	"	1	35
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/perso/fibo/[YankRing]
+	"	5	0
+	.	2	0
+	+	2	0
+
+> ~/perso/fibo/fibo.c
+	"	11	0
+	^	11	20
+	.	11	19
+	+	11	19
+
+> /tmp/Partie 1.3
+	"	1	0
+
+> /usr/bin/youtube-dl
+	"	1	0
+
+> /usr/bin/-MiniBufExplorer-
+	"	1	21
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/lib/lib_cache_url/__Tag_List__
+	"	30	4
+	.	58	0
+	+	863	0
+	+	527	0
+	+	512	0
+	+	276	0
+	+	275	0
+	+	217	0
+	+	59	0
+	+	216	0
+	+	59	0
+	+	59	0
+	+	59	0
+	+	59	0
+	+	58	0
+
+> ~/config/[YankRing]
+	"	5	0
+	.	2	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/config/zshrc
+	"	293	8
+
+> ~/streaming/rapport/thesis/passive_streaming_analysis.tex
+	"	365	0
+	^	365	30
+	.	365	29
+	+	596	0
+	+	597	0
+	+	570	0
+	+	598	9
+	+	602	22
+	+	603	0
+	+	573	0
+	+	596	0
+	+	596	0
+	+	574	0
+	+	596	50
+	+	596	50
+	+	596	0
+	+	581	0
+	+	596	0
+	+	581	0
+	+	596	0
+	+	581	0
+	+	583	48
+	+	587	48
+	+	591	48
+	+	595	48
+	+	589	50
+	+	581	48
+	+	618	0
+	+	954	112
+	+	958	0
+	+	954	13
+	+	954	0
+	+	957	37
+	+	957	37
+	+	958	0
+	+	956	69
+	+	960	63
+	+	971	0
+	+	972	3
+	+	983	0
+	+	985	0
+	+	1025	0
+	+	1104	0
+	+	993	27
+	+	993	70
+	+	1308	0
+	+	1295	3
+	+	1306	0
+	+	1312	78
+	+	1315	74
+	+	1316	4
+	+	1317	0
+	+	1315	71
+	+	1316	53
+	+	1322	0
+	+	1325	0
+	+	1323	78
+	+	1324	48
+	+	1329	0
+	+	1330	47
+	+	1330	79
+	+	785	0
+	+	787	0
+	+	356	3
+	+	784	0
+	+	2017	0
+	+	787	74
+	+	1134	57
+	+	1134	0
+	+	1137	75
+	+	1134	43
+	+	845	45
+	+	1209	66
+	+	1210	12
+	+	1393	72
+	+	1394	11
+	+	1796	60
+	+	285	57
+	+	285	64
+	+	286	76
+	+	414	71
+	+	415	45
+	+	414	76
+	+	623	45
+	+	1135	10
+	+	1151	7
+	+	1143	10
+	+	1148	20
+	+	1144	75
+	+	1146	72
+	+	1148	17
+	+	1149	1
+	+	1159	26
+	+	1220	49
+	+	1962	31
+	+	1967	64
+	+	2113	10
+	+	2162	54
+	+	2201	34
+	+	2308	77
+	+	2309	16
+	+	2408	61
+	+	365	29
+
+> ~/streaming/rapport/related_work.tex
+	"	1	31
+	^	1	32
+	.	1	31
+	+	4	31
+	+	1	31
+
+> ~/streaming/rapport/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/lib/lib_cache_url/youtube-dl_new.py
+	"	2424	7
+
+> ~/streaming/pytomo/lib/lib_cache_url/my_youtube_dl.py
+	"	37	10
+	.	19	4
+	+	2	18
+	+	22	0
+	+	22	0
+	+	22	48
+	+	22	0
+	+	17	14
+	+	22	46
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	40	0
+	+	24	36
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	24	0
+	+	8	0
+	+	16	0
+	+	17	0
+	+	4	0
+	+	7	0
+	+	8	0
+	+	10	0
+	+	17	14
+	+	17	37
+	+	17	0
+	+	17	0
+	+	10	0
+	+	17	0
+	+	22	47
+	+	23	41
+	+	5	13
+	+	40	0
+	+	24	0
+	+	24	0
+	+	28	0
+	+	37	0
+	+	39	16
+	+	38	0
+	+	40	0
+	+	6	10
+	+	56	0
+	+	56	44
+	+	56	0
+	+	56	0
+	+	56	0
+	+	22	0
+	+	22	0
+	+	4	0
+	+	56	0
+	+	56	0
+	+	56	0
+	+	56	0
+	+	56	0
+	+	56	0
+	+	56	0
+	+	58	0
+	+	46	18
+	+	45	21
+	+	18	69
+	+	46	36
+	+	55	25
+	+	56	32
+	+	58	0
+	+	46	30
+	+	44	21
+	+	45	20
+	+	48	0
+	+	50	0
+	+	55	0
+	+	45	19
+	+	44	20
+	+	46	0
+	+	56	0
+	+	24	0
+	+	21	0
+	+	22	0
+	+	46	43
+	+	46	22
+	+	46	33
+	+	54	0
+	+	19	0
+	+	18	0
+	+	19	28
+	+	41	0
+	+	27	0
+	+	46	10
+	+	52	0
+	+	11	0
+	+	19	17
+	+	33	0
+	+	40	0
+	+	19	4
+	k	45	19
+	z	19	4
+
+> ~/play_soceda/android/gps_polling/test_gps.py
+	"	46	0
+	^	46	0
+	.	46	0
+	+	66	8
+	+	68	14
+	+	41	0
+	+	39	9
+	+	42	0
+	+	8	12
+	+	43	28
+	+	45	0
+	+	45	22
+	+	46	15
+	+	61	0
+	+	61	27
+	+	61	0
+	+	61	0
+	+	62	30
+	+	46	16
+	+	69	30
+	+	61	16
+	+	60	15
+	+	48	4
+	+	61	21
+	+	64	21
+	+	65	21
+	+	61	0
+	+	49	0
+	+	59	28
+	+	46	16
+	+	48	44
+	+	64	22
+	+	65	22
+	+	46	16
+	+	48	53
+	+	46	16
+	+	47	38
+	+	48	34
+	+	51	17
+	+	60	0
+	+	51	14
+	+	46	16
+	+	58	38
+	+	59	0
+	+	58	25
+	+	59	30
+	+	57	42
+	+	8	12
+	+	69	0
+	+	70	65
+	+	70	4
+	+	15	0
+	+	70	0
+	+	12	60
+	+	67	12
+	+	68	0
+	+	69	35
+	+	12	28
+	+	69	50
+	+	54	54
+	+	55	47
+	+	56	0
+	+	57	0
+	+	58	0
+	+	59	0
+	+	61	0
+	+	52	0
+	+	45	38
+	+	46	16
+	+	55	36
+	+	54	52
+	+	55	28
+	+	46	17
+	+	38	0
+	+	28	0
+	+	32	0
+	+	26	25
+	+	28	46
+	+	30	39
+	+	28	49
+	+	30	44
+	+	33	12
+	+	34	15
+	+	37	18
+	+	35	26
+	+	28	0
+	+	16	23
+	+	17	0
+	+	25	0
+	+	27	29
+	+	35	14
+	+	19	22
+	+	20	7
+	+	16	34
+	+	20	8
+	+	25	0
+	+	21	0
+	+	18	17
+	+	22	16
+	+	24	51
+	+	16	37
+	+	25	0
+	+	46	0
+	z	46	0
+
+> ~/perso/android/scripting/sl4a/scripts/bluetooth_chat.py
+	"	11	0
+
+> ~/perso/android/scripting/sl4a/scripts/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/config/ftrd_config
+	"	15	31
+	^	15	32
+	.	15	30
+	+	19	80
+	+	20	68
+	+	19	70
+	+	21	75
+	+	18	29
+	+	17	30
+	+	16	30
+	+	15	30
+
+> ~/streaming/pytomo/lib/ping/ping_time.py
+	"	38	0
+
+> ~/streaming/rapport/thesis/__OUTLINE__
+	"	35	3
+	.	1	0
+	+	1191	0
+	+	1125	0
+	+	1106	0
+	+	1081	0
+	+	1062	0
+	+	1054	0
+	+	985	0
+	+	972	0
+	+	840	0
+	+	835	0
+	+	832	0
+	+	829	0
+	+	810	0
+	+	809	0
+	+	574	0
+	+	567	0
+	+	564	0
+	+	560	0
+	+	557	0
+	+	551	0
+	+	532	0
+	+	527	0
+	+	514	0
+	+	495	0
+	+	491	0
+	+	472	0
+	+	453	0
+	+	267	0
+	+	243	0
+	+	219	0
+	+	195	0
+	+	166	0
+	+	142	0
+	+	118	0
+	+	94	0
+	+	81	0
+	+	1	0
+
+> ~/streaming/rapport/thesis/-MiniBufExplorer-
+	"	1	36
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/play_soceda/android/gps_polling/[YankRing]
+	"	5	0
+	.	2	0
+	+	104	0
+	+	2	0
+
+> ~/play_soceda/android/gps_polling/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+
+> ~/perso/android/scripting/sl4a/scripts/test.py
+	"	52	9
+
+> ~/perso/android/android-ndk-r5b/tests/run-tests.sh
+	"	306	18
+
+> /tmp/mutt-ator-mail
+	"	4	22
+	^	4	23
+	.	4	22
+	+	48	0
+	+	47	0
+	+	49	72
+	+	50	67
+	+	52	78
+	+	55	34
+	+	57	77
+	+	57	77
+	+	57	0
+	+	57	81
+	+	61	43
+	+	63	27
+	+	64	0
+	+	75	0
+	+	59	12
+	+	75	0
+	+	64	0
+	+	65	79
+	+	66	19
+	+	54	53
+	+	66	76
+	+	67	74
+	+	68	75
+	+	73	61
+	+	49	27
+	+	45	0
+	+	22	105
+	+	22	5
+	+	22	4
+	+	22	4
+	+	22	4
+	+	22	4
+	+	22	49
+	+	10	44
+	+	14	34
+	+	10	9
+	+	22	0
+	+	16	15
+	+	17	4
+	+	16	55
+	+	18	0
+	+	22	0
+	+	18	58
+	+	21	44
+	+	22	0
+	+	9	0
+	+	23	0
+	+	43	0
+	+	10	1
+	+	13	0
+	+	10	0
+	+	15	1
+	+	18	0
+	+	21	0
+	+	33	21
+	+	42	2
+	+	24	2
+	+	28	4
+	+	26	18
+	+	29	69
+	+	30	67
+	+	31	18
+	+	33	0
+	+	33	36
+	+	33	0
+	+	18	0
+	+	14	0
+	+	25	0
+	+	20	0
+	+	27	0
+	+	33	0
+	+	9	48
+	+	38	11
+	+	11	15
+	+	40	3
+	+	14	0
+	+	14	0
+	+	17	23
+	+	20	0
+	+	24	23
+	+	23	21
+	+	27	13
+	+	31	21
+	+	5	3
+	+	4	10
+	+	5	75
+	+	5	69
+	+	5	204
+	+	5	270
+	+	5	355
+	+	8	23
+	+	5	130
+	+	5	204
+	+	5	276
+	+	7	0
+	+	5	136
+	+	6	4
+	+	4	22
+
+> ~/cv_autres/CV/cv_rd.tex
+	"	299	13
+	^	513	69
+	.	515	75
+	+	217	0
+	+	421	29
+	+	516	49
+	+	513	11
+	+	516	48
+	+	517	0
+	+	513	38
+	+	513	71
+	+	513	53
+	+	514	2
+	+	513	70
+	+	513	68
+	+	515	75
+
+> ~/cv_autres/CV/ESIEEcv.sty
+	"	1	0
+
+> ~/cv_autres/CV/-MiniBufExplorer-
+	"	1	29
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/cv_autres/CV/cv_rd.log
+	"	328	0
+
+> ~/streaming/rapport/thesis/passive_streaming_analysis.log
+	"	882	0
+
+> ~/streaming/rapport/thesis/[YankRing]
+	"	19	0
+	.	2	0
+	+	614	0
+	+	614	0
+	+	512	0
+	+	410	0
+	+	308	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/rapport/thesis/schema_access_internet.svg
+	"	2662	5
+	.	2678	25
+	+	1380	25
+	+	1503	25
+	+	2058	25
+	+	2182	25
+	+	2303	25
+	+	2560	25
+	+	2678	25
+
+> ~/workspace/spydump/tools/__Tag_List__
+	"	54	4
+	.	69	0
+	+	1257	0
+	+	1260	0
+	+	1303	0
+	+	1256	0
+	+	1204	0
+	+	1157	0
+	+	1093	0
+	+	1047	0
+	+	1046	0
+	+	1105	0
+	+	995	0
+	+	994	0
+	+	942	0
+	+	769	0
+	+	823	0
+	+	891	0
+	+	769	0
+	+	769	0
+	+	769	0
+	+	769	0
+	+	835	0
+	+	864	0
+	+	890	0
+	+	768	0
+	+	715	0
+	+	703	0
+	+	646	0
+	+	543	0
+	+	532	0
+	+	531	0
+	+	572	0
+	+	589	0
+	+	472	0
+	+	455	0
+	+	455	0
+	+	455	0
+	+	455	0
+	+	471	0
+	+	454	0
+	+	315	0
+	+	327	0
+	+	290	0
+	+	290	0
+	+	392	0
+	+	290	0
+	+	289	0
+	+	242	0
+	+	259	0
+	+	201	0
+	+	135	0
+	+	69	0
+
+> ~/streaming/pytomo/lib/lib_cache_url/generate_links.py
+	"	43	0
+	^	16	53
+	.	16	52
+	+	14	0
+	+	24	0
+	+	31	0
+	+	35	42
+	+	48	20
+	+	46	38
+	+	13	0
+	+	31	0
+	+	28	11
+	+	40	17
+	+	28	32
+	+	17	0
+	+	18	0
+	+	16	40
+	+	10	8
+	+	33	26
+	+	16	52
+	z	33	26
+
+> ~/streaming/pytomo/dns/dns_lib.py
+	"	92	0
+	.	81	0
+	+	27	0
+	+	80	0
+	+	81	0
+	z	84	0
+
+> /usr/lib/python2.6/dist-packages/DNS/Base.py
+	"	12	7
+
+> /usr/lib/python2.6/dist-packages/DNS/-MiniBufExplorer-
+	"	1	14
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/lib/lib_cache_url/main_module.py
+	"	81	0
+	^	69	45
+	.	69	44
+	+	1	0
+	+	5	0
+	+	4	2
+	+	5	0
+	+	23	21
+	+	83	0
+	+	27	49
+	+	58	0
+	+	73	0
+	+	72	0
+	+	35	0
+	+	53	8
+	+	36	15
+	+	39	27
+	+	73	0
+	+	78	20
+	+	81	14
+	+	82	38
+	+	21	0
+	+	35	0
+	+	36	10
+	+	39	22
+	+	12	8
+	+	51	26
+	+	67	9
+	+	71	18
+	+	31	0
+	+	41	39
+	+	42	31
+	+	47	40
+	+	50	36
+	+	66	29
+	+	70	0
+	+	66	0
+	+	61	0
+	+	62	0
+	+	64	0
+	+	65	0
+	+	66	0
+	+	68	0
+	+	69	44
+	z	69	44
+
+> ~/streaming/pytomo/lib/lib_cache_url/generate_cache_url.py
+	"	4	0
+	^	5	75
+	.	4	0
+	+	22	0
+	+	51	0
+	+	48	20
+	+	2	0
+	+	17	0
+	+	33	0
+	+	18	8
+	+	32	9
+	+	36	20
+	+	45	9
+	+	29	0
+	+	30	0
+	+	31	0
+	+	29	0
+	+	28	42
+	+	46	0
+	+	5	69
+	+	5	74
+	+	9	0
+	+	15	0
+	+	21	0
+	+	4	0
+	z	1	0
+
+> ~/config/sudoers.template
+	"	11	0
+	^	33	8
+	.	12	0
+	+	10	0
+	+	15	0
+	+	16	17
+	+	16	21
+	+	33	83
+	+	33	0
+	+	12	0
+
+> ~/workspace/spydump/tools/INDEX_VALUES.py
+	"	670	0
+	^	439	0
+	.	117	0
+	+	776	18
+	+	776	18
+	+	831	0
+	+	777	0
+	+	832	0
+	+	831	0
+	+	779	7
+	+	780	10
+	+	781	7
+	+	776	23
+	+	777	0
+	+	827	18
+	+	828	0
+	+	829	0
+	+	830	0
+	+	831	0
+	+	902	66
+	+	117	41
+	+	117	44
+	+	117	0
+	+	21	32
+	+	117	31
+	+	117	0
+	+	117	0
+	+	117	31
+	+	117	0
+	+	117	0
+	+	117	0
+	+	117	31
+	+	117	0
+	+	117	0
+	+	117	31
+	+	117	67
+	+	117	22
+	+	117	33
+	+	117	44
+	+	117	63
+	+	117	0
+	+	117	0
+	+	117	76
+	+	117	34
+	+	117	43
+	+	117	0
+	+	438	0
+	+	117	0
+	z	117	0
 
 > ~/config/xmonad/xmonad.hs
 	"	210	64
@@ -934,12 +6093,6 @@ $
 	+	126	0
 	+	126	0
 	+	210	64
-
-> ~/config/sudoers.template
-	"	10	46
-	^	10	67
-	.	10	0
-	+	10	0
 
 > ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/cmdline.py
 	"	392	0
@@ -1447,449 +6600,6 @@ $
 	+	12	9
 	z	12	9
 
-> ~/streaming/pytomo/lib/lib_cache_url/-MiniBufExplorer-
-	"	1	32
-	.	2	0
-	+	2	0
-
-> ~/workspace/spydump/tools/filter_streaming.py
-	"	1513	38
-	^	1513	51
-	.	1520	0
-	+	1146	24
-	+	1147	77
-	+	1148	17
-	+	1150	0
-	+	1148	0
-	+	1147	0
-	+	1145	31
-	+	1146	27
-	+	1147	0
-	+	1152	0
-	+	1158	16
-	+	1155	76
-	+	1156	73
-	+	1156	61
-	+	1158	0
-	+	1157	0
-	+	1156	74
-	+	1157	0
-	+	1155	0
-	+	1156	75
-	+	1157	0
-	+	1155	43
-	+	1155	44
-	+	1157	49
-	+	1155	40
-	+	1158	37
-	+	1159	16
-	+	1161	43
-	+	1159	16
-	+	1161	15
-	+	1159	75
-	+	1159	80
-	+	1161	15
-	+	1161	40
-	+	1161	43
-	+	1163	0
-	+	1159	0
-	+	1161	73
-	+	1162	0
-	+	1161	69
-	+	1160	0
-	+	1148	71
-	+	1148	67
-	+	1148	41
-	+	1148	44
-	+	1149	41
-	+	1150	0
-	+	1149	0
-	+	1148	0
-	+	1155	40
-	+	1158	0
-	+	1155	0
-	+	1553	0
-	+	1588	0
-	+	1588	15
-	+	1588	0
-	+	1588	0
-	+	1588	16
-	+	1588	73
-	+	1588	0
-	+	1588	0
-	+	853	25
-	+	853	23
-	+	852	0
-	+	854	0
-	+	853	34
-	+	854	0
-	+	858	0
-	+	854	77
-	+	857	65
-	+	858	0
-	+	853	37
-	+	855	77
-	+	856	39
-	+	853	26
-	+	854	0
-	+	855	0
-	+	856	0
-	+	853	25
-	+	857	66
-	+	855	0
-	+	856	0
-	+	1582	36
-	+	1616	48
-	+	788	20
-	+	931	28
-	+	1087	32
-	+	1106	40
-	+	1512	66
-	+	1513	48
-	+	1518	66
-	+	1520	0
-	+	903	32
-	+	904	52
-	+	904	53
-	+	905	0
-	+	1512	0
-	+	1513	50
-	+	1519	0
-	+	1520	0
-	z	1513	38
-
-> ~/streaming/rapport/thesis/passive_streaming_analysis.tex
-	"	294	12
-	^	209	60
-	.	209	59
-	+	2086	0
-	+	2086	73
-	+	2174	40
-	+	2472	0
-	+	1613	4
-	+	1615	4
-	+	1683	4
-	+	1751	4
-	+	1753	4
-	+	1816	4
-	+	1818	4
-	+	1407	77
-	+	1280	31
-	+	1156	26
-	+	1158	22
-	+	1159	69
-	+	1158	15
-	+	1180	29
-	+	1093	76
-	+	841	59
-	+	663	54
-	+	701	37
-	+	614	78
-	+	561	53
-	+	560	36
-	+	561	68
-	+	560	42
-	+	561	75
-	+	560	37
-	+	561	74
-	+	464	53
-	+	465	0
-	+	680	23
-	+	680	128
-	+	681	25
-	+	681	131
-	+	682	27
-	+	683	3
-	+	680	22
-	+	683	0
-	+	686	71
-	+	686	78
-	+	169	71
-	+	171	70
-	+	348	79
-	+	349	37
-	+	353	48
-	+	362	19
-	+	363	0
-	+	364	68
-	+	364	76
-	+	434	40
-	+	443	29
-	+	436	47
-	+	434	36
-	+	364	65
-	+	446	19
-	+	541	43
-	+	544	46
-	+	561	66
-	+	594	57
-	+	595	76
-	+	596	21
-	+	600	0
-	+	601	74
-	+	715	68
-	+	715	75
-	+	730	0
-	+	730	76
-	+	744	38
-	+	747	55
-	+	748	59
-	+	772	47
-	+	779	40
-	+	780	65
-	+	798	41
-	+	806	70
-	+	808	27
-	+	886	28
-	+	888	78
-	+	892	21
-	+	902	33
-	+	978	40
-	+	1139	18
-	+	1139	77
-	+	2218	43
-	+	2219	0
-	+	2229	10
-	+	2230	53
-	+	2388	74
-	+	2389	63
-	+	2391	0
-	+	2410	78
-	+	2411	14
-	+	2427	57
-	+	164	76
-	+	841	87
-	+	841	42
-	+	198	54
-	+	209	59
-
-> ~/streaming/rapport/thesis/-MiniBufExplorer-
-	"	1	23
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/streaming/rapport/thesis/passive_streaming_analysis.log
-	"	742	0
-
-> ~/streaming/pytomo/lib/lib_cache_url/main_module.py
-	"	5	11
-	^	4	3
-	.	5	0
-	+	1	0
-	+	5	0
-	+	4	2
-	+	5	0
-	z	5	11
-
-> ~/workspace/spydump/tools/template.py
-	"	54	0
-	^	106	0
-	.	106	0
-	+	106	0
-
-> ~/workspace/spydump/tools/-MiniBufExplorer-
-	"	1	47
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
 > ~/play_soceda/twitter-sl4a/twitter-1.4.2/twitter/auth.py
 	"	1	0
 
@@ -1912,22 +6622,6 @@ $
 > ~/play_soceda/twitter-sl4a/oauth-python-twitter-1.0/-MiniBufExplorer-
 	"	1	0
 	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/config/[YankRing]
-	"	7	0
-	.	2	0
-	+	104	0
-	+	2	0
-
-> ~/config/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
 	+	2	0
 	+	2	0
 	+	2	0
@@ -2852,33 +7546,6 @@ $
 	+	340	0
 	+	339	9
 
-> ~/cv_autres/CV/ESIEEcv.sty
-	"	1	0
-
-> ~/cv_autres/CV/-MiniBufExplorer-
-	"	1	45
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
 > ~/cv_autres/CV/cv_expert_application.log
 	"	321	0
 
@@ -2897,88 +7564,6 @@ $
 	^	2	10
 	.	2	9
 	+	2	9
-
-> ~/streaming/rapport/thesis/__OUTLINE__
-	"	15	3
-	.	1	0
-	+	739	0
-	+	673	0
-	+	654	0
-	+	629	0
-	+	610	0
-	+	602	0
-	+	533	0
-	+	520	0
-	+	388	0
-	+	383	0
-	+	380	0
-	+	377	0
-	+	358	0
-	+	357	0
-	+	122	0
-	+	115	0
-	+	112	0
-	+	108	0
-	+	105	0
-	+	99	0
-	+	80	0
-	+	75	0
-	+	62	0
-	+	43	0
-	+	39	0
-	+	20	0
-	+	1	0
-
-> ~/workspace/spydump/tools/INDEX_VALUES.py
-	"	171	5
-	^	439	0
-	.	117	0
-	+	776	18
-	+	776	18
-	+	831	0
-	+	777	0
-	+	832	0
-	+	831	0
-	+	779	7
-	+	780	10
-	+	781	7
-	+	776	23
-	+	777	0
-	+	827	18
-	+	828	0
-	+	829	0
-	+	830	0
-	+	831	0
-	+	902	66
-	+	117	41
-	+	117	44
-	+	117	0
-	+	21	32
-	+	117	31
-	+	117	0
-	+	117	0
-	+	117	31
-	+	117	0
-	+	117	0
-	+	117	0
-	+	117	31
-	+	117	0
-	+	117	0
-	+	117	31
-	+	117	67
-	+	117	22
-	+	117	33
-	+	117	44
-	+	117	63
-	+	117	0
-	+	117	0
-	+	117	76
-	+	117	34
-	+	117	43
-	+	117	0
-	+	438	0
-	+	117	0
-	z	117	0
 
 > ~/workspace/spydump/tools/[YankRing]
 	"	5	0
@@ -3027,94 +7612,6 @@ $
 > ~/analyses/user_profiling/tma_final/list.txt
 	"	1	16
 
-> /tmp/mutt-ator-mail
-	"	23	21
-	^	23	22
-	.	23	21
-	+	40	0
-	+	39	0
-	+	41	72
-	+	42	67
-	+	44	78
-	+	47	34
-	+	49	77
-	+	49	77
-	+	49	0
-	+	49	81
-	+	53	43
-	+	55	27
-	+	56	0
-	+	67	0
-	+	51	12
-	+	67	0
-	+	56	0
-	+	57	79
-	+	58	19
-	+	46	53
-	+	58	76
-	+	59	74
-	+	60	75
-	+	65	61
-	+	41	27
-	+	37	0
-	+	14	105
-	+	14	5
-	+	14	4
-	+	14	4
-	+	14	4
-	+	14	4
-	+	14	49
-	+	2	44
-	+	6	34
-	+	2	9
-	+	14	0
-	+	8	15
-	+	9	4
-	+	8	55
-	+	10	0
-	+	14	0
-	+	10	58
-	+	13	44
-	+	14	0
-	+	1	0
-	+	15	0
-	+	35	0
-	+	2	1
-	+	5	0
-	+	2	0
-	+	7	1
-	+	10	0
-	+	13	0
-	+	25	21
-	+	34	2
-	+	16	2
-	+	20	4
-	+	18	18
-	+	21	69
-	+	22	67
-	+	23	18
-	+	25	0
-	+	25	36
-	+	25	0
-	+	10	0
-	+	6	0
-	+	17	0
-	+	12	0
-	+	19	0
-	+	25	0
-	+	1	48
-	+	30	11
-	+	3	15
-	+	32	3
-	+	6	0
-	+	6	0
-	+	9	23
-	+	12	0
-	+	16	23
-	+	15	21
-	+	19	13
-	+	23	21
-
 > ~/analyses/user_profiling/hh_prof.awk
 	"	151	0
 	^	134	68
@@ -3145,27 +7642,11 @@ $
 	+	135	27
 	+	134	67
 
-> ~/streaming/rapport/thesis/[YankRing]
-	"	5	0
-	.	2	0
-	+	410	0
-	+	410	0
-	+	308	0
-	+	206	0
-	+	104	0
-	+	2	0
-
 > ~/streaming/rapport/complements.tex
 	"	344	40
 
 > ~/streaming/rapport/changepage.sty
 	"	1	0
-
-> ~/streaming/rapport/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
 
 > ~/workspace/spydump/tools/complements.py
 	"	600	8
@@ -3296,112 +7777,6 @@ $
 	+	1432	0
 	+	472	70
 	z	472	70
-
-> ~/analyses/user_profiling/tma_final/tma3-pietrzyk.tex
-	"	477	0
-	^	477	14
-	.	477	13
-	+	427	74
-	+	427	78
-	+	430	55
-	+	428	15
-	+	430	55
-	+	428	16
-	+	429	79
-	+	430	64
-	+	433	44
-	+	438	79
-	+	433	0
-	+	438	48
-	+	439	77
-	+	457	77
-	+	459	0
-	+	462	0
-	+	459	37
-	+	460	77
-	+	461	78
-	+	462	0
-	+	461	78
-	+	462	0
-	+	457	63
-	+	459	25
-	+	457	77
-	+	458	63
-	+	460	0
-	+	459	4
-	+	460	78
-	+	463	69
-	+	464	38
-	+	468	0
-	+	464	78
-	+	465	14
-	+	466	75
-	+	467	40
-	+	469	79
-	+	470	62
-	+	472	79
-	+	458	56
-	+	471	50
-	+	517	24
-	+	517	202
-	+	517	41
-	+	520	17
-	+	475	77
-	+	477	13
-
-> ~/workspace/spydump/tools/__Tag_List__
-	"	54	4
-	.	67	0
-	+	1189	0
-	+	1192	0
-	+	1235	0
-	+	1188	0
-	+	1136	0
-	+	1089	0
-	+	1025	0
-	+	979	0
-	+	978	0
-	+	1037	0
-	+	927	0
-	+	926	0
-	+	874	0
-	+	701	0
-	+	755	0
-	+	823	0
-	+	701	0
-	+	701	0
-	+	701	0
-	+	701	0
-	+	767	0
-	+	796	0
-	+	822	0
-	+	700	0
-	+	647	0
-	+	635	0
-	+	578	0
-	+	475	0
-	+	464	0
-	+	463	0
-	+	504	0
-	+	521	0
-	+	404	0
-	+	387	0
-	+	387	0
-	+	387	0
-	+	387	0
-	+	403	0
-	+	386	0
-	+	247	0
-	+	259	0
-	+	222	0
-	+	222	0
-	+	324	0
-	+	222	0
-	+	221	0
-	+	174	0
-	+	191	0
-	+	133	0
-	+	67	0
 
 > ~/analyses/user_profiling/-MiniBufExplorer-
 	"	1	48
@@ -3932,117 +8307,6 @@ $
 	+	2	0
 	+	2	0
 
-> ~/config/vim/vimrc
-	"	342	16
-	^	398	10
-	.	398	12
-	+	206	0
-	+	206	0
-	+	206	0
-	+	206	0
-	+	255	0
-	+	256	0
-	+	251	25
-	+	266	4
-	+	265	0
-	+	407	11
-	+	265	0
-	+	266	0
-	+	265	0
-	+	80	0
-	+	81	0
-	+	1	0
-	+	1	0
-	+	9	0
-	+	11	0
-	+	1	0
-	+	54	18
-	+	1	0
-	+	1	9
-	+	1	0
-	+	3	17
-	+	3	0
-	+	324	0
-	+	328	0
-	+	324	0
-	+	335	0
-	+	358	0
-	+	336	0
-	+	335	0
-	+	27	19
-	+	80	0
-	+	183	2
-	+	17	22
-	+	183	0
-	+	182	56
-	+	54	0
-	+	414	17
-	+	415	0
-	+	335	15
-	+	183	35
-	+	400	0
-	+	401	0
-	+	200	0
-	+	201	0
-	+	200	0
-	+	201	0
-	+	206	0
-	+	427	0
-	+	429	0
-	+	433	16
-	+	434	16
-	+	435	16
-	+	436	16
-	+	437	16
-	+	438	16
-	+	441	16
-	+	442	16
-	+	443	16
-	+	444	16
-	+	445	16
-	+	446	0
-	+	430	0
-	+	409	0
-	+	267	5
-	+	268	0
-	+	154	15
-	+	26	0
-	+	28	0
-	+	6	29
-	+	7	0
-	+	278	5
-	+	280	0
-	+	278	7
-	+	279	0
-	+	280	0
-	+	279	5
-	+	280	0
-	+	280	0
-	+	278	5
-	+	279	5
-	+	276	8
-	+	277	5
-	+	395	4
-	+	396	0
-	+	395	0
-	+	401	0
-	+	402	0
-	+	278	0
-	+	279	5
-	+	278	5
-	+	279	5
-	+	278	0
-	+	397	9
-	+	398	9
-	+	397	12
-	+	398	12
-
-> ~/config/vim_runtime/vimrc
-	"	236	20
-	^	385	1
-	.	386	0
-	+	386	0
-
 > /usr/share/vim/vim72/doc/change.txt
 	"	667	39
 
@@ -4550,97 +8814,6 @@ $
 > /tmp/Partie 1.2
 	"	1	0
 
-> ~/Confs/TMA-2011/tma11-reviews.txt
-	"	75	0
-	^	55	63
-	.	55	62
-	+	80	0
-	+	79	8
-	+	78	0
-	+	83	0
-	+	86	0
-	+	107	0
-	+	91	0
-	+	103	79
-	+	93	47
-	+	94	49
-	+	95	76
-	+	100	12
-	+	100	8
-	+	101	8
-	+	98	0
-	+	104	62
-	+	106	0
-	+	104	73
-	+	101	4
-	+	102	0
-	+	100	0
-	+	87	72
-	+	190	0
-	+	191	24
-	+	215	52
-	+	191	0
-	+	194	0
-	+	197	0
-	+	202	0
-	+	217	0
-	+	218	0
-	+	134	0
-	+	136	0
-	+	134	0
-	+	142	76
-	+	143	32
-	+	147	12
-	+	169	60
-	+	169	26
-	+	169	77
-	+	169	0
-	+	156	71
-	+	157	48
-	+	144	78
-	+	145	38
-	+	159	57
-	+	161	37
-	+	169	0
-	+	134	0
-	+	130	0
-	+	132	0
-	+	131	0
-	+	132	0
-	+	148	1
-	+	151	7
-	+	148	5
-	+	151	0
-	+	147	64
-	+	150	63
-	+	169	76
-	+	169	12
-	+	169	31
-	+	169	79
-	+	169	28
-	+	154	52
-	+	159	37
-	+	163	79
-	+	165	49
-	+	169	0
-	+	167	28
-	+	171	76
-	+	172	0
-	+	132	0
-	+	38	15
-	+	43	8
-	+	44	78
-	+	44	0
-	+	50	0
-	+	49	76
-	+	50	77
-	+	52	78
-	+	53	40
-	+	29	0
-	+	45	36
-	+	52	0
-	+	55	62
-
 > ~/Confs/TMA-2011/[YankRing]
 	"	5	0
 	.	2	0
@@ -4653,15 +8826,6 @@ $
 
 > /tmp/zshecl6642
 	"	1	0
-
-> ~/config/ftrd_config
-	"	21	75
-	^	21	76
-	.	21	75
-	+	19	80
-	+	20	68
-	+	19	70
-	+	21	75
 
 > ~/streaming/rapport/thesis/report.bib
 	"	3	67
@@ -4884,9 +9048,6 @@ $
 	+	76	63
 	z	76	63
 
-> ~/config/zshrc
-	"	545	0
-
 > ~/streaming/rapport/thesis/.gitignore
 	"	2	0
 	^	2	1
@@ -5005,14 +9166,6 @@ $
 	+	1432	73
 	a	1210	0
 	b	661	0
-
-> ~/streaming/pytomo/dns/dns_lib.py
-	"	1	0
-	.	81	0
-	+	27	0
-	+	80	0
-	+	81	0
-	z	84	0
 
 > ~/streaming/pytomo/tests/test_dns.py
 	"	1	20

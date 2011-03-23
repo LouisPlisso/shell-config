@@ -450,3 +450,9 @@ java-virtual-machine
 java-package
 openjdk-6-jdk
 gpe-tetris
+lib32asound2 lib32gcc1 lib32ncurses5 lib32stdc++6 lib32z1 libc6 libc6-i386 lib32nss-mdns
+libsdl-gfx1.2-4
+python2.5-kaa-base
+python2.5-kaa-metadata
+python-pycurl
+nscd

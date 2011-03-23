@@ -11,16 +11,20 @@ deb http://security.debian.org/ squeeze/updates main contrib non-free
 deb http://ftp.fr.debian.org/debian/ squeeze-proposed-updates main contrib non-free 
 deb-src http://security.debian.org/ squeeze/updates main contrib non-free 
 deb-src http://ftp.fr.debian.org/debian/ squeeze-proposed-updates main contrib non-free 
+deb http://ftp.debian.org/debian squeeze-updates main
+
+###### Debian backports
+deb http://backports.debian.org/debian-backports squeeze-backports main contrib
 
 #### Unstable repos
-deb http://ftp.fr.debian.org/debian/ experimental main contrib non-free 
+#deb http://ftp.fr.debian.org/debian/ sid main contrib non-free 
 
 #### Experimental repos
 #deb http://ftp.fr.debian.org/debian/ experimental main contrib non-free 
 
 #### Lenny repos
-deb http://ftp.fr.debian.org/debian/ lenny main #contrib non-free 
-deb http://ftp.fr.debian.org/debian/ lenny main/updates #contrib non-free 
+#deb http://ftp.fr.debian.org/debian/ lenny main #contrib non-free 
+#deb http://ftp.fr.debian.org/debian/ lenny main/updates #contrib non-free 
 
 ##############################################################
 ##################### UNOFFICIAL  REPOS ######################
@@ -39,7 +43,8 @@ deb http://www.debian-multimedia.org/ squeeze main
 
 #### Google Linux Software Repositories - http://www.google.com
 ## Run this command: wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && apt-get update  
-deb http://dl.google.com/linux/deb/ stable main #non-free
+#deb http://dl.google.com/linux/deb/ stable main non-free
 
-#### Clamav
-deb http://volatile.debian.org/debian-volatile squeeze/volatile main contrib non-free
+#### Clamav: replaced by update repos
+#deb http://volatile.debian.org/debian-volatile stable/volatile main contrib non-free
+
