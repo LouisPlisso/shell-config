@@ -261,12 +261,12 @@ cno $c e <C-\>eCurrentFileDir("e")<cr>
 "cno $q <C-\>eDeleteTillSlash()<cr>
 
 " Bash like keys for the command line
-cnoremap <C-A>		<Home>
-cnoremap <C-E>		<End>
-cnoremap <C-K>		<C-U>
+"cnoremap <C-A>		<Home>
+"cnoremap <C-E>		<End>
+"cnoremap <C-K>		<C-U>
 
-cnoremap <C-P> <Up>
-cnoremap <C-N> <Down>
+"cnoremap <C-P> <Up>
+"cnoremap <C-N> <Down>
 
 " Useful on some European keyboards
 map ½ $
@@ -550,7 +550,7 @@ set grepprg=/bin/grep\ -nH
 " => MISC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+"noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "Quickly open a buffer for scripbble
-map <leader>q :e ~/buffer<cr>
+"map <leader>q :e ~/buffer<cr>

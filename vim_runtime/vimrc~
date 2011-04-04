@@ -103,8 +103,7 @@ set history=300
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 7 lines to the curors - when moving vertical..
-" 4
+" Set 3 lines to the curors - when moving vertical..
 set so=3
 
 set wildmenu "Turn on WiLd menu
@@ -551,7 +550,7 @@ set grepprg=/bin/grep\ -nH
 " => MISC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+"noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "Quickly open a buffer for scripbble
-map <leader>q :e ~/buffer<cr>
+"map <leader>q :e ~/buffer<cr>

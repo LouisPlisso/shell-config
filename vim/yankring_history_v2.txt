@@ -1,100 +1,100 @@
-.. contents:: Table of Contents.. section-numbering:: :depth: 1,v
-DIR,v
-#import pytomo.config_pytomo as config_pytomo#import pytomo.lib_cache_url as lib_cache_url#import pytomo.lib_dns as lib_dns#import pytomo.lib_ping as lib_ping#import pytomo.lib_youtube_download as lib_youtube_download#import pytomo.lib_database as lib_database#import pytomo.lib_youtube_api as lib_youtube_api,V
-print 'iciiii'from os.path import abspath, dirname, sepfrom sys import path# assumes the standard distribution pathsPACKAGE_DIR = abspath(path[0])print PACKAGE_DIR#if PACKAGE_DIR not in path:    #path.append(PACKAGE_DIR),V
-#print path,V
-DIR_INSIDE,v
-as lib_youtube_api,v
-lib_youtube_api,v
-pi a,v
-pytomo.lib_youtube_a,v
-as lib_database,v
-as lib_youtube_download,v
-as lib_ping,v
-as lib_dns,v
-pytomo.lib_ping a,v
-as lib_cache_url,v
-as config_pytomo,v
-import pytomo.config_pytomo as config_pytomoimport pytomo.lib_cache_url as lib_cache_urlimport pytomo.lib_dns as lib_dnsimport pytomo.lib_ping as lib_pingimport pytomo.lib_youtube_download as lib_youtube_downloadimport pytomo.lib_database as lib_databaseimport pytomo.lib_youtube_api as lib_youtube_api,V
-),v
-dirname(,v
-print,V
-print path,V
-    path.append(PACKAGE_DIR),V
-print PACKAGE_DIR,V
-,V
-/home/capture/Pytomo-0.1.0,v
-recursive-include pytomo/dns *.py,V
-'pytomo/dns/rdtypes',,v
-'http://www.youtube.com/watch?v=PljZOj5knzo',v
-.,v
-p,v
-y,v
-_CERT.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._CNAME.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._DLV.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._DNAME.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._DNSKEY.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._DS.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._GPOS.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._HINFO.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._HIP.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._ISDN.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._KEY.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._LOC.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._MX.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._NS.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._NSEC.py -> Pytomo-0.1.0/pytomo/dns/rdtypes/ANYhard linking pytomo/dns/rdtypes/ANY/._NSEC3.py ->,v
-dns_ok/rdtypes/ANY: PTR.pyOnly in dns_ok/rdtypes/ANY: RP.pyOnly in dns_ok/rdtypes/ANY: RRSIG.pyOnly in dns_ok/rdtypes/ANY: RT.pyOnly in dns_ok/rdtypes/ANY: SIG.pyOnly in dns_ok/rdtypes/ANY: SOA.pyOnly in dns_ok/rdtypes/ANY: SPF.pyOnly in dns_ok/rdtypes/ANY: SSHFP.pyOnly in dns_ok/rdtypes/ANY: TXT.pyOnly in dns_ok/rdtypes/ANY: X25.pyOnly in dns_ok/rdtypes/IN: AAAA.pyOnly in dns_ok/rdtypes/IN: APL.pyOnly in dns_ok/rdtypes/IN: A.pyOnly in dns_ok/rdtypes/IN: A.pycOnly in dns_ok/rdtypes/IN: DHCID.pyOnly in dns_ok/rdtypes/IN: __init__.pyOnly in dns_ok/rdtypes/IN: __init__.pycOnly in dns_ok/rdtypes/IN: IPSECKEY.pyOnly in dns_ok/rdtypes/IN: KX.pyOnly in dns_ok/rdtypes/IN: NAPTR.pyOnly in dns_ok/rdtypes/IN: NSAP_PTR.pyOnly in dns_ok/rdtypes/IN: N,v
-rdatas = None,v
-resolver,v
-start_pytomo.lib_dns.get_default_name_servers(),v
-False,v
-import dns.exception,V
-/,v
-python,v
-start_pytomo.lib_dns.get_ip_addresses('www.youtube.com'),v
-config_pytomo.LOG = logging.getLogger('pytomo'),v
-hasattr(rdatas[0], 'attribute'),v
-com.googlecode.pythonforandroid/files/python/bin/,v
-top100_per_as_average_bit-rate_act_time_loglog_2008_07_01_FTTH.pdf,v
- ,v
-True #,v
-flow_size_diversx_logx.pdf,v
-/system/xbin,v
-chmod 6755 /data/local/tmp/tcpdump,v
-graph_filtered_final/,v
-pdf.use14corefonts,v
-matplotlib.rcParams['ps.useafm'] = Truematplotlib.rcParams['pdf.use14corefonts'] = Truematplotlib.rcParams['text.usetex'] = True,v
-tcpdump-arm -s 0 -w out.txt,v
-tcpdump-arm,v
-http://goo.gl/ne1SM,v
-orange-ftgroup,v
-3858982,v
-/mnt/sdcard/sl4a/scripts,v
-, PingMdev real,v
-    # Note that the Windows Ping results does not have mdev    elif (current_system == 'Microsoft' or          current_system == 'Windows'):        rtt_values = rtt_times.groups() + ('0.00',),V
-(,v
-self, ,v
-lib_ping,v
-mes,v
- % mes,v
-:,v
-%,v
-s,v
-Exception, ,v
- data_block,v
-,,v
-                    pass,V
-    meta_file.write(data_block)    meta_file.flush(),V
-        meta_file.close(),V
-    try:,V
+google_code/pytomo/kaa_metadata/audio/ID3.py,v
+t,v
+i,v
+alias gitst='git status',V
+Pytomo/pytomo/dns/._rdatatype.py,v
+*,v
+/home/louis/Downloads/pyinstaller-dev/pytomo/dist/pytomo,v
+quicktime,v
+avi,v
+/home/louis/logs/s-alois.2011-04-04.22_07_19.pytomo.log,v
+if False:    # to trick the module finder of pyinstaller    from .video import *    from .audio import *    from .image import *    from .misc import *,V
+/home/louis/logs/s-alois.2011-04-04.22_05_52.pytomo.log,v
+    from .misc import *,V
+# to trick the module finder of pyinstaller,v
+pytomo,v
+/home/louis/logs/s-alois.2011-04-04.22_02_35.pytomo.log,v
+Type-Archive,v
+/home/louis/logs/s-alois.2011-04-04.21_55_41.pytomo.log,v
+IN,v
+    from .rdtypes.IN import *,V
+IN, ANY,v
+1.9,v
+/home/louis/logs/s-alois.2011-04-04.21_53_13.pytomo.log,v
+Featured,v
+__all__ = ['Parser'],V
+zshguide,v
+/home/louis/streaming/pytomo/Pytomo/logs/s-alois.2011-04-04.21_37_30.pytomo.log,v
+from __future__ import absolute_import,V
+from __future__ import absolute_import,V
+kaa_metadata,v
+echo '\n---\n';,v
+__all__ = ['Parser'],V
+/home/louis/streaming/pytomo/Pytomo/logs/s-alois.2011-04-04.21_23_46.pytomo.log,v
+gettype, ,v
+Factory, ,v
+ register,v
+, gettype,v
+/home/louis/streaming/pytomo/Pytomo/logs/s-alois.2011-04-04.21_21_53.pytomo.log,v
+, parse,v
+' *,v
+'Factory', 'register', 'gettype', 'parse' ,v
+/home/louis/streaming/pytomo/Pytomo,v
 #,v
-http://www.youtube.com/watch?v=PljZOj5knzo,v
-ParseError,v
-debug,v
-kaa_metadata.core.,v
-kaa_metadata.core.ParseError:,v
-INFO,v
- 	,v
-load_entry_point('Pytomo==0.1.0', 'console_scripts', 'pytomo_script'),v
-Automatic,v
-',v
-=,v
-Automatic Script Creation,v
- my_package.some_module:main_func,v
-foo,v
-from distutils.command.build_py import build_py,V
-entry_points = {        'console_scripts': [            'foo = my_package.some_module:main_func',,v
-build_py,v
-cmdclass = dict(build_py=build_py),,v
-+,v
-distutils.command.build_py,v
-how to write your runner python script to import from lib,v
-/pytomo,v
+/home/louis/streaming/pytomo/Pytomo/logs/s-alois.2011-04-04.21_14_40.pytomo.log,v
+] ,v
+[],v
+/home/louis/streaming/pytomo/Pytomo/,v
+pytomo = __import__('__init__')sys.modules['pytomo'] = pytomo__package__ = 'pytomo',V
+if __package__ is None:    __package__ = 'pytomo',V
+.start_pytomo,v
+and ,v
+ and __package__ is None,v
+import sys,V
+if __name__ == '__main__' and __package__ is None:    __package__ = 'pytomo.start_pytomo'    sys.exit(main()),V
+expected.package.name,v
+level=1,v
+ and __package__ is None:    __package__ = "expected.package.name",v
+        print name,V
+/home/louis/streaming/pytomo/Pytomo/logs/s-alois.2011-04-04.20_45_14.pytomo.log,v
+.dns.,v
+from ,v
+,V
+_,v
+.,v
+rdata,v
+~/streaming/pytomo/Pytomo/pytomo/dns/,v
+~/streaming/pytomo/Pytomo/pytomo/dns/exception.py,v
+/home/louis/streaming/pytomo/Pytomo/logs/s-alois.2011-04-04.17_11_12.pytomo.log,v
+import start_crawl; import pytomo.lib_dns as lib_dns;start_crawl.pytomo.start_pytomo.configure_log_file('0'); lib_dns.get_ip_addresses('www.google.com'),v
+lib_dns.get_ip_addresses('www.google.com'),v
+from .. import rdata as dns_rdata,V
+dns_rdtypes.,v
+rdtypes as dns_rdtypes.,v
+rdtypes/ANY/SOA.py,v
+rdtypes,v
+Thesis-Pietrzyk,v
+name,v
+from ... import name as dns_name,V
+s,v
+n,v
+from ..rdtypes import nsbase,V
+dns_rdtypes_,v
+ as dns_rdtypes_nsbase,v
+import,v
+__all__ = [ 'Factory', 'register', 'gettype', 'parse' ],V
+dns_e164.,v
+dns_rdata.,v
+class,v
+dns_rdataclass,v
+from . import rdataclass as dns_rdataclass,V
+dns_rdatatype,v
+set,v
+from . import rdataset as dns_rdataset,V
+dns_name.,v
+ANY/SPF.py,v
+anyway I let them to Seb,v
+from __future__ import absolute_import,V
+from __future__ import absolute_import,v
+./pytomo/dns/renderer.py:1,v
+0,/import/ s/.*import.*/from __future__ import absolute_import\n\n&/;b',v

@@ -53,6 +53,8 @@ xscreensaver -no-splash &
 
 keynav &
 
+unclutter &
+
 parcellite-9.1 &
 
 pidgin &

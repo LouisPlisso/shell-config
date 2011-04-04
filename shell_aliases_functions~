@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # performance boost
-if [ "$PS1" ] ; then  
-   mkdir -p -m 0700 /dev/cgroup/cpu/user/$$ > /dev/null 2>&1
-   echo $$ > /dev/cgroup/cpu/user/$$/tasks
-   echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
-fi
+#if [ "$PS1" ] ; then  
+#   mkdir -p -m 0700 /dev/cgroup/cpu/user/$$ > /dev/null 2>&1
+#   echo $$ > /dev/cgroup/cpu/user/$$/tasks
+#   echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
+#fi
 
 # load FTRD config
 if [ -f ${MY_CONFIG_DIR}/ftrd_config ]; then
@@ -74,6 +74,9 @@ export GTK_IM_MODULE
 alias burnit='flac -d *.flac && cdrdao write cd.toc && rm *.wav && eject'
 
 alias twi='${MY_CONFIG_DIR}/bin/twitter -t -d -f ansi'
+
+# google code update
+alias upload_download='googlecode_upload.py -s "source distribution" -p pytomo -u louis.plissonneau -w Ab5PG7aC9MB9 -l "Featured,Type-Source,OpSys-All" '
 
 # super man
 function superman() { 
@@ -188,6 +191,7 @@ alias vlcn='vlc -I ncurses'
 # git log
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
 alias git_svn_sync_clean='git svn fetch; git merge remotes/clean'
+alias gitst='git status'
 
 #fresh() {
 #    old_proxy=$http_proxy

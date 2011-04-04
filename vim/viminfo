@@ -8,321 +8,571 @@
 # hlsearch on (H) or off (h):
 ~h
 # Dernier motif de recherche  :
-~Msle0~/\<sep\>
+~MSle0~/import
 
 # Dernier motif de recherche Substitue  :
-~MSle0&\<lib_cache_url\>
+~MSle0&'
 
 # Dernières chaînes de substitution :
 $
 
 # Historique ligne de commande (chronologie décroissante) :
-:qa
-:e lib_dns.py
-:e ../pytomo/start_pytomo.py
-:e MANIFEST.in
 :wqa
-:b MANIFEST.in
-:b ~/streaming/pytomo/Pytomo/setup.py
-:121
-:e dns/resolver.py
-:e MANIFEST
-:e ../setup.py
-:e config_pytomo.py
-:e start_pytomo.py
-:b star
-:e rdata.py
-:e dns/rdatatype.py
-:38
-:e lib_database.py
-:273
-:reg
-:753
-:602
+:e factory.py
 :e kaa_metadata/factory.py
 :e lib_youtube_download.py
-:e ../MANIFEST.in
-:b ../
-:sp
-:vsp lib_youtube_api.py
-:vsp lib_
-:e 
-:w
-:b ~/streaming/pytomo/Pytomo/bin/pytomo
-:b config_pytomo.py
-:b start_pytomo.py
-:b ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
-:b ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
-:on
-:e complete_yt_dl.py
-:190
-:b
-:%s/\<lib_cache_url\>/pytomo.&/
-:vsp
-:%s/config_pytomo/pytomo.config_pytomo/
-:e ../
-:215
-:118
-:e ../bin/pytomo
-:82
-:77
-:e __init__.py
-:b lib_database.py
-:177
-:q
-:e png.py
-:e image/IPTC.py
-:e ../core.py
-:e ../misc/directory.py
-:e ../audio/m4a.py
-:e ogm.py
-:e mp4.py
-:e riff.py
-:e ../video/vcd.py
-:e dvd.py
-:e audio.py
-:e data.py
-:e cdrom.py
-:e ../../disc/core.py
-:wa
-:e ../games/core.py
-:e ../pcm.py
-:e mp3.py
-:e audio/eyeD3/tag.py
-:e audio/eyeD3/utils.py
-:e ../factory.py
-:e IPTC.py
-:e core.py
-:e image/EXIF.py
-:e directory.py
-:e misc/xmlfile.py
-:e ../video/asf.py
-:b 8
-:b mp3.py
-:232
-:116
-:e audio/mp3.py
-:b ~/streaming/pytomo/pytomo_louis/config_pytomo.py
-:b kaa_metadata/factory.py
-:b ~/streaming/pytomo/pytomo_louis/complete_yt_dl.py
-:91
+:e lib_dns.py
+:e lib_database.py
 :e lib_cache_url.py
-:e p
-:b kaa_metadata/__init__.py
-:856
-:b complete_yt_dl.py
-:b ~/streaming/pytomo/pytomo_louis/start_pytomo.py
-:e version.py
-:e ../kaa_metadata/
-:e kaa/utils.py
-:vsp lib_database.py
+:e rdata.py
+:e rdata
+:e pytomo/dns/resolver.py
+:e ../setup.py
+:e config_pytomo.py
+:e ../audio/m4a.py
+:e vcd.py
+:e riff.py
+:e real.py
+:e ogm.py
+:e mpeg.py
+:e mp4.py
+:e mkv.py
+:e flv.py
+:e ../video/asf.py
+:e xmlfile.py
+:e ../misc/directory.py
+:e tiff.py
+:e png.py
+:e jpg.py
+:'<,'>s/import \(\w\+\)/from . import 
+:e __init__.py
+:e 
+:e gif.py
+:e generic.py
+:e core.py
+:e ../image/bmp.py
+:e webradio.py
+:e pcm.py
+:e ogg.py
+:e eyeD3/
+:e ../strutils.py
+:e mp3.py
+:e ID3.py
+:e flac.py
+:e adts.py
+:cn
+:e ../audio/ac3.py
+:e video/mp4.py
+:s/'//
+:52
+:e audio/
+:161
+:qa
+:b rdata.py
+:vdi
+:vsp
+:diffsplit rdata.py.old
 :e
-:s/?/'?'/
-:s/\?/'?'/
-:b lib_ping.py
-:95
-:93
-:b pytomo_db.py
-:b 
-:137
-:e lib_ping.py
-:'<,'>s/('\(\w\| \)\+', \(\(\w\|\.\)\+\)),/\2,
-:'<,'>s/('\(\w\| \)\+', \(\(\w\|\.\)\+\)),/\2/
-:help regex
-:e pytomo_db.py
-:b ~/streaming/pytomo/pytomo_louis/py
-:'<,'>s/\.$//
-:s/'/"
-:143
-:797
-:765
-:752
-:426
-:b 426
-:406
-:798
-:486
-:b youtube_dl.py
-:e youtube_dl.py
-:112
-:b confi
-:b lib_dns.py
-:b lib_cache_url.py
-:b sta
-:6
-:483
-:b kaa/metadata/factory.py
-:b test.py
-:e test.py
-:,+5s/=/ = /
-:e kaa/metadata/factory.py
-:33
-:733
-:422
-:39
-:176
-:199
-:195
-:e kaa/metadata/video/mp4.py
-:s/time/bytes
-:e co
-:mks!
-:415
-:568
-:b 2
-:=
-:,$s///
-:e tma3-pietrzyk.tex
-:b 5
-:'<,'>s///
-:vimgrep \section tma3-pietrzyk.tex
-:help command
-:grep \section tma3-pietrzyk.tex
-:b9
-:103
-:e kaa/__init__.py
-:b lib_d
-:mks
-:,+s/'/"/
-:e /usr/lib/python2.6/dist-packages/kaa/metadata/factory.py
-:e /usr/lib/python2.6/dist-packages/kaa/metadata/audio/m4a.py
-::
-:34
-:vsp lib_ping.py
-:e lib_ping/ping_time.py
-:e lib_dns/get_ip_address.py
-:e youtube-dl_new.py
-:s/'/"/
-:e ../config_pytomo.py
-:e get_youtube_cache_url.py
-:e get_cache_only.py
-:86
-:read get_youtube_links.py
-:read main_module.py
-:read generate_links.py
-:read generate_cache_url.py
-:e lib_cache_url/dict_cache.py
-:e c
-:read ge
-:b ~/streaming/pytomo/pytomo_package/config_pytomo.py
-:b lib_cache_url/dict_cache.py
-:b ~/streaming/pytomo/pytomo_package/start_pytomo.py
-:e st
-:b ~/streaming/pytomo/pytomo_package/README.txt
-:b ~/streaming/pytomo/pytomo_package/
-:b ge
-:!pylint %
-:b main_module.py
-:b generate_links.py
-:b lib_cache_url/generate_cache_url.py
-:b lib_cache_url/generate_
-:2bp
-:e main_module.py
-:bp
-:bn
-:!!
-:!pylint start_pytomo.py
-:!!pylint start_pytomo.py
-:shell
-:vsp start_pytomo.py
-:e dns/get_ip_address.py
-:e dhcp.py
-:e mickael.py
-:set expandtab
-:e curl.py
-:e ../start_pytomo.py
-:e ping/ping_time.py
-:e dns/ping
-:716
-:661
-:14
-:e youtube_kaa.py
-:bnext
-:verbose map <Right>
-:verbose map <RArrow>
-:e freevo-1.9.2b1/src/util/mediainfo.py
-:e streaming_quality.cpp
-:e ~/workspace/tracetools/streaming_quality.h
-:e fibo.c
-:e ~/perso/fibo/fibo_acc.py
-:431
-:256
-:622
-:58
+:e ../lib_dns.py
+:q
+:e ../exception.py
+:e sigbase.py
+:e ../dsbase.py
+:e TXT.py
+:e SSHFP.py
+:e ../txtbase.py
+:e SPF.py
+:e ../sigbase.py
+:e SIG.py
+:e RT.py
+:e RRSIG.py
+:e PTR.py
+:e NXT.py
+:e NS.py
+:e NSEC3PARAM.py
+:e MX.py
+:e ../keybase.py
+:e KEY.py
+:e ../../name
+:e HIP.py
+:e DS.py
+:e DNSKEY.py
+:e DNAME.py
+:e DLV.py
+:e CNAME.py
+:e ../
+:b ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/AFSDB.py
+:b ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/KX.py
+:b ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/NSAP_PTR.py
+:b ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/DHCID.py
+:e AFSDB.py
+:e ../ANY/CERT.py
+:e IPSECKEY.py
+:e KX.py
+:e NSAP_PTR.py
+:b dns/rdtypes/IN/DHCID.py
+:b ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+:e ../../exception.py
+:e rdtypes/IN/DHCID.py
+:wa
+:e dnssec.py
+:e e164.py
+:b message.py
+:e tokenizer.py
+:e edns.py
+:e message.py
+:e renderer.py
+:77
+:e reversename.py
+:e update.py
+:e name.py
+:e rrset.py
+:110
+:326
+:b resolver.py
+:213
+:b dns/query.py
+:Bclose
+:verbose map <F2>
+:verbose map <F5>
+:Vim
+:pd
+:186
+:e query.py
+:e inet.py
 :616
+:726
+:577
+:set noignorecase
+:help :uns
+:help set
+:se
+:unset ignorecase
+:set ignorecase=0
+:set ignorecase=False
+:set ignorecase
+:help search
+:set se
+:122
+:e dns/resolver.py
+:VCSCommit
+:e start_pytomo.py
+:e ../config_pytomo.py
+:e IPTC.py
+:e ../image/core.py
+:e bin/pytomo
+:e ../start_crawl.py
+:e lib_youtube_api.py
+:e lib_ping.py
+:679
+:e resolver.py
+:cp
+:325
+:138
+:,$s/dns\.\(\w\+\)/dns_\1:e
+:'<,'>s/import dns\.\(\w\+\)/from . import \1 as dns_\1
+:,$s/dns\.\(\w\+\)/dns_\1
+:e ttl.py
+:e opcode.py
+:%s/dns\.\(\w\+\)/dns_\1
+:set showmarks_enable
+:'<,'>s/\(from . import \(\w\+\)\)/\1 as dns_\2
+:'<,'>s/\(from . import \(\w\+\)\)/\1 as dns.\2
+:'<,'>s/import dns\.\(\w\+\)/from . import \1
+:'<,'>s/import pytomo\.\([a-z\.]\+\) as \w*/from .dns import \1
+:'<,'>s/import pytomo\.\([a-z\.]\+\) as \w*/from . import \1
+:help regexp
+:'<,'>s/import pytomo\.\(\w\+\) as \w*/from . import \1
+:e ../../start_pytomo.py
+:b ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
+:reg
+:VCSGotoOriginal
+:b ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
+:b lib_youtube_download.py
+:b start_pytomo.py
+:b config_pytomo.py
+:e ../start_pytomo.py
+:212
+:e ../factory.py
+:b kaa_metadata/factory.py
+:e ../../lib_youtube_download.py
+:echo &compatible
+:filetype
+:version
+:ShowMarksToggle
+:ShowMarksOn
+:help showmarks
+:verbose map gp
+:marks
+:e ~/streaming/kaa-svn/metadata/src/video/mp4.py
+:verbose cmap 
+:verbose cmap 
+:verbose cmap 
+:verbose cmap 
+:verbose cmap 
+:e ~/streaming/
+:help EasyGrepSearchCurrentBufferDir
+:help dbext
+:help complete
+:e ~/stream
+:e ~/streaming/ka
+:e ~/stre
+:vsp ~/st
+:help ZZ
+:wq!
+:299
+:430
+:b video/asf.py
+:b kaa_metadata/video/asf.py
+:137
+:e video/asf.py
+:298
+:b factory.py
+:on
+:343
+:90
+:w
+:e pytomo/start_pytomo.py
+:e ../README.txt
+:646
+:63
+:75
+:71
+:s/'/"
+:,+s/=None/
+:VCSDiff
+:e pytomo/lib_ping.py
+:e pytomo_named.spec
+:779
+:296
+:136
+:%s/current_system/config_pytomo.SYSTEM/
+:verbose nmap gK
+:map gK i
+:verbose map gK
+:help surround
+:help matchit-install
+:sp
+:help VCScommand
+:help
+:b ~/streaming/pytomo/Pytomo/
+:VCSVimDiff HEAD^
+:VCSStatus
+:VCSLog
+:VCSInfo
+:VCSDiff HEAD^
+:VCSCommit void
+:!git status
+:VCSAnnotate
+:verbose map 
+:verbose map n
+:verbose map 
+:VCS
+:verbose map <Space>mt
+:e plugin/showmarks.vim~
+:verbose map <leader>mt
+:verbose map \mt
+:e ../vimrc
+:SQLSetType mysql.vim
+:SQLGetType
+:SQLSetType sqlj.vim
+:SQLSetType sql
+:SQLSetType sql.vim
+:e test.sql
+:s/\*/====/
+:syntax on
+:b pytomo/kaa_metadata/core.py
+:b setup.py
+:e MANIFEST.in
+:b ~/streaming/pytomo/Pytomo/setup.py
+:e README.txt
+:b __init__.py
+:37
+:b ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/strutils.py
+:b ~/streaming/pytomo/Pytomo/stru
+:444
+:e /usr/lib/python2.6/locale.py
+:44
+:e strutils.py
+:e pytomo/kaa_metadata/core.py
+:q!
+:e pytomo/kaa_metadata/disc/__init__.py
+:e /usr/lib/python2.6/distutils/core.py
+:191
 :s
-:e /usr/bin/youtube-dl
-:565
-:read
-:194
-:806
-:595
-:852
-:894
+:e dbapi2.py
+:e /usr/lib/python2.6/sqlite3/__init__.py
+:%s/\*\*/*/
+:%s/_/
+:%s/\t/    /
+:set expandtab
+:%s/Yout/YouT/c
 :84
-:T
-:e ~/streaming/tools/template.py
-:2274
-:retab
-:read youtube-dl_new.py
-:e my_youtube_dl.py
-:e ~/perso/android/scripting/sl4a/scripts/bluetooth_chat.py
-:b passive_streaming_analysis.tex
-:e schema_access_internet.svg
-:'<,'>s/\(.*\)&\( .* \)&\( .* \)&\( .* \)\\\\/\1 \& \4 \& \3 \& \2 \\\\/c
-:'<,'>s/\(.*\)&\( .* \)&\( .* \)&\( .* \)\\/\1 \& \4/c
-:'<,'>
-:'<,'>s/\(.*\)&\( .* \)&\( .* \)&\( .* \)\\//c
-:'<,'>s///c
-:%s/\(.*\)&\( .* \)&\( .* \)&\( .* \)\\/\1\&\4\&\3\&\2\\/c
-:'<,'>s/^/#/
-:%s//vs.}\\ /c
-:stnd eoauefe
-:e generate_links.py
-:20
-:e generate_cache_url.py
-:Ack
-:%s/_over_100ms_/_/c
-:b twitter-1.4.2/twitter/oauth_dance.py
-:b ts.py
-:b ~/play_soceda/twitter-sl4a/sl4a_twitt.py
-:read ts.py
-:copy ts.py
-:e sl4a_twitt.py
-:e api.py
-:e ../../ts.py
-:e oauth_dance.py
-:b tweepy-source/tweepy/auth.py
-:b ~/play_soceda/twitter-sl4a/ts.py
-:e tweepy-source/tweepy/api.py
-:e python-oauth/oauth/example/client.py
-:e oauth-python-twitter-1.0/
-:e oauth.py
-:e tweepy-source/tweepy/auth.py
-:b1
-:e oau
-:e tweepy-examples/oauth/getaccesstoken.py
-:89
-:e ~/perso/android/scripting/sl4a/scripts/android.py
-:e tweepy/tweepy/auth.py
-:verbose colorscheme
-:col
-:set background=dark
-:set background=light
-:verbose set background
-:e get_url.py
-:1539
-:727
-:636
-:e twitter-1.4.2/twitter/
-:e twi
-:e oauth-python-twitter-1.0/oauthtwitter.py
+:e ../.gitignore
+:b pytomo_named.spec
+:b pyto
+:b MANIFEST.in
+:sp pytomo_named.spec
+:e DESCRIPTION.txt
+:250
+:e /usr/lib/python2.6/distutils/dist.py
+:e pytomo.spec
 
 # Historique chaîne de recherche (chronologie décroissante) :
 ? \s\+$
-? \<sep\>
-? \<os\>
+?/import
+? \<logging\>
+?/downl
+?/logg
+? '
+?/fac
+?/Fact
+? \<_Factory\>
+? \<gettype\>
+?/error(Error importing
+?/__im
+? \<_module_prefix\>
+? \<import_module\>
+?/dns_name
+?/imp
+?/rdataset
+? \<dns_rdataset\>
+? \<node\>
+?/dns_e1
+? \<option_from_wire\>
+? \<from_text\>
+? \<text_rdatas\>
+?/render
+? \<find_rrset\>
+?/class An
+? \<from_wire\>
+?/from_w
+?/def ud
+?/tcp
+?/udp
+?/deb
+?/pdb
+?/wait_for_w
+?/_compu
+? \<dns_ipv4\>
+?/Answer
+?/query
+?/dns_message.
+?/make_
+? \<NoAnswer\>
+? \<Answer\>
+?/ignorecase
+? \<address\>
+?/get_ip
+?/generic
+? \<exiv2\>
+? \<import\>
+? dns\.\(\w\+\)
+?/import dns\.\(\w\+\)
+?/dns_resolver
+?/dns\.resolver
+?/resolver
+?/\(from . import \(\w\+\)\)
+?/import pytomo\.\(\w\+\)
+?/import pytomo\.\([a-z\.]\+\) as \w*
+?/import pytomo\.[a-z\.]\+ as \w*
+?/import pytomo\.[a-z\.]\+
+?/import pytomo\.\[a-z\]
+?/import pytomo\.\[d\]
+?/import pytomo\.\[\w\]
+?/import pytomo\.\[\w\]\+
+?/import pytomo\.\([\w\|\.]\+\) as \w*
+?/import pytomo\.\(\w\|.\) as \w*
+?/import pytomo\.\(\w\+\|.\) as \w*
+?/import pytomo\.\(\w\+\) as \w*
 ? \<PACKAGE_DIR\>
+? \<path\>
+?/while da
+??extra_
+?/'\.'
+?/'.'
+?/core.Parse
+?/core.
+?/                except (parse_error, core.ParseError):
+?/                except (parse_error, core.ParseError):
+?/parse_
+?/configure
+?/confi
+? \<get_error\>
+?/del
+? \<signal\>
+??signa
+? \<delete\>
+?/os
+?/osA
+? \<meta_file\>
+? \<support_signal\>
+?/get_e
+?/MAX
+??down
+? \<MAX_NB_TRIES_ENCODING\>
+?/Exception
+? \<pos\>
+? \<rpos\>
+?/parse 
+?/get
+?/c-p
+?/c-P
+?/
+?/media_at
+?/udta
+? \<struct\>
+?/parse
+?/error
+?/core
+?/trying a
+? \<configure_log_file\>
+?/configur
+?/repl
+?/create_from_file
+??^class 
+??class
+?/
+?/            meta_file.close()
+?/mp3
+??mkv
+?/http
+? \<tempfile\>
+?/temp
+? \<uname\>
+?/_do
+??est
+? \<log_provider\>
+? \<get_provider\>
+?/raw
+?/usag
+? \<encoding_rate\>
+?/encodin
+? \<log_ip_address\>
+?/ip ad
+? \<urllib2\>
+? \<opener\>
+? \<get_all_links\>
+?/created co
+? =None
+? \<user\>
+?/timeout
+?/system
+?/SYST
+?/darwi
+? \<compute_encoding_rate\>
+? \<max_instant_thp\>
+?/\V__in
+?/max_in
+?/prox
+? \<urllib\>
+?/urllib
+?/then
+? current_system
+? \<platform\>
+? \<configure_ping_options\>
+?/do
+?/gK
+?/marks
+?/node
+? \<timezone\>
+?/gethostname
+??check_
+? \<check_out_files\>
+? \<gethostname\>
+?/sock
+?/strftime
+?/autocmd BufEnter
+?/ge
+? 
+?/tzt
+? =
+? \*
+?/plat
+?/kaa
+?/games
+? \<MEDIA_DISC\>
+?/disc
+? \<envvars\>
+?/str_to_unicode
+?/str2
+? \<kaa\>
+?/_parse_locale
+?/_parse
+?/uuu
+??#
+? \<user_table\>
+?/md5
+??md
+?/conver
+? \<os\>
+?/data
+?/warn
+? \<_table_name\>
+?/datab
+? \<logger_db\>
+?/commi
+?/commit
+?/with
+?/withgg
+?/insert
+? \<db_file\>
+? \<data_base\>
+?/connect
+? \<Provider\>
+? \<keywords\>
+?/maxpe
+?/\*\*
+?/**
+??_
+? \t
+?/Yout
+??`_
+??_\`
+??_`
+? \<licence\>
+? \<reduce\>
+? \<accumulated_buffer\>
+? \<byte_counter\>
+? \<instant_thp\>
+??data_len
+? \<report_progress\>
+?/dat
+? \<_do_download\>
+?/popular_l
+?  = 
+? \<Incorrect\>
+?/print
+??wri
+??bin
+?/start 
+?/propa
+?/level
+? \(\w\+\): '\w\+'
+?/\w\+: '\w\+'
+? logging.
+? \<parser\>
+? \<complete_yt_dl\>
+?/\s\+|
+?/\s
+?/\s+|
+? \<trunk_url\>
+? \<get_links\>
+?/assert
+?/Rdata
+? \(\w\+\):
+?/\w\+:
+?  =
+? \<USE_PACKAGE_DIR\>
+?/url
+? \<urlsplit\>
+? \<lib_dns\>
+?/use_p
+?/hom
+?/expand
+?/strip
+?/music
+? \<sep\>
 ??slot
 ? \<exception\>
 ? \<plot_title\>
@@ -333,12 +583,9 @@ $
 ? \<to_stderr\>
 ? \<_screen_file\>
 ?/parseerror
-?/core
-? \<meta_file\>
 ? \<get_data_duration\>
 ? \<report_video_webpage_download\>
 ? \<trouble\>
-? \<_do_download\>
 ?/report_pro
 ? \<_real_extract\>
 ?/\V\<download(
@@ -352,25 +599,19 @@ $
 ??input_li
 ? \<LOG\>
 ?/complete
-?/expand
 ? \<input_links\>
 ?/url_fil
 ?/check
 ?/use_pa
-?/print
 ? \<use_parent\>
 ?/chec
 ?/url_file_in
-?/url
 ? \<log_file\>
 ? \<config_pytomo\>
-? \<lib_dns\>
 ? \<lib_cache_url\>
 ? config_pytomo
-? \<check_out_files\>
 ??timestamp
 ??'w'
-?/with
 ? \<DATABASE_TIMESTAMP\>
 ? \<with\>
 ? \<WARN\>
@@ -378,253 +619,12 @@ $
 ? \<timestamp\>
 ?/result_dir
 ?/filter
-? \<string\>
-? \<strftime\>
-? \<time\>
-? \<datetime\>
-?/timest
-? \<RESULT_FILE\>
-? \<py_modules\>
-?/runner
-? \<DATABASE_DIR\>
-?/dir
-?/sep
-?/metadata.cre
-?/kaa\.
-?/kaa
-?/import
-? \<core\>
-? \<kaa\>
-? \<strutils\>
-??str
-? \<handler\>
-?/parse
-??download(
-? \<argv\>
-? \<_finalize\>
-?/parse(
-? \<create\>
-?/screen_file
-?/singleton
-? \<utils\>
-?/>>>
-???
-? \?
-?/nb_
-? \<NB_PING_VALUES\>
-? \<url_file_in\>
-?/table
-?/throup
-?/throu
-?/exce
-??skip
-??skipp
-? \<sys\>
-?/pytomo_db
-?/pytom
-?/Data
-?/todo
-?/_T
-?/__
-? \<_TableName\>
-?/fetch
-?/ip_add
-? \<logger_db\>
-?/log_f
-?/('\(\w\| \)\+', \(\(\w\|\.\)\+\)),
-?/('\(\w\| \)\+', \(\(\w\|\.\)\+\)
-?/('\(\w\| \)\+', \(\(\w\| \)\+\)
-?/('\(\w\| \)\+
-?/\(\w\| \)\+
-? \<search-pattern\>
-?/\[\w\|:\]\+
-?/[\w\|:\]\+
-?/('\[ \w\]\+', \(\w\+\)),
-?/('[ \w]\+', \(\w\+\)),
-?/('\(\w\| \)\+', \(\w\+\)),
-?/('\w\+', \(\w\+\)),
-??down
-?/config_p
-? \<PytomoDatabase\>
-? \.$
-? '
-??FileDownloader
-?/LOG.error(
-?/error(
-?/_do_do
-? \<UnavailableVideoError\>
-??Content
-? \<start_buffered_bytes\>
-? \<after\>
-? \<compute_interruptions\>
-??interr
-? \<file_downloader\>
-? \<data_duration\>
-? \<data_block_len\>
-? \<current_time\>
-?/state
-?/playback_duration
-? \<current_buffer\>
-? \<buffered_duration\>
-? \<byte_counter\>
-??buffering_d
-??buffered
-? \<video_info\>
-??proxy
-? \<get_video_info\>
-?/socket
-?/Proxy
-? \<establish_connection\>
-? \<request\>
-? \<basic_request\>
-? \<urllib2\>
-? \<urllib\>
-? \<ip_addresses\>
-?/ip
-?/not va
-? \<_num_downloads\>
-? \<_download_retcode\>
-? \<_pps\>
-? \<_ies\>
-??class F
-? \<error\>
-? \<data_len\>
-? \<e\>
-?/LOG
-? \<get_all_links\>
-? \<logging\>
-??get_yo
-? \<url_map\>
-??get_youtu
-??get_youtuu
-?/retcode
-??DownloadError
-? \<formatter\>
-?/handler = uuuu
-? \<pprint\>
-?/\\nEn
-?/\nEn
-??ppr
-?/pp
-??ppri
-? \<total_time\>
-? =
-?/get_d
-? \<log\>
-??encodi
-?/stream
-??round
-?/debu
-? \<dump_url_list\>
-??clas
-? \<InfoExtractor\>
-??entering
-? \<data\>
-?/[]
-? \<get_download_stats\>
-? \<complete_yt_dl\>
-? \<log_stream\>
-?/quiet
-? \<urlparse\>
-? \<itertools\>
-?/pass
-?/unpack
-??encodin
-? \<before\>
-? \<download_time\>
-? \<instant_thp\>
-?/report_pr
-? \<_VALID_URL\>
-? time
-?/_do_dow
-?/STATE
-?/assert
-?/.g+-éguuauau
-? \<interruptions\>
-??cla
-? \<self\>
-? \<process_info\>
-??\<do_download\>
-?/cl
-??establ
-?/config
-? \<PLAYING_STATE\>
-??_do_
-?/sch
-?/_do_d
-?/hh
-?/pronou
-?/applic
-? }
-?/barpl
-?/figur
-?/tabl
-? \<figure\>
-? \<subfigure\>
-?/figure}
-?/expected
-? \<textwidth\>
-??domi
-??lesson
-??meds
-? \<caption\>
-? \<column\>
-?/figure
-?/questions
-?/table}
-?/that
-?/mont
-?/why
-?/pliss
-? 
-?/title
-?/earth
-?/a+
-??main
-?/parser.par
-?/parser.pa
-??__m
-?/except
-??_downloader
-? \<force\>
-?/error
-? \<return\>
-?/differ
-?/random
-? \<max_rounds\>
-? \<DNS\>
-? \<YoutubeIE\>
-??37
-?/_real
-??real_ex
-?/def download
-?/extruct
-?/download
-? \<url\>
-? \<video_real_url\>
-? \<geturl\>
-?/debug
-??"pass"
-? \<max_per_url\>
-? \<Module\>
-? \<get_links\>
-? \<get_youtube_links\>
-??select
-?/choice
-??found
-??join
-?/append
-?/  
-? \<max_links\>
-? \<get_youtube_cache_url\>
-? \<DEBUG\>
-? \<generate_links\>
 
 # Historique expression (chronologie décroissante) :
 
 # Historique ligne de saisie (chronologie décroissante) :
-@\
 @=
+@\
 @\.
 @.
 @;
@@ -670,62 +670,43 @@ $
 
 # Registres :
 "0	LINE	0
-	import pytomo.config_pytomo as config_pytomo
-	import pytomo.lib_cache_url as lib_cache_url
-	import pytomo.lib_dns as lib_dns
-	import pytomo.lib_ping as lib_ping
-	import pytomo.lib_youtube_download as lib_youtube_download
-	import pytomo.lib_database as lib_database
-	import pytomo.lib_youtube_api as lib_youtube_api
-	
-""1	LINE	0
-	print PACKAGE_SOURCES
+	alias gitst='git status'
+"1	LINE	0
+	    from .image import *
 "2	LINE	0
-	print path
+	if False:
+	    # to trick the module finder of pyinstaller
+	    from .video import *
+	    from .audio import *
+	    from .image import *
+	    from .misc import *
+	
 "3	LINE	0
-	#import pytomo.config_pytomo as config_pytomo
-	#import pytomo.lib_cache_url as lib_cache_url
-	#import pytomo.lib_dns as lib_dns
-	#import pytomo.lib_ping as lib_ping
-	#import pytomo.lib_youtube_download as lib_youtube_download
-	#import pytomo.lib_database as lib_database
-	#import pytomo.lib_youtube_api as lib_youtube_api
-	
+	    from .misc import *
 "4	LINE	0
-	    #path.append(PACKAGE_DIR)
+	
+	__all__ = ['Parser']
 "5	LINE	0
-	#if PACKAGE_DIR not in path:
+	
+	__all__ = ['Parser']
 "6	LINE	0
-	print PACKAGE_DIR
+	
+	__all__ = ['Parser']
 "7	LINE	0
-	print 'iciiii'
+	
+	__all__ = ['Parser']
 "8	LINE	0
-	#import pytomo.config_pytomo as config_pytomo
-	#import pytomo.lib_cache_url as lib_cache_url
-	#import pytomo.lib_dns as lib_dns
-	#import pytomo.lib_ping as lib_ping
-	#import pytomo.lib_youtube_download as lib_youtube_download
-	#import pytomo.lib_database as lib_database
-	#import pytomo.lib_youtube_api as lib_youtube_api
 	
+	__all__ = ['Parser']
 "9	LINE	0
-	print 'iciiii'
-	from os.path import abspath, dirname, sep
-	from sys import path
-	# assumes the standard distribution paths
-	PACKAGE_DIR = abspath(path[0])
-	print PACKAGE_DIR
-	#if PACKAGE_DIR not in path:
-	    #path.append(PACKAGE_DIR)
 	
-"a	CHAR	0
-	wdf.wDj0
+	__all__ = ['Parser']
 "b	CHAR	0
 	apuuwhr($"ap
-"c	CHAR	0
-	0i#uu
+"c	LINE	0
+	                              % config_pytomo.MAX_ROUNDS),
 "d	CHAR	0
-	Desequenced events over total number of packets per flow
+	 (default %d)
 "e	LINE	0
 	            ' & '.join(['ratio nb flows 1MB/all']
 	                        + concat(*[['NA' if nb_flows[k + a] == 0 else
@@ -758,7 +739,7 @@ $
 "r	CHAR	0
 	Ratio of retransmitted packets per flow
 "s	CHAR	0
-	video streaming site 
+	media_at
 "t	LINE	0
 	  \begin{threeparttable}
 "u	CHAR	0
@@ -770,171 +751,1833 @@ $
 "z	LINE	0
 	File:/home/louis/streaming/pytomo/dns/dns.py
 	
-"-	CHAR	0
-	DIR
+""-	CHAR	0
+	t
 
 # Marques dans le fichier :
-'0  13  0  ~/streaming/pytomo/Pytomo/bin/pytomo
-'1  17  0  /tmp/Pytomo-0.1.0/bin/pytomo
-'2  14  0  ~/streaming/pytomo/Pytomo/setup.py
-'3  3  32  ~/streaming/pytomo/Pytomo/MANIFEST.in
-'4  334  0  ~/config/matplotlibrc
-'5  673  39  ~/workspace/spydump/tools/filter_streaming.py
-'6  46  0  ~/play_soceda/android/gps_polling/sl4a_gps.py
-'7  37  0  ~/play_soceda/android/twitter-sl4a/sl4a_twitt.py
-'8  79  0  ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
-'9  35  63  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+'0  161  0  ~/.subversion/servers
+'1  195  7  ~/config/shell_aliases_functions
+'2  40  15  ~/streaming/pytomo/Pytomo/setup.py
+'3  49  28  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+'4  51  46  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+'5  51  32  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/factory.py
+'6  36  7  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/core.py
+'7  36  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/m4a.py
+'8  63  22  ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
+'9  377  8  ~/streaming/pytomo/Pytomo/pytomo/dns/rdata.py
 
 # Liste de sauts (le plus récent en premier) :
--'  13  0  ~/streaming/pytomo/Pytomo/bin/pytomo
--'  15  0  ~/streaming/pytomo/Pytomo/bin/pytomo
--'  17  0  /tmp/Pytomo-0.1.0/bin/pytomo
--'  28  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  87  18  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  15  40  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  108  18  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  102  24  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  100  27  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  95  27  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  90  16  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  88  15  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  85  19  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  11  8  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  83  19  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  19  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  18  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  20  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  14  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  15  0  /tmp/Pytomo-0.1.0/bin/pytomo
--'  14  0  /tmp/Pytomo-0.1.0/bin/pytomo
--'  26  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  27  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  23  13  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  5  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
--'  6  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
--'  8  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
--'  1  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  1  0  /tmp/Pytomo-0.1.0/bin/pytomo
--'  14  0  ~/streaming/pytomo/Pytomo/setup.py
--'  1  12  ~/streaming/pytomo/Pytomo/-MiniBufExplorer-
--'  2  0  ~/streaming/pytomo/Pytomo/-MiniBufExplorer-
--'  3  0  ~/streaming/pytomo/Pytomo/MANIFEST.in
--'  10  6  ~/streaming/pytomo/Pytomo/setup.py
--'  760  51  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
--'  566  16  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
--'  124  18  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
--'  122  22  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
--'  121  30  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
--'  46  6  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
--'  37  12  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
--'  12  26  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
--'  35  18  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
--'  6  0  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
--'  7  0  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
--'  25  0  ~/streaming/pytomo/Pytomo/pytomo/dns/rdatatype.py
--'  1  0  ~/streaming/pytomo/Pytomo/pytomo/dns/rdata.py
--'  175  0  ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
--'  58  0  ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
--'  22  0  ~/streaming/pytomo/Pytomo/setup.py
--'  26  0  ~/streaming/pytomo/Pytomo/MANIFEST
--'  79  0  ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
--'  13  4  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
--'  88  0  ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
--'  43  23  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
--'  42  11  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
--'  39  17  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
--'  1  0  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
--'  334  0  ~/config/matplotlibrc
--'  1  16  ~/workspace/spydump/tools/-MiniBufExplorer-
--'  2  0  ~/workspace/spydump/tools/-MiniBufExplorer-
--'  673  4  ~/workspace/spydump/tools/filter_streaming.py
--'  139  0  ~/config/matplotlibrc
--'  136  0  ~/config/matplotlibrc
--'  1017  12  ~/workspace/spydump/tools/filter_streaming.py
--'  1019  25  ~/workspace/spydump/tools/filter_streaming.py
--'  631  4  ~/workspace/spydump/tools/filter_streaming.py
--'  640  38  ~/workspace/spydump/tools/filter_streaming.py
--'  651  38  ~/workspace/spydump/tools/filter_streaming.py
--'  405  6  ~/config/vim/vimrc
--'  4  0  ~/config/vim/vimrc
--'  17  30  ~/config/vimrc
--'  17  1  ~/Confs/ITC/report.txt
--'  1  0  ~/Confs/ITC/report.txt
--'  17  0  /tmp/Pytomo-0.1.0/bin/pytomo
--'  28  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  87  18  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  15  40  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  108  18  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  102  24  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  100  27  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  95  27  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  90  16  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  88  15  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  85  19  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  11  8  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  83  19  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  19  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  18  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  20  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  14  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  15  0  /tmp/Pytomo-0.1.0/bin/pytomo
--'  14  0  /tmp/Pytomo-0.1.0/bin/pytomo
--'  26  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  27  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  23  13  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
--'  5  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
--'  6  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
--'  8  7  /tmp/Pytomo-0.1.0/pytomo/lib_dns.py
--'  1  0  /tmp/Pytomo-0.1.0/pytomo/start_pytomo.py
+-'  161  0  ~/.subversion/servers
+-'  160  0  ~/.subversion/servers
+-'  195  7  ~/config/shell_aliases_functions
+-'  194  0  ~/config/shell_aliases_functions
+-'  40  15  ~/streaming/pytomo/Pytomo/setup.py
+-'  49  28  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+-'  90  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+-'  51  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+-'  49  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/factory.py
+-'  154  14  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/factory.py
+-'  50  15  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/factory.py
+-'  35  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+-'  51  32  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/factory.py
+-'  42  7  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/factory.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/factory.py
+-'  872  24  ~/streaming/pytomo/Pytomo/pytomo/lib_youtube_download.py
+-'  29  0  ~/streaming/pytomo/Pytomo/pytomo/lib_youtube_download.py
+-'  57  11  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  46  12  ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+-'  165  0  ~/streaming/pytomo/Pytomo/pytomo/lib_database.py
+-'  72  0  ~/streaming/pytomo/Pytomo/pytomo/lib_database.py
+-'  16  0  ~/streaming/pytomo/Pytomo/pytomo/lib_database.py
+-'  183  20  ~/streaming/pytomo/Pytomo/pytomo/lib_cache_url.py
+-'  36  13  ~/streaming/pytomo/Pytomo/pytomo/lib_cache_url.py
+-'  337  0  ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
+-'  41  0  ~/streaming/pytomo/Pytomo/pytomo/dns/rdata.py
+-'  377  8  ~/streaming/pytomo/Pytomo/pytomo/dns/rdata.py
+-'  37  0  ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/dns/rdata
+-'  96  0  ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
+-'  63  0  ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
+-'  338  50  ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
+-'  283  59  ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
+-'  220  36  ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
+-'  36  0  ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
+-'  36  7  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/core.py
+-'  69  6  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/core.py
+-'  68  6  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/core.py
+-'  42  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/core.py
+-'  36  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/m4a.py
+-'  34  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/m4a.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/m4a.py
+-'  33  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/vcd.py
+-'  31  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/vcd.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/vcd.py
+-'  33  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/riff.py
+-'  36  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/riff.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/riff.py
+-'  33  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/real.py
+-'  31  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/real.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/real.py
+-'  33  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/ogm.py
+-'  31  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/ogm.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/ogm.py
+-'  33  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/mpeg.py
+-'  31  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/mpeg.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/mpeg.py
+-'  46  32  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/mp4.py
+-'  32  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/mkv.py
+-'  30  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/mkv.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/mkv.py
+-'  37  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/flv.py
+-'  33  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/flv.py
+-'  31  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/flv.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/flv.py
+-'  35  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/asf.py
+-'  39  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/asf.py
+-'  43  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/asf.py
+-'  45  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/asf.py
+-'  31  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/misc/xmlfile.py
+-'  34  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/misc/xmlfile.py
+-'  31  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/misc/directory.py
+-'  34  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/misc/directory.py
+-'  32  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/tiff.py
+-'  39  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/tiff.py
+-'  40  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/tiff.py
+-'  32  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/png.py
+-'  35  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/png.py
+-'  36  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/png.py
+-'  40  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/png.py
+-'  42  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/png.py
+-'  32  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/jpg.py
+-'  41  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/jpg.py
+-'  43  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/jpg.py
+-'  3  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/__init__.py
+-'  33  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/gif.py
+-'  31  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/gif.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/gif.py
+-'  38  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/generic.py
+-'  36  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/generic.py
+-'  1  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/generic.py
+-'  89  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/generic.py
+-'  82  8  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/generic.py
+-'  36  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/core.py
+-'  39  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/core.py
+-'  34  6  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/bmp.py
+-'  45  46  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+-'  49  28  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+-'  90  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+-'  51  0  ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
 
 # Historique des marques dans les fichiers (les plus récentes en premier) :
 
-> ~/streaming/pytomo/Pytomo/bin/pytomo
-	"	13	0
-	^	13	18
-	.	13	0
-	+	15	22
-	+	13	25
-	+	1	1
-	+	9	12
-	+	5	9
-	+	9	28
-	+	5	13
-	+	6	19
-	+	9	22
-	+	5	40
-	+	9	58
-	+	8	0
-	+	9	67
-	+	12	0
-	+	9	69
-	+	8	40
-	+	12	22
-	+	12	15
-	+	8	0
-	+	9	37
-	+	5	35
-	+	12	0
-	+	2	40
-	+	3	2
-	+	9	6
-	+	12	18
-	+	10	0
-	+	12	0
-	+	15	25
-	+	13	20
-	+	16	0
-	+	13	0
+> ~/.subversion/servers
+	"	161	0
+	.	161	0
+	+	161	0
+	+	160	0
+	+	161	0
+	+	160	0
+	+	161	0
+	+	160	0
+	+	161	0
+	+	160	0
+	+	161	0
+	+	159	0
+	+	160	0
+	+	159	0
+	+	161	0
 
-> ~/Confs/ITC/report.txt
-	"	17	1
+> ~/config/shell_aliases_functions
+	"	195	7
+	^	194	24
+	.	195	7
+	+	135	8
+	+	133	9
+	+	134	25
+	+	74	71
+	+	205	49
+	+	104	0
+	+	28	14
+	+	126	43
+	+	115	35
+	+	111	55
+	+	115	39
+	+	210	29
+	+	210	0
+	+	208	46
+	+	210	0
+	+	209	27
+	+	208	38
+	+	209	31
+	+	208	44
+	+	137	31
+	+	138	29
+	+	139	36
+	+	111	0
+	+	116	77
+	+	116	91
+	+	117	0
+	+	116	63
+	+	116	107
+	+	117	0
+	+	208	43
+	+	211	0
+	+	212	0
+	+	76	54
+	+	112	15
+	+	112	41
+	+	112	0
+	+	112	25
+	+	112	22
+	+	114	52
+	+	113	35
+	+	114	0
+	+	115	31
+	+	30	17
+	+	193	23
+	+	5	0
+	+	78	19
+	+	79	0
+	+	79	95
+	+	79	71
+	+	80	0
+	+	79	78
+	+	79	78
+	+	79	129
+	+	80	0
+	+	79	152
+	+	194	23
+	+	195	7
 
-> ~/config/vimrc
-	"	17	30
+> ~/streaming/pytomo/Pytomo/setup.py
+	"	40	15
+	^	40	16
+	.	40	15
+	+	70	16
+	+	70	18
+	+	70	4
+	+	70	18
+	+	28	0
+	+	39	0
+	+	27	0
+	+	28	20
+	+	29	30
+	+	73	14
+	+	70	0
+	+	27	0
+	+	28	0
+	+	27	38
+	+	29	0
+	+	27	0
+	+	73	0
+	+	73	0
+	+	73	0
+	+	29	27
+	+	29	26
+	+	34	0
+	+	29	73
+	+	34	39
+	+	39	0
+	+	34	70
+	+	34	89
+	+	38	3
+	+	29	0
+	+	39	0
+	+	38	0
+	+	34	37
+	+	34	0
+	+	35	0
+	+	34	37
+	+	35	0
+	+	33	0
+	+	29	102
+	+	32	33
+	+	29	87
+	+	34	21
+	+	29	26
+	+	32	0
+	+	29	0
+	+	31	0
+	+	37	5
+	+	37	28
+	+	35	50
+	+	29	66
+	+	30	0
+	+	29	26
+	+	32	12
+	+	31	0
+	+	56	45
+	+	40	11
+	+	42	11
+	+	45	13
+	+	47	20
+	+	48	15
+	+	49	21
+	+	50	12
+	+	58	28
+	+	54	61
+	+	56	0
+	+	53	56
+	+	54	74
+	+	40	15
+	+	36	63
+	+	36	73
+	+	58	42
+	+	70	0
+	+	71	0
+	+	59	0
+	+	60	51
+	+	60	33
+	+	70	0
+	+	60	54
+	+	69	0
+	+	61	44
+	+	62	59
+	+	63	56
+	+	65	1
+	+	65	1
+	+	65	58
+	+	65	51
+	+	63	0
+	+	64	47
+	+	63	0
+	+	65	0
+	+	66	0
+	+	67	57
+	+	68	39
+	+	69	0
+	+	60	0
+	+	40	15
+	+	20	0
+	+	19	1
+	+	20	0
+	+	25	0
+	+	40	15
+	z	40	15
 
-> ~/config/-MiniBufExplorer-
-	"	1	23
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
+	"	49	28
+	^	49	29
+	.	49	28
+	+	36	0
+	+	35	63
+	+	72	0
+	+	73	0
+	+	74	0
+	+	75	0
+	+	76	0
+	+	77	0
+	+	93	0
+	+	94	0
+	+	33	5
+	+	34	5
+	+	38	5
+	+	35	28
+	+	59	38
+	+	62	29
+	+	62	0
+	+	35	31
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	44	0
+	+	46	47
+	+	47	25
+	+	46	25
+	+	48	0
+	+	49	28
+	z	49	28
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/factory.py
+	"	49	0
+	^	51	33
+	.	50	0
+	+	291	57
+	+	291	57
+	+	291	57
+	+	291	57
+	+	291	0
+	+	170	0
+	+	170	0
+	+	170	20
+	+	171	55
+	+	173	0
+	+	171	24
+	+	172	0
+	+	170	0
+	+	171	0
+	+	172	0
+	+	171	0
+	+	172	0
+	+	172	0
+	+	171	0
+	+	172	0
+	+	171	39
+	+	172	46
+	+	171	33
+	+	173	32
+	+	174	72
+	+	174	38
+	+	174	0
+	+	206	0
+	+	204	66
+	+	205	0
+	+	225	70
+	+	225	33
+	+	249	75
+	+	225	0
+	+	143	0
+	+	170	0
+	+	176	0
+	+	172	22
+	+	175	22
+	+	172	0
+	+	171	39
+	+	171	69
+	+	171	27
+	+	171	72
+	+	201	50
+	+	222	54
+	+	201	52
+	+	222	56
+	+	246	48
+	+	283	52
+	+	306	23
+	+	327	0
+	+	344	0
+	+	326	0
+	+	346	48
+	+	361	19
+	+	171	0
+	+	171	0
+	+	174	0
+	+	174	51
+	+	170	0
+	+	171	42
+	+	172	41
+	+	173	26
+	+	174	0
+	+	172	40
+	+	166	0
+	+	167	0
+	+	170	0
+	+	175	33
+	+	174	35
+	+	172	16
+	+	142	17
+	+	174	0
+	+	172	38
+	+	200	34
+	+	221	0
+	+	222	0
+	+	283	0
+	+	282	0
+	+	306	0
+	+	305	0
+	+	346	0
+	+	345	0
+	+	361	0
+	+	360	0
+	+	246	0
+	+	247	0
+	+	246	0
+	+	245	0
+	+	156	29
+	+	46	6
+	+	32	0
+	+	33	0
+	+	34	0
+	+	156	27
+	+	173	27
+	+	51	32
+	+	49	0
+	+	50	0
+	z	51	32
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/-MiniBufExplorer-
+	"	1	0
 	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
+	"	337	0
+	^	337	27
+	.	337	0
+	+	375	10
+	+	375	7
+	+	375	53
+	+	375	11
+	+	375	53
+	+	376	0
+	+	375	11
+	+	375	53
+	+	371	3
+	+	372	21
+	+	376	0
+	+	375	7
+	+	372	79
+	+	373	29
+	+	375	20
+	+	386	37
+	+	378	29
+	+	380	76
+	+	381	41
+	+	378	39
+	+	379	75
+	+	380	0
+	+	381	41
+	+	380	0
+	+	378	30
+	+	379	75
+	+	381	52
+	+	384	0
+	+	381	62
+	+	383	0
+	+	381	66
+	+	382	36
+	+	381	64
+	+	383	0
+	+	381	12
+	+	382	0
+	+	381	15
+	+	149	0
+	+	153	0
+	+	193	0
+	+	203	0
+	+	208	0
+	+	209	0
+	+	208	16
+	+	339	21
+	+	347	21
+	+	432	25
+	+	433	29
+	+	445	0
+	+	312	0
+	+	315	0
+	+	311	0
+	+	377	21
+	+	377	0
+	+	377	21
+	+	378	0
+	+	377	68
+	+	376	14
+	+	305	0
+	+	360	0
+	+	361	56
+	+	362	48
+	+	364	72
+	+	364	67
+	+	365	0
+	+	364	74
+	+	363	0
+	+	361	53
+	+	360	54
+	+	386	49
+	+	387	0
+	+	363	46
+	+	364	75
+	+	364	44
+	+	365	0
+	+	363	0
+	+	42	0
+	+	35	0
+	+	42	0
+	+	5	0
+	+	6	0
+	+	460	25
+	+	460	0
+	+	460	0
+	+	6	0
+	+	8	0
+	+	6	0
+	+	458	0
+	+	459	0
+	+	458	25
+	+	36	3
+	+	36	0
+	+	36	0
+	+	36	0
+	+	36	0
+	+	36	0
+	+	36	22
+	+	36	0
+	+	338	50
+	+	337	0
+	c	182	21
+	z	337	4
+
+> ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
+	"	96	0
+	^	63	25
+	.	63	22
+	+	40	13
+	+	24	10
+	+	23	0
+	+	24	0
+	+	23	0
+	+	3	33
+	+	23	0
+	+	24	0
+	+	23	0
+	+	12	0
+	+	11	0
+	+	8	1
+	+	10	13
+	+	62	41
+	+	61	0
+	+	36	0
+	+	50	63
+	+	50	18
+	+	50	58
+	+	28	16
+	+	24	0
+	+	23	0
+	+	63	23
+	+	23	0
+	+	23	0
+	+	68	15
+	+	91	17
+	+	11	0
+	+	28	16
+	+	40	14
+	+	72	16
+	+	48	0
+	+	28	17
+	+	32	0
+	+	7	0
+	+	8	0
+	+	103	23
+	+	104	21
+	+	105	27
+	+	106	23
+	+	107	29
+	+	103	0
+	+	104	0
+	+	96	0
+	+	103	0
+	+	72	19
+	+	71	25
+	+	52	0
+	+	55	0
+	+	92	21
+	+	85	12
+	+	86	9
+	+	55	0
+	+	63	24
+	+	30	26
+	+	31	19
+	+	95	0
+	+	94	0
+	+	95	0
+	+	77	24
+	+	42	20
+	+	72	0
+	+	42	21
+	+	40	14
+	+	42	0
+	+	63	22
+	z	63	22
+
+> ~/streaming/pytomo/Pytomo/pytomo/-MiniBufExplorer-
+	"	1	148
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
+	"	37	0
+	.	21	0
+	+	32	0
+	+	23	0
+	+	23	0
+	+	763	0
+	+	759	26
+	+	32	0
+	+	30	29
+	+	20	0
+	+	21	0
+	z	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdata
+	"	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdata.py
+	"	41	0
+	^	41	21
+	.	41	20
+	+	38	0
+	+	38	17
+	+	38	21
+	+	38	20
+	+	362	45
+	+	38	27
+	+	38	26
+	+	38	0
+	+	38	0
+	+	362	31
+	+	37	0
+	+	38	21
+	+	365	37
+	+	38	0
+	+	372	34
+	+	367	0
+	+	372	0
+	+	385	29
+	+	37	0
+	+	35	8
+	+	37	0
+	+	38	26
+	+	38	51
+	+	38	57
+	+	362	0
+	+	365	0
+	+	385	0
+	+	36	0
+	+	37	31
+	+	38	32
+	+	38	0
+	+	30	0
+	+	35	0
+	+	30	0
+	+	37	12
+	+	38	12
+	+	37	9
+	+	38	9
+	+	35	0
+	+	37	31
+	+	38	0
+	+	28	0
+	+	27	0
+	+	28	0
+	+	195	8
+	+	365	0
+	+	360	0
+	+	365	0
+	+	377	0
+	+	40	28
+	+	41	20
+	z	41	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_cache_url.py
+	"	183	20
+	^	40	7
+	.	40	0
+	+	40	31
+	+	110	78
+	+	111	61
+	+	111	58
+	+	113	0
+	+	111	68
+	+	87	30
+	+	88	72
+	+	89	37
+	+	90	18
+	+	122	0
+	+	90	16
+	+	112	16
+	+	73	59
+	+	141	66
+	+	72	7
+	+	73	0
+	+	79	16
+	+	75	18
+	+	35	12
+	+	74	0
+	+	76	77
+	+	76	79
+	+	77	58
+	+	76	40
+	+	77	53
+	+	79	0
+	+	77	59
+	+	78	35
+	+	77	0
+	+	110	26
+	+	40	0
+	z	40	27
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_database.py
+	"	165	0
+	^	16	27
+	.	16	26
+	+	49	71
+	+	91	61
+	+	87	56
+	+	88	25
+	+	90	73
+	+	91	50
+	+	92	23
+	+	94	0
+	+	92	23
+	+	86	0
+	+	90	73
+	+	93	0
+	+	92	40
+	+	62	77
+	+	61	0
+	+	101	0
+	+	118	0
+	+	112	0
+	+	114	42
+	+	113	15
+	+	114	15
+	+	113	16
+	+	114	0
+	+	96	0
+	+	96	0
+	+	96	0
+	+	96	23
+	+	113	0
+	+	113	22
+	+	63	0
+	+	63	0
+	+	63	23
+	+	95	31
+	+	95	0
+	+	63	0
+	+	112	0
+	+	136	0
+	+	118	0
+	+	118	0
+	+	96	0
+	+	100	0
+	+	99	0
+	+	100	0
+	+	96	0
+	+	101	0
+	+	113	0
+	+	118	0
+	+	136	0
+	+	63	0
+	+	64	38
+	+	65	13
+	+	68	30
+	+	69	73
+	+	70	67
+	+	69	40
+	+	70	0
+	+	68	17
+	+	65	67
+	+	64	41
+	+	68	23
+	+	68	17
+	+	53	17
+	+	68	0
+	+	69	0
+	+	71	26
+	+	67	31
+	+	82	17
+	+	81	66
+	+	81	59
+	+	81	65
+	+	104	0
+	+	106	54
+	+	105	66
+	+	107	17
+	+	79	0
+	+	81	0
+	+	125	0
+	+	125	0
+	+	121	0
+	+	124	17
+	+	132	0
+	+	135	17
+	+	14	0
+	+	13	32
+	+	70	57
+	+	70	63
+	+	70	56
+	+	71	0
+	+	70	51
+	+	70	53
+	+	71	0
+	+	70	52
+	+	64	48
+	+	65	70
+	+	65	52
+	+	67	0
+	+	65	68
+	+	66	39
+	+	65	51
+	+	16	26
+	z	16	26
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
+	"	57	11
+	^	6	0
+	.	5	0
+	+	43	0
+	+	51	0
+	+	52	0
+	+	10	0
+	+	9	0
+	+	8	34
+	+	9	36
+	+	26	18
+	+	35	18
+	+	39	18
+	+	15	26
+	+	37	24
+	+	41	24
+	+	8	13
+	+	9	13
+	+	11	31
+	+	21	10
+	+	22	38
+	+	23	36
+	+	5	28
+	+	23	34
+	+	34	43
+	+	50	46
+	+	63	25
+	+	5	19
+	+	64	0
+	+	63	27
+	+	59	23
+	+	55	17
+	+	59	42
+	+	58	0
+	+	63	0
+	+	63	24
+	+	5	0
+	+	61	0
+	+	59	0
+	+	62	0
+	+	59	0
+	+	56	0
+	+	57	0
+	+	11	0
+	+	12	0
+	+	11	0
+	+	12	0
+	+	8	0
+	+	9	17
+	+	8	17
+	+	10	0
+	+	11	0
+	+	11	0
+	+	11	0
+	+	8	40
+	+	9	42
+	+	11	0
+	+	12	0
+	+	51	15
+	+	51	0
+	+	52	62
+	+	52	0
+	+	51	0
+	+	44	0
+	+	49	0
+	+	45	42
+	+	52	0
+	+	46	0
+	+	49	0
+	+	48	20
+	+	50	49
+	+	51	28
+	+	48	23
+	+	5	0
+	+	4	0
+	+	6	0
+	+	5	0
+	z	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_youtube_download.py
+	"	872	24
+	^	866	14
+	.	866	13
+	+	489	0
+	+	489	0
+	+	489	0
+	+	779	0
+	+	488	0
+	+	489	19
+	+	489	0
+	+	489	39
+	+	489	63
+	+	775	36
+	+	779	39
+	+	489	67
+	+	489	79
+	+	489	22
+	+	489	73
+	+	489	0
+	+	489	73
+	+	489	37
+	+	489	47
+	+	489	0
+	+	277	66
+	+	267	16
+	+	268	16
+	+	27	30
+	+	27	11
+	+	32	31
+	+	517	76
+	+	517	105
+	+	469	34
+	+	504	38
+	+	518	0
+	+	504	61
+	+	505	0
+	+	505	75
+	+	504	0
+	+	517	38
+	+	502	26
+	+	503	0
+	+	504	72
+	+	505	0
+	+	517	45
+	+	855	47
+	+	230	0
+	+	517	50
+	+	286	14
+	+	515	68
+	+	516	63
+	+	515	0
+	+	17	0
+	+	376	50
+	+	376	52
+	+	376	73
+	+	377	0
+	+	147	0
+	+	469	0
+	+	488	29
+	+	459	0
+	+	445	0
+	+	440	35
+	+	441	77
+	+	443	20
+	+	443	18
+	+	443	0
+	+	488	54
+	+	652	0
+	+	652	0
+	+	652	0
+	+	659	0
+	+	662	0
+	+	463	0
+	+	475	56
+	+	479	42
+	+	476	12
+	+	475	47
+	+	476	0
+	+	478	13
+	+	489	68
+	+	441	61
+	+	446	51
+	+	447	0
+	+	448	0
+	+	449	55
+	+	459	0
+	+	45	0
+	+	375	0
+	+	376	0
+	+	378	0
+	+	525	32
+	+	24	25
+	+	525	13
+	+	24	25
+	+	475	41
+	+	475	0
+	+	32	26
+	+	27	5
+	+	26	25
+	+	27	0
+	+	919	0
+	+	919	0
+	+	866	13
+	z	866	13
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/core.py
+	"	36	7
+	^	42	7
+	.	42	6
+	+	70	26
+	+	39	6
+	+	41	6
+	+	42	6
+	z	42	6
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/[YankRing]
+	"	9	0
+	.	2	0
+	+	716	0
+	+	716	0
+	+	614	0
+	+	512	0
+	+	410	0
+	+	308	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/mp4.py
+	"	46	32
+	^	46	33
+	.	46	32
+	+	359	0
+	+	357	78
+	+	358	0
+	+	32	0
+	+	34	0
+	+	46	32
+	z	46	32
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/ac3.py
+	"	33	0
+	.	33	0
+	+	31	0
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/adts.py
+	"	35	0
+	.	35	0
+	+	33	0
+	+	35	0
+	z	35	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/flac.py
+	"	33	0
+	.	33	0
+	+	31	0
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/ID3.py
+	"	1	0
+	z	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/mp3.py
+	"	43	5
+	^	43	6
+	.	43	5
+	+	43	0
+	+	46	5
+	+	47	5
+	+	36	0
+	+	32	0
+	+	43	5
+	z	43	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/-MiniBufExplorer-
+	"	1	292
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/ogg.py
+	"	33	0
+	.	33	0
+	+	31	0
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/pcm.py
+	"	33	0
+	.	33	0
+	+	31	0
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/webradio.py
+	"	34	0
+	.	33	0
+	+	31	0
+	+	33	0
+	z	34	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/bmp.py
+	"	34	6
+	.	33	0
+	+	31	0
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/core.py
+	"	36	0
+	^	39	6
+	.	36	0
+	+	39	5
+	+	36	0
+	z	36	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/generic.py
+	"	38	0
+	.	38	0
+	+	44	0
+	+	36	0
+	+	38	0
+	z	38	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/gif.py
+	"	33	0
+	.	33	0
+	+	31	0
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/__init__.py
+	"	3	0
+	^	3	7
+	.	4	0
+	+	1	38
+	+	4	0
+	z	3	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/jpg.py
+	"	32	0
+	.	32	0
+	+	42	0
+	+	43	0
+	+	36	0
+	+	32	0
+	z	32	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/png.py
+	"	32	0
+	^	42	8
+	.	32	0
+	+	42	7
+	+	36	0
+	+	32	0
+	z	32	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/tiff.py
+	"	32	0
+	.	32	0
+	+	40	0
+	+	36	0
+	+	32	0
+	z	32	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/misc/directory.py
+	"	31	0
+	^	41	9
+	.	31	0
+	+	41	7
+	+	44	0
+	+	45	5
+	+	44	7
+	+	41	0
+	+	35	0
+	+	34	0
+	+	34	0
+	+	31	0
+	z	31	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/misc/xmlfile.py
+	"	31	0
+	^	41	14
+	.	31	0
+	+	41	13
+	+	35	0
+	+	34	0
+	+	31	0
+	z	31	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/asf.py
+	"	35	0
+	^	45	20
+	.	35	0
+	+	45	19
+	+	39	0
+	+	35	0
+	z	35	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/flv.py
+	"	37	0
+	.	37	0
+	+	31	0
+	+	33	0
+	+	37	0
+	z	37	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/mkv.py
+	"	32	0
+	.	32	0
+	+	30	0
+	+	32	0
+	z	32	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/mpeg.py
+	"	33	0
+	.	33	0
+	+	31	0
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/ogm.py
+	"	33	0
+	.	33	0
+	+	31	0
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/real.py
+	"	33	0
+	.	33	0
+	+	31	0
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/riff.py
+	"	33	0
+	.	33	0
+	+	31	0
+	+	36	0
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/vcd.py
+	"	33	0
+	.	33	0
+	+	31	0
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/m4a.py
+	"	36	0
+	.	36	0
+	+	34	0
+	+	36	0
+	z	36	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/[YankRing]
+	"	6	0
+	.	2	0
+	+	1838	0
+	+	1736	0
+	+	1634	0
+	+	1532	0
+	+	1430	0
+	+	1328	0
+	+	1226	0
+	+	1124	0
+	+	1022	0
+	+	920	0
+	+	818	0
+	+	716	0
+	+	614	0
+	+	512	0
+	+	410	0
+	+	308	0
+	+	206	0
+	+	104	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/dns/rdata.py
+	"	377	20
+	^	377	21
+	.	377	20
+	+	364	17
+	+	22	16
+	+	24	0
+	+	23	0
+	+	22	16
+	+	23	27
+	+	359	18
+	+	366	37
+	+	365	0
+	+	359	18
+	+	365	42
+	+	366	49
+	+	365	58
+	+	377	20
+	z	377	20
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/dns/rdata.py.old
+	"	21	5
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/dns/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/dns/resolver.py
+	"	31	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/lib_dns.py
+	"	11	0
+	^	11	27
+	.	11	26
+	+	8	17
+	+	9	17
+	+	8	17
+	+	12	0
+	+	11	26
+	z	11	26
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/AFSDB.py
+	"	13	0
+	^	20	12
+	.	20	12
+	+	18	15
+	+	20	12
+	z	13	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/CERT.py
+	"	25	0
+	^	24	7
+	.	24	0
+	+	21	6
+	+	22	6
+	+	23	6
+	+	24	0
+	z	25	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/CNAME.py
+	"	20	0
+	^	18	7
+	.	20	12
+	+	18	15
+	+	20	12
+	z	20	12
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/AAAA.py
+	"	20	0
+	^	18	7
+	.	21	0
+	+	19	0
+	+	18	0
+	+	21	0
+	z	20	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/APL.py
+	"	24	0
+	^	21	7
+	.	24	0
+	+	22	0
+	+	24	0
+	z	24	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/A.py
+	"	21	0
+	^	18	7
+	.	21	0
+	+	19	0
+	+	18	0
+	+	21	0
+	z	21	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/DHCID.py
+	"	19	0
+	^	19	34
+	.	19	33
+	+	18	6
+	+	19	33
+	z	19	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/__init__.py
+	"	1	0
+	z	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/IPSECKEY.py
+	"	24	0
+	^	24	34
+	.	24	33
+	+	21	7
+	+	22	7
+	+	23	7
+	+	24	33
+	z	24	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/KX.py
+	"	18	0
+	^	18	24
+	.	18	7
+	+	18	23
+	+	19	0
+	+	20	9
+	+	18	7
+	z	18	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/NAPTR.py
+	"	20	0
+	^	20	7
+	.	50	0
+	+	21	0
+	+	50	0
+	z	20	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/NSAP_PTR.py
+	"	18	0
+	^	18	29
+	.	18	7
+	+	18	43
+	+	20	26
+	+	18	27
+	+	20	15
+	+	18	7
+	z	18	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/NSAP.py
+	"	20	0
+	^	18	7
+	.	20	0
+	+	19	0
+	+	20	0
+	z	20	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/PX.py
+	"	20	0
+	^	20	7
+	.	36	0
+	+	21	0
+	+	36	0
+	z	20	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/SRV.py
+	"	20	0
+	^	20	7
+	.	21	0
+	+	21	0
+	z	20	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/WKS.py
+	"	21	0
+	^	21	7
+	.	22	0
+	+	22	0
+	z	21	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/IN/-MiniBufExplorer-
+	"	1	11
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/dsbase.py
+	"	20	0
+	^	20	7
+	.	20	6
+	+	21	0
+	+	22	40
+	+	20	6
+	z	20	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/__init__.py
+	"	1	0
+	z	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/keybase.py
+	"	22	0
+	^	22	7
+	.	22	6
+	+	20	6
+	+	21	6
+	+	22	6
+	z	22	6
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/mxbase.py
+	"	25	0
+	^	25	7
+	.	25	6
+	+	23	6
+	+	24	6
+	+	25	6
+	z	25	6
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/nsbase.py
+	"	22	0
+	^	22	6
+	.	23	0
+	+	23	0
+	z	22	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/sigbase.py
+	"	26	0
+	^	26	31
+	.	26	30
+	+	22	5
+	+	24	0
+	+	26	30
+	z	26	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/txtbase.py
+	"	1	0
+	^	20	6
+	.	22	0
+	+	20	5
+	+	21	0
+	+	22	0
+	z	22	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/-MiniBufExplorer-
+	"	1	14
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
 	+	2	0
 	+	2	0
 	+	2	0
@@ -946,31 +2589,9 @@ $
 	+	2	0
 
 > ~/config/vim/vimrc
-	"	405	6
-	^	398	10
-	.	154	0
-	+	206	0
-	+	206	0
-	+	206	0
-	+	255	0
-	+	256	0
-	+	251	25
-	+	266	4
-	+	265	0
-	+	407	11
-	+	265	0
-	+	266	0
-	+	265	0
-	+	80	0
-	+	81	0
-	+	1	0
-	+	1	0
-	+	9	0
-	+	11	0
-	+	1	0
-	+	54	18
-	+	1	0
-	+	1	9
+	"	27	21
+	^	279	13
+	.	279	0
 	+	1	0
 	+	3	17
 	+	3	0
@@ -988,8 +2609,8 @@ $
 	+	183	0
 	+	182	56
 	+	54	0
-	+	414	17
-	+	415	0
+	+	417	17
+	+	418	0
 	+	335	15
 	+	183	35
 	+	400	0
@@ -999,21 +2620,21 @@ $
 	+	200	0
 	+	201	0
 	+	206	0
-	+	427	0
-	+	429	0
-	+	433	16
-	+	434	16
-	+	435	16
-	+	436	16
-	+	437	16
-	+	438	16
+	+	430	0
+	+	435	0
+	+	439	16
+	+	440	16
 	+	441	16
 	+	442	16
 	+	443	16
 	+	444	16
-	+	445	16
-	+	446	0
-	+	430	0
+	+	447	16
+	+	448	16
+	+	449	16
+	+	450	16
+	+	451	16
+	+	452	0
+	+	436	0
 	+	409	0
 	+	267	5
 	+	268	0
@@ -1049,6 +2670,2092 @@ $
 	+	397	12
 	+	398	12
 	+	154	0
+	+	412	27
+	+	414	0
+	+	414	0
+	+	412	0
+	+	415	0
+	+	278	0
+	+	422	0
+	+	407	19
+	+	407	0
+	+	431	0
+	+	432	0
+	+	278	3
+	+	277	3
+	+	276	3
+	+	279	3
+	+	278	12
+	+	279	12
+	+	275	78
+	+	276	0
+	+	277	0
+	+	278	0
+	+	279	0
+	a	411	0
+	b	414	0
+	m	428	1
+	t	428	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/-MiniBufExplorer-
+	"	1	29
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_
+	"	1	0
+
+> /usr/share/vim/vim72/doc/eval.txt
+	"	740	21
+
+> /usr/share/vim/vim72/doc/options.txt
+	"	170	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/message.py
+	"	39	39
+	^	39	40
+	.	39	39
+	+	38	0
+	+	38	0
+	+	24	0
+	+	37	0
+	+	24	0
+	+	38	0
+	+	38	0
+	+	1076	15
+	+	17	0
+	+	18	0
+	+	653	34
+	+	39	39
+	z	39	39
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/inet.py
+	"	18	0
+	.	18	0
+	+	17	0
+	+	18	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/query.py
+	"	18	0
+	^	32	30
+	.	18	0
+	+	25	0
+	+	34	0
+	+	25	0
+	+	34	0
+	+	31	0
+	+	33	0
+	+	31	22
+	+	32	29
+	+	18	0
+	z	18	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/[YankRing]
+	"	5	0
+	.	2	0
+	+	205	0
+	+	104	0
+	+	104	0
+	+	2	0
+
+> ~/.vimrc
+	"	17	0
+	^	17	31
+	.	17	31
+	+	8	0
+	+	9	105
+	+	17	0
+	+	9	34
+	+	14	0
+	+	9	16
+	+	20	0
+	+	21	0
+	+	9	72
+	+	12	1
+	+	9	46
+	+	10	0
+	+	11	0
+	+	12	0
+	+	16	0
+	+	17	0
+	+	13	0
+	+	14	0
+	+	17	0
+	+	9	35
+	+	18	0
+	+	18	0
+	+	17	31
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rrset.py
+	"	122	47
+	^	20	40
+	.	21	31
+	+	20	39
+	+	25	0
+	+	21	31
+	z	21	31
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/name.py
+	"	466	20
+	.	464	26
+	+	32	0
+	+	31	0
+	+	39	0
+	+	32	0
+	+	466	20
+	+	464	26
+	z	466	20
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/update.py
+	"	26	39
+	^	26	40
+	.	26	39
+	+	26	39
+	z	26	39
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/reversename.py
+	"	29	39
+	^	29	40
+	.	29	39
+	+	29	39
+	z	29	39
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/renderer.py
+	"	28	22
+	^	28	23
+	.	28	22
+	+	25	24
+	+	28	22
+	z	28	22
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/edns.py
+	"	128	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/tokenizer.py
+	"	25	0
+	.	25	0
+	+	25	0
+	+	21	0
+	+	44	0
+	+	25	0
+	z	25	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/e164.py
+	"	76	16
+	.	76	16
+	+	76	16
+	z	76	16
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/dnssec.py
+	"	28	0
+	^	137	27
+	.	28	0
+	+	137	26
+	+	28	0
+	z	28	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/KEY.py
+	"	20	0
+	^	18	7
+	.	20	10
+	+	18	15
+	+	20	10
+	z	20	10
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/DNAME.py
+	"	18	0
+	^	18	6
+	.	18	5
+	+	20	12
+	+	18	5
+	z	18	5
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/NS.py
+	"	20	0
+	^	18	6
+	.	20	9
+	+	18	15
+	+	20	9
+	z	20	9
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/DLV.py
+	"	20	10
+	^	18	7
+	.	20	10
+	+	18	15
+	+	20	10
+	z	20	10
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/DNSKEY.py
+	"	25	0
+	^	18	7
+	.	25	13
+	+	18	15
+	+	25	13
+	z	25	13
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/DS.py
+	"	20	9
+	^	18	7
+	.	20	9
+	+	18	15
+	+	20	9
+	z	20	9
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/HIP.py
+	"	24	0
+	^	25	32
+	.	24	0
+	+	25	31
+	+	24	0
+	z	24	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/MX.py
+	"	20	9
+	^	18	7
+	.	20	9
+	+	18	15
+	+	20	9
+	z	20	9
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/NSEC3PARAM.py
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/NXT.py
+	"	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/PTR.py
+	"	20	10
+	^	18	7
+	.	20	10
+	+	18	15
+	+	20	10
+	z	20	10
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/RRSIG.py
+	"	20	12
+	^	18	6
+	.	20	12
+	+	18	15
+	+	20	12
+	z	20	12
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/RT.py
+	"	20	9
+	^	18	6
+	.	20	9
+	+	18	15
+	+	20	9
+	z	20	9
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/SIG.py
+	"	20	10
+	^	18	6
+	.	20	10
+	+	18	15
+	+	20	10
+	z	20	10
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/SPF.py
+	"	20	10
+	^	18	6
+	.	20	10
+	+	18	15
+	+	20	10
+	z	20	10
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/SSHFP.py
+	"	21	7
+	.	35	0
+	+	21	0
+	+	35	0
+	z	21	7
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdtypes/ANY/TXT.py
+	"	20	10
+	^	18	6
+	.	20	10
+	+	18	15
+	+	20	10
+	z	20	10
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_ping.py
+	"	2	0
+	^	22	27
+	.	2	0
+	+	29	85
+	+	29	97
+	+	32	0
+	+	29	7
+	+	25	0
+	+	24	0
+	+	27	0
+	+	33	18
+	+	36	0
+	+	33	52
+	+	25	20
+	+	27	0
+	+	25	62
+	+	29	22
+	+	32	0
+	+	29	71
+	+	29	80
+	+	32	0
+	+	30	0
+	+	34	37
+	+	71	66
+	+	71	49
+	+	71	9
+	+	71	0
+	+	26	23
+	+	33	0
+	+	31	18
+	+	35	37
+	+	71	62
+	+	71	60
+	+	71	58
+	+	71	78
+	+	71	68
+	+	63	0
+	+	71	0
+	+	39	0
+	+	67	42
+	+	37	38
+	+	40	0
+	+	62	0
+	+	40	73
+	+	41	0
+	+	40	0
+	+	42	21
+	+	43	21
+	+	47	21
+	+	49	21
+	+	50	21
+	+	53	21
+	+	55	0
+	+	56	21
+	+	61	21
+	+	44	0
+	+	48	0
+	+	51	0
+	+	54	0
+	+	57	0
+	+	43	0
+	+	62	18
+	+	71	42
+	+	76	24
+	+	82	39
+	+	66	25
+	+	61	37
+	+	70	18
+	+	69	72
+	+	61	28
+	+	63	0
+	+	67	24
+	+	68	28
+	+	69	0
+	+	70	0
+	+	68	29
+	+	59	76
+	+	60	45
+	+	61	18
+	+	60	0
+	+	37	39
+	+	31	24
+	+	39	0
+	+	21	0
+	+	66	25
+	+	62	27
+	+	63	0
+	+	39	0
+	+	67	8
+	+	68	31
+	+	66	28
+	+	46	0
+	+	45	0
+	+	38	62
+	+	52	57
+	+	45	61
+	+	39	54
+	+	46	54
+	+	53	0
+	+	72	30
+	+	71	7
+	+	22	26
+	+	2	0
+	z	2	0
+
+> ~/streaming/pytomo/Pytomo/bin/pytomo
+	"	18	4
+	^	16	0
+	.	18	0
+	+	14	22
+	+	14	25
+	+	1	1
+	+	9	12
+	+	5	9
+	+	9	28
+	+	5	13
+	+	6	19
+	+	9	22
+	+	5	40
+	+	9	58
+	+	8	0
+	+	9	67
+	+	11	0
+	+	9	69
+	+	8	40
+	+	11	22
+	+	11	15
+	+	8	0
+	+	9	37
+	+	5	35
+	+	11	0
+	+	2	40
+	+	3	2
+	+	9	6
+	+	11	18
+	+	10	0
+	+	11	0
+	+	14	25
+	+	14	20
+	+	15	0
+	+	14	0
+	+	15	7
+	+	18	0
+	+	12	13
+	+	13	26
+	+	14	0
+	+	11	0
+	+	5	35
+	+	15	13
+	+	18	6
+	+	11	0
+	+	14	0
+	+	14	0
+	+	5	40
+	+	14	0
+	+	2	24
+	+	14	0
+	+	13	0
+	+	13	0
+	+	14	0
+	+	13	11
+	+	14	11
+	+	13	23
+	+	14	0
+	+	14	0
+	+	13	0
+	+	13	0
+	+	14	9
+	+	14	0
+	+	14	0
+	+	13	0
+	+	13	0
+	+	14	0
+	+	13	0
+	+	11	0
+	+	5	35
+	+	14	0
+	+	15	12
+	+	13	0
+	+	13	0
+	+	13	0
+	+	17	0
+	+	16	0
+	+	18	0
+
+> ~/streaming/pytomo/Pytomo/start_crawl.py
+	"	17	0
+	^	17	26
+	.	18	0
+	+	10	29
+	+	5	29
+	+	13	28
+	+	13	0
+	+	13	0
+	+	13	39
+	+	13	37
+	+	14	0
+	+	14	32
+	+	14	0
+	+	13	11
+	+	14	11
+	+	15	0
+	+	14	0
+	+	11	0
+	+	5	26
+	+	13	0
+	+	17	25
+	+	18	0
+	z	17	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/dns/query.py
+	"	177	0
+
+> ~/config/lib/python2.6/easy-install.pth
+	"	11	0
+	.	11	0
+	+	11	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/start_crawl.py
+	"	21	0
+	^	20	26
+	.	21	0
+	+	20	0
+	+	21	0
+	z	21	4
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/audio/core.py
+	"	33	0
+	^	36	6
+	.	33	0
+	+	36	5
+	+	33	0
+	z	33	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/core.py
+	"	34	20
+	^	33	61
+	.	33	69
+	+	32	5
+	+	36	0
+	+	32	19
+	+	33	60
+	+	32	67
+	+	33	69
+	z	34	20
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/IPTC.py
+	"	41	15
+	^	41	8
+	.	41	15
+	+	41	15
+	z	41	15
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/image/[YankRing]
+	"	4	0
+	.	2	0
+	+	2	0
+
+> ~/streaming/pytomo/.gitignore
+	"	30	0
+	.	31	0
+	+	4	4
+	+	6	5
+	+	8	0
+	+	9	16
+	+	7	4
+	+	11	0
+	+	17	4
+	+	17	3
+	+	17	0
+	+	17	7
+	+	17	0
+	+	17	0
+	+	18	6
+	+	18	4
+	+	18	0
+	+	17	0
+	+	17	14
+	+	17	0
+	+	17	0
+	+	17	11
+	+	18	0
+	+	17	16
+	+	17	0
+	+	21	0
+	+	22	0
+	+	20	4
+	+	26	11
+	+	14	0
+	+	14	0
+	+	31	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/lib_youtube_api.py
+	"	29	20
+	^	29	21
+	.	29	20
+	+	40	25
+	+	31	52
+	+	32	0
+	+	31	45
+	+	40	0
+	+	13	0
+	+	14	0
+	+	12	27
+	+	40	38
+	+	41	52
+	+	44	0
+	+	40	0
+	+	36	40
+	+	33	60
+	+	35	0
+	+	36	4
+	+	33	0
+	+	44	28
+	+	45	72
+	+	2	3
+	+	2	69
+	+	2	3
+	+	3	0
+	+	9	11
+	+	10	31
+	+	60	0
+	+	38	51
+	+	40	33
+	+	40	70
+	+	45	0
+	+	45	24
+	+	46	0
+	+	47	0
+	+	45	0
+	+	47	44
+	+	47	44
+	+	46	0
+	+	47	0
+	+	46	13
+	+	47	0
+	+	46	13
+	+	47	45
+	+	49	0
+	+	48	20
+	+	40	29
+	+	40	0
+	+	40	58
+	+	51	49
+	+	62	0
+	+	9	5
+	+	10	0
+	+	39	36
+	+	40	0
+	+	16	64
+	+	30	0
+	+	17	0
+	+	29	20
+	z	29	20
+
+> ~/streaming/pytomo/Pytomo/pytomo/__init__.py
+	"	3	25
+	^	3	26
+	.	3	25
+	+	1	0
+	+	1	0
+	+	1	0
+	+	3	25
+	z	3	25
+
+> ~/streaming/pytomo/Pytomo/bin/[YankRing]
+	"	5	0
+	.	2	0
+	+	2	0
+
+> /usr/share/vim/vim72/doc/pattern.txt
+	"	531	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/exception.py
+	"	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rcode.py
+	"	19	0
+	.	19	0
+	+	19	0
+	+	18	0
+	+	55	0
+	+	19	0
+	z	19	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdataclass.py
+	"	29	0
+	.	29	0
+	+	29	0
+	+	28	0
+	+	68	0
+	+	29	0
+	z	29	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/rdatatype.py
+	"	32	0
+	.	32	0
+	+	32	0
+	+	31	0
+	+	178	0
+	+	32	0
+	z	32	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/opcode.py
+	"	19	0
+	.	19	0
+	+	19	0
+	+	18	0
+	+	41	0
+	+	69	0
+	+	19	0
+	z	19	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/dns/ttl.py
+	"	19	0
+	.	19	0
+	+	19	0
+	+	18	0
+	+	20	0
+	+	19	0
+	z	30	4
+
+> ~/streaming/pytomo/Pytomo/-MiniBufExplorer-
+	"	1	10
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/bin/-MiniBufExplorer-
+	"	1	29
+	.	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/video/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> /media/usb/Pytomo-0.1.8_modif/pytomo/kaa_metadata/factory.py
+	"	162	8
+	.	1	0
+	+	1	28
+	+	1	28
+	+	1	28
+	+	1	28
+	+	1	0
+
+> /media/usb/Pytomo-0.1.8_modif/pytomo/kaa_metadata/video/mp4.py
+	"	357	12
+	^	295	74
+	.	357	0
+	+	287	0
+	+	49	0
+	+	287	0
+	+	287	0
+	+	305	0
+	+	291	78
+	+	291	85
+	+	291	10
+	+	293	0
+	+	292	0
+	+	295	73
+	+	291	0
+	+	298	0
+	+	357	0
+	z	357	12
+
+> /media/usb/Pytomo-0.1.8_modif/pytomo/kaa_metadata/__init__.py
+	"	96	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/lib_youtube_download.py
+	"	45	0
+	^	489	65
+	.	45	0
+	+	461	59
+	+	480	17
+	+	475	0
+	+	525	0
+	+	491	0
+	+	488	70
+	+	45	21
+	+	488	49
+	+	782	0
+	+	488	39
+	+	489	64
+	+	488	0
+	+	45	0
+	z	45	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/kaa_metadata/video/mp4.py
+	"	258	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/kaa_metadata/video/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/kaa_metadata/factory.py
+	"	51	0
+	.	50	0
+	+	50	0
+	z	50	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/kaa_metadata/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/start_pytomo.py
+	"	1	0
+
+> ~/streaming/pytomo/Pytomo-0.1.8_modif/pytomo/kaa_metadata/__init__.py
+	"	78	0
+	.	91	0
+	+	45	0
+	+	51	0
+	+	50	0
+	+	53	0
+	+	45	0
+	+	64	0
+	+	55	0
+	+	56	0
+	+	91	0
+	z	78	0
+
+> /media/usb/Pytomo-0.1.8_modif/pytomo/kaa_metadata/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/kaa-svn/metadata/src/video/mp4.py
+	"	302	30
+
+> ~/config/vim/doc/showmarks.txt
+	"	40	47
+	.	265	0
+	+	265	0
+
+> /media/usb/Pytomo-0.1.8_modif/pytomo/lib_youtube_download.py
+	"	779	4
+
+> ~/config/xsessionrc
+	"	57	0
+	^	57	0
+	.	56	11
+	+	11	0
+	+	12	67
+	+	13	0
+	+	12	0
+	+	11	0
+	+	18	50
+	+	19	0
+	+	18	0
+	+	3	16
+	+	18	40
+	+	37	0
+	+	3	0
+	+	36	0
+	+	3	0
+	+	21	69
+	+	22	93
+	+	29	0
+	+	23	2
+	+	24	75
+	+	24	104
+	+	29	0
+	+	26	58
+	+	28	62
+	+	56	11
+
+> ~/config/vim_runtime/vimrc
+	"	268	0
+	^	384	1
+	.	269	0
+	+	385	0
+	+	107	0
+	+	106	6
+	+	556	0
+	+	553	0
+	+	264	0
+	+	265	0
+	+	266	0
+	+	268	0
+	+	269	0
+	m	553	45
+	t	506	0
+
+> ~/config/vim_runtime/-MiniBufExplorer-
+	"	1	10
+	.	2	0
+	+	2	0
+	+	2	0
+
+> ~/config/vim/-MiniBufExplorer-
+	"	1	19
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/stream
+	"	1	0
+
+> ~/config/vim/doc/dbext.txt
+	"	101	3
+
+> /usr/local/lib/python2.6/dist-packages/easy-install.pth
+	"	3	22
+	.	3	0
+	+	3	23
+	+	5	0
+	+	3	0
+
+> /usr/share/vim/vim72/doc/editing.txt
+	"	1104	7
+
+> /media/usb/Pytomo-0.1.8_modif/start_crawl.py
+	"	18	0
+	.	18	0
+	+	18	0
+	z	18	0
+
+> /media/usb/Pytomo-0.1.8_modif/pytomo/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> /media/usb/Pytomo-0.1.8_modif/pytomo/start_pytomo.py
+	"	313	0
+
+> /media/usb/Pytomo-0.1.8_modif/commandes.py
+	"	8	0
+	^	2	33
+	.	2	32
+	+	3	0
+	+	2	32
+	z	2	32
+
+> /netapp/home/elpy7391/Pytomo-0.1.8_modif/log_kaa_linux
+	"	1	0
+
+> /netapp/home/elpy7391/Pytomo-0.1.8_modif/log_kaa_windows
+	"	14	0
+
+> /netapp/home/elpy7391/Pytomo-0.1.8_modif/-MiniBufExplorer-
+	"	1	17
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> /netapp/home/elpy7391/Pytomo-0.1.8_modif/pytomo/lib_youtube_download.py
+	"	42	0
+	^	803	25
+	.	42	0
+	+	461	0
+	+	805	0
+	+	803	23
+	+	42	15
+	+	42	0
+	+	805	64
+	+	802	46
+	+	805	73
+	+	805	17
+	+	796	56
+	+	796	0
+	+	805	37
+	+	42	0
+	+	796	15
+	+	805	35
+	+	796	35
+	+	805	0
+	+	804	64
+	+	805	31
+	+	803	24
+	+	796	0
+	+	42	0
+	z	1	0
+
+> /netapp/home/elpy7391/Pytomo-0.1.8_modif/commandes.py
+	"	4	0
+	^	4	0
+	.	3	59
+	+	1	0
+	+	2	0
+	+	5	52
+	+	5	10
+	+	5	52
+	+	5	5
+	+	5	294
+	+	5	52
+	+	5	61
+	+	5	52
+	+	6	0
+	+	5	284
+	+	5	6
+	+	6	0
+	+	3	59
+	z	4	0
+
+> /netapp/home/elpy7391/Pytomo-0.1.8_modif/pytomo/kaa_metadata/factory.py
+	"	243	47
+	^	243	48
+	.	243	47
+	+	243	0
+	+	57	26
+	+	207	0
+	+	210	0
+	+	208	58
+	+	206	39
+	+	58	29
+	+	243	15
+	+	236	22
+	+	237	29
+	+	238	27
+	+	237	49
+	+	243	47
+	z	243	47
+
+> /netapp/home/elpy7391/Pytomo-0.1.8_modif/pytomo/start_pytomo.py
+	"	430	24
+	^	430	25
+	.	430	24
+	+	417	26
+	+	418	30
+	+	326	22
+	+	334	22
+	+	433	35
+	+	431	0
+	+	433	0
+	+	430	24
+	z	430	11
+
+> /netapp/home/elpy7391/Pytomo-0.1.8_modif/pytomo/kaa_metadata/core.py
+	"	72	0
+
+> /netapp/home/elpy7391/Pytomo-0.1.8_modif/pytomo/config_pytomo.py
+	"	110	0
+	.	110	0
+	+	109	0
+	+	112	0
+	+	110	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/__Tag_List__
+	"	36	4
+	.	93	0
+	+	187	0
+	+	244	0
+	+	187	0
+	+	277	0
+	+	186	0
+	+	185	0
+	+	94	0
+	+	93	0
+
+> ~/streaming/pytomo/Pytomo/README.txt
+	"	27	0
+	.	31	28
+	+	303	69
+	+	303	73
+	+	305	37
+	+	322	0
+	+	159	0
+	+	160	0
+	+	161	0
+	+	78	31
+	+	117	0
+	+	75	16
+	+	71	0
+	+	1	0
+	+	5	77
+	+	6	23
+	+	58	0
+	+	58	0
+	+	46	17
+	+	47	0
+	+	48	0
+	+	58	0
+	+	48	7
+	+	59	0
+	+	61	0
+	+	48	34
+	+	46	17
+	+	61	0
+	+	60	0
+	+	8	4
+	+	45	0
+	+	8	0
+	+	52	41
+	+	48	62
+	+	55	79
+	+	56	77
+	+	57	74
+	+	58	26
+	+	53	1
+	+	53	6
+	+	52	76
+	+	52	77
+	+	53	19
+	+	58	0
+	+	53	20
+	+	54	0
+	+	53	46
+	+	57	36
+	+	52	51
+	+	57	22
+	+	8	21
+	+	8	0
+	+	8	44
+	+	49	73
+	+	50	10
+	+	48	41
+	+	62	7
+	+	67	0
+	+	48	68
+	+	8	48
+	+	8	67
+	+	65	1
+	+	8	50
+	+	65	14
+	+	53	19
+	+	70	17
+	+	10	28
+	+	10	0
+	+	10	28
+	+	10	0
+	+	10	27
+	+	10	71
+	+	12	74
+	+	10	64
+	+	12	4
+	+	10	61
+	+	11	71
+	+	13	0
+	+	10	0
+	+	8	0
+	+	8	11
+	+	8	0
+	+	8	0
+	+	8	16
+	+	8	0
+	+	8	0
+	+	58	0
+	+	8	0
+	+	37	0
+	+	45	0
+	+	44	32
+	+	45	0
+	+	12	62
+	+	29	0
+	+	30	28
+	+	32	0
+	+	30	6
+	+	31	28
+
+> ~/config/bin/googlecode_upload.py
+	"	112	0
+
+> ~/streaming/pytomo/wiki_pytomo/Readme.wiki
+	"	67	5
+	^	59	69
+	.	59	69
+	+	13	63
+	+	32	0
+	+	33	6
+	+	34	0
+	+	35	0
+	+	50	4
+	+	56	0
+	+	43	0
+	+	50	11
+	+	52	0
+	+	54	1
+	+	54	8
+	+	53	51
+	+	54	46
+	+	55	0
+	+	49	76
+	+	53	77
+	+	51	0
+	+	50	0
+	+	54	56
+	+	59	69
+
+> ~/streaming/pytomo/pytomo_analysis/pytomo_db/pytomo_sql/pytomo_db.py
+	"	86	0
+	^	29	39
+	.	27	0
+	+	19	0
+	+	36	0
+	+	41	0
+	+	40	0
+	+	39	16
+	+	44	0
+	+	9	0
+	+	18	0
+	+	51	0
+	+	50	0
+	+	45	48
+	+	46	0
+	+	50	50
+	+	61	56
+	+	62	0
+	+	64	16
+	+	65	22
+	+	61	7
+	+	68	0
+	+	23	0
+	+	32	0
+	+	72	31
+	+	73	57
+	+	75	59
+	+	79	44
+	+	80	15
+	+	82	28
+	+	82	26
+	+	84	0
+	+	82	74
+	+	83	0
+	+	82	27
+	+	83	0
+	+	82	49
+	+	85	56
+	+	27	49
+	+	28	47
+	+	29	37
+	+	28	77
+	+	29	55
+	+	30	0
+	+	27	0
+	o	19	0
+	z	29	55
+
+> ~/streaming/pytomo/Pytomo/pytomo_named.spec
+	"	26	0
+	^	20	1
+	.	26	0
+	+	4	157
+	+	4	102
+	+	5	56
+	+	5	95
+	+	6	0
+	+	5	11
+	+	3	0
+	+	4	0
+	+	4	0
+	+	4	12
+	+	4	0
+	+	4	0
+	+	4	0
+	+	3	0
+	+	3	0
+	+	3	25
+	+	3	12
+	+	3	0
+	+	21	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+
+> ~/-MiniBufExplorer-
+	"	1	29
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> /usr/share/vim/vim72/doc/help.txt
+	"	1	0
+
+> ~/config/vim/doc/surround.txt
+	"	171	48
+
+> /usr/share/vim/vim72/doc/usr_05.txt
+	"	419	44
+
+> ~/config/vim/doc/vcscommand.txt
+	"	268	17
+
+> ~/config/vim/doc/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/config/vim/doc/vst.txt
+	"	80	4
+	a	34	0
+
+> ~/config/vim/plugin/showmarks.vim
+	"	507	0
+	.	508	0
+	+	508	0
+
+> ~/streaming/pytomo/pytomo_analysis/lib_get_table.py
+	"	78	0
+	^	71	70
+	.	71	0
+	+	41	4
+	+	79	0
+	+	3	0
+	+	62	0
+	+	71	0
+	z	62	39
+
+> ~/streaming/pytomo/pytomo_analysis/test.sql
+	"	7	7
+	^	7	8
+	.	7	7
+	+	1	0
+	+	3	6
+	+	1	10
+	+	2	1
+	+	5	4
+	+	7	7
+
+> ~/streaming/pytomo/pytomo_analysis/-MiniBufExplorer-
+	"	1	20
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/wiki_pytomo/DESCRIPTION.wiki
+	"	56	136
+	^	56	4
+	.	57	0
+	+	9	0
+	+	23	0
+	+	27	0
+	+	31	0
+	+	38	0
+	+	46	0
+	+	48	0
+	+	48	18
+	+	52	55
+	+	50	0
+	+	54	51
+	+	50	0
+	+	48	0
+	+	48	131
+	+	48	184
+	+	49	0
+	+	49	0
+	+	48	77
+	+	48	154
+	+	48	1
+	+	48	79
+	+	48	153
+	+	38	12
+	+	46	0
+	+	48	80
+	+	48	153
+	+	49	0
+	+	50	92
+	+	50	162
+	+	50	229
+	+	51	0
+	+	50	3
+	+	52	54
+	+	52	125
+	+	52	194
+	+	53	0
+	+	54	121
+	+	55	0
+	+	54	115
+	+	54	3
+	+	56	21
+	+	56	81
+	+	56	136
+	+	57	0
+
+> ~/streaming/pytomo/Pytomo/[YankRing]
+	"	5	0
+	.	2	0
+	+	104	0
+	+	2	0
+
+> /usr/lib/python2.6/distutils/core.py
+	"	35	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/disc/__init__.py
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/strutils.py
+	"	39	32
+	^	39	33
+	.	39	32
+	+	40	42
+	+	39	32
+	z	39	32
+
+> /usr/lib/python2.6/locale.py
+	"	470	0
+
+> ~/streaming/pytomo/Pytomo/MANIFEST.in
+	"	3	17
+	^	3	18
+	.	3	17
+	+	1	0
+	+	5	20
+	+	5	0
+	+	5	11
+	+	5	22
+	+	5	0
+	+	5	18
+	+	2	18
+	+	5	0
+	+	6	23
+	+	6	0
+	+	6	0
+	+	1	15
+	+	6	0
+	+	2	20
+	+	5	14
+	+	1	14
+	+	2	24
+	+	1	14
+	+	2	39
+	+	1	17
+	+	4	0
+	+	1	29
+	+	3	17
+
+> /usr/lib/python2.6/sqlite3/__init__.py
+	"	1	0
+
+> /usr/lib/python2.6/sqlite3/dbapi2.py
+	"	88	0
+
+> ~/tmp/wiki/wiki/DESCRIPTION.wiki
+	"	1	8
+	^	304	18
+	.	1	8
+	+	5	13
+	+	56	0
+	+	80	0
+	+	82	0
+	+	103	0
+	+	102	29
+	+	124	0
+	+	123	15
+	+	142	11
+	+	143	0
+	+	142	2
+	+	156	0
+	+	155	21
+	+	202	0
+	+	201	23
+	+	219	0
+	+	218	20
+	+	244	0
+	+	243	17
+	+	251	0
+	+	250	8
+	+	257	0
+	+	256	10
+	+	260	10
+	+	261	0
+	+	260	2
+	+	168	0
+	+	266	0
+	+	243	15
+	+	250	0
+	+	256	8
+	+	260	13
+	+	295	0
+	+	294	11
+	+	305	0
+	+	304	17
+	+	33	0
+	+	108	0
+	+	240	22
+	+	1	8
+
+> ~/streaming/pytomo/Pytomo/DESCRIPTION.txt
+	"	323	44
+	.	113	44
+	+	5	60
+	+	1	0
+	+	317	7
+	+	321	7
+	+	15	68
+	+	114	43
+	+	168	3
+	+	182	51
+	+	200	49
+	+	202	45
+	+	213	36
+	+	264	0
+	+	277	0
+	+	26	0
+	+	62	0
+	+	90	76
+	+	91	0
+	+	114	69
+	+	115	77
+	+	113	46
+	+	113	0
+	+	115	0
+	+	113	44
+
+> ~/streaming/pytomo/Pytomo/pytomo.spec
+	"	3	12
+	^	16	33
+	.	16	32
+	+	18	0
+	+	16	54
+	+	2	36
+	+	16	68
+	+	16	79
+	+	16	70
+	+	16	70
+	+	6	59
+	+	5	0
+	+	6	0
+	+	7	56
+	+	8	55
+	+	16	35
+	+	17	0
+	+	17	0
+	+	16	32
+
+> /usr/lib/python2.6/distutils/dist.py
+	"	450	0
+
+> ~/streaming/pytomo/google_code/.gitignore
+	"	12	0
+	^	12	0
+	.	12	0
+	+	9	5
+	+	11	8
+	+	12	0
+
+> ~/Downloads/pyinstaller-1.5-rc1/Makespec.py
+	"	314	0
+
+> ~/workspace/spydump/tools/template.py
+	"	73	0
+	^	63	65
+	.	59	0
+	+	96	0
+	+	82	23
+	+	83	0
+	+	74	19
+	+	74	0
+	+	73	20
+	+	74	0
+	+	91	23
+	+	92	0
+	+	71	0
+	+	59	66
+	+	62	65
+	+	59	88
+	+	61	52
+	+	61	38
+	+	62	0
+	+	61	37
+	+	65	71
+	+	66	25
+	+	67	0
+	+	66	68
+	+	74	0
+	+	57	33
+	+	76	13
+	+	80	33
+	+	82	61
+	+	59	78
+	+	61	63
+	+	59	80
+	+	61	0
+	+	62	33
+	+	59	33
+	+	58	31
+	+	64	33
+	+	67	45
+	+	59	85
+	+	61	0
+	+	63	17
+	+	65	17
+	+	64	44
+	+	62	77
+	+	61	0
+	+	60	0
+	+	61	0
+	+	66	0
+	+	63	64
+	+	59	0
+	z	63	64
+
+> ~/workspace/spydump/tools/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.
+	"	1	0
+
+> ~/Downloads/pyinstaller-1.5-rc1/hooks/hook-dns.rdtypes.ANY.py
+	"	1	17
+	.	1	17
+	+	1	17
+	z	1	17
+
+> ~/Downloads/pyinstaller-1.5-rc1/hooks/hook-lib_dns.py
+	"	1	37
+	^	1	82
+	.	1	37
+	+	1	81
+	+	2	0
+	+	1	37
+	z	1	37
+
+> ~/config/abcde.conf
+	"	231	18
+	.	235	26
+	+	231	22
+	+	235	26
+
+> ~/Confs/ITC/report.txt
+	"	17	1
+
+> ~/config/vimrc
+	"	17	30
+
+> ~/config/-MiniBufExplorer-
+	"	1	23
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
 
 > /tmp/Pytomo-0.1.0/bin/pytomo
 	"	17	0
@@ -1136,254 +4843,8 @@ $
 	+	5	0
 	z	5	7
 
-> ~/streaming/pytomo/Pytomo/setup.py
-	"	14	0
-	^	14	41
-	.	14	40
-	+	4	47
-	+	19	0
-	+	8	0
-	+	9	0
-	+	4	0
-	+	4	0
-	+	3	4
-	+	3	0
-	+	3	18
-	+	3	0
-	+	20	0
-	+	23	0
-	+	19	0
-	+	23	22
-	+	23	31
-	+	23	42
-	+	23	0
-	+	23	76
-	+	19	0
-	+	19	0
-	+	23	41
-	+	23	0
-	+	23	0
-	+	19	0
-	+	3	0
-	+	23	0
-	+	19	0
-	+	5	0
-	+	11	44
-	+	21	38
-	+	22	21
-	+	14	40
-	z	14	40
-
-> ~/streaming/pytomo/Pytomo/MANIFEST.in
-	"	3	0
-	.	3	0
-	+	1	0
-	+	3	20
-	+	4	0
-	+	3	11
-	+	3	22
-	+	3	0
-
-> ~/streaming/pytomo/Pytomo/-MiniBufExplorer-
-	"	1	12
-	.	2	0
-	+	2	0
-
-> ~/streaming/pytomo/Pytomo/pytomo/lib_dns.py
-	"	37	12
-	^	37	25
-	.	37	24
-	+	39	0
-	+	42	0
-	+	43	0
-	+	7	0
-	+	6	0
-	+	5	34
-	+	6	36
-	+	22	18
-	+	31	18
-	+	35	18
-	+	12	26
-	+	33	24
-	+	37	24
-	z	1	0
-
-> ~/streaming/pytomo/Pytomo/pytomo/dns/rdatatype.py
-	"	25	0
-
-> ~/streaming/pytomo/Pytomo/pytomo/dns/-MiniBufExplorer-
-	"	1	94
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/streaming/pytomo/Pytomo/pytomo/dns/rdata.py
-	"	1	0
-
-> ~/streaming/pytomo/Pytomo/pytomo/start_pytomo.py
-	"	175	0
-	^	138	29
-	.	137	0
-	+	166	48
-	+	175	4
-	+	177	4
-	+	178	31
-	+	180	7
-	+	185	39
-	+	188	12
-	+	188	39
-	+	184	39
-	+	188	54
-	+	196	4
-	+	197	4
-	+	198	8
-	+	198	38
-	+	198	50
-	+	198	9
-	+	198	36
-	+	198	34
-	+	199	34
-	+	204	8
-	+	23	43
-	+	24	31
-	+	25	33
-	+	26	45
-	+	27	41
-	+	19	25
-	+	20	0
-	+	20	13
-	+	21	0
-	+	20	0
-	+	21	0
-	+	198	0
-	+	188	0
-	+	128	0
-	+	20	0
-	+	21	0
-	+	30	0
-	+	176	0
-	+	180	0
-	+	197	0
-	+	186	0
-	+	18	6
-	+	19	9
-	+	20	22
-	+	133	0
-	+	133	0
-	+	15	40
-	+	89	18
-	+	101	30
-	+	111	15
-	+	133	70
-	+	186	25
-	+	174	0
-	+	168	24
-	+	174	0
-	+	185	59
-	+	199	54
-	+	202	77
-	+	118	75
-	+	126	50
-	+	118	70
-	+	207	33
-	+	118	69
-	+	168	23
-	+	207	0
-	+	186	0
-	+	207	44
-	+	208	0
-	+	207	17
-	+	207	13
-	+	133	0
-	+	79	75
-	+	89	0
-	+	87	29
-	+	79	54
-	+	105	0
-	+	107	61
-	+	107	58
-	+	109	0
-	+	107	77
-	+	108	32
-	+	26	57
-	+	35	35
-	+	58	44
-	+	186	37
-	+	133	0
-	+	137	34
-	+	140	89
-	+	140	0
-	+	139	0
-	+	140	85
-	+	140	0
-	+	139	0
-	+	140	80
-	+	28	47
-	+	140	0
-	+	138	0
-	+	139	0
-	+	140	0
-	+	137	0
-	z	140	33
-
-> ~/streaming/pytomo/Pytomo/pytomo/config_pytomo.py
-	"	58	0
-	^	55	24
-	.	79	17
-	+	37	13
-	+	24	10
-	+	23	0
-	+	24	0
-	+	23	0
-	+	3	33
-	+	23	0
-	+	24	0
-	+	23	0
-	+	12	0
-	+	11	0
-	+	8	1
-	+	10	13
-	+	54	41
-	+	53	0
-	+	33	0
-	+	45	63
-	+	47	18
-	+	46	58
-	+	28	16
-	+	24	0
-	+	23	0
-	+	55	23
-	+	23	0
-	+	23	0
-	+	60	15
-	+	79	17
-	z	60	15
-
 > ~/streaming/pytomo/Pytomo/MANIFEST
 	"	26	0
-
-> ~/streaming/pytomo/Pytomo/pytomo/dns/resolver.py
-	"	760	51
 
 > ~/streaming/pytomo/Pytomo/dist/Pytomo-0.1.0/pytomo/config_pytomo.py
 	"	55	23
@@ -1508,110 +4969,6 @@ $
 	+	631	60
 	z	673	39
 
-> ~/workspace/spydump/tools/-MiniBufExplorer-
-	"	1	16
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
 > ~/play_soceda/android/gps_polling/sl4a_gps.py
 	"	46	0
 	^	8	12
@@ -1631,250 +4988,6 @@ $
 	+	37	0
 	z	37	0
 
-> ~/streaming/pytomo/Pytomo/pytomo/lib_ping.py
-	"	71	0
-	^	27	0
-	.	64	0
-	+	32	30
-	+	63	0
-	+	64	0
-	+	61	0
-	+	31	0
-	+	26	0
-	+	28	58
-	+	63	0
-	+	64	0
-	z	64	4
-
-> ~/streaming/pytomo/Pytomo/pytomo/lib_database.py
-	"	121	0
-	^	95	23
-	.	49	0
-	+	94	0
-	+	93	0
-	+	8	0
-	+	81	53
-	+	49	0
-	z	1	0
-
-> ~/streaming/pytomo/Pytomo/pytomo/-MiniBufExplorer-
-	"	1	73
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/__init__.py
-	"	35	63
-	^	35	64
-	.	35	63
-	+	36	0
-	+	35	63
-	z	35	63
-
-> ~/streaming/pytomo/Pytomo/pytomo/lib_youtube_download.py
-	"	45	6
-	^	264	17
-	.	265	16
-	+	847	0
-	+	847	0
-	+	848	0
-	+	850	0
-	+	858	0
-	+	847	0
-	+	463	19
-	+	463	0
-	+	463	0
-	+	759	8
-	+	759	0
-	+	760	18
-	+	760	25
-	+	27	39
-	+	760	11
-	+	760	34
-	+	760	19
-	+	273	0
-	+	274	63
-	+	760	0
-	+	759	0
-	+	463	19
-	+	463	0
-	+	468	0
-	+	468	0
-	+	468	0
-	+	762	0
-	+	473	0
-	+	468	0
-	+	463	0
-	+	473	0
-	+	759	0
-	+	460	0
-	+	462	19
-	+	463	0
-	+	467	39
-	+	463	63
-	+	755	36
-	+	759	39
-	+	463	67
-	+	465	79
-	+	464	22
-	+	465	73
-	+	467	0
-	+	465	73
-	+	464	37
-	+	466	47
-	+	465	0
-	+	274	66
-	+	264	16
-	+	265	16
-	z	265	16
-
-> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/factory.py
-	"	46	0
-
-> ~/streaming/pytomo/Pytomo/pytomo/[YankRing]
-	"	14	0
-	.	2	0
-	+	206	0
-	+	104	0
-	+	2	0
-
-> ~/streaming/pytomo/Pytomo/pytomo/kaa_metadata/core.py
-	"	70	26
-	^	70	27
-	.	70	26
-	+	70	26
-
-> ~/streaming/pytomo/Pytomo/pytomo/lib_youtube_api.py
-	"	44	50
-	^	44	51
-	.	44	50
-	+	34	25
-	+	18	52
-	+	19	0
-	+	18	45
-	+	37	0
-	+	16	0
-	+	17	0
-	+	15	27
-	+	37	38
-	+	38	52
-	+	41	0
-	+	25	0
-	+	23	40
-	+	20	60
-	+	22	0
-	+	23	4
-	+	20	0
-	+	41	28
-	+	44	50
-	z	44	50
-
-> ~/streaming/pytomo/Pytomo/pytomo/__init__.py
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	z	1	0
-
 > ~/streaming/pytomo/NERD_tree_1
 	"	6	4
 	.	1	0
@@ -1890,26 +5003,6 @@ $
 	.	2	38
 	+	3	34
 	+	2	38
-
-> ~/streaming/pytomo/.gitignore
-	"	25	3
-	^	26	7
-	.	25	3
-	+	4	4
-	+	6	5
-	+	8	0
-	+	9	16
-	+	7	4
-	+	11	0
-	+	19	4
-	+	20	3
-	+	22	0
-	+	21	7
-	+	23	0
-	+	23	0
-	+	25	6
-	+	26	4
-	+	25	3
 
 > ~/streaming/pytomo/setup.py
 	"	25	28
@@ -2958,9 +6051,6 @@ $
 	+	65	68
 	z	51	68
 
-> /usr/share/vim/vim72/doc/pattern.txt
-	"	534	0
-
 > ~/streaming/pytomo/pytomo_louis/lib_ping.py
 	"	38	23
 	^	38	24
@@ -3059,19 +6149,6 @@ $
 	+	38	23
 	a	38	15
 	z	38	23
-
-> ~/config/vim_runtime/vimrc
-	"	106	6
-	^	384	1
-	.	106	6
-	+	385	0
-	+	107	0
-	+	106	6
-
-> ~/config/vim_runtime/-MiniBufExplorer-
-	"	1	9
-	.	2	0
-	+	2	0
 
 > /usr/share/vim/vim72/doc/repeat.txt
 	"	153	33
@@ -3197,56 +6274,6 @@ $
 	+	33	45
 	+	34	66
 	z	34	63
-
-> ~/config/shell_aliases_functions
-	"	4	0
-	^	4	1
-	.	5	0
-	+	132	8
-	+	130	9
-	+	131	25
-	+	74	71
-	+	200	49
-	+	101	0
-	+	28	14
-	+	123	43
-	+	112	35
-	+	108	55
-	+	112	39
-	+	205	29
-	+	205	0
-	+	203	46
-	+	205	0
-	+	204	27
-	+	203	38
-	+	204	31
-	+	203	44
-	+	134	31
-	+	135	29
-	+	136	36
-	+	108	0
-	+	113	77
-	+	113	91
-	+	114	0
-	+	113	63
-	+	113	107
-	+	114	0
-	+	203	43
-	+	206	0
-	+	207	0
-	+	76	54
-	+	109	15
-	+	109	41
-	+	109	0
-	+	109	25
-	+	109	22
-	+	111	52
-	+	110	35
-	+	111	0
-	+	112	31
-	+	30	17
-	+	190	23
-	+	5	0
 
 > ~/streaming/pytomo/pytomo_louis/kaa/metadata/factory.py
 	"	50	18
@@ -4200,15 +7227,6 @@ $
 	+	117	41
 	+	136	60
 
-> ~/.subversion/servers
-	"	161	0
-	.	161	0
-	+	161	0
-	+	160	0
-	+	161	0
-	+	160	0
-	+	161	0
-
 > ~/streaming/pytomo/pytomo_louis/lib_cache_url/dict_cache.py
 	"	71	4
 	^	124	58
@@ -4449,59 +7467,6 @@ $
 > ~/streaming/pytomo/pytomo_package/lib_cache_url/generate_links.py:46:
 	"	1	0
 
-> ~/workspace/spydump/tools/template.py
-	"	63	64
-	^	63	65
-	.	59	0
-	+	96	0
-	+	82	23
-	+	83	0
-	+	74	19
-	+	74	0
-	+	73	20
-	+	74	0
-	+	91	23
-	+	92	0
-	+	71	0
-	+	59	66
-	+	62	65
-	+	59	88
-	+	61	52
-	+	61	38
-	+	62	0
-	+	61	37
-	+	65	71
-	+	66	25
-	+	67	0
-	+	66	68
-	+	74	0
-	+	57	33
-	+	76	13
-	+	80	33
-	+	82	61
-	+	59	78
-	+	61	63
-	+	59	80
-	+	61	0
-	+	62	33
-	+	59	33
-	+	58	31
-	+	64	33
-	+	67	45
-	+	59	85
-	+	61	0
-	+	63	17
-	+	65	17
-	+	64	44
-	+	62	77
-	+	61	0
-	+	60	0
-	+	61	0
-	+	66	0
-	+	63	64
-	+	59	0
-	z	63	64
-
 > ~/streaming/pytomo/pytomo_louis/lib_cache_url/url_list.txt
 	"	9	0
 	.	9	0
@@ -4704,34 +7669,6 @@ $
 	.	54	19
 	+	53	0
 	+	54	19
-
-> ~/config/xsessionrc
-	"	28	62
-	^	28	63
-	.	28	62
-	+	11	0
-	+	12	67
-	+	13	0
-	+	12	0
-	+	11	0
-	+	18	50
-	+	19	0
-	+	18	0
-	+	3	16
-	+	18	40
-	+	37	0
-	+	3	0
-	+	36	0
-	+	3	0
-	+	21	69
-	+	22	93
-	+	29	0
-	+	23	2
-	+	24	75
-	+	24	104
-	+	29	0
-	+	26	58
-	+	28	62
 
 > ~/streaming/pytomo/lib/lib_cache_url/youtube_cache.py
 	"	450	16
@@ -7795,9 +10732,6 @@ $
 > ~/analyses/user_profiling/TMA2011/paper_draftv2.tex
 	"	759	34
 
-> /usr/share/vim/vim72/doc/help.txt
-	"	1	0
-
 > ~/workspace/spydump/tools/flow2session.py
 	"	51	0
 	^	186	76
@@ -8174,138 +11108,6 @@ $
 	+	1	0
 	+	50	0
 	+	1	0
-
-> ~/.vimrc
-	"	15	0
-	^	17	31
-	.	17	31
-	+	8	0
-	+	9	105
-	+	17	0
-	+	9	34
-	+	14	0
-	+	9	16
-	+	20	0
-	+	21	0
-	+	9	72
-	+	12	1
-	+	9	46
-	+	10	0
-	+	11	0
-	+	12	0
-	+	16	0
-	+	17	0
-	+	13	0
-	+	14	0
-	+	17	0
-	+	9	35
-	+	18	0
-	+	18	0
-	+	17	31
-
-> ~/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
 
 > /usr/share/vim/vim72/doc/change.txt
 	"	667	39

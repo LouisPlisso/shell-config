@@ -75,6 +75,9 @@ alias burnit='flac -d *.flac && cdrdao write cd.toc && rm *.wav && eject'
 
 alias twi='${MY_CONFIG_DIR}/bin/twitter -t -d -f ansi'
 
+# google code update
+alias upload_download='googlecode_upload.py -s "source distribution" -p pytomo -u louis.plissonneau -w Ab5PG7aC9MB9 -l "Featured,Type-Source,OpSys-All" '
+
 # super man
 function superman() { 
     /usr/bin/man "$@" || w3m -dump http://google.com/search\?q="$@"\&btnI | less 
@@ -188,6 +191,8 @@ alias vlcn='vlc -I ncurses'
 # git log
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
 alias git_svn_sync_clean='git svn fetch; git merge remotes/clean'
+alias gitst='git status'
+alias gst='git status'
 
 #fresh() {
 #    old_proxy=$http_proxy

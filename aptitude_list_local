@@ -456,3 +456,7 @@ python2.5-kaa-base
 python2.5-kaa-metadata
 python-pycurl
 nscd
+# python-pyxine
+# python-clutter
+unclutter
+python-pyexiv2
