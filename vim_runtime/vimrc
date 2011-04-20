@@ -365,21 +365,21 @@ map <leader>ba :1,300 bd!<cr>
 "endtry
 
 
-""""""""""""""""""""""""""""""
-" => Statusline
-""""""""""""""""""""""""""""""
-" Always hide the statusline
-set laststatus=2
-
-" Format the statusline
-"set statusline=%<CWD:\ %r%{CurDir()}%h\ \ %F%m%r%h\ %w\ Line:\ %l/%L:\ %p%%\ %(Column:\ %c%)
-set statusline=%<%F%m%r%h\ %w\ Line:\ %l/%L:\ %p%%\ %(Column:\ %c%)
-
-
-function! CurDir()
-    let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
-    return curdir
-endfunction
+""  """"""""""""""""""""""""""""""
+""  " => Statusline
+""  """"""""""""""""""""""""""""""
+""  " Always hide the statusline
+""  set laststatus=2
+""  
+""  " Format the statusline
+""  "set statusline=%<CWD:\ %r%{CurDir()}%h\ \ %F%m%r%h\ %w\ Line:\ %l/%L:\ %p%%\ %(Column:\ %c%)
+""  set statusline=%<%F%m%r%h\ %w\ Line:\ %l/%L:\ %p%%\ %(Column:\ %c%)
+""  
+""  
+""  function! CurDir()
+""      let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
+""      return curdir
+""  endfunction
 
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

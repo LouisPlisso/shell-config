@@ -132,6 +132,7 @@ myManageHook = composeOne
     , className =? "Vlc"      -?> doFloat
     , className =? "Tk"      -?> doFloat
     , className =? "Ipython"      -?> doFloat
+    , className =? "Android"      -?> doFloat
     , className =? "Wicd-client.py"     -?> doFloat
     --, className =? "Kino"      -?> doFloat
     , return True -?> doF W.focusDown
@@ -156,9 +157,13 @@ ffKeys conf@(XConfig {modMask = modm}) = M.fromList $
           (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]     
           where workspaceKeys = [xK_F1 .. xK_F10]
 
+avoidMaster :: W.StackSet i l a s sd -> W.StackSet i l a s sd
+avoidMaster = W.modify' $ \c -> case c of
+     W.Stack t [] (r:rs) ->  W.Stack t [r] rs
+     otherwise           -> c
 
 -- Circle ||| ||| magnify Grid 
-myLayoutHook = avoidStruts (layoutHints (myCode) ||| tiled ||| Mirror tiled ||| Grid ||| Full)
+myLayoutHook = avoidStruts (layoutHints (myCode) ||| tiled ||| Mirror tiled ||| Grid ||| Full) 
             where 
                  -- default tiling algorithm partitions the screen into two panes
                  tiled   = ResizableTall nmaster delta ratio []
@@ -171,7 +176,7 @@ myLayoutHook = avoidStruts (layoutHints (myCode) ||| tiled ||| Mirror tiled ||| 
                  --
                  magnify = magnifiercz (12%10)
                  -- coding scheme
-                 myCode = FixedColumn 1 31 80 10
+                 myCode = FixedColumn 1 31 82 10
                  -- Define a tab layout
                  -- myTabbed = tabbed shrinkText myTabTheme
                  -- Define a tab theme
@@ -207,7 +212,7 @@ main = do
         , terminal           = "urxvtc"
         } `additionalKeys`
         [ ((mod1Mask, xK_z), spawn "xscreensaver-command -lock") 
-        , ((mod1Mask .|. shiftMask, xK_h), spawn "sudo pm-hibernate")
+        , ((mod1Mask .|. shiftMask, xK_h), spawn "sudo /usr/sbin/pm-hibernate")
         , ((mod1Mask, xK_s), spawn "exe=`quicksnips` && eval \"exec $exe\"")
         , ((mod1Mask, xK_Return), spawn "urxvt")
         , ((mod1Mask .|. shiftMask, xK_Return), windows W.swapMaster) -- %! Swap the focused window and the master window

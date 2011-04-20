@@ -1,6 +1,0 @@
-#!/bin/sh
-# launch as sudoer
-
-[ -h /usr/bin/python ] && /bin/rm /usr/bin/python
-
-/bin/ls /usr/bin/python-2.5 /usr/bin/python

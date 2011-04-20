@@ -14,6 +14,7 @@ Cmnd_Alias      LIGHT = __INSTALL_DIR__/adjust_light.sh *
 Cmnd_Alias	CLAMAV = /usr/bin/freshclam
 Cmnd_Alias      WIFI = /sbin/iwconfig wlan0 txpower on
 Cmnd_Alias	ADB = adb *
+Cmnd_Alias	CMDS = ps_mem.py
 
 Defaults	env_reset
 Defaults	env_keep="http_proxy MY_CONFIG_DIR PATH"
@@ -30,8 +31,8 @@ Defaults	timestamp_timeout=5
 # User privilege specification
 root	ALL=(ALL) ALL
 __USER__	ALL=(ALL) ALL
-__USER__	ALL=NOPASSWD: INSTALL, LOADKEYS, MOUNT, HIBERNATE, CLAMAV, LIGHT, WIFI, COPY_MEDIA, ADB
-__USER__	ALL=NOPASSWD: ALL
+__USER__	ALL=NOPASSWD: INSTALL, LOADKEYS, MOUNT, HIBERNATE, CLAMAV, LIGHT, WIFI, COPY_MEDIA, ADB, CMDS
+# __USER__	ALL=NOPASSWD: ALL
 
 # Uncomment to allow members of group sudo to not need a password
 # (Note that later entries override this, so you might need to move

@@ -29,7 +29,7 @@ export KEY_CMD="xkbcomp -w 0 -R/usr/share/X11/xkb/ ${MY_CONFIG_DIR}/keymap \"$DI
 
 export PATH=$PATH:/sbin:/usr/sbin:${MY_CONFIG_DIR}/bin:${MY_CONFIG_DIR}/cabal/bin
 export PYTHONPATH=~/workspace/spydump/
-export PATH=$PATH:$PYTHONPATH/tools
+export PATH=$PATH:$PYTHONPATH/
 
 # scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
 SCRIPT_RECIPES=$HOME/.scripts_recipes/bin
@@ -104,12 +104,12 @@ alias gvi='gvim'
 #alias chrome='all_proxy=$chrome_proxy /usr/bin/google-chrome'
 
 #restart_adb_server() {
-#    ~/perso/android/android-sdk-linux_86/tools/adb kill-server
-#    ~/perso/android/android-sdk-linux_86/tools/adb start-server
+#    ~/android/android-sdk-linux_86/tools/adb kill-server
+#    ~/android/android-sdk-linux_86/tools/adb start-server
 #}
 #export -f restart_adb_server
-export ANDROID_SDK=~/perso/android/android-sdk-linux_x86
-export ANDROID_NDK_ROOT=~/perso/android/android-ndk-r5b
+export ANDROID_SDK=~/android/android-sdk-linux_x86
+export ANDROID_NDK_ROOT=~/android/android-ndk-r5b
 export ANDROID_NDK=$ANDROID_NDK_ROOT
 #export ANDROID_NDK_TOOLCHAIN_ROOT=~/android-toolchain
 export PATH=$PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools
@@ -193,6 +193,9 @@ alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Cr
 alias git_svn_sync_clean='git svn fetch; git merge remotes/clean'
 alias gitst='git status'
 alias gst='git status'
+alias gco='git commit -a'
+
+alias ps_mem='sudo /home/louis/config/bin/ps_mem.py'
 
 #fresh() {
 #    old_proxy=$http_proxy
@@ -208,5 +211,6 @@ alias findusb='diff <(lsusb) <(sleep 3s && lsusb)'
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
 export PATH=$PATH:$JAVA_HOME/bin
 #export PLUGIN_HOME=$JAVA_HOME
+export PATH=$PATH:/opt/eclipse
 
 export GNOME_DESKTOP_SESSION_ID=1

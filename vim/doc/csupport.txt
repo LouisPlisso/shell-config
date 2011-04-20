@@ -1,7 +1,7 @@
-*csupport.txt*                  C/C++ Support               February 05 2010
+*csupport.txt*                  C/C++ Support                January 25 2011
 
 C/C++ Support                                           *c-support* *csupport*
-                             Plugin version 5.10
+                             Plugin version 5.13
                         for Vim version 7.0 and above
                        Fritz Mehner  <mehner@fh-swf.de>
 
@@ -49,14 +49,16 @@ keystroke.
  1.7.1   Minimal make functionality             |csupport-run-buffer|
  1.7.2   Command line arguments                 |csupport-run-cmdline-args|
  1.7.3   Run make                               |csupport-run-make|
- 1.7.4   Command line arguments for make        |csupport-run-make-args|
- 1.7.5   Splint                                 |csupport-run-splint|
- 1.7.6   CodeCheck                              |csupport-run-codecheck|
- 1.7.7   Indent                                 |csupport-run-indent|
- 1.7.8   Hardcopy                               |csupport-run-hardcopy|
- 1.7.9   Rebuild templates                      |csupport-run-templates|
- 1.7.10  Xterm size                             |csupport-run-xterm|
- 1.7.11  Output redirection                     |csupport-run-output|
+ 1.7.4   Executable to run                      |csupport-run-make-run|
+ 1.7.5   Run make clean                         |csupport-run-make-clean|
+ 1.7.6   Command line arguments for make        |csupport-run-make-args|
+ 1.7.7   Splint                                 |csupport-run-splint|
+ 1.7.8   CodeCheck                              |csupport-run-codecheck|
+ 1.7.9   Indent                                 |csupport-run-indent|
+ 1.7.10  Hardcopy                               |csupport-run-hardcopy|
+ 1.7.11  Rebuild templates                      |csupport-run-templates|
+ 1.7.12  Xterm size                             |csupport-run-xterm|
+ 1.7.13  Output redirection                     |csupport-run-output|
  1.8    Help                                    |csupport-help|
  
  2.    Usage without GUI                        |csupport-usage-vim|
@@ -99,8 +101,8 @@ If the root menu 'C/C++' is not visible call it with the item "Load C Support"
 from the standard Tools-menu.
 The item "Load C Support" can also be used to unload the C/C++-root menu.
 
-Nearly all menu entries insert code snippets or comments. All these stuff is
-taken from template files and can be changed by the user to meet his
+Nearly all menu entries insert code snippets or comments. All of these are
+contained within template files and can be changed by the user to meet their
 requirements (see|csupport-templates|).
 
 ------------------------------------------------------------------------------
@@ -109,9 +111,9 @@ requirements (see|csupport-templates|).
 
 1.1.1  APPEND ALIGNED COMMENTS TO CONSECUTIVE LINES    *csupport-comm-aligned*
 
-In NORMAL MODE the menu items 'end-of-line comment' will append an comment to
+In NORMAL MODE, the menu item 'end-of-line comment' will append a comment to
 the current line.
-In VISUAL MODE these item will append aligned comments to all marked lines.
+In VISUAL MODE, this item will append aligned comments to all marked lines.
 Marking the first 4 lines
 
   print_double_array ( double array[],
@@ -128,9 +130,9 @@ and choosing 'end-of-line com. /**/' will yield.
                        char*  arrayname         /*  */
                        )                        /*  */
 
-If one ore more lines go beyond the starting column (s.below) the comments
-will start at the 2. column after the longest line.  The cursor will be
-positioned inside the first comment.
+If one or more lines go beyond the starting column (s.below), the comments
+will start at the second column after the longest line.  The cursor will then
+be positioned inside the first comment.
 
 The default starting column is 49 ( = (multiple of 2,4, or 8) + 1 ).  This can
 be changed by setting a global variable in the file ~/.vimrc , e.g. :
@@ -138,7 +140,7 @@ be changed by setting a global variable in the file ~/.vimrc , e.g. :
   let g:C_LineEndCommColDefault    = 45
 
 The starting column can also be set by the menu item
-'Comments->set end-of-line com. col' . Just position the cursor in an
+'Comments->set end-of-line com. col'.  Just position the cursor in an
 arbitrary column (column number is shown in the Vim status line) and choose
 this menu item.  This setting is buffer related.
 
@@ -258,7 +260,7 @@ needs not to be marked.
 Frame comments, file header comments and function, methods, class descriptions
 are read as templates from the appropriate files (see |csupport-templates|).
 
-There are to file description templates (menu items 'file description (impl.)'
+There are two file description templates (menu items 'file description (impl.)'
 and  'file description (header)', see also |csupport-templates|):
 
   comment.file-description         : files *.c *.cc *.cp *.cxx *.cpp *.CPP *.c++
@@ -310,7 +312,7 @@ Keywords are
 
  BUG COMPILER TODO TRICKY WARNING WORKAROUND user-defined-keyword
 
-These are preliminary comments to document places where works will be resumed
+These are preliminary comments to document places where work will be resumed
 shortly. They are usually not meant for the final documentation.  These
 comments are easily found by searching for the keyword.
 The keyword comments can also be inserted using the hotkey \ckc . This hotkey
@@ -578,20 +580,24 @@ start an input dialog
 asking for at least the name of the loop variable. The other parameters are
 optional. The type is restricted to the following integral data types:
 
-   char
-   int
-   long int
-   long
-   short int
-   short
-   size_t
-   unsigned char
-   unsigned int
-   unsigned long int
-   unsigned long
-   unsigned short int
-   unsigned short
-   unsigned
+  char
+  int
+  long
+  long int
+  long long
+  long long int
+  short
+  short int
+  size_t
+  unsigned 
+  unsigned char
+  unsigned int
+  unsigned long
+  unsigned long int
+  unsigned long long
+  unsigned long long int
+  unsigned short
+  unsigned short int
 
 One of these types can be specified by typing it completely or by typing zero
 or more characters of its name and completing them to the full name by using
@@ -860,17 +866,38 @@ Vim function CR will keep the arguments, Esc will discard them.
 
 1.7.3  RUN make                                            *csupport-run-make*
 
-The item 'make' runs the external make program.
+The item 'make' runs the external make program.  An error window will be
+opened if the compiler or linker reports errors or warnings during the make
+process.  Quickfix commands can now be used to jump to an error location.
+
+When inside a makefile the hotkeys \rm, \rmc , and \rma are working (see
+|csupport-usage-vim|).
+The snippets collection contains a sample makefile which can easily adepted
+for small projcts.
+
+1.7.4  EXECUTABLE TO RUN                               *csupport-run-make-run*
+
+The item 'executable to run' asks for the name of the executable built by
+make.  If the name given is nonempty this executable will be run by the menu
+item 'run' (\rr, C-F9).
+To return to the default behavior (see |csupport-run-buffer|) remove the name
+with the another 'executable to run'.
+
+1.7.5  RUN make clean                                *csupport-run-make-clean*
+
+The item 'make' runs the external make program with the standard target 'clean'.
 
 
-1.7.4  COMMAND LINE ARGUMENTS FOR make                *csupport-run-make-args*
+1.7.6  COMMAND LINE ARGUMENTS FOR make                *csupport-run-make-args*
 
 The item 'command line arguments for make' calls an input dialog which asks
 for command line arguments for make. These arguments are forwarded to make
-when called by the item 'make'.
+when called by the menu item 'make'.
+For the first and only the first argument the file name expansion will work
+(use the Tab-key).
 
 
-1.7.5  SPLINT                                            *csupport-run-splint*
+1.7.7  SPLINT                                            *csupport-run-splint*
 
 Splint is a tool for statically checking C programs (see http://www.splint.org).
 Of course it has to be installed in order to be used within Vim.  The menu
@@ -888,7 +915,7 @@ When vim is started this plugin will check whether splint is executable. If
 not, the menu item will *NOT' be visible.
 
 
-1.7.6  CODECHECK                                      *csupport-run-codecheck*
+1.7.8  CODECHECK                                      *csupport-run-codecheck*
 
 CodeCheck (TM) is a commercial code analyzing tool produced by Abraxas
 Software, Inc.  (www.abraxas-software.com).
@@ -918,7 +945,7 @@ When vim is started this plugin will check whether CodeCheck is executable. If
 not, the menu item will *NOT' be visible.
 
 
-1.7.7  INDENT                                            *csupport-run-indent*
+1.7.9  INDENT                                            *csupport-run-indent*
 
 The formatter 'indent' can be run over the whole buffer.  Before formatting a
 buffer this buffer will be saved to disk and you will be asked for a
@@ -928,7 +955,7 @@ Indent has many options. These are kept in the file '.indent.pro' in your home
 directory. See the indent manual for more information.
 
 
-1.7.8  HARDCOPY                                        *csupport-run-hardcopy*
+1.7.10  HARDCOPY                                       *csupport-run-hardcopy*
 
 Generates a PostScript file from the whole buffer or from a marked region.
 On a Windows system a printer dialog is displayed.
@@ -952,20 +979,20 @@ or by setting a global variable in the file ~/.vimrc , e.g. :
 See :h printheader and :h strftime()  for more details.
 
 
-1.7.9  REBUILD TEMPLATES                              *csupport-run-templates*
+1.7.11  REBUILD TEMPLATES                             *csupport-run-templates*
 
 After editing one or more template files  a click on this item rereads the
 template files and rebuilds all templates.
 
 
-1.7.10  XTERM SIZE                                        *csupport-run-xterm*
+1.7.12  XTERM SIZE                                        *csupport-run-xterm*
 
 The size of the xterm used for  running a program (below) can be set by this
 menu item. The default is 80 columns with 24 lines.
 This feature is not available under Windows.
 
 
-1.7.11  OUTPUT REDIRECTION                               *csupport-run-output*
+1.7.13  OUTPUT REDIRECTION                               *csupport-run-output*
 
 Running a program can be done in one of three ways:
 (1) Run the program from the gVim command line.
@@ -1123,6 +1150,7 @@ Legend:  (i) insert mode, (n) normal mode, (v) visual mode
   -- C++ ----------------------------------------------------------------
 
   \+co      cout  <<  << endl;                  (n,i)
+  \+"       << ""                               (n,i)
   \+c       class                               (n,i)
   \+ps      #include <...> STL                  (n,i)
   \+pc      #include <c..> C                    (n,i)
@@ -1152,11 +1180,13 @@ Legend:  (i) insert mode, (n) normal mode, (v) visual mode
   \rr       run                                 (n,i)
   \ra       set comand line arguments           (n,i)
   \rm       run make                            (n,i)
-  \rg       cmd. line arg. for make             (n,i)
+  \rmc      run 'make clean'                    (n,i)
+  \rme      executable to run                   (n,i)
+  \rma      cmd. line arg. for make             (n,i)
   \rp       run splint                          (n,i)
-  \ri       cmd. line arg. for splint           (n,i)
+  \rpa      cmd. line arg. for splint           (n,i)
   \rk       run CodeCheck (TM)                  (n,i)
-  \re       cmd. line arg. for CodeCheck (TM)   (n,i)
+  \rka      cmd. line arg. for CodeCheck (TM)   (n,i)
   \rd       run indent                          (n,v,i)
   \rh       hardcopy buffer                     (n,v,i)
   \rs       show plugin settings                (n,i)
@@ -1343,9 +1373,11 @@ As *** SUPERUSER *** :
 (1) Find the Vim installation directory.
 The Vim Ex command ':echo $VIM' gives '/usr/local/share/vim' or something like
 that. Beyond this directory you will find the Vim installation,  e.g. in
-'/usr/local/share/vim/vim71' if Vim version 7.1 has been installed.
+'/usr/local/share/vim/vim73' if Vim version 7.3 has been installed
+(Windows: 'C:\Program Files\Vim').
 
-(2) Create a new subdirectory 'vimfiles', e.g. '/usr/local/share/vim/vimfiles'.
+(2) Create a new subdirectory 'vimfiles', e.g. '/usr/local/share/vim/vimfiles'
+(Windows: 'C:\Program Files\Vim\vimfiles').
 
 (3) Install C/C++ Support
 Copy the archive cvim.zip to this new directory and unpack it:
@@ -1354,6 +1386,13 @@ Copy the archive cvim.zip to this new directory and unpack it:
 (4) Generate the help tags:
   :helptags $VIM/vimfiles/doc
 
+SPECIAL CASES. Some Linux distributions use non-standard names for Vim
+directories. SUSE has a directory '/usr/share/vim/site' to put plugins in.
+These directories will not be found automatically.  After installing the
+plugin below '/usr/share/vim/site' the use of the templates will be enabled by
+the following line in '~/.vimrc':
+
+  let g:C_GlobalTemplateFile = '/usr/share/vim/site/c-support/templates/Templates'
 
 As *** USER *** :
 
@@ -1369,8 +1408,8 @@ Create your private template directory:
 
   mkdir --parents  ~/.vim/c-support/template
 
-Create a private template file 'Templates' in this directory to overwrite some
-macros, e.g.
+Create a private template file 'Templates' (compulsory) in this directory to
+overwrite some macros, e.g.
 
  *|AUTHOR|*    = your name
  *|AUTHORREF|* = ...
@@ -1379,7 +1418,8 @@ macros, e.g.
  *|COPYRIGHT|* = ...
 
 You can also have local templates which overwrite the global ones. To suppress
-the messages in this case set a global variable in '~/.vimrc' :
+the messages in this case set a global variable in '~/.vimrc' (Windows:
+'~\_vimrc') :
 
   let g:C_TemplateOverwrittenMsg= 'no'
 
@@ -1393,8 +1433,8 @@ The default is 'yes'.
 5.1  TEMPLATE FILES                                 *csupport-templates-files*
 ------------------------------------------------------------------------------
 
-Nearly all menu entries insert code snippets or comments. All these stuff is
-taken from template files and can be changed by the user to meet his
+Nearly all menu entries insert code snippets or comments. All of these are
+contained within template files and can be changed by the user to meet their
 requirements.
 
 The master template file is '$HOME/.vim/c-support/templates/Templates' for a
@@ -1477,7 +1517,7 @@ possible.
  ----------------------------------------------------------------------------
  PREDEFINED TAGS
  ----------------------------------------------------------------------------
- <CURSOR>             The cursor position after insertion of a template
+ <CURSOR>,{CURSOR}    The cursor position after insertion of a template
  <+text+>,<-text->,   Jump targets in templates. Jump with Ctrl-j.
  {+text+},{-text-}    See |csupport-templates-jump|.
 
@@ -1488,6 +1528,8 @@ A dependent template file can start with its own macro section. There is no
 need to have all user defined macros in the master file.
 When the first template definition is found (see below) macro definitions are
 no longer recognized.
+Use the tag variant with curly braces if the indentation of the following line
+is wrong after template insertion.
 
 ------------------------------------------------------------------------------
 5.2.1  USER DEFINED FORMATS FOR DATE AND TIME        *csupport-templates-date*
@@ -2075,18 +2117,23 @@ In visual mode the content of the new block will be indented.
 10.  WINDOWS PARTICULARITIES                                *csupport-windows*
 ==============================================================================
 
-The plugin should go into the directory structure below the local
-installation directory $HOME/.vim/ for LINUX/UNIX and $VIM/vimfiles/ for
-Windows.
+For a user installation the plugin should go into the directory structure below 
+  $HOME/vimfiles/
+for a system installation below
+  $VIM/vimfiles/
+
 The values of the two variables can be found from inside Vim:
    :echo $VIM
 or
    :echo $HOME
 
-Configuration files:
+The configuration files for a user are
 
-  LINUX/UNIX :   $HOME/.vimrc  and  $HOME/.gvimrc
-  Windows    :   $VIM/_vimrc   and  $VIM/_gvimrc
+  $HOME/_vimrc   and  $HOME/_gvimrc
+
+for the system
+
+  $VIM/_vimrc   and  $VIM/_gvimrc
 
 Compiler settings:
 

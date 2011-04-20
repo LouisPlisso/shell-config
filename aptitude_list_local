@@ -193,8 +193,11 @@ iceowl-extension/sid
 /sid # libclamav6
 /sid
 clamav/sid libclamav6/sid clamav-freshclam/sid clamav-base/sid
-clamav-milter/sid
-clamav-milter/sid clamav-daemon/sid
+# clamav-milter
+/sid
+# clamav-milter
+/sid # clamav-daemon
+/sid
 hotplug-utils
 xpdf/lenny
 latex2html
@@ -460,3 +463,5 @@ nscd
 # python-clutter
 unclutter
 python-pyexiv2
+geogebra
+openjdk-6-source

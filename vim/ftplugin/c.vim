@@ -5,7 +5,7 @@
 "   Language :  C / C++
 "     Plugin :  c.vim 
 " Maintainer :  Fritz Mehner <mehner@fh-swf.de>
-"   Revision :  $Id: c.vim,v 1.57 2010/02/05 13:21:11 mehner Exp $
+"   Revision :  $Id: c.vim,v 1.62 2010/12/28 18:54:11 mehner Exp $
 "
 " ------------------------------------------------------------------------------
 "
@@ -15,6 +15,13 @@ if exists("b:did_C_ftplugin")
   finish
 endif
 let b:did_C_ftplugin = 1
+"
+" ---------- system installation or local installation ----------
+"
+let s:installation				= 'local'
+if match( expand("<sfile>"), escape( $VIM, ' \' ) ) == 0
+	let s:installation						= 'system'
+endif
 "
 " ---------- Do we have a mapleader other than '\' ? ------------
 "
@@ -176,7 +183,7 @@ vnoremap    <buffer>  <silent>  <LocalLeader>sb    <Esc>:call C_InsertTemplate("
 inoremap    <buffer>  <silent>  <LocalLeader>sb    <Esc>:call C_InsertTemplate("statements.block")<CR>
 "
 " ---------- preprocessor menu  ----------------------------------------------
-""
+"
  noremap    <buffer>  <LocalLeader>ps                  :IncludeStdLibrary<Space>
 inoremap    <buffer>  <LocalLeader>ps             <Esc>:IncludeStdLibrary<Space>
  noremap    <buffer>  <LocalLeader>pc                  :IncludeC99Library<Space>
@@ -302,13 +309,17 @@ inoremap    <buffer>  <silent>  <LocalLeader>ni    <Esc>:call C_ProtoInsert()<CR
 inoremap    <buffer>  <silent>  <LocalLeader>nc    <Esc>:call C_ProtoClear()<CR>
 inoremap    <buffer>  <silent>  <LocalLeader>ns    <Esc>:call C_ProtoShow()<CR>
 "
- noremap    <buffer>  <silent>  <LocalLeader>ntl        :call C_EditTemplates("local")<CR>
- noremap    <buffer>  <silent>  <LocalLeader>ntg        :call C_EditTemplates("global")<CR>
+ noremap    <buffer>  <silent>  <LocalLeader>ntl        :call C_BrowseTemplateFiles("Local")<CR>
+ if s:installation == 'system'
+	 noremap    <buffer>  <silent>  <LocalLeader>ntg        :call C_BrowseTemplateFiles("Global")<CR>
+ endif
  noremap    <buffer>  <silent>  <LocalLeader>ntr        :call C_RereadTemplates()<CR>
  noremap    <buffer>            <LocalLeader>nts   <Esc>:CStyle<Space>
 "
 " ---------- C++ menu ----------------------------------------------------
 "
+ noremap    <buffer>  <silent>  <LocalLeader>+"         :call C_InsertTemplate("cpp.cout-operator")<CR>
+inoremap    <buffer>  <silent>  <LocalLeader>+"    <Esc>:call C_InsertTemplate("cpp.cout-operator")<CR>
  noremap    <buffer>  <silent>  <LocalLeader>+co        :call C_InsertTemplate("cpp.cout")<CR>
 inoremap    <buffer>  <silent>  <LocalLeader>+co   <Esc>:call C_InsertTemplate("cpp.cout")<CR>
 "
@@ -367,9 +378,11 @@ inoremap    <buffer>  <silent>  <LocalLeader>+c.   <Esc>:call C_InsertTemplate("
  map    <buffer>  <silent>  <LocalLeader>rr         :call C_Run()<CR>
  map    <buffer>  <silent>  <LocalLeader>ra         :call C_Arguments()<CR>
  map    <buffer>  <silent>  <LocalLeader>rm         :call C_Make()<CR>
- map    <buffer>  <silent>  <LocalLeader>rg         :call C_MakeArguments()<CR>
+ map    <buffer>  <silent>  <LocalLeader>rmc        :call C_MakeClean()<CR>
+ map    <buffer>  <silent>  <LocalLeader>rme        :call C_MakeExeToRun()<CR>
+ map    <buffer>  <silent>  <LocalLeader>rma        :call C_MakeArguments()<CR>
  map    <buffer>  <silent>  <LocalLeader>rp         :call C_SplintCheck()<CR>:call C_HlMessage()<CR>
- map    <buffer>  <silent>  <LocalLeader>ri         :call C_SplintArguments()<CR>
+ map    <buffer>  <silent>  <LocalLeader>rpa        :call C_SplintArguments()<CR>
  map    <buffer>  <silent>  <LocalLeader>rd         :call C_Indent()<CR>
  map    <buffer>  <silent>  <LocalLeader>rh         :call C_Hardcopy("n")<CR>
  map    <buffer>  <silent>  <LocalLeader>rs         :call C_Settings()<CR>
@@ -381,9 +394,11 @@ imap    <buffer>  <silent>  <LocalLeader>rl    <C-C>:call C_Link()<CR>:call C_Hl
 imap    <buffer>  <silent>  <LocalLeader>rr    <C-C>:call C_Run()<CR>
 imap    <buffer>  <silent>  <LocalLeader>ra    <C-C>:call C_Arguments()<CR>
 imap    <buffer>  <silent>  <LocalLeader>rm    <C-C>:call C_Make()<CR>
-imap    <buffer>  <silent>  <LocalLeader>rg    <C-C>:call C_MakeArguments()<CR>
+imap    <buffer>  <silent>  <LocalLeader>rmc   <C-C>:call C_MakeClean()<CR>
+imap    <buffer>  <silent>  <LocalLeader>rme   <C-C>:call C_MakeExeToRun()<CR>
+imap    <buffer>  <silent>  <LocalLeader>rma   <C-C>:call C_MakeArguments()<CR>
 imap    <buffer>  <silent>  <LocalLeader>rp    <C-C>:call C_SplintCheck()<CR>:call C_HlMessage()<CR>
-imap    <buffer>  <silent>  <LocalLeader>ri    <C-C>:call C_SplintArguments()<CR>
+imap    <buffer>  <silent>  <LocalLeader>rpa   <C-C>:call C_SplintArguments()<CR>
 imap    <buffer>  <silent>  <LocalLeader>rd    <C-C>:call C_Indent()<CR>
 imap    <buffer>  <silent>  <LocalLeader>rh    <C-C>:call C_Hardcopy("n")<CR>
 imap    <buffer>  <silent>  <LocalLeader>rs    <C-C>:call C_Settings()<CR>
@@ -398,9 +413,9 @@ imap    <buffer>  <silent>  <LocalLeader>ro    <C-C>:call C_Toggle_Gvim_Xterm()<
 "
 if executable("check") 
   map    <buffer>  <silent>  <LocalLeader>rk         :call C_CodeCheck()<CR>:call C_HlMessage()<CR>
-  map    <buffer>  <silent>  <LocalLeader>re         :call C_CodeCheckArguments()<CR>
+  map    <buffer>  <silent>  <LocalLeader>rka        :call C_CodeCheckArguments()<CR>
  imap    <buffer>  <silent>  <LocalLeader>rk    <C-C>:call C_CodeCheck()<CR>:call C_HlMessage()<CR>
- imap    <buffer>  <silent>  <LocalLeader>re    <C-C>:call C_CodeCheckArguments()<CR>
+ imap    <buffer>  <silent>  <LocalLeader>rka   <C-C>:call C_CodeCheckArguments()<CR>
 endif
 " ---------- plugin help -----------------------------------------------------
 "

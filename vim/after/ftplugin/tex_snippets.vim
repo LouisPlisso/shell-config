@@ -78,7 +78,14 @@ exec "Snippet table       \\begin{table}[".st."place".et."]<CR>".st.et."<CR>\\en
 exec "Snippet figure      \\begin{figure}[".st."place".et."]<CR>".st.et."<CR>\\end{figure}<CR>".st.et
 exec "Snippet equation    \\begin{equation}[".st."place".et."]<CR>".st.et."<CR>\\end{equation}<CR>".st.et
 exec "Snippet caption     \\caption{".st."text".et."}<CR>".st.et
-
+"" exec "Snippet sfigure      \\begin{figure}[".st."place".et."]<CR>".st.et."<CR>\\end{figure}<CR>".st.et
+"" \begin{figure}
+""     \begin{center}
+""         \subfigure[Peak Rate per Flow\label{fig:peak_ftth_dm_flow}]{\includegraphics[width=.48\linewidth]{./graph_filtered_imc/peak_rate_from_flow_dailymotion_logx.pdf}}
+""         \subfigure[Peak Rate per Client\label{fig:peak_ftth_dm_client}]{\includegraphics[width=.48\linewidth]{./graph_filtered_imc/peak_rate_per_client_dailymotion_peak_rates_per_client_logx.pdf}}
+""     \caption{DailyMotion Peak Rates}
+""     \end{center}
+"" \end{figure}
 " Tabular environments:
 exec "Snippet tabbing     \\begin{tabbing}<CR>".st.et."<CR>\\end{tabbing}<CR>".st.et
 exec "Snippet tabular     \\begin{tabular}[".st."pos".et."]{".st."cols".et."}<CR>".st.et."<CR>\\end{tabular}<CR>".st.et

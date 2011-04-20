@@ -1,2 +1,0 @@
-nunmap ,gq<cr>
-

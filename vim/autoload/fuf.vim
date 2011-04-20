@@ -1038,6 +1038,7 @@ function s:checkDataFileCompatibility()
   endif
 endfunction
 
+finish
 call s:checkDataFileCompatibility()
 
 " }}}1
