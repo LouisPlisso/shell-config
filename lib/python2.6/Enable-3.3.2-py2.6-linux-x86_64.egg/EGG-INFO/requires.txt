@@ -1,0 +1,14 @@
+EnthoughtBase[ui] >=3.0.6.dev
+TraitsGUI >=3.5.0.dev
+Traits[ui] >=3.5.0.dev
+
+[traits]
+
+
+[ps]
+
+
+[nonets]
+numpy >= 1.1.0
+
+[svg]

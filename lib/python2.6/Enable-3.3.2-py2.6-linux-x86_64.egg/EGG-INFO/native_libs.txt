@@ -1,0 +1,2 @@
+enthought/kiva/agg/_agg.so
+enthought/kiva/agg/_plat_support.so

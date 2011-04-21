@@ -1,0 +1,45 @@
+Metadata-Version: 1.0
+Name: EnthoughtBase
+Version: 3.0.6
+Summary: Core packages for the Enthought Tool Suite.
+Home-page: http://code.enthought.com/projects/enthought_base.php
+Author: ETS Developers
+Author-email: enthought-dev@enthought.com
+License: BSD
+Description: The EnthoughtBase project includes a few core packages that are used by many
+        other projects in the Enthought Tool Suite:
+        
+        - **enthought.etsconfig**: Supports configuring settings that need to be shared
+          across multiple projects or programs on the same system. Most significant of
+          these is the GUI toolkit to be used. You can also configure locations for
+          writing application data and user data, and the name of the company
+          responsible for the software (which is used in the application and user data
+          paths on some systems).
+        - **enthought.logger**: Provides convenience functions for creating logging
+          handlers.
+        - **enthought.util**: Provides miscellaneous utility functions.
+        
+        Prerequisites
+        -------------
+        If you want to build EnthoughtBase from source, you must first install
+        `setuptools <http://pypi.python.org/pypi/setuptools/0.6c8>`_.
+        
+        
+Platform: Windows
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Platform: Solaris
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries

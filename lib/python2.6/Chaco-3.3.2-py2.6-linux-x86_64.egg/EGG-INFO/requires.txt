@@ -1,0 +1,9 @@
+Enable[traits] >=3.3.2.dev
+EnthoughtBase >=3.0.6.dev
+Traits[ui] >=3.5.0.dev
+
+[nonets]
+numpy >= 1.4.0
+
+[wx]
+TraitsBackendWX >=3.5.0.dev

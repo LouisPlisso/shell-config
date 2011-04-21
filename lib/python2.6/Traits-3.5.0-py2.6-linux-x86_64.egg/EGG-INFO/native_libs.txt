@@ -1,0 +1,2 @@
+enthought/traits/ctraits.so
+enthought/traits/protocols/_speedups.so

@@ -1,0 +1,7 @@
+scikits/learn/ball_tree.so
+scikits/learn/svm/_libsvm.so
+scikits/learn/svm/_liblinear.so
+scikits/learn/utils/arrayfuncs.so
+scikits/learn/utils/sparsetools/_csgraph.so
+scikits/learn/glm/cd_fast.so
+scikits/learn/glm/sparse/cd_fast_sparse.so

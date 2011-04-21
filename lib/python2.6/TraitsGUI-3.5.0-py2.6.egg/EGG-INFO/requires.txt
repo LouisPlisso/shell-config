@@ -1,0 +1,14 @@
+EnthoughtBase[ui] >=3.0.6.dev
+Traits >=3.5.0.dev
+
+[dock]
+TraitsBackendWX >=3.5.0.dev
+
+[nonets]
+
+
+[qt]
+TraitsBackendQt >=3.5.0.dev
+
+[wx]
+TraitsBackendWX >=3.5.0.dev

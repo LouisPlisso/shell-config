@@ -1,0 +1,1 @@
+enthought/chaco/contour/contour.so
