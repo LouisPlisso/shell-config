@@ -1,2 +1,0 @@
-//netapp/home	/netapp		cifs	credentials=/root/.smbcredentials,uid=1000,gid=1000,file_mode=0750,dir_mode=0750
-//pingouin/inter-drd    /netapp cifs    credentials=/root/.smbcredentials,uid=1000,gid=1000,file_mode=0750,dir_mode=0750
