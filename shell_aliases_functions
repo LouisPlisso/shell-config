@@ -114,6 +114,7 @@ export ANDROID_NDK=$ANDROID_NDK_ROOT
 #export ANDROID_NDK_TOOLCHAIN_ROOT=~/android-toolchain
 export PATH=$PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools
 alias fix_adb='$ANDROID_SDK/platform-tools/adb kill-server;sudo $ANDROID_SDK/platform-tools/adb start-server'
+alias tethering='sudo dhclient usb0'
 
 #no more needed
 #bad but needed to let default config of aptitude and still use python 2.6

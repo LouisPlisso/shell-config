@@ -6,21 +6,22 @@ Cmnd_Alias      INSTALL =       /usr/bin/aptitude update, \
                                 /usr/bin/aptitude dist-upgrade, \
                                 /usr/bin/aptitude safe-upgrade, \
                                 /usr/bin/aptitude install *
-Cmnd_Alias	LOADKEYS = /usr/bin/loadkeys *
-Cmnd_Alias	MOUNT = /bin/mount *, /bin/umount *, /usr/bin/smbmount *
-Cmnd_Alias	COPY_MEDIA = /bin/cp * /media/*
-Cmnd_Alias	HIBERNATE = /usr/sbin/pm-hibernate, /usr/sbin/pm-suspend, /usr/sbin/pm-suspend-hybrid
+Cmnd_Alias    LOADKEYS = /usr/bin/loadkeys *
+Cmnd_Alias    MOUNT = /bin/mount *, /bin/umount *, /usr/bin/smbmount *
+Cmnd_Alias    COPY_MEDIA = /bin/cp * /media/*
+Cmnd_Alias    HIBERNATE = /usr/sbin/pm-hibernate, /usr/sbin/pm-suspend, /usr/sbin/pm-suspend-hybrid
 Cmnd_Alias      LIGHT = __INSTALL_DIR__/adjust_light.sh *
-Cmnd_Alias	CLAMAV = /usr/bin/freshclam
+Cmnd_Alias    CLAMAV = /usr/bin/freshclam
 Cmnd_Alias      WIFI = /sbin/iwconfig wlan0 txpower on
-Cmnd_Alias	ADB = adb *
-Cmnd_Alias	CMDS = ps_mem.py
+Cmnd_Alias      DHCP = /sbin/dhclient usb0
+Cmnd_Alias    ADB = adb *
+Cmnd_Alias    CMDS = ps_mem.py
 
-Defaults	env_reset
-Defaults	env_keep="http_proxy MY_CONFIG_DIR PATH"
-Defaults	passwd_timeout=1
+Defaults    env_reset
+Defaults    env_keep="http_proxy MY_CONFIG_DIR PATH"
+Defaults    passwd_timeout=1
 # prompt for passwd after N minutes
-Defaults	timestamp_timeout=5
+Defaults    timestamp_timeout=5
 
 # Host alias specification
 
@@ -29,10 +30,10 @@ Defaults	timestamp_timeout=5
 # Cmnd alias specification
 
 # User privilege specification
-root	ALL=(ALL) ALL
-__USER__	ALL=(ALL) ALL
-__USER__	ALL=NOPASSWD: INSTALL, LOADKEYS, MOUNT, HIBERNATE, CLAMAV, LIGHT, WIFI, COPY_MEDIA, ADB, CMDS
-# __USER__	ALL=NOPASSWD: ALL
+root    ALL=(ALL) ALL
+__USER__    ALL=(ALL) ALL
+__USER__    ALL=NOPASSWD: INSTALL, LOADKEYS, MOUNT, HIBERNATE, CLAMAV, LIGHT, WIFI, COPY_MEDIA, ADB, CMDS, DHCP
+# __USER__    ALL=NOPASSWD: ALL
 
 # Uncomment to allow members of group sudo to not need a password
 # (Note that later entries override this, so you might need to move
