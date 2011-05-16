@@ -1,0 +1,163 @@
+#!/usr/bin/python
+# -*- coding: iso-8859-1 -*-
+# -----------------------------------------------------------------------------
+# beacon-feedmanager
+# -----------------------------------------------------------------------------
+# $Id$
+#
+# -----------------------------------------------------------------------------
+# kaa.feedmanager - Manage RSS/Atom Feeds
+# Copyright (C) 2007-2008 Dirk Meyer
+#
+# First Edition: Dirk Meyer <dischi@freevo.org>
+# Maintainer:    Dirk Meyer <dischi@freevo.org>
+#
+# Please see the file AUTHORS for a complete list of authors.
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of MER-
+# CHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+# Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+#
+# -----------------------------------------------------------------------------
+
+import sys
+
+import kaa
+import kaa.beacon
+
+kaa.beacon.connect()
+rpc = kaa.beacon._client.rpc
+
+def help():
+    print 'beacon_feedmanager'
+    print 'options:'
+    print '-l          list all feeds'
+    print '-a options  add a feed, see examples below'
+    print '-r id       remove feed with the given id'
+    print '-u [ id ]   update all feeds or only the feed with the given id'
+    print
+    print 'The beacon_feedmanager adds feeds like audio and video podcasts'
+    print 'to the filesystem. It either downloads the files or just adds'
+    print 'the url into the directory. The later is hidden from the normal'
+    print 'filessytem, only beacon clients such as Freevo can see it.'
+    print 'Right now, only RSS feeds with links directly to a video or audio'
+    print 'file are supported, other feeds can be integrated with a plugin'
+    print 'interface, but there are no special plugins yet.'
+    print
+    print 'To add a feed use -a and add the url and the directory where the'
+    print 'items should be stored as parameter. This will download all files'
+    print 'on update and keep the old files even when they are not listed in'
+    print 'the rss feed anymore. There are three further paramater to control'
+    print 'if the file should be downloaded, the number of items to consider'
+    print 'and if old files should be kept.'
+    print
+    print 'Example:'
+    print 'download all entries and keep old one'
+    print 'beacon_feedmanager -a http://url /media/mypodcasts'
+    print 'link to all entries and not keep old one'
+    print 'beacon_feedmanager -a http://url /media/mypodcasts False 0 False'
+    print 'download up to 4 entries and delete old one'
+    print 'beacon_feedmanager -a http://url /media/mypodcasts True 4 False'
+    print
+    sys.exit(0)
+    
+if len(sys.argv) < 2:
+    help()
+    
+if sys.argv[1] in ('--list', '-l'):
+    def rpc_return(result):
+        for f in result:
+            print 'Feed %d' % f['id']
+            for key in ('id', 'url', 'directory', 'download', 'num', 'keep'):
+                print '  %10s = %s' % (key, f[key])
+            print
+        sys.exit(0)
+    rpc('feeds.list').connect(rpc_return)
+
+elif sys.argv[1] in ('--add', '-a') and len(sys.argv) > 3:
+    def rpc_return(result):
+        sys.exit(0)
+        
+    url = sys.argv[2]
+    destdir = sys.argv[3]
+    if len(sys.argv) > 4:
+        if len(sys.argv) != 7:
+            help()
+        if sys.argv[4].lower() in ('true', 'yes'):
+            download = True
+        elif sys.argv[4].lower() in ('false', 'no'):
+            download = False
+        num = int(sys.argv[5])
+        if sys.argv[6].lower() in ('true', 'yes'):
+            keep = True
+        elif sys.argv[6].lower() in ('false', 'no'):
+            keep = False
+        rpc('feeds.add', url, destdir, download, num, keep).connect(rpc_return)
+    else:
+        rpc('feeds.add', url, destdir).connect(rpc_return)
+
+elif sys.argv[1] in ('--remove', '-r') and len(sys.argv) > 2:
+    def rpc_return(result):
+        if not result:
+            print 'feed not found'
+        sys.exit(0)
+    rpc('feeds.remove', int(sys.argv[2])).connect(rpc_return)
+
+elif sys.argv[1] in ('--update', '-u'):
+
+    @kaa.coroutine()
+    def update():
+        n = None
+        if len(sys.argv) > 2:
+            n = int(sys.argv[2])
+        for f in (yield rpc('feeds.list')):
+            if n is None or n == f.get('id'):
+                print 'update', f.get('url'), '...',
+                sys.stdout.flush()
+                if (yield rpc('feeds.update', f.get('id'))):
+                    print 'ok'
+                else:
+                    print 'failed'
+        sys.exit(0)
+        
+    @kaa.coroutine()
+    def parallel_update():
+        global active
+        active = 0
+
+        def finished(result, feed):
+            print 'finished', feed.get('url'),
+            if result:
+                print 'ok'
+            else:
+                print 'failed'
+            global active
+            active -= 1
+            if active == 0:
+                sys.exit(0)
+                
+        for f in (yield rpc('feeds.list')):
+            active += 1
+            print 'update', f.get('url')
+            rpc('feeds.update', f.get('id')).connect(finished, f)
+            
+#     kaa.beacon.connect()
+    if len(sys.argv) > 2 and sys.argv[2] == "-p":
+        parallel_update()
+    else:
+        update()
+
+else:
+    help()
+    
+kaa.main.run()
