@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # Load resources
-  
+
 #xrdb -merge .Xresources
-     
+
 # Set the background color
 xsetroot -solid midnightblue
-        
+
 # wallpaper
 xpmroot $MY_CONFIG_DIR/xmonad/desktop-background.png
 #xpmroot /usr/share/images/desktop-base/moreblue-orbit-wallpaper.png
@@ -17,13 +17,13 @@ INTERNAL_OUTPUT=LVDS1
 # same as ext-screen alias
 xrandr --auto --output $EXTERNAL_OUTPUT --auto --same-as $INTERNAL_OUTPUT
 # if not working retrieve xrandr info for resolution
-# cvt 1280 1024 
+# cvt 1280 1024
 #  1280x1024 59.89 Hz (CVT 1.31M4) hsync: 63.67 kHz; pclk: 109.00 MHz
 #  Modeline "1280x1024_60.00"  109.00  1280 1368 1496 1712  1024 1027 1034 1063 -hsync +vsync
 # create mode
-# xrandr --newmode "1280x1024_60.00_cvt"  109.00  1280 1368 1496 1712  1024 1027 1034 1063 -hsync +vsync 
+# xrandr --newmode "1280x1024_60.00_cvt"  109.00  1280 1368 1496 1712  1024 1027 1034 1063 -hsync +vsync
 # add it to ext screen
-# xrandr --addmode $EXTERNAL_OUTPUT "1280x1024_60.00_cvt" 
+# xrandr --addmode $EXTERNAL_OUTPUT "1280x1024_60.00_cvt"
 # apply it
 # xrandr --output $EXTERNAL_OUTPUT --mode "1280x1024_60.00_cvt"
 
@@ -38,15 +38,15 @@ eval $cmd_key
 
 # need to do it twice... I don't know why
 eval $cmd_key
-   
+
 # Set up an icon tray
 trayer --edge top --align right --SetDockType true --SetPartialStrut true \
     --expand true --width 10 --transparent true --height 8 --tint 0x191970 & #
- 
+
 xbattbar -c -t 2 -p 30 top &
 
 # Fire up apps
-         
+
 wicd-client &
 
 xscreensaver -no-splash &
@@ -61,6 +61,6 @@ pidgin &
 # gajim &
 
 davmail &
-          
+
 urxvtd -q -f -o &
 

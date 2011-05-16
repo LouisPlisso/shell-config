@@ -4,3 +4,5 @@ behave xterm
 set mouse=cnvr
 
 set guifont=Monospace\ 9
+"set guifont=ProggyCleanTT\ 12
+"set guifont=Neep\ 12

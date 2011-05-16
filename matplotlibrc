@@ -240,17 +240,17 @@ ytick.labelsize      : large # medium # fontsize of the tick labels
 #grid.linewidth   :   0.5     # in points
 
 ### Legend
-#legend.fancybox      : False  # if True, use a rounded box for the
+legend.fancybox      : True  # if True, use a rounded box for the
                                # legend, else a rectangle
 #legend.isaxes        : True
-#legend.numpoints     : 2      # the number of points in the legend line
-legend.fontsize      : medium # large
+legend.numpoints     : 1 #2      # the number of points in the legend line
+legend.fontsize      : large
 #legend.pad           : 0.0    # deprecated; the fractional whitespace inside the legend border
 #legend.borderpad     : 0.5    # border whitspace in fontsize units
 #legend.markerscale   : 1.0    # the relative size of legend markers vs. original
 # the following dimensions are in axes coords
 #legend.labelsep      : 0.010  # the vertical space between the legend entries
-#legend.handlelen     : 0.05   # the length of the legend lines
+legend.handlelen     : 0.010 #0.05   # the length of the legend lines
 #legend.handletextsep : 0.02   # the space between the legend line and legend text
 #legend.axespad       : 0.02   # the border between the axes and legend edge
 #legend.shadow        : False
@@ -330,6 +330,8 @@ ps.useafm         : True # False    # use of afm fonts, results in small files
 #pdf.compression   : 6 # integer from 0 to 9
                        # 0 disables compression (good for debugging)
 #pdf.fonttype       : 3         # Output Type 3 (Type3) or Type 42 (TrueType)
+
+# for type 1 fonts: this was hard to find
 pdf.use14corefonts  : True
 
 # svg backend params

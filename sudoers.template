@@ -16,6 +16,7 @@ Cmnd_Alias      WIFI = /sbin/iwconfig wlan0 txpower on
 Cmnd_Alias      DHCP = /sbin/dhclient usb0
 Cmnd_Alias    ADB = adb *
 Cmnd_Alias    CMDS = ps_mem.py
+Cmnd_Alias      DNSPRINT = /etc/init.d/avahi-daemon restart
 
 Defaults    env_reset
 Defaults    env_keep="http_proxy MY_CONFIG_DIR PATH"
@@ -32,7 +33,7 @@ Defaults    timestamp_timeout=5
 # User privilege specification
 root    ALL=(ALL) ALL
 __USER__    ALL=(ALL) ALL
-__USER__    ALL=NOPASSWD: INSTALL, LOADKEYS, MOUNT, HIBERNATE, CLAMAV, LIGHT, WIFI, COPY_MEDIA, ADB, CMDS, DHCP
+__USER__    ALL=NOPASSWD: INSTALL, LOADKEYS, MOUNT, HIBERNATE, CLAMAV, LIGHT, WIFI, COPY_MEDIA, ADB, CMDS, DHCP, DNSPRINT
 # __USER__    ALL=NOPASSWD: ALL
 
 # Uncomment to allow members of group sudo to not need a password

@@ -142,15 +142,16 @@ chm2pdf
 screen
 icedove-l10n-fr
 mplayer
-sapti vim-syntax-gtk
+sapti # # vim
+-syntax-gtk
 python-profiler
 python-setuptools python-profiler # # python-h5py 
 bzr python-pkg-resources
 ./picasa_3.0-current_amd64.deb
-vim-vimoutliner
+# vim-vimoutliner
 texpower
-vim-full
-vim-gtk
+# vim-full
+# vim-gtk
 nicotine python-uniconvertor
 # libdvdread3
 w64codecs
@@ -465,3 +466,59 @@ unclutter
 python-pyexiv2
 geogebra
 openjdk-6-source
+chktex
+inkscape/testing
+inkscape/testing
+linux-image-2.6.38-2-amd64
+-t squeeze-backports linux-image-2.6.38-2-amd64
+clamav-daemon
+linux-image-2.6.38-bpo.2-amd64
+libavahi-compat-libdnssd1
+# libavahi-cil-dev
+avahi-utils
+linux-image-2.6.38-bpo.2-amd64
+-t testing # vim
+-t testing # vim
+-t testing # # vim
+-gtk
+-t testing # # vim
+-gnome
+-t testing # vim 
+# # vim
+-gnome 
+# vim-gtk
+-t testing # vim
+-t testing # vim
+-t testing # vim
+-t testing # vim
+# vim
+-athena
+-t testing # vim
+-athena
+-t squeeze # vim
+vim
+vim-python
+# vim-athena
+vim-gnome
+libncurses-dev
+# ruby-dev
+# liblua5.1-0-dev
+# libperl-dev
+# latex-xft-fonts
+iceweasel -t squeeze-backports
+iceweasel -t squeeze-backports
+iceweasel -t squeeze-backports
+libcairo2-dev libnss3-dev libpixman-1-dev -t squeeze-backports
+iceweasel -t squeeze-backports
+tcl-dev
+ruby-dev
+liblua5.1-dev
+tclsh
+xfonts-jmk
+vim -t testing
+vim -t testing
+# vim-athena
+perlmagick
+# ttf-sazanami-gothic
+vim-gtk
+vim-gtk -t testing

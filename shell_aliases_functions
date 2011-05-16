@@ -134,12 +134,15 @@ alias saptsu='sudo aptitude safe-upgrade'
 alias aptg='aptitude search'
 alias apts='aptitude show'
 alias aptw='aptitude why'
+alias aptv='aptitude versions'
 
 alias hibernate='sudo /usr/sbin/pm-hibernate'
 alias suspend='sudo /usr/sbin/pm-suspend'
 alias suspend-hybrid='sudo /usr/sbin/pm-suspend-hybrid'
+alias so='sudo init 0'
 
 alias fixwifi='sudo iwconfig wlan0 txpower on'
+alias fixprint='sudo /etc/init.d/avahi-daemon restart'
 alias presentation='impressive -t PageTurn'
 
 alias images='feh -F -Z'
@@ -195,6 +198,8 @@ alias git_svn_sync_clean='git svn fetch; git merge remotes/clean'
 alias gitst='git status'
 alias gst='git status'
 alias gco='git commit -a'
+alias gsd='git svn dcommit'
+alias gdp="git diff 'HEAD^'"
 
 alias ps_mem='sudo /home/louis/config/bin/ps_mem.py'
 
