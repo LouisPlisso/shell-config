@@ -1,0 +1,1 @@
+bangtex/latex/bbook.cls

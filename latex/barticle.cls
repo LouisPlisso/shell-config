@@ -1,0 +1,1 @@
+bangtex/latex/barticle.cls

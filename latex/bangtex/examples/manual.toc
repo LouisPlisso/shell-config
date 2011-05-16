@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}shuru korar Aao\hbox {}{e}{g} kii kii dorkar}{\bngxii 3}
+\contentsline {section}{\numberline {2}phaIo\hbox {}{e}{l}r goThon}{\bngxii 3}
+\contentsline {section}{\numberline {3}baNNGla o\hbox {}{e}{l}kha\nobreakspace {}: dhao\hbox {}{e}{p} dhao\hbox {}{e}{p}}{\bngxii 4}
+\contentsline {subsection}{\numberline {3$\cdot $1}pRothom dhap\nobreakspace {}: shud/dho sWor O bYoNJ/jon}{\bngxii 4}
+\contentsline {subsection}{\numberline {3$\cdot $2}o\hbox {}{i}{dW}tiiyo dhap\nobreakspace {}: sWoro\hbox {}{i}{c}n/Ho}{\bngxii 5}
+\contentsline {subsection}{\numberline {3$\cdot $3}trRtiiyo dhap\nobreakspace {}: Juk/tbYoNJ/jon}{\bngxii 9}
+\contentsline {subsection}{\numberline {3$\cdot $4}o\hbox {}{i}{k}chu o\hbox {}{i}{k}chu boo\hbox {}{e}{r/N}r AakrRo\hbox {}{i}{t}}{\bngxii 10}
+\contentsline {subsection}{\numberline {3$\cdot $5}AnYanYo o\hbox {}{i}{c}n/Ho}{\bngxii 11}
+\contentsline {subsubsection}{\numberline {3$\cdot $5.1}soNNGkhYao\hbox {}{i}{c}n/Ho, Joo\hbox {}{i}{t}o\hbox {}{i}{c}n/Ho}{\bngxii 11}
+\contentsline {subsubsection}{\numberline {3$\cdot $5.2}Asomiiya bhaSha}{\bngxii 12}
+\contentsline {subsubsection}{\numberline {3$\cdot $5.3}bhoo\hbox {}{i}{b}ShYoo\hbox {}{e}{t}r kotha o\hbox {}{e}{bh}o\hbox {}{e}{b}}{\bngxii 12}
+\contentsline {subsubsection}{\numberline {3$\cdot $5.4}phNNak}{\bngxii 12}
+\contentsline {section}{\numberline {4}nana mao\hbox {}{e}{p}r, nana rokoo\hbox {}{e}{m}r Horoph}{\bngxii 12}
+\contentsline {section}{\numberline {5}punosh/co}{\bngxii 14}
