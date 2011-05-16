@@ -28,7 +28,7 @@ export TODO=$MY_CONFIG_DIR
 export KEY_CMD="xkbcomp -w 0 -R/usr/share/X11/xkb/ ${MY_CONFIG_DIR}/keymap \"$DISPLAY\" "
 
 export PATH=$PATH:/sbin:/usr/sbin:${MY_CONFIG_DIR}/bin:${MY_CONFIG_DIR}/cabal/bin
-export PYTHONPATH=~/workspace/spydump/
+export PYTHONPATH=~/workspace/spydump/:~/workspace/spydump/tools
 export PATH=$PATH:$PYTHONPATH/
 
 # scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
