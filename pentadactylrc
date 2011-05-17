@@ -2,7 +2,7 @@
 
 loadplugins '\.(js|penta)$'
 group user
-set passkeys=mail.google.com:'jkyrR<CR>,gi,gb,gs',www.google.com/reader:'jk<CR>,ga,f'
+set passkeys=mail.google.com:'jkyrR<CR>,gi,gb,gs,gt',www.google.com/reader:'jk<CR>,ga,f'
 set visualbell
 set showtabline=multitab
 
