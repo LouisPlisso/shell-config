@@ -1,6 +1,5 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.21)  25 NOV 2010 10:51
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.23)  18 MAY 2011 16:36
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **slides_ft.tex
 (./slides_ft.tex
@@ -1141,8 +1140,8 @@ File: logo_orange.png Graphic file (type png)
  (./slides_ft.aux) ) 
 Here is how much of TeX's memory you used:
  16841 strings out of 495028
- 313622 string characters out of 1181228
- 417486 words of memory out of 3000000
+ 313622 string characters out of 1181229
+ 417447 words of memory out of 3000000
  19510 multiletter control sequences out of 15000+50000
  52612 words of font info for 72 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
@@ -1152,7 +1151,7 @@ Here is how much of TeX's memory you used:
 /texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fo
 nts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/hel
 vetic/uhvro8a.pfb>
-Output written on slides_ft.pdf (19 pages, 196143 bytes).
+Output written on slides_ft.pdf (19 pages, 195894 bytes).
 PDF statistics:
  219 PDF objects out of 1000 (max. 8388607)
  51 named destinations out of 1000 (max. 500000)
