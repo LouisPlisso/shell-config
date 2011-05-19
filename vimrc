@@ -1,13 +1,13 @@
 " Remove ALL auto-commands.  This avoids having the autocommands twice when
 " the vimrc file is sourced again.
 autocmd!
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
-"call pathogen#runtime_append_all_bundles()
-"call pathogen#helptags()
-
-fun! MySys()
-   return "$1"
-endfun
+"fun! MySys()
+   "return "$1"
+"endfun
 "set mainruntimepath=$MY_CONFIG_DIR/vim
 "set runtimepath=$MY_CONFIG_DIR/vim,$MY_CONFIG_DIR/vim/after,$VIMRUNTIME
 
@@ -18,7 +18,7 @@ endfun
 "source $MY_CONFIG_DIR/vim_runtime/vimrc
 "source $MY_CONFIG_DIR/vim/vimrc
 
-source $HOME/.vim/vimrc
+inoremap uu <Esc>
 
-imap uu <Esc>
+source $HOME/.vim/vimrc
 
