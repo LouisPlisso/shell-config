@@ -530,3 +530,9 @@ vim-gtk -t testing
 -t stable
 python-nose
 xinput
+devscripts
+perl5
+rxvt-unicode-lite
+rxvt-unicode-lite -t testing
+# xcompmgr
+xcompmgr

@@ -31,6 +31,9 @@ export PATH=$PATH:/sbin:/usr/sbin:${MY_CONFIG_DIR}/bin:${MY_CONFIG_DIR}/cabal/bi
 export PYTHONPATH=~/workspace/spydump/:~/workspace/spydump/tools
 export PATH=$PATH:$PYTHONPATH/
 
+# for google code jam
+export PATH=$PATH:~/perso/jam/codejam-commandline-1.0-beta3/
+
 # scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
 SCRIPT_RECIPES=$HOME/.scripts_recipes/bin
 [ -d $SCRIPT_RECIPES ] && export PATH=$PATH:$SCRIPT_RECIPES

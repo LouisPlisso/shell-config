@@ -14,8 +14,12 @@ URxvt*tintColor:green
 # Don't use with tintColor; use a darker or lighter color instead.
 #URxvt*shading:10
 
+# test
+URxvt.depth: 32
+URxvt*background: rgba:0000/0000/0000/cccc
+
 # background color (prior to tinting) (default is white)
-URxvt*background: #555240
+#URxvt*background: #555240
 
 # font color (default is black)
 URxvt*foreground: green
@@ -44,8 +48,8 @@ URxvt.tabbed.tab-bg: 0
 #URxvt.keysym:M-s: perl:keyboard-select:search
 
 URxvt.perl-lib: /home/louis/config/urxvt.git/
-URxvt.keysym.M-n: perl:mark-and-yank:activate_mark_mode
-URxvt.keysym.M-u: perl:mark-and-yank:activate_mark_url_mode
+URxvt.keysym.C-S-n: perl:mark-and-yank:activate_mark_mode
+URxvt.keysym.C-S-u: perl:mark-and-yank:activate_mark_url_mode
 URxvt.perl-ext: selection
 URxvt.perl-ext: mark-yank-urls
 

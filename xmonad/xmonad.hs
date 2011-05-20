@@ -209,7 +209,7 @@ main = do
             , ppSep = ""
             }) >> updatePointer (Relative 0.5 0.8)
         , workspaces         = ["1:Web", "2:Term", "3:Editor", "4", "5", "6", "7", "8", "9:Todo", "10:Mail"]
-        , terminal           = "urxvtc"
+        , terminal           = "urxvtc --disable-xft --disable-unicode3"
         } `additionalKeys`
         [ ((mod1Mask, xK_z), spawn "xscreensaver-command -lock") 
         , ((mod1Mask .|. shiftMask, xK_h), spawn "sudo /usr/sbin/pm-hibernate")
