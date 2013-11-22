@@ -16,6 +16,7 @@ import qualified Data.Map as M
 import XMonad.Util.Paste
 import qualified System.IO.UTF8
 
+import XMonad.Layout.SimpleFloat
 import XMonad.Layout.Circle
 import XMonad.Layout.Grid
 import XMonad.Layout.Magnifier
@@ -133,7 +134,9 @@ myManageHook = composeOne
     , className =? "Tk"      -?> doFloat
     , className =? "Ipython"      -?> doFloat
     , className =? "Android"      -?> doFloat
+    , className =? "Cinelerra"      -?> doFloat
     , className =? "Wicd-client.py"     -?> doFloat
+    , className =? "com-xk72-charles-gui-MainWithClassLoader"     -?> doFloat
     --, className =? "Kino"      -?> doFloat
     , return True -?> doF W.swapDown
     ]
@@ -163,7 +166,7 @@ avoidMaster = W.modify' $ \c -> case c of
      otherwise           -> c
 
 -- Circle ||| ||| magnify Grid 
-myLayoutHook = avoidStruts (layoutHints (myCode) ||| tiled ||| Mirror tiled ||| Grid ||| Full) 
+myLayoutHook = avoidStruts (layoutHints (myCode) ||| tiled ||| Mirror tiled ||| Grid ||| Full ||| simpleFloat) 
             where 
                  -- default tiling algorithm partitions the screen into two panes
                  tiled   = ResizableTall nmaster delta ratio []
@@ -209,7 +212,7 @@ main = do
             , ppSep = ""
             }) >> updatePointer (Relative 0.5 0.8)
         , workspaces         = ["1:Web", "2:Term", "3:Editor", "4", "5", "6", "7", "8", "9:Todo", "10:Mail"]
-        , terminal           = "urxvtc --disable-xft --disable-unicode3"
+        , terminal           = "urxvtc"
         } `additionalKeys`
         [ ((mod1Mask, xK_z), spawn "xscreensaver-command -lock") 
         , ((mod1Mask .|. shiftMask, xK_h), spawn "sudo /usr/sbin/pm-hibernate")

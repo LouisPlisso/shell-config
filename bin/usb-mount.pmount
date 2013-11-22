@@ -1,0 +1,28 @@
+#!/bin/bash
+
+PMOUNT=`which pmount`
+if [ -z "$PMOUNT" ]
+then
+ echo "Error: $0 cant find pmount!" 1>&2
+ exit 1
+fi
+OPTIONS="--sync --noatime --umask 000"
+
+ROOT="/dev/usb-storage"
+for DEV in $( ls -1 $ROOT )
+do
+  BLKID=( `/sbin/blkid $ROOT/$DEV` )
+  for ITEM in ${BLKID[@]}
+  do
+    TEMP=`expr match "$ITEM" 'TYPE=\"\(.*\)\"'`
+    TYPE=${TEMP//\"/}
+    if [ -n "$TYPE" ] && [ "$TYPE" != "swap" ]
+    then
+      echo "$ROOT/$DEV"
+      echo `$PMOUNT -t $TYPE $OPTIONS $ROOT/$DEV $DEV`
+      break
+    fi
+  done
+done
+
+exit 0

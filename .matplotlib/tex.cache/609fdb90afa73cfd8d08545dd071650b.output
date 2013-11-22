@@ -1,0 +1,51 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./609fdb90afa73cfd8d08545dd071650b.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, french, basque, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo))
+(/usr/share/texmf-texlive/tex/latex/type1cm/type1cm.sty)
+(/usr/share/texmf-texlive/tex/latex/psnfss/helvet.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty))
+(/usr/share/texmf-texlive/tex/latex/psnfss/courier.sty)
+(/usr/share/texmf-texlive/tex/latex/base/textcomp.sty
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.def))
+(/usr/share/texmf/tex/latex/my_sty/ucs.sty
+(/usr/share/texmf/tex/latex/my_sty/data/uni-global.def))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+(/usr/share/texmf/tex/latex/my_sty/ucs/utf8x.def))
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty)
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (5058.9pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (5058.9pt) is ignored.
+
+)
+No file 609fdb90afa73cfd8d08545dd071650b.aux.
+(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd)
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1pnc.fd)
+(/usr/share/texmf/tex/latex/my_sty/ucs/ucsencs.def)
+*geometry auto-detecting driver*
+*geometry detected driver: dvips*
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.14 \end{document}
+                   
+[1] (./609fdb90afa73cfd8d08545dd071650b.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 13 ({)
+### bottom level
+(see the transcript file for additional information)
+Output written on 609fdb90afa73cfd8d08545dd071650b.dvi (1 page, 308 bytes).
+Transcript written on 609fdb90afa73cfd8d08545dd071650b.log.

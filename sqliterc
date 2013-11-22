@@ -1,0 +1,4 @@
+.echo ON
+.header ON
+.mode column
+.nullvalue "NULL"

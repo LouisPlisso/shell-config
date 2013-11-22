@@ -1,0 +1,41 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./2b79e3cd92f08b7f3d93a0501ace8e21.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, french, basque, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo))
+(/usr/share/texmf-texlive/tex/latex/type1cm/type1cm.sty)
+(/usr/share/texmf-texlive/tex/latex/psnfss/helvet.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty))
+(/usr/share/texmf-texlive/tex/latex/psnfss/courier.sty)
+(/usr/share/texmf-texlive/tex/latex/base/textcomp.sty
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.def))
+(/usr/share/texmf/tex/latex/my_sty/ucs.sty
+(/usr/share/texmf/tex/latex/my_sty/data/uni-global.def))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+(/usr/share/texmf/tex/latex/my_sty/ucs/utf8x.def))
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty)
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (5058.9pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (5058.9pt) is ignored.
+
+)
+No file 2b79e3cd92f08b7f3d93a0501ace8e21.aux.
+(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd)
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1pnc.fd)
+(/usr/share/texmf/tex/latex/my_sty/ucs/ucsencs.def)
+*geometry auto-detecting driver*
+*geometry detected driver: dvips*
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd)
+(./2b79e3cd92f08b7f3d93a0501ace8e21.aux) )
+No pages of output.
+Transcript written on 2b79e3cd92f08b7f3d93a0501ace8e21.log.

@@ -1,0 +1,1 @@
+../memoir/memoir.cls

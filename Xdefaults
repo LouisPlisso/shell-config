@@ -15,19 +15,62 @@ URxvt*tintColor:green
 #URxvt*shading:10
 
 # test
-URxvt.depth: 32
-URxvt*background: rgba:0000/0000/0000/cccc
+#URxvt.depth: 32
+#URxvt*background: rgba:0000/0000/0000/cccc
 
 # background color (prior to tinting) (default is white)
-#URxvt*background: #555240
+URxvt*background: #555240
 
 # font color (default is black)
 URxvt*foreground: green
+#
+# Xft (X FreeType) with Bitstream, DejaVu, Liberation, or Terminus fonts:
+#  Fedora/debian packages: libXft/libxft2 
+#  An anti-aliased font setup with Xft looks fantastic; it can be a bit choppy 
+#  on older systems. You can always turn off anti-aliasing (antialias=false) if
+#  your terminal is sluggish. Use only ONE of the Xft pairs below:
+#
+# Xft: Bitstream fonts
+#  Fedora/debian packages: bitstream-vera-sans-mono-fonts/ttf-bitstream-vera 
+#URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
+#URxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+
+# MOST IMPORTANT OPTION TO HAVE NICE RENDERING
+URxvt*letterSpace: -1
+
+#
+# Xft: DejaVu fonts
+#  Fedora/debian packages: dejavu-sans-mono-fonts/ttf-dejavu 
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+#
+# Xft: Liberation fonts
+#  Fedora/debian packages: liberation-mono-fonts/ttf-liberation
+#URxvt*font: xft:Liberation Mono:pixelsize=13:antialias=true:hinting=true
+#URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=13:antialias=true:hinting=true
+#
+# Xft: Terminus fonts
+#  Fedora/debian packages: terminus-fonts/xfonts-terminus
+#URxvt*font: xft:terminus:pixelsize=12
+#URxvt*boldFont: xft:terminus:bold:pixelsize=12
+
+# Traditional fonts - a more traditional font setup in lieu of xft
+#URxvt*font:-*-courier-medium-r-normal-*-14-*-*-*-*-*-iso8859-1
+#URxvt*boldFont:-*-courier-bold-r-normal-*-14-*-*-*-*-*-iso8859-1
+
 
 # xft fonts - anti-aliased xft font setup is nice, but can be choppy
 #URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=12
-URxvt*font: xft:DejaVu Sans Mono:size=9:VL Gothic:size=9:antialias=true:hinting=true
-URxvt*boldFont: xft:DejaVu Sans Mono:size=9:VL Gothic:size=9:antialias=true:bold:hinting=true
+#URxvt*font: xft:DejaVu Sans Mono:size=9:VL Gothic:size=9:antialias=true:hinting=true
+#URxvt*font: xft:Inconsolata:size=10
+#URxvt*boldFont: xft:DejaVu Sans Mono:size=9:VL Gothic:size=9:antialias=true:bold:hinting=true
+#URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
+#URxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+
+#URxvt*font: xft:Liberation Mono:pixelsize=12:antialias=true:hinting=true
+#URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=12:antialias=true:hinting=true
+#URxvt*font:-*-courier-medium-r-normal-*-12-*-*-*-*-*-iso8859-1
+#URxvt*boldFont:-*-courier-bold-r-normal-*-12-*-*-*-*-*-iso8859-1
 
 # scrollbar style - rxvt (default), plain, next, or xterm
 URxvt*scrollstyle:plain
@@ -56,4 +99,7 @@ URxvt.perl-ext: mark-yank-urls
 URxvt.perl-ext: mark-and-yank
 
 URxvt*urlLauncher: iceweasel
+
+URxvt*iso14755: False
+URxvt*iso14755_52: False
 

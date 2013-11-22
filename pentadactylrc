@@ -2,8 +2,11 @@
 
 loadplugins '\.(js|penta)$'
 group user
-set passkeys=mail.google.com:'jkyrR<CR>,gi,gb,gs,gt',www.google.com/reader:'jk<CR>,ga,f'
+set passkeys=mail.google.com:'/]jkyrRqx?<CR>,gi,gb,gs,ga',www.google.com/reader:'jk<CR>,ga,f'
+autocmd LocationChange docs.google.com :normal! <C-z>
 set visualbell
 set showtabline=multitab
+
+set! browser.tabs.closeWindowWithLastTab=false
 
 " vim: set ft=pentadactyl:

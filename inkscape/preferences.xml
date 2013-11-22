@@ -133,10 +133,10 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="444.89773559570312"
-         height="383.33773803710938"
-         rx="0"
-         ry="0" />
+         width="448.00003051757812"
+         height="80"
+         rx="60.000007629394531"
+         ry="60" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -205,7 +205,8 @@
          mode="drag"
          selcue="1"
          style="stroke-width:1px;"
-         usecurrent="0" />
+         usecurrent="0"
+         freehand-mode="1" />
     </group>
     <eventcontext
        id="calligraphic"
@@ -333,7 +334,7 @@
        gradientdrag="1"
        font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
        show_sample_in_list="1"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:Arial;font-style:normal;font-weight:normal;font-size:10px;text-anchor:middle;text-align:center;writing-mode:lr;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal;line-height:125%;letter-spacing:0px;word-spacing:0px"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:Arial;font-style:normal;font-weight:bold;font-size:28px;text-anchor:middle;text-align:center;writing-mode:lr;-inkscape-font-specification:Sans Bold;font-stretch:normal;font-variant:normal;line-height:100%;letter-spacing:0px;word-spacing:0px"
        selcue="1" />
     <eventcontext
        id="nodes"
@@ -404,7 +405,7 @@
        style="fill:none;fill-rule:evenodd;stroke:black;stroke-opacity:1;stroke-linejoin:miter;stroke-width:1px;stroke-linecap:butt;"
        selcue="1"
        length="100"
-       curvature="3" />
+       curvature="0" />
     <eventcontext
        id="paintbucket"
        style="fill:#a0a0a0;stroke:none;"
@@ -595,10 +596,12 @@
        h="248" />
     <group
        id="spellcheck"
-       w="200"
+       w="330"
        h="250"
        lang="en_US"
-       ignorenumbers="1" />
+       ignorenumbers="1"
+       x="480"
+       y="387" />
     <group
        id="documentoptions"
        state="1"
@@ -606,9 +609,9 @@
        panel_ratio="100"
        panel_mode="1"
        panel_wrap="0"
-       x="764"
+       x="780"
        y="0"
-       w="512"
+       w="496"
        h="621" />
     <group
        id="preferences"
@@ -617,11 +620,11 @@
        panel_ratio="100"
        panel_mode="1"
        panel_wrap="0"
-       page="6"
-       x="10"
+       page="0"
+       x="326"
        y="0"
-       w="1266"
-       h="704" />
+       w="950"
+       h="701" />
     <group
        id="gradienteditor" />
     <group
@@ -645,18 +648,18 @@
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/louis/streaming/rapport/imc"
+       path="/home/louis/tmp"
        use_current_dir="1" />
     <group
        id="save_copy"
-       default="jessyink.export"
+       default="org.inkscape.output.png.cairo"
        append_extension="1"
        enable_preview="1"
-       path="/home/louis/streaming/rapport/imc" />
+       path="/home/louis/pytomo/tma" />
     <group
        id="open"
        enable_preview="1"
-       path="/home/louis/streaming/rapport/everything/" />
+       path="/home/louis/pytomo/presentations/" />
     <group
        id="import"
        enable_preview="1"
@@ -676,7 +679,16 @@
     <group
        id="messages" />
     <group
-       id="swatches" />
+       id="swatches"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       state="2"
+       x="0"
+       y="0"
+       w="353"
+       h="88" />
     <group
        id="iconpreview" />
     <group
@@ -725,19 +737,30 @@
        on-blur="0.50"
        animate-time="100" />
     <group
-       h="473"
+       id="documentmetadata"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       state="2"
+       x="0"
+       y="0"
        w="622"
-       y="0"
-       x="0"
-       state="2"
-       panel_wrap="0"
-       panel_mode="1"
-       panel_ratio="100"
-       panel_size="1"
-       id="documentmetadata" />
+       h="473" />
     <group
-       h="476"
+       id="svgfonts"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       state="2"
+       x="0"
+       y="0"
        w="532"
+       h="476" />
+    <group
+       h="244"
+       w="323"
        y="0"
        x="0"
        state="2"
@@ -745,7 +768,7 @@
        panel_mode="1"
        panel_ratio="100"
        panel_size="1"
-       id="svgfonts" />
+       id="livepatheffect" />
   </group>
   <group
      id="printing">
@@ -1023,7 +1046,7 @@
      org.inkscape.output.pdf.cairorenderer.textToLaTeX="1" />
   <group
      id="desktop"
-     style="font-size:40px;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:16, 16;stroke:#0f06f7;stroke-opacity:1;opacity:1;fill:#fdfffd;fill-opacity:0.46792454000000000;stroke-dashoffset:0;stroke-linecap:round;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linejoin:bevel;-inkscape-font-specification:Arial;font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">
+     style="font-size:28px;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke:#039c00;stroke-opacity:1;opacity:1;fill:none;fill-opacity:1;stroke-dashoffset:0;stroke-linecap:round;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linejoin:round;-inkscape-font-specification:Sans Bold;font-family:Arial;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal">
     <group
        width="1278"
        height="1006"
@@ -1048,33 +1071,33 @@
   <group
      id="devices">
     <group
-       keys=""
-       axes="x;y;"
+       id="Virtual core XTEST pointer"
        mode="disabled"
-       id="Virtual core XTEST pointer" />
+       axes="x;y;"
+       keys="" />
     <group
-       keys=""
-       axes="x;y;"
+       id="DualPoint Stick"
        mode="disabled"
-       id="DualPoint Stick" />
+       axes="x;y;"
+       keys="" />
     <group
        id="AlpsPS">
       <group
-         keys=""
-         axes="x;y;"
+         id="2 ALPS DualPoint TouchPad"
          mode="disabled"
-         id="2 ALPS DualPoint TouchPad" />
+         axes="x;y;"
+         keys="" />
     </group>
     <group
-       keys=""
-       axes="x;y;"
+       id="Macintosh mouse button emulation"
        mode="disabled"
-       id="Macintosh mouse button emulation" />
-    <group
-       keys=""
        axes="x;y;"
+       keys="" />
+    <group
+       id="Core Pointer"
        mode="screen"
-       id="Core Pointer" />
+       axes="x;y;"
+       keys="" />
   </group>
   <group
      id="toolbox"

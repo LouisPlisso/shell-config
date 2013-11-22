@@ -250,6 +250,7 @@ legend.fontsize      : large
 #legend.markerscale   : 1.0    # the relative size of legend markers vs. original
 # the following dimensions are in axes coords
 #legend.labelsep      : 0.010  # the vertical space between the legend entries
+#legend.handlelength     : 0.010 #0.05   # the length of the legend lines
 legend.handlelen     : 0.010 #0.05   # the length of the legend lines
 #legend.handletextsep : 0.02   # the space between the legend line and legend text
 #legend.axespad       : 0.02   # the border between the axes and legend edge

@@ -1,0 +1,1 @@
+../bangtex/bangla/bbook.cls

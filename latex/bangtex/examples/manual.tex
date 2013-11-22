@@ -1,5 +1,5 @@
 \documentclass[12pt]{barticle}
-
+\usepackage{mathbang}
 
 \textwidth=16cm
 \textheight=22cm
@@ -7,6 +7,7 @@
 \evensidemargin=0mm
 \tolerance=10000
 
+\renewcommand{\theequation}{\bng\arabic{equation}}
 
 
 
@@ -19,8 +20,6 @@
 \def\Demo#1#2{\framebox{\framebox{\totype{#1}}$ \Longrightarrow
 $\framebox{\bng #2}}} 
 
-
-\makeindex
 
 
 \begin{document}
@@ -36,7 +35,8 @@ $\framebox{\bng #2}}}
 
 \vfill\vfill
 
-E\*pR*il 2001
+pRothom pRokash E\*pR*il 2001 \\ 
+bor/toman soNNGs/koroN Aagos/T 2003
 
 \end{center}
 \end{titlepage}
@@ -80,7 +80,7 @@ bol\*ch*i. EI phaI\*l*er pRothom laIn\*T*i\*t*e
 \*gh*eaShoNa \*J*e \*J*e bha\*b*e kora \*J*e\*t*e
 pa\*r*e, tar nomuna \*n*i\*c*e  \*l*i\*kh*e \*d*ekha\*c/ch*i. 
 %%
-\begin{quote}
+\begin{quote}\label{l:docclass}
 \begin{minipage}{.4\textwidth}
 \verb!\documentclass{bbook} ! \\
 \verb!\documentclass[11pt]{bbook} ! \\
@@ -351,8 +351,8 @@ ta \*d*e\*kh*e \*c*ena Ja\*b*e \*k*i soHo\*j*e?  poriikKa korar jonYo
 E\*t*eakKon Ja Ja bola Ho\*y*e\*ch*e ta bYoboHar ko\*r*e:
 %%
 \begin{quote}
-\totype{smy ker Jid Aaset par toeb edkha Heb.}\\%[4mm]
-\totype{eraed ekhla na koraI bhaela.}
+\totype{smy ker Jid Aaset par teb edkha Heb.}\\ 
+\totype{eraed ekhla na kraI bhaela.}
 \end{quote}
 %%
 Hoy\*t*ea bol\*b*en, A\*bhY*es Ho\*y*e Ja\*b*e. Hoy\*t*ea
@@ -556,8 +556,22 @@ Aabar mo\*n*e ko\*r*i\*y*e \*d*i\*c/ch*i, EI bha\*b*eI \*J*e TaIp
 kor\*t*e Ho\*b*e Emon \*k*ea\*n*ea badhokota
 \*n*eI. `\totype{noyonjo$\backslash$*l*e}' TaIp na ko\*r*e
 `\totype{nynjel}' TaIp kor\*l*eO chapay po\*r*iNo\*t*i EkI
-Ho\*t*ea. \*J*e bha\*b*e Opo\*r*e \*d*ekha\*n*ea Ho\*y*e\*ch*e,
-tar su\*b*idha kii \*s*e kotha Aa\*g*eI bola Ho\*y*e\*ch*e.
+Ho\*t*ea. \*J*e bha\*b*e Opo\*r*e \*d*ekha\*n*ea Ho\*y*e\*ch*e, tar
+su\*b*idha kii \*s*e kotha Aa\*g*eI bola Ho\*y*e\*ch*e.  pRosoNG/goto
+Ek\*T*i kotha bola dorkar.  `\totype{o}' \*d*i\*y*e
+\*l*ekha, Aar `\totype{$\backslash$*}' \*d*i\*y*e \*l*ekha ---
+pochon/do na Ho\*l*e Er \*k*ea\*n*ea\*T*iI bYoboHar kor\*b*en na.
+\*k*in/tu Ek\*T*i bYoboHar kor\*l*e AnYo\*T*iO bYoboHar kora
+bha\*l*ea, noI\*l*e \*b*ipo\*t/t*i Ho\*t*e pa\*r*e.  \*J*emon dhorun
+`po\*r*imaN' shob/doTa.  Er jonYo `\verb=po\*r*imaN=' TaIp kor\*t*e
+pa\*r*en.  Athoba `\totype{o}' EboNNG `\totype{$\backslash$*}'
+du\*T*eaI bad \*d*i\*y*e `\verb=pirmaN=' TaIp kor\*l*eO Hoy.
+\*k*in/tu Aap\*n*i Jo\*d*i \*Th*ik ko\*r*en \*J*e `\totype{o}'
+\*d*e\*b*en \*k*in/tu `\totype{$\backslash$*}' \*d*e\*b*en na, EboNNG
+TaIp ko\*r*en `\verb=poirmaN=', taHo\*l*e \*c*i\*t/t*ir Ho\*b*e,
+\*k*enona ko\*m/p*iUTar Ekha\*n*e porpor `\totype{oi}' \*d*ekh\*t*e
+\*p*e\*y*e \*s*eTa\*k*e OI-kar ba\*n*i\*y*e \*d*e\*b*e.  sabdhan
+thak\*b*en.
 
 ga\*n*er EI podgu\*l*ea \*l*ikh\*t*e Aar Ek\*T*i notun \*j*i\*n*ish
 bYoboHar kor\*t*e Ho\*y*e\*ch*e, \*s*e\*T*ir kotha Ebar
@@ -822,6 +836,53 @@ dharoNa \*J*e E\*T*i `Sh+NJ'-r Juk/toruup. E dharoNa \*Th*ik noy,
 \end{quote}
 %%
 
+\*sh*eShka\*l*e Aar Ek\*T*i kotha.  Aa\*g*er Aa\*l*eacona \*th*e\*k*e
+mo\*n*e Ho\*b*e,  `n/k' EboNNG `n/g' EI du\*T*i Juk/tobor/No
+chapa\*t*e Ho\*l*e TaIp kor\*t*e Ho\*b*e JothakRo\*m*e `\totype{NG/k}'
+EboNNG `\totype{NG/g}'.  EI Anuma\*n*e bhul \*n*eI \*k*ichu, \*k*in/tu
+ka\*j*er EkTu su\*b*idha Ho\*b*e \*bh*e\*b*e Aa\*m*i \*b*ikol/po
+bYobos/thaO \*r*e\*kh*e\*ch*i.  \*d*ekhun EI du rokom \*b*iko\*l/p*er
+UdaHoroN:  
+%%
+\begin{quote}
+\begin{center}
+\demo{ANG/ko}
+\demo{An/ko} \\ 
+\demo{pRaNG/goN}
+\demo{pRan/goN}
+\end{center}
+\end{quote}
+%%
+AAkI montobYo co-bo\*r/g*er Anuruup Juk/tobor/No \*n*i\*y*eO.  Jotha:
+%%
+\begin{quote}
+\begin{center}
+\demo{ANJ/col}
+\demo{An/col} \\ 
+\demo{laNJ/chona}
+\demo{lan/chona} \\
+\demo{roNJ/jon}
+\demo{ron/jon}
+\end{center}
+\end{quote}
+%%
+porobor/tii bor/gogu\*l*ea \*kK*e\*tR*e AbhoshYo \*b*ikol/po ruup\*T*i
+Aar col\*b*e na.  `\totype{n/T}' Ho\*b*e `n+T',  `\totype{N/T}'
+Ho\*b*e `N+T'.  tophat \*d*ekhun \*n*i\*c*er UdaHoro\*N*e:
+%%
+\begin{quote}
+\begin{center}
+\demo{ghoN/Ta}  
+\demo{kYan/Ton} \\
+\demo{pRokaN/Do}
+\demo{lon/Don}
+\end{center}
+\end{quote}
+%%
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%
 \subsection{\*k*ichu \*k*ichu bo\*r/N*er AakrR\*t*i}
 %%%%%%%%%%%%%%%%%%%%
@@ -906,7 +967,19 @@ pa\*r*e.
 \subsubsection{soNNGkhYa\*c*in/Ho, Jo\*t*i\*c*in/Ho}
 %%%%%%%%%%%%%%%%%%%%
 E charhaO Aa\*r*ea \*c*in/Ho Aa\*ch*e. soNNGkhYa\*c*in/Ho
-som/po\*r/k*e bolar dorkar \*n*eI. Jo\*t*i\*c*i\*n/H*er mo\*dhY*e AnYo
+som/po\*r/k*e khub \*b*e\*sh*i bolar dorkar \*n*eI.  \*J*ekha\*n*e
+baNNGla Horoph col\*ch*e phaI\*l*er mo\*dhY*e, \*s*ekha\*n*e soNNGkhYa
+TaIp kor\*l*e ta baNNGlayI chapa Ho\*b*e.
+%%
+\begin{quote}
+\begin{center}
+\Demo{Aaj 14 ta$\backslash$*r*ikh}{Aaj 14 ta\*r*ikh}
+\end{center}
+\end{quote}
+%%
+
+
+Jo\*t*i\*c*i\*n/H*er mo\*dhY*e AnYo
 sobI pRay INNG\*r*i\*j*ir mo\*t*ea, tophat shudhu EI \*J*e
 INNG\*r*i\*j*i\*t*e Ja TaIp kor\*l*e `phuls/Top' chapa Ho\*t*ea,
 baNNGlar \*b*elay \*s*ekha\*n*e chapa Ho\*b*e dNNa\*rh*i. du\*T*i
@@ -1009,38 +1082,52 @@ ko\*r*e bhor\*t*e Hoy, \latex-E Ja Aapna-Aap\*n*iI bhora Ho\*y*e Jay
 \totype{bbook} ba \totype{barticle}-Er madhYo\*m*e. EI phaIl\*T*ir
 pu\*r*ea nam \totype{bangfont.tex}, E\*T*i \totype{bangtex}-Er
 AnYotomo phaIl.  Er mo\*dhY*e nana baNNGla Horo\*ph*er soNNGg/Ya
-\*s/th*ir ko\*r*e \*d*eOya Ho\*y*e\*ch*e. Horophgu\*l*i \*t*in\*T*i
-\*shR*eNii\*t*e \*b*ibhok/to. pRothom\*T*i sadharoN Horoph,
-\*dW*itiiyo\*T*i bNNaka ba \*H*ela\*n*ea, trRtiiyo\*T*i kha\*n*ikTa
-coOrha Horoph. \*J*e \*J*e ma\*p*er Horoph Aa\*ch*e, ta cho\*k*er
-Aaka\*r*e \*l*i\*kh*e \*d*i\*c/ch*i, ta\*d*er nam so\*m*et.
+\*s/th*ir ko\*r*e \*d*eOya Ho\*y*e\*ch*e.  Horophgu\*l*i car\*T*i
+\*shR*eNii\*t*e \*b*ibhok/to --- sadharoN Horoph, bNNaka ba
+\*H*ela\*n*ea Horoph, kha\*n*ikTa coOrha Horoph, Aar phNNapa
+Horoph. \*J*e \*J*e ma\*p*er Horoph Aa\*ch*e, ta cho\*k*er Aaka\*r*e
+\*l*i\*kh*e \*d*i\*c/ch*i, ta\*d*er nam so\*m*et.
 %%
 \begin{center}
-\begin{tabular}{|r|l|l|l|}
+\begin{tabular}{|r|l|l|l|l|}
 \hline 
-\multicolumn{1}{|c|}{map} & \*s*eaja Horoph & bNNaka Horoph & coOrha Horoph \\ 
+\multicolumn{1}{|c|}{map} & \*s*eaja Horoph & bNNaka Horoph & coOrha
+Horoph & phNNapa Horoph \\  
 \hline\hline 
-6 po\*y*en/T & \verb+\bngvi+ & \verb+\bnsvi+ & \verb+\bnwvi+ \\ 
-7 po\*y*en/T & \verb+\bngvii+ & \verb+\bnsvii+ & \verb+\bnwvii+ \\ 
-8 po\*y*en/T & \verb+\bngviii+ & \verb+\bnsviii+ & \verb+\bnwviii+ \\ 
-9 po\*y*en/T & \verb+\bngix+ & \verb+\bnsix+ & \verb+\bnwix+ \\ 
-10 po\*y*en/T & \verb+\bngx+ & \verb+\bnsx+ & \verb+\bnwx+ \\ 
-11 po\*y*en/T & \verb+\bngxi+ & \verb+\bnsxi+ & \verb+\bnwxi+ \\ 
-12 po\*y*en/T & \verb+\bngxii+ & \verb+\bnsxii+ & \verb+\bnwxii+ \\ 
-14 po\*y*en/T & \verb+\bngxiv+ & \verb+\bnsxiv+ & \verb+\bnwxiv+ \\ 
-18 po\*y*en/T & \verb+\bngxviii+ & \verb+\bnsxviii+ & \verb+\bnwxviii+ \\ 
-22 po\*y*en/T & \verb+\bngxxii+ & \verb+\bnsxxii+ & \verb+\bnwxxii+ \\ 
-25 po\*y*en/T & \verb+\bngxxv+ & \verb+\bnsxxv+ & \verb+\bnwxxv+ \\ 
-30 po\*y*en/T & \verb+\bngxxx+ & \verb+\bnsxxx+ & \verb+\bnwxxx+ \\ 
+6 po\*y*en/T & \verb+\bngvi+ & \verb+\bnsvi+ & \verb+\bnwvi+ &
+\verb+\bnhvi+ \\ 
+7 po\*y*en/T & \verb+\bngvii+ & \verb+\bnsvii+ & \verb+\bnwvii+ &
+\verb+\bnhvii+ \\ 
+8 po\*y*en/T & \verb+\bngviii+ & \verb+\bnsviii+ & \verb+\bnwviii+ &
+\verb+\bnhviii+ \\ 
+9 po\*y*en/T & \verb+\bngix+ & \verb+\bnsix+ & \verb+\bnwix+ &
+\verb+\bnhix+ \\ 
+10 po\*y*en/T & \verb+\bngx+ & \verb+\bnsx+ & \verb+\bnwx+ &
+\verb+\bnhx+ \\ 
+11 po\*y*en/T & \verb+\bngxi+ & \verb+\bnsxi+ & \verb+\bnwxi+ &
+\verb+\bnhxi+ \\ 
+12 po\*y*en/T & \verb+\bngxii+ & \verb+\bnsxii+ & \verb+\bnwxii+ &
+\verb+\bnhxii+ \\ 
+14 po\*y*en/T & \verb+\bngxiv+ & \verb+\bnsxiv+ & \verb+\bnwxiv+ &
+\verb+\bnhxiv+ \\ 
+18 po\*y*en/T & \verb+\bngxviii+ & \verb+\bnsxviii+ & \verb+\bnwxviii+
+& \verb+\bnhxviii+ \\ 
+22 po\*y*en/T & \verb+\bngxxii+ & \verb+\bnsxxii+ & \verb+\bnwxxii+ &
+\verb+\bnhxxii+ \\ 
+25 po\*y*en/T & \verb+\bngxxv+ & \verb+\bnsxxv+ & \verb+\bnwxxv+ &
+\verb+\bnhxxv+ \\ 
+30 po\*y*en/T & \verb+\bngxxx+ & \verb+\bnsxxx+ & \verb+\bnwxxx+ &
+\verb+\bnhxxx+ \\ 
 \hline
 \end{tabular}
 \end{center}
 %%
 namgu\*l*ea mo\*n*e rakha khub shok/to noy. sadharoN baNNGla
 Horo\*ph*er nam sobI \verb!\bng! \*d*i\*y*e shuru, \*H*ela\*n*ea ({\rm
-slanted}) Horo\*ph*er nam shuru \verb~\bns~ \*d*i\*y*e, Aar coOrha
-({\rm wide}) Horo\*ph*er nam shuru \verb~\bnw~
-\*d*i\*y*e. Horophgu\*l*ear na\*m*e tar po\*r*e Ja Aa\*ch*e, ta
+slanted}) Horo\*ph*er nam shuru \verb~\bns~ \*d*i\*y*e, Aar coOrha 
+({\rm wide}) O phNNapa ({\rm hollow}) Horo\*ph*er nam shuru
+JothakRo\*m*e \verb~\bnw~ O  \verb~\bnh~ 
+\*d*i\*y*e.  Horophgu\*l*ear na\*m*e tar po\*r*e Ja Aa\*ch*e, ta
 Ho\*l*ea Horo\*ph*er saIj, \*r*eamok soNNGkhYa\*l*ikhon
 pod/dho\*t*i\*t*e \*l*ekha. phaI\*l*er \*J*e \*k*ea\*n*ea jaygay
 Upo\*r*eak/to \*J*e \*k*ea\*n*ea Horo\*ph*er \*n*i\*r/d*esh Jo\*d*i
@@ -1078,19 +1165,26 @@ po\*r*e \*ch*ea\*T*ea-bo\*rh*ea Horoph paOya Ja\*b*e \*J*e sob
 Aaka\*r*e.
 %%
 \begin{center}
-\begin{tabular}{|r|l|l|l|}
+\begin{tabular}{|r|l|l|l|l|}
 \hline 
 \multicolumn{1}{|c|}{Aanupa\*t*ik map} 
-& \*s*eaja Horoph & bNNaka Horoph & coOrha Horoph \\ 
+& \*s*eaja Horoph & bNNaka Horoph & coOrha Horoph & phNNapa Horoph \\ 
 \hline\hline 
-{\rm tiny} & \verb+\tbng+ & \verb+\tbns+ & \verb+\tbnw+ \\ 
-{\rm small} & \verb+\sbng+ & \verb+\sbns+ & \verb+\sbnw+ \\ 
-{\rm normal} & \verb+\bng+ & \verb+\bns+ & \verb+\bnw+ \\ 
-{\rm large} & \verb+\lbng+ & \verb+\lbns+ & \verb+\lbnw+ \\ 
-{\rm Large} & \verb+\Lbng+ & \verb+\Lbns+ & \verb+\Lbnw+ \\ 
-{\rm LARGE} & \verb+\LBng+ & \verb+\LBns+ & \verb+\LBnw+ \\ 
-{\rm huge} & \verb+\hbng+ & \verb+\hbns+ & \verb+\hbnw+ \\ 
-{\rm Huge} & \verb+\Hbng+ & \verb+\Hbns+ & \verb+\Hbnw+ \\ 
+{\rm tiny} & \verb+\tbng+ & \verb+\tbns+ & \verb+\tbnw+  &
+\verb+\tbnh+ \\ 
+{\rm small} & \verb+\sbng+ & \verb+\sbns+ & \verb+\sbnw+  &
+\verb+\sbnh+ \\ 
+{\rm normal} & \verb+\bng+ & \verb+\bns+ & \verb+\bnw+  & \verb+\bnh+ \\ 
+{\rm large} & \verb+\lbng+ & \verb+\lbns+ & \verb+\lbnw+  &
+\verb+\lbnh+ \\ 
+{\rm Large} & \verb+\Lbng+ & \verb+\Lbns+ & \verb+\Lbnw+  &
+\verb+\Lbnh+ \\ 
+{\rm LARGE} & \verb+\LBng+ & \verb+\LBns+ & \verb+\LBnw+ &
+\verb+\LBhw+ \\ 
+{\rm huge} & \verb+\hbng+ & \verb+\hbns+ & \verb+\hbnw+  &
+\verb+\hbnh+ \\ 
+{\rm Huge} & \verb+\Hbng+ & \verb+\Hbns+ & \verb+\Hbnw+  &
+\verb+\Hbnh+ \\ 
 \hline
 \end{tabular}
 \end{center}
@@ -1140,7 +1234,7 @@ pa\*r*e. \*J*emon dhora Jak, Aap\*n*i 15 po\*y*e\*n/T*er Horoph
 can. \*J*ekha\*n*e EI Horoph pRothom bYoboHrRto Ho\*b*e, tar Aa\*g*e
 EI ko\*T*i kotha TaIp kor\*t*e Ho\*b*e taHo\*l*e~:
 %%
-\begin{quote}
+\begin{quote}\label{l:font}
 \begin{verbatim}
 \font\bngxv=bang10 scaled 1500
 \end{verbatim}
@@ -1178,6 +1272,190 @@ dorkar. ta Aa\*m*i kor\*b*eaO bho\*b*iShYo\*t*e. Jo\*t*ea\*d*in ta na
 Ho\*c/ch*e, to\*t*ea\*d*in EI koSh/To sWiikar kora charha Upay
 \*n*eI.
 
+sob\*sh*e\*Sh*e Ek\*T*i \*b*i\*sh*eSh kotha phNNapa Horoph
+som/po\*r/k*e.  Jo\*d*iO Aa\*m*i \verb+\tbnh+ \*th*e\*k*e shuru
+ko\*r*e Horoph \*d*i\*y*e\*ch*i AnYanYo Horo\*ph*erI mo\*t*ea, tobu
+khub \*ch*ea\*T*ea ma\*p*e \*l*ekhar jonYo EI Horoph bYoboHar na koraI
+bha\*l*ea.  karoNTa Hoy\*t*ea Aan/daj kor\*t*e par\*ch*en.
+
+
+%%%%%%%%%%%%%%%%%%%%
+\section{baNNGla-INNG\*r*i\*j*i-ANG/ko}
+%%%%%%%%%%%%%%%%%%%%
+EI Anu\*c/ch*e\*d*er namTay EkTu paThshala-paThshala gon/dho Ho\*y*e
+\*g*e\*l*ea.
+
+
+%%%%%%%%%%%%%%%%%%%%
+\subsection{baNNGlar mo\*dhY*e INNG\*r*i\*j*i}
+%%%%%%%%%%%%%%%%%%%%
+baNNGla \*l*ekhar mo\*dhY*e EkTa-AadhTa INNG\*r*i\*j*i kotha
+A\*n*e\*k*eI \*l*e\*kh*en.  kii ko\*r*e ta \*l*ekha Ja\*b*e, E
+pRosh/no ko\*r*en A\*n*e\*k*e.  Er Ut/tor khub soHoj.  shudhu mo\*n*e
+rakh\*b*en, ko\*m/p*iUTa\*r*er ka\*ch*e INNG\*r*i\*j*i Aalada
+\*k*ea\*n*ea bhaSha noy, Aalada Ek\*T*i Horoph matRo.  \*H*ela\*n*ea
+Horoph ba coOrha Horoph bYoboHar korar jonYo Ja kor\*t*e Hoy,
+INNG\*r*i\*j*i Horo\*ph*e JaOyar \*b*idhanO \*s*eI rokomI.  \tex\ ba
+\latex-Er ka\*ch*e sadharoN INNG\*r*i\*j*i Horo\*ph*er nam \verb!\rm!,
+taI \*s*eI \*gh*eaShoNa\*T*i kor\*l*eI INNG\*r*i\*j*i chapa Ho\*b*e.
+UdaHoroN can?  \*b*esh, \*dW*i\*j*en/dRolal ra\*y*er Ek\*T*i \*b*ikhYato
+ko\*b*ita \*d*ekhun:
+%%%%%%%%%%%%%%%%
+\begin{center}
+\null\hrulefill\null\\
+\begin{minipage}{.95\textwidth}
+\begin{verbatim}
+Aama\*d*er bhaSha EkTu {\rm quaint as you see},
+\null\qquad\qquad E noy {\rm English} \*k*i {\rm Bengali};\\
+ko\*r*i {\rm English} O {\rm Bengali}-r \*kh*ichu\*rh*i ba\*n*i\*y*e\\ 
+\null\qquad\qquad {\rm Conversation}-E {\rm use}~---\\
+\*k*in/tu Ek\*T*iO \*Th*ik koI\*t*e pa\*r*i {\rm if you think},\\
+\null\qquad\qquad ta'\*l*e {\rm you are an awful goose.}
+\end{verbatim}
+\end{minipage}\newline
+\null\hrulefill\null
+\\
+$\Downarrow$
+\\
+%%
+\begin{minipage}{.45\textwidth}
+\null\hrulefill\null\\
+Aama\*d*er bhaSha EkTu {\rm quaint as you see},\\
+\null\qquad\qquad E noy {\rm English} \*k*i {\rm Bengali};\\
+ko\*r*i {\rm English} O {\rm Bengali}-r \*kh*ichu\*rh*i ba\*n*i\*y*e\\ 
+\null\qquad\qquad {\rm Conversation}-E {\rm use}~---\\
+\*k*in/tu Ek\*T*iO \*Th*ik koI\*t*e pa\*r*i {\rm if you think},\\
+\null\qquad\qquad ta'\*l*e {\rm you are an awful goose.}\\
+\null\hrulefill\null
+\end{minipage}
+\end{center}
+%%
+
+pRosoNG/goto Aar EkTa kotha bo\*l*e \*n*eOya Jak.  A\*n*ek somoy
+\*Th*ik U\*l/T*eaTarO pRo\*y*eajon Ho\*t*e pa\*r*e ---
+INNG\*r*i\*j*i\*t*e Ek\*T*i pRobon/dho \*l*ikh\*ch*en, tar mo\*dhY*e
+\*d*i\*t*e caI\*l*en baNNGla Horo\*ph*e Ek\*T*i shob/do ba
+shob/doguc/cho.  \latex-E Er jonYo \*g*earha \*th*e\*k*eI
+AnYorokombha\*b*e shuru kor\*t*e Ho\*b*e.  \pageref{l:docclass} patay
+bo\*l*e\*ch*ilam, baNNGla \*l*ekhar jonYo phaI\*l*er shuru\*t*e kii
+kii {\rm documentclass} bYoboHar kora Jay.  EI sob {\rm documentclass}
+bYoboHar kor\*l*e patar nom/bor Aapna-Aap\*n*i baNNGlay Ho\*b*e,
+po\*r*i\*c/ch*e\*d*er nom/bor, cho\*b*i ba cho\*k*er nom/bor, sobI
+baNNGlay Ho\*b*e.  Aapnar muul \*l*ekhaTa Jo\*d*i INNG\*r*i\*j*i\*t*e
+Hoy, taHo\*l*e ta Aap\*n*i caI\*b*en na.  taI E rokom \*kK*e\*tR*e
+{\rm bbook} ItYa\*d*i {\rm documentclass} \*d*i\*y*e shuruI kor\*b*en
+na.  INNG\*r*i\*j*i \*l*ikh\*t*e Ho\*l*e \*J*e rokom {\rm
+documentclass} \*d*i\*t*en, Jotha {\rm article} ba {\rm book}, \*s*eI
+rokomI \*d*in.   phaI\*l*er mo\*dhY*e, baNNGla Horoph \*k*eathaO
+bYoboHar korar Aa\*g*e, 
+%%
+\begin{quote}
+\begin{verbatim}
+\input bangfont
+\end{verbatim}
+\end{quote}
+%%
+\*gh*eaShoNa\*T*i ko\*r*e baNNGla Horophgu\*l*ea\*k*e bho\*r*e \*n*in.
+Erpor \verb!\bng!, \verb!\lbng! ItYa\*d*i bYoboHar ko\*r*e baNNGla
+Horoph Aan\*t*e par\*b*en.  Aabar INNG\*r*i\*j*i\*t*e \*ph*i\*r*e
+\*J*e\*t*e Ho\*l*e \verb!\rm! bYoboHar korun.  
+
+Aar Jo\*d*i \tex-E \*l*e\*kh*en, taHo\*l*e A\*t*ea Aamuul
+po\*r*ibor/ton dorkar \*n*eI. \verb!\input bangfont!  \*J*emon
+phaI\*l*er \*g*earhay rakh\*t*e bola Ho\*y*e\*ch*i\*l*ea, \*t*emonI
+rakh\*b*en.  phaI\*l*er mo\*dhY*e \verb+\bng+ \*d*i\*l*e baNNGla
+Horoph shuru Ho\*b*e, \verb+\rm+ \*d*i\*l*e INNG\*r*i\*j*i.
+
+\tex\ ba \latex\ duI \*kK*e\*tR*eI, \totype{bangfont.tex} phaI\*l*e
+\*J*e sob ma\*p*er Horoph Aa\*ch*e, ta charha AnYo ma\*p*er Horoph
+Jo\*d*i pRo\*y*eajon Hoy, taHo\*l*e ta kii ko\*r*e \*p*e\*t*e Ho\*b*e,
+ta bola Ho\*y*e\*ch*e \pageref{l:font} patay.  Jo\*d*i du-EkTa matRo
+ma\*p*er HorophI Aapnar dorkar Hoy, taHo\*l*e \verb!\input bangfont!
+na ko\*r*e shudhu EI bha\*b*eI \*s*eI ma\*p*er Horoph bho\*r*e
+\*n*i\*t*e pa\*r*en.
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+\subsection{baNNGlar mo\*dhY*e ANG/ko}
+%%%%%%%%%%%%%%%%%%%%
+EIba\*r*er pRosh/noTa Aar EkTu jo\*T*il.  baNNGla \*l*ekhar mo\*dhY*e
+A\*NG/k*er phor/mula thak\*l*e kii ko\*r*e \*l*ekha Ho\*b*e?
+
+pRosh/noTa EkTu khNNu\*T*i\*y*e bol\*ch*i.  shudhu Jo\*d*i soNNGkhYa
+\*l*ikh\*t*e can, taHo\*l*e kii kor\*t*e Ho\*b*e, ta Aa\*g*eI
+bo\*l*e\*ch*i.  Ekha\*n*e Ja bola Ho\*c/ch*e, ta Ho\*l*ea, A\*NG/k*er
+phor/mula thak\*l*e kii kor\*t*e Ho\*b*e.  \tex\ ba \latex-Er
+po\*r*ibhaShay Ja\*k*e \totype{math mode} bo\*l*e, tar Aa\*l*eacona
+ko\*ch*i Ekha\*n*e --- \latex-Er jonYo pRotho\*m*e, tarpor \tex-Er
+jonYo.
+
+mo\*n*e Aa\*ch*e \*n*ish/coyI, \latex-E phaI\*l*er \*g*earhay Ek\*T*i
+\totype{documentclass} \*gh*eaShoNa ko\*r*e \*n*i\*t*e Hoy.  baNNGlay
+ANG/ko \*l*ekhar dorkar thak\*l*e, EI laIn\*T*ir \*Th*ik po\*r*e
+\*l*ikhun 
+%%
+\begin{quote}
+\begin{verbatim}
+\usepackage{mathbang}
+\end{verbatim}
+\end{quote}
+%%
+Er po\*r*e, Jokhon phaI\*l*er muul ANNGsho shuru Ho\*b*e, Ar/that//
+\verb!\begin{document}! \*gh*eaShoNa\*T*ir po\*r*e, \*J*e \*k*ea\*n*ea
+jaygay \totype{math mode}-E \*l*ikh\*t*e Ho\*l*e du\*T*i Dolar
+\*c*i\*n/H*er majhkha\*n*e ta \*l*ikh\*b*en, Ar/that// \verb!$...$!.
+Jo\*t*eaTuku baNNGlay can, \*s*eTuku \verb!\mbng{...}! ko\*r*e
+\*l*ikhun, du\*T*i bokRobon/dhoniir mo\*dhY*e.  UdaHoroN:
+%%
+\begin{quote}
+\begin{center}
+\Demo{tapmatRa \$$\backslash$mbng\{35$\backslash$cdot4\}\$
+$\backslash$*D*i$\backslash$*gR*i}
+{tapmatRa $\mbng{35\cdot4}$ \*D*i\*gR*i} 
+%
+\Demo{\$$\backslash$pi=$\backslash$mbng\{22$\backslash$over 7\}\$}
+{$\pi=\mbng{22\over 7}$}
+%
+\Demo{\$$\backslash$mbng\{$\backslash$pi=\{22$\backslash$over 7\}\}\$}
+{$\mbng{\pi={22\over 7}}$}
+\end{center}
+\end{quote}
+%%
+lokKYo kor\*ch*en \*n*ish/coyI, \totype{math mode}-E \*J*e sob
+\*b*i\*sh*eSh \*c*in/Ho bYoboHar kora Jay, \*s*egu\*l*ea
+$\verb!\mbng!$-r mo\*dhY*e bYoboHrRto Ho\*t*e pa\*r*e.  \latex-Er
+\totype{equation} ba \totype{eqnarray} Jo\*d*i bYoboHar ko\*r*en,
+taHo\*l*eO tar mo\*dhY*e baNNGla \*l*ekhar \*n*iyom EI EkI.
+\totype{equation} ba \totype{eqnarray}-r nom/bor Jo\*d*i baNNGlay can,
+taHo\*l*e phaI\*l*er \*g*eouroco\*n/dR*ika ANNG\*sh*e \*l*i\*kh*e
+\*n*in tolar laIn\*T*i:\\
+%%
+\begin{minipage}{\textwidth}
+\begin{quote}
+\begin{verbatim}
+\renewcommand{\theequation}{\bng\arabic{equation}}
+\end{verbatim}
+\end{quote}
+\end{minipage}
+%%
+
+
+shudhu \tex-Er jonYo kajTa Aar EkTu soHoj.  paI\*l*er \*g*earhay,
+\*J*ekha\*n*e \verb!\input bangfont! \*l*i\*kh*e\*ch*en, tar po\*r*e
+Aar Ek\*T*i laIn \*l*ikhun:\\
+%%
+\begin{minipage}{\textwidth}
+\begin{quote}
+\begin{verbatim}
+\input autobm
+\end{verbatim}
+\end{quote}
+\end{minipage}
+%%
+Er po\*r*e \totype{math mode}-E Ja \*l*ikh\*b*en, sobI chapa Ho\*b*e
+baNNGlay.  A\*NG/k*er \*b*i\*sh*eSh \*c*in/Hogu\*l*ea AboshYo
+bodla\*b*e na.
 
 
 %%%%%%%%%%%%%%%%%%%%
@@ -1185,9 +1463,9 @@ Ho\*c/ch*e, to\*t*ea\*d*in EI koSh/To sWiikar kora charha Upay
 %%%%%%%%%%%%%%%%%%%%
 Aamar Aa\*g*e \tex\ O \latex-E baNNGla Horoph ko\*y*ekjon
 \*t*{oi}\*r*i ko\*r*e\*ch*en. ENN\*d*er mo\*dhY*e A\*bh*i\*j*it//
-da\*s*er Horoph Aa\*m*i khNNu\*T*i\*y*e \*d*e\*kh*e\*ch*i. 
-\*t*i\*n*i Ja Ja ko\*r*e\*ch*en, EboNNG Ja Ja kor\*t*e pa\*r*en\*n*i,
-duI{I} Aama\*k*e Anu\*pR*eroNa ju\*g*i\*y*e\*ch*e.
+da\*s*er Horoph Aa\*m*i khNNu\*T*i\*y*e \*d*e\*kh*e\*ch*i.  \*t*i\*n*i
+Ja Ja ko\*r*e\*ch*en, EboNNG Ja Ja kor\*t*e pa\*r*en\*n*i, duI{I}
+Aama\*k*e Anu\*pR*eroNa ju\*g*i\*y*e\*ch*e.
 
 EI Horoph banabar somo\*y*e Aama\*k*e nana bha\*b*e saHaJYo
 ko\*r*e\*ch*e Aamar bon/dhu A\*m*itabho la\*H*irhii EboNNG Aamar bhaI
@@ -1256,6 +1534,10 @@ sob \*sh*e\*Sh*e \*d*i\*c/ch*i \*k*ean gho\*r*e kii bha\*b*e \*k*ean
 
 \def\newfont{\bnw}
 \showfont{\Large\tt bangwd10.mf}{coOrha Horoph}
+\bigskip
+
+\def\newfont{\bnhxiv}
+\showfont{\Large\tt banghl10.mf}{phNNapa Horoph}
 
 \end{center}
 

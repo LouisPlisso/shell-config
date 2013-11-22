@@ -1,0 +1,391 @@
+\documentclass[pdftex,twoside,12pt,a4paper,openright,fleqn,final]{mybook}
+\usepackage[pdftex]{graphicx}
+%\pdfcompresslevel=9
+
+\usepackage{palatino}                       % times font
+%\usepackage[german,english]{babel}        % language packages
+\usepackage[german,french,english]{babel}        % language packages
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+\usepackage{parskip}                      % to set the parskip length (length between following paragraphs)
+\usepackage{setspace}                     % to set the overall document spacing (default: single spacing)
+\usepackage{a4wide}                       % for 11pt articles
+
+\usepackage{fancyhdr}                     % customize the headers
+%\usepackage[bottom]{footmisc}             % force footnotes to the bottom
+\usepackage[small,bf]{caption}            % for nicer captions
+
+%\usepackage{dsfont}                       % double stroke roman fonts, e.g, R, C for real, complex numbers
+%\usepackage{helvet}
+
+\usepackage[tight]{subfigure}
+\def\goodgap{\hspace{\subfigtopskip}\hspace{\subfigbottomskip}}
+\usepackage{color}
+\usepackage{url}
+
+
+\usepackage[ruled,linesnumbered]{algorithm2e}
+
+\usepackage[square, comma, numbers, sort]{natbib}%\&compress
+
+\usepackage{amssymb, amsmath}             % mathematical formula
+
+\usepackage{bibunits}
+
+%\usepackage{epic, eepic}                  % enhancment to the picture environment
+
+%\usepackage{array}                        % extends array / tabular environments
+%\usepackage{longtable}                    % provides longer tables
+%\usepackage{multirow}                     % provides multi-rows within table
+%\usepackage{colortbl}                     % provides colored tables
+%\usepackage{booktabs}                    % defines additional features for tables
+
+%\usepackage{nomencl}                      % for abbreviations
+%\usepackage{makeidx}                     % create an index
+
+%\usepackage{float}                        % required for algorithm, need be defined before hyperref
+
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{gray}{gray}{0.7}
+\definecolor{darkred}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+\definecolor{darkbrown}{cmyk}{0, 0.81, 1, 0.60}
+\definecolor{blue}{rgb}{0,0.5,1}
+\definecolor{orange}{rgb}{1,0.8,0.6}
+\definecolor{darkorange}{rgb}{1,0.6,0.4}
+
+
+\usepackage[pdftex, a4paper, plainpages=false, pdfpagelabels=true, colorlinks=true,
+               %linkcolor=black, citecolor=black, urlcolor=black,
+               linkcolor=darkblue, citecolor=darkblue, urlcolor=darkblue,
+               pdfstartview=FitV, breaklinks=true, bookmarks=true]{hyperref} % , pagebackref backref
+\hypersetup{
+     pdfauthor={Moritz Steiner},
+     pdftitle={Structures and Algorithms for peer-to-peer cooperation},
+     pdfsubject={Dissertation},
+     pdfkeywords={p2p, performance},
+     bookmarksopen=true,
+     bookmarksopenlevel=0
+}
+
+\usepackage[all]{hypcap}
+
+%
+% Page dimensions
+%
+\paperwidth=21.0cm%
+\paperheight=29.7cm%
+\oddsidemargin=0.7cm%
+\evensidemargin=-0.2cm%
+\textheight=24cm%
+\textwidth=15.6cm%
+\topmargin-0.6cm%
+
+%
+% Common settings
+%
+\clubpenalty=10000                       % avoids single line at the bottom
+\widowpenalty=10000                      % avoids single line at the top
+\parindent=0ex                           % indention depth of the paragraph's first line
+\parskip=2ex                             % space between tow paragraphs
+\sloppy                                  % less hyphenations
+\raggedbottom                            % do not stretch even and odd pages to the same length
+\addtolength{\skip\footins}{0.2cm}       % little more space above footnotes
+
+%\renewcommand{\topfraction}{.9}          % specifies the space figures at the top may occupy
+%\renewcommand{\textfraction}{.01}
+%\renewcommand{\bottomfraction}{.9}       % specifies the space figures at the bottom may occupy
+\def\topfraction{.95}
+\def\floatpagefraction{.95}
+\def\textfraction{.05} 
+
+
+%
+% Header settings
+%
+\lhead[\fancyplain{}{\bfseries\thepage}]%
+      {\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{}{\bfseries\leftmark}]%
+      {\fancyplain{}{\bfseries\thepage}}
+\cfoot{}
+\addtolength{\headheight}{6pt}         % bigger distance to header
+
+
+%
+% Dictum
+%
+\newenvironment{dictum}[2]{\begin{flushright}\begin{minipage}{8cm}\emph{``#1''}\begin{flushright}\textbf{--~#2~--}\end{flushright}}{\end{minipage}\end{flushright}}
+
+% To avoid hyperref error:
+\newcommand{\theHalgorithm}{\theHfigure.\arabic{algorithm}}
+\makeatletter
+\providecommand*{\toclevel@algorithm}{0}
+\makeatother
+%
+%% To avoid fixltx2e error:
+%\makeatletter
+%\let\end@float\subfig@end@float
+%\let\end@dblfloat\subfig@end@dblfloat
+%\makeatother
+%
+%% Make a bookmark entry for ToC, but not a ToC entry
+%\makeatletter
+%\renewcommand{\tableofcontents}{%
+%  \chapter*{\contentsname}\prw@mkboth{\contentsname}
+%  \phantomsection
+%  \currentpdfbookmark{\contentsname}{toc}
+%  \@starttoc{toc}
+%}
+%\makeatother
+
+
+
+\makeatletter
+  \renewcommand{\fps@figure}{htbp}
+  \renewcommand{\fps@table}{htbp}
+\makeatother
+
+%
+% Abbreviations
+%
+% \let\abbrev\nomenclature                                       % rename command
+% \renewcommand{\nomname}{\flushright List of Abbreviations}     % change header
+% \setlength{\nomlabelwidth}{0.25\hsize}
+% \renewcommand{\nomlabel}[1]{\hspace{0.0cm}#1 \dotfill}         % dots
+% \renewcommand{\nompreamble}{\thispagestyle{empty}}             % remove page number on the first page
+% \setlength{\nomitemsep}{-\parsep}                              % smaller line spacing
+% \makenomenclature
+
+
+\newcommand{\figwidth}{0.45}
+
+%delaunay
+\newcommand{\ttt}[1]{\texttt{#1}}
+\newcommand{\cc}{\mathcal C}
+\newcommand{\mt}{\mathcal T}
+\newcommand{\bma}{\begin{displaymath}}
+\newcommand{\ema}{\end{displaymath}}
+
+% KAD
+\newcommand{\IPs}    {IP addresses}
+\newcommand{\BL}    {\textit{Blizzard}}
+\newcommand{\KI}    {\textsc{kad ID}}
+\newcommand{\kad}   {\textsc{kad}}
+\newcommand{\az}   {\textsc{Azureus}}
+\newcommand{\pp}    {peer-to-peer}
+\newcommand{\ov}{\textsc{Overnet}}
+\newcommand{\fc}{\emph{sybil}}
+\newcommand{\fcs}{\emph{sybils}}
+\newcommand{\dd}{DDoS }
+\newcommand{\new}[1]{\textit{#1}}% for newly introduced terms
+\newcommand{\cmd}[1]{\textit{#1}}% kommandos
+
+\newcommand{\artt}    {\textsc{artt}}
+\newcommand{\nrtt}    {\textsc{nrtt}}
+
+\newcommand{\todo}[1]{
+    %\textbf{  TODO: #1 }
+    \fboxrule1mm
+    \fcolorbox{white}{yellow}{TODO: #1}
+}
+
+
+%
+% Hyphenations
+%
+%\hyphenation{Netz-werk}
+%\hyphenation{zwi-schen}
+
+
+%
+% Create an index
+%
+%\makeindex
+
+
+
+\begin{document}
+
+\frontmatter
+%\pdfbookmark{Front Matter}{front}
+
+% ===============================================================
+% Title
+% ===============================================================
+\pagestyle{empty}%
+\input{title}%
+\clearpage{\pagestyle{empty}\cleardoublepage}%
+
+
+\pagestyle{fancy}                               % activate header
+%\setstretch{1.1}                               % set right stretch
+
+
+% ===============================================================
+% Dedication
+% ===============================================================
+%\thispagestyle{empty}
+%\input{dedication}%
+%\clearpage{\pagestyle{empty}\cleardoublepage}%
+
+
+% ===============================================================
+% Abstract & Acknowledgements
+% ===============================================================
+\chapter*{\flushright Abstract}%
+\thispagestyle{empty}
+\input{abstract}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\chapter*{\flushright Zusammenfassung}%
+\thispagestyle{empty}
+\input{abstract_de}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\chapter*{\flushright Acknowledgements}%
+\thispagestyle{empty}
+\input{acknowledgements}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+% ===============================================================
+% Contents & Lists
+% ===============================================================
+%\makeatletter\def\toclevel@chapter{1}\makeatother
+
+\phantomsection                                 % set an anchor
+\pdfbookmark[0]{Table of Contents}{toc}
+% Less detailed TOC
+\setcounter{tocdepth}{1}
+\tableofcontents
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\phantomsection
+\listoffigures
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\phantomsection
+\listoftables
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+%\phantomsection
+%\markboth{List of Algorithms}{List of Algorithms}
+%\addcontentsline{toc}{chapter}{List of Algorithms}
+%\listofalgorithms
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+%\makeatletter\def\toclevel@chapter{0}\makeatother
+
+%\phantomsection%
+%\input{abbreviations}
+%\markboth{List of Abbreviations}{List of Abbreviations}%
+%\addcontentsline{toc}{chapter}{List of Abbreviations}%
+%\printnomenclature%                             % requires latex, makeindex, latex calls
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+\addtocontents{toc}{\protect\vspace{4mm}}%
+\mainmatter
+
+
+% ===============================================================
+% Chapters
+% ===============================================================
+\begin{bibunit}[abbrv]
+\include{introduction}
+
+\include{delaunay}
+
+\include{kad}
+
+\include{conclusion}
+
+\backmatter%
+\singlespacing%
+
+\interlinepenalty=10000%
+\thispagestyle{empty}%
+\phantomsection
+\addcontentsline{toc}{part}{Bibliography}
+%\pdfbookmark[-1]{Bibliography}{bib}
+%\renewcommand\bibname{\flushright Bibliography}%}
+ %
+\putbib[diss]
+\end{bibunit}
+%\bibliographystyle{abbrv}
+%\bibliography{global}
+
+\appendix
+%\makeatletter\def\toclevel@part{-1}\makeatother
+\phantomsection 
+\addcontentsline{toc}{part}{Appendix}%
+\part*{APPENDIX}
+
+
+\include{datamanagement}
+
+
+{\setstretch{1.1}  
+\include{resume}
+}
+
+% ===============================================================
+% Bibliography
+% ===============================================================
+%\chapter{List of Publications}
+%\pdfbookmark[-1]{Bibliography}{bib}
+\begin{bibunit}[unsrt]
+
+\nocite{STBI05_3ddelaunay,STBI2005_clustering,STBI06_clustering,StBi06Shortcuts,StBE07MonitoringKad,DBISP2P07Stopwords,STEI07_imc,STBE07Exploiting,STCB08fasterkad,HSDB08_worm,STBE07Kadton}
+
+\thispagestyle{empty}
+
+%\renewcommand*{\bibname}{}
+
+%\renewcommand\bibheading{\chapter{Test}}
+ 
+\addcontentsline{toc}{chapter}{List of Publications}
+\phantomsection
+\renewcommand\bibname{List of Publications}%}
+\putbib[diss]
+\end{bibunit}
+
+
+% ===============================================================
+% Index from file main.ist
+% ===============================================================
+%\phantomsection % sets an anchor
+%\addcontentsline{toc}{chapter}{Index}%
+%\printindex%
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+
+
+% ===============================================================
+% Ehrenwörtliche Erklärung
+% ===============================================================
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+%
+%\chapter*{\begin{flushright}Ehrenw\"ortliche Erkl\"arung\end{flushright}}%
+%\thispagestyle{empty}
+%
+%Ich versichere, die vorliegende Arbeit ohne Hilfe Dritter und ohne
+%Benutzung anderer als der angegebenen Quellen und Hilfsmittel
+%angefertigt zu haben.
+%
+%Die aus den benutzten Quellen w\"ortlich oder sinngem\"a{\ss}
+%entnommenen Stellen wurden als solche kenntlich gemacht.  Diese
+%Arbeit hat in gleicher oder \"ahnlicher Form noch keiner
+%Pr\"ufungsbeh\"orde vorgelegen. \\[1cm]
+%
+%Mannheim, den 22.~Januar 2008\\[1cm]
+%
+%\hfill\hfill \hrulefill
+%
+%\hfill Marcel Busse\hspace*{1.3cm}
+
+
+
+\end{document}

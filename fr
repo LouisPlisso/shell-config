@@ -1022,7 +1022,7 @@ xkb_symbols "geo" {
 //
 // This file defines a Dvorak-fr keyboard driver for Xorg
 //
-// Dvorak-fr layout has been created by Francis Leboutte to adapt the original 
+// dvorak-fr layout has been created by Francis Leboutte to adapt the original 
 // (english) Dvorak layout to french language. 
 // See http://www.algo.be/ergo/dvorak-fr.html for details.
 //
@@ -1071,7 +1071,6 @@ xkb_symbols "dvorak_prog" {
     // à la différence près qu'elle est retenue (ou "collante") le temps d'une autre frappe : 
     // pour obtenir le symbole désiré, il suffit d'appuyer D'ABORD sur cette touche PUIS sur une autre
     // et non de maintenir la touche enfoncée comme avec AltGr sur un clavier Azerty
-    
     key <AE08> { [ISO_Level3_Latch,               8,           grave                  ] }; 
     key <AE09> { [      parenright,               9                                   ] };
     key <AE10> { [        quotedbl,               0                                   ] };
@@ -1118,7 +1117,6 @@ xkb_symbols "dvorak_prog" {
     key <AB08> { [               l,               L                                   ] };
     key <AB09> { [               p,               P,         section,       paragraph ] };
     key <AB10> { [               j,               J                                   ] };   
-
     key <KPDL>  { [      KP_Delete,           comma,       KP_Delete,      KP_Decimal ] };
     
     // la touche verr maj (caps lock) se comporte comme une touche majuscule (shift) verrouillée 

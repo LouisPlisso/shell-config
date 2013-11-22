@@ -20,11 +20,17 @@
 set -o nounset                              # Treat unset variables as an error
 
 
+# from get_google_auth.sh
+#google_auth="DQAAAMsAAADF3GChsuhLVEp-ieO8JESXg3LiwsboMSz6H-FoVu3J8OQhLy1EAwqlyxG3VS4KrOzwVzYPGDc0VICeQCPSMWd_IZ7CNAJ6IGnP2bYqDLvAjFXCtIoDqsH3-5JoIvMmsl5aa34sI1HEJanuAQxWLEL6ZXNt4FmD6xCbDWDYXPemQw4Z5fWSTWl8HKH1J2jRTxzq5mVF8kikWgLN-_Nah_oV49jjRabId6ES4irlA6DgGJFDmuT68wgWH45SX7eSISJiD1sgyNrIfF1e_pLjArdn"
 gmail_login="louis.plissonneau"
-gmail_password="Ilona0702"
+gmail_password="Ilona+Alois"
 mails="$(wget --secure-protocol=TLSv1 --timeout=3 -t 1 -q -O - \
 https://${gmail_login}:${gmail_password}@mail.google.com/mail/feed/atom \
 --no-check-certificate | grep 'fullcount' \
 | sed -e 's/.*<fullcount>//;s/<\/fullcount>.*//' 2>/dev/null)"
 
 echo number of unread mails: $mails
+
+#curl --header "Authorization: GoogleLogin auth=DQAAAMsAAADF3GChsuhLVEp-ieO8JESXg3LiwsboMSz6H-FoVu3J8OQhLy1EAwqlyxG3VS4KrOzwVzYPGDc0VICeQCPSMWd_IZ7CNAJ6IGnP2bYqDLvAjFXCtIoDqsH3-5JoIvMmsl5aa34sI1HEJanuAQxWLEL6ZXNt4FmD6xCbDWDYXPemQw4Z5fWSTWl8HKH1J2jRTxzq5mVF8kikWgLN-_Nah_oV49jjRabId6ES4irlA6DgGJFDmuT68wgWH45SX7eSISJiD1sgyNrIfF1e_pLjArdn" "https://mail.google.com/mail/feed/atom"
+#| perl -ne 'print "\t" if /<name>/; print "$2\n" if /<(title|name)>(.*)<\/\1>/;'
+

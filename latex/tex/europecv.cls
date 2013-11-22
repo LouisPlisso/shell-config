@@ -1,0 +1,1 @@
+../europecv/europecv.cls

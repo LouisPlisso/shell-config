@@ -24,15 +24,19 @@ die() {
 # for hsgtd
 export TODO=$MY_CONFIG_DIR
 
+# for latex
+export TEXINPUTS=$MY_CONFIG_DIR/latex/:
+export BIBINPUTS=$MY_CONFIG_DIR/latex/:
 
 export KEY_CMD="xkbcomp -w 0 -R/usr/share/X11/xkb/ ${MY_CONFIG_DIR}/keymap \"$DISPLAY\" "
 
-export PATH=$PATH:/sbin:/usr/sbin:${MY_CONFIG_DIR}/bin:${MY_CONFIG_DIR}/cabal/bin
-export PYTHONPATH=~/workspace/spydump/:~/workspace/spydump/tools
+export PATH=${MY_CONFIG_DIR}/bin:$PATH:/sbin:/usr/sbin:${MY_CONFIG_DIR}/cabal/bin
+#:${HOME}/Downloads/charles/bin
+export PYTHONPATH=~/workspace/spydump/:~/workspace/spydump/tools:~/pytomo/Pytomo/
 export PATH=$PATH:$PYTHONPATH/
 
 # for google code jam
-export PATH=$PATH:~/perso/jam/codejam-commandline-1.0-beta3/
+export PATH=$PATH:~/perso/jam/codejam-commandline-1.2-beta1
 
 # scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
 SCRIPT_RECIPES=$HOME/.scripts_recipes/bin
@@ -55,6 +59,7 @@ alias lb='/bin/ls $LS_OPTIONS -shapC'
 alias ll='/bin/ls $LS_OPTIONS -l'
 alias la='/bin/ls $LS_OPTIONS -Alh'
 alias lsd='/bin/ls $LS_OPTIONS -d */'
+alias li='/bin/ls $LS_OPTIONS -i'
 
 alias grep='/bin/grep --color=auto'
 alias fgrep='/bin/fgrep --color=auto'
@@ -63,6 +68,10 @@ alias egrep='/bin/egrep --color=auto'
 # some more ls aliases
 alias l='/bin/ls $LS_OPTIONS -CF'
 alias lh='/bin/ls $LS_OPTIONS -lh'
+alias lt='/bin/ls $LS_OPTIONS -lhart'
+
+alias libre=libreoffice
+alias file_explorer=pcmanfm
 
 export LESS="-R"
 export EDITOR=vi
@@ -88,7 +97,7 @@ function superman() {
 
 # Créer un répertoire et l'ouvrir :
 function mcd() { 
-    mkdir "$@"
+    mkdir -p "$@"
     cd "$@" 
 }
 #alias mcd='mkdir \!*; cd \!*'
@@ -104,6 +113,7 @@ alias light-max='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 100'
 
 alias gvi='gvim'
 
+alias sqlite='sqlite3'
 #alias chrome='all_proxy=$chrome_proxy /usr/bin/google-chrome'
 
 #restart_adb_server() {
@@ -223,3 +233,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:/opt/eclipse
 
 export GNOME_DESKTOP_SESSION_ID=1
+
+#printing stuff
+alias print1='lpr -P Xerox_WorkCentre_4150 -o PageSize=A4 -o PageRegion=A4 -o Duplex=DuplexNoTumble -o Resolution=600x600dpi '
+alias print2='lpr -P Xerox_WorkCentre_4150_2eme -o PageSize=A4 -o PageRegion=A4 -o Duplex=DuplexNoTumble -o Resolution=600x600dpi '

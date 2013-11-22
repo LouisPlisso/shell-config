@@ -1,0 +1,60 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./746dfcf90e64a57527e281a4b3f02ae3.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, french, basque, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo))
+(/usr/share/texmf-texlive/tex/latex/type1cm/type1cm.sty)
+(/usr/share/texmf-texlive/tex/latex/psnfss/helvet.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty))
+(/usr/share/texmf-texlive/tex/latex/psnfss/courier.sty)
+(/usr/share/texmf-texlive/tex/latex/base/textcomp.sty
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.def))
+(/usr/share/texmf/tex/latex/my_sty/ucs.sty
+(/usr/share/texmf/tex/latex/my_sty/data/uni-global.def))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+(/usr/share/texmf/tex/latex/my_sty/ucs/utf8x.def))
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty)
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg)
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (5058.9pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (5058.9pt) is ignored.
+
+)
+No file 746dfcf90e64a57527e281a4b3f02ae3.aux.
+(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd)
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1pnc.fd)
+(/usr/share/texmf/tex/latex/my_sty/ucs/ucsencs.def)
+*geometry auto-detecting driver*
+*geometry detected driver: dvips*
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.13 ...e{14.400000}{18.000000}{\sffamily default_
+                                                  192.168.1.1}
+! Extra }, or forgotten $.
+l.13 ...{18.000000}{\sffamily default_192.168.1.1}
+                                                  
+! Missing $ inserted.
+<inserted text> 
+                $
+l.14 \end{document}
+                   
+[1] (./746dfcf90e64a57527e281a4b3f02ae3.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 13 ({)
+### bottom level
+(see the transcript file for additional information)
+Output written on 746dfcf90e64a57527e281a4b3f02ae3.dvi (1 page, 408 bytes).
+Transcript written on 746dfcf90e64a57527e281a4b3f02ae3.log.

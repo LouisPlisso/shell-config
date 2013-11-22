@@ -1,1 +1,0 @@
-bangtex/latex/bletter.cls

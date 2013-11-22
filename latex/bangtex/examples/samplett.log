@@ -1,23 +1,22 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.21)  12 JAN 2011 21:13
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.19)  22 NOV 2012 10:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **samplett.tex
 (./samplett.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, french, basque, loaded.
-(/usr/share/texmf/tex/latex/my_sty/bletter.cls
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, fr
+ench, basque, loaded.
+(/home/louis/.texmf-config/tex/bletter.cls
 Document Class: bletter 2001/04/15 v1.2 LaTeX document class for bangtex
-(/usr/share/texmf/tex/latex/my_sty/bangtex/latex/bangfont.tex)
-(/usr/share/texmf/tex/latex/my_sty/bangtex/latex/bsize12.clo
+(/home/louis/.texmf-config/tex/bangfont.tex)
+(/home/louis/.texmf-config/tex/bsize12.clo
 File: bsize12.clo 2001/04/15 v1.2 LaTeX document for bangtex
 )
 \longindentation=\dimen102
 \indentedwidth=\dimen103
 \labelcount=\count79
-)
-No file samplett.aux.
+) (./samplett.aux)
 \openout1 = `samplett.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -38,7 +37,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 17.
-[1
+ [1
+
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./samplett.aux [2
 
@@ -46,17 +46,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]) ) 
 Here is how much of TeX's memory you used:
- 226 strings out of 495028
- 2130 string characters out of 1181228
- 48133 words of memory out of 3000000
- 3484 multiletter control sequences out of 15000+50000
+ 227 strings out of 495030
+ 2024 string characters out of 3180760
+ 48089 words of memory out of 3000000
+ 3490 multiletter control sequences out of 15000+200000
  26461 words of font info for 62 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 22i,7n,19p,274b,160s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 14 hyphenation exceptions out of 8191
+ 22i,7n,19p,274b,158s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/louis/.texmf-var/fonts/pk/ljfour/bangla/bang10.720pk>
-Output written on samplett.pdf (2 pages, 31974 bytes).
+Output written on samplett.pdf (2 pages, 28736 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 10 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

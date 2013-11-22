@@ -1,0 +1,61 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian)
+ restricted \write18 enabled.
+entering extended mode
+(./eaefba3cb6f0c52551d2791249192e8c.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, fr
+ench, basque, loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/type1cm/type1cm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (5058.9pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (5058.9pt) is ignored.
+
+)
+No file eaefba3cb6f0c52551d2791249192e8c.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pnc.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def)
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.13 ...ize{14.400000}{18.000000}{\sffamily   TCP_
+                                                  Stat24 txt gz ok: 1074}
+! Extra }, or forgotten $.
+l.13 ...0}{\sffamily   TCP_Stat24 txt gz ok: 1074}
+                                                  
+! Missing $ inserted.
+<inserted text> 
+                $
+l.14 \end{document}
+                   
+[1] (./eaefba3cb6f0c52551d2791249192e8c.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 13 ({)
+### bottom level
+(see the transcript file for additional information)
+Output written on eaefba3cb6f0c52551d2791249192e8c.dvi (1 page, 424 bytes).
+Transcript written on eaefba3cb6f0c52551d2791249192e8c.log.

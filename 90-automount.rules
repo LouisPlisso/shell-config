@@ -1,0 +1,13 @@
+KERNEL!="sd*", GOTO="media_label_end"
+ENV{ID_USB_DRIVER}!="usb-storage", GOTO="media_label_end"
+
+IMPORT{program}="/sbin/blkid -o udev -p %N", ENV{name}="%E{ID_FS_LABEL}"
+ENV{ID_FS_TYPE}=="", GOTO="media_label_end"
+ENV{name}=="", ENV{name}="%k"
+
+KERNEL=="sd*", SYMLINK+="usb-storage/%E{name}"
+
+ACTION=="add", RUN+="/usr/bin/pmount -t %E{ID_FS_TYPE} --sync --noatime --umask 000 %k %E{name}"
+ACTION=="remove", RUN+="/usr/bin/pumount %E{name}"
+
+LABEL="media_label_end"

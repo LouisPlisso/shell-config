@@ -1,1 +1,0 @@
-lettre/lettre.cls

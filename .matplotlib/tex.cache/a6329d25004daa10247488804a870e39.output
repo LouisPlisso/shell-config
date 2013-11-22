@@ -1,0 +1,52 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./a6329d25004daa10247488804a870e39.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, french, basque, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo))
+(/usr/share/texmf-texlive/tex/latex/type1cm/type1cm.sty)
+(/usr/share/texmf-texlive/tex/latex/psnfss/helvet.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty))
+(/usr/share/texmf-texlive/tex/latex/psnfss/courier.sty)
+(/usr/share/texmf-texlive/tex/latex/base/textcomp.sty
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.def))
+(/usr/share/texmf/tex/latex/my_sty/ucs.sty
+(/usr/share/texmf/tex/latex/my_sty/data/uni-global.def))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+(/usr/share/texmf/tex/latex/my_sty/ucs/utf8x.def))
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty)
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (5058.9pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (5058.9pt) is ignored.
+
+)
+No file a6329d25004daa10247488804a870e39.aux.
+(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd)
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1pnc.fd)
+(/usr/share/texmf/tex/latex/my_sty/ucs/ucsencs.def)
+*geometry auto-detecting driver*
+*geometry detected driver: dvips*
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd)
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8x'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ...ily $\phantom{1}\leq 3$ min.: $285$ (${^^H
+                                                  f 63\%}$)}
+[1] (./a6329d25004daa10247488804a870e39.aux) )
+(see the transcript file for additional information)
+Output written on a6329d25004daa10247488804a870e39.dvi (1 page, 416 bytes).
+Transcript written on a6329d25004daa10247488804a870e39.log.

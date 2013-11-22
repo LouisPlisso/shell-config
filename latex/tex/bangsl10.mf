@@ -1,0 +1,1 @@
+../bangtex/bangla/bangsl10.mf
