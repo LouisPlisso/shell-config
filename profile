@@ -8,6 +8,8 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+export MY_CONFIG_DIR=/Users/lplissonneau/config
+
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -34,3 +36,7 @@ fi
 
 # done only if X so in xsessionrc
 #setxkbmap fr -variant dvorak_prog || setxkbmap fr -variant dvorak
+
+export DOCKER_CERT_PATH=/Users/lplissonneau/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+

@@ -7,11 +7,6 @@
 #   echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
 #fi
 
-# load FTRD config
-if [ -f ${MY_CONFIG_DIR}/ftrd_config ]; then
-    . ${MY_CONFIG_DIR}/ftrd_config
-fi
-
 die() {
     result=$1
     shift
@@ -51,9 +46,10 @@ QUICKSNIPS=$MY_CONFIG_DIR/quicksnips/bin
 export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
 
 
-export LS_OPTIONS='--color=auto'
-eval `dircolors $MY_CONFIG_DIR/dircolors`
-alias ls='/bin/ls --group-directories-first $LS_OPTIONS'
+#export LS_OPTIONS='--color=auto'
+export LS_OPTIONS='-G'
+#eval `dircolors $MY_CONFIG_DIR/dircolors`
+alias ls='/bin/ls $LS_OPTIONS'
 alias l1='/bin/ls $LS_OPTIONS -1'
 alias lb='/bin/ls $LS_OPTIONS -shapC'
 alias ll='/bin/ls $LS_OPTIONS -l'
@@ -61,9 +57,9 @@ alias la='/bin/ls $LS_OPTIONS -Alh'
 alias lsd='/bin/ls $LS_OPTIONS -d */'
 alias li='/bin/ls $LS_OPTIONS -i'
 
-alias grep='/bin/grep --color=auto'
-alias fgrep='/bin/fgrep --color=auto'
-alias egrep='/bin/egrep --color=auto'
+#alias grep='/bin/grep --color=auto'
+#alias fgrep='/bin/fgrep --color=auto'
+#alias egrep='/bin/egrep --color=auto'
 
 # some more ls aliases
 alias l='/bin/ls $LS_OPTIONS -CF'

@@ -10,3 +10,4 @@ set showtabline=multitab
 set! browser.tabs.closeWindowWithLastTab=false
 
 " vim: set ft=pentadactyl:
+
