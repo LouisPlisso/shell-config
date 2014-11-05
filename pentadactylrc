@@ -11,3 +11,4 @@ set! browser.tabs.closeWindowWithLastTab=false
 
 " vim: set ft=pentadactyl:
 
+colorscheme solarized-light

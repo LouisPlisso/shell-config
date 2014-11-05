@@ -1,3 +1,6 @@
 [submodule "vim"]
 	path = vim
 	url = https://LouisPlisso@github.com/LouisPlisso/Config.git
+[submodule "pentadactyl/pentadactyl-solarized"]
+	path = pentadactyl-solarized
+	url = https://github.com/claytron/pentadactyl-solarized.git
