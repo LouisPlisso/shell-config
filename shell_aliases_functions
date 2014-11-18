@@ -27,8 +27,9 @@ export KEY_CMD="xkbcomp -w 0 -R/usr/share/X11/xkb/ ${MY_CONFIG_DIR}/keymap \"$DI
 
 export PATH=${MY_CONFIG_DIR}/bin:$PATH:/sbin:/usr/sbin
 #:${HOME}/Downloads/charles/bin
-export PYTHONPATH=$PYTHONPATH:~/pytomo/Pytomo/
-export PATH=$PATH:$PYTHONPATH/
+export PYTHONPATH=$PYTHONPATH:~/pytomo/Pytomo
+export PATH=$PATH:$PYTHONPATH
+export HOMEBREW_GITHUB_API_TOKEN=REMOVED
 
 # for google code jam
 #export PATH=$PATH:~/perso/jam/codejam-commandline-1.2-beta1
@@ -60,6 +61,7 @@ alias la='/bin/ls $LS_OPTIONS -Alh'
 alias lsd='/bin/ls $LS_OPTIONS -d */'
 alias li='/bin/ls $LS_OPTIONS -i'
 
+alias xg='xargs grep '
 #alias grep='/bin/grep --color=auto'
 #alias fgrep='/bin/fgrep --color=auto'
 #alias egrep='/bin/egrep --color=auto'
