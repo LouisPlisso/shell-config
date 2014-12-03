@@ -61,10 +61,24 @@ alias la='/bin/ls $LS_OPTIONS -Alh'
 alias lsd='/bin/ls $LS_OPTIONS -d */'
 alias li='/bin/ls $LS_OPTIONS -i'
 
+export FIND_OPTIONS=' -type f '
+alias find='/usr/bin/find $FIND_OPTIONS '
 alias xg='xargs grep '
 #alias grep='/bin/grep --color=auto'
 #alias fgrep='/bin/fgrep --color=auto'
 #alias egrep='/bin/egrep --color=auto'
+
+function fj() {
+        /usr/bin/find $FIND_OPTIONS $@ -name '*.java'
+}
+
+function fp() {
+        /usr/bin/find $FIND_OPTIONS $@ -name '*.py'
+}
+
+function fr() {
+        /usr/bin/find $FIND_OPTIONS $@ -name '*.rb'
+}
 
 # some more ls aliases
 alias l='/bin/ls $LS_OPTIONS -CF'
