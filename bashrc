@@ -166,7 +166,7 @@ alias cdc='cd $MY_CONFIG_DIR'
 export PATH=$PATH:/sbin:${MY_CONFIG_DIR}/bin
 
 # load FTRD config
-. ${MY_CONFIG_DIR}/ftrd_config
+. ${MY_CONFIG_DIR}/shell_aliases_functions
 
 # export VIMRUNTIME=${MY_CONFIG_DIR}/vim
 export XDG_CONFIG_HOME=${MY_CONFIG_DIR}

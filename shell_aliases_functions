@@ -50,8 +50,8 @@ QUICKSNIPS=$MY_CONFIG_DIR/quicksnips/bin
 export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
 
 
-#export LS_OPTIONS='--color=auto'
-export LS_OPTIONS='-G'
+export LS_OPTIONS='--color=auto'
+#export LS_OPTIONS='-G'
 #eval `dircolors $MY_CONFIG_DIR/dircolors`
 alias ls='/bin/ls $LS_OPTIONS'
 alias l1='/bin/ls $LS_OPTIONS -1'
@@ -69,15 +69,15 @@ alias xg='xargs grep '
 #alias egrep='/bin/egrep --color=auto'
 
 function fj() {
-        /usr/bin/find $FIND_OPTIONS $@ -name '*.java'
+        eval /usr/bin/find $1 $FIND_OPTIONS -name '\*.java'
 }
 
 function fp() {
-        /usr/bin/find $FIND_OPTIONS $@ -name '*.py'
+        eval /usr/bin/find $1 $FIND_OPTIONS -name '\*.py'
 }
 
 function fr() {
-        /usr/bin/find $FIND_OPTIONS $@ -name '*.rb'
+        eval /usr/bin/find $1 $FIND_OPTIONS -name '\*\[.rb\|.erb\]'
 }
 
 # some more ls aliases
