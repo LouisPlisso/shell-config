@@ -77,7 +77,7 @@ function fp() {
 }
 
 function fr() {
-        eval /usr/bin/find $1 $FIND_OPTIONS -name '\*\[.rb\|.erb\]'
+        eval /usr/bin/find $1 $FIND_OPTIONS -name '\*rb'
 }
 
 # some more ls aliases
