@@ -68,6 +68,8 @@ alias xg='xargs grep '
 #alias fgrep='/bin/fgrep --color=auto'
 #alias egrep='/bin/egrep --color=auto'
 
+alias riak='sudo -u riak riak'
+alias riak-admin='sudo -u riak riak-admin'
 function fj() {
         eval /usr/bin/find $1 $FIND_OPTIONS -name '\*.java'
 }
