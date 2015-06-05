@@ -7,6 +7,46 @@
 #   echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
 #fi
 
+# from .zshrc
+# put this at the end of .zshrc:
+#export MY_CONFIG_DIR=/Users/lplissonneau/config
+#[ -d $MY_CONFIG_DIR ] || die 1 "must have variable MY_CONFIG_DIR set"
+#if [ -f $MY_CONFIG_DIR/shell_aliases_functions ]; then
+#    . $MY_CONFIG_DIR/shell_aliases_functions
+#fi
+
+export HISTFILE=~/.histfile
+export KEYTIMEOUT=1
+export SSH_KEY_PATH="~/.ssh/id_rsa"
+
+# vi mode
+bindkey -v
+# usual emacs shortcuts
+bindkey '^@' insert-last-word
+bindkey '^A' beginning-of-line
+bindkey '^E' end-of-line
+bindkey '^R' history-incremental-pattern-search-backward
+bindkey '^S' history-incremental-pattern-search-forward
+
+setopt hist_ignore_dups share_history inc_append_history extended_history correct
+
+plugins=(git pip python pylint vagrant brew cap common-aliases docker gem vi-mode web-search) # tmux cabal
+
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+alias rm='rm'
+
+# If this is set to `yes', use `C-d' instead of `ESC' to switch from insert
+# mode to command mode. `ESC' may require a timeout to actually take effect.
+# Using `C-d' will work immediately. Therefore that is the default.
+#zle_use_ctrl_d='yes'
+
+# If set to `yes', make viins mode behave more like `emacs' mode. Bindings
+# such as `^r' and `^s' will work. Backspace and `^w' will work more like
+# emacs would, too.
+#zle_ins_more_like_emacs='yes'
+
+
 die() {
     result=$1
     shift
@@ -23,11 +63,11 @@ export TODO=$MY_CONFIG_DIR
 export TEXINPUTS=$MY_CONFIG_DIR/latex/:
 export BIBINPUTS=$MY_CONFIG_DIR/latex/:
 
-export KEY_CMD="xkbcomp -w 0 -R/usr/share/X11/xkb/ ${MY_CONFIG_DIR}/keymap \"$DISPLAY\" "
+#export KEY_CMD="xkbcomp -w 0 -R/usr/share/X11/xkb/ ${MY_CONFIG_DIR}/keymap \"$DISPLAY\" "
 
 export PATH=${MY_CONFIG_DIR}/bin:$PATH:/sbin:/usr/sbin
 #:${HOME}/Downloads/charles/bin
-export PYTHONPATH=$PYTHONPATH:~/pytomo/Pytomo
+#export PYTHONPATH=$PYTHONPATH:~/pytomo/Pytomo
 export PATH=$PATH:$PYTHONPATH
 export HOMEBREW_GITHUB_API_TOKEN=REMOVED
 
@@ -35,7 +75,7 @@ export HOMEBREW_GITHUB_API_TOKEN=REMOVED
 #export PATH=$PATH:~/perso/jam/codejam-commandline-1.2-beta1
 
 # mysql
-export PATH=$PATH:/usr/local/opt/mysql51/bin
+#export PATH=$PATH:/usr/local/opt/mysql51/bin
 
 # scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
 SCRIPT_RECIPES=$HOME/.scripts_recipes/bin
@@ -50,18 +90,18 @@ QUICKSNIPS=$MY_CONFIG_DIR/quicksnips/bin
 export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
 
 
-export LS_OPTIONS='--color=auto'
+##export LS_OPTIONS='--color=auto'
 #export LS_OPTIONS='-G'
-#eval `dircolors $MY_CONFIG_DIR/dircolors`
-alias ls='/bin/ls $LS_OPTIONS'
-alias l1='/bin/ls $LS_OPTIONS -1'
-alias lb='/bin/ls $LS_OPTIONS -shapC'
-alias ll='/bin/ls $LS_OPTIONS -l'
-alias la='/bin/ls $LS_OPTIONS -Alh'
-alias lsd='/bin/ls $LS_OPTIONS -d */'
-alias li='/bin/ls $LS_OPTIONS -i'
+##eval `dircolors $MY_CONFIG_DIR/dircolors`
+#alias ls='/bin/ls $LS_OPTIONS'
+#alias l1='/bin/ls $LS_OPTIONS -1'
+#alias lb='/bin/ls $LS_OPTIONS -shapC'
+#alias ll='/bin/ls $LS_OPTIONS -l'
+#alias la='/bin/ls $LS_OPTIONS -Alh'
+#alias lsd='/bin/ls $LS_OPTIONS -d */'
+#alias li='/bin/ls $LS_OPTIONS -i'
 
-export FIND_OPTIONS=' -type f '
+export FIND_OPTIONS=''
 alias find='/usr/bin/find $FIND_OPTIONS '
 alias xg='xargs grep '
 #alias grep='/bin/grep --color=auto'
@@ -82,30 +122,30 @@ function fr() {
         eval /usr/bin/find $1 $FIND_OPTIONS -name '\*rb'
 }
 
-# some more ls aliases
-alias l='/bin/ls $LS_OPTIONS -CF'
-alias lh='/bin/ls $LS_OPTIONS -lh'
-alias lt='/bin/ls $LS_OPTIONS -lhart'
+## some more ls aliases
+#alias l='/bin/ls $LS_OPTIONS -CF'
+#alias lh='/bin/ls $LS_OPTIONS -lh'
+#alias lt='/bin/ls $LS_OPTIONS -lhart'
 
-alias libre=libreoffice
+#alias libre=libreoffice
 alias file_explorer=pcmanfm
 
 export LESS="-R"
 export EDITOR=vi
 
-alias xpdf='/usr/bin/xpdf -z page'
+#alias xpdf='/usr/bin/xpdf -z page'
 
 #compose key activated in gtk apps
 GTK_IM_MODULE=xim
 export GTK_IM_MODULE
 
 # burn cd: first ripit
-alias burnit='flac -d *.flac && cdrdao write cd.toc && rm *.wav && eject'
+#alias burnit='flac -d *.flac && cdrdao write cd.toc && rm *.wav && eject'
 
-alias twi='${MY_CONFIG_DIR}/bin/twitter -t -d -f ansi'
+#alias twi='${MY_CONFIG_DIR}/bin/twitter -t -d -f ansi'
 
 # google code update
-alias upload_download='googlecode_upload.py -s "source distribution" -p pytomo -u louis.plissonneau -w Ab5PG7aC9MB9 -l "Featured,Type-Source,OpSys-All" '
+#alias upload_download='googlecode_upload.py -s "source distribution" -p pytomo -u louis.plissonneau -w Ab5PG7aC9MB9 -l "Featured,Type-Source,OpSys-All" '
 
 # super man
 function superman() { 
@@ -120,15 +160,15 @@ function mcd() {
 #alias mcd='mkdir \!*; cd \!*'
 
 # recupere la sortie std sur le buffer x
-function x() {
-    eval "$@" | tee >(xclip)
-}
+#function x() {
+#    eval "$@" | tee >(pbcopy)
+#}
 
-alias light-m='sudo $MY_CONFIG_DIR/bin/adjust_light.sh'
-alias light-min='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 0'
-alias light-max='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 100'
+#alias light-m='sudo $MY_CONFIG_DIR/bin/adjust_light.sh'
+#alias light-min='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 0'
+#alias light-max='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 100'
 
-alias gvi='gvim'
+#alias gvi='gvim'
 
 alias sqlite='sqlite3'
 #alias chrome='all_proxy=$chrome_proxy /usr/bin/google-chrome'
@@ -158,80 +198,81 @@ alias pyl='pylint --output-format=colorized --reports=n --disable=C0103 --disabl
 
 #alias print 'lpr \!* -Pps5'
 
-alias saptu='sudo aptitude update'
-alias saptdu='sudo aptitude dist-upgrade'
-alias saptsu='sudo aptitude safe-upgrade'
-alias aptg='aptitude search'
-alias apts='aptitude show'
-alias aptw='aptitude why'
-alias aptv='aptitude versions'
+#alias saptu='sudo aptitude update'
+#alias saptdu='sudo aptitude dist-upgrade'
+#alias saptsu='sudo aptitude safe-upgrade'
+#alias aptg='aptitude search'
+#alias apts='aptitude show'
+#alias aptw='aptitude why'
+#alias aptv='aptitude versions'
 
-alias hibernate='sudo /usr/sbin/pm-hibernate'
-alias suspend='sudo /usr/sbin/pm-suspend'
-alias suspend-hybrid='sudo /usr/sbin/pm-suspend-hybrid'
-alias so='sudo init 0'
+#alias hibernate='sudo /usr/sbin/pm-hibernate'
+#alias suspend='sudo /usr/sbin/pm-suspend'
+#alias suspend-hybrid='sudo /usr/sbin/pm-suspend-hybrid'
+#alias so='sudo init 0'
 
-alias fixwifi='sudo iwconfig wlan0 txpower on'
-alias fixprint='sudo /etc/init.d/avahi-daemon restart'
-alias presentation='impressive -t PageTurn'
+#alias fixwifi='sudo iwconfig wlan0 txpower on'
+#alias fixprint='sudo /etc/init.d/avahi-daemon restart'
+#alias presentation='impressive -t PageTurn'
 
-alias images='feh -F -Z'
-alias photos='pho -p'
+#alias images='feh -F -Z'
+#alias photos='pho -p'
 
-EXTERNAL_OUTPUT="VGA1"
-INTERNAL_OUTPUT="LVDS1"
-alias ext-screen-off='xrandr --output $EXTERNAL_OUTPUT --off'
-alias ext-screen='xrandr --auto --output $EXTERNAL_OUTPUT --auto --same-as $INTERNAL_OUTPUT'
+#EXTERNAL_OUTPUT="VGA1"
+#INTERNAL_OUTPUT="LVDS1"
+#alias ext-screen-off='xrandr --output $EXTERNAL_OUTPUT --off'
+#alias ext-screen='xrandr --auto --output $EXTERNAL_OUTPUT --auto --same-as $INTERNAL_OUTPUT'
 
 alias cdc='cd $MY_CONFIG_DIR'
 
 # keep trace of installed packages (even tentatives)
-sapti() {
-    if sudo aptitude install $@
-	then
-		# warning: will also store uninstalled packages
-        	echo $@ >> ${MY_CONFIG_DIR}/aptitude_list_local
-	fi
- }
+#sapti() {
+#    if sudo aptitude install $@
+#	then
+#		# warning: will also store uninstalled packages
+#        	echo $@ >> ${MY_CONFIG_DIR}/aptitude_list_local
+#	fi
+# }
+#
+#saptr() {
+#    if sudo aptitude remove $@
+#	then
+#        	for package in $*
+#        	do
+#                	sed -i "/^[^#]/s/\(\<$package\>\)[[:space:]]*/# &\n/g" ${MY_CONFIG_DIR}/aptitude_list_local
+#        	done
+#        	sed -i '/^$/d' ${MY_CONFIG_DIR}/aptitude_list_local
+#	fi
+# }
 
-saptr() {
-    if sudo aptitude remove $@
-	then
-        	for package in $*
-        	do
-                	sed -i "/^[^#]/s/\(\<$package\>\)[[:space:]]*/# &\n/g" ${MY_CONFIG_DIR}/aptitude_list_local
-        	done
-        	sed -i '/^$/d' ${MY_CONFIG_DIR}/aptitude_list_local
-	fi
- }
 
 
-
-alias lst='tar tzf'
-alias untar='tar xzvf'
-alias j='jobs -l'
-alias h='history|more'
- 
-alias less='less --quiet'
-alias df='df --human-readable'
-alias du='du --human-readable'
-alias less='less -e -i -m -R'
-
-# Pile de Répertoires
-alias p='popd'
-
-alias vlcn='vlc -I ncurses'
+#alias lst='tar tzf'
+#alias untar='tar xzvf'
+#alias j='jobs -l'
+#alias h='history|more'
+# 
+#alias less='less --quiet'
+#alias df='df --human-readable'
+#alias du='du --human-readable'
+#alias less='less -e -i -m -R'
+#
+## Pile de Répertoires
+#alias p='popd'
+#
+#alias vlcn='vlc -I ncurses'
 
 # git log
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
-alias git_svn_sync_clean='git svn fetch; git merge remotes/clean'
+#alias git_svn_sync_clean='git svn fetch; git merge remotes/clean'
 alias gitst='git status'
 alias gst='git status'
 alias gco='git commit -a'
 alias gsd='git svn dcommit'
 alias gdp="git diff 'HEAD^'"
+alias gch='git checkout'
 
-alias ps_mem='sudo /home/louis/config/bin/ps_mem.py'
+#alias ps_mem='sudo /home/louis/config/bin/ps_mem.py'
 
 #fresh() {
 #    old_proxy=$http_proxy
@@ -239,9 +280,9 @@ alias ps_mem='sudo /home/louis/config/bin/ps_mem.py'
 #    sudo freshclam
 #    export http_proxy=$old_proxy
 #}
-alias fresh='http_proxy="" sudo freshclam'
+#alias fresh='http_proxy="" sudo freshclam'
 
-alias findusb='diff <(lsusb) <(sleep 3s && lsusb)'
+#alias findusb='diff <(lsusb) <(sleep 3s && lsusb)'
 
 # java
 #export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
@@ -252,5 +293,5 @@ alias findusb='diff <(lsusb) <(sleep 3s && lsusb)'
 #export GNOME_DESKTOP_SESSION_ID=1
 
 #printing stuff
-alias print1='lpr -P Xerox_WorkCentre_4150 -o PageSize=A4 -o PageRegion=A4 -o Duplex=DuplexNoTumble -o Resolution=600x600dpi '
-alias print2='lpr -P Xerox_WorkCentre_4150_2eme -o PageSize=A4 -o PageRegion=A4 -o Duplex=DuplexNoTumble -o Resolution=600x600dpi '
+#alias print1='lpr -P Xerox_WorkCentre_4150 -o PageSize=A4 -o PageRegion=A4 -o Duplex=DuplexNoTumble -o Resolution=600x600dpi '
+#alias print4='lpr -P Xerox_WorkCentre_4150_2eme -o PageSize=A4 -o PageRegion=A4 -o Duplex=DuplexNoTumble -o Resolution=600x600dpi '
