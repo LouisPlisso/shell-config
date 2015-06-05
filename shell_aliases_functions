@@ -9,7 +9,7 @@
 
 # from .zshrc
 # put this at the end of .zshrc:
-#export MY_CONFIG_DIR=/Users/lplissonneau/config
+#export MY_CONFIG_DIR=~/config
 #[ -d $MY_CONFIG_DIR ] || die 1 "must have variable MY_CONFIG_DIR set"
 #if [ -f $MY_CONFIG_DIR/shell_aliases_functions ]; then
 #    . $MY_CONFIG_DIR/shell_aliases_functions
