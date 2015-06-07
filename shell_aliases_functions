@@ -109,15 +109,15 @@ alias xg='xargs grep '
 #alias egrep='/bin/egrep --color=auto'
 
 function fj() {
-        /usr/bin/find $FIND_OPTIONS $@ -name '*.java'
+        eval /usr/bin/find $1 $FIND_OPTIONS -name '\*.java'
 }
 
 function fp() {
-        /usr/bin/find $FIND_OPTIONS $@ -name '*.py'
+        eval /usr/bin/find $1 $FIND_OPTIONS -name '\*.py'
 }
 
 function fr() {
-        /usr/bin/find $FIND_OPTIONS $@ -name '*.rb'
+        eval /usr/bin/find $1 $FIND_OPTIONS -name '\*rb'
 }
 
 ## some more ls aliases
@@ -262,12 +262,13 @@ alias cdc='cd $MY_CONFIG_DIR'
 
 # git log
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
-alias git_svn_sync_clean='git svn fetch; git merge remotes/clean'
+#alias git_svn_sync_clean='git svn fetch; git merge remotes/clean'
 alias gitst='git status'
 alias gst='git status'
 alias gco='git commit -a'
 alias gsd='git svn dcommit'
 alias gdp="git diff 'HEAD^'"
+alias gch='git checkout'
 
 #alias ps_mem='sudo /home/louis/config/bin/ps_mem.py'
 
