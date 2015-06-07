@@ -14,6 +14,8 @@
 #if [ -f $MY_CONFIG_DIR/shell_aliases_functions ]; then
 #    . $MY_CONFIG_DIR/shell_aliases_functions
 #fi
+##ZSH_THEME="robbyrussell"
+#ZSH_THEME="tjkirch"
 
 export HISTFILE=~/.histfile
 export KEYTIMEOUT=1
