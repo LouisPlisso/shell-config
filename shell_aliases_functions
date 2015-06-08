@@ -32,7 +32,9 @@ bindkey '^S' history-incremental-pattern-search-forward
 
 setopt hist_ignore_dups share_history inc_append_history extended_history correct
 
-plugins=(git pip python pylint vagrant brew cap common-aliases docker gem vi-mode web-search) # tmux cabal
+#plugins=(git pip python pylint vagrant brew cap common-aliases docker gem vi-mode web-search) # tmux cabal
+
+autoload -U compinit && compinit
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
@@ -70,7 +72,7 @@ export BIBINPUTS=$MY_CONFIG_DIR/latex/:
 export PATH=${MY_CONFIG_DIR}/bin:$PATH:/sbin:/usr/sbin
 #:${HOME}/Downloads/charles/bin
 #export PYTHONPATH=$PYTHONPATH:~/pytomo/Pytomo
-export PATH=$PATH:$PYTHONPATH
+#export PATH=$PATH:$PYTHONPATH
 export HOMEBREW_GITHUB_API_TOKEN=REMOVED
 
 # for google code jam

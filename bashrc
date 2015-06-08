@@ -136,7 +136,7 @@ alias pysh='ipython -p pysh'
 #alias print 'lpr \!* -Pps5'
 alias saptu='sudo aptitude update'
 alias saptdu='sudo aptitude dist-upgrade'
-export PYTHONPATH=~/workspace/spydump/tools
+#export PYTHONPATH=~/workspace/spydump/tools
 
 # scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
 SCRIPT_RECIPES=$HOME/.scripts_recipes/bin

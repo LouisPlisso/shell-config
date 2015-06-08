@@ -41,4 +41,4 @@ export DOCKER_CERT_PATH=/Users/lplissonneau/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
