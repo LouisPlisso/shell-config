@@ -18,6 +18,8 @@
 #ZSH_THEME="tjkirch"
 
 export HISTFILE=~/.histfile
+export HISTSIZE=30000
+export SAVEHIST=30000
 export KEYTIMEOUT=1
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
