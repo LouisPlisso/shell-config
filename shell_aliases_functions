@@ -117,15 +117,30 @@ alias xg='xargs grep '
 alias riak='sudo -u riak riak'
 alias riak-admin='sudo -u riak riak-admin'
 function fj() {
-        eval /usr/bin/find $1 $FIND_OPTIONS -name '\*.java'
+    args=$*
+    if [ $# -eq 0 ]
+    then
+        args='.'
+    fi
+    eval /usr/bin/find $args $FIND_OPTIONS -name '\*.java'
 }
 
 function fp() {
-        eval /usr/bin/find $1 $FIND_OPTIONS -name '\*.py'
+    args=$*
+    if [ $# -eq 0 ]
+    then
+        args='.'
+    fi
+    eval /usr/bin/find $args $FIND_OPTIONS -name '\*.py'
 }
 
 function fr() {
-        eval /usr/bin/find $1 $FIND_OPTIONS -name '\*rb'
+    args=$*
+    if [ $# -eq 0 ]
+    then
+        args='.'
+    fi
+    eval /usr/bin/find $args $FIND_OPTIONS -name '\*rb'
 }
 
 ## some more ls aliases
