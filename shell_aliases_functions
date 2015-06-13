@@ -140,7 +140,7 @@ function fr() {
     then
         args='.'
     fi
-    eval /usr/bin/find $args $FIND_OPTIONS -name '\*rb'
+    eval /usr/bin/find $args $FIND_OPTIONS -name '\*.rb'
 }
 
 ## some more ls aliases
