@@ -28,6 +28,7 @@ bindkey -v
 # usual emacs shortcuts
 bindkey '^@' insert-last-word
 bindkey '^A' beginning-of-line
+bindkey '^T' transpose-chars
 bindkey '^E' end-of-line
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey '^S' history-incremental-pattern-search-forward
