@@ -43,10 +43,13 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 alias rm='rm'
 
-# for docker only on mac OS
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/lplissonneau/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
+if [[ "$OSTYPE" == "darwin"* ]]
+then
+    # for docker only on mac OS
+    export DOCKER_HOST=tcp://192.168.59.103:2376
+    export DOCKER_CERT_PATH=/Users/lplissonneau/.boot2docker/certs/boot2docker-vm
+    export DOCKER_TLS_VERIFY=1
+fi
 
 die() {
     result=$1
