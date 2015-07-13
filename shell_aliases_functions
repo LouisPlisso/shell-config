@@ -86,6 +86,17 @@ export HOMEBREW_GITHUB_API_TOKEN=REMOVED
 SCRIPT_RECIPES=$HOME/.scripts_recipes/bin
 [ -d $SCRIPT_RECIPES ] && export PATH=$PATH:$SCRIPT_RECIPES
 
+
+RVM=$HOME/.rvm/bin
+[ -d $RVM ] && export PATH=$PATH:$RVM
+
+CABAL=$HOME/.cabal/bin
+[ -d $CABAL ] && export PATH=$PATH:$CABAL
+
+HASKELL=$HOME/Library/Haskell/bin
+[ -d $HASKELL ] && export PATH=$PATH:$HASKELL
+
+
 # quicksnips: http://quicksnips.org/
 QUICKSNIPS=$MY_CONFIG_DIR/quicksnips/bin
 [ -d $QUICKSNIPS ] && export PATH=$PATH:$QUICKSNIPS
