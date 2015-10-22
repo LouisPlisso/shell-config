@@ -70,7 +70,7 @@ export BIBINPUTS=$MY_CONFIG_DIR/latex/:
 
 #export KEY_CMD="xkbcomp -w 0 -R/usr/share/X11/xkb/ ${MY_CONFIG_DIR}/keymap \"$DISPLAY\" "
 
-export PATH=${MY_CONFIG_DIR}/bin:$PATH:/sbin:/usr/sbin
+export PATH=${MY_CONFIG_DIR}/bin:$PATH:/sbin:/usr/sbin:/usr/local/sbin
 #:${HOME}/Downloads/charles/bin
 #export PYTHONPATH=$PYTHONPATH:~/pytomo/Pytomo
 #export PATH=$PATH:$PYTHONPATH
