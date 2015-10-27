@@ -9,6 +9,7 @@
 #umask 022
 
 export MY_CONFIG_DIR=/Users/lplissonneau/config
+export SHELL=/bin/zsh
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
