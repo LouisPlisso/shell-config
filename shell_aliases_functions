@@ -160,7 +160,7 @@ function fr() {
 #alias lt='/bin/ls $LS_OPTIONS -lhart'
 
 #alias libre=libreoffice
-alias file_explorer=pcmanfm
+#alias file_explorer=pcmanfm
 
 export LESS="-R"
 export EDITOR=vi

@@ -10,3 +10,8 @@ set keymap vi
 
 #bindkey '\e[A' history-beginning-search-backward
 #bindkey '\e[B' history-beginning-search-forward
+
+# from Giacomo
+# alternate mappings for "page up" and "page down" to search the history
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
