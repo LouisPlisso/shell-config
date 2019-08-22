@@ -10,7 +10,8 @@
 
 if [[ "$OSTYPE" == "darwin"* ]]
 then
-    export MY_CONFIG_DIR=/Users/lplissonneau/config
+    export MY_CONFIG_DIR=/Users/louis.plissonneau/_config
+    export PATH="/usr/local/opt/python/libexec/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 else
     export MY_CONFIG_DIR=/home/ec2-user/_config
 fi
