@@ -303,7 +303,6 @@ alias cdc='cd $MY_CONFIG_DIR'
 # git log
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
 #alias git_svn_sync_clean='git svn fetch; git merge remotes/clean'
-alias gitst='git status'
 alias gst='git status'
 alias gco='git commit -a'
 alias gdp="git diff 'HEAD^'"

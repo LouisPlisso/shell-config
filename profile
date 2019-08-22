@@ -50,3 +50,6 @@ fi
 
 
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#MongoDB
+export KOPS_STATE_STORE=s3://kube-om-state-store
+export GPG_TTY=$(tty)
