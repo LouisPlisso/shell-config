@@ -8,7 +8,13 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-export MY_CONFIG_DIR=/Users/lplissonneau/config
+if [[ "$OSTYPE" == "darwin"* ]]
+then
+    export MY_CONFIG_DIR=/Users/lplissonneau/config
+else
+    export MY_CONFIG_DIR=/home/ec2-user/_config
+fi
+
 export SHELL=/bin/zsh
 
 # if running bash
@@ -38,8 +44,8 @@ fi
 # done only if X so in xsessionrc
 #setxkbmap fr -variant dvorak_prog || setxkbmap fr -variant dvorak
 
-export DOCKER_CERT_PATH=/Users/lplissonneau/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
+# export DOCKER_CERT_PATH=/Users/lplissonneau/.boot2docker/certs/boot2docker-vm
+# export DOCKER_TLS_VERIFY=1
 
 
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
