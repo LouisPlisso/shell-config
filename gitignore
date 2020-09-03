@@ -2,4 +2,5 @@
 *.sw?
 *~
 *.pyc
+.python-version
 

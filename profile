@@ -8,14 +8,6 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-if [[ "$OSTYPE" == "darwin"* ]]
-then
-    export MY_CONFIG_DIR=/Users/louis.plissonneau/_config
-    export PATH="/usr/local/opt/python/libexec/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-else
-    export MY_CONFIG_DIR=/home/ec2-user/_config
-fi
-
 export SHELL=/bin/zsh
 
 # if running bash
@@ -44,12 +36,3 @@ fi
 
 # done only if X so in xsessionrc
 #setxkbmap fr -variant dvorak_prog || setxkbmap fr -variant dvorak
-
-# export DOCKER_CERT_PATH=/Users/lplissonneau/.boot2docker/certs/boot2docker-vm
-# export DOCKER_TLS_VERIFY=1
-
-
-#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-#MongoDB
-export KOPS_STATE_STORE=s3://kube-om-state-store
-export GPG_TTY=$(tty)

@@ -2,8 +2,9 @@
 " the vimrc file is sourced again.
 autocmd!
 filetype off
-call pathogen#infect()
-call pathogen#helptags()
+"call pathogen#infect()
+"call pathogen#helptags()
+
 
 inoremap uu <Esc>
 
