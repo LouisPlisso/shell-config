@@ -21,7 +21,7 @@ for template in bashrc.template zshrc.template; do
 done
 
 echo "==> Symlink config files"
-for file in profile inputrc vimrc gvimrc dircolors vim zsh gitconfig gitconfig.local ctags sqliterc; do
+for file in profile inputrc vimrc gvimrc dircolors vim zsh gitconfig gitconfig.local ctags sqliterc tmux.conf; do
     [ -e "${INSTALL_DIR}/${file}" ] || continue
     target="${HOME}/.$(basename ${file})"
     [ -h "${target}" ] && rm "${target}"
