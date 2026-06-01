@@ -38,8 +38,8 @@ echo ""
 if [[ "$OSTYPE" == "darwin"* ]]; then
     echo "==> macOS: install recommended tools:"
     echo "    brew install fzf ripgrep universal-ctags"
-    echo "    (zsh plugins are bundled as submodules)"
 else
     echo "==> Linux: install recommended tools:"
     echo "    apt install fzf ripgrep universal-ctags zsh"
 fi
+echo "    (zsh plugins and tpm are bundled as submodules — no extra install needed)"

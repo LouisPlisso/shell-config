@@ -90,12 +90,14 @@ Root:
 
 ## TOOL INTEGRATIONS
 
-### fzf  (brew install fzf)
+### fzf
     Ctrl+T          fuzzy file search (insert path at cursor)
-    Ctrl+R          fuzzy history search (replaces default incremental search)
-    Alt+C           fuzzy cd into a subdirectory
+    Ctrl+R          fuzzy history search
+    cd **<Tab>      fuzzy directory completion (Alt+C removed: clashes with
+                    vi command mode on macOS)
 
-    Requires fzf 0.48+ (June 2023). brew install fzf gets the current version.
+    Install: brew install fzf  /  apt install fzf
+    Requires fzf 0.48+ (June 2023).
 
 ### pyenv
     Loaded automatically if pyenv is on PATH.
@@ -124,10 +126,10 @@ Not installed by default — add with brew:
     brew install zsh-syntax-highlighting
 
 zsh-autosuggestions: shows a greyed-out suggestion from history as you type.
+    Right arrow  accept full suggestion (or move cursor if mid-line)
     Ctrl+F       accept full suggestion
-    End          accept full suggestion and move to end of line
-    Right arrow  normal cursor movement (does NOT accept — avoids surprises)
-    Suggestions come from history first, then completion.
+    End          accept full suggestion and jump to end of line
+    Suggestions come from completion first, then history.
 
 zsh-syntax-highlighting: colors commands as you type — green for valid
 commands, red for unknown ones. Sourced last (required by the plugin).

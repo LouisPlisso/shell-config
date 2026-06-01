@@ -95,7 +95,7 @@ Solarized dark or light, chosen automatically:
 ## MISC SETTINGS
 
     history-limit=10000     scrollback buffer
-    base-index=1            windows and panes numbered from 1
+    base-index=0            windows and panes numbered from 0 (default)
     escape-time=1           near-zero ESC delay (important for vi mode)
     mouse=on                click to select pane/window, scroll to scroll
     monitor-activity=on     flag windows with activity in status bar

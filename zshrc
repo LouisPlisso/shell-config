@@ -60,10 +60,7 @@ zle -N zle-keymap-select
 zle-line-finish() { RPS1=''; RPS2=''; zle reset-prompt; }
 zle -N zle-line-finish
 
-# --- History search ---
-
-bindkey '^R' history-incremental-pattern-search-backward
-bindkey '^S' history-incremental-pattern-search-forward
+# Ctrl+R history search is handled by fzf (loaded at the bottom)
 
 # --- History ---
 
@@ -96,8 +93,6 @@ setopt auto_cd auto_pushd pushd_ignore_dups no_pushd_silent pushd_to_home chase_
 # --- Shell behaviour ---
 
 setopt correct hist_verify prompt_bang check_jobs dvorak
-# noglobalrcs: skip /etc/zprofile and /etc/zshrc — PATH is managed explicitly below
-setopt noglobalrcs
 unsetopt beep hist_beep list_beep bg_nice hup glob_dots
 
 # --- Prompt ---
@@ -162,6 +157,9 @@ fi
 
 if command -v fzf &>/dev/null; then
     eval "$(fzf --zsh)"
+    # Alt+C fuzzy-cd is unreliable in vi mode on macOS (ESC+C clashes with
+    # command mode). Use cd **<Tab> for fuzzy directory completion instead.
+    bindkey -r '\ec'
 fi
 
 # --- GPG (commit signing) ---
@@ -180,7 +178,7 @@ export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
 # Use Ctrl+F to accept the full suggestion, or End to accept and jump to line end.
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
 ZSH_AUTOSUGGEST_STRATEGY=(completion history)
-ZSH_AUTOSUGGEST_ACCEPT_WIDGETS=(end-of-line vi-end-of-line vi-add-eol)
+ZSH_AUTOSUGGEST_ACCEPT_WIDGETS=(forward-char vi-forward-char end-of-line vi-end-of-line vi-add-eol)
 
 for _f in ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh \
            /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh \
