@@ -95,7 +95,7 @@ Root:
     Ctrl+R          fuzzy history search (replaces default incremental search)
     Alt+C           fuzzy cd into a subdirectory
 
-    Loaded via fzf --zsh (fzf 0.48+); falls back to ~/.fzf.zsh on older installs.
+    Requires fzf 0.48+ (June 2023). brew install fzf gets the current version.
 
 ### pyenv
     Loaded automatically if pyenv is on PATH.
