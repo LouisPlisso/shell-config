@@ -92,3 +92,4 @@ alias gco='git commit -a'
 alias gdp="git diff 'HEAD^'"
 alias gd='git diff'
 alias gch='git checkout'
+alias gpull='git pull && git submodule update --recursive'
