@@ -169,9 +169,7 @@ export GPG_TTY=$(tty)
 # XDG: point apps (bat, etc.) at the config dir instead of ~/.config
 export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
 
-# --- Optional plugins (install via brew) ---
-# brew install zsh-autosuggestions   → fish-like inline history suggestions
-# brew install zsh-syntax-highlighting → color commands as you type
+# --- Plugins (bundled as submodules in _config/zsh/, loaded via ~/.zsh symlink) ---
 
 # zsh-autosuggestions: visible grey; suggestions come from history then completion.
 # Right arrow is NOT bound to accept — it keeps its normal cursor-movement role.

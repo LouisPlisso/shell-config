@@ -118,21 +118,19 @@ Root:
 
 ---
 
-## OPTIONAL PLUGINS
+## PLUGINS
 
-Not installed by default — add with brew:
+Bundled as git submodules in _config/zsh/ — available automatically after
+install.sh. No brew or apt install needed.
 
-    brew install zsh-autosuggestions
-    brew install zsh-syntax-highlighting
-
-zsh-autosuggestions: shows a greyed-out suggestion from history as you type.
+zsh-autosuggestions: shows a greyed-out suggestion as you type.
     Right arrow  accept full suggestion (or move cursor if mid-line)
     Ctrl+F       accept full suggestion
     End          accept full suggestion and jump to end of line
     Suggestions come from completion first, then history.
 
 zsh-syntax-highlighting: colors commands as you type — green for valid
-commands, red for unknown ones. Sourced last (required by the plugin).
+commands, red for unknown ones.
 
 ---
 
