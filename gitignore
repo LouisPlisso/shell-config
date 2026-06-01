@@ -4,5 +4,4 @@
 *.pyc
 .python-version
 id_rsa
-tmux/plugins/tmux-*
 
