@@ -31,6 +31,7 @@ case "$mode" in
         tmux set-option -g display-panes-active-colour        colour33
         tmux set-option -g display-panes-colour               colour166
         tmux set-window-option -g clock-mode-colour           colour64
+        tmux display-message "theme: dark"
         ;;
     light)
         tmux set-option -g status-style                       "bg=colour231,fg=colour130"
@@ -40,5 +41,6 @@ case "$mode" in
         tmux set-option -g display-panes-active-colour        colour20
         tmux set-option -g display-panes-colour               colour196
         tmux set-window-option -g clock-mode-colour           colour40
+        tmux display-message "theme: light"
         ;;
 esac

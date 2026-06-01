@@ -6,8 +6,17 @@ while [ -h "${INSTALL_DIR}" ]; do INSTALL_DIR=$(readlink "${INSTALL_DIR}"); done
 cd "$(dirname "${INSTALL_DIR}")" > /dev/null
 INSTALL_DIR=$(pwd)
 
-echo "==> Init git submodules (vim plugins, zsh plugins)"
+echo "==> Init git submodules (vim plugins, zsh plugins, tpm)"
 git submodule update --init --recursive
+
+echo "==> Install tmux plugins"
+if command -v tmux &>/dev/null; then
+    TMUX_PLUGIN_MANAGER_PATH="${INSTALL_DIR}/tmux/plugins/" \
+        "${INSTALL_DIR}/tmux/plugins/tpm/bin/install_plugins" 2>/dev/null \
+        && echo "    done" || echo "    skipped (run prefix+I inside tmux to install manually)"
+else
+    echo "    tmux not found — run prefix+I inside tmux after installing it"
+fi
 
 echo "==> Generate dot files from templates"
 for template in bashrc.template zshrc.template; do
