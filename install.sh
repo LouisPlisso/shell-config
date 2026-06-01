@@ -11,8 +11,7 @@ git submodule update --init --recursive
 
 echo "==> Install tmux plugins"
 if command -v tmux &>/dev/null; then
-    TMUX_PLUGIN_MANAGER_PATH="${INSTALL_DIR}/tmux/plugins/" \
-        "${INSTALL_DIR}/tmux/plugins/tpm/bin/install_plugins" 2>/dev/null \
+    "${INSTALL_DIR}/tmux/plugins/tpm/bin/install_plugins" 2>/dev/null \
         && echo "    done" || echo "    skipped (run prefix+I inside tmux to install manually)"
 else
     echo "    tmux not found — run prefix+I inside tmux after installing it"
@@ -30,7 +29,7 @@ for template in bashrc.template zshrc.template; do
 done
 
 echo "==> Symlink config files"
-for file in profile inputrc vimrc gvimrc dircolors vim zsh gitconfig gitconfig.local ctags sqliterc tmux.conf; do
+for file in profile inputrc vimrc gvimrc dircolors vim zsh tmux gitconfig gitconfig.local ctags sqliterc tmux.conf; do
     [ -e "${INSTALL_DIR}/${file}" ] || continue
     target="${HOME}/.$(basename ${file})"
     [ -h "${target}" ] && rm "${target}"
