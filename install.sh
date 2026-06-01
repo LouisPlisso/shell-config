@@ -21,7 +21,7 @@ for template in bashrc.template zshrc.template; do
 done
 
 echo "==> Symlink config files"
-for file in profile inputrc vimrc gvimrc dircolors vim zsh gitconfig ctags sqliterc; do
+for file in profile inputrc vimrc gvimrc dircolors vim zsh gitconfig gitconfig.local ctags sqliterc; do
     [ -e "${INSTALL_DIR}/${file}" ] || continue
     target="${HOME}/.$(basename ${file})"
     [ -h "${target}" ] && rm "${target}"
@@ -30,6 +30,10 @@ for file in profile inputrc vimrc gvimrc dircolors vim zsh gitconfig ctags sqlit
     echo "    ${target} -> ${INSTALL_DIR}/${file}"
 done
 
+echo ""
+echo "NOTE: on work machines without SSH keys, remove the gitconfig.local symlink:"
+echo "    rm ~/.gitconfig.local"
+echo "Submodule URLs use HTTPS so cloning still works without it."
 echo ""
 if [[ "$OSTYPE" == "darwin"* ]]; then
     echo "==> macOS: install recommended tools:"

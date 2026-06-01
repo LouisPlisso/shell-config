@@ -1,0 +1,8 @@
+# Machine-local git config — symlinked to ~/.gitconfig.local by install.sh
+# Rewrites all GitHub HTTPS URLs to SSH so submodules and remotes use your key.
+#
+# Remove ~/.gitconfig.local symlink on work machines without SSH keys.
+# Submodule URLs in .gitmodules use HTTPS so cloning always works either way.
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/

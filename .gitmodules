@@ -1,6 +1,6 @@
 [submodule "vim"]
 	path = vim
-	url = https://LouisPlisso@github.com/LouisPlisso/Config.git
+	url = https://github.com/LouisPlisso/vim-config.git
 [submodule "zsh/zsh-autosuggestions"]
 	path = zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
