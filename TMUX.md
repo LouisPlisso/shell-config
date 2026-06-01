@@ -88,7 +88,7 @@ Solarized dark or light, chosen automatically:
   (picks up iTerm2 "follow the sun" switching within ~60 seconds)
 - SSH / Linux: starts in dark mode; toggle manually with prefix+T
 
-    prefix + T      toggle dark / light (or re-detect on macOS)
+    prefix + t      toggle dark / light (or re-detect on macOS)
 
 ---
 
