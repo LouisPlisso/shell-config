@@ -90,10 +90,12 @@ Root:
 
 ## TOOL INTEGRATIONS
 
-### fzf
+### fzf  (brew install fzf)
     Ctrl+T          fuzzy file search (insert path at cursor)
-    Ctrl+R          fuzzy history search (overrides default history search)
+    Ctrl+R          fuzzy history search (replaces default incremental search)
     Alt+C           fuzzy cd into a subdirectory
+
+    Loaded via fzf --zsh (fzf 0.48+); falls back to ~/.fzf.zsh on older installs.
 
 ### pyenv
     Loaded automatically if pyenv is on PATH.

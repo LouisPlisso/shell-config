@@ -1,0 +1,44 @@
+#!/bin/sh
+# Set tmux solarized dark or light theme.
+# Usage: tmux-theme [dark|light]
+# No argument: auto-detect on macOS (dark mode check), toggle on other systems.
+
+if [ $# -eq 0 ]; then
+    if [ "$(uname)" = "Darwin" ]; then
+        if [ "$(defaults read -g AppleInterfaceStyle 2>/dev/null)" = "Dark" ]; then
+            mode=dark
+        else
+            mode=light
+        fi
+    else
+        # SSH / Linux: toggle based on current theme
+        current=$(tmux show-option -gv status-style 2>/dev/null)
+        case "$current" in
+            *colour235*) mode=light ;;
+            *)           mode=dark  ;;
+        esac
+    fi
+else
+    mode="$1"
+fi
+
+case "$mode" in
+    dark)
+        tmux set-option -g status-style                       "bg=colour235,fg=colour136"
+        tmux set-option -g message-style                      "bg=colour235,fg=colour166"
+        tmux set-window-option -g window-status-style         "fg=colour244,bg=colour235"
+        tmux set-window-option -g window-status-current-style "fg=colour166,bg=colour235"
+        tmux set-option -g display-panes-active-colour        colour33
+        tmux set-option -g display-panes-colour               colour166
+        tmux set-window-option -g clock-mode-colour           colour64
+        ;;
+    light)
+        tmux set-option -g status-style                       "bg=colour231,fg=colour130"
+        tmux set-option -g message-style                      "bg=colour231,fg=colour196"
+        tmux set-window-option -g window-status-style         "fg=colour180,bg=default"
+        tmux set-window-option -g window-status-current-style "fg=colour196,bg=default"
+        tmux set-option -g display-panes-active-colour        colour20
+        tmux set-option -g display-panes-colour               colour196
+        tmux set-window-option -g clock-mode-colour           colour40
+        ;;
+esac

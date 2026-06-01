@@ -83,8 +83,12 @@ Plugins auto-install silently on first tmux start.
 
 ## STATUS BAR
 
-Solarized light theme.
-Active window: red.  Inactive windows: yellow/brown.  Background: white.
+Solarized dark or light, chosen automatically:
+- macOS: detects system dark/light mode at startup and re-checks every minute
+  (picks up iTerm2 "follow the sun" switching within ~60 seconds)
+- SSH / Linux: starts in dark mode; toggle manually with prefix+T
+
+    prefix + T      toggle dark / light (or re-detect on macOS)
 
 ---
 
