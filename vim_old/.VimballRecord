@@ -1,5 +1,0 @@
-haskellmode-20090430.vba: call delete('/home/louis/config/vim/compiler/ghc.vim')|call delete('/home/louis/config/vim/ftplugin/haskell.vim')|call delete('/home/louis/config/vim/ftplugin/haskell_doc.vim')|call delete('/home/louis/config/vim/ftplugin/haskell_hpaste.vim')|call delete('/home/louis/config/vim/autoload/haskellmode.vim')|call delete('/home/louis/config/vim/doc/haskellmode.txt')
-RltvNmbr.vba: call delete('/home/louis/config/vim/plugin/RltvNmbrPlugin.vim')|call delete('/home/louis/config/vim/doc/RltvNmbr.txt')|call delete('/home/louis/config/vim/autoload/RltvNmbr.vim')
-rainbow_parenthsis-4.0.vba: call delete('/home/louis/config/vim/autoload/rainbow_parenthsis.vim')|call delete('/home/louis/config/vim/doc/rainbow_parenthsis.txt')|call delete('/home/louis/config/vim/plugin/rainbow_parenthsis.vim')|call delete('/home/louis/config/vim/rainbow_parenthsis_options.vim')
-supertab.vba: call delete('/home/louis/config/vim/doc/supertab.txt')|call delete('/home/louis/config/vim/plugin/supertab.vim')
-supertab-1.5-5_git.vba: call delete('/home/louis/config/vim/doc/supertab.txt')|call delete('/home/louis/config/vim/plugin/supertab.vim')
