@@ -58,8 +58,8 @@ Prefix: Ctrl+S.  Double-tap Ctrl+S to switch to last window.
 
 Save and restore sessions across reboots.
 
-    prefix + A              save session
-    prefix + R              restore session
+    prefix + a              save session
+    prefix + r              restore session
 
     Vim sessions are also saved and restored
     (requires :mksession support — enabled by default).
