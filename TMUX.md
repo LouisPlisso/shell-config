@@ -66,14 +66,12 @@ Save and restore sessions across reboots.
 
 ---
 
-## PLUGINS (TPM)
+## PLUGINS
 
-Managed by TPM (Tmux Plugin Manager).
-TPM is a git submodule — available after install.sh.
-Plugins auto-install silently on first tmux start.
+Git submodules — available after install.sh, updated with:
 
-    prefix + U              update all plugins
-    prefix + alt+u          remove unlisted plugins
+    git submodule update --remote tmux/plugins/tmux-resurrect
+    git submodule update --remote tmux/plugins/tmux-yank
 
     Active plugins:
       tmux-plugins/tmux-resurrect    session save/restore

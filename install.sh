@@ -9,13 +9,6 @@ INSTALL_DIR=$(pwd)
 echo "==> Init git submodules (vim plugins, zsh plugins, tpm)"
 git submodule update --init --recursive
 
-echo "==> Install tmux plugins"
-if command -v tmux &>/dev/null; then
-    "${INSTALL_DIR}/tmux/plugins/tpm/bin/install_plugins" 2>/dev/null \
-        && echo "    done" || echo "    skipped (run prefix+I inside tmux to install manually)"
-else
-    echo "    tmux not found — run prefix+I inside tmux after installing it"
-fi
 
 echo "==> Generate dot files from templates"
 for template in bashrc.template zshrc.template; do
