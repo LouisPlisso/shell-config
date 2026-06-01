@@ -1,344 +1,94 @@
 #!/bin/sh
+# Shared aliases and functions — sourced by both zsh and bash.
+# No shell-specific syntax (no zsh setopt/bindkey/autoload).
 
-# performance boost
-#if [ "$PS1" ] ; then
-#   mkdir -p -m 0700 /dev/cgroup/cpu/user/$$ > /dev/null 2>&1
-#   echo $$ > /dev/cgroup/cpu/user/$$/tasks
-#   echo "1" > /dev/cgroup/cpu/user/$$/notify_on_release
-#fi
+# --- Utilities ---
 
-# from .zshrc
-# put this at the end of .zshrc:
-#export MY_CONFIG_DIR=~/config
-#[ -d $MY_CONFIG_DIR ] || die 1 "must have variable MY_CONFIG_DIR set"
-#if [ -f $MY_CONFIG_DIR/shell_aliases_functions ]; then
-#    . $MY_CONFIG_DIR/shell_aliases_functions
-#fi
-##ZSH_THEME="robbyrussell"
-#ZSH_THEME="tjkirch"
+die() {
+    result=$1; shift
+    echo ": $*" >&2
+    exit "$result"
+}
+
+# mkdir + cd in one step
+mcd() { mkdir -p "$@" && cd "$@"; }
+
+# Fall back to a web search if man page not found
+superman() {
+    /usr/bin/man "$@" || w3m -dump "http://google.com/search?q=$*&btnI" | less
+}
+
+# Jump to man page section for a specific option: manswitch tar z
+manswitch() { man "$1" | less -p "^ +$2"; }
+
+# --- Environment ---
 
 export HISTFILE=~/.histfile
 export HISTSIZE=30000
-export SAVEHIST=30000
-export KEYTIMEOUT=1
-export SSH_KEY_PATH="~/.ssh/id_rsa"
 unset MAILCHECK
+export PAGER=less
+export EDITOR=vi
+export LESS="-F -X -R $LESS"
 
-# vi mode
-bindkey -v
-# usual emacs shortcuts
-bindkey '^@' insert-last-word
-bindkey '^A' beginning-of-line
-bindkey '^T' transpose-chars
-bindkey '^E' end-of-line
-bindkey '^R' history-incremental-pattern-search-backward
-bindkey '^S' history-incremental-pattern-search-forward
+# LaTeX: look for style/bib files in config dir
+export TEXINPUTS="$MY_CONFIG_DIR/latex/:"
+export BIBINPUTS="$MY_CONFIG_DIR/latex/:"
 
-setopt hist_ignore_dups share_history inc_append_history extended_history correct
+export PATH="${MY_CONFIG_DIR}/bin:${PATH}:/sbin:/usr/sbin:/usr/local/sbin"
+export PATH="$HOME/.local/bin:$PATH"
 
-#plugins=(git pip python pylint vagrant brew cap common-aliases docker gem vi-mode web-search) # tmux cabal
+# --- Colors and ls ---
 
-autoload -U compinit && compinit
-
-DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-alias rm='rm'
-
-if [[ "$OSTYPE" == "darwin"* ]]
-then
-    # for docker only on mac OS
-    #export DOCKER_HOST=tcp://192.168.59.103:2376
-    #export DOCKER_CERT_PATH=/Users/lplissonneau/.boot2docker/certs/boot2docker-vm
-    #export DOCKER_TLS_VERIFY=1
-    echo
-fi
-
-die() {
-    result=$1
-    shift
-    echo ": $*" >&2
-    exit $result
-}
-
-[ -d $MY_CONFIG_DIR ] || die 1 "must have variable MY_CONFIG_DIR set"
-
-
-# for hsgtd
-#export TODO=$MY_CONFIG_DIR
-
-# for latex
-export TEXINPUTS=$MY_CONFIG_DIR/latex/:
-export BIBINPUTS=$MY_CONFIG_DIR/latex/:
-
-#export KEY_CMD="xkbcomp -w 0 -R/usr/share/X11/xkb/ ${MY_CONFIG_DIR}/keymap \"$DISPLAY\" "
-
-export PATH=${MY_CONFIG_DIR}/bin:$PATH:/sbin:/usr/sbin:/usr/local/sbin
-#:${HOME}/Downloads/charles/bin
-#export PYTHONPATH=$PYTHONPATH:~/pytomo/Pytomo
-#export PATH=$PATH:$PYTHONPATH
-export HOMEBREW_GITHUB_API_TOKEN=REMOVED
-
-# mysql
-#export PATH=$PATH:/usr/local/opt/mysql51/bin
-
-# scripts from "Shell Scripting Recipes": http://shell.cfajohnson.com/ssr/ssr-scripts.tar.gz
-SCRIPT_RECIPES=$HOME/.scripts_recipes/bin
-[ -d $SCRIPT_RECIPES ] && export PATH=$PATH:$SCRIPT_RECIPES
-
-
-RVM=$HOME/.rvm/bin
-[ -d $RVM ] && export PATH=$PATH:$RVM
-
-CABAL=$HOME/.cabal/bin
-[ -d $CABAL ] && export PATH=$PATH:$CABAL
-
-HASKELL=$HOME/Library/Haskell/bin
-[ -d $HASKELL ] && export PATH=$PATH:$HASKELL
-
-
-# quicksnips: http://quicksnips.org/
-QUICKSNIPS=$MY_CONFIG_DIR/quicksnips/bin
-[ -d $QUICKSNIPS ] && export PATH=$PATH:$QUICKSNIPS
-
-
-#export VIMRUNTIME=${MY_CONFIG_DIR}/vim
-export XDG_CONFIG_HOME=${MY_CONFIG_DIR}
-
-
-if [[ "$OSTYPE" == "darwin"* ]]
-then
+if [[ "$OSTYPE" == "darwin"* ]]; then
     export LS_OPTIONS='-G'
 else
     export LS_OPTIONS='--color=auto'
 fi
-##eval `dircolors $MY_CONFIG_DIR/dircolors`
+
 alias l='/bin/ls $LS_OPTIONS'
 alias ls='/bin/ls $LS_OPTIONS'
 alias l1='/bin/ls $LS_OPTIONS -1'
-#alias lb='/bin/ls $LS_OPTIONS -shapC'
 alias ll='/bin/ls $LS_OPTIONS -l'
 alias la='/bin/ls $LS_OPTIONS -Alh'
 alias lsd='/bin/ls $LS_OPTIONS -d */'
-#alias li='/bin/ls $LS_OPTIONS -i'
+alias lt='/bin/ls $LS_OPTIONS -lhart'       # sorted by time, newest last
 
-export FIND_OPTIONS="! \\( -name \"*~\" \\) -type f"
-#alias find="/usr/bin/find ${FIND_OPTIONS} "
-function find() {
-    args=$*
-    if [ $# -eq 0 ]
-    then
-        args='.'
-    fi
-    eval /usr/bin/find $args ${FIND_OPTIONS}
-}
-alias xg='xargs grep --color=auto'
+# --- grep ---
+
 alias grep='grep --color=auto'
-#alias fgrep='/bin/fgrep --color=auto'
-#alias egrep='/bin/egrep --color=auto'
+alias xg='xargs grep --color=auto'
 
-alias riak='sudo -u riak riak'
-alias riak-admin='sudo -u riak riak-admin'
-function fj() {
-    args=$*
-    if [ $# -eq 0 ]
-    then
-        args='.'
-    fi
-    eval /usr/bin/find $args ${FIND_OPTIONS} -name '\*.java'
+# --- find: always exclude *~ backup files, regular files only ---
+# Wraps /usr/bin/find to hide editor backup files from all searches.
+# To bypass this filter, call /usr/bin/find directly.
+find() {
+    if [ $# -eq 0 ]; then set -- .; fi
+    /usr/bin/find "$@" ! \( -name "*~" \) -type f
 }
+fj()  { find "${@:-.}" -name "*.java"; }
+fgo() { find "${@:-.}" -name "*.go"; }
+fp()  { find "${@:-.}" -name "*.py"; }
+fr()  { find "${@:-.}" -name "*.rb"; }
 
-function fgo() {
-    args=$*
-    if [ $# -eq 0 ]
-    then
-        args='.'
-    fi
-    eval /usr/bin/find $args ${FIND_OPTIONS} -name '\*.go'
-}
-
-function fp() {
-    args=$*
-    if [ $# -eq 0 ]
-    then
-        args='.'
-    fi
-    eval /usr/bin/find $args ${FIND_OPTIONS} -name '\*.py'
-}
-
-function fr() {
-    args=$*
-    if [ $# -eq 0 ]
-    then
-        args='.'
-    fi
-    eval /usr/bin/find $args ${FIND_OPTIONS} -name '\*.rb'
-}
-
-## some more ls aliases
-#alias l='/bin/ls $LS_OPTIONS -CF'
-#alias lh='/bin/ls $LS_OPTIONS -lh'
-alias lt='/bin/ls $LS_OPTIONS -lhart'
-
-#alias libre=libreoffice
-#alias file_explorer=pcmanfm
-
-export LESS="-F -X -R $LESS"
-export EDITOR=vi
-
-#alias xpdf='/usr/bin/xpdf -z page'
-
-#compose key activated in gtk apps
-GTK_IM_MODULE=xim
-export GTK_IM_MODULE
-
-# burn cd: first ripit
-#alias burnit='flac -d *.flac && cdrdao write cd.toc && rm *.wav && eject'
-
-#alias twi='${MY_CONFIG_DIR}/bin/twitter -t -d -f ansi'
-
-# super man
-function superman() {
-    /usr/bin/man "$@" || w3m -dump http://google.com/search\?q="$@"\&btnI | less
-}
-
-# Créer un répertoire et l'ouvrir :
-function mcd() {
-    mkdir -p "$@"
-    cd "$@"
-}
-#alias mcd='mkdir \!*; cd \!*'
-
-# recupere la sortie std sur le buffer x
-#function x() {
-#    eval "$@" | tee >(pbcopy)
-#}
-
-#alias light-m='sudo $MY_CONFIG_DIR/bin/adjust_light.sh'
-#alias light-min='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 0'
-#alias light-max='sudo $MY_CONFIG_DIR/bin/adjust_light.sh 100'
-
-#alias gvi='gvim'
-
-alias sqlite='sqlite3'
-#alias chrome='all_proxy=$chrome_proxy /usr/bin/google-chrome'
-
-##restart_adb_server() {
-##    ~/android/android-sdk-linux_86/tools/adb kill-server
-##    ~/android/android-sdk-linux_86/tools/adb start-server
-##}
-##export -f restart_adb_server
-#export ANDROID_SDK=~/android/android-sdk-linux_x86
-#export ANDROID_NDK_ROOT=~/android/android-ndk-r5b
-#export ANDROID_NDK=$ANDROID_NDK_ROOT
-##export ANDROID_NDK_TOOLCHAIN_ROOT=~/android-toolchain
-#export PATH=$PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools
-#alias fix_adb='$ANDROID_SDK/platform-tools/adb kill-server;sudo $ANDROID_SDK/platform-tools/adb start-server'
-#alias tethering='sudo dhclient usb0'
+# --- Python ---
 
 alias pyprofile='python -m cProfile -s time'
 alias pypy=pypy3
-
-alias 'cd..'='cd ..'
-alias pysh='ipython -p pysh'
 alias pyl='pylint --output-format=colorized --reports=n --disable=C0103 --disable=W0141 --disable=E1101'
+alias pysh='ipython -p pysh'
 
-#alias print 'lpr \!* -Pps5'
+# --- Misc ---
 
-#alias saptu='sudo aptitude update'
-#alias saptdu='sudo aptitude dist-upgrade'
-#alias saptsu='sudo aptitude safe-upgrade'
-#alias aptg='aptitude search'
-#alias apts='aptitude show'
-#alias aptw='aptitude why'
-#alias aptv='aptitude versions'
+alias sqlite='sqlite3'
+alias 'cd..'='cd ..'
+alias cdc='cd "$MY_CONFIG_DIR"'
 
-#alias hibernate='sudo /usr/sbin/pm-hibernate'
-#alias suspend='sudo /usr/sbin/pm-suspend'
-#alias suspend-hybrid='sudo /usr/sbin/pm-suspend-hybrid'
-#alias so='sudo init 0'
+# --- Git ---
 
-#alias fixwifi='sudo iwconfig wlan0 txpower on'
-#alias fixprint='sudo /etc/init.d/avahi-daemon restart'
-#alias presentation='impressive -t PageTurn'
-
-#alias images='feh -F -Z'
-#alias photos='pho -p'
-
-#EXTERNAL_OUTPUT="VGA1"
-#INTERNAL_OUTPUT="LVDS1"
-#alias ext-screen-off='xrandr --output $EXTERNAL_OUTPUT --off'
-#alias ext-screen='xrandr --auto --output $EXTERNAL_OUTPUT --auto --same-as $INTERNAL_OUTPUT'
-
-alias cdc='cd $MY_CONFIG_DIR'
-
-# keep trace of installed packages (even tentatives)
-#sapti() {
-#    if sudo aptitude install $@
-#	then
-#		# warning: will also store uninstalled packages
-#        	echo $@ >> ${MY_CONFIG_DIR}/aptitude_list_local
-#	fi
-# }
-#
-#saptr() {
-#    if sudo aptitude remove $@
-#	then
-#        	for package in $*
-#        	do
-#                	sed -i "/^[^#]/s/\(\<$package\>\)[[:space:]]*/# &\n/g" ${MY_CONFIG_DIR}/aptitude_list_local
-#        	done
-#        	sed -i '/^$/d' ${MY_CONFIG_DIR}/aptitude_list_local
-#	fi
-# }
-
-
-
-#alias lst='tar tzf'
-#alias untar='tar xzvf'
-#alias j='jobs -l'
-#alias h='history|more'
-#
-#alias less='less --quiet'
-#alias df='df --human-readable'
-#alias du='du --human-readable'
-#alias less='less -e -i -m -R'
-#
-## Pile de Répertoires
-#alias p='popd'
-#
-#alias vlcn='vlc -I ncurses'
-
-# git log
+# Compact graph log with relative dates
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset — %s %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
-alias gsl='git smartlog'
-#alias git_svn_sync_clean='git svn fetch; git merge remotes/clean'
 alias gst='git status'
 alias gco='git commit -a'
 alias gdp="git diff 'HEAD^'"
-alias gd="git diff"
+alias gd='git diff'
 alias gch='git checkout'
-alias grb='for branch in `git branch --no-merged`; do git rebase origin/master $branch; done'
-
-#alias ps_mem='sudo /home/louis/config/bin/ps_mem.py'
-
-#fresh() {
-#    old_proxy=$http_proxy
-#    unset http_proxy
-#    sudo freshclam
-#    export http_proxy=$old_proxy
-#}
-#alias fresh='http_proxy="" sudo freshclam'
-
-#alias findusb='diff <(lsusb) <(sleep 3s && lsusb)'
-
-# java
-#export JAVA_HOME=/usr/lib/jvm/java-6-openjdk
-#export PATH=$PATH:$JAVA_HOME/bin
-#export PLUGIN_HOME=$JAVA_HOME
-#export PATH=$PATH:/opt/eclipse
-
-#export GNOME_DESKTOP_SESSION_ID=1
-
-#printing stuff
-#alias print1='lpr -P Xerox_WorkCentre_4150 -o PageSize=A4 -o PageRegion=A4 -o Duplex=DuplexNoTumble -o Resolution=600x600dpi '
-#alias print4='lpr -P Xerox_WorkCentre_4150_2eme -o PageSize=A4 -o PageRegion=A4 -o Duplex=DuplexNoTumble -o Resolution=600x600dpi '

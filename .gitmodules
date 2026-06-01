@@ -1,6 +1,9 @@
 [submodule "vim"]
 	path = vim
 	url = https://LouisPlisso@github.com/LouisPlisso/Config.git
-[submodule "pentadactyl/pentadactyl-solarized"]
-	path = pentadactyl-solarized
-	url = https://github.com/claytron/pentadactyl-solarized.git
+[submodule "zsh/zsh-autosuggestions"]
+	path = zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh/zsh-syntax-highlighting"]
+	path = zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
